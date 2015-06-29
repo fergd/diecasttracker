@@ -1,0 +1,10 @@
+/* CSS declarations go here */
+td:nth-of-type(even){
+	background: #F2F2F2;
+}
+td:nth-of-type(odd){
+	background: #B3B3B3;
+}
+td{
+	padding: 5px 10px;
+}

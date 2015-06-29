@@ -1,0 +1,24 @@
+<head>
+  <title>dctTest</title>
+</head>
+
+<body>
+  <h1>Diecast Tracker (ALPHA, BITCHES)</h1>
+  {{> carDisplay}}
+
+</body>
+
+<template name="carDisplay">
+	<table>
+ 	{{#each model}}
+ 		<tr>
+ 			<td>{{ToyNum}}</td>
+ 			<td>{{ModelName}}</td>
+ 			<td>{{Series}}</td>
+ 			<td>{{Year}}</td>
+ 			<td>{{Favourite}}</td>
+ 		</tr>
+ 	{{/each}}
+ 	</table>
+ 	
+</template>
