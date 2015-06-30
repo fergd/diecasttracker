@@ -56,7 +56,7 @@ if (Meteor.isClient) {
 	});
 
 	Template.addCarForm.events({
-		'submit form' : function(event){
+		'submit form' : function(event,template){
 			event.preventDefault();
 
 			var toyNumVar = event.target.ToyNum.value;
@@ -80,6 +80,8 @@ if (Meteor.isClient) {
 				Favourite: favouriteVar,
 				Notes: notesVar
 			});
+			template.find("form").reset();
+			console.log('form reset');
 		}
 	});
 }

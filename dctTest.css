@@ -1,10 +1,19 @@
 /* CSS declarations go here */
-td:nth-of-type(even){
+html{
+	font-family: sans-serif;
+}
+
+tbody tr:nth-of-type(even){
 	background: #F2F2F2;
 }
-td:nth-of-type(odd){
-	background: #B3B3B3;
+tbody tr:nth-of-type(odd){
+	background: #e2e2e2;
 }
-td{
-	padding: 5px 10px;
+
+td, th{
+	padding: 5px;
+}
+
+form{
+	margin-top: 24px;
 }
