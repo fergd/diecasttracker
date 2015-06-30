@@ -3,22 +3,64 @@
 </head>
 
 <body>
-  <h1>Diecast Tracker (ALPHA, BITCHES)</h1>
-  {{> carDisplay}}
-
+	<h1>Diecast Tracker (ALPHA)</h1>
+	{{> carCount}}
+	{{> carDisplay}}
+	{{> addCarForm}}
 </body>
 
 <template name="carDisplay">
-	<table>
+<table>
+	<thead>
+		<tr>
+			<th>Delete Car</th>
+			<th>Toy Num</th>
+			<th>Model</th>
+			<th>Series</th>
+			<th>Main Color</th>
+			<th>Year</th>
+			<th>Series Num</th>
+			<th>Collector#</th>
+			<th>Fav</th>
+			<th>Notes</th>
+		</tr>
+	</thead>
+	<tbody>
  	{{#each model}}
- 		<tr>
+ 		<tr class="carRow">
+ 			<td><input type="button" class="remove" value="Remove"></td>
  			<td>{{ToyNum}}</td>
  			<td>{{ModelName}}</td>
  			<td>{{Series}}</td>
+ 			<td>{{Color}}</td>
  			<td>{{Year}}</td>
+ 			<td>{{SeriesNum}}</td>
+ 			<td>{{CollectorNum}}</td>
  			<td>{{Favourite}}</td>
+ 			<td>{{Notes}}</td>
  		</tr>
  	{{/each}}
- 	</table>
- 	
+ 	</tbody>
+ </table>	
+</template>
+
+<template name="carCount">
+	<h2>{{count}} cars in the tracker</h2>
+</template>
+
+<template name="addCarForm">
+	<form>
+		<input type="text" name="ToyNum" placeholder="ToyNum">
+		<input type="text" name="FileName" placeholder="FileName">
+		<input type="text" name="ModelName" placeholder="ModelName">
+		<input type="text" name="Series" placeholder="Series">
+		<input type="text" name="Color" placeholder="Color">
+		<input type="text" name="Year" placeholder="Year">
+		<input type="text" name="SeriesNum" placeholder="SeriesNum">
+		<input type="text" name="CollectorNum" placeholder="CollectorNum">
+		<input type="text" name="Favourite" placeholder="Favourite">
+		<input type="text" name="Notes" placeholder="Notes">
+		<input type="text" name="Duplicate" placeholder="Duplicate">
+		<input type="submit" value="Add Car" placeholder="Add Car">
+	</form>
 </template>
