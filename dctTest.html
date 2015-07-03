@@ -3,9 +3,18 @@
 </head>
 
 <body>
-	<h1>Diecast Tracker (ALPHA)</h1>
-	{{> carCount}}
-	{{> carDisplay}}
+	<h1>Diecast Tracker</h1>
+	<small>Alpha</small>
+	<article>
+		<h1>{{> carCount}}</h1>
+	</article>
+	<article>
+		<h1>Find A Car</h1>
+		{{> searchBox}}
+	</article>
+	
+	
+	<!-- {{> carDisplay}} -->
 	{{> addCarForm}}
 </body>
 
@@ -45,7 +54,7 @@
 </template>
 
 <template name="carCount">
-	<h2>{{count}} cars in the tracker</h2>
+	{{count}} cars in the tracker
 </template>
 
 <template name="addCarForm">
@@ -65,4 +74,23 @@
 		</fieldset>
 		<input type="submit" value="Add Car" placeholder="Add Car">
 	</form>
+</template>
+
+<template name="searchBox">
+    {{> esInput index="cars" placeholder="Search..." }}
+    <ul>
+        {{#esEach index="cars"}}
+            <li>{{ToyNum}}&nbsp;{{ModelName}}</li>
+        {{/esEach}}
+    </ul>
+
+    {{> esLoadMoreButton index="cars"}}
+
+    {{#ifEsHasNoResults index="cars"}}
+        <div class="no-results">No results found!</div>
+    {{/ifEsHasNoResults}}
+
+    {{#ifEsIsSearching index="cars"}}
+            <div>Loading...</div>
+    {{/ifEsIsSearching}}
 </template>
