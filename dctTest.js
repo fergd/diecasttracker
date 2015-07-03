@@ -1,6 +1,5 @@
 CarList = new Mongo.Collection('cars');
 
-// Extended configuration
 CarList.initEasySearch(['ToyNum', 'ModelName'], {
     'limit' : 20,
     'use' : 'mongo-db'
@@ -88,9 +87,6 @@ if (Meteor.isClient) {
 			});
 			template.find("form").reset();
 			console.log('form reset');
-		},
-		Date: function() {
-			return moment(this.date).fromNow();
 		}
 	});
 }

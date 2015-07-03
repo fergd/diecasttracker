@@ -1,21 +1,15 @@
 <head>
   <title>dctTest</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
-
 <body>
-	<h1>Diecast Tracker</h1>
-	<small>Alpha</small>
-	<article>
-		<h1>{{> carCount}}</h1>
-	</article>
-	<article>
-		<h1>Find A Car</h1>
+	<main role="main">
+		<h1>Diecast Tracker</h1>
+		{{> carCount}}
 		{{> searchBox}}
-	</article>
-	
-	
-	<!-- {{> carDisplay}} -->
-	{{> addCarForm}}
+		<!-- {{> carDisplay}} -->
+		<!-- {{> addCarForm}} -->
+	</main>
 </body>
 
 <template name="carDisplay">
@@ -54,7 +48,9 @@
 </template>
 
 <template name="carCount">
-	{{count}} cars in the tracker
+	<article class="car-count">
+		<h1><span>{{count}}</span> cars in the tracker</h1>
+	</article>
 </template>
 
 <template name="addCarForm">
@@ -77,20 +73,20 @@
 </template>
 
 <template name="searchBox">
-    {{> esInput index="cars" placeholder="Search..." }}
-    <ul>
-        {{#esEach index="cars"}}
-            <li>{{ToyNum}}&nbsp;{{ModelName}}</li>
-        {{/esEach}}
-    </ul>
-
-    {{> esLoadMoreButton index="cars"}}
-
-    {{#ifEsHasNoResults index="cars"}}
-        <div class="no-results">No results found!</div>
-    {{/ifEsHasNoResults}}
-
-    {{#ifEsIsSearching index="cars"}}
-            <div>Loading...</div>
-    {{/ifEsIsSearching}}
+	<article class="search-area">
+		<h1>Find A Car</h1>
+	    {{> esInput index="cars" placeholder="Search..." }}
+	    <ul>
+	        {{#esEach index="cars"}}
+	            <li>{{ToyNum}}&nbsp;|&nbsp;{{ModelName}}</li>
+	        {{/esEach}}
+	    </ul>
+	    {{> esLoadMoreButton index="cars"}}
+	    {{#ifEsHasNoResults index="cars"}}
+	    <div class="no-results">No results found.</div>
+	    {{/ifEsHasNoResults}}
+	    {{#ifEsIsSearching index="cars"}}
+	    <div class="loading">Loading...</div>
+	    {{/ifEsIsSearching}}
+    </article>
 </template>
