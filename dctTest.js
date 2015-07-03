@@ -28,7 +28,7 @@ if (Meteor.isClient) {
 		'fav' : function(){
 			return CarList.find()
 		},
-		'notes' : function(){
+		'Notes' : function(){
 			return CarList.find()
 		}
 	});
