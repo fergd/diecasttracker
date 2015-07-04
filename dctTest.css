@@ -2,7 +2,10 @@
 * {
 	box-sizing: border-box;
 }
-
+:focus{
+	background: yellow !important;
+	color: black !important;
+}
 html{
 	font-family: sans-serif;
 }

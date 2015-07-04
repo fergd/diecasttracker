@@ -7,12 +7,14 @@
 		<h1>Diecast Tracker</h1>
 		{{> carCount}}
 		{{> searchBox}}
-		<!-- {{> carDisplay}} -->
-		<!-- {{> addCarForm}} -->
+		{{> carDisplay}}
+		{{> addCarForm}}
 	</main>
 </body>
 
 <template name="carDisplay">
+<article>
+		<h1>Car List</h1>
 <table>
 	<thead>
 		<tr>
@@ -32,19 +34,20 @@
  	{{#each model}}
  		<tr class="carRow">
  			<td><input type="button" class="remove" value="Remove"></td>
- 			<td>{{ToyNum}}</td>
- 			<td>{{ModelName}}</td>
- 			<td>{{Series}}</td>
- 			<td>{{Color}}</td>
- 			<td>{{Year}}</td>
- 			<td>{{SeriesNum}}</td>
- 			<td>{{CollectorNum}}</td>
- 			<td>{{Favourite}}</td>
- 			<td>{{Notes}}</td>
+ 			<td>{{dc_toy_num}}</td>
+ 			<td>{{dc_model_name}}</td>
+ 			<td>{{dc_series}}</td>
+ 			<td>{{dc_color}}</td>
+ 			<td>{{dc_year}}</td>
+ 			<td>{{dc_series_num}}</td>
+ 			<td>{{dc_collector_num}}</td>
+ 			<td>{{dc_favourite}}</td>
+ 			<td>{{dc_notes}}</td>
  		</tr>
  	{{/each}}
  	</tbody>
- </table>	
+ </table>
+ </article>
 </template>
 
 <template name="carCount">
@@ -54,31 +57,34 @@
 </template>
 
 <template name="addCarForm">
+<article>
+<h1>Record a Car</h1>
 	<form>
 		<fieldset>
-			<input type="text" name="ToyNum" placeholder="ToyNum">
-			<input type="text" name="ModelName" placeholder="ModelName">
-			<input type="text" name="Series" placeholder="Series">
-			<input type="text" name="Color" placeholder="Color">
-			<input type="text" name="Year" placeholder="Year">
-			<input type="text" name="SeriesNum" placeholder="SeriesNum">
-			<input type="text" name="CollectorNum" placeholder="CollectorNum">
-			<input type="text" name="Favourite" placeholder="Favourite">
-			<input type="text" name="Notes" placeholder="Notes">
-			<input type="text" name="Duplicate" placeholder="Duplicate">
-			<input type="text" name="FileName" placeholder="FileName">
-		</fieldset>
+			<input type="text" name="dc_toy_num" placeholder="ToyNum">
+			<input type="text" name="dc_model_name" placeholder="ModelName">
+			<input type="text" name="dc_series" placeholder="Series">
+			<input type="text" name="dc_color" placeholder="Color">
+			<input type="text" name="dc_year" placeholder="Year">
+			<input type="text" name="dc_series_num" placeholder="SeriesNum">
+			<input type="text" name="dc_collector_num" placeholder="CollectorNum">
+			<input type="text" name="dc_favourite" placeholder="Favourite">
+			<input type="text" name="dc_notes" placeholder="Notes">
+			<!-- <input type="text" name="Duplicate" placeholder="Duplicate"> -->
+<!-- 			<input type="text" name="FileName" placeholder="FileName">
+ -->		</fieldset>
 		<input type="submit" value="Add Car" placeholder="Add Car">
 	</form>
+	</article>
 </template>
 
 <template name="searchBox">
 	<article class="search-area">
 		<h1>Find A Car</h1>
-	    {{> esInput index="cars" placeholder="Search..." }}
+	    {{> esInput index="cars" placeholder="Search Toy Num or Model" }}
 	    <ul>
 	        {{#esEach index="cars"}}
-	            <li>{{ToyNum}}&nbsp;|&nbsp;{{ModelName}}</li>
+	            <li>{{dc_toy_num}}&nbsp;|&nbsp;{{dc_model_name}}</li>
 	        {{/esEach}}
 	    </ul>
 	    {{> esLoadMoreButton index="cars"}}

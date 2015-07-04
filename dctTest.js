@@ -1,6 +1,6 @@
 CarList = new Mongo.Collection('cars');
 
-CarList.initEasySearch(['ToyNum', 'ModelName'], {
+CarList.initEasySearch(['dc_toy_num', 'dc_model_name'], {
     'limit' : 20,
     'use' : 'mongo-db'
 });
@@ -33,7 +33,7 @@ if (Meteor.isClient) {
 		'fav' : function(){
 			return CarList.find()
 		},
-		'Notes' : function(){
+		'notes' : function(){
 			return CarList.find()
 		}
 	});
@@ -64,26 +64,26 @@ if (Meteor.isClient) {
 		'submit form' : function(event,template){
 			event.preventDefault();
 
-			var toyNumVar = event.target.ToyNum.value;
-			var modelNameVar = event.target.ModelName.value;
-			var seriesVar = event.target.Series.value;
-			var colorVar = event.target.Color.value;
-			var yearVar = event.target.Year.value;
-			var seriesNumVar = event.target.SeriesNum.value;
-			var collectorNumVar = event.target.CollectorNum.value;
-			var favouriteVar = event.target.Favourite.value;
-			var notesVar = event.target.Notes.value;
+			var toyNumVar = event.target.dc_toy_num.value;
+			var modelNameVar = event.target.dc_model_name.value;
+			var seriesVar = event.target.dc_series.value;
+			var colorVar = event.target.dc_color.value;
+			var yearVar = event.target.dc_year.value;
+			var seriesNumVar = event.target.dc_series_num.value;
+			var collectorNumVar = event.target.dc_collector_num.value;
+			var favouriteVar = event.target.dc_favourite.value;
+			var notesVar = event.target.dc_notes.value;
 
 			CarList.insert({
-				ToyNum: toyNumVar,
-				ModelName: modelNameVar,
-				Series: seriesVar,
-				Color: colorVar,
-				Year: yearVar,
-				SeriesNum: seriesNumVar,
-				CollectorNum: collectorNumVar,
-				Favourite: favouriteVar,
-				Notes: notesVar
+				dc_toy_num: toyNumVar,
+				dc_model_name: modelNameVar,
+				dc_series: seriesVar,
+				dc_color: colorVar,
+				dc_year: yearVar,
+				dc_series_num: seriesNumVar,
+				dc_collector_num: collectorNumVar,
+				dc_favourite: favouriteVar,
+				dc_notes: notesVar
 			});
 			template.find("form").reset();
 			console.log('form reset');
