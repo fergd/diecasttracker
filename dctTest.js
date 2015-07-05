@@ -1,12 +1,11 @@
 CarList = new Mongo.Collection('cars');
 
-CarList.initEasySearch(['dc_toy_num', 'dc_model_name'], {
+CarList.initEasySearch(['dc_toy_num', 'dc_model_name', 'dc_img_url'], {
     'limit' : 20,
     'use' : 'mongo-db'
 });
 
 if (Meteor.isClient) {
-	// console.log('Greetings, user.');
 
 	Template.carDisplay.helpers({
 		'toynum' : function(){
@@ -34,6 +33,9 @@ if (Meteor.isClient) {
 			return CarList.find()
 		},
 		'notes' : function(){
+			return CarList.find()
+		},
+		'imgurl' : function(){
 			return CarList.find()
 		}
 	});
@@ -73,6 +75,7 @@ if (Meteor.isClient) {
 			var collectorNumVar = event.target.dc_collector_num.value;
 			var favouriteVar = event.target.dc_favourite.value;
 			var notesVar = event.target.dc_notes.value;
+			var imgUrlVar = event.target.dc_img_url.value;
 
 			CarList.insert({
 				dc_toy_num: toyNumVar,
@@ -83,16 +86,28 @@ if (Meteor.isClient) {
 				dc_series_num: seriesNumVar,
 				dc_collector_num: collectorNumVar,
 				dc_favourite: favouriteVar,
-				dc_notes: notesVar
+				dc_notes: notesVar,
+				dc_img_url: imgUrlVar
 			});
+
 			template.find("form").reset();
 			console.log('form reset');
 		}
 	});
+
+	//Figuring out how to edit an existing document
+	// Template.carDisplay.events({
+	// 	'click .update': function(){
+	// 		event.preventDefault();
+
+	// 		var carToyNum = this.dc_toy_num;
+	// 		Session.set('selectedCar', carToyNum);
+	// 		console.log('update ' + carToyNum);
+	// 	}
+	// });
 }
 
 if (Meteor.isServer) {
 	Meteor.startup(function () {
-		// console.log('Greetings, CLU.');
 	});
 }

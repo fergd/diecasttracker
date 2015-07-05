@@ -7,9 +7,9 @@
 		<h1>Diecast Tracker</h1>
 		{{> carCount}}
 		{{> searchBox}}
-		{{> carDisplay}}
-		{{> addCarForm}}
 	</main>
+	{{> carDisplay}}
+	{{> addCarForm}}
 </body>
 
 <template name="carDisplay">
@@ -28,12 +28,16 @@
 			<th>Collector#</th>
 			<th>Fav</th>
 			<th>Notes</th>
+			<th>Image</th>
 		</tr>
 	</thead>
 	<tbody>
  	{{#each model}}
  		<tr class="carRow">
- 			<td><input type="button" class="remove" value="Remove"></td>
+ 			<td>
+ 				<input type="button" class="remove" value="Remove">
+				<input type="button" class="update" value="Update">
+ 			</td>
  			<td>{{dc_toy_num}}</td>
  			<td>{{dc_model_name}}</td>
  			<td>{{dc_series}}</td>
@@ -43,6 +47,7 @@
  			<td>{{dc_collector_num}}</td>
  			<td>{{dc_favourite}}</td>
  			<td>{{dc_notes}}</td>
+ 			<td><img url="{{dc_img_url}}" alt="" /></td>
  		</tr>
  	{{/each}}
  	</tbody>
@@ -70,6 +75,7 @@
 			<input type="text" name="dc_collector_num" placeholder="CollectorNum">
 			<input type="text" name="dc_favourite" placeholder="Favourite">
 			<input type="text" name="dc_notes" placeholder="Notes">
+			<input type="text" name="dc_img_url" placeholder="image">
 			<!-- <input type="text" name="Duplicate" placeholder="Duplicate"> -->
 <!-- 			<input type="text" name="FileName" placeholder="FileName">
  -->		</fieldset>
@@ -88,9 +94,11 @@
 	        {{/esEach}}
 	    </ul>
 	    {{> esLoadMoreButton index="cars"}}
+	    
 	    {{#ifEsHasNoResults index="cars"}}
 	    <div class="no-results">No results found.</div>
 	    {{/ifEsHasNoResults}}
+	    
 	    {{#ifEsIsSearching index="cars"}}
 	    <div class="loading">Loading...</div>
 	    {{/ifEsIsSearching}}
