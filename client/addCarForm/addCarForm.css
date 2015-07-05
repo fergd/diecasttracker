@@ -1,0 +1,7 @@
+form{
+	margin-top: 24px;
+}
+input[type="text]{
+	display: block;
+	border: red 2px solid;
+}
