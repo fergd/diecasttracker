@@ -1,0 +1,8 @@
+.car-count h1{
+	text-align: center;
+}
+
+.car-count h1 span{
+	display: block;
+	font-size: 80px;
+}

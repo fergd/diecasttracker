@@ -1,0 +1,20 @@
+<template name="searchBox">
+	<article class="search-area">
+		<h1>Find A Car</h1>
+	    {{> esInput index="cars" placeholder="Search Toy Num or Model" }}
+	    <ul>
+	        {{#esEach index="cars"}}
+	            <li>{{dc_toy_num}}&nbsp;|&nbsp;{{dc_model_name}}</li>
+	        {{/esEach}}
+	    </ul>
+	    {{> esLoadMoreButton index="cars"}}
+	    
+	    {{#ifEsHasNoResults index="cars"}}
+	    <div class="no-results">No results found.</div>
+	    {{/ifEsHasNoResults}}
+	    
+	    {{#ifEsIsSearching index="cars"}}
+	    <div class="loading">Loading...</div>
+	    {{/ifEsIsSearching}}
+    </article>
+</template>
