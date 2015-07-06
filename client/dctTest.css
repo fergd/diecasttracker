@@ -98,7 +98,7 @@ main{
 	max-width: 460px;
 	min-width: 320px;
 	margin: 0 auto;
-	padding: 16px;
+	padding: 0;
 }
 
 .inner-wrap{

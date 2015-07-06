@@ -15,10 +15,18 @@
 	text-decoration: none;
 	text-align: center;
 	font-style: italic;
-	color: white;
 	padding-top: 60px;
+	color: white;
 }
 
 .home-nav a:last-child{
 	background: #2C82C9;
+}
+
+nav.home-nav::after{
+	content: '';
+	width: 100%;
+	height: 60px;
+	background: #2C82C9;
+	float: left;
 }

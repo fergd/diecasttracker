@@ -1,8 +1,9 @@
 <template name="layout">
 	{{>header}}
 	{{>navigation}}
-	<main role="main">
+	<main role="content" class="module">
 		{{>yield}}
-		{{>modulecarDisplaybutton}}
 	</main>
+	{{>modulecarDisplaybutton}}
+	{{>footer}}
 </template>

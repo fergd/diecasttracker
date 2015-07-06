@@ -1,0 +1,19 @@
+.full-car-wrapper{
+	max-width: 100%;
+	min-width: 320px;
+	margin: 0 auto;
+	position: relative;
+	overflow: visible !important; 
+	padding: 16px 0;
+}
+.full-car-wrapper::after{
+	content: '';
+  	width: 0;
+  	height: 0;
+  	border-style: solid;
+  	border-width: 0 160px 40px 0px;
+  	border-color: transparent transparent #FF646A transparent;
+  	position: absolute;
+  	top: -40px;
+  	left: 0;
+}
