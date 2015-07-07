@@ -4,7 +4,7 @@
 	margin: 0 auto;
 	height: 40%;
 	overflow: auto;
-	background: orange;
+	background: #FF646A;
 }
 
 .home-nav a{
@@ -12,10 +12,11 @@
 	width: 50%;
 	height: 220px;
 	float: left;
+	position: relative; /* for ::after */
 	text-decoration: none;
 	text-align: center;
 	font-style: italic;
-	padding-top: 60px;
+	padding-top: 40px;
 	color: white;
 }
 
@@ -29,4 +30,24 @@ nav.home-nav::after{
 	height: 60px;
 	background: #2C82C9;
 	float: left;
+}
+
+/* Images */
+a.button-has-icon::after{
+	content: '';
+	width: 120px;
+	height: 120px;
+	display: block;
+	position: absolute;
+	bottom: 10%;
+	left: 50%;
+	transform: translate(-50%, 0);
+}
+a.button-record::after{
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2019.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20viewBox%3D%220%200%20124.1%20124.1%22%20enable-background%3D%22new%200%200%20124.1%20124.1%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%20id%3D%22Layer_1%22%3E%0D%0A%09%3Cpath%20id%3D%22XMLID_63_%22%20fill%3D%22%23F2F2F2%22%20d%3D%22M62%2C0C27.8%2C0%2C0%2C27.8%2C0%2C62s27.8%2C62%2C62%2C62s62-27.8%2C62-62S96.3%2C0%2C62%2C0z%20M61.8%2C82.3%0D%0A%09%09c-11.2%2C0-20.3-9.1-20.3-20.3s9.1-20.3%2C20.3-20.3S82.1%2C50.8%2C82.1%2C62S73%2C82.3%2C61.8%2C82.3z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_2%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20id%3D%22XMLID_60_%22%20display%3D%22inline%22%20fill%3D%22%239DC6E4%22%20d%3D%22M62%2C0C27.8%2C0%2C0%2C27.8%2C0%2C62s27.8%2C62%2C62%2C62s62-27.8%2C62-62S96.3%2C0%2C62%2C0z%0D%0A%09%09%20M61.8%2C108.8C36%2C108.8%2C15%2C87.9%2C15%2C62S36%2C15.2%2C61.8%2C15.2s46.8%2C20.9%2C46.8%2C46.8S87.6%2C108.8%2C61.8%2C108.8z%22/%3E%0D%0A%09%0D%0A%09%09%3Crect%20id%3D%22XMLID_4_%22%20x%3D%223.8%22%20y%3D%2297.8%22%20transform%3D%22matrix%280.7071%20-0.7071%200.7071%200.7071%20-71.8894%2042.3483%29%22%20display%3D%22inline%22%20fill%3D%22%239DC6E4%22%20width%3D%2222.7%22%20height%3D%2220.3%22/%3E%0D%0A%09%3Ccircle%20id%3D%22XMLID_3_%22%20display%3D%22inline%22%20fill%3D%22%239DC6E4%22%20cx%3D%2261.8%22%20cy%3D%2262%22%20r%3D%2220.3%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
+	background-repeat: no-repeat;
+}
+a.button-magnify::after{
+	background-image: url('data:image/svg+xml;charset=US-ASCII,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2019.0.0%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3Csvg%20version%3D%221.1%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20x%3D%220px%22%20y%3D%220px%22%0D%0A%09%20viewBox%3D%220%200%20124.1%20124.1%22%20enable-background%3D%22new%200%200%20124.1%20124.1%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%20id%3D%22Layer_1%22%20display%3D%22none%22%3E%0D%0A%09%3Cpath%20id%3D%22XMLID_63_%22%20display%3D%22inline%22%20fill%3D%22%23F2F2F2%22%20d%3D%22M62%2C0C27.8%2C0%2C0%2C27.8%2C0%2C62s27.8%2C62%2C62%2C62s62-27.8%2C62-62S96.3%2C0%2C62%2C0z%0D%0A%09%09%20M61.8%2C82.3c-11.2%2C0-20.3-9.1-20.3-20.3s9.1-20.3%2C20.3-20.3S82.1%2C50.8%2C82.1%2C62S73%2C82.3%2C61.8%2C82.3z%22/%3E%0D%0A%3C/g%3E%0D%0A%3Cg%20id%3D%22Layer_2%22%3E%0D%0A%09%3Cpath%20id%3D%22XMLID_60_%22%20fill%3D%22%239DC6E4%22%20d%3D%22M62%2C0C27.8%2C0%2C0%2C27.8%2C0%2C62s27.8%2C62%2C62%2C62s62-27.8%2C62-62S96.3%2C0%2C62%2C0z%20M61.8%2C108.8%0D%0A%09%09C36%2C108.8%2C15%2C87.9%2C15%2C62S36%2C15.2%2C61.8%2C15.2s46.8%2C20.9%2C46.8%2C46.8S87.6%2C108.8%2C61.8%2C108.8z%22/%3E%0D%0A%09%0D%0A%09%09%3Crect%20id%3D%22XMLID_4_%22%20x%3D%223.8%22%20y%3D%2297.8%22%20transform%3D%22matrix%280.7071%20-0.7071%200.7071%200.7071%20-71.8894%2042.3483%29%22%20fill%3D%22%239DC6E4%22%20width%3D%2222.7%22%20height%3D%2220.3%22/%3E%0D%0A%09%3Ccircle%20id%3D%22XMLID_3_%22%20fill%3D%22%239DC6E4%22%20cx%3D%2261.8%22%20cy%3D%2262%22%20r%3D%2220.3%22/%3E%0D%0A%3C/g%3E%0D%0A%3C/svg%3E%0D%0A');
+	background-repeat: no-repeat;
 }

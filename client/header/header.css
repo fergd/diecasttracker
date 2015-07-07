@@ -13,6 +13,7 @@ header::after{
 	top: 60px;
 	right: 0;
 	position: absolute;
+	z-index: 9999;
 }
 
 header,
@@ -39,6 +40,12 @@ div.inner-wrap span.car-count{
 	font-style: italic;
 	float: right;
 	padding: 16px;
+	background-color: #3E4651;
+	border-radius: 100%;
+	color: #DEC956;
+	width: 60px;
+  	text-align: center;
+  	margin-right: 8px;
 }
 @media all and (min-width: 320px) and (max-width: 360px){
 
