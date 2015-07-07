@@ -4,6 +4,7 @@ Router.configure({
 Router.map(function(){
 	this.route('home',{path:'/'});
 	this.route('carDisplay',{path:'/carDisplay'});
-	this.route('addCarForm',{path:'/addCarForm'});
+	this.route('addCarForm',{path:'/add'});
+	this.route('searchBox',{path:'/find'});
 });
 

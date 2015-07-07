@@ -108,3 +108,6 @@ main{
 	margin: 0 auto;
 }
 
+.page-component{
+	padding-bottom: 48px;
+}
