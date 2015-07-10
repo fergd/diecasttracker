@@ -1,18 +1,18 @@
 <template name="carDisplay">
 	<article class="page-component car-display-wrap">
-		<h1>Car List</h1>
-		<table>
+		<h1 class="module-title">Car List</h1>
+		<table class="car-display-table">
 			<thead>
 				<tr>
-					<!-- <th>Delete Car</th> -->
-					<th>Toy Num</th>
+					<th class="visuallyhidden">Delete</th>
+					<th>Num</th>
 					<th>Model</th>
 					<!-- <th>Series</th> -->
 					<!-- <th>Main Color</th> -->
 					<th>Year</th>
 					<!-- <th>Series Num</th> -->
 					<!-- <th>Collector#</th> -->
-					<th>Fav</th>
+					<!-- <th>Fav</th> -->
 					<!-- <th>Notes</th> -->
 					<!-- <th>Image</th> -->
 				</tr>
@@ -20,18 +20,18 @@
 			<tbody>
 		 	{{#each model}}
 		 		<tr class="carRow">
-		 			<!-- <td>
-		 				<input type="button" class="remove" value="Remove">
-						<input type="button" class="update" value="Update">
-		 			</td> -->
-		 			<td>{{dc_toy_num}}</td>
-		 			<td>{{dc_model_name}}</td>
+		 			<td class="cell-del">
+		 				<button type="button" class="remove">Delete Car</button>
+						<!-- <input type="button" class="update" value="Update"> -->
+		 			</td>
+		 			<td class="cell-num">{{dc_toy_num}}</td>
+		 			<td class="cell-name">{{dc_model_name}}</td>
 		 			<!-- <td>{{dc_series}}</td>
 		 			<td>{{dc_color}}</td> -->
-		 			<td>{{dc_year}}</td>
+		 			<td class="cell=year">{{dc_year}}</td>
 		 			<!-- <td>{{dc_series_num}}</td>
 		 			<td>{{dc_collector_num}}</td> -->
-		 			<td>{{dc_favourite}}</td>
+		 			<!-- <td>{{dc_favourite}}</td> -->
 		 			<!-- <td>{{dc_notes}}</td>
 		 			<td><img url="{{dc_img_url}}" alt="" /></td> -->
 		 		</tr>

@@ -32,13 +32,14 @@ article.search-area{
 		margin: 0 auto;
 		display: block;
 		padding: 0;
-		background: #E9F7F6;
+		background: #FF646A;
 	}
 
 		article.search-area ul li{
 			list-style-type: none;
 			padding: 12px;
 			font-size: 16px;
+			border-bottom: 1px solid #E55A5F;
 		}
 		article.search-area ul li span.mono{
 			font-family: monospace;
@@ -49,8 +50,4 @@ article.search-area{
 		padding: 12px;
 		font-size: 24px;
 		text-align: center;
-	}
-
-	article.search-area ul li:nth-child(odd){
-		background: 	#BFDDEC;
 	}
