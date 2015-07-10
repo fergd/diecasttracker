@@ -12,8 +12,8 @@ Template.addCarForm.events({
 		var seriesNumVar = event.target.dc_series_num.value;
 		var collectorNumVar = event.target.dc_collector_num.value;
 		var favouriteVar = event.target.dc_favourite.value;
-		var notesVar = event.target.dc_notes.value;
-		var imgUrlVar = event.target.dc_img_url.value;
+		// var notesVar = event.target.dc_notes.value;
+		// var imgUrlVar = event.target.dc_img_url.value;
 
 		CarList.insert({
 			dc_toy_num: toyNumVar,
@@ -24,8 +24,8 @@ Template.addCarForm.events({
 			dc_series_num: seriesNumVar,
 			dc_collector_num: collectorNumVar,
 			dc_favourite: favouriteVar,
-			dc_notes: notesVar,
-			dc_img_url: imgUrlVar
+			// dc_notes: notesVar,
+			// dc_img_url: imgUrlVar
 		}
 		// ,
 		// function( error, result) { 
@@ -33,7 +33,7 @@ Template.addCarForm.events({
 		// 	    if ( result ) console.log ( result ); //the _id of new object if successful
 		// 	  }
 		);
-
+		console.log('form submitted');
 		
 
 		//when data is submetted, recet the inputs
