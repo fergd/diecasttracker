@@ -14,7 +14,7 @@ article.search-area{
 		display: block;
 		padding: 12px;
 		text-transform: uppercase;
-		box-shadow: 0px 10px 41px -16px rgba(0,0,0,0.85);
+		/*box-shadow: 0px 10px 41px -16px rgba(0,0,0,0.85);*/
 	}
 
 	article.search-area input::-webkit-input-placeholder{

@@ -1,7 +1,72 @@
-form{
-	margin-top: 24px;
+.add-car-wrap{
+	background: #DEC956;
+	width: 100%;
+	padding: 16px 0 80px 0;
+	max-width: 460px;
+	min-width: 320px;
+	margin: 0 auto;
 }
-input[type="text]{
+
+form.add-car-form{
+	margin: 0 0 40px 0;
+	padding: 0;
+}
+
+form.add-car-form fieldset{
+	background: #FF646A;
+	border: none;
+	padding: 4px;
+}
+
+form.add-car-form input{
+	border: none;
+	background: #FFF;
+	color: #3E4651;
+	font-size: 16px;
+	display: inline-block;
+	padding: 12px;
+}
+
+.add-car-form button.button{
 	display: block;
-	border: red 2px solid;
+	width: 45%;
+	margin: 16px auto 0 auto;
+}
+
+.dc-wrap{
+	float: left;
+	margin: 1%;
+}
+
+	.dc-wrap label{
+		display: block;
+	}
+
+	.dc-wrap input{
+		display: block;
+		width: 100%;
+	}
+
+.add-car-form-h3{ 
+	margin-top: 16px; 
+	width: 100%;
+	text-align: center;
+}
+
+.full-width{ width: 98%; }
+
+.half-width{
+	width: 48%;
+}
+
+.thirty-width{
+	width: 32%;
+}
+
+.seventy-width{
+	width: 64%;
+}
+
+.thirds-width{
+	width: 31.333%;
 }

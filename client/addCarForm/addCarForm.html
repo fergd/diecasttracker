@@ -1,23 +1,79 @@
 <template name="addCarForm">
 	<article class="page-component add-car-wrap">
-	<h1>Record a Car</h1>
-		<form>
+	<h1 class="module-title">Record a Car</h1>
+		<form class="add-car-form">
 			<fieldset>
-				<input type="text" name="dc_toy_num" placeholder="ToyNum">
-				<input type="text" name="dc_model_name" placeholder="ModelName">
-				<input type="text" name="dc_series" placeholder="Series">
-				<input type="text" name="dc_color" placeholder="Color">
-				<input type="text" name="dc_year" placeholder="Year">
-				<input type="text" name="dc_series_num" placeholder="SeriesNum">
-				<input type="text" name="dc_collector_num" placeholder="CollectorNum">
-				<input type="text" name="dc_favourite" placeholder="Favourite">
-				<input type="text" name="dc_notes" placeholder="Notes">
-				<input type="text" name="dc_img_url" placeholder="image">
+				<legend class="visuallyhidden">Required</legend>
+
+				<div class="dc-wrap thirty-width">
+					<label for="dctoynum">Toy Num
+						<input id="dctoynum" type="text" name="dc_toy_num" placeholder="16671" class="dc_toy_num">
+					</label>
+				</div>
+				<div class="dc-wrap seventy-width">
+					<label for="dcmodelname">Model Name
+						<input id="dcmodelname" type="text" name="dc_model_name" placeholder="BMW Roadster" class="dc_model_name">
+					</label>
+				</div>
+
+			</fieldset>
+
+			<h3 class="add-car-form-h3">Optional Fields</h3>
+			<fieldset>
+				<legend class="visuallyhidden">Optional</legend>
+				
+				<div class="dc-wrap full-width">
+					<label for="dcseries">Series Name
+						<input id="dc_series" type="text" name="dc_series" placeholder="1997 First Editions">
+					</label>
+				</div>
+
+				<div class="dc-wrap half-width">
+					<label for="dccolor">Primary Color
+						<input id="dccolor" type="text" name="dc_color" placeholder="Silver">
+					</label>
+				</div>
+
+				<div class="dc-wrap half-width">
+					<label for="dcyear">Toy Year
+						<input id="dcyear" ype="text" name="dc_year" placeholder="1997">
+					</label>
+				</div>
+
+				<div class="dc-wrap thirds-width">
+					<label for="dcseriesnum">Series Num
+						<input id="dcseriesnum" type="text" name="dc_series_num" placeholder="6/12">
+					</label>
+				</div>
+	
+				<div class="dc-wrap thirds-width">
+					<label for="dccollectornum">Collect Num
+						<input id="dccollectornum" type="text" name="dc_collector_num" placeholder="518">
+					</label>
+				</div>
+
+				<div class="dc-wrap thirds-width">
+					<label for="dcfavourite">Favourite
+						<input type="checkbox" name="dc_favourite" placeholder="Favourite">
+					</label>
+				</div>
+
+			</fieldset>
+				
+			
+			<button class="button" type="submit" value="Add Car" placeholder="Add Car">Add Car</button>
+			
+				
+
+		</form>		
+				
+				<!-- <textarea name="dc_notes" placeholder="Notes"> -->
+				<!-- <input type="text" name="dc_img_url" placeholder="image"> -->
 				<!-- <input type="text" name="Duplicate" placeholder="Duplicate"> -->
 	<!-- 			<input type="text" name="FileName" placeholder="FileName">
-	 -->		</fieldset>
-			<input type="submit" value="Add Car" placeholder="Add Car">
-		</form>
+	 -->		
+			
+		
 
 	</article>
 </template>
