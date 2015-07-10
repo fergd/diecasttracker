@@ -1,10 +1,11 @@
 <template name="searchBox">
 	<article class="page-component search-area">
-		<h1>Find A Car</h1>
+		<h1 class="module-title">Find A Car</h1>
+		<label class="visuallyhidden">Search by toy number or model name</label>
 	    {{> esInput index="cars" placeholder="Search Toy Num or Model" }}
 	    <ul>
 	        {{#esEach index="cars"}}
-	            <li>{{dc_toy_num}}&nbsp;|&nbsp;{{dc_model_name}}</li>
+	            <li><span class="mono">{{dc_toy_num}}&nbsp;|&nbsp;</span>{{dc_model_name}}</li>
 	        {{/esEach}}
 	    </ul>
 	    {{> esLoadMoreButton index="cars"}}

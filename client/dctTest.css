@@ -3,8 +3,11 @@
 	box-sizing: border-box;
 }
 :focus{
-	background: yellow !important;
-	color: black !important;
+	background: white !important;
+	color: #3E4651 !important;
+	border: none !important;
+	outline: none !important;
+	box-shadow: none !important;
 }
 ::selection {
     background: #b3d4fc;
@@ -72,6 +75,16 @@ html, body{
 	color: #3E4651;
 	background-color: #3E4651;
 	height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6{
+	margin: 0;
+}
+
+.module-title{
+	font-family: "proxima-nova", sans-serif;
+	font-style: italic;
+	text-align: center;
 }
 
 .module{
