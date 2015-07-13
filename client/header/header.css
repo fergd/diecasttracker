@@ -2,6 +2,7 @@ header{
 	background: #DEC956;
 	width: 100%;
 	height: 60px;
+	overflow: visible;
 }
 header::after{
 	content: '';

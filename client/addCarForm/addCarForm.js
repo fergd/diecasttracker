@@ -3,6 +3,7 @@ CarList = new Mongo.Collection('cars');
 Template.addCarForm.events({
 	'submit form' : function(event,template){
 		event.preventDefault();
+		var currentUserId = Meteor.userId();
 
 		var toyNumVar = event.target.dc_toy_num.value;
 		var modelNameVar = event.target.dc_model_name.value;
@@ -24,22 +25,22 @@ Template.addCarForm.events({
 			dc_series_num: seriesNumVar,
 			dc_collector_num: collectorNumVar,
 			dc_favourite: favouriteVar,
+			createdBy: currentUserId
+			// createdAt: new Date(),          
+			// owner: Meteor.userId(),          
+			// username: Meteor.user().username  
 			// dc_notes: notesVar,
 			// dc_img_url: imgUrlVar
-		}
-		// ,
-		// function( error, result) { 
-		// 	    if ( error ) console.log ( error ); //info about what went wrong
-		// 	    if ( result ) console.log ( result ); //the _id of new object if successful
-		// 	  }
-		);
+		},
+		function( error, result) { 
+			if ( error ) console.log ( error ); //info about what went wrong
+			if ( result ) console.log ( result ); //the _id of new object if successful
+		});
 		console.log('form submitted');
-		
 
-		//when data is submetted, recet the inputs
 		template.find("form").reset();
-		console.log('form reset');
 
+		console.log('form reset');
 	}
 
 });

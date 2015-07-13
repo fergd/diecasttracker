@@ -5,8 +5,9 @@
 # but you can also edit it by hand.
 
 meteor-platform
-autopublish
-insecure
 momentjs:moment
 matteodem:easy-search
 iron:router
+alanning:roles
+accounts-password
+accounts-ui

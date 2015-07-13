@@ -132,3 +132,7 @@ main{
 .page-component{
 	padding-bottom: 48px;
 }
+
+.login-link-text{
+	color: yellow;
+}

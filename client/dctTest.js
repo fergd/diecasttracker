@@ -1,17 +1,12 @@
 if (Meteor.isClient) {
-	//Figuring out how to edit an existing document
-	// Template.carDisplay.events({
-	// 	'click .update': function(){
-	// 		event.preventDefault();
-
-	// 		var carToyNum = this.dc_toy_num;
-	// 		Session.set('selectedCar', carToyNum);
-	// 		console.log('update ' + carToyNum);
-	// 	}
-	// });
+	Meteor.subscribe("allCars");
+	Accounts.ui.config({
+  		passwordSignupFields: "USERNAME_ONLY"
+	});
 }
 
 if (Meteor.isServer) {
 	Meteor.startup(function () {
+		
 	});
 }
