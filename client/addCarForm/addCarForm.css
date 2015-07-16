@@ -1,14 +1,14 @@
 .add-car-wrap{
 	background: #DEC956;
 	width: 100%;
-	padding: 16px 0 80px 0;
+	padding: 16px 0 0 0;
 	max-width: 460px;
 	min-width: 320px;
 	margin: 0 auto;
 }
 
 form.add-car-form{
-	margin: 16px 0 40px 0;
+	margin: 16px 0 0 0;
 	padding: 0;
 }
 

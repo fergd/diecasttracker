@@ -1,16 +1,10 @@
 <template name="layout">
-	
 	{{>header}}
-	{{#if currentUser}}
 	{{>navigation}}
 	<main role="content" class="module">
 		{{>yield}}
 	</main>
 	{{>modulecarDisplaybutton}}
-	{{else}}
-		<h1>ACCOUNTS</h1>
-		<p style="color: white;">Testing accounts, so you can't see this area at the moment.</p>
-	{{/if}}
 	{{>footer}}
-
 </template>
+

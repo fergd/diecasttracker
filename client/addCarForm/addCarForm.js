@@ -4,7 +4,6 @@ Template.addCarForm.events({
 	'submit form' : function(event,template){
 		event.preventDefault();
 		var currentUserId = Meteor.userId();
-
 		var toyNumVar = event.target.dc_toy_num.value;
 		var modelNameVar = event.target.dc_model_name.value;
 		var seriesVar = event.target.dc_series.value;
@@ -16,6 +15,10 @@ Template.addCarForm.events({
 		// var notesVar = event.target.dc_notes.value;
 		// var imgUrlVar = event.target.dc_img_url.value;
 
+		if (! Meteor.userId()) {
+	      throw new Meteor.Error("not-authorized");
+	    }
+
 		CarList.insert({
 			dc_toy_num: toyNumVar,
 			dc_model_name: modelNameVar,
@@ -24,11 +27,11 @@ Template.addCarForm.events({
 			dc_year: yearVar,
 			dc_series_num: seriesNumVar,
 			dc_collector_num: collectorNumVar,
-			dc_favourite: favouriteVar,
-			createdBy: currentUserId
-			// createdAt: new Date(),          
-			// owner: Meteor.userId(),          
-			// username: Meteor.user().username  
+			// dc_favourite: favouriteVar,
+			// createdBy: currentUserId
+			createdAt: new Date(),          
+			owner: Meteor.userId(),          
+			username: Meteor.user().username  
 			// dc_notes: notesVar,
 			// dc_img_url: imgUrlVar
 		},
@@ -42,5 +45,4 @@ Template.addCarForm.events({
 
 		console.log('form reset');
 	}
-
 });

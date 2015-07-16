@@ -1,6 +1,8 @@
 <template name="addCarForm">
 	<article class="page-component add-car-wrap">
+	{{#if currentUser}}
 	<h1 class="module-title">Record a Car</h1>
+		
 		<form class="add-car-form">
 			<fieldset>
 				<legend class="visuallyhidden">Required</legend>
@@ -15,9 +17,7 @@
 						<input id="dcmodelname" type="text" name="dc_model_name" placeholder="BMW Roadster" class="dc_model_name">
 					</label>
 				</div>
-
 			</fieldset>
-
 			<h3 class="add-car-form-h3">Optional Fields</h3>
 			<fieldset>
 				<legend class="visuallyhidden">Optional</legend>
@@ -54,7 +54,7 @@
 
 				<div class="dc-wrap thirds-width">
 					<label for="dcfavourite">Favourite
-						<input type="checkbox" name="dc_favourite" placeholder="Favourite">
+						<input type="checkbox" name="dc_favourite" placeholder="Favourite" class="toggle-checked">
 					</label>
 				</div>
 				{{! This comment will not be in the output 
@@ -65,21 +65,10 @@
 				</div>
 				}}
 			</fieldset>
-				
-			
 			<button class="button" type="submit" value="Add Car" placeholder="Add Car">Add Car</button>
-			{{! 
-				<input type="text" name="dc_img_url" placeholder="image">
-				<input type="text" name="Duplicate" placeholder="Duplicate">
-				<input type="text" name="FileName" placeholder="FileName">
-}}
 		</form>		
-				
-				
-				
-			
-			
-		
-
+		{{else}}
+		<h1 class="module-title">Log In To Record</h1>
+		{{/if}}
 	</article>
 </template>

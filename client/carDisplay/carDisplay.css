@@ -33,7 +33,6 @@ td, th{
 }
 .cell-name{
 	width: 55%;
-	text-transform: capitalize;
 }
 .cell-year{
 	width: 15%;

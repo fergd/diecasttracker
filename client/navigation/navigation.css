@@ -27,7 +27,7 @@
 nav.home-nav::after{
 	content: '';
 	width: 100%;
-	height: 60px;
+	height: 30px;
 	background: #2C82C9;
 	float: left;
 }

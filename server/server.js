@@ -17,25 +17,14 @@ CarList.allow({
     }
  });
 
+
+// Only publish tasks that are public or belong to the current user
 Meteor.publish("allCars", function () {
-	return CarList.find();
+	return CarList.find({
+      $or: [
+        { private: {$ne: true} },
+        { owner: this.userId }
+      ]
+    });
 });
 
-
-
-
-// function adminUser(userId) {
-//   var adminUser = Meteor.users.findOne({username:"admin"});
-//   return (userId && adminUser && userId === adminUser._id);
-// }
-// Lugares.allow({
-//   insert: function(userId, lugar){
-//     return adminUser(userId);
-//   },
-//   update: function(userId, lugares, fields, modifier){
-//     return adminUser(userId);
-//   },
-//   remove: function (userId, docs){
-//     return adminUser(userId);
-//   }
-// });
