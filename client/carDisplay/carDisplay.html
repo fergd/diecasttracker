@@ -11,6 +11,7 @@
 					<th>Num</th>
 					<th>Model</th>
 					<th>Year</th>
+					<th>Fav</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -23,6 +24,7 @@
 		 			<td class="cell-num">{{dc_toy_num}}</td>
 		 			<td class="cell-name">{{dc_model_name}}</td>
 		 			<td class="cell-year">{{dc_year}}</td>
+		 			<td class="cell-num"><input type="checkbox" class="cell-toggle-checked" checked="{{checked}}" /></td>
 		 		</tr>
 		 		{{/each}}
 		 		{{else}}
@@ -30,6 +32,7 @@
 		 			<td class="cell-num">CFH01</td>
 		 			<td class="cell-name">Corvette C7.R</td>
 		 			<td class="cell-year">2015</td>
+		 			<td><input type="checkbox" checked /></td>
 		 		</tr>
 		 		{{/if}}
 		 	</tbody>

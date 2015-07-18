@@ -2,10 +2,12 @@ Template.carDisplay.helpers({
   	'model': function () {
 		var currentUserId = Meteor.userId();	
 		return CarList.find({createdBy: currentUserId}, {sort: {createdAt: -1}});
-
 	}
 });
 Template.carDisplay.events({
+	'click .cell-toggle-checked': function(){
+		CarList.update(this._id, {$set: {checked: !this.checked}});
+	},
 	'click .remove': function(){	
 		var carID = this._id;
 		var currentUserId = Meteor.userId();	
