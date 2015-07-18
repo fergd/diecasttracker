@@ -1,5 +1,6 @@
 Template.carCount.helpers({
 	'count' : function(){
-		return CarList.find().count()
+		var currentUserId = Meteor.userId();
+		return CarList.find({createdBy: currentUserId}).count()
 	}	
 });

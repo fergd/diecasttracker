@@ -4,7 +4,6 @@ CarList.initEasySearch(['dc_toy_num', 'dc_model_name', 'dc_img_url'], {
     'limit' : 20,
     'use' : 'mongo-db'
 });
-
 CarList.allow({
     'insert': function (userId) {
       return true; 
@@ -16,8 +15,6 @@ CarList.allow({
     	return true; 
     }
  });
-
-
 // Only publish tasks that are public or belong to the current user
 Meteor.publish("allCars", function () {
 	return CarList.find({
@@ -27,4 +24,3 @@ Meteor.publish("allCars", function () {
       ]
     });
 });
-

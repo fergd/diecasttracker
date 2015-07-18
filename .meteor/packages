@@ -11,3 +11,4 @@ iron:router
 alanning:roles
 accounts-password
 accounts-ui
+accounts-github

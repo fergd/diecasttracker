@@ -1,15 +1,15 @@
 Template.carDisplay.helpers({
-	'model' : function(){
-		return CarList.find()
+  	'model': function () {
+		var currentUserId = Meteor.userId();	
+		return CarList.find({createdBy: currentUserId}, {sort: {createdAt: -1}});
+
 	}
 });
-
 Template.carDisplay.events({
-	'click .remove': function(){
-		var currentUserId = Meteor.userId();		
+	'click .remove': function(){	
 		var carID = this._id;
+		var currentUserId = Meteor.userId();	
 		Session.set('selectedCar', carID);
-		console.log(carID);
 
 		if (confirm('Do you really want to delete this car?')) {
 			var selectedCar = Session.get('selectedCar');
@@ -20,15 +20,3 @@ Template.carDisplay.events({
 		}
 	}
 });
-
-Template.carDisplay.helpers({
-  CarList: function () {
-    // Show newest tasks first
-    return CarList.find({}, {sort: {createdAt: -1}});
-  }
-});
-
-Template.carDisplay.users = function () {
-  return Meteor.users.find();
-  console.log(users);
-};
