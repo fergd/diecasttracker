@@ -21,7 +21,8 @@ Template.addCarForm.events({
 			dc_series_num: seriesNumVar,
 			dc_collector_num: collectorNumVar,
 			createdBy: currentUserId,
-			createdAt: new Date()     
+			createdAt: new Date(),
+			username: Meteor.user().username   
 		});
 		template.find("form").reset();
 	}
