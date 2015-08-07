@@ -2,6 +2,7 @@
 	<article class="page-component search-area">
 		<h1 class="module-title">Find A Car</h1>
 		<label class="visuallyhidden">Search by toy number or model name</label>
+		{{#if currentUser}}
 	    {{> esInput index="cars" placeholder="Search Toy Num or Model" }}
 	    <ul>
 	        {{#esEach index="cars"}}
@@ -17,5 +18,9 @@
 	    {{#ifEsIsSearching index="cars"}}
 	    <div class="loading">Loading...</div>
 	    {{/ifEsIsSearching}}
+	    {{else}}
+	    <input type="text" placeholder="Log in to search cars">
+	    {{/if}}
+
     </article>
 </template>

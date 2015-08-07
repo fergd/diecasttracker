@@ -1,6 +1,6 @@
 <template name="carDisplay">
-	<article class="page-component car-display-wrap">
-		<h1 class="module-title">{{#if currentUser}}{{currentUser.username}}'s {{else}}Example List of {{/if}}Cars</h1>
+	<article class="page-component car-display-wrap animated fade-in">
+		<h1 class="module-title">{{#if currentUser}}Your {{else}}Example List of {{/if}}Cars</h1>
 		
 		<table class="car-display-table">
 			<thead>
@@ -12,6 +12,7 @@
 					<th>Model</th>
 					<th>Year</th>
 					<th>Fav</th>
+					<th>Bin</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -25,6 +26,7 @@
 		 			<td class="cell-name">{{dc_model_name}}</td>
 		 			<td class="cell-year">{{dc_year}}</td>
 		 			<td class="cell-num"><input type="checkbox" class="cell-toggle-checked" checked="{{checked}}" /></td>
+		 			<td class="cell-year">{{dc_bin_num}}</td>
 		 		</tr>
 		 		{{/each}}
 		 		{{else}}

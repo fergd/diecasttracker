@@ -4,6 +4,7 @@
 	height: auto;
 	background-color: #FF646A;
 	position: relative;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.8);
 }
 .mcdb-outer-wrap::after{
 	content: '';
@@ -29,4 +30,10 @@
 	background-size: 100%;
 	background-position: bottom center;
 	/*background-attachment: fixed;*/
+}
+
+@media all and (min-width: 600px){
+	.mcdb-outer-wrap::after{
+		display: none;
+	}
 }

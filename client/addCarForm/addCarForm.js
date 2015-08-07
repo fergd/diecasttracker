@@ -11,6 +11,7 @@ Template.addCarForm.events({
 		var seriesNumVar = event.target.dc_series_num.value;
 		var collectorNumVar = event.target.dc_collector_num.value;
 		var favouriteVar = event.target.dc_favourite.value;
+		var binVar = event.target.dc_bin_num.value;
 		
 		CarList.insert({
 			dc_toy_num: toyNumVar,
@@ -20,6 +21,7 @@ Template.addCarForm.events({
 			dc_year: yearVar,
 			dc_series_num: seriesNumVar,
 			dc_collector_num: collectorNumVar,
+			dc_bin_num: binVar,
 			createdBy: currentUserId,
 			createdAt: new Date()     
 		});

@@ -1,19 +1,18 @@
 .add-car-wrap{
-	background: #DEC956;
+	/*background: #DEC956;*/
+	color: #f2f2f2;
 	width: 100%;
 	padding: 16px 0 0 0;
 	max-width: 460px;
 	min-width: 320px;
 	margin: 0 auto;
 }
-
 form.add-car-form{
 	margin: 16px 0 0 0;
 	padding: 0;
 }
-
 form.add-car-form fieldset{
-	background: #FF646A;
+	/*background: #FF646A;*/
 	border: none;
 	padding: 4px;
 }
@@ -31,6 +30,8 @@ form.add-car-form input{
 	display: block;
 	width: 45%;
 	margin: 16px auto 0 auto;
+	background: #FF646A;
+	color: white;
 }
 
 .dc-wrap{
@@ -40,6 +41,7 @@ form.add-car-form input{
 
 	.dc-wrap label{
 		display: block;
+		color: #3E4651;
 	}
 
 	.dc-wrap input{
@@ -69,4 +71,15 @@ form.add-car-form input{
 
 .thirds-width{
 	width: 31.333%;
+}
+
+@media all and (max-width: 600px){
+	form.add-car-form fieldset{
+		background: #FF646A;
+	}
+}
+@media all and (min-width: 600px){
+	.dc-wrap label{
+		color: #DEC956;
+	}
 }
