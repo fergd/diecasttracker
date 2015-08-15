@@ -1,3 +1,8 @@
 <template name="home">
-
+	{{#if currentUser}}
+	{{else}}
+	<article class="home-wrap">
+		<img src="/images/dt_homepageImage.jpg" alt="Diecast Collection">
+	</article>
+	{{/if}}
 </template>

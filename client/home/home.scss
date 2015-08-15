@@ -1,0 +1,12 @@
+.home-wrap{
+	max-width: 1366px;
+	overflow: hidden;
+	img{
+		max-width: 100%;
+	}
+}
+@media all and (max-width: 600px){
+	img{
+		display: none;
+	}
+}
