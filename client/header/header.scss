@@ -29,6 +29,9 @@ h1.site-heading{
 	padding: 16px 0;
 	font-size: 20px;
 	display: inline-block;
+	small{
+		font-size: 0.5em;
+	}
 }
 h1.site-heading a{
 	padding: 16px;
