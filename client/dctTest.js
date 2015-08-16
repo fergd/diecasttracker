@@ -10,7 +10,7 @@ if (Meteor.isClient) {
 	Meteor.startup(function() {
 
 	  WebFontConfig = {
-		google: { families: [ 'Montserrat::latin' ] }
+		google: { families: [ 'Droid+Sans::latin' ] }
 	  };
 	  (function() {
 		var wf = document.createElement('script');
