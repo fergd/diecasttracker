@@ -1,11 +1,20 @@
 .home-wrap{
-	max-width: 1366px;
-	overflow: hidden;
-	img{
-		display: inline-block;
-		max-width: 100%;
+	padding: 0 0 16px 0;
+	h1{
+		color: #2C82C9;
+		font-size: 5em;
+		margin: 21px 0 0 0;
+	}
+	p{
+		width: 60%;
+		color: #F2F2F2;
+		font-size: 33px;
+		padding: 7px 21px;
+		margin: 0;
+		border-left: 21px solid #DEC956;
 	}
 }
+
 @media all and (max-width: 600px){
 	article.home-wrap{
 		display: none;

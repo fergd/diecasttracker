@@ -5,8 +5,8 @@
     -moz-transition:    all 0.4s ease;
 }
 :focus{
-	background: white !important;
-	color: #3E4651 !important;
+	background: white rgba(0,0,0,0) !important;
+	// color: #3E4651 !important;
 	border: none !important;
 	outline: none !important;
 	box-shadow: none !important;

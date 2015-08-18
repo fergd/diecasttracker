@@ -17,13 +17,15 @@ form.add-car-form fieldset{
 	padding: 4px;
 }
 
-form.add-car-form input{
-	border: none;
-	background: #FFF;
-	color: #3E4651;
-	font-size: 16px;
-	display: inline-block;
-	padding: 12px;
+form.add-car-form {
+	input, textarea{
+		border: none;
+		background: #FFF;
+		color: #3E4651;
+		font-size: 16px;
+		display: inline-block;
+		padding: 12px;
+	}
 }
 
 .add-car-form button.button{
@@ -44,7 +46,8 @@ form.add-car-form input{
 		color: #3E4651;
 	}
 
-	.dc-wrap input{
+	.dc-wrap input,
+	.dc-wrap textarea{
 		display: block;
 		width: 100%;
 	}
