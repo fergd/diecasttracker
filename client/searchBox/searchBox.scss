@@ -57,4 +57,9 @@ article.search-area .loading{
 	article.search-area input[type="text"]{
 		width: 400px;
 	}
+	.page-component.search-area{
+		ul{
+			width: 400px;
+		}
+	}
 }

@@ -8,4 +8,3 @@ Router.map(function(){
 	this.route('searchBox',{path:'/find'});
 	this.route('carPage',{path:'/car'});
 });
-

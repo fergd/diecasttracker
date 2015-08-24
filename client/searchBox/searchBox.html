@@ -6,7 +6,7 @@
 	    {{> esInput index="cars" placeholder="Search Toy Num or Model" }}
 	    <ul>
 	        {{#esEach index="cars"}}
-	            <li><span class="mono">{{dc_toy_num}}&nbsp;|&nbsp;</span>{{dc_model_name}}</li>
+	            <li class="foundCar"><span class="mono">{{dc_toy_num}}&nbsp;|&nbsp;</span>{{dc_model_name}}</li>
 	        {{/esEach}}
 	    </ul>
 	    {{> esLoadMoreButton index="cars"}}

@@ -4,9 +4,6 @@ if (Meteor.isClient) {
 		passwordSignupFields: "USERNAME_ONLY"
 	});
 
-	// async loader for fonts
-	// https://github.com/typekit/webfontloader
-
 	Meteor.startup(function() {
 
 	  WebFontConfig = {
@@ -22,6 +19,5 @@ if (Meteor.isClient) {
 		s.parentNode.insertBefore(wf, s);
 		console.log("async fonts loaded", WebFontConfig);
 	  })();
-
-	})
+	});
 }

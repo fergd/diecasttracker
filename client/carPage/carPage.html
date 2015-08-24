@@ -1,6 +1,20 @@
 <template name="carPage">
 <div class="module carpage">
-	<h1>Hi and welcome to the car page, bitch.</h1>
-	
-	</div>
+	<h1>{{dc_model_name}}</h1>
+	<h2>(This route is under active development)</h2>
+	<img src="{{dc_img_url}}" alt="{{dc_model_name}}" />
+	<ul>
+		<li>{{dc_toy_num}}</li>
+		<li>{{dc_year}}</li>
+		<li>{{dc_series}}</li>
+		<li>{{dc_color}}</li>
+		<li>{{dc_series_num}}</li>
+		<li>{{dc_collector_num}}</li>
+		<li>{{dc_bin_num}}</li>
+		<li>{{dc_notes}}</li>
+		<li>{{dc_duplicate}}</li>
+		<li>{{dc_favourite}}</li>
+		<li><input type="checkbox" class="cell-toggle-checked" checked="{{checked}}" /></li>
+ 	</ul>
+</div>
 </template>

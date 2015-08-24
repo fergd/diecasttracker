@@ -1,44 +1,44 @@
 <template name="carDisplay">
-	<article class="page-component car-display-wrap animated fade-in">
-		<h1 class="module-title">{{#if currentUser}}Your {{else}}Example List of {{/if}}Cars</h1>
-		
-		<table class="car-display-table">
-			<thead>
-				<tr>
-					{{#if currentUser}}
-					<th class="visuallyhidden">Delete</th>
-					{{/if}}
-					<th>Num</th>
-					<th>Model</th>
-					<th>Year</th>
-					<th>Fav</th>
-					<th>Bin</th>
-				</tr>
-			</thead>
-			<tbody>
-				{{#if currentUser}}
-		 		{{#each model}}
-		 		<tr class="carRow">
-		 			<td class="cell-del">
-		 				<button type="button" class="remove">Delete Car</button>
-		 			</td>
-		 			<td class="cell-num">{{dc_toy_num}}</td>
-		 			<td class="cell-name">{{dc_model_name}}</td>
-		 			<td class="cell-year">{{dc_year}}</td>
-		 			<td class="cell-num"><input type="checkbox" class="cell-toggle-checked" checked="{{checked}}" /></td>
-		 			<td class="cell-year">{{dc_bin_num}}</td>
-		 		</tr>
-		 		{{/each}}
-		 		{{else}}
-		 		<tr class="carRow">
-		 			<td class="cell-num">CFH01</td>
-		 			<td class="cell-name">Corvette C7.R</td>
-		 			<td class="cell-year">2015</td>
-		 			<td><input type="checkbox" checked /></td>
-		 		</tr>
-		 		{{/if}}
-		 	</tbody>
-		 </table>
- 	</article>
+    <article class="page-component car-display-wrap animated fade-in">
+        <h1 class="module-title">{{#if currentUser}}Your {{else}}Example List of {{/if}}Cars</h1>
+        <table class="car-display-table">
+            <thead>
+                <tr>
+                    {{#if currentUser}}
+                    <th class="visuallyhidden">Delete</th>
+                    {{/if}}
+                    <th>Num</th>
+                    <th>Model</th>
+<!--                     <th>Year</th>
+ -->                    <th>Bin</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{#if currentUser}} 
+                {{#each model}} 
+                {{>carRow}} 
+                {{/each}} 
+                {{else}}
+                <tr class="carRow">
+                    <td class="cell-num">CFH01</td>
+                    <td class="cell-name">Corvette C7.R</td>
+<!--                     <td class="cell-year">2015</td>
+ -->                    <td>1A</td>
+                </tr>
+                {{/if}}
+            </tbody>
+        </table>
+    </article>
 </template>
-
+<template name="carRow">
+    <tr class="carRow foundCar">
+        <td class="cell-del">
+            <button type="button" class="remove">Delete Car</button>
+        </td>
+        <td class="cell-num">{{dc_toy_num}}</td>
+        <td class="cell-name">{{dc_model_name}}</td>
+<!--         <td class="cell-year">{{dc_year}}</td>
+ -->        <td class="cell-del">{{dc_bin_num}}</td>
+        <td class="cell-del"><a href="{{pathFor route="singleCarPage"}}" class="view-button">View</a></td>
+    </tr>
+</template>

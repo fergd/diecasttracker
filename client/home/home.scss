@@ -13,10 +13,13 @@
 		margin: 0;
 		border-left: 21px solid #DEC956;
 	}
+	img{
+		max-width: 100%;
+	}
 }
 
-@media all and (max-width: 600px){
+/*@media all and (max-width: 600px){
 	article.home-wrap{
 		display: none;
 	}
-}
+}*/
