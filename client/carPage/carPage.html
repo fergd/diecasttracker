@@ -1,8 +1,8 @@
 <template name="carPage">
 <div class="module carpage">
 	<h1>{{dc_model_name}}</h1>
-	<h2>(This route is under active development)</h2>
 	<img src="{{dc_img_url}}" alt="{{dc_model_name}}" />
+	{{#if currentUser}} 
 	<ul>
 		<li>{{dc_toy_num}}</li>
 		<li>{{dc_year}}</li>
@@ -16,5 +16,8 @@
 		<li>{{dc_favourite}}</li>
 		<li><input type="checkbox" class="cell-toggle-checked" checked="{{checked}}" /></li>
  	</ul>
+ 	{{else}}
+ 	<h2>Log in to see your individual cars.</h2>
+ 	{{/if}}
 </div>
 </template>
