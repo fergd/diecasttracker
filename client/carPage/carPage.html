@@ -3,19 +3,18 @@
 	<h1>{{dc_model_name}}</h1>
 	<img src="{{dc_img_url}}" alt="{{dc_model_name}}" />
 	{{#if currentUser}} 
-	<ul>
-		<li>{{dc_toy_num}}</li>
-		<li>{{dc_year}}</li>
-		<li>{{dc_series}}</li>
-		<li>{{dc_color}}</li>
-		<li>{{dc_series_num}}</li>
-		<li>{{dc_collector_num}}</li>
-		<li>{{dc_bin_num}}</li>
-		<li>{{dc_notes}}</li>
-		<li>{{dc_duplicate}}</li>
-		<li>{{dc_favourite}}</li>
-		<li><input type="checkbox" class="cell-toggle-checked" checked="{{checked}}" /></li>
- 	</ul>
+		<div>{{dc_toy_num}}</div>
+		<div>{{dc_year}}</div>
+		<div>{{dc_series}}</div>
+		<div>{{dc_color}}</div>
+		<div>{{dc_series_num}}</div>
+		<div>{{dc_collector_num}}</div>
+		<div>{{dc_bin_num}}</div>
+		<div>{{dc_notes}}</div>
+		<div>{{dc_duplicate}}</div>
+		<div>{{dc_favourite}}</div>
+		<input type="checkbox" class="cell-toggle-checked" checked="{{checked}}" />
+ 
  	{{else}}
  	<h2>Log in to see your individual cars.</h2>
  	{{/if}}
