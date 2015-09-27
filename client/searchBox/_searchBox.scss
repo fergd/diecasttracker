@@ -1,6 +1,6 @@
 article.search-area{
-	/*background: #DEC956;*/
-	color: #F2F2F2;
+	/*background: $dijon;*/
+	color: $cement;
 	width: 100%;
 	padding: 16px 16px 100px 16px;
 	min-height: 200px;
@@ -8,8 +8,8 @@ article.search-area{
 
 article.search-area input[type="text"]{
 	border: none;
-	background: #FF646A;
-	color: #3E4651;
+	background: $reddawn;
+	color: $bluestone;
 	font-size: 16px;
 	width: 100%;
 	margin: 16px auto 0 auto;
@@ -24,7 +24,7 @@ article.search-area input::-webkit-input-placeholder{
 	color: white;
 }
 article.search-area input:focus{
-	color: #3E4651 !important;
+	color: $bluestone !important;
 }
 
 article.search-area ul,
@@ -34,7 +34,7 @@ div.loading{
 	margin: 0 auto;
 	display: block;
 	padding: 0;
-	background: #FF646A;
+	background: $reddawn;
 }
 
 	article.search-area ul li{

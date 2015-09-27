@@ -1,0 +1,46 @@
+.carpage{
+	position: relative;
+	padding: 0 0 75px 0;
+
+	img{
+		max-width: 100%;
+		margin: 0 auto;
+	}
+}
+.car-info{
+	margin: 0 auto;
+	padding: 7px;
+	width: 100%;
+	z-index: 1;
+	color: $blanco;
+}
+.carpage-heading{
+	color: $envygreen;
+}
+.carpage-table{
+	tbody tr td:nth-child(even){
+		font-size: 19px;
+		color: $envygreen;
+	}
+}
+@media all and (min-width: 600px){
+	.carpage-heading{
+		position: absolute;
+		padding: 15px;
+		left: 0;
+		top: 2%;
+		color: $blanco;
+		background: linear-gradient(
+			to right,
+			rgba(62,70,81, 1) 25%,
+			rgba(62,70,81, 0.7)
+			);
+	}
+	.car-info{
+		max-width: 80%;
+	}
+}
+
+@media all and (min-width: 768px){
+
+}

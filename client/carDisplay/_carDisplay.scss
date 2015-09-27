@@ -1,6 +1,6 @@
 .car-display-wrap{
-	/*background: #DEC956;*/
-	color: #f2f2f2;
+	/*background: $dijon;*/
+	color: $cement;
 	width: 100%;
 	padding: 16px 0 100px 0;
 	max-width: 960px;
@@ -30,6 +30,17 @@ td, th{
 }
 .cell-name{
 	width: 55%;
+	&:hover{
+		background-color: $envygreen !important;
+	}
+	a{
+		text-decoration: none;
+		color: $cement;
+
+		&:hover{
+			color: $bluestone;
+		}
+	}
 }
 .cell-year{
 	width: 15%;
@@ -39,7 +50,7 @@ button.remove{
 	height: 24px;
 	display: block;
 	margin: 0 auto;
-	background: #FF646A;
+	background: none;
 	border: none;
 	text-indent: 1000%;
 	overflow: hidden;
@@ -48,24 +59,21 @@ button.remove{
 	position: relative;
 }
 button.remove:before{
-	content: 'X';
-	font-family: "proxima-nova", sans-serif;
-	font-weight: 900;
-	color: white;
+	content: '';
+	@extend .icon-delete;
 	display: block;
 	position: absolute;
+	top: 50%;
 	left: 50%;
-	transform: translate(-50%,0);
-	-webkit-transform: translate(-50%,0);
+	transform: translate(-50%,-50%);
+	-webkit-transform: translate(-50%,-50%);
 	width: 24px;
 	height: 24px;
-	text-indent: 0;
-	
 }
 .view-button{
-	background-color:  #27c667;
+	background-color:  $envygreen;
 	padding: 4px;
-	color: #3E4651;
+	color: $bluestone;
 	font-weight: bold;
 	font-size: 16px;
 	text-decoration: none;

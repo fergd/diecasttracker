@@ -4,7 +4,7 @@
 	margin: 0 auto;
 	height: 40%;
 	overflow: auto;
-	background: #FF646A;
+	background: $reddawn;
 }
 
 .home-nav a{
@@ -21,14 +21,14 @@
 }
 
 .home-nav a:last-child{
-	background: #2C82C9;
+	background: $flatblue;
 }
 
 nav.home-nav::after{
 	content: '';
 	width: 100%;
 	height: 20px;
-	background: #2C82C9;
+	background: $flatblue;
 	float: left;
 }
 
@@ -65,7 +65,7 @@ a.button-magnify::after{
 }
 
 .home-nav.active a:last-child{
-	background: #2C82C9;
+	background: $flatblue;
 }
 
 @media all and (min-width: 600px){
