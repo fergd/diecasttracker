@@ -32,8 +32,10 @@ form.add-car-form {
 	display: block;
 	width: 45%;
 	margin: 16px auto 0 auto;
-	background: $reddawn;
+	background: $green-gradient;
 	color: white;
+	@include button-shadow-on-color(rgba(0,0,0,.5));
+	font-family: 'Droid Sans', sans-serif;
 }
 
 .dc-wrap{
@@ -86,3 +88,7 @@ form.add-car-form {
 		color: $dijon;
 	}
 }
+
+
+
+

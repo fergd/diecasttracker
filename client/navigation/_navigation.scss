@@ -4,7 +4,8 @@
 	margin: 0 auto;
 	height: 40%;
 	overflow: auto;
-	background: $reddawn;
+	background: $red-gradient;
+	font-weight: bold;
 }
 
 .home-nav a{
@@ -21,7 +22,7 @@
 }
 
 .home-nav a:last-child{
-	background: $flatblue;
+	background: $blue-gradient;
 }
 
 nav.home-nav::after{

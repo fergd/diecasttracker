@@ -30,7 +30,7 @@ article.search-area input:focus{
 article.search-area ul,
 div.no-results,
 div.loading{
-	width: 100%;
+	max-width: 400px;
 	margin: 0 auto;
 	display: block;
 	padding: 0;
@@ -42,6 +42,12 @@ div.loading{
 		padding: 12px;
 		font-size: 16px;
 		border-bottom: 1px solid #E55A5F;
+
+		a{
+			text-decoration: none;
+			color: inherit;
+			display: block;
+		}
 	}
 	article.search-area ul li span.mono{
 		font-family: monospace;
