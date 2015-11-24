@@ -1,6 +1,6 @@
 .carpage{
 	position: relative;
-	padding: 0 0 75px 0;
+	padding: 0;
 
 	img{
 		max-width: 100%;
@@ -10,38 +10,87 @@
 }
 .car-info{
 	margin: 0 auto;
-	padding: 7px;
 	width: 100%;
 	z-index: 1;
 	color: $blanco;
 }
 .carpage-heading{
+	font-family: $headline-font;
 	color: $envygreen;
 }
-.carpage-table{
-	tbody tr td:nth-child(even){
-		font-size: 19px;
-		color: $envygreen;
+.carpage-list-blocks{
+	width: 100%;
+	display: block;
+	overflow: hidden;
+	height: auto;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+
+	.quarter-block,
+	.half-block,
+	.three-quarter-block{
+		padding: 21px 21px 5px 21px;
+		display: block;
+		float: left;
+		font-weight: 600;
+		font-size: 28px;
+		height: 125px;
+		color: $cement;
+
+		h3{
+			font-family: $headline-font;
+			font-size: 16px;
+			color: $dijon;
+		}
+	}
+	.quarter-block{
+		width: 25%;
+	}
+	.half-block{
+		width: 50%;
+	}
+	.three-quarter-block{
+		width: 75%;
+	}
+
+	li:nth-child(5n-5){
+		background-color: lighten($bluestone, 10%);
+	}
+	li:nth-child(2n-2){
+		background-color: lighten($bluestone, 5%);
+	}
+	li:nth-child(3n-2){
+		background-color: darken($bluestone, 5%);
 	}
 }
 @media all and (min-width: 600px){
 	.carpage-heading{
 		position: absolute;
-		padding: 15px;
+		padding: 16px 32px;
 		left: 0;
-		top: 2%;
-		color: $blanco;
-		background: linear-gradient(
-			to right,
-			rgba(62,70,81, 1) 25%,
-			rgba(62,70,81, 0.7)
-			);
-	}
-	.car-info{
-		max-width: 80%;
+		top: 0%;
+		width: 100%;
+		text-align: center;
+		font-size: 40px;
+		background: rgba(51,58,67, 0.9);
 	}
 }
 
-@media all and (min-width: 768px){
-
+@media all and (max-width: 470px){
+	.car-info{
+		padding-bottom: 70px;
+	}
+	.carpage-heading{
+		padding: 7px 12px;
+	}
+	.carpage-list-blocks{
+		.quarter-block,
+		.half-block,
+		.three-quarter-block{
+			width: 100%;
+			height: auto;
+			padding: 7px 12px;
+		}
+	}
 }

@@ -6,6 +6,10 @@
 	max-width: 460px;
 	min-width: 320px;
 	margin: 0 auto;
+
+	.module-title{
+		color: $reddawn;
+	}
 }
 form.add-car-form{
 	margin: 16px 0 0 0;
@@ -28,15 +32,15 @@ form.add-car-form {
 	}
 }
 
-.add-car-form button.button{
-	display: block;
-	width: 45%;
-	margin: 16px auto 0 auto;
-	background: $green-gradient;
-	color: white;
-	@include button-shadow-on-color(rgba(0,0,0,.5));
-	font-family: 'Droid Sans', sans-serif;
-}
+// .add-car-form button.button{
+// 	display: block;
+// 	width: 45%;
+// 	margin: 16px auto 0 auto;
+// 	background: $green-gradient;
+// 	color: white;
+// 	@include button-shadow-on-color(rgba(0,0,0,.5));
+// 	font-family: $headline-font;
+// }
 
 .dc-wrap{
 	float: left;
@@ -45,7 +49,7 @@ form.add-car-form {
 
 	.dc-wrap label{
 		display: block;
-		color: $bluestone;
+		// color: $bluestone;
 	}
 
 	.dc-wrap input,
@@ -58,6 +62,7 @@ form.add-car-form {
 	margin-top: 16px; 
 	width: 100%;
 	text-align: center;
+	color: $reddawn;
 }
 
 .full-width{ width: 98%; }
@@ -77,18 +82,3 @@ form.add-car-form {
 .thirds-width{
 	width: 31.333%;
 }
-
-@media all and (max-width: 600px){
-	form.add-car-form fieldset{
-		background: $reddawn;
-	}
-}
-@media all and (min-width: 600px){
-	.dc-wrap label{
-		color: $dijon;
-	}
-}
-
-
-
-

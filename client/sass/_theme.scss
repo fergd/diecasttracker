@@ -18,13 +18,13 @@ $cement-rgb:		rgb(242,241,239);
 $blanco-rgb:		rgb(236,240,241);
 
 $red-gradient: linear-gradient(to top, $reddawn, #ff5258);
-$blue-gradient: linear-gradient(to top, $flatblue, #175D9A);
+$blue-gradient: linear-gradient(to top, $flatblue, #2875B5);
 $blue-gradient-tobottom: linear-gradient(to bottom, $flatblue, #2672b0);
-$green-gradient: linear-gradient(to bottom, $envygreen, #20a254);
+$green-gradient: linear-gradient(to bottom, $envygreen, #20a254);	
 
 @mixin button-shadow-on-color($rgba-value){
-	-webkit-box-shadow: 0 3px 5px 0 $rgba-value;
-	box-shadow: 0 3px 5px 0 $rgba-value;
+	-webkit-box-shadow: 0px 9px 30px 0px $rgba-value;
+	box-shadow: 0px 9px 30px 0px $rgba-value;
 }
 
 

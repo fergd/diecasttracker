@@ -1,0 +1,19 @@
+button.button{
+	border: none;
+	outline: none;
+}
+
+.button{
+	font: 16px/1.2 $button-font;
+	font-weight: 600;
+	background: $blue-gradient-tobottom;
+	border: 1px solid darken($flatblue, 15%);
+	color: $blanco;
+	padding: 1em 2em;
+	text-decoration: none;
+	border-radius: 5px;
+	display: inline-block;
+	cursor: pointer;
+	@include button-shadow-on-color(rgba(88,34,36,.5));
+}
+

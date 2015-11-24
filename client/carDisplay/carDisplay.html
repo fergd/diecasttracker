@@ -22,8 +22,7 @@
                 <tr class="carRow">
                     <td class="cell-num">CFH01</td>
                     <td class="cell-name">Corvette C7.R</td>
-<!--                     <td class="cell-year">2015</td>
- -->                    <td>1A</td>
+                    <td>1A</td>
                 </tr>
                 {{/if}}
             </tbody>
@@ -35,10 +34,24 @@
         <td class="cell-del">
             <button type="button" class="remove">Delete Car</button>
         </td>
-        <td class="cell-num">{{dc_toy_num}}</td>
+        <td class="cell-num"><a href="{{pathFor route="singleCarPage"}}#carpage" target="_self">{{dc_toy_num}}</a></td>
         <td class="cell-name"><a href="{{pathFor route="singleCarPage"}}#carpage" target="_self">{{dc_model_name}}</a></td>
 <!--         <td class="cell-year">{{dc_year}}</td>
- -->        <td class="cell-del">{{dc_bin_num}}</td>
+ -->        <td class="cell-del"><a href="{{pathFor route="singleCarPage"}}#carpage" target="_self">{{dc_bin_num}}</a></td>
         <!-- <td class="cell-del"><a href="{{pathFor route="singleCarPage"}}" class="view-button">View</a></td> -->
     </tr>
+</template>
+<template name="carImages">
+<!--EXample
+    {{#if currentUser}} 
+
+    <aside>
+    {{#each model}} 
+        {{>carImages}} 
+        {{/each}} 
+    </aside>
+    {{/if}}
+-->
+
+    <a href="{{pathFor route="singleCarPage"}}#carpage" ><img src="{{dc_img_url}}" alt="{{dc_model_name}}" /></a>
 </template>

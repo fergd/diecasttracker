@@ -4,51 +4,17 @@
 	{{#if currentUser}} 
 	<h1 class="carpage-heading">{{dc_model_name}}</h1>
 	<div class="car-info">
-		<table class="carpage-table">
-            <thead>
-                <tr>
-                    <th class="visuallyhidden">Car Information for {{dc_model_name}}</th>
-                </tr>
-            </thead>
-            <tbody>
-            	<tr>
-            		<td>Toy Number</td>
-            		<td>{{dc_toy_num}}</td>
-            	</tr>
-            	<tr>
-            		<td>Year Sold</td>
-            		<td>{{dc_year}}</td>
-            	</tr>
-            	<tr>
-            		<td>Series Title</td>
-            		<td>{{dc_series}}</td>
-            	</tr>
-            	<tr>
-            		<td>Series Number</td>
-            		<td>{{dc_series_num}}</td>
-            	</tr>
-            	<tr>
-            		<td>Primary Color</td>
-            		<td>{{dc_color}}</td>
-            	</tr>
-            	<tr>
-            		<td>Collector Number</td>
-            		<td>{{dc_collector_num}}</td>
-            	</tr>
-            	<tr>
-            		<td>Storage Location</td>
-            		<td>{{dc_bin_num}}</td>
-            	</tr>
-            	<tr>
-            		<td>Notes</td>
-            		<td>{{dc_notes}}</td>
-            	</tr>
-            	<tr>
-            		<td>Favorite</td>
-            		<td>{{dc_favourite}}</td>
-            	</tr>
-            </tbody>
-        </table>
+            <ul class='carpage-list-blocks'>
+                  <li class="quarter-block"><h3>Toy #</h3>{{dc_toy_num}}</li>
+                  <li class="quarter-block"><h3>Year Sold</h3>{{dc_year}}</li>
+                  <li class="quarter-block"><h3>Series #</h3>{{dc_series_num}}</li>
+                  <li class="quarter-block"><h3>Bin</h3>{{dc_bin_num}}</li>
+                  <li class="three-quarter-block"><h3>Series</h3>{{dc_series}}</li>
+                  <li class="quarter-block"><h3>Collector #</h3>{{dc_collector_num}}</li>
+                  <li class="quarter-block"><h3>Primary Color</h3>{{dc_color}}</li>
+                  <li class="half-block"><h3>Notes</h3>{{dc_notes}}</li>
+                  <li class="quarter-block"><h3>Favourite</h3>{{dc_favourite}}</li>
+            </ul>
  	</div>
  	{{else}}
  	<h2>Log in to see your individual cars.</h2>

@@ -1,5 +1,6 @@
 header{
-	background: $dijon;
+	background: $bluestone;
+	color: $dijon;
 	width: 100%;
 	height: 60px;
 	overflow: visible;
@@ -10,7 +11,7 @@ header::after{
 	height: 0;
 	border-style: solid;
 	border-width: 40px 0px 0 160px;
-	border-color: $dijon transparent transparent transparent;
+	border-color: $bluestone transparent transparent transparent;
 	top: 60px;
 	right: 0;
 	position: absolute;
@@ -19,10 +20,10 @@ header::after{
 
 header,
 header a{
-	color: $bluestone;	
+	color: $dijon;	
 }
 h1.site-heading{
-	font-style: italic;
+	font-family: $headline-font;
 	float: left;
 	padding: 0 0 0 16px;
 	margin: 0;
@@ -41,5 +42,8 @@ h1.site-heading a{
 	header::after{
 		content: '';
 		display: none;
+	}
+	h1.site-heading{
+		font-size: 28px;
 	}
 }

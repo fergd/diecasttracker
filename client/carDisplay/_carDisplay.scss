@@ -21,7 +21,26 @@ td, th{
 .car-display-table td{
 	text-transform: capitalize;
 }
-
+.carRow{
+	td {
+		a{
+			text-decoration: none;
+			color: $cement;
+			height: 100%;
+			width: 100%;
+			display: block;
+		}
+	}
+	&:hover{
+		td{
+			background-color: $envygreen !important;
+			cursor: pointer;
+			a{
+				color: $bluestone;
+			}
+		}
+	}
+}
 .cell-del{
 	width: 10%;
 }
@@ -30,20 +49,7 @@ td, th{
 }
 .cell-name{
 	width: 55%;
-	&:hover{
-		background-color: $envygreen !important;
-	}
-	a{
-		text-decoration: none;
-		color: $cement;
-		height: 100%;
-		width: 100%;
-		display: block;
-
-		&:hover{
-			color: $bluestone;
-		}
-	}
+	
 }
 .cell-year{
 	width: 15%;

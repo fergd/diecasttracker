@@ -1,5 +1,7 @@
 @import 
+"sass/typography",
 "sass/theme",
+"sass/buttons",
 "sass/icons"
 ;
 
@@ -21,14 +23,7 @@
 * {
 	box-sizing: border-box;
 	-webkit-transition: all 0.4s ease;
-    -moz-transition:    all 0.4s ease;
-}
-:focus{
-	background: white rgba(0,0,0,0) !important;
-	// color: $bluestone !important;
-	border: none !important;
-	outline: none !important;
-	box-shadow: none !important;
+  -webkit-font-smoothing: antialiased;
 }
 ::selection {
     background: #b3d4fc;
@@ -84,18 +79,17 @@
 }
 
 html{
-	font-family: 'Droid Sans', sans-serif !important;
+	font-family: $body-font, sans-serif !important;
 	font-size: 100%;
 	font-weight: 400;
 	font-size: 100%;
 	line-height: 1.4;
-	-webkit-font-smoothing: antialiased;
 }
 
 html, body{
 	padding: 0;
 	margin: 0;
-	color: $bluestone;
+	color: $cement;
 	background-color: $bluestone;
 	height: 100%;
 }
@@ -105,7 +99,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .module-title{
-	font-style: italic;
+	font-family: $headline-font;
 	text-align: center;
 }
 
@@ -117,24 +111,6 @@ h1, h2, h3, h4, h5, h6{
 }
 .module.centered{
 	text-align: center;
-}
-
-.button{
-	background: $blue-gradient-tobottom;
-	color: $blanco;
-	padding: 1em 2em;
-	font-weight: bold;
-	font-size: 16px;
-	text-decoration: none;
-	border-radius: 5px;
-	display: inline-block;
-	cursor: pointer;
-	@include button-shadow-on-color(rgba(88,34,36,.5));
-}
-
-button.button{
-	border: none;
-	outline: none;
 }
 
 main{

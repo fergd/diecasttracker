@@ -7,7 +7,7 @@ if (Meteor.isClient) {
 	Meteor.startup(function() {
 
 	  WebFontConfig = {
-		google: { families: [ 'Droid+Sans::latin' ] }
+		google: { families: [ 'Source+Sans+Pro:400,600:latin', 'Open+Sans:800italic:latin' ] }
 	  };
 	  (function() {
 		var wf = document.createElement('script');
