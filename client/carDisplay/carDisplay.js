@@ -1,7 +1,7 @@
 Template.carDisplay.helpers({
   	'model': function () {
 		var currentUserId = Meteor.userId();	
-		return CarList.find({createdBy: currentUserId}, {sort: {createdAt: -1}});
+		return CarList.find({createdBy: currentUserId}, {sort: {dc_date_added: -1}});
 	}
 });
 Template.carDisplay.events({
