@@ -6,3 +6,4 @@ The code here is my experimental code and not ready for shipping. As I build thi
 View the app's progress at [herokuapp](http://diecasttracker.herokuapp.com)
 
 Follow my progress diary on my [website](http://christanfergus.com/diary-of-a-meteor-app-projects/).
+
