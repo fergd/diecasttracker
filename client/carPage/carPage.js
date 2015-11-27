@@ -6,3 +6,11 @@ Router.route('/car/:_id', {
 	    return CarList.findOne({_id: currentCar});
     }
 });
+
+Template.carPage.onRendered = function () {
+	console.log('during');
+	this.$( '.toy-info span:empty' ).each( function () {
+	  	$( this ).closest( '.toy-info' ).remove();
+	});
+	console.log('after');
+}
