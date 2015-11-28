@@ -6,3 +6,9 @@ Router.route('/car/:_id', {
 	    return CarList.findOne({_id: currentCar});
     }
 });
+Template.carPage.rendered = function () {
+	//Seek out any empty data info and remove the parent list item
+	$('[data-toy-data]:empty').each(function() {
+		$(this).closest('.toy-info').remove();
+	});
+};
