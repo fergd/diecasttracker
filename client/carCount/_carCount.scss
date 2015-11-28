@@ -3,14 +3,17 @@ span.car-count{
 	font-weight: bold;
 	font-style: italic;
 	float: right;
-	/*padding: 16px;*/
 	background-color: $bluestone;
 	border-radius: 100%;
 	color: $reddawn;
 	width: 60px;
   	text-align: center;
-  	margin-right: 8px;
+  	margin: 0 8px 0 0;
   	line-height: 60px;
   	vertical-align: middle;
   	box-shadow: inset 0 0 8px 0 #1f2328;
+
+  	@media screen and (min-width: 600px){
+  		margin: 5px 8px 0 0;
+  	}
 }
