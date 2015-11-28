@@ -4,9 +4,12 @@
 
 	img{
 		max-width: 100%;
-		min-height: 400px;
 		margin: 0 auto;
 		text-align: center;
+
+		@media screen and (min-width: 600px){
+			min-height: 330px;
+		}
 	}
 }
 .car-info{
