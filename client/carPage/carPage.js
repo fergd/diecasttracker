@@ -8,7 +8,11 @@ Router.route('/car/:_id', {
 });
 Template.carPage.rendered = function () {
 	//Seek out any empty data info and remove the parent list item
+	console.log('before empty func');
 	$('[data-toy-data]:empty').each(function() {
+		console.log('before remove');
 		$(this).closest('.toy-info').remove();
+		console.log('after remove');
 	});
+	console.log('after func');
 };
