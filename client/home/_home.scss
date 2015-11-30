@@ -1,21 +1,60 @@
 .home-wrap{
-	padding: 10px 7px 30px 7px;
+	padding: 0 5px;
 	position: relative;
+    margin-bottom: 60px;
+    overflow: hidden;
+    
+    section{
+        float: left;
+        width: 50%;
 
-    @media screen and (min-width: 601px){
-            padding: 30px 7px;
-            h1 { font-size: 3.5em; }
+        &:first-of-type{
+            padding: 0 21px;
+        }
+        &:last-of-type{
+            padding-top: 2em;
+        }
     }
 
 	h1{
 		color: rgba(255,255,255, 0.9);
 		font-size: 2.5em;
+        span{
+            //because the image has some 3d transforming going on, z-index keeps the text above it
+            z-index: 1;
+        }
 	}
 
     $colors: $reddawn, $flatblue, $envygreen, $dijon;
     @for $i from 1 through length($colors) {
         b:nth-child(#{length($colors)}n+#{$i}) {
             color: nth($colors, $i)
+        }
+    }
+    @media screen and (min-width: 601px){
+            padding: 30px 7px 0 7px;
+            margin-bottom: 0;
+
+            h1 { 
+                font-size: 3.5em; 
+            }
+
+            section:last-of-type{
+                padding-top: 0;
+            }
+    }
+
+    img{ 
+        display: block;
+        margin: 0 auto;
+        max-width: 60%;
+
+        @media screen and (max-width: 500px){
+            -webkit-transform: perspective(800px) rotateX(10deg) rotateY(-20deg) rotateZ(0deg);
+            -moz-transform: perspective(800px) rotateX(10deg) rotateY(-20deg) rotateZ(0deg);
+            -o-transform: perspective(800px) rotateX(10deg) rotateY(-20deg) rotateZ(0deg);
+            -ms-transform: perspective(800px) rotateX(10deg) rotateY(-20deg) rotateZ(0deg);
+            transform: perspective(800px) rotateX(10deg) rotateY(-20deg) rotateZ(0deg);
         }
     }
 
@@ -30,6 +69,7 @@
         font-size: 1.5em;
         left: 0;
         top: 0;
+        text-shadow: 0 0 45px rgba(darken($bluestone-rgb, 30%), 0.7);
     }
     .cd-words-wrapper b.is-visible {
         position: relative;
