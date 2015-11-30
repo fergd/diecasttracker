@@ -4,16 +4,17 @@ Router.route('/car/:_id', {
 	data: function() {
 		var currentCar = this.params._id;
 		return CarList.findOne({_id: currentCar});
-	},
-	onAfterAction: function () {
-		$('[data-toy-data]').each(function() {
-			if ( '' === $.trim( $(this).text() ) ) {
-		  		$(this).closest('li').remove();
-			} 
-		});
-
-		$('li').fadeOut('slow');
 	}
+	// ,
+	// onAfterAction: function () {
+	// 	$('[data-toy-data]').each(function() {
+	// 		if ( '' === $.trim( $(this).text() ) ) {
+	// 	  		$(this).closest('li').remove();
+	// 		} 
+	// 	});
+
+
+	// }
 
 //		$('[data-toy-data]:empty').each(function() {
 // 			console.log('before remove');
@@ -22,3 +23,11 @@ Router.route('/car/:_id', {
 // 		});
 
 });
+
+Template.carPage.rendered = function () {
+	$('[data-toy-data]').each(function() {
+		if ( '' === $.trim( $(this).text() ) ) {
+	  		$(this).closest('li').remove();
+		} 
+	});
+};

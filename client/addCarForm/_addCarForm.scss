@@ -6,14 +6,20 @@
 	max-width: 460px;
 	min-width: 320px;
 	margin: 0 auto;
-
-	.module-title{
-		color: $reddawn;
-	}
 }
 form.add-car-form{
 	margin: 16px 0 0 0;
 	padding: 0;
+
+	::-webkit-input-placeholder {
+		   color: #D1D6E7;
+		   font-weight: bold;
+		}
+
+		:-moz-placeholder { /* Firefox 18- */
+		   color: #D1D6E7;  
+		   font-weight: bold;
+		}
 }
 form.add-car-form fieldset{
 	/*background: $reddawn;*/
@@ -24,7 +30,7 @@ form.add-car-form fieldset{
 form.add-car-form {
 	input, textarea{
 		border: none;
-		background: $blanco;
+		background: $reddawn;
 		color: $bluestone;
 		font-size: 16px;
 		display: inline-block;
@@ -62,7 +68,6 @@ form.add-car-form {
 	margin-top: 16px; 
 	width: 100%;
 	text-align: center;
-	color: $reddawn;
 }
 
 .full-width{ width: 98%; }
