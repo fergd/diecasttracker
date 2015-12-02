@@ -41,7 +41,7 @@
             margin-bottom: 0;
 
             h1 { 
-                font-size: 3.5em; 
+                font-size: 4em; 
             }
 
             section:last-of-type{
@@ -79,7 +79,9 @@
         font-size: 1.5em;
         left: 0;
         top: 0;
-        text-shadow: 0 0 25px rgba(darken($bluestone-rgb, 30%), 0.5);
+        @media screen and (max-width: 600px){
+            text-shadow: 0 0 25px rgba(darken($bluestone-rgb, 30%), 0.5);
+        }
     }
     .cd-words-wrapper b.is-visible {
         position: relative;
