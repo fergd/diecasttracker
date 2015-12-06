@@ -1,12 +1,14 @@
 <template name="linkTest">
+<article class="link-test-wrap">
 	{{#if currentUser}}
 	<table>
 	{{#each linkTest}}
 		<tr>
 			<td>{{dc_toy_num}}</td>
-			<td><a href="{{dc_img_url}}">URL</a></td>
+			<td><a href="{{dc_img_url}}">{{dc_model_name}}</a></td>
 		</tr>
 	{{/each}}
 	</table>
 	{{/if}}
+</article>
 </template>
