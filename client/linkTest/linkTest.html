@@ -1,0 +1,12 @@
+<template name="linkTest">
+	{{#if currentUser}}
+	<table>
+	{{#each linkTest}}
+		<tr>
+			<td>{{dc_toy_num}}</td>
+			<td><a href="{{dc_img_url}}">URL</a></td>
+		</tr>
+	{{/each}}
+	</table>
+	{{/if}}
+</template>
