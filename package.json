@@ -1,0 +1,33 @@
+{
+  "name": "diecast-tracker",
+  "version": "0.5.0",
+  "description": "A project created with Meteor to track diecast cars",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "gulp-grunt": "^0.5.3",
+    "gulp": "^3.9.0"
+  },
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-respimg": "^1.1.0"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fergd/diecasttracker.git"
+  },
+  "keywords": [
+    "diecast",
+    "hot",
+    "wheels",
+    "meteor"
+  ],
+  "author": "Christan Fergus",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fergd/diecasttracker/issues"
+  },
+  "homepage": "https://github.com/fergd/diecasttracker#readme"
+}
