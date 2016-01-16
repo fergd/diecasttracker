@@ -1,0 +1,11 @@
+<template name="browseCars">
+	<article>
+        {{#if currentUser}}
+        {{#each imgmodel}}
+        	<a href="{{pathFor route="singleCarPage"}}#carpage" target="_self"  data-view-cars>
+            	<img src="http://static.christanfergus.com/images/placeholder.jpg" data-src="{{dc_img_url}}" class="x-img" /> 
+            </a>
+        {{/each}} 
+        {{/if}}
+    </article>  
+</template>
