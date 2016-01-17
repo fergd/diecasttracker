@@ -14,6 +14,20 @@ td, th{
 .car-display-table{
 	width: 100%;
 	border-collapse: collapse;
+	margin-top: 16px;
+	thead{
+		background-color: darken($bluestone, 10%);
+
+		th a{
+			text-decoration: none;
+			color: $envygreen;
+			font-weight: 600;
+			display: inline-block;
+			height: 100%;
+			width: 100%;
+			line-height: 30px;
+		}
+	}
 }
 .car-display-table tr.carRow:nth-of-type(odd) td{
 	background-color: #515962;
@@ -44,15 +58,18 @@ td, th{
 .cell-del{
 	width: 10%;
 }
+.cell-bin{
+	width: 5%;
+	text-align: center;
+}
 .cell-num{
-	width: 20%;
+	width: 25%;
 }
 .cell-name{
-	width: 55%;
-	
+	width: 30%;
 }
-.cell-year{
-	width: 15%;
+.cell-series{
+	width: 30%;
 }
 button.remove{
 	width: 24px;
