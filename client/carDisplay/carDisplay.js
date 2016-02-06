@@ -22,3 +22,8 @@ Template.carDisplay.events({
 		}
 	}
 });
+Template.carDisplay.onRendered(function(){
+	$(function(){
+	  $("#car-list-table").tablesorter();
+	});
+});
