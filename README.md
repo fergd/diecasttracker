@@ -1,6 +1,9 @@
 # diecasttracker
 A simple tracking and recording app for diecast cars created in Meteor. 
 
+## App
+[Diecasttracker](http://diecasttracker.herokuapp.com)
+
 ## Requirements
 - Meteor
 
@@ -11,7 +14,7 @@ A simple tracking and recording app for diecast cars created in Meteor.
 ## Status
 Currently in alpha. 
 
-View the app's progress at [herokuapp](http://diecasttracker.herokuapp.com)
+View the app's progress at [here.](http://diecasttracker.herokuapp.com)
 
 ## Write-up
 Follow my progress diary on my [website](http://christanfergus.com/diary-of-a-meteor-app-projects/).
