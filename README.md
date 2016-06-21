@@ -6,6 +6,7 @@ A simple tracking and recording app for diecast cars created in Meteor.
 
 ## Requirements
 - Meteor
+- MongoDB
 
 ## Running locally
 - Run `meteor`
