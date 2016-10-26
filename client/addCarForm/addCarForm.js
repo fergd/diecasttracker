@@ -5,7 +5,7 @@ Template.addCarForm.events({
 		var currentUserId = Meteor.userId();
 		var toyNumVar = event.target.dc_toy_num.value;
 		var imgUrlVar = event.target.dc_img_url.value;		
-		var imgUrlSizedVar = event.target.dc_img_url_sized.value;		
+		// var imgUrlSizedVar = event.target.dc_img_url_sized.value;		
 		var modelNameVar = event.target.dc_model_name.value;
 		var seriesVar = event.target.dc_series.value;
 		var colorVar = event.target.dc_color.value;
@@ -19,7 +19,7 @@ Template.addCarForm.events({
 		
 		CarList.insert({
 			dc_toy_num: toyNumVar,
-			dc_img_url_sized: imgUrlSizedVar,
+			// dc_img_url_sized: imgUrlSizedVar,
 			dc_img_url: imgUrlVar,
 			dc_model_name: modelNameVar,
 			dc_series: seriesVar,
