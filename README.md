@@ -20,4 +20,4 @@ View the app's progress at [here.](http://diecasttracker.herokuapp.com)
 ## Write-up
 Follow my progress diary on my [website](http://christanfergus.com/diary-of-a-meteor-app-projects/).
 
-![Finding a car](http://static.christanfergus.com/images/quick-merc-find-gif.gif) ![Browsing a car](http://static.christanfergus.com/images/quick-car-gif.gif)
+![Finding a car](http://res.cloudinary.com/fergd/image/upload/quick-merc-find-gif.gif) ![Browsing a car](http://res.cloudinary.com/fergd/image/upload/quick-car-gif.gif)
