@@ -4,28 +4,18 @@
         <table class="car-display-table" id="car-list-table">
             <thead>
                 <tr>
-                    {{#if currentUser}}
-                    <th class="visuallyhidden">Delete</th>
-                    {{/if}}
+                    <th class="visuallyhidden">Delete</th>        
                     <th><a href="#">Num</a></th>
                     <th><a href="#">Model</a></th>
                     <th><a href="#">Series</a></th>
+                    <th><a href="#">Color</a></th>
                     <th><a href="#">Bin</a></th>
                 </tr>
             </thead>
             <tbody>
-                {{#if currentUser}} 
-                {{#each model}} 
+            {{#each model}} 
                 {{>carRow}} 
                 {{/each}} 
-                {{else}}
-                <tr class="carRow">
-                    <td class="cell-num">CFH01</td>
-                    <td class="cell-series">HW Race</td>
-                    <td class="cell-name">Corvette C7.R</td>
-                    <td>1A</td>
-                </tr>
-                {{/if}}
             </tbody>
         </table>
     </article>
@@ -43,6 +33,9 @@
         </td>
         <td class="cell-series">
             <a href="{{pathFor route="singleCarPage"}}" target="_self"  data-view-cars>{{dc_series}}</a>
+        </td>
+        <td class="cell-color">
+            <a href="{{pathFor route="singleCarPage"}}" target="_self"  data-view-cars>{{dc_color}}</a>
         </td>
         <td class="cell-bin">
             <a href="{{pathFor route="singleCarPage"}}" target="_self"  data-view-cars>{{dc_bin_num}}</a>

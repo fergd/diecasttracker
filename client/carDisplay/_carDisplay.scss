@@ -19,11 +19,13 @@ td, th{
 	border-collapse: collapse;
 	margin-top: 16px;
 	thead{
-		background-color: darken($bluestone, 10%);
-
+		// background-color: darken($bluestone, 10%);
+		background-color: $dijon-rgb;
+		color: $bluestone;
 		th a{
 			text-decoration: none;
-			color: $envygreen;
+			color: $bluestone;
+			// color: $envygreen;
 			font-weight: 600;
 			display: inline-block;
 			height: 100%;
@@ -59,21 +61,21 @@ td, th{
 	}
 }
 .cell-del{
-	width: 10%;
-}
-.cell-bin{
 	width: 5%;
-	text-align: center;
 }
-.cell-num{
-	width: 25%;
-}
-.cell-name{
-	width: 30%;
-}
-.cell-series{
-	width: 30%;
-}
+// .cell-bin{
+// 	width: 5%;
+// 	text-align: center;
+// }
+// .cell-num{
+// 	width: 25%;
+// }
+// .cell-name{
+// 	width: 30%;
+// }
+// .cell-series{
+// 	width: 30%;
+// }
 button.remove{
 	width: 24px;
 	height: 24px;

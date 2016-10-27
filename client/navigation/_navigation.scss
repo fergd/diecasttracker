@@ -23,13 +23,13 @@
 	background: $blue-gradient;
 }
 
-nav.home-nav::after{
-	content: '';
-	width: 100%;
-	height: 20px;
-	background: $flatblue;
-	float: left;
-}
+// nav.home-nav::after{
+// 	content: '';
+// 	width: 100%;
+// 	height: 20px;
+// 	background: $flatblue;
+// 	float: left;
+// }
 a.button-has-icon{
 	width: 50%;
 	height: 220px;
@@ -95,15 +95,16 @@ a.button-magnify::after{
 		padding: 12px 0;
 
 		&.button-has-icon::after{
+			display: none;
 			/*content: '';*/
-			width: 32px;
-			height: 32px;
-			display: block;
-			position: absolute;
-			top: 50%;
-			left: 30%;
-			transform: translate(0, -50%);
-			-webkit-transform: translate(0, -50%);
+			// width: 32px;
+			// height: 32px;
+			// display: block;
+			// position: absolute;
+			// top: 50%;
+			// left: 20%;
+			// transform: translate(0, -50%);
+			// -webkit-transform: translate(0, -50%);
 		}
 	}
 }
