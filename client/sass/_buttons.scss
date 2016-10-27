@@ -17,3 +17,7 @@ button.button{
 	@include button-shadow-on-color(rgba(88,34,36,.5));
 }
 
+.full-car-wrapper .login-link-text{
+	@extend .button;
+	text-decoration: none;
+}

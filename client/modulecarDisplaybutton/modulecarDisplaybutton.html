@@ -1,7 +1,12 @@
 <template name="modulecarDisplaybutton">
 	<div class="mcdb-outer-wrap">
 		<div class="module full-car-wrapper centered">
-			<a href="{{pathFor 'carDisplay'}}" class="button">View All Cars</a>
+			{{#if currentUser}} 
+			{{!--<a href="{{pathFor 'carDisplay'}}" class="button">View All Cars</a>--}}
+			{{else}}
+			{{> loginButtons}}
+			{{/if}}
 		</div>
+
 	</div>
 </template>

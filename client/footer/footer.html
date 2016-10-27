@@ -5,7 +5,9 @@
 			<ul>
 				<li><a href="https://github.com/fergd/diecasttracker">DT on Github</a></li>
 				<li><a href="http://christanfergus.com/diary-of-a-meteor-app-projects/">DT Diary</a></li>
+				{{#if currentUser}} 
 				<li>{{> loginButtons}}</li>
+				{{/if}}
 			</ul>
 		</div>
 	</footer>
