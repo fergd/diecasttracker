@@ -1,0 +1,23 @@
+{
+  "name": "diecasttracker",
+  "version": "0.4.0",
+  "description": "Diecast tracking website",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Christan Fergus",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fergd/diecasttracker.git"
+  },
+  "keywords": [
+    "meteor",
+    "node",
+    "sass"
+  ],
+  "bugs": {
+    "url": "https://github.com/fergd/diecasttracker/issues"
+  },
+  "homepage": "https://github.com/fergd/diecasttracker#readme"
+}
