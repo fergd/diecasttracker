@@ -11,6 +11,9 @@
     "type": "git",
     "url": "git+https://github.com/fergd/diecasttracker.git"
   },
+  "engines": {
+    "node": "6.9.1"
+  },
   "keywords": [
     "meteor",
     "node",
