@@ -11,3 +11,6 @@
 ehthumbs.db
 Thumbs.db
 node_modulesnode_modules
+/node_modules
+npm-debug.log
+/*.env
