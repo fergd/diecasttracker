@@ -1,8 +1,10 @@
 <template name="layout">
 	{{>header}}
+	 {{ !-- 
 	{{#if currentUser}} 
 	{{>navigation}}
 	{{/if}}
+
 	<main class="module">
 		{{>yield}}
 	</main>
@@ -10,5 +12,6 @@
 	{{>modulecarDisplaybutton}}
 	
 	{{>footer}}
+	-- }}
 </template>
 

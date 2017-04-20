@@ -1,37 +1,48 @@
 header{
-	background: $bluestone;
-	color: $dijon;
+	border-top: 5px solid $neutral-dark;
+	background: $neutral;
 	width: 100%;
 	height: 60px;
-	overflow: visible;
+	box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
+	.inner-header{
+		margin: 0 auto;
+		display: flex;
+		flex-flow: row wrap;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		max-width: 1366px;
+	}
 }
-header::after{
-	content: '';
-	width: 0;
-	height: 0;
-	border-style: solid;
-	border-width: 40px 0px 0 160px;
-	border-color: $bluestone transparent transparent transparent;
-	top: 60px;
-	right: 0;
-	position: absolute;
-	z-index: 9999;
-}
+// header::after{
+// 	content: '';
+// 	width: 0;
+// 	height: 0;
+// 	border-style: solid;
+// 	border-width: 40px 0px 0 160px;
+// 	border-color: $bluestone transparent transparent transparent;
+// 	top: 60px;
+// 	right: 0;
+// 	position: absolute;
+// 	z-index: 9999;
+// }
 
 header,
 header a{
-	color: $dijon;	
+	color: $yellow-light;	
 }
 h1.site-heading{
 	font-family: $headline-font;
-	float: left;
-	padding: 0 0 0 16px;
-	margin: 0;
-	padding: 16px 0;
+	
+	// padding: 0 0 0 16px;
+	// margin: 0;
+	// padding: 16px 0;
 	font-size: 20px;
-	display: inline-block;
+	// display: inline-block;
 	small{
 		font-size: 0.5em;
+		font-family: $body-font;
+		color: $red-light;
 	}
 }
 h1.site-heading a{
