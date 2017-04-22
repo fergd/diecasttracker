@@ -1,17 +1,16 @@
 <template name="layout">
+	{{#if currentUser}}
+	{{>panel}}
 	{{>header}}
-	 {{ !-- 
-	{{#if currentUser}} 
 	{{>navigation}}
-	{{/if}}
-
 	<main class="module">
 		{{>yield}}
 	</main>
-	
-	{{>modulecarDisplaybutton}}
-	
+	{{ !-- }}
 	{{>footer}}
-	-- }}
+	{{ --}}
+	{{else}}
+	{{>modulecarDisplaybutton}}	
+	{{/if}}
 </template>
 

@@ -1,12 +1,19 @@
-span.car-count{
+.car-count{
 	background-color: $neutral-light;
 	border-radius: 5px;
 	color: $yellow;
   text-align: center;
-  margin: 0 1%;
-  padding: 5px 10px;
+  // margin: 0 1%;
+  padding: 5px 10px 5px 5px;
   font-size: 14px;
   font-weight: 700;
+  text-decoration: none;
+
+  span{
+    border-radius: 100px;
+    background-color: $neutral;
+    padding: 2px 5px;
+  }
 
   	@media screen and (min-width: 601px){
   		// margin: 5px 8px 0 0;

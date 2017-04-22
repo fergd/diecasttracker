@@ -1,12 +1,8 @@
 <template name="modulecarDisplaybutton">
 	<div class="mcdb-outer-wrap">
-		<div class="module full-car-wrapper centered">
-			{{#if currentUser}} 
-			{{!--<a href="{{pathFor 'carDisplay'}}" class="button">View All Cars</a>--}}
-			{{else}}
+		<div class="full-car-wrapper">
+			<h1>Diecast Tracker</h1>
 			{{> loginButtons}}
-			{{/if}}
 		</div>
-
 	</div>
 </template>

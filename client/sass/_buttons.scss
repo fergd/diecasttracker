@@ -4,17 +4,18 @@ button.button{
 }
 
 .button{
-	font: 16px/1.2 $button-font;
-	font-weight: 600;
-	background: $blue-gradient-tobottom;
-	border: 1px solid darken($flatblue, 15%);
-	color: $blanco;
-	padding: 1em 2em;
+	font: 16px/1.2 $body-font;
+	background: $red;
+	color: white;
+	padding: 1em 4em;
 	text-decoration: none;
-	border-radius: 5px;
 	display: inline-block;
-	cursor: pointer;
-	@include button-shadow-on-color(rgba(88,34,36,.5));
+	border-radius: 60px;
+	text-transform: uppercase;
+}
+
+#login-buttons a{
+	text-decoration: none;
 }
 
 .full-car-wrapper .login-link-text{

@@ -1,4 +1,4 @@
-header{
+header.site-header{
 	border-top: 5px solid $neutral-dark;
 	background: $neutral;
 	width: 100%;
@@ -13,7 +13,22 @@ header{
 		height: 100%;
 		max-width: 1366px;
 	}
+	.menu{
+		border: none;
+		outline: none;
+		background-color: rgba(0,0,0,0);
+		margin-right: 3%;
+		width: 24px;
+		height: 24px;
+		text-indent: -9999px;
+	}
+	@media all and (min-width: 1000px){
+		.menu{
+			display: none;
+		}
+	}
 }
+
 // header::after{
 // 	content: '';
 // 	width: 0;
