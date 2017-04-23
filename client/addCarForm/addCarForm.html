@@ -1,18 +1,18 @@
 <template name="addCarForm">
 	<article class="page-component add-car-wrap">
-	{{#if currentUser}}
-	<h1 class="module-title">Record a Car</h1>
-		
+		{{#if currentUser}}
+		<h1 class="module-title">Add a Diecast</h1>
+		<button class="download"><i class="icon-swap"></i>Upload CSV or JSON</button>
 		<form class="add-car-form">
 			<fieldset>
 				<legend class="visuallyhidden">Required</legend>
 
-				<div class="dc-wrap thirty-width">
+				<div class="dc-wrap">
 					<label for="dctoynum">Toy Num
 						<input id="dctoynum" type="text" name="dc_toy_num" placeholder="16671" class="dc_toy_num">
 					</label>
 				</div>
-				<div class="dc-wrap seventy-width">
+				<div class="dc-wrap">
 					<label for="dcmodelname">Model Name
 						<input id="dcmodelname" type="text" name="dc_model_name" placeholder="BMW Roadster" class="dc_model_name">
 					</label>
@@ -22,37 +22,37 @@
 			<fieldset>
 				<legend class="visuallyhidden">Optional</legend>
 				
-				<div class="dc-wrap full-width">
+				<div class="dc-wrap">
 					<label for="dcseries">Series Name
 						<input id="dc_series" type="text" name="dc_series" placeholder="1997 First Editions">
 					</label>
 				</div>
 
-				<div class="dc-wrap half-width">
+				<div class="dc-wrap">
 					<label for="dccolor">Primary Color
 						<input id="dccolor" type="text" name="dc_color" placeholder="Silver">
 					</label>
 				</div>
 
-				<div class="dc-wrap half-width">
+				<div class="dc-wrap">
 					<label for="dcyear">Toy Year
 						<input id="dcyear" ype="text" name="dc_year" placeholder="1997">
 					</label>
 				</div>
 
-				<div class="dc-wrap thirds-width">
+				<div class="dc-wrap">
 					<label for="dcseriesnum">Series Num
 						<input id="dcseriesnum" type="text" name="dc_series_num" placeholder="6/12">
 					</label>
 				</div>
 	
-				<div class="dc-wrap thirds-width">
+				<div class="dc-wrap">
 					<label for="dccollectornum">Collect Num
 						<input id="dccollectornum" type="text" name="dc_collector_num" placeholder="518">
 					</label>
 				</div>
 
-				<div class="dc-wrap thirds-width">
+				<div class="dc-wrap">
 					<label for="dcbin">Bin Location
 						<input id="dcbin" type="text" name="dc_bin_num" placeholder="1A">
 					</label>
@@ -60,30 +60,30 @@
 
 				
 				<div></div>
-				<div class="dc-wrap thirty-width">
+				<div class="dc-wrap">
 					<label for="dcduplicate">Duplicate
 						<input type="text" id="dcduplicate" name="dc_duplicate" placeholder="Any more of these?">
 					</label>
 				</div>
 
-				<div class="dc-wrap seventy-width">
+				<div class="dc-wrap">
 					<label for="dcimgurl">Image Name/URL
 						<input type="text" id="dcimgurl" name="dc_img_url" placeholder="Where is the image?">
 					</label>
 				</div>
 
-				<div class="dc-wrap seventy-width">
+				<div class="dc-wrap">
 					<label for="dcnotes">Notes
 						<textarea id="dcnotes" name="dc_notes" placeholder="Any interesting or useful info here" rows="4"></textarea>
 					</label>
 				</div>
-				<div class="dc-wrap thirty-width">
+				<div class="dc-wrap">
 					<label for="dcfavourite">Favourite
 						<input type="checkbox" name="dc_favourite" placeholder="Favourite" class="toggle-checked">
 					</label>
 				</div>
 			</fieldset>
-			<button class="button" type="submit" value="AddCar" placeholder="Add Car">Add Car</button>
+			<button class="button" type="submit" value="AddCar" placeholder="Add Car"><i class="icon-plus"></i>Add</button>
 		</form>		
 		{{else}}
 		<h1 class="module-title">Log In To Record</h1>

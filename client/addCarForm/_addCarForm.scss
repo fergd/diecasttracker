@@ -1,65 +1,43 @@
 .add-car-wrap{
-	/*background: $dijon;*/
-	color: $cement;
 	width: 100%;
-	padding: 16px 0 60px 0;
+	padding: 16px 16px 60px 16px;
 	max-width: 460px;
 	min-width: 320px;
 	margin: 0 auto;
 
 	h1{
-		color: $reddawn;	
+		color: $red;	
 	}
 }
 form.add-car-form{
 	margin: 16px 0 0 0;
 	padding: 0;
-
-	::-webkit-input-placeholder {
-		   color: #D1D6E7;
-		   font-weight: bold;
-		}
-
-		:-moz-placeholder { /* Firefox 18- */
-		   color: #D1D6E7;  
-		   font-weight: bold;
-		}
 }
 form.add-car-form fieldset{
-	/*background: $reddawn;*/
+	background: $neutral;
+	color: $yellow-light;
+	box-shadow: 0 0 10px 0 rgba(0,0,0,0.14), 0 0 18px 0 rgba(0,0,0,0.12), 0 0 5px -1px rgba(0,0,0,0.3);
+	display: flex;
 	border: none;
-	padding: 4px;
+	padding: 16px;
+	border-radius: 5px;
 }
 
 form.add-car-form {
 	input, textarea{
 		border: none;
-		background: $reddawn;
-		color: $bluestone;
-		font-size: 16px;
-		display: inline-block;
+		background: lighten($neutral-light, 40%);
+		color: $neutral;
+		font-weight: 700;
+		font-size: 14px;
 		padding: 12px;
+		margin-bottom: 21px;
+		border-radius: 3px;
 	}
 }
-
-// .add-car-form button.button{
-// 	display: block;
-// 	width: 45%;
-// 	margin: 16px auto 0 auto;
-// 	background: $green-gradient;
-// 	color: white;
-// 	@include button-shadow-on-color(rgba(0,0,0,.5));
-// 	font-family: $headline-font;
-// }
-
-.dc-wrap{
-	float: left;
-	margin: 1%;
-}
-
 	.dc-wrap label{
 		display: block;
-		// color: $bluestone;
+		color: $yellow-light;
 	}
 
 	.dc-wrap input,
@@ -67,27 +45,9 @@ form.add-car-form {
 		display: block;
 		width: 100%;
 	}
-
-.add-car-form-h3{ 
-	margin-top: 16px; 
-	width: 100%;
-	text-align: center;
-}
-
-.full-width{ width: 98%; }
-
-.half-width{
-	width: 48%;
-}
-
-.thirty-width{
-	width: 32%;
-}
-
-.seventy-width{
-	width: 64%;
-}
-
-.thirds-width{
-	width: 31.333%;
+form i{
+	display: block;
+	float: left;
+	width: 24px;
+	height: 24px;
 }

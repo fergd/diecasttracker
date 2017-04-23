@@ -18,6 +18,11 @@ Template.panel.rendered = function () {
         openSidebar();
     });
 
+    $('.close').click(function(event) {
+        event.stopPropagation();
+        closeSidebar();
+    });
+
     $(document).click(function(event) {
         if (!$(event.target).closest('.panel').length) {
             closeSidebar();

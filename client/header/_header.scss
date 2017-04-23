@@ -24,7 +24,8 @@ header.site-header{
 	}
 	@media all and (min-width: 1000px){
 		.menu{
-			display: none;
+			text-indent: 0;
+			// display: none;
 		}
 	}
 }

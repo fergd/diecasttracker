@@ -1,14 +1,14 @@
 <template name="panel">
 	<div class="panel">
-		<!-- <div class="panel-header">
-			<h1>Header</h1>
-		</div> -->
+		<div class="panel-header">
+			<i class="icon icon-close close"></i>
+		</div>
 		<ul class="">
-			<li><a href=""><i class="icon-search"></i>Search Diecasts</a></li>
-			<li><a href=""><i class="icon-plus"></i>Add a Diecast</a></li>
-			<li><a href=""><i class="icon-view"></i>View Your Diecasts</a></li>
-			
-			<li class="divider"><a href=""><i class="icon-person"></i></a></li>
+			<li><a href="{{pathFor 'searchBox'}}" class="close"><i class="icon-search"></i>Search Diecasts</a></li>
+			<li><a href="{{pathFor 'addCarForm'}}" class="close"><i class="icon-plus"></i>Add a Diecast</a></li>
+			<li><a href="{{pathFor 'carDisplay'}}" class="close"><i class="icon-view"></i>View Your Diecasts</a></li>
+			<li><a href="{{pathFor 'manage'}}" class="close"><i class="icon-swap"></i>Upload &amp; Export</a></li>
+			<li class="divider"><a href=""><i class="icon-person"></i>Menu</a></li>
 			
 		</ul>
 	</div>

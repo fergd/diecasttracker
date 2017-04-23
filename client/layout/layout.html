@@ -1,14 +1,14 @@
 <template name="layout">
 	{{#if currentUser}}
-	{{>panel}}
 	{{>header}}
+	{{>panel}}
 	{{>navigation}}
 	<main class="module">
 		{{>yield}}
 	</main>
-	{{ !-- }}
+	
 	{{>footer}}
-	{{ --}}
+
 	{{else}}
 	{{>modulecarDisplaybutton}}	
 	{{/if}}

@@ -1,5 +1,5 @@
 .panel {
-    background: lighten($yellow-light, 20%);
+    background: $neutral-light;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
     color: red;
     position: fixed;
@@ -10,13 +10,23 @@
     z-index: 9999;
     margin: 0;
     transition-duration: 0.3s ease;
-    border-top: 5px solid $yellow-dark;
+    border-top: 5px solid $neutral;
     color: $neutral;
     
 	.panel-header{
 		height: 55px;
-		background: $yellow-light;
+		background: $neutral-light;
 		padding: 0 10px;
+		border-bottom: 1px solid $neutral;
+
+		.icon{
+			display: block;
+			width: 24px;
+			height: 24px;
+			position: absolute;
+			right: 10px;
+			top: 10px;
+		}
 	}
 
     ul {
@@ -28,6 +38,7 @@
         	&:hover{
         		a{
         			background-color: $yellow;
+        			color: $neutral;
         		}
         	}
             a {
@@ -45,10 +56,10 @@
             		margin: 0 10px 0 0 ;
             	}
                 text-decoration: none;
-                color: $neutral;
+                color: $yellow;
             }
             &.divider{
-            	border-top: 1px solid $neutral-light;
+            	border-top: 1px solid $neutral;
             }
         }
     }

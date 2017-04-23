@@ -7,7 +7,7 @@ Router.map(function(){
 	this.route('addCarForm',{path:'/add'});
 	this.route('searchBox',{path:'/find'});
 	this.route('carPage',{path:'/car'});
-
+	this.route('manage',{path:'/manage'});
 	this.route('browseCars',{path:'/browse'});
 
 	this.route('linkTest',{path:'/links'});
