@@ -1,43 +1,33 @@
 <template name="home">
 	<article class="home-wrap">
-
-		<section class="home-collection-number">
-			<span class="number">2333</span>
-			<hr>
-			<p>Diecasts in your collection</p>
-			
-		</section>
-
-		<section class="home-man-types">
-			<div>
-			<span class="number">4947</span>
-			<hr>
-			<p>Hot Wheels</p>
-			</div>
-			
-			<div>
-			<span class="number">2394</span>
-			<hr>
-			<p>Matchbox</p>
-			</div>
-			
-			<div>
-			<span class="number">10</span>
-			<hr>
-			<p>Majorette</p>
-			</div>
-			<div>
-			<span class="number">320</span>
-			<hr>
-			<p>Tomica</p>
-			</div>
-		</section>
-		
-		<section class="home-activity">
-			<span class="number">2/23/17</span>
-			<hr>
-			<p>Last Updated</p>
-		</section>
-		
+		{{> colNum }}
+		{{> manTypes }}
+		{{> dateAdded }}
 	</article>
+</template>
+<template name="colNum">
+	<section class="home-collection-number">
+		<span class="number">{{count}}</span>
+		<hr>
+		<p>Diecasts in your collection</p>
+	</section>
+</template>
+<template name="dateAdded">
+	<section class="home-activity">
+		<span class="number">2/23/17</span>
+		<hr>
+		<p>Last Updated</p>
+	</section>
+</template>
+<template name="manTypes">
+	<section class="home-man-types">
+		{{> manTypeIndividual }}		
+	</section>
+</template>
+<template name="manTypeIndividual">
+	<div>
+		<span class="number">4947</span>
+		<hr>
+		<p>Hot Wheels</p>
+	</div>
 </template>

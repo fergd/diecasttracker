@@ -25,10 +25,10 @@
     }
     .home-activity{
         span{
-            color: $yellow-light;
+            color: $envygreen;
         }
         p{
-            color: $red-light;
+            color: $yellow-light;
         }
     }
     hr{
@@ -43,7 +43,26 @@
         margin: 16px 0;
         box-shadow: 0 0 20px 20px rgba(0,0,0,.1);
         text-align: center;
-        
+        position: relative;
+
+        &:before,
+        &:after{
+            content: '';
+            width: 6px;
+            height: 6px;
+            border-radius: 60px;
+            display: block;
+            background: $neutral-dark;
+            position: absolute;
+        }
+        &:before{
+            top: 4px;
+            left: 4px; 
+        }       
+        &:after{
+            right: 4px;
+            top: 4px;
+        }
         .number{
             font-family: $headline-font;
             font-size: 50px;

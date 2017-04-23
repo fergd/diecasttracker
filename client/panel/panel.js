@@ -2,14 +2,14 @@ Template.panel.rendered = function () {
 
     var openSidebar = function() {
         $('.panel').addClass('is-active');
-        // $('.menu').addClass('is-active');
-        // $('#menu').addClass('toggle-close');
+        $('.mask').addClass('is-active');
+        $('body').addClass('no-scroll');
         open = true;
     }
     var closeSidebar = function() {
         $('.panel').removeClass('is-active');
-        // $('.menu').removeClass('is-active');
-        // $('#menu').removeClass('toggle-close');
+        $('.mask').removeClass('is-active');
+        $('body').removeClass('no-scroll');
     }
 
     $('.menu').click(function(event) {

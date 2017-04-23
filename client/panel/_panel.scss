@@ -1,3 +1,35 @@
+.mask{
+    display: none;
+    opacity: 1;
+    animation-name: fadeInOpacity;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in;
+    animation-duration: 0.3s;
+
+    &.is-active{
+        display: block;
+        position: fixed;
+        background: rgba(0,0,0,1);
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9998;
+        opacity: 0.8;
+   }
+
+    @keyframes fadeInOpacity {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 0.8;
+        }
+    }
+}
+body.no-scroll{
+    overflow: hidden;
+}
 .panel {
     background: $neutral-light;
     box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.14), 0 1px 18px 0 rgba(0, 0, 0, 0.12), 0 3px 5px -1px rgba(0, 0, 0, 0.3);
@@ -12,7 +44,7 @@
     transition-duration: 0.3s ease;
     border-top: 5px solid $neutral;
     color: $neutral;
-    
+
 	.panel-header{
 		height: 55px;
 		background: $neutral-light;
@@ -38,7 +70,7 @@
         	height: 50px;
         	&:hover{
         		a{
-        			background-color: $yellow;
+        			background-color: $yellow-light;
         			color: $neutral;
         		}
         	}
