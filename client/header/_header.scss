@@ -13,19 +13,24 @@ header.site-header{
 		height: 100%;
 		max-width: 1366px;
 	}
+	h1{
+		flex-grow: 2;
+	}
 	.menu{
 		border: none;
 		outline: none;
 		background-color: rgba(0,0,0,0);
-		margin-right: 3%;
+		margin: 0 3%;
 		width: 24px;
 		height: 24px;
 		text-indent: -9999px;
-	}
-	@media all and (min-width: 1000px){
-		.menu{
-			text-indent: 0;
-			// display: none;
+		color: $yellow;
+		font-size: 14px;
+		font-weight: 700;
+		i{
+			display: block;
+			width: 24px;
+			height: 24px;
 		}
 	}
 }

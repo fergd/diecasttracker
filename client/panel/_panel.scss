@@ -18,14 +18,15 @@
 		background: $neutral-light;
 		padding: 0 10px;
 		border-bottom: 1px solid $neutral;
-
-		.icon{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: flex-end;
+        align-items: center;
+		
+        .icon{
 			display: block;
 			width: 24px;
 			height: 24px;
-			position: absolute;
-			right: 10px;
-			top: 10px;
 		}
 	}
 
