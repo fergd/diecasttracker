@@ -47,13 +47,20 @@
 			<legend>Detailed Information</legend>
 					
 			<div>
-				<label for="dctoynum">Toy Num
+				<label for="dctoynum">Toy Number
 					<input id="dctoynum" type="text" name="dc_toy_num" placeholder="16671" class="dc_toy_num">
 				</label>
 			</div>
 
 			<div>
-				<label for="dccollectornum">Collect Num
+				<label for="">Manufacture Code
+					<br><small>H49</small>
+					<input id="" type="text" name="" class="">
+				</label>
+			</div>
+
+			<div>
+				<label for="dccollectornum">Collector Number
 					<input id="dccollectornum" type="text" name="dc_collector_num" placeholder="518">
 				</label>
 			</div>
@@ -110,6 +117,7 @@
 						<option>1:90</option>
 						<option>1:80</option>
 						<option>1:64</option>
+						<option>1:57</option>
 						<option>1:56</option>
 						<option>1:54</option>
 						<option>1:50</option>
@@ -206,7 +214,7 @@
 <template name="dataUploadSection">
 	<form class='addcar-data-upload'>
 		<section>
-			<h2>Upload Diecast Data</h2>
+			<h2>Import Diecast Data</h2>
 			
 			<p>You have the option to bulk-upload your diecast data. First download the spreadsheet template and fill it out. The fields must match up to import correctly.</p>
 			<button class="button-default"><i class="icon-download"></i>Get Template</button>
@@ -225,6 +233,7 @@
 	
 # Detailed Info
 	toynum
+	manufacturecode
 	parentco
 	make
 	issuedyear
