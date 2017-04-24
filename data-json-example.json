@@ -1,0 +1,63 @@
+[
+    {
+        x "name": "Land Rover Defender 110",
+        x "make": "Land Rover",
+        x "brand": "Matchbox",
+        x "parentco": ,
+        x "issuedyear": "2017",
+        x "toynum": "DVK94",
+        x "binnum": ,
+        x "loose": false,
+        x "imgurl": "",
+        x "imgalturl": "",
+        x "seriesname": "Matchbox Adventure ",
+        x "color": "Black",
+        x "seriesnum": "84/125",
+        x "collectornum": ,
+        x "favorite": ,
+        x"notes": "1997 Model",
+        x "mancountry": "Thailand",
+        x "qty": "",
+        x "thunt": false,
+        x "damagederror": false,
+        x "condition": "Mint",
+        x "wheeltype": "Real Rider",
+        x "scale": "1:64",
+        x "dateadded": "2017-02-20T07:00:00.000Z",
+        
+    }
+]
+
+# Required Basics
+    brand
+    name
+    
+# Detailed Info
+    toynum
+    parentco
+    mancountry
+    make
+    issuedyear
+    collectornum
+    seriesname
+    seriesnum
+    scale
+
+# Diecast Charictaristics
+    color
+    wheeltype
+    thunt
+    damagederror
+
+# Owner's Detail
+    binnum
+    loose
+    favorite
+    qty
+    condition
+
+# Record Info
+    dateadded
+    imgurl
+    imgalturl
+    notes

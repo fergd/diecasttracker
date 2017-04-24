@@ -54,12 +54,7 @@ header a{
 }
 h1.site-heading{
 	font-family: $headline-font;
-	
-	// padding: 0 0 0 16px;
-	// margin: 0;
-	// padding: 16px 0;
-	font-size: 20px;
-	// display: inline-block;
+	font-size: 1.414em;
 	small{
 		font-size: 0.5em;
 		font-family: $body-font;
@@ -76,6 +71,6 @@ h1.site-heading a{
 		display: none;
 	}
 	h1.site-heading{
-		font-size: 28px;
+		font-size: 2.827em;
 	}
 }

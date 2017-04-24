@@ -4,50 +4,87 @@
 	max-width: 460px;
 	min-width: 320px;
 	margin: 0 auto;
-
 	h1{
-		color: $red;	
+		margin-bottom: 32px;
 	}
-}
-form.add-car-form{
-	margin: 16px 0 0 0;
-	padding: 0;
-}
-form.add-car-form fieldset{
-	background: $neutral;
-	color: $yellow-light;
-	box-shadow: 0 0 10px 0 rgba(0,0,0,0.14), 0 0 18px 0 rgba(0,0,0,0.12), 0 0 5px -1px rgba(0,0,0,0.3);
-	display: flex;
-	border: none;
-	padding: 16px;
-	border-radius: 5px;
-}
+	form{
+		margin: 1em 0 2.827em 0;
+		padding: 0;
+		p{
+			margin-top: 0;
+			font-size: 14px;
+		}
+		fieldset,{
+			// background: $neutral;
+			color: $yellow-light;
+			border: 1px solid $red-light;
+			margin: 0 0 1.999em 0;
+			box-shadow: 0 0 10px 0 rgba(0,0,0,0.14), 0 0 18px 0 rgba(0,0,0,0.12), 0 0 5px -1px rgba(0,0,0,0.3);
+			padding: 16px;
+			border-radius: 5px;
+			legend{
+				font-weight: 700;
+				color: $red-light;
+			}
+			p, small{
+				color: $grey-light;
+			}
+		}
+		input, label, select, textarea{
+			display: block;
+		}
+		input.inline{
+			display: inline-block;
+		}
+		label{
+			padding-bottom: 8px;
+		}
+		input, textarea, select{
+			border: none;
+			background: lighten($neutral-light, 40%);
+			color: $neutral;
+			font-weight: 700;
+			font-size: 14px;
+			padding: 12px;
+			margin-bottom: 21px;
+			border-radius: 3px;
+		}
+		input[type="text"]{
+			width: 100%;
+		}
+		.input-wrap{
+			width: 100%;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: flex-start;
+			align-items: center;
 
-form.add-car-form {
-	input, textarea{
-		border: none;
-		background: lighten($neutral-light, 40%);
-		color: $neutral;
-		font-weight: 700;
-		font-size: 14px;
-		padding: 12px;
-		margin-bottom: 21px;
-		border-radius: 3px;
+			input{
+				width: 20%;
+			}
+			span{
+				padding: 0 1em;
+			}
+		}
 	}
-}
-	.dc-wrap label{
-		display: block;
-		color: $yellow-light;
+	
+	.expander{
+		color: $grey-light;
 	}
+	.advanced-elements{
+		height: 0;
+		transition: margin 0.8s;
+		overflow: hidden;
 
-	.dc-wrap input,
-	.dc-wrap textarea{
-		display: block;
-		width: 100%;
+		&.is-active{
+			margin-top: 1.999em;
+			height: 100%;
+		}
 	}
-form i{
-	display: block;
-	float: left;
-	width: 24px;
-	height: 24px;
+	.expander-rotate{
+		transform: rotate(-90deg);
+	}
+	.expander-rotate.is-active{
+		transform: rotate(0deg);
+	}			
 }

@@ -2,91 +2,254 @@
 	<article class="page-component add-car-wrap">
 		{{#if currentUser}}
 		<h1 class="module-title">Add a Diecast</h1>
-		<button class="download"><i class="icon-swap"></i>Upload CSV or JSON</button>
 		<form class="add-car-form">
-			<fieldset>
-				<legend class="visuallyhidden">Required</legend>
-
-				<div class="dc-wrap">
-					<label for="dctoynum">Toy Num
-						<input id="dctoynum" type="text" name="dc_toy_num" placeholder="16671" class="dc_toy_num">
-					</label>
-				</div>
-				<div class="dc-wrap">
-					<label for="dcmodelname">Model Name
-						<input id="dcmodelname" type="text" name="dc_model_name" placeholder="BMW Roadster" class="dc_model_name">
-					</label>
-				</div>
-			</fieldset>
-			<h3 class="add-car-form-h3">Optional Fields</h3>
-			<fieldset>
-				<legend class="visuallyhidden">Optional</legend>
-				
-				<div class="dc-wrap">
-					<label for="dcseries">Series Name
-						<input id="dc_series" type="text" name="dc_series" placeholder="1997 First Editions">
-					</label>
-				</div>
-
-				<div class="dc-wrap">
-					<label for="dccolor">Primary Color
-						<input id="dccolor" type="text" name="dc_color" placeholder="Silver">
-					</label>
-				</div>
-
-				<div class="dc-wrap">
-					<label for="dcyear">Toy Year
-						<input id="dcyear" ype="text" name="dc_year" placeholder="1997">
-					</label>
-				</div>
-
-				<div class="dc-wrap">
-					<label for="dcseriesnum">Series Num
-						<input id="dcseriesnum" type="text" name="dc_series_num" placeholder="6/12">
-					</label>
-				</div>
-	
-				<div class="dc-wrap">
-					<label for="dccollectornum">Collect Num
-						<input id="dccollectornum" type="text" name="dc_collector_num" placeholder="518">
-					</label>
-				</div>
-
-				<div class="dc-wrap">
-					<label for="dcbin">Bin Location
-						<input id="dcbin" type="text" name="dc_bin_num" placeholder="1A">
-					</label>
-				</div>
-
-				
-				<div></div>
-				<div class="dc-wrap">
-					<label for="dcduplicate">Duplicate
-						<input type="text" id="dcduplicate" name="dc_duplicate" placeholder="Any more of these?">
-					</label>
-				</div>
-
-				<div class="dc-wrap">
-					<label for="dcimgurl">Image Name/URL
-						<input type="text" id="dcimgurl" name="dc_img_url" placeholder="Where is the image?">
-					</label>
-				</div>
-
-				<div class="dc-wrap">
-					<label for="dcnotes">Notes
-						<textarea id="dcnotes" name="dc_notes" placeholder="Any interesting or useful info here" rows="4"></textarea>
-					</label>
-				</div>
-				<div class="dc-wrap">
-					<label for="dcfavourite">Favourite
-						<input type="checkbox" name="dc_favourite" placeholder="Favourite" class="toggle-checked">
-					</label>
-				</div>
-			</fieldset>
-			<button class="button" type="submit" value="AddCar" placeholder="Add Car"><i class="icon-plus"></i>Add</button>
-		</form>		
+			{{> formRequired }}
+			{{> formAdvanced }}
+			<hr>
+			<button class="button-primary" type="submit" value="AddCar"><i class="icon-plus"></i>Add Diecast</button>
+		</form>
+		{{>dataUploadSection}}
 		{{else}}
 		<h1 class="module-title">Log In To Record</h1>
 		{{/if}}
 	</article>
 </template>
+
+<template name="formRequired">
+	<div class="required-elements">
+		<fieldset>
+			<legend>Required Basics</legend>
+			<p>These fields are the minimum required to create an entry.</p>
+			
+			<div>
+				<label for="brand">Brand
+					<select id="brand" name="brand" class="brand">
+						<option disabled selected>Choose brand...</option>
+						<option>Hot Wheels</option>
+						<option>Matchbox</option>
+					</select>
+				</label>
+			</div>  
+			
+			<div>
+				<label for="dcmodelname">Model Name
+					<input id="dcmodelname" type="text" name="dc_model">
+				</label>
+			</div>
+		</fieldset>
+	</div>
+</template>
+
+<template name="formAdvanced">
+	<a href="javascript:void(0);" class="button text-only expander">Expand Advanced Diecast Detail <i class="icon-expand-grey expander-rotate"></i></a>
+	<div class="advanced-elements">
+		<fieldset>
+			<legend>Detailed Information</legend>
+					
+			<div>
+				<label for="dctoynum">Toy Num
+					<input id="dctoynum" type="text" name="dc_toy_num" placeholder="16671" class="dc_toy_num">
+				</label>
+			</div>
+
+			<div>
+				<label for="dccollectornum">Collect Num
+					<input id="dccollectornum" type="text" name="dc_collector_num" placeholder="518">
+				</label>
+			</div>
+
+			<div>
+				<label for="">Parent Company
+					<br><small>Lesney, Universal Toys Inc., etc.</small>
+					<input id="" type="text" name="">
+				</label>
+			</div>
+
+			<div>
+				<label for="">Country of Manufacture
+					<select>
+						<option disabled selected>Choose country...</option>
+						<option>China</option>
+						<option>England</option>
+						<option>Macau</option>
+						<option>Malaysia</option>
+						<option>Thailand</option>
+					</select>
+				</label>
+			</div>
+
+			<div>
+				<label for="dcyear">Issued Year
+					<br><small>The year the manufacturer put it on the shelves</small>
+					<input id="dcyear" ype="text" name="dc_year" placeholder="1997">
+				</label>
+			</div>
+
+			<div>
+				<label for="dcseries">Series Name
+					<br><small>Eg. "1999 First Editions"</small>
+					<input id="dc_series" type="text" name="dc_series" placeholder="1997 First Editions">
+				</label>
+			</div>
+
+			<div>
+				<label for="dcseriesnum">Series Num
+					<br><small>Eg. 45/255</small>
+					<div class="input-wrap">
+						<input id="dcseriesnum" type="text" name="dc_series_num" class="inline">
+						<span>/</span>
+						<input id="dcseriesnum" type="text" name="dc_series_num" class="inline">
+					</div>
+				</label>
+			</div>
+
+			<div>
+				<label for="">Scale
+					<select id="">
+						<option disabled selected>Select Scale...</option>
+						<option>1:90</option>
+						<option>1:80</option>
+						<option>1:64</option>
+						<option>1:56</option>
+						<option>1:54</option>
+						<option>1:50</option>
+					</select>
+				</label>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Diecast Charictaristics</legend>
+			
+			<div>
+				<label for="dccolor">Primary Color
+					<input id="dccolor" type="text" name="dc_color" pla="Silver">
+				</label>
+			</div>
+			<div>
+				<label for="">Wheel Type
+					<input id="" type="text" name="">
+				</label>
+			</div>
+			<div>
+				<label for="">Treasure Hunt
+					<input type="checkbox" id="" name="">
+				</label>
+			</div>
+			<div>
+				<label for="">Damaged or Error
+					<input type="checkbox" id="" name="">
+				</label>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Owner's Details</legend>
+			<div>
+				<label for="dcbin">Bin Location
+					<input id="dcbin" type="text" name="dc_bin_num" pla="1A">
+				</label>
+			</div>
+			<div>
+				<label for="">Loose
+					<br><small>Has it been set free?</small>
+					<input type="checkbox" id="" name="">
+				</label>
+			</div>
+			<div>
+				<label for="dcfavourite">Favorite
+					<input type="checkbox" id="dc_favourite" name="">
+				</label>
+			</div>
+			<div>
+				<label for="">Quantity
+					<input id="" type="text" name="">
+				</label>
+			</div>
+			<div>
+				<label for="">Condition
+					<select id="">
+						<option disabled selected>Select Scale...</option>
+						<option>Unopened</option>
+						<option>Mint</option>
+						<option>Excellent</option>
+						<option>Good</option>
+						<option>Fair</option>
+						<option>Poor</option>
+						<option>Deeeestroooyyyed</option>
+					</select>
+				</label>
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Record Information</legend>
+			<div>
+				<label for="dcimgurl">Primary Image URL
+					<input type="text" id="dcimgurl" name="dc_img_url">
+				</label>
+			</div>
+			<div>
+				<label for="dcimgurl">Alternate Image URL
+					<input type="text" id="dcimgurl" name="dc_img_url">
+				</label>
+			</div>
+			<div>
+				<label for="dcnotes">Notes
+					<textarea id="dcnotes" name="dc_notes"></textarea>
+				</label>
+			</div>
+		</fieldset>
+	</div>
+</template>
+
+<template name="dataUploadSection">
+	<form class='addcar-data-upload'>
+		<section>
+			<h2>Upload Diecast Data</h2>
+			
+			<p>You have the option to bulk-upload your diecast data. First download the spreadsheet template and fill it out. The fields must match up to import correctly.</p>
+			<button class="button-default"><i class="icon-download"></i>Get Template</button>
+			
+			<hr>
+			<label>Import Your CSV Exported Data</label>
+			<button class="button-primary" type="button"><i class="icon-upload"></i>Import</button>
+		</section>
+	</form>
+</template>
+
+<!--
+# Required Basics
+	brand
+	name
+	
+# Detailed Info
+	toynum
+	parentco
+	make
+	issuedyear
+	collectornum
+	seriesname
+	seriesnum
+	mancountry
+	scale
+
+# Diecast Charictaristics
+	color
+	wheeltype
+	thunt
+	damagederror
+
+# Owner's Detail
+	binnum
+	loose
+	favorite
+	qty
+	condition
+
+# Record Info
+	dateadded
+	imgurl
+	imgalturl
+	notes
+-->

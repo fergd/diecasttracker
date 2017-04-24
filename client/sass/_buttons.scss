@@ -1,24 +1,44 @@
-button.button{
-	border: none;
-	outline: none;
-}
-
-.button{
-	font: 16px/1.2 $body-font;
-	background: $red-light;
-	color: $neutral;
-	padding: 1em 4em;
-	text-decoration: none;
-	display: inline-block;
-	border-radius: 60px;
+button, a.button{
+	padding: 8px 16px 8px 8px;
+	font-size: 1em;
+	line-height: 24px;
+	vertical-align: middle;
 	text-transform: uppercase;
-}
 
+	i{
+		float: left;
+		height: 24px;
+		width: 24px;
+		display: block;
+		margin-right: 8px;
+	}
+}
+button.text-only{
+	padding: 0;
+	text-decoration: underline;
+	background: none;
+	border: none;
+}
+.button-includes{
+	border-radius: 3px; 
+	@extend .shadow-it;
+}
+button.button-default{
+	border: 1px solid darken($grey-light, 40%);
+	background: $grey-light;
+	color: $neutral;
+	@extend .button-includes;
+}
+button.button-primary{
+	border: 1px solid darken($flatblue, 20%);
+	background: $flatblue;
+	color: white;
+	@extend .button-includes;
+	font-weight: 700;
+}
 #login-buttons a{
 	text-decoration: none;
 }
-
 .full-car-wrapper .login-link-text{
-	@extend .button;
 	text-decoration: none;
 }
