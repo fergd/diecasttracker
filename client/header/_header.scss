@@ -13,8 +13,16 @@ header.site-header{
 		height: 100%;
 		max-width: 1366px;
 	}
-	h1{
+	h1, .logo-wrap{
 		flex-grow: 2;
+	}
+	.logo-wrap{
+		padding: 16px;
+		overflow: hidden;
+	}
+	svg{
+		position: relative;
+		top: 8px;
 	}
 	.menu{
 		border: none;
