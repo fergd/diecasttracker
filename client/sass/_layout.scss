@@ -1,0 +1,26 @@
+body, html{
+	padding: 0;
+	margin: 0;
+	height: 100%;
+    min-width: 320px;
+}
+main{
+	margin: 0 auto;
+	min-width: 320px;
+	max-width: 960px;
+	min-height: 100vh;
+	padding: 16px 16px 100px 16px;
+}
+
+.page-component{
+	width: 100%;
+	min-height: 200px;
+    margin: 0 auto;
+}
+
+.inner-wrap{
+	margin: 0 auto;
+	max-width: 960px;
+	min-width: 320px;
+	margin: 0 auto;
+}

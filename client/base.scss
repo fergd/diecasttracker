@@ -2,7 +2,9 @@
 "sass/theme",
 "sass/typography",
 "sass/buttons",
-"sass/icons"
+"sass/icons",
+"sass/forms",
+"sass/layout"
 ;
 
 @import 
@@ -81,46 +83,8 @@
 }
 
 html, body{
-	padding: 0;
-	margin: 0;
 	color: $grey-light;
 	background-color: $neutral-dark;
-	height: 100%;
-  min-width: 320px;
-}
-
-.module-title{
-	font-family: $headline-font;
-  color: $red;
-}
-
-.module{
-	display: block;
-	width: 100%;
-	overflow: hidden;
-	height: auto;
-}
-.module.centered{
-	text-align: center;
-}
-
-main{
-	max-width: 960px;
-	min-width: 320px;
-  min-height: 100vh;
-	margin: 0 auto;
-	padding: 0;
-}
-
-.inner-wrap{
-	margin: 0 auto;
-	max-width: 960px;
-	min-width: 320px;
-	margin: 0 auto;
-}
-
-.page-component{
-	padding-bottom: 48px;
 }
 
 .animated {

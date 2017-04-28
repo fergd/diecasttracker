@@ -1,62 +1,55 @@
-.car-display-wrap{
-	/*background: $dijon;*/
-	color: $cement;
-	width: 100%;
-	padding: 16px 0 100px 0;
-	max-width: 960px;
-	min-width: 320px;
-	margin: 0 auto;
-}
-td, th{
-	padding: 5px 2px;
-	text-align: left;
-}
+
 .car-display-table{
 	width: 100%;
 	border-collapse: collapse;
-	margin-top: 16px;
+	margin-bottom: 16px;
+	background: $neutral;
+	border-radius: 3px;
+
 	thead{
-		// background-color: darken($bluestone, 10%);
-		background-color: $dijon-rgb;
-		color: $bluestone;
 		th a{
 			text-decoration: none;
-			color: $bluestone;
-			// color: $envygreen;
-			font-weight: 600;
 			display: inline-block;
 			height: 100%;
 			width: 100%;
 			line-height: 30px;
+			color: $yellow-light;
+			font-weight: 300;
 		}
 	}
-}
-.car-display-table tr.carRow:nth-of-type(odd) td{
-	background-color: #515962;
-}
-.car-display-table td{
-	text-transform: capitalize;
-}
-.carRow{
-	td {
-		a{
-			text-decoration: none;
-			color: $cement;
-			height: 100%;
-			width: 100%;
-			display: block;
-		}
+
+	td, th{
+		padding: 5px 2px;
+		text-align: left;
 	}
-	&:hover{
+
+	tbody{
 		td{
-			background-color: $envygreen !important;
-			cursor: pointer;
+			
+		}
+	}
+	.carRow{
+		td {
 			a{
-				color: $bluestone;
+				text-decoration: none;
+				color: $cement;
+				height: 100%;
+				width: 100%;
+				display: block;
+			}
+		}
+		&:nth-of-type(odd){
+			background-color: $neutral-dark;
+		}
+		&:hover{
+			td{
+				background-color: $neutral-light;
 			}
 		}
 	}
 }
+
+
 .cell-del{
 	width: 5%;
 }
@@ -74,8 +67,8 @@ td, th{
 // 	width: 30%;
 // }
 button.remove{
-	width: 24px;
-	height: 24px;
+	width: 18px;
+	height: 18px;
 	display: block;
 	margin: 0 auto;
 	background: none;
@@ -89,22 +82,23 @@ button.remove{
 button.remove:before{
 	content: '';
 	@extend .icon-delete;
+	background-size: 18px;
 	display: block;
 	position: absolute;
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%,-50%);
 	-webkit-transform: translate(-50%,-50%);
-	width: 24px;
-	height: 24px;
+	width: 18px;
+	height: 18px;
 }
 .view-button{
 	background-color:  $envygreen;
 	padding: 4px;
-	color: $bluestone;
+	// color: $bluestone;
 	font-weight: bold;
 	font-size: 16px;
 	text-decoration: none;
-	border-radius: 5px;
+	border-radius: 3px;
 	display: inline-block;
 }

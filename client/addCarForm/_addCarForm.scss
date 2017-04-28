@@ -1,27 +1,26 @@
 .add-car-wrap{
-	width: 100%;
-	padding: 16px 16px 60px 16px;
-	max-width: 460px;
-	min-width: 320px;
-	margin: 0 auto;
-	h1{
-		margin-bottom: 32px;
-	}
+	// width: 100%;
+	// padding: 16px 16px 60px 16px;
+	// max-width: 460px;
+	// min-width: 320px;
+	// margin: 0 auto;
+	
 	form{
-		margin: 1em 0 2.827em 0;
-		padding: 0;
+		max-width: 500px;
+
+		margin: 0 auto 2.827em auto;
+		// padding: 0;
 		p{
 			margin-top: 0;
 			font-size: 14px;
 		}
 		fieldset,{
-			// background: $neutral;
 			color: $yellow-light;
 			border: 1px solid $red-light;
 			margin: 0 0 1.999em 0;
 			box-shadow: 0 0 10px 0 rgba(0,0,0,0.14), 0 0 18px 0 rgba(0,0,0,0.12), 0 0 5px -1px rgba(0,0,0,0.3);
 			padding: 16px;
-			border-radius: 5px;
+			border-radius: 3px;
 			legend{
 				font-weight: 700;
 				color: $red-light;
@@ -41,7 +40,7 @@
 		}
 		input, textarea, select{
 			border: none;
-			background: lighten($neutral-light, 40%);
+			background: white;
 			color: $neutral;
 			font-weight: 700;
 			font-size: 14px;
@@ -67,7 +66,6 @@
 			}
 		}
 	}
-	
 	.expander{
 		color: $grey-light;
 	}

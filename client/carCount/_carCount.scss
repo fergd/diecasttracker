@@ -1,17 +1,24 @@
 .car-count{
 	background-color: $neutral-light;
-	border-radius: 5px;
+	border-radius: 3px 50px 50px 3px;
 	color: $yellow;
   text-align: center;
-  padding: 3px 6px 3px 3px;
+  padding: 0 16px 0 0;
   font-size: 1em;
   text-decoration: none;
   max-width: 130px;
-  line-height: 21px;
+  line-height: $ms-2;
+  vertical-align: middle;
 
   span{
-    border-radius: 100px;
+    border-radius: 0  50px 50px 0;
     background-color: $neutral;
-    padding: 1px 6px;
+    padding: 0 10px;
+    font-weight: 800;
+    line-height: $ms-2;
+    vertical-align: middle;
+    display: inline-block;
+    float: left;
+    margin-right: 8px;
   }
 }

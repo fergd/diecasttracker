@@ -1,7 +1,7 @@
 <template name="carDisplay">
-    <article class="page-component car-display-wrap animated fade-in">
+    <article class="page-component">
         <h1 class="module-title">{{#if currentUser}}Your {{else}}Example List of {{/if}}Diecasts</h1>
-        <button class="download"><i class="icon-swap"></i>Download Collection</button>
+
         <table class="car-display-table" id="car-list-table">
             <thead>
                 <tr>
@@ -14,17 +14,19 @@
                 </tr>
             </thead>
             <tbody>
-            {{#each model}} 
+                {{#each model}} 
                 {{>carRow}} 
                 {{/each}} 
             </tbody>
         </table>
+        <button class="button-default"><i class="icon-download"></i>Export Collection</button>
+
     </article>
 </template>
 <template name="carRow">
     <tr class="carRow foundCar">
         <td class="cell-del">
-            <button type="button" class="remove">Delete Car</button>
+            <button type="button" class="remove visuallyhidden">Delete Car</button>
         </td>
         <td class="cell-num">
             <a href="{{pathFor route="singleCarPage"}}" target="_self"  data-view-cars>{{dc_toy_num}}</a>

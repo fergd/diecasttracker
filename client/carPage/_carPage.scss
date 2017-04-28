@@ -45,7 +45,7 @@
 		h3{
 			font-family: $headline-font;
 			font-size: 16px;
-			color: $dijon;
+			// color: $dijon;
 		}
 	}
 	.quarter-block{
@@ -59,13 +59,13 @@
 	}
 
 	li:nth-child(5n-5){
-		background-color: lighten($bluestone, 10%);
+		background-color: lighten($flatblue, 10%);
 	}
 	li:nth-child(2n-2){
-		background-color: lighten($bluestone, 5%);
+		background-color: lighten($flatblue, 5%);
 	}
 	li:nth-child(3n-2){
-		background-color: darken($bluestone, 5%);
+		background-color: darken($flatblue, 5%);
 	}
 }
 @media all and (min-width: 600px){

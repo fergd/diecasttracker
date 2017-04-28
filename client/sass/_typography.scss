@@ -1,56 +1,70 @@
-$headline-font: 	'Open Sans';
-$body-font: 		'Poppins';
-$button-font:		'Poppins';
+$headline-font: 	'Open Sans', "Palatino Linotype", Palatino, Palladio, "URW Palladio L", "Book Antiqua", Baskerville, "Bookman Old Style", "Bitstream Charter", "Nimbus Roman No9 L", Garamond, "Apple Garamond", "ITC Garamond Narrow", "New Century Schoolbook", "Century Schoolbook", "Century Schoolbook L", Georgia, serif;
+$body-font: 		'Poppins', Frutiger, "Frutiger Linotype", Univers, Calibri, "Gill Sans", "Gill Sans MT", "Myriad Pro", Myriad, "DejaVu Sans Condensed", "Liberation Sans", "Nimbus Sans L", Tahoma, Geneva, "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-html {
-  font-size: 0.875em;
-}
+$ms--3: 0.354em;
+$ms--2: 0.5em;
+$ms--1: 0.707em;
+$ms-0: 1em;
+$ms-1: 1.414em;
+$ms-2: 1.999em;
+$ms-3: 2.827em;
+$ms-4: 3.998em;
 
 body {
   font-weight: 400;
-  line-height: 1.45;
-  font-family: $body-font, sans-serif !important;
+  line-height: 1.2;
+  font-family: $body-font;
+  font-size: 14px;
+  @media all and (min-width: 600px){
+    font-size: 16px;
+  }
 }
 
 p {
-  font-size: inherit;
-  margin-bottom: 1.3em;
+  font-size: $ms-0;
+  margin-bottom: $ms-0;
 }
 
 h1, h2, h3, h4 {
-  margin: 0;
   font-family: $headline-font;
   font-weight: inherit;
   line-height: 1.2;
 }
-/*
-3.998em 
-2.827em 
-1.999em 
-1.414em 
-1em 
-0.707em 
-0.5em
-0.354em 
-*/
+
 h1 {
-  margin-top: 0;
-  font-size: 2.827em;
+  font-size: $ms-3;
+  margin: 0 0 $ms--1 0;
+  @media all and (min-width: 600px){
+    margin: 0 0 $ms-1 0;
+  }
+
+}
+h2, h3, h4{
+  margin: 0 0 $ms--1 0;
+}
+h2 {
+  font-size: $ms-2;
 }
 
-h2 {
-  font-size: 1.999em;
+h3 {font-size: $ms-1;}
+
+h4 {font-size: $ms-0;}
+
+article > h1{
   color: $red-light;
 }
 
-h3 {font-size: 1.414em;}
-
-h4 {font-size: 1em;}
-
-small, .font_small {font-size: 0.707em;}
+small, .font_small {font-size: $ms--1;}
 
 blockquote{
   margin: 0 0 8px 0;
   padding: 0 5px 0 16px;
   border-left: 2px solid $grey-light;
+}
+
+@media all and (min-width: 601px){
+
+  h1.site-heading{
+	font-size: $ms-3;
+  }
 }

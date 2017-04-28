@@ -1,44 +1,36 @@
 /*=====
 Colours
 ======*/
-$dijon: 			#DEC956;
-$bluestone: 		#3E4651;
-$reddawn: 			#FF646A;
+$red: 				#f44336;
+$red-light: 		#ff7961;
+$red-dark: 			#ba000d;
+$yellow: 			#eeff41;
+$yellow-light: 		#ffff78;
+$yellow-dark: 		#b8cc00;
+$neutral: 			#37474f;
+$neutral-light: 	#62727b;
+$neutral-dark: 		#102027;
+$grey-light: 		lighten($neutral-light, 30%);
 $flatblue:			#2C82C9;
 $envygreen:			#27c667;
 $cement:			#F2F1EF;
 $blanco: 			#ECF0F1;
 
-$dijon-rgb: 		rgb(222,201,86);
-$bluestone-rgb: 	rgb(62,70,81);
-$reddawn-rgb: 		rgb(255,100,106);
-$flatblue-rgb:		rgb(44,130,201);
-$envygreen-rgb:		rgb(39,198,103);
-$cement-rgb:		rgb(242,241,239);
-$blanco-rgb:		rgb(236,240,241);
-
-$red-gradient: linear-gradient(to top, $reddawn, #ff5258);
-$blue-gradient: linear-gradient(to top, $flatblue, #2875B5);
-$blue-gradient-tobottom: linear-gradient(to bottom, $flatblue, #2672b0);
-$green-gradient: linear-gradient(to bottom, $envygreen, #20a254);	
-
-@mixin button-shadow-on-color($rgba-value){
-	-webkit-box-shadow: 0px 9px 30px 0px $rgba-value;
-	box-shadow: 0px 9px 30px 0px $rgba-value;
-}
-
-$red: #f44336;
-$red-light: #ff7961;
-$red-dark: #ba000d;
-$yellow: #eeff41;
-$yellow-light: #ffff78;
-$yellow-dark: #b8cc00;
-$neutral: #37474f;
-$neutral-light: #62727b;
-$neutral-dark: #102027;
-$grey-light: lighten($neutral-light, 30%);
+// $red: 				#F07464;
+// $red-light: 		$red;
+// $red-dark: 			$red;
+// $yellow: 			#F2C66D;
+// $yellow-light: 		$yellow;
+// $yellow-dark: 		#F3A371;
+// $neutral: 			#9AAAB9;
+// $neutral-light: 	#BCBDC1;
+// $neutral-dark: 		#495967;
+// $grey-light: 		lighten($neutral-light, 30%);
+// $flatblue:			#A0C1BB;
+// $envygreen:			$flatblue;
+// $cement:			$neutral-light;
+// $blanco: 			#F2F2F2;
 
 .shadow-it{
     box-shadow: 0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.3);
-
 }
