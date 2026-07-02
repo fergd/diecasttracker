@@ -1,29 +1,72 @@
 # Diecast Inventory
 
-Photo → vision extraction → validated against real reference data → your own inventory DB.
+Photo -> vision extraction -> validated against real reference data -> priced
+(guide + live) -> your own inventory DB.
 
-Supports both **carded** (packaged) and **loose** (unpackaged) cars as first-class,
-distinct paths — not an afterthought bolted onto the carded flow.
+Supports both **carded** (packaged) and **loose** (unpackaged) cars as
+first-class, distinct paths, and layers a live web-search-backed price check
+on top of a static guide-book price, with cost deliberately bounded by
+casting identity rather than by scan count.
 
-## Carded vs. loose — why they're handled differently
+## Carded vs. loose
 
-- **Carded**: identification comes from reading printed card text (casting name,
-  collector number, series). This is essentially OCR, so it's reliable and a
-  single photo is enough.
-- **Loose**: there's no card to read. Identification instead comes from a base/
-  underside photo, where the casting name and a copyright year are usually
-  stamped into the metal - also reliable, but requires a second photo.
-  *Without* a base photo, identification falls back to guessing from the car's
-  body shape/color alone, which is meaningfully weaker evidence (a visual guess
-  among 28,000+ possible castings vs. a transcription). The app tracks *how*
-  a loose car was identified (`identification_method`) and the validation layer
-  refuses to auto-confirm a visual-only guess, even if it happens to fuzzy-match
-  a real casting name well - it lands in `needs_review` instead, so you still
-  see the likely candidate but know to double-check it yourself.
-- **Pricing** also splits by packaging: `reference_castings` carries both
-  `loose_value_usd` and `carded_value_usd` from South Texas Diecast's guide,
-  and the app picks the right one based on how the item you scanned is
-  actually packaged.
+- **Carded**: identification comes from reading printed card text - reliable,
+  one photo is enough.
+- **Loose**: identification comes from a base/underside photo (casting name +
+  copyright year, stamped into the metal). Without a base photo, identification
+  falls back to a visual guess from body shape/color, which the validation
+  layer refuses to auto-confirm even if it fuzzy-matches a real casting name -
+  it lands in `needs_review` instead.
+
+## Pricing: guide price + live price
+
+- **Guide price** (`guide_price_usd`) comes from `reference_castings`, seeded
+  from South Texas Diecast's checklist/price guide. Static, refreshed only
+  when you rerun `reference_import.py`.
+- **Live price** (`live_price_low_usd` / `live_price_high_usd`) comes from a
+  real web search, using Claude's server-side `web_search` tool, run only when
+  a scan actually matched a real casting (`confirmed` or `needs_review` - never
+  for `no_match`, since there's nothing meaningful to price-check).
+
+### Cost control - this is the part that actually matters
+
+Web search is billed per search ($10/1,000, plus token cost for the results
+themselves) - meaningfully more expensive than the extraction step. Three
+things keep this bounded:
+
+1. **Cached by casting identity, not by scan.** `live_price_cache` is keyed on
+   (casting name, series, year, packaging type). Scanning five copies of the
+   same casting triggers ONE live search total, not five.
+2. **30-day cache lifetime.** A cached price is reused until it's over a month
+   old, then refreshed on the next scan that needs it. Collectible prices don't
+   move fast enough to justify a fresh search every time.
+3. **`max_uses` cap per lookup.** Each live-price search is capped at 3 web
+   searches max (`MAX_SEARCHES_PER_LOOKUP` in `live_pricing.py`), usually only
+   needs 1-2 in practice.
+
+Net effect: cost scales with the number of *distinct castings* you own, not
+the number of cars you scan. A collection of a few hundred unique castings,
+even scanned multiple times each, stays in the range of a few dollars total
+for live pricing - not a few dollars *per scan*.
+
+## Material Design frontend
+
+`static/index.html` is built entirely on Google's `@material/web` component
+library (Material 3), loaded buildlessly via CDN import map - no custom CSS
+layout system, no hand-rolled color palette. Segmented buttons for the
+Carded/Loose toggle, filled/outlined buttons for actions, `md-list`/
+`md-list-item` for results, `md-dialog` for errors, all styled through
+Material's own design tokens (`--md-sys-color-*`), which also means it follows
+your phone's system light/dark mode automatically.
+
+**Worth double-checking after deploying this update**: an earlier version of
+this file was handed over as a zip right before the git migration happened,
+and it's not fully confirmed that version ever actually made it onto
+backupbox before the repo was initialized from whatever was on disk at the
+time. Load the app fresh in a browser after pulling this update and confirm
+you're seeing the segmented button toggle and Material-styled list, not the
+older plain-CSS layout - if you see the old look, this file didn't actually
+get replaced and is worth a second look.
 
 ## How it fits together
 
@@ -37,53 +80,38 @@ vision_extract.py    ->  routes to CARDED_PROMPT or LOOSE_PROMPT, sends to Claud
        |
 match.py              ->  fuzzy-matches against reference_castings, applies the
                           visual-only safeguard for loose cars, picks the right
-                          price column
+                          guide price column
        |
-inventory.db           ->  stores extraction + validation + packaging_type +
-                          suggested_price_usd + your own tracking fields
+live_pricing.py        ->  (confirmed/needs_review only) cached live price
+                          check via Claude's web_search tool
+       |
+inventory.db             ->  stores extraction + validation + packaging_type +
+                          guide price + live price + your own tracking fields
 ```
 
-`reference_castings` is ground truth, imported once (and refreshed periodically)
-from South Texas Diecast's community-maintained checklist/price guide. This is
-what extraction gets checked against - it's the difference between "the model
-said so" and "this is confirmed to be a real, cataloged casting."
-
-## Setup (on your backupbox, not this sandbox)
+## Setup
 
 ```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 
-# Seed the reference DB - start with a few years you actually own cards from,
-# expand later. Each year is one polite, cached HTTP request.
+# Seed the reference DB - start with a few years you actually own cards from
 python reference_import.py --years 2013 2014 2015 2016 2017 2018
 
-# Set your API key (get one at console.anthropic.com)
 export ANTHROPIC_API_KEY=sk-ant-...
 
-# Run it
 uvicorn app:app --host 0.0.0.0 --port 8420
 ```
 
-Then reach it from your phone over Tailscale at `http://<backupbox-tailnet-name>:8420` -
-no port forwarding, no public exposure.
+Running as a systemd service (`diecast-inventory.service`) is the deployed
+setup on backupbox - see prior notes for the unit file, or ask for it again if
+it's been lost.
 
-## What's NOT built yet (next steps once this is validated)
+## What's NOT built yet
 
-- **Matchbox reference data.** South Texas Diecast's guide above is Hot Wheels-only.
-  Matchbox will need a different source (Fandom wiki scrape, or manual seeding of
-  the castings you actually own) - the `reference_castings` table already has a
-  `brand` column ready for this.
-- **eBay sold-comp pricing.** `suggested_price_usd` comes from South Texas
-  Diecast's own guide estimates, which is a reasonable starting anchor - but per
-  our earlier conversation, the real pre-listing check should still be live eBay
-  sold listings, since guide prices lag the market.
-- **`/inventory/needs_review` UI.** The endpoint exists and returns flagged
-  items (including all the visual-only loose-car guesses), but there's no
-  review screen yet - right now you'd hit it via curl/Postman or a quick admin
-  page. Worth building once you see how often things actually land in that
-  bucket.
-- **Auth.** Currently wide open on your tailnet, which is fine since Tailscale
-  is already the access boundary - but worth knowing if you ever add anyone else
-  to your tailnet who shouldn't touch this.
+- **Matchbox reference data.** South Texas Diecast's guide is Hot Wheels-only.
+- **`/inventory/needs_review` UI.** API-only right now (`curl
+  http://localhost:8420/inventory/needs_review`).
+- **Auth.** Wide open on your tailnet, fine as long as Tailscale stays the
+  access boundary.

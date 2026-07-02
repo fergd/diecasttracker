@@ -56,9 +56,17 @@ CREATE TABLE IF NOT EXISTS inventory (
     canonical_casting_name TEXT,
     canonical_series        TEXT,
     canonical_year           INTEGER,
-    suggested_price_usd      REAL,     -- pulled from reference_castings.loose_value_usd or
-                                          -- .carded_value_usd depending on packaging_type - a starting
-                                          -- anchor only, not a substitute for checking live eBay sold comps
+    guide_price_usd           REAL,     -- pulled from reference_castings.loose_value_usd or
+                                          -- .carded_value_usd depending on packaging_type - a static
+                                          -- guide-book anchor, refreshed only when reference_import.py reruns
+
+    -- live pricing, pulled from live_price_cache (see below) - a real-time-ish
+    -- signal on top of the static guide price, refreshed periodically rather
+    -- than looked up from scratch on every single scan
+    live_price_low_usd    REAL,
+    live_price_high_usd    REAL,
+    live_price_summary      TEXT,        -- brief note on what was found, e.g. "3 recent eBay sold listings, $6-11"
+    live_price_fetched_at    TEXT,
 
     -- your own tracking fields
     condition           TEXT,            -- carded: card/bubble condition e.g. 'Mint card, no crease'
@@ -75,3 +83,26 @@ CREATE TABLE IF NOT EXISTS inventory (
 
 CREATE INDEX IF NOT EXISTS idx_inv_status ON inventory(status);
 CREATE INDEX IF NOT EXISTS idx_inv_match_status ON inventory(match_status);
+
+-- ============================================================
+-- LIVE PRICE CACHE — keyed by casting identity, not by individual scan.
+-- This is what keeps the web-search cost bounded: scanning five copies of
+-- the same casting triggers ONE live search, not five. A lookup is reused
+-- until it's older than CACHE_MAX_AGE_DAYS (see live_pricing.py), then
+-- refreshed on the next scan that needs it.
+-- ============================================================
+CREATE TABLE IF NOT EXISTS live_price_cache (
+    id              INTEGER PRIMARY KEY AUTOINCREMENT,
+    casting_name    TEXT NOT NULL,
+    series_name     TEXT,
+    release_year    INTEGER,
+    packaging_type  TEXT NOT NULL,        -- 'carded' or 'loose' - priced separately, prices differ a lot
+    price_low_usd   REAL,
+    price_high_usd  REAL,
+    summary         TEXT,                  -- short model-written note on what it found and where
+    search_count    INTEGER,               -- how many web searches this lookup actually used (cost visibility)
+    fetched_at      TEXT DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE UNIQUE INDEX IF NOT EXISTS idx_live_price_lookup
+    ON live_price_cache(casting_name, series_name, release_year, packaging_type);

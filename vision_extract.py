@@ -101,6 +101,10 @@ def extract_card_details(image_path: str, packaging_type: str = "carded",
                       underside, where casting name + copyright year are usually
                       stamped. Strongly recommended for loose cars; identification
                       without it falls back to visual-only guessing (see prompt).
+
+    Raises RuntimeError with a clean, user-facing message on API failure (bad key,
+    no credits, rate limit, etc) - callers (app.py) turn this into a proper JSON
+    error response instead of a raw 500 with a stack trace as the body.
     """
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
@@ -111,11 +115,22 @@ def extract_card_details(image_path: str, packaging_type: str = "carded",
     prompt = LOOSE_PROMPT if packaging_type == "loose" else CARDED_PROMPT
     content.append({"type": "text", "text": prompt})
 
-    response = client.messages.create(
-        model=MODEL,
-        max_tokens=500,
-        messages=[{"role": "user", "content": content}],
-    )
+    try:
+        response = client.messages.create(
+            model=MODEL,
+            max_tokens=500,
+            messages=[{"role": "user", "content": content}],
+        )
+    except anthropic.APIStatusError as e:
+        # e.g. "Your credit balance is too low to access the Anthropic API."
+        detail = e.message
+        try:
+            detail = e.body.get("error", {}).get("message", e.message)
+        except (AttributeError, TypeError):
+            pass
+        raise RuntimeError(f"Claude API error ({e.status_code}): {detail}") from e
+    except anthropic.APIConnectionError as e:
+        raise RuntimeError("Couldn't reach the Claude API - check backupbox's internet connection.") from e
 
     raw_text = response.content[0].text.strip()
     # Defensive cleanup in case the model wraps the JSON in fences despite instructions

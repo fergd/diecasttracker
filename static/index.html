@@ -4,120 +4,254 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Diecast Inventory</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<!-- Icons are inlined as raw SVG below (real Material Symbols path data,
+     fetched from google/material-design-icons) rather than loaded from
+     fonts.googleapis.com/icon - that font request is exactly the kind of
+     Google domain a Pi-hole blocklist tends to catch, and a blocked icon
+     font used to render as raw ligature text ("photo_camera") instead of
+     an icon. Inlined SVG has zero runtime network dependency, so it can't
+     be blocked by anything on the local network. -->
+
+<script type="importmap">
+{
+  "imports": {
+    "@material/web/": "https://esm.run/@material/web/"
+  }
+}
+</script>
+<script type="module">
+  import '@material/web/all.js';
+  import { styles as typescaleStyles } from '@material/web/typography/md-typescale-styles.js';
+  document.adoptedStyleSheets.push(typescaleStyles.styleSheet);
+</script>
+
 <style>
-  :root { color-scheme: dark; }
+  /* Layout only - all color, type, and shape comes from Material's own
+     design tokens (--md-sys-color-*, --md-sys-typescale-*, --md-sys-shape-*).
+     No custom palette or type scale is defined here. */
   body {
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-    background: #14161a; color: #e8e8e8; margin: 0; padding: 16px;
-    max-width: 480px; margin-inline: auto;
+    margin: 0;
+    padding: 16px 16px 48px;
+    max-width: 480px;
+    margin-inline: auto;
+    background: var(--md-sys-color-surface);
+    color: var(--md-sys-color-on-surface);
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    box-sizing: border-box;
   }
-  h1 { font-size: 1.3rem; margin-bottom: 4px; }
-  .sub { color: #9aa0a6; font-size: 0.85rem; margin-bottom: 20px; }
-  #captureBtn {
-    width: 100%; padding: 16px; font-size: 1.1rem; font-weight: 600;
-    background: #3b82f6; color: white; border: none; border-radius: 12px;
-    margin-bottom: 20px; cursor: pointer;
-  }
-  #captureBtn:active { background: #2563eb; }
-  input[type=file] { display: none; }
-  .card {
-    background: #1e2127; border-radius: 12px; padding: 14px; margin-bottom: 12px;
-    border-left: 4px solid #555;
-  }
-  .card.confirmed { border-left-color: #22c55e; }
-  .card.needs_review { border-left-color: #eab308; }
-  .card.no_match { border-left-color: #ef4444; }
-  .card .name { font-weight: 600; font-size: 1.05rem; }
-  .card .meta { color: #9aa0a6; font-size: 0.85rem; margin-top: 4px; }
-  .badge {
-    display: inline-block; font-size: 0.72rem; font-weight: 600;
-    padding: 2px 8px; border-radius: 999px; margin-top: 6px;
-  }
-  .badge.confirmed { background: #16311f; color: #4ade80; }
-  .badge.needs_review { background: #332a0d; color: #facc15; }
-  .badge.no_match { background: #3a1414; color: #f87171; }
-  .loading { color: #9aa0a6; font-style: italic; padding: 12px; }
-  .toggle {
-    display: flex; gap: 8px; margin-bottom: 14px;
-  }
-  .toggle button {
-    flex: 1; padding: 10px; border-radius: 10px; border: 1px solid #333;
-    background: #1e2127; color: #9aa0a6; font-size: 0.95rem; cursor: pointer;
-  }
-  .toggle button.active { background: #3b82f6; color: white; border-color: #3b82f6; }
+  header { margin-bottom: 20px; }
+  header p { color: var(--md-sys-color-on-surface-variant); margin-top: 4px; }
+
+  .toggle-row { display: flex; justify-content: center; margin-bottom: 16px; }
+
   #basePrompt {
-    display: none; margin-bottom: 12px; padding: 10px 12px; background: #1e2127;
-    border-radius: 10px; font-size: 0.85rem; color: #9aa0a6;
+    display: none;
+    margin-bottom: 16px;
+    padding: 12px 16px;
+    border-radius: var(--md-sys-shape-corner-medium, 12px);
+    background: var(--md-sys-color-secondary-container);
+    color: var(--md-sys-color-on-secondary-container);
   }
   #basePrompt.show { display: block; }
-  #baseBtn {
-    display: none; width: 100%; padding: 12px; font-size: 0.95rem;
-    background: #2a2d34; color: #e8e8e8; border: 1px solid #3b82f6;
-    border-radius: 10px; margin-bottom: 12px; cursor: pointer;
+
+  #captureBtn, #baseBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    width: 100%;
+    height: 40px;
+    border-radius: 100px;
+    font: var(--md-sys-typescale-label-large-font);
+    cursor: pointer;
+    box-sizing: border-box;
+    -webkit-tap-highlight-color: transparent;
   }
-  #baseBtn.show { display: block; }
-  #baseBtn.attached { border-color: #22c55e; color: #4ade80; }
-  .price { color: #4ade80; font-size: 0.9rem; margin-top: 4px; }
+  #captureBtn {
+    background: var(--md-sys-color-primary);
+    color: var(--md-sys-color-on-primary);
+    border: none;
+  }
+  #captureBtn:active { background: color-mix(in srgb, var(--md-sys-color-primary) 85%, black); }
+
+  #baseBtn {
+    display: none;
+    margin-top: 12px;
+    background: transparent;
+    color: var(--md-sys-color-primary);
+    border: 1px solid var(--md-sys-color-outline);
+  }
+  #baseBtn.show { display: flex; }
+  #baseBtn.attached { border-color: var(--md-sys-color-tertiary); color: var(--md-sys-color-tertiary); }
+
+  md-list {
+    background: transparent;
+    margin-top: 24px;
+    padding: 0;
+  }
+  md-list-item {
+    border-radius: var(--md-sys-shape-corner-medium, 12px);
+    margin-bottom: 8px;
+    background: var(--md-sys-color-surface-container);
+  }
+
+  .end-stack {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 4px;
+  }
+  .status-pill {
+    font: var(--md-sys-typescale-label-small-font);
+    padding: 3px 10px;
+    border-radius: 999px;
+    white-space: nowrap;
+  }
+  .status-pill.confirmed { background: var(--md-sys-color-tertiary-container); color: var(--md-sys-color-on-tertiary-container); }
+  .status-pill.needs_review { background: var(--md-sys-color-secondary-container); color: var(--md-sys-color-on-secondary-container); }
+  .status-pill.no_match { background: var(--md-sys-color-error-container); color: var(--md-sys-color-on-error-container); }
+  .price-text {
+    font: var(--md-sys-typescale-label-medium-font);
+    color: var(--md-sys-color-primary);
+  }
+
+  #emptyState {
+    text-align: center;
+    padding: 40px 16px;
+    color: var(--md-sys-color-on-surface-variant);
+  }
+  #emptyState md-icon { font-size: 40px; width: 40px; height: 40px; margin-bottom: 8px; }
+
+  /* Inline SVG icons, sized/colored to match Material's own icon token
+     conventions - fill: currentColor lets each icon inherit whatever color
+     its surrounding button/context already uses. */
+  md-icon svg { width: 1em; height: 1em; fill: currentColor; display: block; }
 </style>
 </head>
 <body>
-  <h1>📦 Diecast Inventory</h1>
-  <div class="sub">Snap a card (or a loose car). It'll be extracted and checked against the reference database automatically.</div>
 
-  <div class="toggle">
-    <button id="cardedToggle" class="active">🎴 Carded</button>
-    <button id="looseToggle">🚗 Loose</button>
+  <header>
+    <h1 class="md-typescale-headline-small">Diecast Inventory</h1>
+    <p class="md-typescale-body-medium">Snap a card or a loose car — it's extracted and checked against the reference database automatically.</p>
+  </header>
+
+  <div class="toggle-row">
+    <md-outlined-segmented-button-set id="packagingToggle">
+      <md-outlined-segmented-button id="cardedSeg" selected>
+        <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m159-168-34-14q-31-13-41.5-45t3.5-63l72-156v278Zm160 88q-33 0-56.5-23.5T239-160v-240l106 294q3 7 6 13.5t8 12.5h-40Zm206-4q-32 12-62-3t-42-47L243-622q-12-32 2-62.5t46-41.5l302-110q32-12 62 3t42 47l178 488q12 32-2 62.5T827-194L525-84Zm-86-476q17 0 28.5-11.5T479-600q0-17-11.5-28.5T439-640q-17 0-28.5 11.5T399-600q0 17 11.5 28.5T439-560Zm58 400 302-110-178-490-302 110 178 490ZM319-650l302-110-302 110Z"/></svg></md-icon>
+        Carded
+      </md-outlined-segmented-button>
+      <md-outlined-segmented-button id="looseSeg">
+        <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h440q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z"/></svg></md-icon>
+        Loose
+      </md-outlined-segmented-button>
+    </md-outlined-segmented-button-set>
   </div>
 
-  <div id="basePrompt">
-    Loose cars are identified from the base stamp (casting name + year, stamped
-    into the metal underside) — a lot more reliable than guessing from the body
-    shape alone. Snap the front first, then the base.
+  <p id="basePrompt" class="md-typescale-body-small">
+    Loose cars are identified from the base stamp (casting name + year, stamped into
+    the metal underside) — a lot more reliable than guessing from body shape alone.
+    Snap the front first, then the base.
+  </p>
+
+  <!-- Native <label for> association, not a JS-proxied .click() - this is the
+       standard mechanism for triggering a file input, and gives the browser/OS
+       the most direct signal about what triggered the picker. Whether Android
+       opens the camera directly vs. shows a camera-or-files chooser ultimately
+       depends on the device and what's installed, not something a web page can
+       fully force either way - but this is the most correct, standard way to ask. -->
+  <label id="captureBtn" for="cameraInput">
+    <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg></md-icon>
+    Scan a car
+  </label>
+  <input type="file" id="cameraInput" accept="image/*" capture="environment" hidden>
+
+  <label id="baseBtn" for="baseInput">
+    <md-icon slot="icon" id="baseBtnIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-143 0-253-90T88-400h82q28 106 114 173t196 67q86 0 160-42.5T756-320H640v-80h240v240h-80v-80q-57 76-141 118T480-80Zm0-280q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-560v-240h80v80q57-76 141-118t179-42q143 0 253 90t139 230h-82q-28-106-114-173t-196-67q-86 0-160 42.5T204-640h116v80H80Z"/></svg></md-icon>
+    <span id="baseBtnLabel">Add base/underside photo</span>
+  </label>
+  <input type="file" id="baseInput" accept="image/*" capture="environment" hidden>
+
+  <md-list id="results"></md-list>
+
+  <div id="emptyState">
+    <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-80q-33 0-56.5-23.5T120-160v-451q-18-11-29-28.5T80-680v-120q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v120q0 23-11 40.5T840-611v451q0 33-23.5 56.5T760-80H200Zm0-520v440h560v-440H200Zm-40-80h640v-120H160v120Zm200 280h240v-80H360v80Zm120 20Z"/></svg></md-icon>
+    <p class="md-typescale-body-medium">Nothing scanned yet</p>
   </div>
 
-  <label id="captureBtn" for="cameraInput">📸 Scan a Car</label>
-  <input type="file" id="cameraInput" accept="image/*" capture="environment">
 
-  <label id="baseBtn" for="baseInput">📷 Add base/underside photo (recommended)</label>
-  <input type="file" id="baseInput" accept="image/*" capture="environment">
+  <md-dialog id="errorDialog">
+    <div slot="headline">Scan didn't go through</div>
+    <div slot="content" id="errorDialogContent" class="md-typescale-body-medium"></div>
+    <div slot="actions">
+      <md-text-button id="errorDialogClose">Close</md-text-button>
+    </div>
+  </md-dialog>
 
-  <div id="results"></div>
-
-  <script>
+  <script type="module">
     const cameraInput = document.getElementById('cameraInput');
     const baseInput = document.getElementById('baseInput');
     const results = document.getElementById('results');
-    const cardedToggle = document.getElementById('cardedToggle');
-    const looseToggle = document.getElementById('looseToggle');
+    const emptyState = document.getElementById('emptyState');
+    const cardedSeg = document.getElementById('cardedSeg');
+    const looseSeg = document.getElementById('looseSeg');
     const basePrompt = document.getElementById('basePrompt');
     const baseBtn = document.getElementById('baseBtn');
+    const baseBtnIcon = document.getElementById('baseBtnIcon');
+    const baseBtnLabel = document.getElementById('baseBtnLabel');
+    const errorDialog = document.getElementById('errorDialog');
+    const errorDialogContent = document.getElementById('errorDialogContent');
+    const errorDialogClose = document.getElementById('errorDialogClose');
+
+    const ICON_FLIP_CAMERA = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-143 0-253-90T88-400h82q28 106 114 173t196 67q86 0 160-42.5T756-320H640v-80h240v240h-80v-80q-57 76-141 118T480-80Zm0-280q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-560v-240h80v80q57-76 141-118t179-42q143 0 253 90t139 230h-82q-28-106-114-173t-196-67q-86 0-160 42.5T204-640h116v80H80Z"/></svg>';
+    const ICON_CHECK_CIRCLE = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>';
 
     let packagingType = 'carded';
     let pendingMainPhoto = null;
     let pendingBasePhoto = null;
 
+    errorDialogClose.addEventListener('click', () => errorDialog.close());
+
+    function showError(message) {
+      errorDialogContent.textContent = message;
+      errorDialog.show();
+    }
+
+    function resetBaseBtn() {
+      baseBtnIcon.innerHTML = ICON_FLIP_CAMERA;
+      baseBtnLabel.textContent = 'Add base/underside photo';
+      baseBtn.classList.remove('attached');
+    }
+
     function setPackaging(type) {
       packagingType = type;
-      cardedToggle.classList.toggle('active', type === 'carded');
-      looseToggle.classList.toggle('active', type === 'loose');
+      cardedSeg.selected = type === 'carded';
+      looseSeg.selected = type === 'loose';
       basePrompt.classList.toggle('show', type === 'loose');
       baseBtn.classList.toggle('show', type === 'loose');
       pendingMainPhoto = null;
       pendingBasePhoto = null;
-      baseBtn.classList.remove('attached');
-      baseBtn.textContent = '📷 Add base/underside photo (recommended)';
+      resetBaseBtn();
     }
-    cardedToggle.addEventListener('click', () => setPackaging('carded'));
-    looseToggle.addEventListener('click', () => setPackaging('loose'));
+    cardedSeg.addEventListener('click', () => setPackaging('carded'));
+    looseSeg.addEventListener('click', () => setPackaging('loose'));
+
+    // No JS-triggered .click() needed anymore - captureBtn/baseBtn are native
+    // <label for="..."> elements, which is the standard, most-direct way to
+    // associate a control with a file input's picker.
 
     cameraInput.addEventListener('change', async (e) => {
       const file = e.target.files[0];
       if (!file) return;
       pendingMainPhoto = file;
 
-      // Carded cars scan immediately - one photo is enough.
-      // Loose cars wait for the base photo (or a manual "scan without base" tap)
-      // so identification has the best shot at being reliable.
+      // Carded cars scan immediately - a single photo is enough.
+      // Loose cars wait for the base photo so identification has the best
+      // shot at being reliable (see match.py's visual-only safeguard).
       if (packagingType === 'carded') {
         await submitScan();
       }
@@ -128,19 +262,28 @@
       const file = e.target.files[0];
       if (!file) return;
       pendingBasePhoto = file;
+      baseBtnIcon.innerHTML = ICON_CHECK_CIRCLE;
+      baseBtnLabel.textContent = 'Base photo attached — scanning…';
       baseBtn.classList.add('attached');
-      baseBtn.textContent = '✅ Base photo attached — scanning…';
       baseInput.value = '';
       await submitScan();
     });
 
     async function submitScan() {
       if (!pendingMainPhoto) return;
+      emptyState.style.display = 'none';
 
-      const loadingEl = document.createElement('div');
-      loadingEl.className = 'loading';
-      loadingEl.textContent = 'Scanning…';
-      results.prepend(loadingEl);
+      const loadingItem = document.createElement('md-list-item');
+      const progress = document.createElement('md-circular-progress');
+      progress.slot = 'start';
+      progress.indeterminate = true;
+      progress.style.setProperty('--md-circular-progress-size', '24px');
+      loadingItem.appendChild(progress);
+      const headline = document.createElement('div');
+      headline.slot = 'headline';
+      headline.textContent = 'Scanning…';
+      loadingItem.appendChild(headline);
+      results.prepend(loadingItem);
 
       const formData = new FormData();
       formData.append('photo', pendingMainPhoto);
@@ -149,38 +292,86 @@
 
       try {
         const resp = await fetch('/scan', { method: 'POST', body: formData });
-        const data = await resp.json();
-        loadingEl.remove();
+
+        let data;
+        try {
+          data = await resp.json();
+        } catch {
+          throw new Error(`Server sent back something unreadable (status ${resp.status}). Check the server logs on backupbox.`);
+        }
+
+        if (!resp.ok) {
+          throw new Error(data.detail || `Server error (status ${resp.status})`);
+        }
+
+        loadingItem.remove();
         renderResult(data);
       } catch (err) {
-        loadingEl.textContent = 'Error: ' + err.message;
+        loadingItem.remove();
+        showError(err.message);
+        if (results.children.length === 0) emptyState.style.display = 'block';
       }
 
       pendingMainPhoto = null;
       pendingBasePhoto = null;
-      baseBtn.classList.remove('attached');
-      baseBtn.textContent = '📷 Add base/underside photo (recommended)';
+      resetBaseBtn();
     }
 
     function renderResult(data) {
       const v = data.validation;
       const ex = data.extracted;
-      const card = document.createElement('div');
-      card.className = `card ${v.status}`;
+      const live = data.live_price || {};
 
       const name = v.canonical_casting_name || ex.casting_name || 'Unrecognized item';
       const series = v.canonical_series || ex.series || '';
       const year = v.canonical_year || ex.release_year || '';
-      const packagingLabel = data.packaging_type === 'loose' ? '🚗 Loose' : '🎴 Carded';
+      const packagingLabel = data.packaging_type === 'loose' ? 'Loose' : 'Carded';
+      const metaLine = [packagingLabel, series, year].filter(Boolean).join(' · ');
 
-      card.innerHTML = `
-        <div class="name">${name}</div>
-        <div class="meta">${packagingLabel} · ${series}${year ? ' · ' + year : ''}</div>
-        <div class="meta">${ex.color || ''}</div>
-        ${v.suggested_price_usd ? `<div class="price">~$${v.suggested_price_usd.toFixed(2)} guide value</div>` : ''}
-        <span class="badge ${v.status}">${v.status.replace('_', ' ')} · ${(v.confidence * 100).toFixed(0)}%</span>
-      `;
-      results.prepend(card);
+      const item = document.createElement('md-list-item');
+
+      const headline = document.createElement('div');
+      headline.slot = 'headline';
+      headline.textContent = name;
+      item.appendChild(headline);
+
+      const supportingLines = [metaLine, ex.color].filter(Boolean);
+      if (live.summary && !live.skipped) supportingLines.push(live.summary);
+      const supporting = document.createElement('div');
+      supporting.slot = 'supporting-text';
+      supporting.textContent = supportingLines.join('\n');
+      supporting.style.whiteSpace = 'pre-line';
+      item.appendChild(supporting);
+
+      const endStack = document.createElement('div');
+      endStack.slot = 'end';
+      endStack.className = 'end-stack';
+
+      // Live price (from a real-time web search) takes priority over the
+      // static guide price when available - it's shown as a range since
+      // that's honestly what a search turns up, not a single number.
+      if (live.price_low_usd || live.price_high_usd) {
+        const price = document.createElement('div');
+        price.className = 'price-text';
+        const low = live.price_low_usd, high = live.price_high_usd;
+        price.textContent = (low && high && low !== high)
+          ? `$${low.toFixed(2)}–$${high.toFixed(2)} live`
+          : `~$${(low || high).toFixed(2)} live`;
+        endStack.appendChild(price);
+      } else if (v.guide_price_usd) {
+        const price = document.createElement('div');
+        price.className = 'price-text';
+        price.textContent = `~$${v.guide_price_usd.toFixed(2)} guide`;
+        endStack.appendChild(price);
+      }
+
+      const pill = document.createElement('span');
+      pill.className = `status-pill ${v.status}`;
+      pill.textContent = `${v.status.replace('_', ' ')} · ${(v.confidence * 100).toFixed(0)}%`;
+      endStack.appendChild(pill);
+
+      item.appendChild(endStack);
+      results.prepend(item);
     }
   </script>
 </body>
