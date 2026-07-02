@@ -1,16 +1,7 @@
-# Data #
-######################
-*.csv
-# OS generated files #
-######################
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
-node_modulesnode_modules
-/node_modules
-npm-debug.log
-/*.env
+venv/
+__pycache__/
+*.pyc
+*.db
+photos/
+html_cache/
+.env

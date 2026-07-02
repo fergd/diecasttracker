@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Diecast Inventory</title>
+<style>
+  :root { color-scheme: dark; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    background: #14161a; color: #e8e8e8; margin: 0; padding: 16px;
+    max-width: 480px; margin-inline: auto;
+  }
+  h1 { font-size: 1.3rem; margin-bottom: 4px; }
+  .sub { color: #9aa0a6; font-size: 0.85rem; margin-bottom: 20px; }
+  #captureBtn {
+    width: 100%; padding: 16px; font-size: 1.1rem; font-weight: 600;
+    background: #3b82f6; color: white; border: none; border-radius: 12px;
+    margin-bottom: 20px; cursor: pointer;
+  }
+  #captureBtn:active { background: #2563eb; }
+  input[type=file] { display: none; }
+  .card {
+    background: #1e2127; border-radius: 12px; padding: 14px; margin-bottom: 12px;
+    border-left: 4px solid #555;
+  }
+  .card.confirmed { border-left-color: #22c55e; }
+  .card.needs_review { border-left-color: #eab308; }
+  .card.no_match { border-left-color: #ef4444; }
+  .card .name { font-weight: 600; font-size: 1.05rem; }
+  .card .meta { color: #9aa0a6; font-size: 0.85rem; margin-top: 4px; }
+  .badge {
+    display: inline-block; font-size: 0.72rem; font-weight: 600;
+    padding: 2px 8px; border-radius: 999px; margin-top: 6px;
+  }
+  .badge.confirmed { background: #16311f; color: #4ade80; }
+  .badge.needs_review { background: #332a0d; color: #facc15; }
+  .badge.no_match { background: #3a1414; color: #f87171; }
+  .loading { color: #9aa0a6; font-style: italic; padding: 12px; }
+  .toggle {
+    display: flex; gap: 8px; margin-bottom: 14px;
+  }
+  .toggle button {
+    flex: 1; padding: 10px; border-radius: 10px; border: 1px solid #333;
+    background: #1e2127; color: #9aa0a6; font-size: 0.95rem; cursor: pointer;
+  }
+  .toggle button.active { background: #3b82f6; color: white; border-color: #3b82f6; }
+  #basePrompt {
+    display: none; margin-bottom: 12px; padding: 10px 12px; background: #1e2127;
+    border-radius: 10px; font-size: 0.85rem; color: #9aa0a6;
+  }
+  #basePrompt.show { display: block; }
+  #baseBtn {
+    display: none; width: 100%; padding: 12px; font-size: 0.95rem;
+    background: #2a2d34; color: #e8e8e8; border: 1px solid #3b82f6;
+    border-radius: 10px; margin-bottom: 12px; cursor: pointer;
+  }
+  #baseBtn.show { display: block; }
+  #baseBtn.attached { border-color: #22c55e; color: #4ade80; }
+  .price { color: #4ade80; font-size: 0.9rem; margin-top: 4px; }
+</style>
+</head>
+<body>
+  <h1>📦 Diecast Inventory</h1>
+  <div class="sub">Snap a card (or a loose car). It'll be extracted and checked against the reference database automatically.</div>
+
+  <div class="toggle">
+    <button id="cardedToggle" class="active">🎴 Carded</button>
+    <button id="looseToggle">🚗 Loose</button>
+  </div>
+
+  <div id="basePrompt">
+    Loose cars are identified from the base stamp (casting name + year, stamped
+    into the metal underside) — a lot more reliable than guessing from the body
+    shape alone. Snap the front first, then the base.
+  </div>
+
+  <label id="captureBtn" for="cameraInput">📸 Scan a Car</label>
+  <input type="file" id="cameraInput" accept="image/*" capture="environment">
+
+  <label id="baseBtn" for="baseInput">📷 Add base/underside photo (recommended)</label>
+  <input type="file" id="baseInput" accept="image/*" capture="environment">
+
+  <div id="results"></div>
+
+  <script>
+    const cameraInput = document.getElementById('cameraInput');
+    const baseInput = document.getElementById('baseInput');
+    const results = document.getElementById('results');
+    const cardedToggle = document.getElementById('cardedToggle');
+    const looseToggle = document.getElementById('looseToggle');
+    const basePrompt = document.getElementById('basePrompt');
+    const baseBtn = document.getElementById('baseBtn');
+
+    let packagingType = 'carded';
+    let pendingMainPhoto = null;
+    let pendingBasePhoto = null;
+
+    function setPackaging(type) {
+      packagingType = type;
+      cardedToggle.classList.toggle('active', type === 'carded');
+      looseToggle.classList.toggle('active', type === 'loose');
+      basePrompt.classList.toggle('show', type === 'loose');
+      baseBtn.classList.toggle('show', type === 'loose');
+      pendingMainPhoto = null;
+      pendingBasePhoto = null;
+      baseBtn.classList.remove('attached');
+      baseBtn.textContent = '📷 Add base/underside photo (recommended)';
+    }
+    cardedToggle.addEventListener('click', () => setPackaging('carded'));
+    looseToggle.addEventListener('click', () => setPackaging('loose'));
+
+    cameraInput.addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      pendingMainPhoto = file;
+
+      // Carded cars scan immediately - one photo is enough.
+      // Loose cars wait for the base photo (or a manual "scan without base" tap)
+      // so identification has the best shot at being reliable.
+      if (packagingType === 'carded') {
+        await submitScan();
+      }
+      cameraInput.value = '';
+    });
+
+    baseInput.addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      pendingBasePhoto = file;
+      baseBtn.classList.add('attached');
+      baseBtn.textContent = '✅ Base photo attached — scanning…';
+      baseInput.value = '';
+      await submitScan();
+    });
+
+    async function submitScan() {
+      if (!pendingMainPhoto) return;
+
+      const loadingEl = document.createElement('div');
+      loadingEl.className = 'loading';
+      loadingEl.textContent = 'Scanning…';
+      results.prepend(loadingEl);
+
+      const formData = new FormData();
+      formData.append('photo', pendingMainPhoto);
+      formData.append('packaging_type', packagingType);
+      if (pendingBasePhoto) formData.append('base_photo', pendingBasePhoto);
+
+      try {
+        const resp = await fetch('/scan', { method: 'POST', body: formData });
+        const data = await resp.json();
+        loadingEl.remove();
+        renderResult(data);
+      } catch (err) {
+        loadingEl.textContent = 'Error: ' + err.message;
+      }
+
+      pendingMainPhoto = null;
+      pendingBasePhoto = null;
+      baseBtn.classList.remove('attached');
+      baseBtn.textContent = '📷 Add base/underside photo (recommended)';
+    }
+
+    function renderResult(data) {
+      const v = data.validation;
+      const ex = data.extracted;
+      const card = document.createElement('div');
+      card.className = `card ${v.status}`;
+
+      const name = v.canonical_casting_name || ex.casting_name || 'Unrecognized item';
+      const series = v.canonical_series || ex.series || '';
+      const year = v.canonical_year || ex.release_year || '';
+      const packagingLabel = data.packaging_type === 'loose' ? '🚗 Loose' : '🎴 Carded';
+
+      card.innerHTML = `
+        <div class="name">${name}</div>
+        <div class="meta">${packagingLabel} · ${series}${year ? ' · ' + year : ''}</div>
+        <div class="meta">${ex.color || ''}</div>
+        ${v.suggested_price_usd ? `<div class="price">~$${v.suggested_price_usd.toFixed(2)} guide value</div>` : ''}
+        <span class="badge ${v.status}">${v.status.replace('_', ' ')} · ${(v.confidence * 100).toFixed(0)}%</span>
+      `;
+      results.prepend(card);
+    }
+  </script>
+</body>
+</html>
