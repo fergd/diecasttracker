@@ -620,7 +620,19 @@
       statusDialog.show();
       try {
         const resp = await fetch('/status');
-        const s = await resp.json();
+        let s;
+        try {
+          s = await resp.json();
+        } catch {
+          throw new Error(`Server sent back something unreadable (status ${resp.status}).`);
+        }
+        if (!resp.ok) {
+          // This is the bug that caused a confusing "everything's empty/
+          // unconfigured" screen when the real problem was a 404 (e.g. an
+          // older app.py without this route deployed) - never render an
+          // error body as if it were valid status data.
+          throw new Error(s.detail || `Server error (status ${resp.status}) - the /status route may not exist on the currently running app.py. Confirm the latest backend code is actually deployed.`);
+        }
         statusDialogContent.innerHTML = renderStatusHtml(s);
       } catch (err) {
         statusDialogContent.textContent = `Couldn't load status: ${err.message}`;
@@ -678,7 +690,15 @@
       statusDialogContent.innerHTML += `<p class="md-typescale-body-small">Running a real test search…</p>`;
       try {
         const resp = await fetch('/status/test_live_search');
-        const result = await resp.json();
+        let result;
+        try {
+          result = await resp.json();
+        } catch {
+          throw new Error(`Server sent back something unreadable (status ${resp.status}).`);
+        }
+        if (!resp.ok) {
+          throw new Error(result.detail || `Server error (status ${resp.status}) - this route may not exist on the currently running app.py.`);
+        }
         statusDialogContent.innerHTML += `<p class="md-typescale-body-small ${result.ok ? 'status-ok' : 'status-warn'}">
           ${result.ok ? 'Live search working: ' : 'Live search failed: '}
           ${JSON.stringify(result.result || result.error)}

@@ -59,78 +59,77 @@ def parse_year_page(html: str, year: int) -> list[dict]:
     """
     Parse a South Texas Diecast year-guide page into structured rows.
 
-    The page is a flat list of entries, each roughly:
-        SKU  Collector#  [Casting Name](link)  Series Name  [flags: New Casting / Treasure Hunt / Super TH / Exclusive]
-        description text
-        Loose price   Carded price
+    Confirmed against the real live HTML (old-school table markup, uppercase
+    tags): each data row is a <TR> with exactly 7 <TD> cells:
+        [0] SKU (e.g. "DHP37")
+        [1] collector number (e.g. "001")
+        [2] casting name, as a link's text (e.g. "Corvette C7.R")
+        [3] series - two lines separated by <br>: "{year} Hot Wheels" / series name
+        [4] color/deco description (not stored - not needed for matching)
+        [5] loose value (e.g. "$0.50")
+        [6] carded/new value (e.g. "$1.00")
 
-    The HTML is old-school and not cleanly semantic, so this parser works off
-    text patterns rather than strict tag structure. It's intentionally
-    forgiving - a few malformed rows are expected and acceptable, since this
-    is a *validation reference*, not the source of truth for every field.
+    Rows that don't match this shape (headers, ads, other page furniture)
+    are skipped rather than erroring - this is a validation reference, not
+    the source of truth for every field, so missing a handful of odd rows
+    is an acceptable tradeoff for not being fragile against page furniture.
     """
     soup = BeautifulSoup(html, "html.parser")
     rows = []
 
-    # Each entry starts with a bolded SKU-like code (e.g. DHP37) followed by
-    # a collector number, then the casting name (often a link), then series
-    # name, then a description, then two dollar-amount fields.
-    # We walk the list items / bold-tag sequence rather than assuming <table>.
-    text_blocks = soup.get_text("\n").split("\n")
+    sku_pattern = re.compile(r"^[A-Z0-9]{4,8}$")
 
-    sku_pattern = re.compile(r"^[A-Z]{2,4}\d{2,3}$")
-    price_pattern = re.compile(r"^\$\d+\.\d{2}$")
+    for tr in soup.find_all("tr"):
+        tds = tr.find_all("td")
+        if len(tds) != 7:
+            continue
 
-    i = 0
-    while i < len(text_blocks):
-        line = text_blocks[i].strip()
-        if sku_pattern.match(line):
-            sku = line
-            j = i + 1
-            collector_num = None
-            if j < len(text_blocks) and re.match(r"^\d{2,4}$", text_blocks[j].strip()):
-                collector_num = text_blocks[j].strip()
-                j += 1
-            casting_name = text_blocks[j].strip() if j < len(text_blocks) else None
-            j += 1
+        sku = tds[0].get_text(strip=True)
+        collector_num = tds[1].get_text(strip=True)
+        if not sku_pattern.match(sku) or not collector_num.isdigit():
+            continue
 
-            # scan forward a few lines for series name / flags / prices
-            series_name = None
-            flags = []
-            prices = []
-            lookahead_limit = j + 8
-            while j < min(lookahead_limit, len(text_blocks)):
-                t = text_blocks[j].strip()
-                if price_pattern.match(t):
-                    prices.append(float(t.replace("$", "")))
-                elif t in ("New Casting", "Treasure Hunt", "Super Treasure Hunt", "ZAMAC"):
-                    flags.append(t)
-                elif "Exclusive" in t:
-                    flags.append(t)
-                elif t and series_name is None and not sku_pattern.match(t):
-                    series_name = t
-                if len(prices) >= 2:
-                    break
-                j += 1
+        name_link = tds[2].find("a")
+        casting_name = (name_link.get_text(strip=True) if name_link
+                         else tds[2].get_text(strip=True))
+        if not casting_name:
+            continue
 
-            if casting_name:
-                rows.append({
-                    "brand": "Hot Wheels",
-                    "sku": sku,
-                    "collector_number": collector_num,
-                    "casting_name": casting_name,
-                    "series_name": series_name,
-                    "release_year": year,
-                    "is_treasure_hunt": "Super TH" if "Super Treasure Hunt" in flags
-                                         else ("TH" if "Treasure Hunt" in flags else None),
-                    "is_exclusive": next((f for f in flags if "Exclusive" in f), None),
-                    "loose_value_usd": prices[0] if len(prices) > 0 else None,
-                    "carded_value_usd": prices[1] if len(prices) > 1 else None,
-                    "source": f"southtexasdiecast:{year}.html",
-                    "source_url": BASE_URL.format(year=year),
-                })
-            i = j
-        i += 1
+        # Series cell is two lines split by <br> - "{year} Hot Wheels" then
+        # the actual series name (e.g. "HW Race Team"). Take the text after
+        # the <br>; fall back to the whole cell if that's not there.
+        series_cell = tds[3]
+        br = series_cell.find("br")
+        if br and br.next_sibling:
+            series_name = str(br.next_sibling).strip()
+        else:
+            series_name = series_cell.get_text(" ", strip=True)
+
+        def _parse_price(cell):
+            text = cell.get_text(strip=True).replace("$", "").replace(",", "")
+            try:
+                return float(text)
+            except ValueError:
+                return None
+
+        loose_price = _parse_price(tds[5])
+        carded_price = _parse_price(tds[6])
+
+        rows.append({
+            "brand": "Hot Wheels",
+            "sku": sku,
+            "collector_number": collector_num,
+            "casting_name": casting_name,
+            "series_name": series_name or None,
+            "release_year": year,
+            "is_treasure_hunt": None,   # not distinguished by this table shape - a
+                                          # future pass could inspect row bgcolor/flags
+            "is_exclusive": None,
+            "loose_value_usd": loose_price,
+            "carded_value_usd": carded_price,
+            "source": f"southtexasdiecast:{year}.html",
+            "source_url": BASE_URL.format(year=year),
+        })
 
     return rows
 
