@@ -53,6 +53,8 @@ CREATE TABLE IF NOT EXISTS inventory (
     match_notes          TEXT,
 
     -- canonical fields, filled in once matched (copied from reference, not the raw extraction)
+    canonical_brand         TEXT,    -- from the matched reference row - more authoritative than
+                                        -- extracted_brand, which is just the model's read/guess
     canonical_casting_name TEXT,
     canonical_series        TEXT,
     canonical_year           INTEGER,

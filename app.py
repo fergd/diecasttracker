@@ -15,18 +15,21 @@ without exposing anything to the public internet.
 
 import json
 import logging
+import os
 import shutil
 import sqlite3
 import uuid
+from datetime import datetime
 from pathlib import Path
+from typing import Optional
 
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi.responses import FileResponse
+from fastapi.responses import FileResponse, JSONResponse
 from fastapi.staticfiles import StaticFiles
-from typing import Optional
+from pydantic import BaseModel
 
-from match import validate_extraction
+from match import validate_extraction, reference_coverage
 from vision_extract import extract_card_details
 from live_pricing import get_live_price
 
@@ -63,6 +66,7 @@ INVENTORY_COLUMNS = {
     "match_confidence": "REAL",
     "match_status": "TEXT",
     "match_notes": "TEXT",
+    "canonical_brand": "TEXT",
     "canonical_casting_name": "TEXT",
     "canonical_series": "TEXT",
     "canonical_year": "INTEGER",
@@ -187,10 +191,10 @@ async def scan_card(
                 extracted_collector_num, extracted_series, extracted_year,
                 extracted_color, extracted_raw_json,
                 match_reference_id, match_confidence, match_status, match_notes,
-                canonical_casting_name, canonical_series, canonical_year,
+                canonical_brand, canonical_casting_name, canonical_series, canonical_year,
                 guide_price_usd,
                 live_price_low_usd, live_price_high_usd, live_price_summary, live_price_fetched_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             saved_path, base_saved_path, packaging_type,
             extracted.get("brand"), extracted.get("casting_name"),
@@ -198,7 +202,7 @@ async def scan_card(
             str(extracted.get("release_year") or extracted.get("copyright_year_on_base") or "") or None,
             extracted.get("color"), json.dumps(extracted),
             match_result.reference_id, match_result.confidence, match_result.status,
-            match_result.notes, match_result.canonical_casting_name,
+            match_result.notes, match_result.canonical_brand, match_result.canonical_casting_name,
             match_result.canonical_series, match_result.canonical_year,
             match_result.suggested_price_usd,
             live_price.get("price_low_usd"), live_price.get("price_high_usd"),
@@ -219,6 +223,7 @@ async def scan_card(
         "validation": {
             "status": match_result.status,
             "confidence": match_result.confidence,
+            "canonical_brand": match_result.canonical_brand,
             "canonical_casting_name": match_result.canonical_casting_name,
             "canonical_series": match_result.canonical_series,
             "canonical_year": match_result.canonical_year,
@@ -272,3 +277,171 @@ def manual_confirm(item_id: int, canonical_casting_name: str, canonical_series: 
     conn.commit()
     conn.close()
     return {"ok": True}
+
+
+@app.get("/status")
+def status():
+    """
+    Diagnostics: what's actually going on under the hood, separate from any
+    single scan's result. This is the tool for answering "is the pipeline
+    broken, or does the reference DB just not cover this casting/year yet."
+
+    Deliberately does NOT make a live web_search call by default - that
+    costs real money per the earlier pricing conversation. Set
+    ?test_live_search=true to actually spend one search verifying the
+    live-pricing connection end-to-end.
+    """
+    result: dict = {"checked_at": datetime.utcnow().isoformat() + "Z"}
+
+    # Anthropic API key presence (not validity - we don't spend money just
+    # to check this by default)
+    result["anthropic_api_key_configured"] = bool(os.environ.get("ANTHROPIC_API_KEY"))
+
+    # Reference database coverage - the most common real explanation for a
+    # pile of no_match results is "this year/brand was never imported,"
+    # not "the pipeline is broken."
+    try:
+        result["reference_db"] = reference_coverage()
+    except Exception as e:
+        result["reference_db"] = {"error": str(e)}
+
+    # Live price cache stats - how many distinct castings have been priced,
+    # and how recently, without spending anything new to check.
+    try:
+        conn = get_conn()
+        cache_count = conn.execute("SELECT COUNT(*) AS n FROM live_price_cache").fetchone()["n"]
+        cache_recent = conn.execute("""
+            SELECT casting_name, packaging_type, price_low_usd, price_high_usd, fetched_at, search_count
+            FROM live_price_cache ORDER BY fetched_at DESC LIMIT 5
+        """).fetchall()
+        result["live_price_cache"] = {
+            "total_cached_castings": cache_count,
+            "most_recent": [dict(r) for r in cache_recent],
+        }
+        conn.close()
+    except Exception as e:
+        result["live_price_cache"] = {"error": str(e)}
+
+    # Inventory summary - quick health check on your actual scanned data
+    try:
+        conn = get_conn()
+        by_status = conn.execute("""
+            SELECT match_status, COUNT(*) AS n FROM inventory GROUP BY match_status
+        """).fetchall()
+        total = conn.execute("SELECT COUNT(*) AS n FROM inventory").fetchone()["n"]
+        result["inventory"] = {
+            "total_items": total,
+            "by_match_status": {r["match_status"]: r["n"] for r in by_status},
+        }
+        conn.close()
+    except Exception as e:
+        result["inventory"] = {"error": str(e)}
+
+    return result
+
+
+@app.get("/status/test_live_search")
+def test_live_search():
+    """
+    Actually spends one real web search to verify the live-pricing pipeline
+    end-to-end (Claude API reachable, web_search tool working, response
+    parses correctly) - separate from the free /status check above since
+    this one costs a small amount of real money. Call this deliberately,
+    not automatically.
+    """
+    try:
+        result = get_live_price(
+            casting_name="Custom '72 Chevy Luv",   # a real, well-documented casting
+            series="HW Hot Trucks", year=2016, packaging_type="carded",
+            db_path=DB_PATH,
+        )
+        return {"ok": not result.get("error", False), "result": result}
+    except Exception as e:
+        logger.exception("Live search connectivity test failed")
+        return {"ok": False, "error": str(e)}
+
+
+@app.get("/export")
+def export_inventory():
+    """Full JSON dump of your inventory - a portable backup independent of
+    the SQLite file, easy to inspect, diff, or restore from by hand."""
+    conn = get_conn()
+    rows = conn.execute("SELECT * FROM inventory ORDER BY id").fetchall()
+    conn.close()
+    payload = {
+        "exported_at": datetime.utcnow().isoformat() + "Z",
+        "item_count": len(rows),
+        "items": [dict(r) for r in rows],
+    }
+    return JSONResponse(
+        content=payload,
+        headers={"Content-Disposition": f"attachment; filename=diecast_inventory_export_{datetime.utcnow().strftime('%Y%m%d')}.json"},
+    )
+
+
+class InventoryUpdate(BaseModel):
+    """All fields optional - only what's provided gets updated (PATCH-style
+    semantics on a PUT route, which is fine for a single-user personal tool)."""
+    canonical_brand: Optional[str] = None
+    canonical_casting_name: Optional[str] = None
+    canonical_series: Optional[str] = None
+    canonical_year: Optional[int] = None
+    match_status: Optional[str] = None
+    condition: Optional[str] = None
+    acquired_date: Optional[str] = None
+    cost_basis_usd: Optional[float] = None
+    status: Optional[str] = None          # in_collection / listed / sold
+    listing_price_usd: Optional[float] = None
+    sold_price_usd: Optional[float] = None
+
+
+@app.put("/inventory/{item_id}")
+def update_item(item_id: int, update: InventoryUpdate):
+    """Edit any of your own tracking fields, or correct a canonical field by
+    hand (e.g. fixing a brand/casting name the pipeline got wrong)."""
+    fields = {k: v for k, v in update.model_dump().items() if v is not None}
+    if not fields:
+        raise HTTPException(status_code=400, detail="No fields provided to update.")
+
+    conn = get_conn()
+    existing = conn.execute("SELECT id FROM inventory WHERE id = ?", (item_id,)).fetchone()
+    if existing is None:
+        conn.close()
+        raise HTTPException(status_code=404, detail=f"No inventory item with id {item_id}")
+
+    set_clause = ", ".join(f"{col} = ?" for col in fields)
+    try:
+        conn.execute(f"UPDATE inventory SET {set_clause} WHERE id = ?", (*fields.values(), item_id))
+        conn.commit()
+    except sqlite3.Error as e:
+        conn.close()
+        raise HTTPException(status_code=500, detail=f"Database error while updating: {e}")
+
+    row = conn.execute("SELECT * FROM inventory WHERE id = ?", (item_id,)).fetchone()
+    conn.close()
+    return dict(row)
+
+
+@app.delete("/inventory/{item_id}")
+def delete_item(item_id: int):
+    """Remove a scan - for bad extractions, no_match junk, or duplicates."""
+    conn = get_conn()
+    row = conn.execute("SELECT photo_path, base_photo_path FROM inventory WHERE id = ?", (item_id,)).fetchone()
+    if row is None:
+        conn.close()
+        raise HTTPException(status_code=404, detail=f"No inventory item with id {item_id}")
+
+    conn.execute("DELETE FROM inventory WHERE id = ?", (item_id,))
+    conn.commit()
+    conn.close()
+
+    # Best-effort cleanup of the associated photo files - not fatal if this
+    # fails (e.g. already gone), the DB row is what actually matters.
+    for path in (row["photo_path"], row["base_photo_path"]):
+        if path:
+            try:
+                Path(path).unlink(missing_ok=True)
+            except OSError as e:
+                logger.warning(f"Could not delete photo file {path}: {e}")
+
+    return {"ok": True, "deleted_id": item_id}

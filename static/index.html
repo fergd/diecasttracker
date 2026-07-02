@@ -89,8 +89,15 @@
     box-sizing: border-box;
   }
 
-  header { margin-bottom: 24px; }
+  header { margin-bottom: 16px; }
   header p { color: var(--md-sys-color-on-surface-variant); margin-top: 6px; }
+
+  .toolbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
 
   md-tabs { margin-bottom: 20px; border-radius: var(--md-sys-shape-corner-medium, 12px); overflow: hidden; }
 
@@ -129,11 +136,20 @@
     box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30), 0 1px 3px 1px rgba(0,0,0,0.15);
   }
 
+  .end-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
   .end-stack {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 4px;
+  }
+  md-icon-button.delete-btn {
+    --md-icon-button-icon-color: var(--md-sys-color-outline);
+    --md-icon-button-icon-size: 20px;
   }
   .status-pill {
     font: var(--md-sys-typescale-label-small-font);
@@ -157,6 +173,20 @@
   #emptyState md-icon { width: 40px; height: 40px; margin-bottom: 12px; }
 
   md-icon svg { width: 1em; height: 1em; fill: currentColor; display: block; }
+
+  #statusDialogContent, #exportDialogContent { max-width: 400px; }
+  .status-section { margin-bottom: 16px; }
+  .status-section h3 { font: var(--md-sys-typescale-title-small-font); margin: 0 0 6px; }
+  .coverage-row {
+    display: flex; justify-content: space-between;
+    font: var(--md-sys-typescale-body-small-font);
+    padding: 2px 0;
+    color: var(--md-sys-color-on-surface-variant);
+  }
+  .status-ok { color: #2E7D32; }
+  .status-warn { color: var(--md-sys-color-error); }
+
+  .edit-field { width: 100%; margin-bottom: 12px; }
 </style>
 </head>
 <body>
@@ -165,6 +195,15 @@
     <h1 class="md-typescale-headline-small">Diecast Inventory</h1>
     <p class="md-typescale-body-medium">Snap a card or a loose car — it's extracted and checked against the reference database automatically.</p>
   </header>
+
+  <div class="toolbar">
+    <md-icon-button id="statusBtn" aria-label="Diagnostics">
+      <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></md-icon>
+    </md-icon-button>
+    <md-icon-button id="exportBtn" aria-label="Export inventory as JSON">
+      <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></md-icon>
+    </md-icon-button>
+  </div>
 
   <md-tabs id="packagingTabs">
     <md-primary-tab id="cardedTab" active inline-icon>
@@ -213,6 +252,30 @@
     </div>
   </md-dialog>
 
+  <md-dialog id="statusDialog">
+    <div slot="headline">Pipeline status</div>
+    <div slot="content" id="statusDialogContent" class="md-typescale-body-medium">Loading…</div>
+    <div slot="actions">
+      <md-text-button id="testLiveSearchBtn">Test live search (uses 1 real search)</md-text-button>
+      <md-text-button id="statusDialogClose">Close</md-text-button>
+    </div>
+  </md-dialog>
+
+  <md-dialog id="editDialog">
+    <div slot="headline">Edit item</div>
+    <div slot="content">
+      <md-outlined-text-field class="edit-field" id="editBrand" label="Brand"></md-outlined-text-field>
+      <md-outlined-text-field class="edit-field" id="editCastingName" label="Casting name"></md-outlined-text-field>
+      <md-outlined-text-field class="edit-field" id="editSeries" label="Series"></md-outlined-text-field>
+      <md-outlined-text-field class="edit-field" id="editYear" label="Year" type="number"></md-outlined-text-field>
+      <md-outlined-text-field class="edit-field" id="editCondition" label="Condition notes"></md-outlined-text-field>
+    </div>
+    <div slot="actions">
+      <md-text-button id="editDialogCancel">Cancel</md-text-button>
+      <md-filled-button id="editDialogSave">Save</md-filled-button>
+    </div>
+  </md-dialog>
+
   <script type="module">
     const cameraInput = document.getElementById('cameraInput');
     const baseInput = document.getElementById('baseInput');
@@ -228,14 +291,35 @@
     const errorDialogContent = document.getElementById('errorDialogContent');
     const errorDialogClose = document.getElementById('errorDialogClose');
 
+    const statusBtn = document.getElementById('statusBtn');
+    const exportBtn = document.getElementById('exportBtn');
+    const statusDialog = document.getElementById('statusDialog');
+    const statusDialogContent = document.getElementById('statusDialogContent');
+    const statusDialogClose = document.getElementById('statusDialogClose');
+    const testLiveSearchBtn = document.getElementById('testLiveSearchBtn');
+
+    const editDialog = document.getElementById('editDialog');
+    const editBrand = document.getElementById('editBrand');
+    const editCastingName = document.getElementById('editCastingName');
+    const editSeries = document.getElementById('editSeries');
+    const editYear = document.getElementById('editYear');
+    const editCondition = document.getElementById('editCondition');
+    const editDialogCancel = document.getElementById('editDialogCancel');
+    const editDialogSave = document.getElementById('editDialogSave');
+
     const ICON_FLIP_CAMERA = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-143 0-253-90T88-400h82q28 106 114 173t196 67q86 0 160-42.5T756-320H640v-80h240v240h-80v-80q-57 76-141 118T480-80Zm0-280q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-560v-240h80v80q57-76 141-118t179-42q143 0 253 90t139 230h-82q-28-106-114-173t-196-67q-86 0-160 42.5T204-640h116v80H80Z"/></svg>';
     const ICON_CHECK_CIRCLE = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>';
+    const ICON_DELETE = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>';
+    const ICON_EDIT = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"/></svg>';
 
     let packagingType = 'carded';
     let pendingMainPhoto = null;
     let pendingBasePhoto = null;
+    let editingId = null;
 
     errorDialogClose.addEventListener('click', () => errorDialog.close());
+    statusDialogClose.addEventListener('click', () => statusDialog.close());
+    editDialogCancel.addEventListener('click', () => editDialog.close());
 
     function showError(message) {
       errorDialogContent.textContent = message;
@@ -259,13 +343,6 @@
       setPackaging(e.target.activeTabIndex === 1 ? 'loose' : 'carded');
     });
 
-    // Real Material components (md-fab, md-outlined-button) triggering a
-    // hidden file input via JS .click() - the standard pattern for a custom-
-    // styled capture control. Whether Android opens the camera directly or
-    // shows a camera-or-files chooser is an OS-level decision based on the
-    // device/installed apps; this is the correct, complete signal a web page
-    // can give (capture="environment" on the input) - there's no further
-    // lever available from here.
     captureFab.addEventListener('click', () => cameraInput.click());
     baseBtn.addEventListener('click', () => baseInput.click());
 
@@ -312,20 +389,17 @@
 
       try {
         const resp = await fetch('/scan', { method: 'POST', body: formData });
-
         let data;
         try {
           data = await resp.json();
         } catch {
           throw new Error(`Server sent back something unreadable (status ${resp.status}). Check the server logs on backupbox.`);
         }
-
         if (!resp.ok) {
           throw new Error(data.detail || `Server error (status ${resp.status})`);
         }
-
         loadingItem.remove();
-        renderResult(data);
+        renderItem(fromScanResponse(data));
       } catch (err) {
         loadingItem.remove();
         showError(err.message);
@@ -337,59 +411,293 @@
       resetBaseBtn();
     }
 
-    function renderResult(data) {
-      const v = data.validation;
-      const ex = data.extracted;
-      const live = data.live_price || {};
+    // ---- Normalizing adapters -------------------------------------------
+    // /scan and GET /inventory return differently-shaped payloads (a fresh
+    // scan's nested {validation, extracted, live_price} vs. a flat DB row).
+    // Both get converted to one common shape so rendering only has to be
+    // written once.
 
-      const name = v.canonical_casting_name || ex.casting_name || 'Unrecognized item';
-      const series = v.canonical_series || ex.series || '';
-      const year = v.canonical_year || ex.release_year || '';
-      const packagingLabel = data.packaging_type === 'loose' ? 'Loose' : 'Carded';
-      const metaLine = [packagingLabel, series, year].filter(Boolean).join(' · ');
+    function fromScanResponse(data) {
+      const v = data.validation, ex = data.extracted, live = data.live_price || {};
+      return {
+        id: data.inventory_id,
+        packaging_type: data.packaging_type,
+        brand: v.canonical_brand || ex.brand || null,
+        casting_name: v.canonical_casting_name || ex.casting_name || null,
+        series: v.canonical_series || ex.series || null,
+        year: v.canonical_year || ex.release_year || null,
+        color: ex.color || null,
+        status: v.status,
+        confidence: v.confidence,
+        guide_price_usd: v.guide_price_usd,
+        live_price_low_usd: live.price_low_usd,
+        live_price_high_usd: live.price_high_usd,
+        live_summary: (!live.skipped) ? live.summary : null,
+        condition: null,
+      };
+    }
 
-      const item = document.createElement('md-list-item');
+    function fromDbRow(row) {
+      return {
+        id: row.id,
+        packaging_type: row.packaging_type,
+        brand: row.canonical_brand || row.extracted_brand || null,
+        casting_name: row.canonical_casting_name || row.extracted_casting_name || null,
+        series: row.canonical_series || row.extracted_series || null,
+        year: row.canonical_year || row.extracted_year || null,
+        color: row.extracted_color || null,
+        status: row.match_status,
+        confidence: row.match_confidence || 0,
+        guide_price_usd: row.guide_price_usd,
+        live_price_low_usd: row.live_price_low_usd,
+        live_price_high_usd: row.live_price_high_usd,
+        live_summary: row.live_price_summary,
+        condition: row.condition,
+      };
+    }
+
+    async function deleteItem(id, itemEl) {
+      try {
+        const resp = await fetch(`/inventory/${id}`, { method: 'DELETE' });
+        let data;
+        try {
+          data = await resp.json();
+        } catch {
+          throw new Error(`Server sent back something unreadable (status ${resp.status}).`);
+        }
+        if (!resp.ok) {
+          throw new Error(data.detail || `Server error (status ${resp.status})`);
+        }
+        itemEl.remove();
+        if (results.children.length === 0) emptyState.style.display = 'block';
+      } catch (err) {
+        showError(`Couldn't delete: ${err.message}`);
+      }
+    }
+
+    function openEditDialog(item) {
+      editingId = item.id;
+      editBrand.value = item.brand || '';
+      editCastingName.value = item.casting_name || '';
+      editSeries.value = item.series || '';
+      editYear.value = item.year || '';
+      editCondition.value = item.condition || '';
+      editDialog.show();
+    }
+
+    editDialogSave.addEventListener('click', async () => {
+      if (editingId == null) return;
+      const payload = {
+        canonical_brand: editBrand.value || null,
+        canonical_casting_name: editCastingName.value || null,
+        canonical_series: editSeries.value || null,
+        canonical_year: editYear.value ? parseInt(editYear.value, 10) : null,
+        condition: editCondition.value || null,
+      };
+      try {
+        const resp = await fetch(`/inventory/${editingId}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload),
+        });
+        let data;
+        try { data = await resp.json(); } catch {
+          throw new Error(`Server sent back something unreadable (status ${resp.status}).`);
+        }
+        if (!resp.ok) throw new Error(data.detail || `Server error (status ${resp.status})`);
+
+        // Re-render this item in place with the updated data
+        const oldEl = results.querySelector(`md-list-item[data-inventory-id="${editingId}"]`);
+        const newEl = buildItemElement(fromDbRow(data));
+        if (oldEl) oldEl.replaceWith(newEl); else results.prepend(newEl);
+        editDialog.close();
+      } catch (err) {
+        showError(`Couldn't save: ${err.message}`);
+      }
+    });
+
+    function buildItemElement(item) {
+      const name = item.casting_name || 'Unrecognized item';
+      const packagingLabel = item.packaging_type === 'loose' ? 'Loose' : 'Carded';
+      const metaLine = [packagingLabel, item.brand, item.series, item.year].filter(Boolean).join(' · ');
+
+      const el = document.createElement('md-list-item');
+      el.dataset.inventoryId = item.id;
 
       const headline = document.createElement('div');
       headline.slot = 'headline';
       headline.textContent = name;
-      item.appendChild(headline);
+      el.appendChild(headline);
 
-      const supportingLines = [metaLine, ex.color].filter(Boolean);
-      if (live.summary && !live.skipped) supportingLines.push(live.summary);
+      const supportingLines = [metaLine, item.color].filter(Boolean);
+      if (item.live_summary) supportingLines.push(item.live_summary);
+      if (item.condition) supportingLines.push(`Condition: ${item.condition}`);
       const supporting = document.createElement('div');
       supporting.slot = 'supporting-text';
       supporting.textContent = supportingLines.join('\n');
       supporting.style.whiteSpace = 'pre-line';
-      item.appendChild(supporting);
+      el.appendChild(supporting);
+
+      const endRow = document.createElement('div');
+      endRow.slot = 'end';
+      endRow.className = 'end-row';
 
       const endStack = document.createElement('div');
-      endStack.slot = 'end';
       endStack.className = 'end-stack';
 
-      if (live.price_low_usd || live.price_high_usd) {
+      if (item.live_price_low_usd || item.live_price_high_usd) {
         const price = document.createElement('div');
         price.className = 'price-text';
-        const low = live.price_low_usd, high = live.price_high_usd;
+        const low = item.live_price_low_usd, high = item.live_price_high_usd;
         price.textContent = (low && high && low !== high)
           ? `$${low.toFixed(2)}–$${high.toFixed(2)} live`
           : `~$${(low || high).toFixed(2)} live`;
         endStack.appendChild(price);
-      } else if (v.guide_price_usd) {
+      } else if (item.guide_price_usd) {
         const price = document.createElement('div');
         price.className = 'price-text';
-        price.textContent = `~$${v.guide_price_usd.toFixed(2)} guide`;
+        price.textContent = `~$${item.guide_price_usd.toFixed(2)} guide`;
         endStack.appendChild(price);
       }
 
       const pill = document.createElement('span');
-      pill.className = `status-pill ${v.status}`;
-      pill.textContent = `${v.status.replace('_', ' ')} · ${(v.confidence * 100).toFixed(0)}%`;
+      pill.className = `status-pill ${item.status}`;
+      pill.textContent = `${(item.status || 'unknown').replace('_', ' ')} · ${(item.confidence * 100).toFixed(0)}%`;
       endStack.appendChild(pill);
 
-      item.appendChild(endStack);
-      results.prepend(item);
+      const editBtn = document.createElement('md-icon-button');
+      editBtn.setAttribute('aria-label', `Edit ${name}`);
+      const editIcon = document.createElement('md-icon');
+      editIcon.innerHTML = ICON_EDIT;
+      editBtn.appendChild(editIcon);
+      editBtn.addEventListener('click', () => openEditDialog(item));
+
+      const deleteBtn = document.createElement('md-icon-button');
+      deleteBtn.className = 'delete-btn';
+      deleteBtn.setAttribute('aria-label', `Delete ${name}`);
+      const deleteIcon = document.createElement('md-icon');
+      deleteIcon.innerHTML = ICON_DELETE;
+      deleteBtn.appendChild(deleteIcon);
+      deleteBtn.addEventListener('click', () => deleteItem(item.id, el));
+
+      endRow.appendChild(endStack);
+      endRow.appendChild(editBtn);
+      endRow.appendChild(deleteBtn);
+      el.appendChild(endRow);
+      return el;
     }
+
+    function renderItem(item, { toTop = true } = {}) {
+      const el = buildItemElement(item);
+      if (toTop) results.prepend(el); else results.appendChild(el);
+    }
+
+    // ---- History: load everything already scanned, on page open ---------
+    async function loadHistory() {
+      try {
+        const resp = await fetch('/inventory');
+        const rows = await resp.json();
+        if (!resp.ok) throw new Error(rows.detail || 'Failed to load inventory history.');
+        if (rows.length === 0) {
+          emptyState.style.display = 'block';
+          return;
+        }
+        emptyState.style.display = 'none';
+        // /inventory returns newest-first already; appending in that order
+        // top-to-bottom preserves newest-at-top.
+        for (const row of rows) {
+          renderItem(fromDbRow(row), { toTop: false });
+        }
+      } catch (err) {
+        showError(`Couldn't load your scan history: ${err.message}`);
+      }
+    }
+    loadHistory();
+
+    // ---- Diagnostics -------------------------------------------------
+    statusBtn.addEventListener('click', async () => {
+      statusDialogContent.innerHTML = 'Loading…';
+      statusDialog.show();
+      try {
+        const resp = await fetch('/status');
+        const s = await resp.json();
+        statusDialogContent.innerHTML = renderStatusHtml(s);
+      } catch (err) {
+        statusDialogContent.textContent = `Couldn't load status: ${err.message}`;
+      }
+    });
+
+    function renderStatusHtml(s) {
+      const keyOk = s.anthropic_api_key_configured;
+      let html = `<div class="status-section">
+        <h3>Claude API key</h3>
+        <div class="${keyOk ? 'status-ok' : 'status-warn'}">${keyOk ? 'Configured' : 'NOT configured - scans will fail'}</div>
+      </div>`;
+
+      html += `<div class="status-section"><h3>Reference database coverage</h3>`;
+      const ref = s.reference_db || {};
+      if (ref.error) {
+        html += `<div class="status-warn">${ref.error}</div>`;
+      } else {
+        html += `<div class="coverage-row"><span>Total castings</span><span>${ref.total_reference_rows ?? 0}</span></div>`;
+        const byBrand = ref.coverage_by_brand || {};
+        for (const brand of Object.keys(byBrand)) {
+          const years = byBrand[brand].map(y => y.year).sort((a, b) => a - b);
+          const yearRange = years.length ? `${years[0]}–${years[years.length - 1]} (${years.length} years)` : 'none';
+          html += `<div class="coverage-row"><span>${brand}</span><span>${yearRange}</span></div>`;
+        }
+        if (Object.keys(byBrand).length === 0) {
+          html += `<div class="status-warn">No reference data imported yet - run reference_import.py.</div>`;
+        }
+      }
+      html += `</div>`;
+
+      html += `<div class="status-section"><h3>Live price cache</h3>`;
+      const cache = s.live_price_cache || {};
+      html += `<div class="coverage-row"><span>Distinct castings priced</span><span>${cache.total_cached_castings ?? 0}</span></div>`;
+      html += `</div>`;
+
+      html += `<div class="status-section"><h3>Your inventory</h3>`;
+      const inv = s.inventory || {};
+      html += `<div class="coverage-row"><span>Total items</span><span>${inv.total_items ?? 0}</span></div>`;
+      const byStatus = inv.by_match_status || {};
+      for (const st of Object.keys(byStatus)) {
+        html += `<div class="coverage-row"><span>${st.replace('_', ' ')}</span><span>${byStatus[st]}</span></div>`;
+      }
+      html += `</div>`;
+
+      html += `<p class="md-typescale-body-small" style="color:var(--md-sys-color-on-surface-variant)">
+        A pile of "no match" results usually means the reference database
+        just doesn't cover that year/brand yet, not that the pipeline is
+        broken - check the coverage above against what you're scanning.
+      </p>`;
+      return html;
+    }
+
+    testLiveSearchBtn.addEventListener('click', async () => {
+      statusDialogContent.innerHTML += `<p class="md-typescale-body-small">Running a real test search…</p>`;
+      try {
+        const resp = await fetch('/status/test_live_search');
+        const result = await resp.json();
+        statusDialogContent.innerHTML += `<p class="md-typescale-body-small ${result.ok ? 'status-ok' : 'status-warn'}">
+          ${result.ok ? 'Live search working: ' : 'Live search failed: '}
+          ${JSON.stringify(result.result || result.error)}
+        </p>`;
+      } catch (err) {
+        statusDialogContent.innerHTML += `<p class="status-warn">Test failed: ${err.message}</p>`;
+      }
+    });
+
+    // ---- Export --------------------------------------------------------
+    exportBtn.addEventListener('click', () => {
+      const a = document.createElement('a');
+      a.href = '/export';
+      a.download = '';
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+    });
   </script>
+
 </body>
 </html>

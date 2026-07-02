@@ -110,8 +110,37 @@ it's been lost.
 
 ## What's NOT built yet
 
-- **Matchbox reference data.** South Texas Diecast's guide is Hot Wheels-only.
 - **`/inventory/needs_review` UI.** API-only right now (`curl
   http://localhost:8420/inventory/needs_review`).
 - **Auth.** Wide open on your tailnet, fine as long as Tailscale stays the
   access boundary.
+
+## Matchbox reference data (vintage 1953-1982)
+
+Since Hot Wheels didn't exist until 1968, anything older in your collection
+is almost certainly Matchbox (Lesney's original line launched in 1953). This
+is a separate importer from `reference_import.py`, since the source site is
+organized differently:
+
+```bash
+python reference_import_matchbox.py --era regular      # 1953-1969, pre-Hot-Wheels vintage
+python reference_import_matchbox.py --era superfast     # 1969-1982
+python reference_import_matchbox.py --era all           # both (default)
+```
+
+Source is NCHWA.com's Lesney Matchbox price guide - a hobbyist-maintained
+site (not official Mattel/Lesney data), organized by model number range
+(1-10, 11-20, etc.) rather than by year, since Matchbox's "1-75" numbering
+scheme had multiple different castings occupy the same number slot over the
+years (e.g. "1-A" 1953 Diesel Roller and "1-E" 1968 Mercedes Benz Lorry both
+held slot #1, at different times). Pricing uses NCHWA's own "Star Value"
+rarity scale rather than direct dollar figures - the importer decodes this
+into an approximate USD midpoint. Values are explicitly loose/near-mint
+only (no box/card values in this guide), which matches what vintage
+Matchbox from this era actually needs.
+
+Worth a first-run sanity check: this parser was built from the site's known
+page structure but not executed against the live site from this dev
+environment (the domain isn't reachable from here) - after running it for
+real, spot-check a couple of models you actually own against what gets
+imported before fully trusting the price estimates.

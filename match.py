@@ -35,11 +35,42 @@ class MatchResult:
     status: str                 # 'confirmed' / 'needs_review' / 'no_match'
     confidence: float
     reference_id: int | None
+    canonical_brand: str | None
     canonical_casting_name: str | None
     canonical_series: str | None
     canonical_year: int | None
     suggested_price_usd: float | None
     notes: str
+
+
+def reference_coverage(db_path: str = DB_PATH) -> dict:
+    """
+    Diagnostic summary of what's actually in the reference database - this is
+    the tool for answering "is matching broken, or does the reference DB just
+    not cover this year/brand yet?" A pile of no_match results usually means
+    the latter, not a pipeline failure.
+    """
+    conn = sqlite3.connect(db_path)
+    conn.row_factory = sqlite3.Row
+    try:
+        total = conn.execute("SELECT COUNT(*) AS n FROM reference_castings").fetchone()["n"]
+        by_brand_year = conn.execute("""
+            SELECT brand, release_year, COUNT(*) AS n
+            FROM reference_castings
+            GROUP BY brand, release_year
+            ORDER BY brand, release_year
+        """).fetchall()
+        years_by_brand: dict[str, list[dict]] = {}
+        for row in by_brand_year:
+            years_by_brand.setdefault(row["brand"], []).append(
+                {"year": row["release_year"], "count": row["n"]}
+            )
+        return {
+            "total_reference_rows": total,
+            "coverage_by_brand": years_by_brand,
+        }
+    finally:
+        conn.close()
 
 
 def suggested_price(row, packaging_type: str) -> float | None:
@@ -90,7 +121,7 @@ def validate_extraction(extracted: dict, packaging_type: str = "carded") -> Matc
     if not candidates:
         return MatchResult(
             status="no_match", confidence=0.0, reference_id=None,
-            canonical_casting_name=None, canonical_series=None, canonical_year=None,
+            canonical_brand=None, canonical_casting_name=None, canonical_series=None, canonical_year=None,
             suggested_price_usd=None,
             notes="No reference rows found for this brand/year window - "
                   "reference DB may not be seeded for this era yet."
@@ -100,7 +131,7 @@ def validate_extraction(extracted: dict, packaging_type: str = "carded") -> Matc
     if not casting_name:
         return MatchResult(
             status="no_match", confidence=0.0, reference_id=None,
-            canonical_casting_name=None, canonical_series=None, canonical_year=None,
+            canonical_brand=None, canonical_casting_name=None, canonical_series=None, canonical_year=None,
             suggested_price_usd=None,
             notes="Extraction returned no casting name to match against."
         )
@@ -116,7 +147,7 @@ def validate_extraction(extracted: dict, packaging_type: str = "carded") -> Matc
     if best is None:
         return MatchResult(
             status="no_match", confidence=0.0, reference_id=None,
-            canonical_casting_name=None, canonical_series=None, canonical_year=None,
+            canonical_brand=None, canonical_casting_name=None, canonical_series=None, canonical_year=None,
             suggested_price_usd=None,
             notes="Fuzzy match produced no candidates."
         )
@@ -174,6 +205,7 @@ def validate_extraction(extracted: dict, packaging_type: str = "carded") -> Matc
         status=status,
         confidence=round(confidence, 3),
         reference_id=row["id"] if status != "no_match" else None,
+        canonical_brand=row["brand"] if status != "no_match" else None,
         canonical_casting_name=row["casting_name"] if status != "no_match" else None,
         canonical_series=row["series_name"] if status != "no_match" else None,
         canonical_year=row["release_year"] if status != "no_match" else None,
