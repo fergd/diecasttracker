@@ -7,13 +7,9 @@
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<!-- Icons are inlined as raw SVG below (real Material Symbols path data,
-     fetched from google/material-design-icons) rather than loaded from
-     fonts.googleapis.com/icon - that font request is exactly the kind of
-     Google domain a Pi-hole blocklist tends to catch, and a blocked icon
-     font used to render as raw ligature text ("photo_camera") instead of
-     an icon. Inlined SVG has zero runtime network dependency, so it can't
-     be blocked by anything on the local network. -->
+<!-- Icons are inlined as raw SVG (real Material Symbols path data) rather
+     than loaded as a webfont - no runtime network dependency, immune to any
+     DNS-level filtering on the network. -->
 
 <script type="importmap">
 {
@@ -29,12 +25,61 @@
 </script>
 
 <style>
-  /* Layout only - all color, type, and shape comes from Material's own
-     design tokens (--md-sys-color-*, --md-sys-typescale-*, --md-sys-shape-*).
-     No custom palette or type scale is defined here. */
+  /* ============================================================
+     Material 3 baseline color tokens, defined explicitly.
+     Material Web's components already have these baked in as internal
+     fallback defaults, so this doesn't change how components render - but
+     it's what makes var(--md-sys-color-*) actually resolve to something in
+     OUR OWN custom CSS below. Without this block defined, any of our own
+     CSS referencing these tokens silently resolves to nothing.
+     Values are Material 3's standard baseline "purple" scheme.
+     ============================================================ */
+  :root {
+    --md-sys-color-primary: #6750A4;
+    --md-sys-color-on-primary: #FFFFFF;
+    --md-sys-color-primary-container: #EADDFF;
+    --md-sys-color-on-primary-container: #21005D;
+    --md-sys-color-secondary-container: #E8DEF8;
+    --md-sys-color-on-secondary-container: #1D192B;
+    --md-sys-color-tertiary-container: #FFD8E4;
+    --md-sys-color-on-tertiary-container: #31111D;
+    --md-sys-color-error-container: #F9DEDC;
+    --md-sys-color-on-error-container: #410E0B;
+    --md-sys-color-surface: #FFFBFE;
+    --md-sys-color-on-surface: #1C1B1F;
+    --md-sys-color-on-surface-variant: #49454F;
+    --md-sys-color-outline: #79747E;
+    --md-sys-color-outline-variant: #CAC4D0;
+    --md-sys-color-surface-container: #F3EDF7;
+    --md-sys-color-surface-container-high: #ECE6F0;
+    --md-sys-color-surface-container-highest: #E6E0E9;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --md-sys-color-primary: #D0BCFF;
+      --md-sys-color-on-primary: #381E72;
+      --md-sys-color-primary-container: #4F378B;
+      --md-sys-color-on-primary-container: #EADDFF;
+      --md-sys-color-secondary-container: #4A4458;
+      --md-sys-color-on-secondary-container: #E8DEF8;
+      --md-sys-color-tertiary-container: #633B48;
+      --md-sys-color-on-tertiary-container: #FFD8E4;
+      --md-sys-color-error-container: #8C1D18;
+      --md-sys-color-on-error-container: #F9DEDC;
+      --md-sys-color-surface: #141218;
+      --md-sys-color-on-surface: #E6E1E5;
+      --md-sys-color-on-surface-variant: #CAC4D0;
+      --md-sys-color-outline: #938F99;
+      --md-sys-color-outline-variant: #49454F;
+      --md-sys-color-surface-container: #211F26;
+      --md-sys-color-surface-container-high: #2B2930;
+      --md-sys-color-surface-container-highest: #36343B;
+    }
+  }
+
   body {
     margin: 0;
-    padding: 16px 16px 48px;
+    padding: 20px 20px 40px;
     max-width: 480px;
     margin-inline: auto;
     background: var(--md-sys-color-surface);
@@ -43,60 +88,45 @@
     min-height: 100vh;
     box-sizing: border-box;
   }
-  header { margin-bottom: 20px; }
-  header p { color: var(--md-sys-color-on-surface-variant); margin-top: 4px; }
 
-  .toggle-row { display: flex; justify-content: center; margin-bottom: 16px; }
+  header { margin-bottom: 24px; }
+  header p { color: var(--md-sys-color-on-surface-variant); margin-top: 6px; }
+
+  md-tabs { margin-bottom: 20px; border-radius: var(--md-sys-shape-corner-medium, 12px); overflow: hidden; }
 
   #basePrompt {
-    display: none;
-    margin-bottom: 16px;
-    padding: 12px 16px;
+    margin-bottom: 20px;
+    padding: 14px 16px;
     border-radius: var(--md-sys-shape-corner-medium, 12px);
     background: var(--md-sys-color-secondary-container);
     color: var(--md-sys-color-on-secondary-container);
   }
-  #basePrompt.show { display: block; }
 
-  #captureBtn, #baseBtn {
+  #baseBtn { display: none; width: 100%; margin-bottom: 24px; }
+  #baseBtn.show { display: inline-flex; }
+
+  /* Primary scan action. Deliberately NOT position:fixed - fixed positioning
+     combined with mobile browser dynamic toolbars (and, on wide desktop
+     windows, a centered narrow content column) is a well-known source of
+     "element ends up somewhere unexpected" bugs that are hard to diagnose
+     without the exact device/browser in hand. Inline placement is simple
+     and correct everywhere, which matters more here than chasing the
+     floating-FAB convention. */
+  #captureFab {
     display: flex;
-    align-items: center;
     justify-content: center;
-    gap: 8px;
-    width: 100%;
-    height: 40px;
-    border-radius: 100px;
-    font: var(--md-sys-typescale-label-large-font);
-    cursor: pointer;
-    box-sizing: border-box;
-    -webkit-tap-highlight-color: transparent;
+    margin: 4px 0 28px;
   }
-  #captureBtn {
-    background: var(--md-sys-color-primary);
-    color: var(--md-sys-color-on-primary);
-    border: none;
-  }
-  #captureBtn:active { background: color-mix(in srgb, var(--md-sys-color-primary) 85%, black); }
-
-  #baseBtn {
-    display: none;
-    margin-top: 12px;
-    background: transparent;
-    color: var(--md-sys-color-primary);
-    border: 1px solid var(--md-sys-color-outline);
-  }
-  #baseBtn.show { display: flex; }
-  #baseBtn.attached { border-color: var(--md-sys-color-tertiary); color: var(--md-sys-color-tertiary); }
 
   md-list {
     background: transparent;
-    margin-top: 24px;
     padding: 0;
   }
   md-list-item {
     border-radius: var(--md-sys-shape-corner-medium, 12px);
-    margin-bottom: 8px;
+    margin-bottom: 10px;
     background: var(--md-sys-color-surface-container);
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30), 0 1px 3px 1px rgba(0,0,0,0.15);
   }
 
   .end-stack {
@@ -121,14 +151,11 @@
 
   #emptyState {
     text-align: center;
-    padding: 40px 16px;
+    padding: 56px 16px;
     color: var(--md-sys-color-on-surface-variant);
   }
-  #emptyState md-icon { font-size: 40px; width: 40px; height: 40px; margin-bottom: 8px; }
+  #emptyState md-icon { width: 40px; height: 40px; margin-bottom: 12px; }
 
-  /* Inline SVG icons, sized/colored to match Material's own icon token
-     conventions - fill: currentColor lets each icon inherit whatever color
-     its surrounding button/context already uses. */
   md-icon svg { width: 1em; height: 1em; fill: currentColor; display: block; }
 </style>
 </head>
@@ -139,42 +166,36 @@
     <p class="md-typescale-body-medium">Snap a card or a loose car — it's extracted and checked against the reference database automatically.</p>
   </header>
 
-  <div class="toggle-row">
-    <md-outlined-segmented-button-set id="packagingToggle">
-      <md-outlined-segmented-button id="cardedSeg" selected>
-        <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m159-168-34-14q-31-13-41.5-45t3.5-63l72-156v278Zm160 88q-33 0-56.5-23.5T239-160v-240l106 294q3 7 6 13.5t8 12.5h-40Zm206-4q-32 12-62-3t-42-47L243-622q-12-32 2-62.5t46-41.5l302-110q32-12 62 3t42 47l178 488q12 32-2 62.5T827-194L525-84Zm-86-476q17 0 28.5-11.5T479-600q0-17-11.5-28.5T439-640q-17 0-28.5 11.5T399-600q0 17 11.5 28.5T439-560Zm58 400 302-110-178-490-302 110 178 490ZM319-650l302-110-302 110Z"/></svg></md-icon>
-        Carded
-      </md-outlined-segmented-button>
-      <md-outlined-segmented-button id="looseSeg">
-        <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h440q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z"/></svg></md-icon>
-        Loose
-      </md-outlined-segmented-button>
-    </md-outlined-segmented-button-set>
-  </div>
+  <md-tabs id="packagingTabs">
+    <md-primary-tab id="cardedTab" active inline-icon>
+      <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m159-168-34-14q-31-13-41.5-45t3.5-63l72-156v278Zm160 88q-33 0-56.5-23.5T239-160v-240l106 294q3 7 6 13.5t8 12.5h-40Zm206-4q-32 12-62-3t-42-47L243-622q-12-32 2-62.5t46-41.5l302-110q32-12 62 3t42 47l178 488q12 32-2 62.5T827-194L525-84Zm-86-476q17 0 28.5-11.5T479-600q0-17-11.5-28.5T439-640q-17 0-28.5 11.5T399-600q0 17 11.5 28.5T439-560Zm58 400 302-110-178-490-302 110 178 490ZM319-650l302-110-302 110Z"/></svg></md-icon>
+      Carded
+    </md-primary-tab>
+    <md-primary-tab id="looseTab" inline-icon>
+      <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h440q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z"/></svg></md-icon>
+      Loose
+    </md-primary-tab>
+  </md-tabs>
 
-  <p id="basePrompt" class="md-typescale-body-small">
+  <p id="basePrompt" class="md-typescale-body-small" style="display:none;">
     Loose cars are identified from the base stamp (casting name + year, stamped into
     the metal underside) — a lot more reliable than guessing from body shape alone.
     Snap the front first, then the base.
   </p>
 
-  <!-- Native <label for> association, not a JS-proxied .click() - this is the
-       standard mechanism for triggering a file input, and gives the browser/OS
-       the most direct signal about what triggered the picker. Whether Android
-       opens the camera directly vs. shows a camera-or-files chooser ultimately
-       depends on the device and what's installed, not something a web page can
-       fully force either way - but this is the most correct, standard way to ask. -->
-  <label id="captureBtn" for="cameraInput">
-    <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg></md-icon>
-    Scan a car
-  </label>
-  <input type="file" id="cameraInput" accept="image/*" capture="environment" hidden>
-
-  <label id="baseBtn" for="baseInput">
+  <md-outlined-button id="baseBtn">
     <md-icon slot="icon" id="baseBtnIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-143 0-253-90T88-400h82q28 106 114 173t196 67q86 0 160-42.5T756-320H640v-80h240v240h-80v-80q-57 76-141 118T480-80Zm0-280q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-560v-240h80v80q57-76 141-118t179-42q143 0 253 90t139 230h-82q-28-106-114-173t-196-67q-86 0-160 42.5T204-640h116v80H80Z"/></svg></md-icon>
     <span id="baseBtnLabel">Add base/underside photo</span>
-  </label>
+  </md-outlined-button>
   <input type="file" id="baseInput" accept="image/*" capture="environment" hidden>
+
+  <input type="file" id="cameraInput" accept="image/*" capture="environment" hidden>
+
+  <div id="captureFab">
+    <md-fab id="scanFabBtn" variant="primary" label="Scan a car">
+      <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg></md-icon>
+    </md-fab>
+  </div>
 
   <md-list id="results"></md-list>
 
@@ -197,12 +218,12 @@
     const baseInput = document.getElementById('baseInput');
     const results = document.getElementById('results');
     const emptyState = document.getElementById('emptyState');
-    const cardedSeg = document.getElementById('cardedSeg');
-    const looseSeg = document.getElementById('looseSeg');
+    const packagingTabs = document.getElementById('packagingTabs');
     const basePrompt = document.getElementById('basePrompt');
     const baseBtn = document.getElementById('baseBtn');
     const baseBtnIcon = document.getElementById('baseBtnIcon');
     const baseBtnLabel = document.getElementById('baseBtnLabel');
+    const captureFab = document.getElementById('scanFabBtn');
     const errorDialog = document.getElementById('errorDialog');
     const errorDialogContent = document.getElementById('errorDialogContent');
     const errorDialogClose = document.getElementById('errorDialogClose');
@@ -224,34 +245,34 @@
     function resetBaseBtn() {
       baseBtnIcon.innerHTML = ICON_FLIP_CAMERA;
       baseBtnLabel.textContent = 'Add base/underside photo';
-      baseBtn.classList.remove('attached');
     }
 
     function setPackaging(type) {
       packagingType = type;
-      cardedSeg.selected = type === 'carded';
-      looseSeg.selected = type === 'loose';
-      basePrompt.classList.toggle('show', type === 'loose');
+      basePrompt.style.display = type === 'loose' ? 'block' : 'none';
       baseBtn.classList.toggle('show', type === 'loose');
       pendingMainPhoto = null;
       pendingBasePhoto = null;
       resetBaseBtn();
     }
-    cardedSeg.addEventListener('click', () => setPackaging('carded'));
-    looseSeg.addEventListener('click', () => setPackaging('loose'));
+    packagingTabs.addEventListener('change', (e) => {
+      setPackaging(e.target.activeTabIndex === 1 ? 'loose' : 'carded');
+    });
 
-    // No JS-triggered .click() needed anymore - captureBtn/baseBtn are native
-    // <label for="..."> elements, which is the standard, most-direct way to
-    // associate a control with a file input's picker.
+    // Real Material components (md-fab, md-outlined-button) triggering a
+    // hidden file input via JS .click() - the standard pattern for a custom-
+    // styled capture control. Whether Android opens the camera directly or
+    // shows a camera-or-files chooser is an OS-level decision based on the
+    // device/installed apps; this is the correct, complete signal a web page
+    // can give (capture="environment" on the input) - there's no further
+    // lever available from here.
+    captureFab.addEventListener('click', () => cameraInput.click());
+    baseBtn.addEventListener('click', () => baseInput.click());
 
     cameraInput.addEventListener('change', async (e) => {
       const file = e.target.files[0];
       if (!file) return;
       pendingMainPhoto = file;
-
-      // Carded cars scan immediately - a single photo is enough.
-      // Loose cars wait for the base photo so identification has the best
-      // shot at being reliable (see match.py's visual-only safeguard).
       if (packagingType === 'carded') {
         await submitScan();
       }
@@ -264,7 +285,6 @@
       pendingBasePhoto = file;
       baseBtnIcon.innerHTML = ICON_CHECK_CIRCLE;
       baseBtnLabel.textContent = 'Base photo attached — scanning…';
-      baseBtn.classList.add('attached');
       baseInput.value = '';
       await submitScan();
     });
@@ -347,9 +367,6 @@
       endStack.slot = 'end';
       endStack.className = 'end-stack';
 
-      // Live price (from a real-time web search) takes priority over the
-      // static guide price when available - it's shown as a range since
-      // that's honestly what a search turns up, not a single number.
       if (live.price_low_usd || live.price_high_usd) {
         const price = document.createElement('div');
         price.className = 'price-text';

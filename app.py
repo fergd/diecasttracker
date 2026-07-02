@@ -41,11 +41,64 @@ app = FastAPI(title="Diecast Inventory")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 app.mount("/static", StaticFiles(directory="static"), name="static")
 
+# Canonical column set for the inventory table, kept in sync with schema.sql.
+# CREATE TABLE IF NOT EXISTS (in schema.sql) is a no-op on a table that
+# already exists - it does NOT add new columns from later schema revisions.
+# Since inventory.db persists across deployments (gitignored, never
+# recreated), every schema change that adds a column needs this migration
+# step, or existing installs crash with "no such column" the moment a
+# feature that touches the new column runs.
+INVENTORY_COLUMNS = {
+    "photo_path": "TEXT",
+    "base_photo_path": "TEXT",
+    "packaging_type": "TEXT DEFAULT 'carded'",
+    "extracted_brand": "TEXT",
+    "extracted_casting_name": "TEXT",
+    "extracted_collector_num": "TEXT",
+    "extracted_series": "TEXT",
+    "extracted_year": "TEXT",
+    "extracted_color": "TEXT",
+    "extracted_raw_json": "TEXT",
+    "match_reference_id": "INTEGER",
+    "match_confidence": "REAL",
+    "match_status": "TEXT",
+    "match_notes": "TEXT",
+    "canonical_casting_name": "TEXT",
+    "canonical_series": "TEXT",
+    "canonical_year": "INTEGER",
+    "guide_price_usd": "REAL",
+    "live_price_low_usd": "REAL",
+    "live_price_high_usd": "REAL",
+    "live_price_summary": "TEXT",
+    "live_price_fetched_at": "TEXT",
+    "condition": "TEXT",
+    "acquired_date": "TEXT",
+    "cost_basis_usd": "REAL",
+    "status": "TEXT DEFAULT 'in_collection'",
+    "listing_price_usd": "REAL",
+    "sold_price_usd": "REAL",
+}
+
+
+def _migrate_inventory_table(conn: sqlite3.Connection):
+    existing = {row[1] for row in conn.execute("PRAGMA table_info(inventory)").fetchall()}
+    if not existing:
+        return  # table doesn't exist yet - executescript above already created it fully
+    for col, coltype in INVENTORY_COLUMNS.items():
+        if col not in existing:
+            try:
+                conn.execute(f"ALTER TABLE inventory ADD COLUMN {col} {coltype}")
+                logger.info(f"Migrated inventory table: added missing column '{col}'")
+            except sqlite3.OperationalError as e:
+                logger.warning(f"Could not add column '{col}': {e}")
+    conn.commit()
+
 
 def get_conn():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     conn.executescript(Path("schema.sql").read_text())
+    _migrate_inventory_table(conn)
     return conn
 
 
@@ -95,7 +148,11 @@ async def scan_card(
         logger.exception("Unexpected error during extraction")
         raise HTTPException(status_code=500, detail=f"Unexpected extraction error: {e}")
 
-    match_result = validate_extraction(extracted, packaging_type=packaging_type)
+    try:
+        match_result = validate_extraction(extracted, packaging_type=packaging_type)
+    except Exception as e:
+        logger.exception("Unexpected error during validation")
+        raise HTTPException(status_code=500, detail=f"Unexpected validation error: {e}")
 
     # Live pricing only runs for items that actually matched something real -
     # a no_match item has no confirmed identity to price-check, and running a
@@ -120,36 +177,40 @@ async def scan_card(
             live_price = {"price_low_usd": None, "price_high_usd": None,
                           "summary": f"Live price lookup failed: {e}", "cached": False, "error": True}
 
-    conn = get_conn()
-    cur = conn.cursor()
-    cur.execute("""
-        INSERT INTO inventory (
-            photo_path, base_photo_path, packaging_type,
-            extracted_brand, extracted_casting_name,
-            extracted_collector_num, extracted_series, extracted_year,
-            extracted_color, extracted_raw_json,
-            match_reference_id, match_confidence, match_status, match_notes,
-            canonical_casting_name, canonical_series, canonical_year,
-            guide_price_usd,
-            live_price_low_usd, live_price_high_usd, live_price_summary, live_price_fetched_at
-        ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    """, (
-        saved_path, base_saved_path, packaging_type,
-        extracted.get("brand"), extracted.get("casting_name"),
-        extracted.get("collector_number"), extracted.get("series"),
-        str(extracted.get("release_year") or extracted.get("copyright_year_on_base") or "") or None,
-        extracted.get("color"), json.dumps(extracted),
-        match_result.reference_id, match_result.confidence, match_result.status,
-        match_result.notes, match_result.canonical_casting_name,
-        match_result.canonical_series, match_result.canonical_year,
-        match_result.suggested_price_usd,
-        live_price.get("price_low_usd"), live_price.get("price_high_usd"),
-        live_price.get("summary"),
-        None if live_price.get("skipped") else "now",
-    ))
-    conn.commit()
-    new_id = cur.lastrowid
-    conn.close()
+    try:
+        conn = get_conn()
+        cur = conn.cursor()
+        cur.execute("""
+            INSERT INTO inventory (
+                photo_path, base_photo_path, packaging_type,
+                extracted_brand, extracted_casting_name,
+                extracted_collector_num, extracted_series, extracted_year,
+                extracted_color, extracted_raw_json,
+                match_reference_id, match_confidence, match_status, match_notes,
+                canonical_casting_name, canonical_series, canonical_year,
+                guide_price_usd,
+                live_price_low_usd, live_price_high_usd, live_price_summary, live_price_fetched_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, (
+            saved_path, base_saved_path, packaging_type,
+            extracted.get("brand"), extracted.get("casting_name"),
+            extracted.get("collector_number"), extracted.get("series"),
+            str(extracted.get("release_year") or extracted.get("copyright_year_on_base") or "") or None,
+            extracted.get("color"), json.dumps(extracted),
+            match_result.reference_id, match_result.confidence, match_result.status,
+            match_result.notes, match_result.canonical_casting_name,
+            match_result.canonical_series, match_result.canonical_year,
+            match_result.suggested_price_usd,
+            live_price.get("price_low_usd"), live_price.get("price_high_usd"),
+            live_price.get("summary"),
+            None if live_price.get("skipped") else "now",
+        ))
+        conn.commit()
+        new_id = cur.lastrowid
+        conn.close()
+    except sqlite3.Error as e:
+        logger.exception("Database error while saving scan")
+        raise HTTPException(status_code=500, detail=f"Database error while saving scan: {e}")
 
     return {
         "inventory_id": new_id,
