@@ -1,0 +1,2953 @@
+The 2015 mainline offerings consist of 75 HW City, 50 HW Off-Road, 60 HW Race and 65 HW Workshop, for a total of 250 cars. Segments are comprised of either 5 or 10 cars. See [[2015 New Models]] and [[:Category:New for 2015|Category New for 2015]] for a list of new models and [[2015 Treasure Hunts Series]] for a list of Treasure Hunts cars.
+
+==[[HW City Series|HW City]]==
+===[[HW City Works Series (2015)|HW City Works]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Photo'''
+|-
+|CFH27
+|001
+|[[Speed Dozer]]
+|bgcolor=#77B5FE|<font color="black">HW City Works
+|[[Image:HW-2015-001-Speed Dozer-CityWorks.jpg|75px]]
+|-
+|CFJ76
+|001
+|[[Speed Dozer]] (2nd Color)
+|bgcolor=#77B5FE|<font color="black">HW City Works
+|[[File:SpeedDozerCFJ76.jpg|75px]]
+|-
+|CFH21
+|002
+|[[Turbine Time]]
+| bgcolor=#77B5FE |<font color="black">HW City Works<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:Turbine Time-2015 002.jpg|75px]]
+|-
+|CFL43
+|002
+|[[Turbine Time]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW City Works<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:CFL43.jpg|75px]]
+|-
+|CFH29
+|003
+|[[Cool-One]]
+| bgcolor=#77B5FE |<font color="black">HW City Works
+|[[File:Cool-One_-_15_City_Works_WHITE_600pxOTD.jpg|75px]]
+|-
+|CFL70
+|003
+|[[Cool-One]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW City Works
+|[[File:Cool-One - 15 City Works SEAFOAM 600pxOTD.jpg|75px]]
+|-
+|CFH14
+|004
+|[[Chill Mill]]
+| bgcolor=#77B5FE |<font color="black">HW City Works<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:Chill_Mill_-_15NM.JPG|75px]]
+|-
+|CFL32
+|004
+|[[Chill Mill]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW City Works<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:ChillMillCFL32.jpg|75px]]
+|-
+|CFG75
+|005
+|[[Backdrafter]]
+| bgcolor=#77B5FE |<font color="black">HW City Works<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:BackdrafterNM.jpg|75px]]
+|-
+|CFJ57
+|005
+|[[Backdrafter]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW City Works<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:BackdrafterNMY.jpg|75px]]
+|-
+|CFH30
+|006
+|[[So Plowed]]
+| bgcolor=#77B5FE |<font color="black">HW City Works
+|[[File:SoPlowed15.jpg|75px]]
+|-
+|CFL81
+|006
+|[[So Plowed]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW City Works
+|[[Image:Soplowedcfl81.jpg|75px]]
+|-
+|CFH31
+|007
+|[[Fast Gassin']]
+| bgcolor=#77B5FE |<font color="black">HW City Works<br />'''[[2015 Treasure Hunts Series|<font color=#00aa00>Treasure Hunt]]'''
+|[[File:Fastgassinth.jpg|75px]]
+|-
+|CFH32
+|008
+|[[Cockney Cab II]]
+| bgcolor=#77B5FE |<font color="black">HW City Works
+|[[File:HW-2015-08-Cockney_Cab_II-CityWorks.jpg|75px]]
+|-
+|CFJ51
+|008
+|[[Cockney Cab II]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW City Works
+|[[File:CockneyCabCFJ51.jpg|75px]]
+|-
+|CFH33
+|009
+|[[Mig Rig]]
+| bgcolor=#77B5FE |<font color="black">HW City Works
+|[[File:009MigRig.jpg|75px]]
+|-
+|CFL37
+|009
+|[[Mig Rig]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW City Works
+|[[File:MigRigCFL37.jpg|75px]]
+|-
+|CFH34
+|010
+|[[Street Cleaver]]
+| bgcolor=#77B5FE |<font color="black">HW City Works
+|[[File:HW-2015-010-Street_Cleaver-CityWorks.jpg|75px]]
+|-
+|CFL48
+|010
+|[[Street Cleaver]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW City Works
+|[[File:StreetCleaverCFL48.jpg|75px]]
+|}
+
+===[[HW Performance Series (2015)|HW Performance]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Photo'''
+|-
+|CFH35
+|011
+|[['10 Ford Shelby GT500]]
+| bgcolor=#77B5FE |<font color="black">HW Performance
+|[[File:'10 Ford Shelby GT500-2015 011.jpg|75px]]
+|-
+|CFJ78
+|011
+|[['10 Ford Shelby GT500]] (2nd Color - Zamac)
+| bgcolor=#77B5FE |<font color="black">HW Performance<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[File:CFJ78_-_10_Ford_Shelby_GT500-1.jpg|75x75px]]
+|-
+|CFH36
+|012
+|[['09 Corvette ZR1]]
+| bgcolor=#77B5FE |<font color="black">HW Performance
+|[[Image:09CorvetteZR12015Gulf.jpeg|75px]]
+|-
+|CFL80
+|012
+|[['09 Corvette ZR1]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Performance
+|[[File:EGO'09 Corvette ZR1 (2).JPG|75px]]
+|-
+|CFH25
+|013
+|[[Great Gatspeed]]
+| bgcolor=#77B5FE |<font color="black">HW Performance<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:SmIMG 5184.jpg|75px]]
+|-
+|CFH10
+|014
+|[[D-Muscle]]
+| bgcolor=#77B5FE |<font color="black">HW Performance<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:D-MuscleCFH10.jpg|75px]]
+|-
+|CFL21
+|014
+|[[D-Muscle]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Performance<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:D-MuscleCFL21.jpg|75px]]
+|-
+|CFH44
+|015
+|[[1971 Buick Riviera]]
+| bgcolor=#77B5FE |<font color="black">HW Performance
+|[[File:HW-2015-15-1971_Buick_Riviera-Performance.jpg|75px]]
+|-
+|CFL49
+|015
+|[[1971 Buick Riviera]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Performance
+|[[File:71 Buick Riviera (CFK49) (loose).jpg|75px]]
+|-
+|DHY03
+|015
+|[[1971 Buick Riviera]] (3rd Color)
+| bgcolor=#77B5FE |<font color="black">HW Performance<br /><font color="black">'''Kmart Exclusive'''
+|[[File:2015 015-250 HW City - Performance - '71 Buick Riviera 'Mr. Gasket' (Kmart Exclusive) .jpg|75px]]
+|-
+|CFH48
+|016
+|[['83 Chevy Silverado]]
+| bgcolor=#77B5FE |<font color="black">HW Performance
+|[[File:HW-2015-16-'83_Chevy_Silverado-Performance.jpg|75px]]
+|-
+|CFJ96
+|016
+|[['83 Chevy Silverado]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Performance<br /><font color="black">'''[[Toys R Us|Toys R Us Exclusive]]'''
+|[[File:HW-2015-16-'83 Chevy Silverado-City..jpg|75px]]
+|-
+|CFH40
+|017
+|[[Honda S2000]]
+| bgcolor=#77B5FE |<font color="black">HW Performance
+|[[File:DSC_5607.jpg|75px]]
+|-
+|CFJ99
+|017
+|[[Honda S2000]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Performance<br /><font color="black">'''Kmart Exclusive'''
+|[[File:S2000 2015 K-Mart Exclusive.jpg|75px]]
+|-
+|CFH49
+|018
+|[['71 El Camino]]
+| bgcolor=#77B5FE |<font color="black">HW Performance
+|[[File:100_7107.jpg|75px]]
+|-
+|CFJ79
+|018
+|[['71 El Camino]] (2nd Color - Zamac)
+| bgcolor=#77B5FE |<font color="black">HW Performance<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[File:77a.jpg|75px]]
+|-
+|CFL22
+|018
+|[['71 El Camino]] (3rd Color)
+| bgcolor=#77B5FE |<font color="black">HW Performance
+|[[File:HW-2015-18-'71 El Camino-Performance.jpg|75px]]
+|-
+|CFH22
+|019
+|[['69 Dodge Charger 500]]
+| bgcolor=#77B5FE |<font color="black">HW Performance<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:CFH22-01.JPG|75px]]
+|-
+|CFJ71
+|019
+|[['69 Dodge Charger 500]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Performance<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:'69 Dodge Charger 500-2015 019 Recolor.jpg|75px]]
+|-
+|CFH46
+|020
+|[[Custom '77 Dodge Van]]
+| bgcolor=#77B5FE |<font color="black">HW Performance
+|[[Image:Custom '77 Dodge Van-2015 020.jpg|75px]]
+|-
+|CFJ33
+|020
+|[[Custom '77 Dodge Van]]
+| bgcolor=#77B5FE |<font color="black">HW Performance<br />'''[[2015 Treasure Hunts Series|<font color=#00aa00>Super Treasure Hunt]]'''
+|[[File:10c.jpg|75px]]
+|}
+
+===[[Street Power Series (2015)|Street Power]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Photo'''
+|-
+|CFH81
+|021
+|[[Ferrari 599 GTB Fiorano]]
+| bgcolor=#77B5FE |<font color="black">Street Power
+|[[File:Ferrari_599_gtb_fiorano_yellow_2015.jpg|75px]]
+|-
+|CFH08
+|022
+|[[Super Volt]]
+| bgcolor=#77B5FE |<font color="black">Street Power<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:SuperVolt15.jpg|75px]]
+|-
+|CFL20
+|022
+|[[Super Volt]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Street Power<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:SuperVoltCFL20.jpg|75px]]
+|-
+|CFG93
+|023
+|[[Lamborghini Urus]]
+| bgcolor=#77B5FE |<font color="black">Street Power<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:Lamborghini Urus red metallic 2015.JPG|75px]]
+|-
+|CFJ72
+|023
+|[[Lamborghini Urus]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Street Power<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:LamborghiniUrusCFJ72.jpg|75px]]
+|-
+|CFH07
+|024
+|[[BMW M4]]
+| bgcolor=#77B5FE |<font color="black">Street Power<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:BMW M4-2015 024.jpg|75px]]
+|-
+|CFL31
+|024
+|[[BMW M4]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Street Power<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:HW-2015-24-BMW M4-StreetPower.jpg|75px]]
+|-
+|CFH11
+|025
+|[[Cadillac Elmiraj]]
+| bgcolor=#77B5FE |<font color="black">Street Power<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:2015507211147.jpg|75px]]
+|-
+|CFL42
+|025
+|[[Cadillac Elmiraj]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Street Power<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:HW Cadillac-Elmiraj Red 2015 DSCF7445.jpg|75px]]
+|}
+
+===[[HW Art Cars Series (2015)|HW Art Cars]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Photo'''
+|-
+|CFH43
+|026
+|[[Volkswagen Beetle]]
+| bgcolor=#77B5FE |<font color="black">HW Art Cars<br />'''[[2015 Treasure Hunts Series|<font color=#00aa00>Treasure Hunt]]'''
+|[[Image:VW Beetle 2015.jpg|75px]]
+|-
+|CFH47
+|027
+|[['67 Austin Mini Van]]
+| bgcolor=#77B5FE |<font color="black">HW Art Cars<br /><font color="black">'''New in Mainline'''
+|[[File:HW-2015-27-'67_Austin_Mini_Van-ArtCars.jpg|75px]]
+|-
+|CFJ80
+|027
+|[['67 Austin Mini Van]] (2nd Color - Zamac)
+| bgcolor=#77B5FE |<font color="black">HW Art Cars<br />'''New in Mainline'''<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[File:Minivancfj80.JPG|75px]]
+|-
+|CFM07
+|027
+|[['67 Austin Mini Van]] (3rd Color)
+| bgcolor=#77B5FE |<font color="black">HW Art Cars<br /><font color="black">'''New in Mainline'''
+|[[File:Minivancfm07.jpg|75px]]
+|-
+|CFH50
+|028
+|[[Hiway Hauler 2]]
+| bgcolor=#77B5FE |<font color="black">HW Art Cars
+|[[File:HH2.jpg|75px]]
+|-
+|CFJ58
+|028
+|[[Hiway Hauler 2]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Art Cars
+|[[File:HH2 2015_2.jpg|75px]]
+|-
+|CFH51
+|029
+|[[Bread Box]]
+| bgcolor=#77B5FE |<font color="black">HW Art Cars
+|[[File:BreadBox15.jpg|75px]]
+|-
+|CFL71
+|029
+|[[Bread Box]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Art Cars
+|[[File:BREAD BOX CFL71.JPG|75px]]
+|-
+|CFH52
+|030
+|[[Mad Manga]]
+| bgcolor=#77B5FE |<font color="black">HW Art Cars
+|[[File:HW-2015-30-Mad_Manga-HW_ArtCars.jpg|75px]]
+|-
+|CFL82
+|030
+|[[Mad Manga]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Art Cars
+|[[File:MadMangaCFL82.jpg|75px]]
+|}
+
+===[[Street Beasts Series (2015)|Street Beasts]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Photo'''
+|-
+|CFH53
+|031
+|[[Preying Menace]]
+| bgcolor=#77B5FE |<font color="black">Street Beasts
+|[[File:PreyingMenace15.jpg|75px]]
+|-
+|CFM05
+|031
+|[[Preying Menace]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Street Beasts
+|[[Image:CFM05.jpg|75px]]
+|-
+|CFH54
+|032
+|[[Scorpedo]]
+| bgcolor=#77B5FE |<font color="black">Street Beasts
+|[[File:2015_032.jpg|75px]]
+|-
+|CFL83
+|032
+|[[Scorpedo]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Street Beasts
+|[[File:S 108642314.jpg|75px]]
+|-
+|CFH55
+|033
+|[[Eevil Weevil]]
+| bgcolor=#77B5FE |<font color="black">Street Beasts
+|[[File:Eevil Gorgojo-2015 033.jpg|75px]]
+|-
+|CFM19
+|033
+|[[Eevil Weevil]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Street Beasts
+|[[Image:cfm19.jpg|75px]]
+|-
+|CFH56
+|034
+|[[Tomb Up]]
+| bgcolor=#77B5FE |<font color="black">Street Beasts
+|[[File:TombUp15.jpg|75px]]
+|-
+|CFJ68
+|034
+|[[Tomb Up]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Street Beasts
+|[[File:TombUpCFJ68.jpg|75px]]
+|-
+|CFH57
+|035
+|[[Knight Draggin']]
+| bgcolor=#77B5FE |<font color="black">Street Beasts
+|[[File:KnightDraggin15.jpg|75px]]
+|-
+|CFL72
+|035
+|[[Knight Draggin']] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Street Beasts
+|[[Image:Knight Draggin' 2015 5 pack.jpg|75px]]
+|-
+|CFH58
+|036
+|[[Bad Ratitude]]
+| bgcolor=#77B5FE |<font color="black">Street Beasts
+|[[File:036BadRatitude.jpg|75px]]
+|-
+|CFH59
+|037
+|[[Super Stinger]]
+| bgcolor=#77B5FE |<font color="black">Street Beasts
+|[[File:2015_037.jpg|75px]]
+|-
+|CFH60
+|038
+|[[Piranha Terror]]
+| bgcolor=#77B5FE |<font color="black">Street Beasts<br />'''[[2015 Treasure Hunts Series|<font color=#00aa00>Treasure Hunt]]'''
+|[[File:2015-Piranha-Terror-190x190.jpg|75px]]
+|-
+|CFH61
+|039
+|[[Sharkruiser]]
+| bgcolor=#77B5FE |<font color="black">Street Beasts
+|[[File:HW-2015-39-Sharkruiser-IceMountain.jpg|75px]]
+|-
+|CFL50
+|039
+|[[Sharkruiser]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Street Beasts
+|[[File:SharkruiserStreetBeasts2015.jpg|75px]]
+|-
+|CFG78
+|040
+|[[Steer Clear]]
+| bgcolor=#77B5FE |<font color="black">Street Beasts<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:SteerClear.JPG|75px]]
+|}
+
+===[[HW Space Team Series (2015)|HW Space Team]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Photo'''
+|-
+|DHN92
+|041
+|[[Ollie Rocket]]
+| bgcolor=#77B5FE |<font color="black">HW Space Team<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:OllieRocketDHN92.jpg|75px]]
+|-
+|CFH63
+|042
+|[[4ward Speed]]
+| bgcolor=#77B5FE |<font color="black">HW Space Team
+|[[File:4wardSpeed15TRAP5.jpg|75px]]
+|-
+|CFJ56
+|042
+|[[4ward Speed]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Space Team
+|[[File:4WardSpeedCFJ56.jpg|75px]]
+|-
+|CFH64
+|043
+|[[U.S.S. Enterprise NCC-1701]]
+| bgcolor=#77B5FE |<font color="black">HW Space Team
+|[[Image:U.S.S. Enterprise NCC-1701 thumbnail.jpg|75px]]
+|-
+|CFH65
+|044
+|[[RocketFire]]
+| bgcolor=#77B5FE |<font color="black">HW Space Team<br />'''[[2015 Treasure Hunts Series|<font color=#00aa00>Treasure Hunt]]'''
+|[[File:044Rocketfire.jpg|75px]]
+|-
+|CFG79
+|045
+|[[Back to the Future Time Machine - Hover Mode]]
+| bgcolor=#77B5FE |<font color="black">HW Space Team<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:BTTFTMHoverCFG79.jpg|75px]]
+|}
+
+===[[HW Rescue Series (2015)|HW Rescue]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Photo'''
+|-
+|CFH66
+|046
+|[[Rescue Duty]]
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[File:HW-2015-46-Rescue_Duty-Rescue.jpg|75px]]
+|-
+|CFL51
+|046
+|[[Rescue Duty]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[File:RescueDutyCFL51.jpg|75px]]
+|-
+|CFH67
+|047
+|[[Combat Medic]]
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[Image:Combat Medic-2015 047.jpg|75px]]
+|-
+|CFH68
+|048
+|[[Canyon Carver]]
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[File:2015-048-CanyonCarver-White.jpg|75px]]
+|-
+|CFJ29
+|048
+|[[Canyon Carver]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[Image:cfj29.jpg|75px]]
+|-
+|CFH69
+|049
+|[[Ford Mustang GT Concept]]
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[File:FordMustangGTConceptCFH69.jpg|75px]]
+|-
+|CFL44
+|049
+|[[Ford Mustang GT Concept]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[File:MustangConceptPoliceWhite-2015HW.jpg|75px]]
+|-
+|CFH70
+|050
+|[[Fiat 500]]
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[File:HW-2015-50-Fiat_500-Rescue.jpg|75px]]
+|-
+|CFH71
+|051
+|[[5 Alarm]]
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[File:5Alarm15.jpg|75px]]
+|-
+|CFJ69
+|051
+|[[5 Alarm]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[File:5AlarmCFJ59.jpg|75px]]
+|-
+|CFH72
+|052
+|[[Propper Chopper]]
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[File:IMG_1464.JPG|75px]]
+|-
+|CFL84
+|052
+|[[Propper Chopper]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[File:PropperChopperCFL84.jpg|75px]]
+|-
+|CFH73
+|053
+|[[H2GO]]
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[File:H2GoCFH73.jpg|75px]]
+|-
+|CFH74
+|054
+|[[Speed Trap]]
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[File:SpeedTrapCFH74.jpg|75px]]
+|-
+|CFH75
+|055
+|[['70s Van|Super Van]]
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[File:'70s Van-2015 055.jpg|75px]]
+|-
+|CFJ28
+|055
+|[['70s Van|Super Van]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW Rescue
+|[[File:HW Super Van White.jpg|75px]]
+|-
+|CFJ81
+|055
+|[['70s Van|Super Van]] (3rd Color - Zamac)
+| bgcolor=#77B5FE |<font color="black">HW Rescue<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[File:HW Super Van ZAMAC.jpg|75px]]
+|}
+
+===[[Tooned Series (2015)|Tooned]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Photo'''
+|-
+|CFG80
+|056
+|[[The Simpsons Family Car]]
+| bgcolor=#77B5FE |<font color="black">Tooned<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:The_Simpsons_Family_Car_-_15_Tooned_Series_600pxDM.jpg|75px]]
+|-
+|CFH76
+|057
+|[[The Jetsons Capsule Car]]
+| bgcolor=#77B5FE |<font color="black">Tooned
+|[[File:Jetsons15.jpg|75px]]
+|-
+|CFK18
+|058
+|[[The Homer]]
+| bgcolor=#77B5FE |<font color="black">Tooned
+|[[File:HomerCFK18.jpg|75px]]
+|-
+|CFK19
+|059
+|[[Snoopy]]
+| bgcolor=#77B5FE |<font color="black">Tooned
+|[[File:HW-2015-59-Snoopy-Tooned.jpg|75px]]
+|-
+|CFH26
+|060
+|[[Grease Rod]]
+| bgcolor=#77B5FE |<font color="black">Tooned<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:HW-2015-60-Grease_Rod-Tooned.jpg|75px]]
+|}
+
+===[[Batman Series (2015)|Batman]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Photo'''
+|-
+|CFG82
+|061
+|[[Batman: Arkham Knight Batmobile]]
+| bgcolor=#77B5FE |<font color="black">Batman<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:Batman Arkham Knight Batmobile-2015 061.jpg|75px]]
+|-
+|CFK20
+|062
+|[[1989 Batmobile|Batmobile]]
+| bgcolor=#77B5FE |<font color="black">Batman
+|[[File:HW-2015-62-Batmobil-Batman.jpg|75px]]
+|-
+|CFJ50
+|062
+|[[1989 Batmobile|Batmobile]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Batman
+|[[File:Batmobile (1989)-2015 062 recolor.jpg|75px]]
+|-
+|CFK21
+|063
+|[[The Brave and the Bold Batmobile|Batmobile]]
+| bgcolor=#77B5FE |<font color="black">Batman
+|[[Image:Batmobile (The Brave And The Bold)-2015 063.jpg|75px]]
+|-
+|CFL45
+|063
+|[[The Brave and the Bold Batmobile|Batmobile]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Batman
+|[[File:HW-2015-63-Batmobile-Batman.jpg|75px]]
+|-
+|CFK22
+|064
+|[[Arkham Asylum Batmobile|Batman: Arkham Asylum Batmobile]]
+| bgcolor=#77B5FE |<font color="black">Batman
+|[[File:AABatmobileCFK22.jpg|75px]]
+|-
+|CFK23
+|065
+|[[Batman Live Batmobile|Batman Live! Batmobile]]
+| bgcolor=#77B5FE |<font color="black">Batman
+|[[File:BatmanLive15.jpg|75px]]
+|-
+|CFL46
+|065
+|[[Batman Live Batmobile|Batman Live! Batmobile]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Batman
+|[[File:Batman Live! Batmobile.jpg|75px]]
+|}
+
+===[[HW All Stars Series (2015)|HW All Stars]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Photo'''
+|-
+|CFK24
+|066
+|[[MR11]]
+| bgcolor=#77B5FE |<font color="black">HW All Stars
+|[[File:066MR11.jpg|75px]]
+|-
+|CFJ49
+|066
+|[[MR11]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW All Stars
+|[[File:MR11-CFJ49.jpg|75px]]
+|-
+|CFK25
+|067
+|[[Torque Twister]]
+| bgcolor=#77B5FE |<font color="black">HW All Stars
+|[[File:TorqueTwister15.jpg|75px]]
+|-
+|CFJ77
+|067
+|[[Torque Twister]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW All Stars
+|[[File:TorqueTwisterCFJ77.jpg|75px]]
+|-
+|CFG85
+|068
+|[[Tee'd Off 2]]
+| bgcolor=#77B5FE |<font color="black">HW All Stars<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:TeedOff2CFG85.jpg|75px]]
+|-
+|CFK26
+|069
+|[[Fast FeLion]]
+| bgcolor=#77B5FE |<font color="black">HW All Stars<br />'''[[2015 Treasure Hunts Series|<font color=#00aa00>Treasure Hunt]]'''
+|[[Image:FastFelion15.jpg|75px]]
+|-
+|CFK27
+|070
+|[[Muscle Tone]]
+| bgcolor=#77B5FE |<font color="black">HW All Stars
+|[[File:MuscleTone15.jpg|75px]]
+|-
+|CFL85
+|070
+|[[Muscle Tone]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">HW All Stars
+|[[File:MuscleToneCFL85.jpg|75px]]
+|}
+
+===[[Surf Patrol Series (2015)|Surf Patrol]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#77B5FE|<font color="black">'''Photo'''
+|-
+|CFK28
+|071
+|[[Surf Crate]]
+| bgcolor=#77B5FE |<font color="black">Surf Patrol
+|[[Image:2015-71-SurfCrate-Red.JPG|75px]]
+|-
+|CFJ82
+|071
+|[[Surf Crate]] (2nd Color - Zamac)
+| bgcolor=#77B5FE |<font color="black">Surf Patrol<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[Image:Surf-Crate-aa.jpg|75px]]
+|-
+|CFK29
+|072
+|[[Custom '62 Chevy]]
+| bgcolor=#77B5FE |<font color="black">Surf Patrol
+|[[Image:Custom '62 Chevy-2015 072.jpg|75px]]
+|-
+|CFL86
+|072
+|[[Custom '62 Chevy]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Surf Patrol
+|[[File:HW-2015-72-Custom '62 Chevy-SurfPatrol-Turquoise.jpg|75px]]
+|-
+|CFK30
+|073
+|[[Kool Kombi]]
+| bgcolor=#77B5FE |<font color="black">Surf Patrol
+|[[File:HW-2015-73-Kool_Kombi-SurfPatrol.jpg|75px]]
+|-
+|CFJ34
+|073
+|[[Kool Kombi]]
+| bgcolor=#77B5FE |<font color="black">Surf Patrol<br />'''[[2015 Treasure Hunts Series|<font color=#00aa00>Super Treasure Hunt]]'''
+|[[File:Kcsth.jpg|75px]]
+|-
+|CFG87
+|074
+|[[Pedal Driver]]
+| bgcolor=#77B5FE |<font color="black">Surf Patrol<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:Pedal Driver-2015 074.jpg|75px]]
+|-
+|CFJ66
+|074
+|[[Pedal Driver]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Surf Patrol<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:IMG 20151122 165200.jpg|75px]]
+|-
+|CFG88
+|075
+|[[Loopster]]
+| bgcolor=#77B5FE |<font color="black">Surf Patrol<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:Loopster-15nm-surf-patrol-redhu-600pxotd.jpg|75px]]
+|-
+|CFM14
+|075
+|[[Loopster]] (2nd Color)
+| bgcolor=#77B5FE |<font color="black">Surf Patrol<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:LOOPSTER (2015) 75-250 CFM14.jpg|75px]]
+|}
+
+==[[HW Off-Road Series|HW Off-Road]]==
+===[[Road Rally Series (2015)|Road Rally]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#ffff00" |<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Photo'''
+|-
+|CFL87
+|076
+|[[Fast 4WD]]
+| bgcolor="yellow" |<font color="black">Road Rally
+|[[File:076Fast4WD.jpg|75px]]
+|-
+|CFK31
+|076
+|[[Fast 4WD]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Road Rally
+|[[File:Fast4wdCFK31.jpg|75px]]
+|-
+|CFK32
+|077
+|[[2008 Lancer Evolution]]
+| bgcolor="yellow" |<font color="black">Road Rally
+|[[File:2008 Lancer Evolution - 2015 Basic Edition.jpg|75px]]
+|-
+|CFJ35
+|077
+|[[2008 Lancer Evolution]]
+| bgcolor="yellow" |<font color="black">Road Rally<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Super Treasure Hunt]]'''
+|[[File:LancerEvolutionCFJ35.jpg|75px]]
+|-
+|CFK33
+|078
+|[['12 Ford Fiesta]]
+| bgcolor="yellow" |<font color="black">Road Rally
+|[[File:FordFiesta15.jpg|75px]]
+|-
+|CFL64
+|078
+|[['12 Ford Fiesta]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Road Rally
+|[[File:'12 Fiesta (CFL64).jpg|75px]]
+|-
+|CFK34
+|079
+|[[Off Track]]
+| bgcolor="yellow" |<font color="black">Road Rally
+|[[File:HW-2015-79-Off_Track-RoadRally.jpg|75px]]
+|-
+|CFJ52
+|079
+|[[Off Track]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Road Rally
+|[[File:OffTrackCFJ52.jpg|75px]]
+|-
+|CFK35
+|080
+|[[Mini Cooper|Morris Mini]]
+| bgcolor="yellow" |<font color="black">Road Rally
+|[[File:HW-2015-80-Morris_Mini-RoadRally.jpg|75px]]
+|-
+|CFL73
+|080
+|[[Mini Cooper|Morris Mini]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Road Rally
+|[[File:MiniCooper-15RoadRally-Aqua.JPG|75px]]
+|}
+
+===[[HW Moto Series (2015)|HW Moto]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Photo'''
+|-
+|CFK36
+|081
+|[[HW450F]]
+| bgcolor="yellow" |<font color="black">HW Moto
+|[[File:HW450F15.jpg|75px]]
+|-
+|CFL60
+|081
+|[[HW450F]] (2nd Color)
+| bgcolor="yellow" |<font color="black">HW Moto
+|[[Image:CFL60 2015 HW450F green.jpg|75px]]
+|-
+|CFK37
+|082
+|[[Harley-Davidson Fat Boy]]
+| bgcolor="yellow" |<font color="black">HW Moto
+|[[Image:Harley-Davidson Fat Boy-2015 082.jpg|75px]]
+|-
+|CFH09
+|083
+|[[Street Stealth]]
+| bgcolor="yellow" |<font color="black">HW Moto<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:HW-2015-083-Street Stealth-Moto.jpg|75px]]
+|-
+|CFL23
+|083
+|[[Street Stealth]] (2nd Color)
+| bgcolor="yellow" |<font color="black">HW Moto<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:IMG 4514.JPG|75px]]
+|-
+|CFK39
+|084
+|[[Sand Stinger]]
+| bgcolor="yellow" |<font color="black">HW Moto
+|[[File:SandStinger15.jpg|75px]]
+|-
+|CFL62
+|084
+|[[Sand Stinger]] (2nd Color)
+| bgcolor="yellow" |<font color="black">HW Moto
+|[[File:15'sandstinger2ndcolour.JPG|75px]]
+|-
+|CFK40
+|085
+|[[Tred Shredder]]
+| bgcolor="yellow" |<font color="black">HW Moto<br /><font color="black">'''New in Mainline'''
+|[[Image:Tred Shredder-2015 085.jpg|75px]]
+|}
+
+===[[Battle Kings Series (2015)|Battle Kings]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Photo'''
+|-
+|CFK41
+|086
+|[[Sting Rod II]]
+| bgcolor="yellow" |<font color="black">Battle Kings
+|[[File:StingRodII15.jpg|75px]]
+|-
+|CFJ30
+|086
+|[[Sting Rod II]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Battle Kings
+|[[Image:Sting Rod II 2015.png|75px]]
+|-
+|CFK42
+|087
+|[[Invader]]
+| bgcolor="yellow" |<font color="black">Battle Kings
+|[[File:InvaderCFK42.jpg|75px]]
+|-
+|CFL88
+|087
+|[[Invader]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Battle Kings
+|[[Image:InvaderCFL88.jpg|75px]]
+|-
+|CFK43
+|088
+|[[Bad Mudder 2]]
+| bgcolor="yellow" |<font color="black">Battle Kings
+|[[File:BadMudder2CFK43.jpg|75px]]
+|-
+|CFK44
+|089
+|[[Enforcer]]
+| bgcolor="yellow" |<font color="black">Battle Kings<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Treasure Hunt]]'''
+|[[Image:IMG_7145.jpg|75px]]
+|-
+|CFG89
+|090
+|[[The Haulinator]]
+| bgcolor="yellow" |<font color="black">Battle Kings<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:HaulinatorCFG89.jpg|75px]]
+|}
+
+===[[Sky Show Series (2015)|Sky Show]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Photo'''
+|-
+|CFK45
+|091
+|[[Cloud Cutter]]
+| bgcolor="yellow" |<font color="black">Sky Show
+|[[Image:CloudCutter15.jpg|75px]]
+|-
+|CFM06
+|091
+|[[Cloud Cutter]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Sky Show
+|[[Image:CloudCutterCFM06.jpg|75px]]
+|-
+|CFJ27
+|092
+|[[Mad Propz]]
+| bgcolor="yellow" |<font color="black">Sky Show
+|[[Image:Mad Propz-2015 092.jpg|75px]]
+|-
+|CFJ59
+|092
+|[[Mad Propz]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Sky Show
+|[[Image:Mad Propz-2015 092 Recolor.jpg|75px]]
+|-
+|CFK46
+|093
+|[[Fast Fortress]]
+| bgcolor="yellow" |<font color="black">Sky Show
+|[[File:HW-2015-93-Fast_Fortress-SkyShow.jpg|75px]]
+|-
+|CFL19
+|093
+|[[Fast Fortress]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Sky Show
+|[[Image:2015-093 CFL19 Fast Fortress Yellow Blue open-1.jpg|75px]]
+|-
+|CFK47
+|094
+|[[Sky Knife]]
+| bgcolor="yellow" |<font color="black">Sky Show
+|[[File:SkyKnife15.jpg|75px]]
+|-
+|CFM08
+|094
+|[[Sky Knife]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Sky Show
+|[[Image:Sky Knife CFM08.JPG|75px]]
+|-
+|CFK48
+|095
+|[[Jet Threat 4.0]]
+| bgcolor="yellow" |<font color="black">Sky Show<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Treasure Hunt]]'''
+|[[File:HW-2015-095-Jet_Threat_4.0-SkyShow.jpg|75px]]
+|}
+
+===[[Hot Wheels Test Facility Series (2015)|Hot Wheels Test Facility]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Photo'''
+|-
+|CFK49
+|096
+|[[Rip Rod]]
+| bgcolor="yellow" |<font color="black">Hot Wheels Test Facility
+|[[File:Rip_Rod_-_15_Off-Road_Test_Facility_DkOrange_600pxDM.jpg|75px]]
+|-
+|CFL52
+|096
+|[[Rip Rod]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Hot Wheels Test Facility
+|[[Image:Rip Rod - 15 Off-Road Test Facility 600pxDM.jpg|75px]]
+|-
+|CFK50
+|097
+|[[Mountain Mauler]]
+| bgcolor="yellow" |<font color="black">Hot Wheels Test Facility
+|[[File:097MtnMauler.jpg|75px]]
+|-
+|CFL89
+|097
+|[[Mountain Mauler]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Hot Wheels Test Facility
+|[[Image:2015mountainmauler.jpg|75px]]
+|-
+|CFK51
+|098
+|[[Hot Wheels Ford Transit Connect]]
+| bgcolor="yellow" |<font color="black">Hot Wheels Test Facility
+|[[File:Ford Transit Connect HWTF 2.jpg|75px]]
+|-
+|CFL65
+|098
+|[[Hot Wheels Ford Transit Connect]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Hot Wheels Test Facility
+|[[Image:HW Ford-Transit-Connect Green 2015 RF DSCF8244.jpg|75px]]
+|-
+|CFK52
+|099
+|[[Team Hot Wheels Corkscrew Buggy]]
+| bgcolor="yellow" |<font color="black">Hot Wheels Test Facility<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Treasure Hunt]]'''
+|[[File:THWCorkscrewBuggyCFK52.jpg|75px]]
+|-
+|CFG90
+|100
+|[[Bull Whip]]
+| bgcolor="yellow" |<font color="black">Hot Wheels Test Facility<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:HW-2015-100-Bull_Whip-HWTestFacility.jpg|75px]]
+|-
+|CFJ63
+|100
+|[[Bull Whip]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Hot Wheels Test Facility<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:BullWhip15.jpg|75px]]
+|}
+
+
+===[[Jungle Rally Series (2015)|Jungle Rally]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Photo'''
+|-
+|CFK53
+|101
+|[[Jeep CJ-7]]
+| bgcolor="yellow" |<font color="black">Jungle Rally<br />'''[[2015 Treasure Hunts Series|<font color="#00cc00>Treasure Hunt]]'''
+|[[File:Jeep cj-7.png|75px]]
+|-
+|CFL90
+|102
+|[[Land Crusher]]
+| bgcolor="yellow" |<font color="black">Jungle Rally
+|[[File:LandCrusher15.jpg|75px]]
+|-
+|CFK54
+|102
+|[[Land Crusher]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Jungle Rally
+|[[Image:LandCrusherCFK54.jpg|75px]]
+|-
+|CFG91
+|103
+|[[Hover Storm]]
+| bgcolor="yellow" |<font color="black">Jungle Rally<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:Hover-Storm-a.jpg|75px]]
+|-
+|CFM09
+|103
+|[[Hover Storm]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Jungle Rally<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:Hover Storm 2015.jpg|75px]]
+|-
+|CFG92
+|104
+|[[Aero Pod]]
+| bgcolor="yellow" |<font color="black">Jungle Rally<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:AeroPodCFG92.jpg|75px]]
+|-
+|CFL33
+|104
+|[[Aero Pod]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Jungle Rally<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:AeroPodCFL33.jpg|75px]]
+|-
+|CFK71
+|105
+|[[Humvee]]
+| bgcolor="yellow" |<font color="black">Jungle Rally
+|[[File:HW-2015-105-Humvee-JungleRally.jpg|75px]]
+|}
+
+===[[Ice Mountain Series (2015)|Ice Mountain]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Photo'''
+|-
+|CFK55
+|106
+|[[Tread Air]]
+| bgcolor="yellow" |<font color="black">Ice Mountain<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Treasure Hunt]]'''
+|[[Image:2015 Tread Air Treasure Hunt.jpeg|75px]]
+|-
+|CFK56
+|107
+|[[RD-02]]
+| bgcolor="yellow" |<font color="black">Ice Mountain
+|[[File:HW-2015-107-RD_02-IceMountain.jpg|75px]]
+|-
+|CFL74
+|107
+|[[RD-02]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Ice Mountain
+|[[Image:cfl74.jpg|75px]]
+|-
+|CFK57
+|108
+|[[Rockster]]
+| bgcolor="yellow" |<font color="black">Ice Mountain
+|[[File:2015 icemountain Rockster.jpg|75px]]
+|-
+|CFG94
+|109
+|[[Ice Shredder]]
+| bgcolor="yellow" |<font color="black">Ice Mountain<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:2015-109-IceShredder-Blue.JPG|75px]]
+|-
+|CFL24
+|109
+|[[Ice Shredder]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Ice Mountain<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:100 9072.jpg|75px]]
+|-
+|CFG95
+|110
+|[[Snow Stormer]]
+| bgcolor="yellow" |<font color="black">Ice Mountain<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:2015 Snow Stormer.jpg|75px]]
+|-
+|CFL25
+|110
+|[[Snow Stormer]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Ice Mountain<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:New_For_2015_Blue_Snow_Stormer|75px]]
+|}
+
+===[[Stunt Circuit Series (2015)|Stunt Circuit]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Photo'''
+|-
+|CFK58
+|111
+|[[Quicksand]]
+| bgcolor="yellow" |<font color="black">Stunt Circuit
+|[[File:HW-2015-111-Quicksand-StuntCircuit.jpg|75px]]
+|-
+|CFL92
+|111
+|[[Quicksand]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Stunt Circuit
+|[[Image:CFL92.jpg|75px]]
+|-
+|CFK91
+|112
+|[[Project Speeder]]
+| bgcolor="yellow" |<font color="black">Stunt Circuit
+|[[Image:ProjectSpeederCFK91.jpg|75px]]
+|-
+|CFK60
+|113
+|[[Mad Splash]]
+| bgcolor="yellow" |<font color="black">Stunt Circuit<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Treasure Hunt]]'''
+|[[File:MadSplashCFK60.jpg|75px]]
+|-
+|CFK61
+|114
+|[[Carbonic]]
+| bgcolor="yellow" |<font color="black">Stunt Circuit<br />'''[[Chinese New Year|<font color="black">Year of the Sheep]]'''
+|[[File:Carbonic15.jpg|75px]]
+|-
+|CFK62
+|115
+|[[HW Poppa Wheelie]]
+| bgcolor="yellow" |<font color="black">Stunt Circuit
+|[[File:PoppaWheelie15.jpg|75px]]
+|-
+|CFJ53
+|115
+|[[HW Poppa Wheelie]] (2nd Color)
+| bgcolor="yellow" |<font color="black">Stunt Circuit
+|[[Image:PoppaWheelieCFJ53.jpg|75px]]
+|}
+
+===[[HW Hot Trucks Series (2015)|HW Hot Trucks]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#ffff00|<font color="black">'''Photo'''
+|-
+|CFK63
+|116
+|[[Off-Duty]]
+| bgcolor="yellow" |<font color="black">HW Hot Trucks
+|[[File:Off-Duty_-_2015_Hot_Trucks.JPG|75px]]
+|-
+|CFL91
+|116
+|[[Off-Duty]] (2nd Color)
+| bgcolor="yellow" |<font color="black">HW Hot Trucks
+|[[File:37300440 1912238962406582 6710048640859111424 n.jpg|85px]]
+|-
+|CFK64
+|117
+|[[Diesel Duty]]
+| bgcolor="yellow" |<font color="black">HW Hot Trucks
+|[[File:DieselDutyCFK64.jpg|75px]]
+|-
+|CFK65
+|118
+|[[Monster Dairy Delivery]]
+| bgcolor="yellow" |<font color="black">HW Hot Trucks
+|[[File:MonsterDD15.jpg|75px]]
+|-
+|CFH24
+|119
+|[['15 Ford F-150]]
+| bgcolor="yellow" |<font color="black">HW Hot Trucks<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:F150 2015.jpg|75px]]
+|-
+|CFJ65
+|119
+|[['15 Ford F-150]] (2nd Color)
+| bgcolor="yellow" |<font color="black">HW Hot Trucks<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:CFJ65-01.JPG|75px]]
+|-
+|CFK67
+|120
+|[[Toyota Off-Road Truck]]
+| bgcolor="yellow" |<font color="black">HW Hot Truck
+|[[File:HW-2015-120-Toyota_Off_-_Road_Truck-HotTrucks..jpg|75px]]
+|-
+|CFJ36
+|120
+|[[Toyota Off-Road Truck]]
+| bgcolor="yellow" |<font color="black">HW Hot Trucks<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Super Treasure Hunt]]'''
+|[[Image:Toyota-Baja-Truck-l.jpg|75px]]
+|-
+|CFK68
+|121
+|[[Custom Ford Bronco]]
+| bgcolor="yellow" |<font color="black">HW Hot Trucks
+|[[File:HW-2015-121-Custom_Ford_Bronco-HotTrucks.jpg|75px]]
+|-
+|CFK69
+|122
+|[['68 El Camino]]
+| bgcolor="yellow" |<font color="black">HW Hot Trucks
+|[[File:122ElCamino68.jpg|75px]]
+|-
+|CFJ83
+|122
+|[['68 El Camino]] (2nd Color - Zamac)
+| bgcolor="yellow" |<font color="black">HW Hot Trucks<br />[[Walmart Exclusive Zamac Editions|'''<font color="black">Walmart Exclusive''']]
+|[[File:Zamacelcamino.jpg|75px]]
+|-
+|CFK70
+|123
+|[[Subaru BRAT]]
+| bgcolor="yellow" |<font color="black">HW Hot Trucks<br />'''<font color="black">New in Mainline'''
+|[[File:HW-2015-123-Subaru_Brat-HotTrucks.jpg|75px]]
+|-
+|DHY01
+|123
+|[[Subaru BRAT]] (2nd Color)
+| bgcolor="yellow" |<font color="black">HW Hot Trucks<br />'''New in Mainline'''<br />'''<font color="black">Kmart Exclusive'''
+|[[Image:HW-2015-123-Subaru Brat-HotTrucks-Yellow.jpg|75px]]
+|-
+|CFV19
+|124
+|[[Volkswagen Caddy]]
+| bgcolor="yellow" |<font color="black">HW Hot Trucks<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:Volkswagen Caddy-2015 124.jpg|75px]]
+|-
+|CFL63
+|124
+|[[Volkswagen Caddy]] (2nd Color)
+| bgcolor="yellow" |<font color="black">HW Hot Trucks<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:Silver Volkswagen Rabbit - 05383df.jpg|75px]]
+|-
+|CFK72
+|125
+|[[Datsun 620]]
+| bgcolor="yellow" |<font color="black">HW Hot Trucks
+|[[File:HW-2015-125-Datsun_620-_HotTrucks.jpg|75px]]
+|-
+|CFK03
+|125
+|[[Datsun 620]] (2nd Color)
+| bgcolor="yellow" |<font color="black">HW Hot Trucks<br />'''<font color="black">Kmart Exclusive'''
+|[[Image:HW-2015-125-Datsun 620-HotTrucks.jpg|75px]]
+|}
+
+==[[HW Race Series|HW Race]]==
+===[[HW Race Team Series (2015)|HW Race Team]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Photo'''
+|-
+|CFK73
+|126
+|[[Let's GO]]
+| bgcolor="red" |<font color="black">HW Race Team
+|[[File:LetsGOHWR.jpg|75px]]
+|-
+|CFL94
+|126
+|[[Let's GO]] (2nd Color)
+| bgcolor="red" |<font color="black">HW Race Team
+|[[Image:LetsGoCFL94.jpg|75px]]
+|-
+|CFK74
+|127
+|[['13 COPO Camaro]]
+| bgcolor="red" |<font color="black">HW Race Team
+|[[Image:'13 COPO Camaro-2015 127.jpg|75px]]
+|-
+|CFJ84
+|127
+|[['13 COPO Camaro]] (2nd Color - Zamac)
+| bgcolor="red" |<font color="black">HW Race Team<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[Image:2013CC-05.jpg|75px]]
+|-
+|CFK75
+|128
+|[[The Vanster]]
+| bgcolor="red" |<font color="black">HW Race Team
+|[[File:VansterBlue15.jpg|75px]]
+|-
+|CFJ54
+|128
+|[[The Vanster]] (2nd Color)
+| bgcolor="red" |<font color="black">HW Race Team
+|[[Image:2015 128a.jpg|75px]]
+|-
+|CFK76
+|129
+|[[RRRoadster]]
+| bgcolor="red" |<font color="black">HW Race Team
+|[[Image:Rrroadster2015.jpg|75px]]
+|-
+|CFJ37
+|129
+|[[RRRoadster]]
+| bgcolor="red" |<font color="black">HW Race Team<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Super Treasure Hunt]]'''
+|[[File:Rrroadster_-_2015_HW_Racing_$TH.JPG|75px]]
+|-
+|CFG96
+|130
+|[[GT Hunter]]
+| bgcolor="red" |<font color="black">HW Race Team<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:HW-2015-130-GT_Hunter-RaceTeam.jpg|75px]]
+|-
+|CFL40
+|130
+|[[GT Hunter]] (2nd Color)
+| bgcolor="red" |<font color="black">HW Race Team<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:Storecamera 20170814160326 01 copy.jpg|75px]]
+|-
+|CFK77
+|131
+|[[C6 Corvette]]
+| bgcolor="red" |<font color="black">HW Race Team
+|[[File:Corvette c6 2015.JPG|75px]]
+|-
+|CFJ97
+|131
+|[[C6 Corvette]] (2nd Color)
+| bgcolor="red" |<font color="black">HW Race Team<br /><font color="black">'''[[Toys R Us|Toys R Us Exclusive]]'''
+|[[Image:Toysruscorvette2015exclusivec6.jpg|75px]]
+|-
+|CFK78
+|132
+|[[Circle Trucker]]
+| bgcolor="red" |<font color="black">HW Race Team
+|[[File:HW-2015-132-Circle_Trucker-RaceTeam.jpg|75px]]
+|-
+|CFK79
+|133
+|[[Lancia Stratos]]
+| bgcolor="red" |<font color="black">HW Race Team
+|[[File:Lancia_Stratos_-_15_HW_Race_Team_600pxDM.jpg|75px]]
+|-
+|CFK80
+|134
+|[[Prototype H-24]]
+| bgcolor="red" |<font color="black">HW Race Team
+|[[Image:PrototypeH24-15.jpg|75px]]
+|-
+|CFL66
+|134
+|[[Prototype H-24]] (2nd Color)
+| bgcolor="red" |<font color="black">HW Race Team
+|[[Image:PrototypeH24-15K.jpg|75px]]
+|-
+|CFG97
+|135
+|[[Winning Formula]]
+| bgcolor="red" |<font color="black">HW Race Team<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:Winning Formula 2015 24.jpg|75px]]
+|-
+|CFJ73
+|135
+|[[Winning Formula]] (2nd Color)
+| bgcolor="red" |<font color="black">HW Race Team<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:WinningFormulaCFJ73.jpg|75px]]
+|}
+
+===[[X-Raycers Series (2015)|X-Raycers]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Photo'''
+|-
+|CFK81
+|136
+|[[Hi-Tech Missile]]
+| bgcolor="red" |<font color="black">X-Raycers
+|[[File:HiTechMissileCFK81.jpg|75px]]
+|-
+|CFK82
+|137
+|[[Clear Speeder]]
+| bgcolor="red" |<font color="black">X-Raycers
+|[[File:ClearSpeederCFK82.jpg|75px]]
+|-
+|CFM10
+|137
+|[[Clear Speeder]] (2nd Color)
+| bgcolor="red" |<font color="black">X-Raycers
+|[[File:2015clearspeeder2ndcolour.jpg|75px]]
+|-
+|CFK83
+|138
+|[[Paradigm Shift]]
+| bgcolor="red" |<font color="black">X-Raycers<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Treasure Hunt]]'''
+|[[File:ParadigmShiftCFK83.jpg|75px]]
+|-
+|CFK84
+|139
+|[[Nerve Hammer]]
+| bgcolor="red" |<font color="black">X-Raycers
+|[[File:HW-2015-139-Nerve_Hammer-XRaycers.jpg|75px]]
+|-
+|CFJ31
+|139
+|[[Nerve Hammer]] (2nd Color)
+| bgcolor="red" |<font color="black">X-Raycers
+|[[Image:NerveHammerClRedOH5.jpg|75px]]
+|-
+|CFK85
+|140
+|[['69 Chevelle (X-Raycers)|'69 Chevelle]]
+| bgcolor="red" |<font color="black">X-Raycers
+|[[File:69ChevelleCFK85.jpg|75px]]
+|-
+|CFL75
+|140
+|[['69 Chevelle (X-Raycers)|'69 Chevelle]] (2nd Color)
+| bgcolor="red" |<font color="black">X-Raycers
+|[[Image:Untitled by hunter12396-dbtj4m7.jpg|75px]]
+|-
+|CFK86
+|141
+|[[What-4-2]]
+| bgcolor="red" |<font color="black">X-Raycers
+|[[File:What42-15.jpg|75px]]
+|-
+|CFK87
+|142
+|[[Bullet Proof]]
+| bgcolor="red" |<font color="black">X-Raycers
+|[[File:BulletPrrofCFK87.jpg|75px]]
+|-
+|CFK88
+|143
+|[[Vandetta]]
+| bgcolor="red" |<font color="black">X-Raycers
+|[[File:143Vandetta.jpg|75px]]
+|-
+|CFJ60
+|143
+|[[Vandetta]] (2nd Color)
+| bgcolor="red" |<font color="black">X-Raycers
+|[[Image:VandettaCFJ60.jpg|75px]]
+|-
+|CFK89
+|144
+|[[Scion xB]]
+| bgcolor="red" |<font color="black">X-Raycers
+|[[File:144ScionXB.jpg|75px]]
+|-
+|CFG98
+|145
+|[[X-Steam]]
+| bgcolor="red" |<font color="black">X-Raycers<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:XSteam.jpg|75px]]
+|}
+
+===[[World Race Series (2015)|World Race]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Photo'''
+|-
+|CFK90
+|146
+|[[BMW E36 M3 Race]]
+| bgcolor="red" |<font color="black">World Race
+|[[File:Blue BMW E36 M3 Race.JPG|75px]]
+|-
+|CFJ61
+|146
+|[[BMW E36 M3 Race]] (2nd Color)
+| bgcolor="red" |<font color="black">World Race
+|[[Image:BMW E36 M3 Race (CFJ61).jpg|75px]]
+|-
+|CFK59
+|147
+|[[Bully Goat]]
+| bgcolor="red" |<font color="black">World Race
+|[[File:BullyGoatCFK59.jpg|75px]]
+|-
+|CFK92
+|148
+|[[Super Blitzen]]
+| bgcolor="red" |<font color="black">World Race
+|[[File:HW-2015-148-Super_Blitzen-WorldRace.jpg|75px]]
+|-
+|CFM16
+|148
+|[[Super Blitzen]] (2nd Color)
+| bgcolor="red" |<font color="black">World Race
+|[[Image:Super Blitzen CFM16 TRAP5.jpg|75px]]
+|-
+|CFH15
+|149
+|[[Aston Martin Vantage GT3]]
+| bgcolor="red" |<font color="black">World Race<br>[[2015 New Models|<font color="black">New for 2015!]]
+|[[Image:AstonMartinVantageGT32015.jpeg|75px]]
+|-
+|CFL35
+|149
+|[[Aston Martin Vantage GT3]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">World Race<br>[[2015 New Models|<font color="black">New for 2015!]]
+|[[Image:CFL35-01.JPG|75px]]
+|-
+|CFG99
+|150
+|[[SRT Viper GTS-R]]
+| bgcolor="red" |<font color="black">World Race<br>'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:SRTViper-15NM.JPG|75px]]
+|-
+|CFJ64
+|150
+|[[SRT Viper GTS-R]] (2nd Color)
+| bgcolor="red" |<font color="black">World Race<br>'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:SRT Viper GTS-R-2015 150 Recolor.jpg|75px]]
+|-
+|CFK94
+|151
+|[[Mastretta MXR]]
+| bgcolor="red" |<font color="black">World Race
+|[[File:Mastretta MXR-2015 151.jpg|75px]]
+|-
+|CFJ47
+|151
+|[[Mastretta MXR]]
+| bgcolor="red" |<font color="black">World Race<br>'''[[2015 Treasure Hunts Series|<font color=#00cc00>Super Treasure Hunt]]'''
+|[[Image:MastrettaSTH.jpg|75px]]
+|-
+|CFK95
+|152
+|[[Fig Rig]]
+| bgcolor="red" |<font color="black">World Race
+|[[File:FigRig15.jpg|75px]]
+|-
+|CFL53
+|152
+|[[Fig Rig]] (2nd Color)
+| bgcolor="red" |<font color="black">World Race
+|[[Image:FIG RIG VERDE MUÑECOS LEGO JDMIKE.jpg|75px]]
+|-
+|CFG77
+|153
+|[[Nitro Tailgater]]
+| bgcolor="red" |<font color="black">World Race<br>'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:NitroTailgater15.jpg|75px]]
+|-
+|CFM12
+|153
+|[[Nitro Tailgater]] (2nd Color)
+| bgcolor="red" |<font color="black">World Race<br>'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:NitroTailgaterCFM12.jpg|75px]]
+|-
+|CFH00
+|154
+|[[Custom '15 Ford Mustang]]
+| bgcolor="red" |<font color="black">World Race<br>'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:Custom '15 Ford Mustang-2015 154.jpg|75px]]
+|-
+|CFH01
+|155
+|[[Corvette C7.R]]
+| bgcolor="red" |<font color="black">World Race<br>'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:c7r.jpg|75px]]
+|-
+|CFL26
+|155
+|[[Corvette C7.R]] (2nd Color)
+| bgcolor="red" |<font color="black">World Race<br>'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:DSC 5666.jpg|75px]]
+|}
+
+===[[Super Chromes Series (2015)|Super Chromes]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Photo'''
+|-
+|CFK97
+|156
+|[[High Voltage]]
+| bgcolor="red" |<font color="black">Super Chromes
+|[[File:HighVoltage2015.jpg|75px]]
+|-
+|CFK98
+|157
+|[[Battle Spec]]
+| bgcolor="red" |<font color="black">Super Chromes
+|[[File:BattleSpec2015.jpg|75px]]
+|-
+|CFK99
+|158
+|[[RD-08]]
+| bgcolor="red" |<font color="black">Super Chromes<br /><font color="black">'''New in Mainline'''
+|[[File:RD-08_15.jpg|75px]]
+|-
+|CFL54
+|158
+|[[RD-08]] (2nd Color)
+| bgcolor="red" |<font color="black">Super Chromes<br /><font color="black">'''New in Mainline'''
+|[[Image:RD-08. Super Chromes. Gold 1.JPG|75px]]
+|-
+|CFL00
+|159
+|[[Bye Focal II]]
+| bgcolor="red" |<font color="black">Super Chromes
+|[[File:ByeFocal2CFL00.jpg|75px]]
+|-
+|CFL01
+|160
+|[[RD-06]]
+| bgcolor="red" |<font color="black">Super Chromes<br /><font color="black">'''New in Mainline'''
+|[[File:RD-062015.jpg|75px]]
+|-
+|CFL95
+|160
+|[[RD-06]] (2nd Color)
+| bgcolor="red" |<font color="black">Super Chromes<br /><font color="black">'''New in Mainline'''
+|[[File:Cfl95.jpg|75px]]
+|-
+|CFL02
+|161
+|[[Carbide]]
+| bgcolor="red" |<font color="black">Super Chromes<br /><font color="black">'''New in Mainline'''
+|[[File:CarbideCFL02.jpg|75px]]
+|-
+|CFL76
+|161
+|[[Carbide]] (2nd Color)
+| bgcolor="red" |<font color="black">Super Chromes<br /><font color="black">'''New in Mainline'''
+|[[Image:CarbideCFL76.jpg|75px]]
+|-
+|CFL03
+|162
+|[[Chicane]]
+| bgcolor="red" |<font color="black">Super Chromes<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Treasure Hunt]]'''
+|[[File:HW-2015-162-Chicane-SuperChromes.jpg|75px]]
+|-
+|CFL04
+|163
+|[[Iridium]]
+| bgcolor="red" |<font color="black">Super Chromes
+|[[File:IridiumCFL04.jpg|75px]]
+|-
+|CFL05
+|164
+|[[Salt Shaker]]
+| bgcolor="red" |<font color="black">Super Chromes
+|[[File:2015SuperChromesSaltShaker.jpg|75px]]
+|-
+|CFL06
+|165
+|[[RD-03]]
+| bgcolor="red" |<font color="black">Super Chromes<br /><font color="black">'''New in Mainline'''
+|[[File:165RD-03.jpg|75px]]
+|}
+
+===[[Night Storm Series (2015)|Night Storm]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Photo'''
+|-
+|CFL07
+|166
+|[[Rig Storm]]
+| bgcolor="red" |<font color="black">Night Storm
+|[[Image:2015-166-RigStorm-Smoke.JPG|75px]]
+|-
+|CFL08
+|167
+|[[Maximum Leeway]]
+| bgcolor="red" |<font color="black">Night Storm
+|[[File:HW-2015-167-Maximum_Leeway-NightStorm.jpg|75px]]
+|-
+|CFL67
+|167
+|[[Maximum Leeway]] (2nd Color)
+| bgcolor="red" |<font color="black">Night Storm
+|[[Image:cfl67.jpg|75px]]
+|-
+|CFL09
+|168
+|[[16 Angels]]
+| bgcolor="red" |<font color="black">Night Storm
+|[[File:16AngelsCFL09.jpg|75px]]
+|-
+|CFL10
+|169
+|[[Bedlam]]
+| bgcolor="red" |<font color="black">Night Storm
+|[[Image:Bedlam2015.jpg|75px]]
+|-
+|CFH02
+|170
+|[[Epic Fast]]
+| bgcolor="red" |<font color="black">Night Storm<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:20150509_230803-1-.jpg|75px]]
+|-
+|CFL34
+|170
+|[[Epic Fast]] (2nd Color)
+| bgcolor="red" |<font color="black">Night Storm<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:EpicFastCFL34.jpg|75px]]
+|-
+|CFL11
+|171
+|[[Power Pistons]]
+| bgcolor="red" |<font color="black">Night Storm
+|[[File:PowerPistonsCFL11.jpg|75px]]
+|-
+|CFL12
+|172
+|[[Pharodox]]
+| bgcolor="red" |<font color="black">Night Storm
+|[[File:20151116_231137-1-.jpg|75px]]
+|-
+|CFL96
+|172
+|[[Pharodox]] (2nd Color)
+| bgcolor="red" |<font color="black">Night Storm
+|[[Image:Hotwheels Pharodox.jpg|75px]]
+|-
+|CFL13
+|173
+|[[Rogue Hog]]
+| bgcolor="red" |<font color="black">Night Storm<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Treasure Hunt]]'''
+|[[File:20151116_231151-1-.jpg|75px]]
+|-
+|CFL14
+|174
+|[[Speedbox]]
+| bgcolor="red" |<font color="black">Night Storm
+|[[File:SpeedboxOrange15.jpg|75px]]
+|-
+|CFL98
+|174
+|[[Speedbox]] (2nd Color)
+| bgcolor="red" |<font color="black">Night Storm
+|[[Image:SpeedBoxCFL98.jpg|75px]]
+|-
+|CFJ15
+|175
+|[[Time Tracker]]
+| bgcolor="red" |<font color="black">Night Storm<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Treasure Hunt]]'''
+|[[File:20151117_083116-1-.jpg|75px]]
+|}
+
+===[[Track Aces Series (2015)|Track Aces]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Photo'''
+|-
+|CFL77
+|176
+|[[Twinduction]]
+| bgcolor="red" |<font color="black">Track Aces
+|[[Image:TwinductionBlue15.jpg|75px]]
+|-
+|CFL15
+|176
+|[[Twinduction]] (2nd Color)
+| bgcolor="red" |<font color="black">Track Aces
+|[[Image:TwinductionCFL15.jpg|75px]]
+|-
+|CFL16
+|177
+|[[Two Timer]]
+| bgcolor="red" |<font color="black">Track Aces
+|[[File:2015_177.jpg|75px]]
+|-
+|CFL97
+|177
+|[[Two Timer]] (2nd Color)
+| bgcolor="red" |<font color="black">Track Aces
+|[[Image:TwoTimerCFL97.jpg|75px]]
+|-
+|CFL17
+|178
+|[[Ford Shelby GR-1 Concept]]
+| bgcolor="red" |<font color="black">Track Aces
+|[[File:HW-2015-178-Ford_Shelby_GR_1_Concept-TrackAces.jpg|75px]]
+|-
+|CFK05
+|178
+|[[Ford Shelby GR-1 Concept]] (2nd Color)
+| bgcolor="red" |<font color="black">Track Aces<br /><font color="black">'''Kmart Exclusive'''
+|[[Image:HW-2015-178-Ford Shelby GR-1 Concept-TrackAces..jpg|75px]]
+|-
+|CFJ32
+|178
+|[[Ford Shelby GR-1 Concept]] (3rd Color)
+| bgcolor="red" |<font color="black">Track Aces
+|[[Image:1284.jpg|75px]]
+|-
+|CFH04
+|179
+|[[Corvette Grand Sport Roadster]]
+| bgcolor="red" |<font color="black">Track Aces<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:Corvette Grand Sport Roadster 2015.JPG|75px]]
+|-
+|CFL27
+|179
+|[[Corvette Grand Sport Roadster]] (2nd Color)
+| bgcolor="red" |<font color="black">Track Aces<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:Corvette Grand Sport Roadster-2015 179 Recolor.jpg|75px]]
+|-
+|CFH05
+|180
+|[[Speed Slayer]]
+| bgcolor="red" |<font color="black">Track Aces<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:Speed slayer (3755) HW L1160730.JPG|75px]]
+|-
+|CFM13
+|180
+|[[Speed Slayer]] (2nd Color)
+| bgcolor="red" |<font color="black">Track Aces<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:SpeedSlayerCFM13.jpg|75px]]
+|-
+|CFH77
+|181
+|[['68 Mercury Cougar (2014)|'68 Mercury Cougar]]
+| bgcolor="red" |<font color="black">Track Aces
+|[[File:CFH77-01.JPG|75px]]
+|-
+|CFJ85
+|181
+|[['68 Mercury Cougar (2014)|'68 Mercury Cougar]] (2nd Color - Zamac)
+| bgcolor="red" |<font color="black">Track Aces<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[Image:68MercuryCougarCFJ85.jpg|75px]]
+|-
+|CFM15
+|181
+|[['68 Mercury Cougar (2014)|'68 Mercury Cougar]] (3rd Color)
+| bgcolor="red" |<font color="black">Track Aces
+|[[Image:CFM15-01.JPG|75px]]
+|-
+|CFH78
+|182
+|[[Honda Racer]]
+| bgcolor="red" |<font color="black">Track Aces
+|[[File:HondaRacerCFH78.jpg|75px]]
+|-
+|CFL93
+|182
+|[[Honda Racer]] (2nd Color)
+| bgcolor="red" |<font color="black">Track Aces
+|[[Image:HondaRacerCFL93.jpg|75px]]
+|-
+|CFH79
+|183
+|[[Velocita]]
+| bgcolor="red" |<font color="black">Track Aces
+|[[File:VelocitaCFH79.jpg|75px]]
+|-
+|CFH80
+|184
+|[[DMC DeLorean]]
+| bgcolor="red" |<font color="black">Track Aces
+|[[File:81_DeLorean_DMC12_-_15_Track_Aces_copy.jpg|75px]]
+|-
+|CFJ38
+|184
+|[[DMC DeLorean]]
+| bgcolor="red" |<font color="black">Track Aces<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Super Treasure Hunt]]'''
+|[[Image:81 DeLorean DMC12 - 15 Track Aces v2-SUPER 600pxDM.jpg|75px]]
+|-
+|CFH06
+|185
+|[['15 Jaguar F-TYPE Project 7]]
+| bgcolor="red" |<font color="black">Track Aces<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:15_Jaguar_F-Type_Project_7_-_15_Track_Aces_copy.jpg|75px]]
+|}
+
+==[[HW Workshop Series|HW Workshop]]==
+===[[Thrill Racers Series (2015)|Thrill Racers]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Photo'''
+|-
+|CFH85
+|186
+|[[Porsche Panamera]]
+| bgcolor="green" |<font color="black">Thrill Racers
+|[[File:186PorschePanamera.jpg|75px]]
+|-
+|CFH82
+|187
+|[[Fly-By]]
+| bgcolor="green" |<font color="black">Thrill Racers
+|[[File:Fly-By15.jpg|75px]]
+|-
+|CFH83
+|188
+|[[Ferrari 599XX]]
+| bgcolor="green" |<font color="black">Thrill Racers
+|[[File:Ferrari_599_XX-20432.jpg|75px]]
+|-
+|CFJ39
+|188
+|[[Ferrari 599XX]]
+| bgcolor="green" |<font color="black">Thrill Racers<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Super Treasure Hunt]]'''
+|[[Image:Ferrari 599XX 08.jpg|75px]]
+|-
+|CFH84
+|189
+|[[Lamborghini Veneno]]
+| bgcolor="green" |<font color="black">Thrill Racers
+|[[Image:Lamborghini Veneno-2015 189.jpg|75px]]
+|-
+|CFJ86
+|189
+|[[Lamborghini Veneno]] (2nd Color - Zamac)
+| bgcolor="green" |<font color="black">Thrill Racers<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[Image:LamboVenenoCFJ86.jpg|75px]]
+|-
+|CFK38
+|190
+|[[BMW K 1300 R]]
+| bgcolor="green" |<font color="black">Thrill Racers
+|[[File:HW-2015-190-BMW_K_1300_R-ThrillRacers.jpg|75px]]
+|}
+
+===[[Speed Team Series (2015)|Speed Team]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Photo'''
+|-
+|CFK93
+|191
+|[['12 Acura NSX Concept]]
+| bgcolor="green" |<font color="black">Speed Team
+|[[File:2015-191-12AcuraNSXConcept-Yellow.jpg|75px]]
+|-
+|CFJ55
+|191
+|[['12 Acura NSX Concept]] (2nd Color)
+| bgcolor="green" |<font color="black">Speed Team
+|[[Image:'12 Acura NSX Concept-2015 191 recolor.jpg|75px]]
+|-
+|CFH45
+|192
+|[[Bentley Continental Supersports]]
+| bgcolor="green" |<font color="black">Speed Team
+|[[Image:Bentley Continental Supersports-2015 192.jpg|75px]]
+|-
+|CFL68
+|192
+|[[Bentley Continental Supersports]] (2nd Color)
+| bgcolor="green" |<font color="black">Speed Team
+|[[Image:Ben.PNG|75px]]
+|-
+|CFH91
+|193
+|[[Mazda RX-7]]
+| bgcolor="green" |<font color="black">Speed Team
+|[[File:Mazda RX-7-2015 193.jpg|75px]]
+|-
+|CFK06
+|193
+|[[Mazda RX-7]] (2nd Color)
+| bgcolor="green" |<font color="black">Speed Team<br /><font color="black">'''Kmart Exclusive'''
+|[[Image:HW-2015-193-Mazda RX-7-SpeedTeam.jpg|75px]]
+|-
+|CFH39
+|194
+|[['70 Chevy Chevelle SS|'70 Chevy Chevelle]]
+| bgcolor="green" |<font color="black">Speed Team
+|[[File:'70 Chevy Chevelle SS-2015 194.jpg|75px]]
+|-
+|CFJ75
+|194
+|[['70 Chevy Chevelle SS|'70 Chevy Chevelle]] (2nd Color)
+| bgcolor="green" |<font color="black">Speed Team
+|[[Image:70 Chevy Chevelle SS - 15 Speed Team Red 600pxDM.jpg|75px]]
+|-
+|DHY04
+|194
+|[['70 Chevy Chevelle SS|'70 Chevy Chevelle]] (3rd Color)
+| bgcolor="green" |<font color="black">Speed Team<br /><font color="black">'''Kmart Exclusive'''
+|[[Image:'70 Chevy Chevelle 2015 KM.png|75px]]
+|-
+|CFH41
+|195
+|[['69 Ford Mustang Boss 302]]
+| bgcolor="green" |<font color="black">Speed Team<br /><font color="black">'''New in Mainline'''
+|[[File:69_Mustang_Boss_302_-_2015_Speed_Team.JPG|75px]]
+|-
+|CFJ40
+|195
+|[['69 Ford Mustang Boss 302]]
+| bgcolor="green" |<font color="black">Speed Team<br />'''New in Mainline'''<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Super Treasure Hunt]]'''
+|[[Image:Mustang Boss STH 2015.JPG|75px]]
+|}
+
+===[[Night Burnerz Series (2015)|Night Burnerz]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Photo'''
+|-
+|CFH86
+|196
+|[[Porsche 911 GT3 RS (2011)|Porsche 911 GT3 RS]]
+| bgcolor="green" |<font color="black">Night Burnerz
+|[[File:HW-2015-196-Porsche_911_GT3_RS-NightBurnerz.jpg|75px]]
+|-
+|CFJ87
+|196
+|[[Porsche 911 GT3 RS (2011)|Porsche 911 GT3 RS]] (2nd Color - Zamac)
+| bgcolor="green" |<font color="black">Night Burnerz<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[File:2015-196 CFJ87 ZAMAK 911 RS o4.jpg|75px]]
+|-
+|CFL78
+|196
+|[[Porsche 911 GT3 RS (2011)|Porsche 911 GT3 RS]] (3rd Color)
+| bgcolor="green" |<font color="black">Night Burnerz
+|[[Image:HW-2015-196-Porsche 911 GT3 RS-NightBurnerz..jpg|75px]]
+|-
+|CFH87
+|197
+|[['90 Honda Civic EF]]
+| bgcolor="green" |<font color="black">Night Burnerz
+|[[File:'90 Honda Civic EF-2015 197.jpg|75px]]
+|-
+|CFJ88
+|197
+|[['90 Honda Civic EF]] (2nd Color - Zamac)
+| bgcolor="green" |<font color="black">Night Burnerz<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[Image:Honda civic EF Zamac.jpg|75px]]
+|-
+|CFH88
+|198
+|[[Lamborghini Sesto Elemento]]
+| bgcolor="green" |<font color="black">Night Burnerz
+|[[File:HW-2015-198-Lamborghini_Sesto_Elemento-NightBurnerz.jpg|75px]]
+|-
+|CFH89
+|199
+|[['70 Plymouth AAR Cuda]]
+| bgcolor="green" |<font color="black">Night Burnerz
+|[[File:'70 Plymouth AAR Cuda-2015 199.jpg|75px]]
+|-
+|CFM17
+|199
+|[['70 Plymouth AAR Cuda]] (2nd Color)
+| bgcolor="green" |<font color="black">Night Burnerz
+|[[Image:IMG 3490.JPG|75px]]
+|-
+|CFG76
+|200
+|[[Power Surge]]
+| bgcolor="green" |<font color="black">Night Burnerz<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:PowerSurgeCFG76.jpg|75px]]
+|-
+|CFH90
+|201
+|[[Toyota Supra]]
+| bgcolor="green" |<font color="black">Night Burnerz
+|[[File:Toyota_Supra_-_15_HW_City_Night_Burnerz_copy.jpg|75px]]
+|-
+|CFJ41
+|201
+|[[Toyota Supra]]
+| bgcolor="green" |<font color="black">Night Burnerz<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Super Treasure Hunt]]'''
+|[[Image:'94ToyotaSupra.jpg|75px]]
+|-
+|CFK96
+|202
+|[['71 Datsun Bluebird 510 Wagon]]
+| bgcolor="green" |<font color="black">Night Burnerz
+|[[File:'71 Datsun Bluebird 510 Wagon-2015 202.jpg|75px]]
+|-
+|DHY02
+|202
+|[['71 Datsun Bluebird 510 Wagon]] (2nd Color)
+| bgcolor="green" |<font color="black">Night Burnerz<br /><font color="black">'''Kmart Exclusive'''
+|[[Image:HW-2015-202-'71 Datsun Bluebird 510 Wagon-NightBurnerz.jpg|75px]]
+|-
+|CFH92
+|203
+|[[Ducati 1199 Panigale]]
+| bgcolor="green" |<font color="black">Night Burnerz
+|[[Image:Ducati_1199_Panigale-2015_203.jpg|75px]]
+|-
+|CFL61
+|203
+|[[Ducati 1199 Panigale]] (2nd Color)
+| bgcolor="green" |<font color="black">Night Burnerz
+|[[Image:Ducati 5.jpg|75px]]
+|-
+|CFJ12
+|204
+|[[Ryura LX]]
+| bgcolor="green" |<font color="black">Night Burnerz
+|[[File:HW-2015-204-Ryura_LX-NightBurnerz.jpg|75px]]
+|-
+|CFM18
+|204
+|[[Ryura LX]] (2nd Color)
+| bgcolor="green" |<font color="black">Night Burnerz
+|[[Image:IMG 1188 24.jpg|75px]]
+|-
+|CFH13
+|205
+|[['96 Nissan 180SX Type X]]
+| bgcolor="green" |<font color="black">Night Burnerz<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:11277920_10153066897648406_972881188_n.jpg|75px]]
+|}
+
+===[[Heat Fleet Series (2015)|Heat Fleet]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Photo'''
+|-
+|CFH37
+|206
+|[[1974 Brazilian Dodge Charger|'74 Brazilian Dodge Charger]]
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[File:BrazDodgeCharger15.jpg|75px]]
+|-
+|CFJ89
+|206
+|[[1974 Brazilian Dodge Charger|'74 Brazilian Dodge Charger]] (2nd Color - Zamac)
+| bgcolor="green" |<font color="black">Heat Fleet<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[Image:1974-Brazilian-Dodge-Charger-d.jpg|75px]]
+|-
+|CFM00
+|206
+|[[1974 Brazilian Dodge Charger|'74 Brazilian Dodge Charger]] (3rd Color)
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[File:1347.JPG|75px]]
+|-
+|CFH93
+|207
+|[['55 Chevy Bel Air Gasser]]
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[File:55_Chevy_Gasser_-_15_Heat_Fleet_copy.jpg|75px]]
+|-
+|CFJ90
+|207
+|[['55 Chevy Bel Air Gasser]] (2nd Color - Zamac)
+| bgcolor="green" |<font color="black">Heat Fleet<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[Image:55bag00.jpg|75px]]
+|-
+|CFH94
+|208
+|[['67 Chevy C10]]
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[File:HW-2015-208-'67_Chevy_C10-HeatFleet.jpg|75px]]
+|-
+|CFK07
+|208
+|[['67 Chevy C10]] (2nd Color)
+| bgcolor="green" |<font color="black">Heat Fleet<br /><font color="black">'''Kmart Exclusive'''
+|[[Image:HW-2015-208-'67 Chevy C10-HeatFleet..jpg|75px]]
+|-
+|CFH95
+|209
+|[[Pass'n Gasser]]
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[Image:Pass'n Gasser-2015 209.jpg|75px]]
+|-
+|CFJ42
+|209
+|[[Pass'n Gasser]]
+| bgcolor="green" |<font color="black">Heat Fleet<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Super Treasure Hunt]]'''
+|[[File:PassnGasser15.jpg|75px]]
+|-
+|CFH96
+|210
+|[['71 Hemi Cuda|'71 Hemi 'Cuda]]
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[File:HW-2015-210-'71_Hemi_'Cuda-HeatFleet.jpg|75px]]
+|-
+|CFL69
+|210
+|[['71 Hemi Cuda|'71 Hemi 'Cuda]] (2nd Color)
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[Image:DSC 5530.jpg|75px]]
+|-
+|CFH97
+|211
+|[['68 COPO Camaro]]
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[Image:'68 COPO Camaro CFH97.JPG|75px]]
+|-
+|CFL47
+|211
+|[['68 COPO Camaro]] (2nd Color)
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[File:DSC_5532.jpg|75px]]
+|-
+|CFH98
+|212
+|[['65 Ford Ranchero]]
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[File:DSC_5572.jpg|75px]]
+|-
+|CFL99
+|212
+|[['65 Ford Ranchero]] (2nd Color)
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[Image:HW-2015-212-'65 Ford Ranchero-HeatFleet.jpg|75px]]
+|-
+|CFH99
+|213
+|[[Hemi Cuda|'68 Hemi Barracuda]]
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[File:HW-2015-213-'68_Hemi_Barracuda-HeatFleet.jpg|75px]]
+|-
+|CFL55
+|213
+|[[Hemi Cuda|'68 Hemi Barracuda]] (2nd Color)
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[Image:Hemi Cuda H16.jpg|75px]]
+|-
+|CFJ00
+|214
+|[['63 Studebaker Champ]]
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[Image:'63 Studebaker Champ-2015 214.jpg|75px]]
+|-
+|CFJ01
+|215
+|[[1978 Dodge Li'l Red Express Truck|'78 Dodge Li'l Red Express Truck]]
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[Image:HW-2015-215-'78 Dodge.jpg|75px]]
+|-
+|CFL56
+|215
+|[[1978 Dodge Li'l Red Express Truck|'78 Dodge Li'l Red Express Truck]] (2nd Color)
+| bgcolor="green" |<font color="black">Heat Fleet
+|[[File:DSC_5662.jpg|75px]]
+|}
+
+===[[HW Garage Series (2015)|HW Garage]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Photo'''
+|-
+|CFJ03
+|216
+|[['14 Corvette Stingray Convertible|'14 Corvette Stingray]]
+| bgcolor="green" |<font color="black">HW Garage
+|[[Image:'14 Corvette Stingray Convertible-2015 216.jpg|75px]]
+|-
+|CFL79
+|216
+|[['14 Corvette Stingray Convertible|'14 Corvette Stingray]] (2nd Color)
+| bgcolor="green" |<font color="black">HW Garage
+|[[Image:PC190008.JPG|75px]]
+|-
+|CFH03
+|217
+|[[Tesla Model S]]
+| bgcolor="green" |<font color="black">HW Garage<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:2015507210934.jpg|75px]]
+|-
+|CFL36
+|217
+|[[Tesla Model S]] (2nd Color)
+| bgcolor="green" |<font color="black">HW Garage<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:TeslaModelS-CFL36.jpg|75px]]
+|-
+|CFH16
+|218
+|[['90 Acura NSX]]
+| bgcolor="green" |<font color="black">HW Garage<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:90AcuraNSXRed2015.jpeg|75px]]
+|-
+|CFL28
+|218
+|[['90 Acura NSX]] (2nd Color)
+| bgcolor="green" |<font color="black">HW Garage<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:2015 NSX White.jpg|75px]]
+|-
+|CFG74
+|219
+|[[Lotus Esprit S1]]
+| bgcolor="green" |<font color="black">HW Garage<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:Lotus Esprit S1 white 2015.JPG|75px]]
+|-
+|CFJ74
+|219
+|[[Lotus Esprit S1]] (2nd Color)
+| bgcolor="green" |<font color="black">HW Garage<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:Lotus Esprit S1-2015 219 Recolor.jpg|75px]]
+|-
+|CFH62
+|220
+|[[Porsche 934 Turbo RSR]]
+| bgcolor="green" |<font color="black">HW Garage
+|[[File:Porsche 934 Turbo RSR black metallic 2015.jpeg|75px]]
+|-
+|CFJ67
+|220
+|[[Porsche 934 Turbo RSR]] (2nd Color)
+| bgcolor="green" |<font color="black">HW Garage
+|[[Image:HW-2015-220-Porsche 934 Turbo RSR-Garage.jpg|75px]]
+|-
+|CFH18
+|221
+|[['70 Ford Escort RS1600]]
+| bgcolor="green" |<font color="black">HW Garage<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:4d531cdf46053014fffd84ed76c63f85.jpg|75px]]
+|-
+|CFL30
+|221
+|[['70 Ford Escort RS1600]] (2nd Color)
+| bgcolor="green" |<font color="black">HW Garage<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:CFL30-03.JPG|75px]]
+|-
+|CFH19
+|222
+|[[Lamborghini Huracán LP 610-4]]
+| bgcolor="green" |<font color="black">HW Garage<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:Lamborghini Huracán LP 610-4-2015 222.jpg|75px]]
+|-
+|CFL39
+|222
+|[[Lamborghini Huracán LP 610-4]] (2nd Color)
+| bgcolor="green" |<font color="black">HW Garage<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:2015-222-LamborghiniHuracanLP610-4-Green.JPG|75px]]
+|-
+|CFH20
+|223
+|[[McLaren P1]]
+| bgcolor="green" |<font color="black">HW Garage<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:McLaren P1-2015 233.jpg|75px]]
+|-
+|CFL29
+|223
+|[[McLaren P1]] (2nd Color)
+| bgcolor="green" |<font color="black">HW Garage<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:Mclaren-p1-grey-HW.jpg|75px]]
+|-
+|CFH28
+|224
+|[[Fast-Bed Hauler]]
+| bgcolor="green" |<font color="black">HW Garage
+|[[File:FAST-BED HAULER 2014 VERDE JDMIKE(1).jpg|75px]]
+|-
+|CFJ91
+|224
+|[[Fast-Bed Hauler]] (2nd Color - Zamac)
+| bgcolor="green" |<font color="black">HW Garage<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[File:Zamacfastbedhauler.jpg|75px]]
+|-
+|CFH38
+|225
+|[[8 Crate]]
+| bgcolor="green" |<font color="black">HW Garage
+|[[Image:2015 8-Crate - 05389df.jpg|75px]]
+|-
+|CFJ43
+|225
+|[[8 Crate]]
+| bgcolor="green" |<font color="black">HW Garage<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Super Treasure Hunt]]'''
+|[[Image:8 Crate STH.jpg|75px]]
+|}
+
+===[[Muscle Mania Series (2015)|Muscle Mania]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Photo'''
+|-
+|CFJ04
+|226
+|[['68 Shelby GT500]]
+| bgcolor="green" |<font color="black">Muscle Mania
+|[[Image:'68 Shelby GT500-2015 226.jpg|75px]]
+|-
+|CFJ62
+|226
+|[['68 Shelby GT500]] (2nd Color)
+| bgcolor="green" |<font color="black">Muscle Mania
+|[[Image:2015 '68 Shelby GT500 Yellow.jpg|75px]]
+|-
+|CFJ05
+|227
+|[['71 Dodge Challenger]]
+| bgcolor="green" |<font color="black">Muscle Mania
+|[[File:DSC_5567.jpg|75px]]
+|-
+|CFJ92
+|227
+|[['71 Dodge Challenger]] (2nd Color)
+| bgcolor="green" |<font color="black">Muscle Mania
+|[[Image:418b8e6da95c0447ded95b4908fe9806.jpg|75px]]
+|-
+|CFJ06
+|228
+|[['67 Pontiac GTO]]
+| bgcolor="green" |<font color="black">Muscle Mania
+|[[Image:'67 Pontiac GTO-2015 228.jpg|75px]]
+|-
+|CFJ98
+|228
+|[['67 Pontiac GTO]] (2nd Color)
+| bgcolor="green" |<font color="black">Muscle Mania<br /><font color="black">'''[[Toys R Us|Toys R Us Exclusive]]'''
+|[[File:Cfj98gto.jpg|75px]]
+|-
+|CFJ07
+|229
+|[['70 Plymouth Superbird]]
+| bgcolor="green" |<font color="black">Muscle Mania
+|[[File:HW-2015-229-'70_Plymouth_Superbird-MuscleMania.jpg|75px]]
+|-
+|CFJ44
+|229
+|[['70 Plymouth Superbird]]
+| bgcolor="green" |<font color="black">Muscle Mania<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Super Treasure Hunt]]'''
+|[[Image:'70 Plymouth Superbird - 2015 HW Workshop-Muscle Mania - Super Treasure Hunt.JPG|75px]]
+|-
+|CFH42
+|230
+|[['86 Monte Carlo SS]]
+| bgcolor="green" |<font color="black">Muscle Mania
+|[[File:HW-2015-230-'86_Monte_Carlo_SS-MuscleMania.jpg|75px]]
+|-
+|CFK08
+|230
+|[['86 Monte Carlo SS]] (2nd Color)
+| bgcolor="green" |<font color="black">Muscle Mania<br /><font color="black">'''Kmart Exclusive'''
+|[[Image:CFK08-montecarlo.jpg|75px]]
+|-
+|CFJ08
+|231
+|[['69 Chevelle SS 396]]
+| bgcolor="green" |<font color="black">Muscle Mania
+|[[File:'69 Chevelle SS 396-2015 231.jpg|75px]]
+|-
+|CFK09
+|231
+|[['69 Chevelle SS 396]] (2nd Color)
+| bgcolor="green" |<font color="black">Muscle Mania<br /><font color="black">'''Kmart Exclusive'''
+|[[Image:HW-2015-231-'69 Chevelle SS 396-MuscleMania.jpg|75px]]
+|-
+|CFJ09
+|232
+|[[2013 Hot Wheels Chevy Camaro Special Edition|'13 Hot Wheels Chevy Camaro Special Edition]]
+| bgcolor="green" |<font color="black">Muscle Mania
+|[[File:Camaro 2013 special edition yellow.JPG|75px]]
+|-
+|CFJ70
+|232
+|[[2013 Hot Wheels Chevy Camaro Special Edition|'13 Hot Wheels Chevy Camaro Special Edition]] (2nd Color)
+| bgcolor="green" |<font color="black">Muscle Mania
+|[[Image:Camaro 2013 special edition purple.JPG|75px]]
+|-
+|CFJ10
+|233
+|[['14 Corvette Stingray]]
+| bgcolor="green" |<font color="black">Muscle Mania
+|[[Image:'14 Corvette Stingray-2015 233.jpg|75px]]
+|-
+|CFJ11
+|234
+|[[Dodge Challenger Concept]]
+| bgcolor="green" |<font color="black">Muscle Mania
+|[[Image:DodgeChallengerConceptCFJ11.jpg|75px]]
+|-
+|CFJ93
+|234
+|[[Dodge Challenger Concept]] (2nd Color - Zamac)
+| bgcolor="green" |<font color="black">Muscle Mania<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[File:Zamacchallengerconcept.jpg|75px]]
+|-
+|CFH12
+|235
+|[['15 Dodge Challenger SRT]]
+| bgcolor="green" |<font color="black">Muscle Mania<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:Challengerhellcat-hotwheels-2015.jpg|75px]]
+|}
+
+===[[HW Drift Race Series (2015)|HW Drift Race]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Photo'''
+|-
+|CFJ13
+|236
+|[[Dodge Viper SRT10 ACR]]
+| bgcolor="green" |<font color="black">HW Drift Race
+|[[File:08_Dodge_Viper_SRT10_ACR_-_15_Drift_Race_Series_WHITE_600pxOTD.jpg|75px]]
+|-
+|CFJ94
+|236
+|[[Dodge Viper SRT10 ACR]] (2nd Color - Zamac)
+| bgcolor="green" |<font color="black">HW Drift Race<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[Image:08 Dodge Viper SRT10 ACR - 15 Drift Race Series ZAMAC 600pxOTD.jpg|75px]]
+|-
+|CFJ14
+|237
+|[[Scion FR-S]]
+| bgcolor="green" |<font color="black">HW Drift Race
+|[[File:HW_Scion-FR-S_2015_Silver_RF_DSCF8488.jpg|75px]]
+|-
+|CFH23
+|238
+|[[Driftsta]]
+| bgcolor="green" |<font color="black">HW Drift Race<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[File:DrifstaCFH23.jpg|75px]]
+|-
+|CFL38
+|238
+|[[Driftsta]] (2nd Color)
+| bgcolor="green" |<font color="black">HW Drift Race<br />'''[[2015 New Models|<font color="black">New for 2015!]]'''
+|[[Image:DriftstaCFH38.jpg|75px]]
+|-
+|CFJ16
+|239
+|[[Toyota AE-86 Corolla]]
+| bgcolor="green" |<font color="black">HW Drift Race
+|[[File:Toyota Corolla AE-86 (CFJ16) 01.JPG|75px]]
+|-
+|CFJ45
+|239
+|[[Toyota AE-86 Corolla]]
+| bgcolor="green" |<font color="black">HW Drift Race<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Super Treasure Hunt]]'''
+|[[Image:Toyota Corolla AE (CFJ45) (loose).jpg|75px]]
+|-
+|CFJ17
+|240
+|[[Custom '12 Ford Mustang]]
+| bgcolor="green" |<font color="black">HW Drift Race
+|[[File:Custom 15 Mustang (CFJ17) (loose).jpg|75px]]
+|-
+|CFL59
+|240
+|[[Custom '12 Ford Mustang]] (2nd Color)
+| bgcolor="green" |<font color="black">HW Drift Race
+|[[Image:IMG 1788.JPG|75px]]
+|-
+|CFK10
+|240
+|[[Custom '12 Ford Mustang]] (3rd Color)
+| bgcolor="green" |<font color="black">HW Drift Race<br /><font color="black">'''Kmart Exclusive'''
+|[[Image:Custom '12 Ford Mustang (CFK10).png|75px]]
+|}
+
+===[[Then and Now Series (2015)|Then and Now]]===
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:green"|<font color="black">'''Photo'''
+|-
+|CFJ18
+|241
+|[['69 Camaro Convertible|'69 Camaro]]
+| bgcolor="green" |<font color="black">Then and Now
+|[[File:DSC_5545.jpg|75px]]
+|-
+|CFM02
+|241
+|[['69 Camaro Convertible|'69 Camaro]] (2nd Color)
+| bgcolor="green" |<font color="black">Then and Now
+|[[Image:CFM02-1.JPG|75px]]
+|-
+|CFJ19
+|242
+|[['65 Mustang 2+2 Fastback]]
+| bgcolor="green" |<font color="black">Then and Now
+|[[File:IMG_4393.jpg|75px]]
+|-
+|CFJ46
+|242
+|[['65 Mustang 2+2 Fastback]]
+| bgcolor="green" |<font color="black">Then and Now<br />'''[[2015 Treasure Hunts Series|<font color=#00cc00>Super Treasure Hunt]]'''
+|[[Image:025a8 - 2015 Super TH.jpg|75px]]
+|-
+|CFM01
+|242
+|[['65 Mustang 2+2 Fastback]] (2nd Color)
+| bgcolor="green" |<font color="black">Then and Now
+|[[Image:CFM01-01.JPG|75px]]
+|-
+|CFJ20
+|243
+|[[Datsun 240Z]]
+| bgcolor="green" |<font color="black">Then and Now
+|[[File:240z bk 2015.JPG|75px]]
+|-
+|CFL58
+|243
+|[[Datsun 240Z]] (2nd Color)
+| bgcolor="green" |<font color="black">Then and Now
+|[[Image:Datsun240ZWhite2015.jpeg|75px]]
+|-
+|CFJ21
+|244
+|[['52 Chevy Truck|'52 Chevy]]
+| bgcolor="green" |<font color="black">Then and Now
+|[[Image:'52 Chevy Truck-2015 244.jpg|75px]]
+|-
+|CFJ95
+|244
+|[['52 Chevy Truck|'52 Chevy]] (2nd Color - Zamac)
+| bgcolor="green" |<font color="black">Then and Now<br />[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|[[Image:178c.jpg|75px]]
+|-
+|CFJ22
+|245
+|[[Aston Martin 1963 DB5]]
+| bgcolor="green" |<font color="black">Then and Now
+|[[File:HW-2015-245-Aston_Martin_1963_DB5-ThenAndNow.jpg|75px]]
+|-
+|CFM03
+|245
+|[[Aston Martin 1963 DB5]] (2nd Color)
+| bgcolor="green" |<font color="black">Then and Now
+|[[Image:HW-2015-245-Aston Martin 1963 DB5-ThenAndNow..jpg|75px]]
+|-
+|CFJ23
+|246
+|[[Camaro Convertible Concept]]
+| bgcolor="green" |<font color="black">Then and Now
+|[[File:CFJ23-1.JPG|75px]]
+|-
+|CFM11
+|246
+|[[Camaro Convertible Concept]] (2nd Color)
+| bgcolor="green" |<font color="black">Then and Now
+|[[Image:Cfm11-camaroconvertible.jpg|75px]]
+|-
+|CFJ24
+|247
+|[[2015 Ford Mustang GT|'15 Ford Mustang GT]]
+| bgcolor="green" |<font color="black">Then and Now
+|[[File:2015 Ford Mustang GT (CFJ24).jpg|75px]]
+|-
+|CFJ48
+|247
+|[[2015 Ford Mustang GT|'15 Ford Mustang GT]] (2nd Color)
+| bgcolor="green" |<font color="black">Then and Now
+|[[Image:2015 Ford Mustang GT-2015 recolor.jpg|75px]]
+|-
+|CFJ25
+|248
+|[[Nissan 370Z]]
+| bgcolor="green" |<font color="black">Then and Now
+|[[File:2CE5BE88-2045-4A70-AA1D-E3AE2C1EFEAC.jpeg|75px]]
+|-
+|CFM04
+|248
+|[[Nissan 370Z]] (2nd Color)
+| bgcolor="green" |<font color="black">Then and Now
+|[[Image:Nissan370Z-CFM04.jpg|75px]]
+|-
+|CFK66
+|249
+|[[Chevy Silverado]]
+| bgcolor="green" |<font color="black">Then and Now
+|[[File:HW-2015-249-Chevy_Silverado-ThenAndNow.jpg|75px]]
+|-
+|CFL57
+|249
+|[[Chevy Silverado]] (2nd Color)
+| bgcolor="green" |<font color="black">Then and Now
+|[[Image:66b.jpg|75px]]
+|-
+|CFJ26
+|250
+|[[Aston Martin DBS]]
+| bgcolor="green" |<font color="black">Then and Now
+|[[File:AstonMartinDBS15.jpg|75px]]
+|}
+
+==[[Kroger|Fast Four - Scavenger Hunts (Kroger Exclusive)]]==
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Photo'''
+|-
+|CFK11
+|No #
+|[[Power Pipes]]
+| bgcolor="lightblue" |<font color="black">Scavenger Hunt
+|1/4
+|[[File:PowerPipesCFK11.jpg|75px]]
+|-
+|CFK12
+|No #
+|[['11 Dodge Charger R/T]]
+| bgcolor="lightblue" |<font color="black">Scavenger Hunt
+|2/4
+|[[File:'11 Dodge Charger R-T.JPG|75px]]
+|-
+|DJC79
+|No #
+|[['70 Pontiac GTO Judge]]
+| bgcolor="lightblue" |<font color="black">Scavenger Hunt
+|3/4
+|[[File:Gto judge white 2014.jpg|75px]]
+|-
+|CFK13
+|No #
+|[[Growler]]
+| bgcolor="lightblue" |<font color="black">Scavenger Hunt
+|4/4
+|[[File:GrowlerCFK13.jpg|75px]]
+|}
+
+<center> </center>
+{{Lists}}
+[[Category:Lists of Hot Wheels by year|2015]]
+[[Category:2015 Hot Wheels]]

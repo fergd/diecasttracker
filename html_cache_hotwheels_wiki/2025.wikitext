@@ -1,0 +1,3097 @@
+==2025 Hot Wheels #1-250==
+For 2025, the Hot Wheels mainline is numbered 1 through 250 with color variations not receiving a new number. Treasure Hunts and store exclusives are numbered. For the listing by series see [[List of 2025 Hot Wheels (by Series)]].
+{|class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+|-
+! style="border-style: none none solid solid; |Toy #
+! style="border-style: none none solid solid; |Col.#
+! style="border-style: none none solid solid; |Model Name
+! style="border-style: none none solid solid; |Series
+! style="border-style: none none solid solid; |Series #
+! style="border-style: none none solid solid; |Photo
+|-
+|HYW18
+|001
+|[[Mazda MX-5 Miata (2025)|Mazda MX-5 Miata]]
+|bgcolor="#231F20"|[[HW Dream Garage Mini Collection (2025)|<font color="white">HW Dream Garage</font>]]<br>{{NM|2025|white}}
+|2/5
+|[[File:MazdaChimera.jpg|center|75px]]
+|-
+|HYX57
+|001
+|[[Mazda MX-5 Miata (2025)|Mazda MX-5 Miata]] (2nd Color)
+|bgcolor="#231F20"|[[HW Dream Garage Mini Collection (2025)|<font color="white">HW Dream Garage</font>]]<br>{{NM|2025|white}}
+|2/5
+|[[File:GreenChimera.jpg|center|75px]]
+|-
+|HYW60
+|002
+|[[Batman and Robin Batmobile]]
+|bgcolor="black" |[[Batman Mini Collection (2025)|<font color="white">Batman</font>]]
+|1/5
+|[[File:20241205_175912.jpg|center|75px]]
+|-
+|HYX61
+|002
+|[[Batman and Robin Batmobile]] (2nd Color)
+|bgcolor="black" |[[Batman Mini Collection (2025)|<font color="white">Batman</font>]]
+|1/5
+|[[File:BRBatmobile.jpg|center|75px]]
+|-
+|HYW61
+|003
+|[[Monster High Ghoul Mobile]]
+|bgcolor="#2A2673" |[[HW Screen Time Mini Collection (2025)|<font color="white">HW Screen Time</font>]]
+|1/10
+|[[File:2025 Monster High Ghoul Mobile.jpg|center|75px]]
+|-
+|HYX62
+|003
+|[[Monster High Ghoul Mobile]] (2nd Color)
+|bgcolor="#2A2673" |[[HW Screen Time Mini Collection (2025)|<font color="white">HW Screen Time</font>]]
+|1/10
+|[[File:BlackGhoul.jpg|center|75px]]
+|-
+|HYY72
+|004
+|[[Nissan Skyline GT-R (BNR32)]]
+|bgcolor="#2A2673" |[[HW Screen Time Mini Collection (2025)|<font color="white">HW Screen Time</font>]]
+|2/10
+|[[File:'89NissanR32.jpg|center|75px]]
+|-
+|HYW63
+|005
+|[[Purple Passion]]
+|bgcolor="#8A2E81" |[[HW Designed By Mini Collection (2025)|<font color="white">HW Designed By</font>]]
+|1/5
+|[[File:LWPassion.jpg|center|75px]]
+|-
+|HYX55
+|005
+|[[Purple Passion]] (2nd Color)
+|bgcolor="#8A2E81" |[[HW Designed By Mini Collection (2025)|<font color="white">HW Designed By</font>]]
+|1/5
+|[[File:WhitePassion.jpg|center|75px]]
+|-
+|HYW64
+|006
+|[[Kowloon'd Hypervan]]
+|bgcolor="#D0CCC9" |[[HW Metro Mini Collection (2025)|<font color="black">HW Metro</font>]]
+|1/5
+|[[File:2025 Kowloon'd Hypervan.jpg|center|75px]]
+|-
+|HYX75
+|006
+|[[Kowloon'd Hypervan]] (2nd Color)
+|bgcolor="#D0CCC9" |[[HW Metro Mini Collection (2025)|<font color="black">HW Metro</font>]]
+|1/5
+|[[File:YellowPetVan.jpg|center|75px]]
+|-
+|HYW65
+|007
+|[[Small Bloc]]
+|bgcolor="#D0CCC9" |[[HW Metro Mini Collection (2025)|<font color="black">HW Metro</font>]]
+|2/5
+|[[File:1st 2025 Small Bloc.jpg|center|75px]]
+|-
+|HYY40
+|007
+|[[Small Bloc]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2025)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|3/12
+|[[File:Small_Bloc_Red_Ed.jpg|center|75px]]
+|-
+|HYX56
+|007
+|[[Small Bloc]] (3rd Color)
+|bgcolor="#D0CCC9" |[[HW Metro Mini Collection (2025)|<font color="black">HW Metro</font>]]
+|2/5
+|[[File:TaxiBloc.jpg|center|75px]]
+|-
+|HYW66
+|008
+|[[Mazda Autozam]]
+|bgcolor="#231F20"|[[HW Dream Garage Mini Collection (2025)|<font color="white">HW Dream Garage</font>]]
+|1/5
+|[[File:2025 Mazda Autozam Red.jpg|center|75px]]
+|-
+|HYY10
+|008
+|[[Mazda Autozam]] (2nd Color - Zamac)
+|bgcolor="#231F20"|[[HW Dream Garage Mini Collection (2025)|<font color="white">HW Dream Garage</font>]]<br>{{WM|2025|white}}
+|1/5
+|[[File:Mazda Autozam 2025 Zamac.jpeg|center|75x75px]]
+|-
+|HYX45
+|008
+|[[Mazda Autozam]] (3rd Color)
+|bgcolor="#231F20"|[[HW Dream Garage Mini Collection (2025)|<font color="white">HW Dream Garage</font>]]
+|1/5
+|[[File:RescueScrum.jpg|center|75px]]
+|-
+|HYW86
+|009
+|[[Tesla Model S Plaid]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]
+|1/10
+|[[File:HWPlaid.jpg|center|75px]]
+|-
+|HYX58
+|009
+|[[Tesla Model S Plaid]] (2nd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]
+|1/10
+|[[File:WhitePlaid.jpg|center|75px]]
+|-
+|HYW67
+|010
+|[[Deora III]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]
+|2/10
+|[[File:25DeoraIII.jpeg|center|75px]]
+|-
+|HYX47
+|010
+|[[Deora III]] (2nd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]
+|2/10
+|[[File:EVDeora.jpg|center|75px]]
+|-
+|HYW14
+|011
+|[[Kei Swap]]
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]<br>{{NM|2025}}
+|1/10
+|[[File:KeiSwap.jpg|center|75px]]
+|-
+|HYX95
+|011
+|[[Kei Swap]] (2nd Color)
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]<br>{{NM|2025}}
+|1/10
+|[[File:PinkSwap.jpg|center|75px]]
+|-
+|HYW68
+|012
+|[[Custom '53 Chevy]]
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]
+|2/10
+|[[File:C53C HWTIKITIME 2025 cropped.jpg|center|75px]]
+|-
+|HYY11
+|012
+|[[Custom '53 Chevy]] (2nd Color - Zamac)
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]<br>{{WM|2025}}
+|2/10
+|[[File:Custom_%2753_Chevy_2025_Zamac_2_Loose.jpg|center|75px]]
+|-
+|HYW69
+|013
+|[[Nerve Hammer]]
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|1/10
+|[[File:1st 2025 Nerve Hammer.jpg|center|75px]]
+|-
+|HYX66
+|013
+|[[Nerve Hammer]] (2nd Color)
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|1/10
+|[[File:NerveHammer.jpg|center|75px]]
+|-
+|HYW70
+|014
+|[[Draftnator]]
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|2/10
+|[[File:1st 2025 Draftnator.jpg|center|75px]]
+|-
+|HYY31
+|014
+|[[Draftnator]] (2nd Color)
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]<br>{{KR|white}}
+|2/10
+|[[File:Draftnator-2025-Kroger.jpg|center|75px]]
+|-
+|HYX67
+|014
+|[[Draftnator]] (3rd Color)
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|2/10
+|[[File:DraftTruck.jpg|center|75px]]
+|-
+|HYW13
+|015
+|[[Morgan Super 3]]
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2025)|<font color="black">Factory Fresh</font>]]<br>{{NM|2025}}
+|1/5
+|[[File:MorganSuper3.jpg|center|75px]]
+|-
+|HYY33
+|015
+|[[Morgan Super 3]] (2nd Color)
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2025)|<font color="black">Factory Fresh</font>]]<br>{{NM|2025}}<br>{{KR}}
+|1/5
+|[[File:0513252224~2.jpg|center|75px]]
+|-
+|HYX48
+|015
+|[[Morgan Super 3]] (3rd Color)
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2025)|<font color="black">Factory Fresh</font>]]<br>{{NM|2025}}
+|1/5
+|[[File:2022Morgan.jpg|center|75px]]
+|-
+|HYW72
+|016
+|[['87 Audi quattro]]
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2025)|<font color="black">Factory Fresh</font>]]
+|2/5
+|[[File:87 Audi quattro Teal.jpg|center|75px]]
+|-
+|JBC35
+|016
+|[['87 Audi quattro]]
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2025)|<font color="black">Factory Fresh</font>]]<br>{{STH|2025}}
+|2/5
+|[[File:87 Audi quattro STH.jpg|center|75px]]
+|-
+|JBC20
+|017
+|[[Ford Performance SuperVan 4]]
+|bgcolor="#EBEBEB"|[[HW First Response Mini Collection (2025)|<font color="black">HW First Response</font>]]<br>{{TH|2025}}
+|1/5
+|[[File:FirstResponseSupervan.jpg|center|75px]]
+|-
+|HYW71
+|018
+|[[Alpha Pursuit]]
+|bgcolor="#EBEBEB"|[[HW First Response Mini Collection (2025)|<font color="black">HW First Response</font>]]
+|2/5
+|[[File:2025 Alpha Pursuit.jpg|center|75px]]
+|-
+|HYX49
+|018
+|[[Alpha Pursuit]] (2nd Color)
+|bgcolor="#EBEBEB"|[[HW First Response Mini Collection (2025)|<font color="black">HW First Response</font>]]
+|2/5
+|[[File:RedPursuit.jpg|center|75px]]
+|-
+|HYW12
+|019
+|[[Super Twin Mill]]
+|bgcolor="#DC2430"|[[Hot Wheels Let's Race Mini Collection (2025)|<font color="white">Hot Wheels Let's Race</font>]]<br>{{NM|2025|white}}
+|1/5
+|[[File:SuperTwinMill.jpg|center|75px]]
+|-
+|JBB72
+|019
+|[[Super Twin Mill]] (2nd Color)
+|bgcolor="#DC2430"|[[Hot Wheels Let's Race Mini Collection (2025)|<font color="white">Hot Wheels Let's Race</font>]]<br>{{NM|2025|white}}
+|1/5
+|[[File:ClassicSuperTwinMill.jpg|center|75px]]
+|-
+|HYW73
+|020
+|[['21 Ford Bronco]]
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]
+|1/10
+|[[File:1 st 2025 '21 Ford Bronco (Loose).jpg|center|75px]]
+|-
+|HYY32
+|020
+|[['21 Ford Bronco]] (2nd Color)
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]<br>{{KR}}
+|1/10
+|[[File:21 FORD BRONCO KR HYY32 1 C.jpg|center|75px]]
+|-
+|HYX50
+|020
+|[['21 Ford Bronco]] (3rd Color)
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]
+|1/10
+|[[File:2021FordBronco.jpg|center|75px]]
+|-
+|HYW74
+|021
+|[['67 Chevy C10]]
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]
+|2/10
+|[[File:1967ChevyPickup.jpg|center|75px]]
+|-
+|HYX51
+|021
+|[['67 Chevy C10]] (2nd Color)
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]
+|2/10
+|[[File:1967ChevyGhostPickup.jpg|center|75px]]
+|-
+|HYW75
+|022
+|[[Bogzilla]]
+|bgcolor="#00AEE5"|[[HW Ride-Ons Mini Collection (2025)|<font color="white">HW Ride-Ons</font>]]
+|1/5
+|[[File:1st 2025 Bogzilla.jpg|center|75px]]
+|-
+|HYX52
+|022
+|[[Bogzilla|Power Wheels Dune Racer]]
+|bgcolor="#00AEE5"|[[HW Ride-Ons Mini Collection (2025)|<font color="white">HW Ride-Ons</font>]]
+|1/5
+|[[File:DuneRacer.jpg|center|75px]]
+|-
+|HYW76
+|023
+|[[Kick Kart]]
+|bgcolor="#00AEE5"|[[HW Ride-Ons Mini Collection (2025)|<font color="white">HW Ride-Ons</font>]]
+|2/5
+|[[File:20241128 133007.jpg|center|75px]]
+|-
+|JBB90
+|023
+|[[Kick Kart]] (2nd Color)
+|bgcolor="#00AEE5"|[[HW Ride-Ons Mini Collection (2025)|<font color="white">HW Ride-Ons</font>]]
+|2/5
+|[[File:Kick Kart 23 Second Color.jpg|center|75px]]
+|-
+|HYW77
+|024
+|[[Custom Cadillac Fleetwood]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]
+|1/10
+|[[File:1st 2025 Custom Cadillac Fleetwood.jpg|center|75px]]
+|-
+|HYY39
+|024
+|[[Custom Cadillac Fleetwood]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2025)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|2/12
+|[[File:Rededitioncadillac.jpg|center|75px]]
+|-
+|HYW78
+|025
+|[[Max Steel]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]
+|2/10
+|[[File:MaxSteelBlue2025.jpg|center|75px]]
+|-
+|HYX53
+|025
+|[[Max Steel]] (2nd Color)
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]
+|2/10
+|[[File:GraySteel.jpg|center|75px]]
+|-
+|HYW79
+|026
+|[[Nissan Skyline 2000GT-R LBWK (Tooned)|Nissan Skyline 2000GT-R LBWK]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2025)|<font color="black">HW J-Imports</font>]]
+|1/5
+|[[File:'ToonedKatoSkyline.jpg|center|75px]]
+|-
+|HYY30
+|026
+|[[Nissan Skyline 2000GT-R LBWK (Tooned)|Nissan Skyline 2000GT-R LBWK]] (2nd Color)
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2025)|<font color="black">HW J-Imports</font>]]<br>{{KR}}
+|1/5
+|[[File:26 Nissan Skyline 2000GT-R LBWK.jpg|center|thumb|85x85px]]
+|-
+|HYX54
+|026
+|[[Nissan Skyline 2000GT-R LBWK (Tooned)|Nissan Skyline 2000GT-R LBWK]] (3rd Color)
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2025)|<font color="black">HW J-Imports</font>]]
+|1/5
+|[[File:'ToonedLBWKKenmeri.jpg|center|75px]]
+|-
+|HYW80
+|027
+|[[Twin Mill Gen-E]]
+|bgcolor="#07A7E1"|[[HW Celebration Racers Mini Collection (2025)|<font color="white">HW Celebration Racers</font>]]<br>[[Chinese New Year|<font color="white">'''Chinese New Year'''</font>]]
+|1/10
+|[[File:GenE2025.jpeg|center|75px]]
+|-
+|HYW81
+|028
+|[['90 Honda Civic EF]]
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|1/10
+|[[File:1990HondaEF.jpg|center|75px]]
+|-
+|HYY38
+|028
+|[['90 Honda Civic EF]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2025)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|1/12
+|[[File:'90 Honda Civic EF Red Edition 2025.jpg|center|75px]]
+|-
+|HYX90
+|028
+|[['90 Honda Civic EF]] (3rd Color)
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|1/10
+|[[File:1990Civic.jpg|center|75px]]
+|-
+|HYW82
+|029
+|[['94 Audi Avant RS2]]
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|2/10
+|[[File:2025 94 Audi Avant RS2.jpg|center|75px]]
+|-
+|HYX60
+|029
+|[['94 Audi Avant RS2]] (2nd Color)
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|2/10
+|[[File:1994AudiRS2.jpg|center|75px]]
+|-
+|HYW83
+|030
+|[[Standard Kart]]
+|bgcolor="#2A2673" |[[HW Screen Time Mini Collection (2025)|<font color="white">HW Screen Time</font>]]
+|3/10
+|[[File:StandardKart2022.jpg|center|75px]]
+|-
+|HYW84
+|031
+|[[X-34 Landspeeder]]
+|bgcolor="#2A2673" |[[HW Screen Time Mini Collection (2025)|<font color="white">HW Screen Time</font>]]
+|4/10
+|[[File:Landspeeder.jpg|center|75px]]
+|-
+|JBC21
+|032
+|[[Fish'd & Chip'd]]
+|bgcolor="#8A2E81" |[[HW Designed By Mini Collection (2025)|<font color="white">HW Designed By</font>]]<br>{{TH|2025}}
+|2/5
+|[[File:Fish'dandChip'd.jpg|center|75px]]
+|-
+|HYW85
+|033
+|[[Fiat 500e]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]
+|3/10
+|[[File:2019Fiat500e.jpg|center|75px]]
+|-
+|HYW19
+|034 
+|[[Ford Mustang GTD]]
+|bgcolor="#C61F26" |[[Mustang 60th Mini Collection (2025)|<font color="white">Mustang 60th</font>]]<br>{{NM|2025|white}}
+|1/5
+|[[File:FordMustangGTD.jpg|center|75px]]
+|-
+|JBB93
+|034 
+|[[Ford Mustang GTD]] (2nd Color)
+|bgcolor="#C61F26" |[[Mustang 60th Mini Collection (2025)|<font color="white">Mustang 60th</font>]]<br>{{NM|2025|white}}
+|1/5
+|[[File:'25FordMustangGTD.jpg|center|75px]]
+|-
+|HYY87
+|035
+|[[The Vanster]]
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]
+|3/10
+|[[File:1st 2025 The Vanster.jpg|center|75px]]
+|-
+|HYX65
+|035
+|[[The Vanster]] (2nd Color)
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]
+|3/10
+|[[File:VansterRedArt2025.jpg|center|75px]]
+|-
+|HYW88
+|036
+|[[DMC DeLorean]]
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]
+|5/10
+|[[File:'80sDeLorean.jpg|center|75px]]
+|-
+|HYX59
+|036
+|[[DMC DeLorean]] (2nd Color)
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]
+|5/10
+|[[File:ArtsyDeLorean.jpg|center|75px]]
+|-
+|HYW89
+|037
+|[[Crescendo]]
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|3/10
+|[[File:1st 2025 Crescendo.jpg|center|75px]]
+|-
+|HYX85
+|037
+|[[Crescendo]] (2nd Color)
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|3/10
+|[[File:Greenscendo.jpg|center|75px]]
+|-
+|HYW90
+|038
+|[[Proton Saga]]
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2025)|<font color="black">Factory Fresh</font>]]
+|3/5
+|[[File:'85ProtonSaga.jpg|center|75px]]
+|-
+|HYW91
+|039
+|[[2020 Ram 1500 Rebel]]
+|bgcolor="#EBEBEB" |[[HW First Response Mini Collection (2025)|<font color="black">HW First Response</font>]]
+|3/5
+|[[File:HYW91.jpg|center|75px]]
+|-
+|HYY42
+|039
+|[[2020 Ram 1500 Rebel]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2025)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|5/12
+|[[File:2025-39 HYY42 REDed o1.jpg|center|75px]]
+|-
+|HYW92
+|040
+|[[Donut Drifter]]
+|bgcolor="#DC2430" |[[Hot Wheels Let's Race Mini Collection (2025)|<font color="white">Hot Wheels Let's Race</font>]]
+|2/5
+|[[File:2025 Donut Drifter.jpg|center|75px]]
+|-
+|HYW93
+|041
+|[[Lamborghini Huracán Sterrato]]
+|bgcolor="#9A4A21" |[[Safari Mode Mini Collection (2025)|<font color="white">Safari Mode</font>]]
+|1/5
+|[[File:SafariSterrato.jpg|center|75px]]
+|-
+|HYY45
+|041
+|[[Lamborghini Huracán Sterrato]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2025)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|8/12
+|[[File:2025-41 HYY45 o1.jpg|center|75px]]
+|-
+|JBB86
+|041
+|[[Lamborghini Huracán Sterrato]] (3rd Color)
+|bgcolor="#9A4A21" |[[Safari Mode Mini Collection (2025)|<font color="white">Safari Mode</font>]]
+|1/5
+|[[File:Sterrato yellow (front).png|center|75x75px]]
+|-
+
+|HYW17
+|042
+|[[Haulerback]]
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]<br>{{NM|2025}}
+|3/10
+|[[File:Haulerback.jpg|center|75px]]
+|-
+|HYX68
+|042
+|[[Haulerback]] (2nd Color)
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]<br>{{NM|2025}}
+|3/10
+|[[File:HaulerbackTruck.jpg|center|75px]]
+|-
+|HYW94
+|043
+|[['80 El Camino]]
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]
+|4/10
+|[[File:1st 2025 '80 El Camino.jpg|center|75px]]
+|-
+|HYW95
+|044
+|[[1988 Jeep Wagoneer]]
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]
+|5/10
+|[[File:1988Wagoneer.jpg|center|75px]]
+|-
+|HYY13
+|044
+|[[1988 Jeep Wagoneer]] (2nd Color - Zamac)
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]<br>{{WM|2025}}
+|5/10
+|[[File:ZAMAC2025xxx.png|center|75x75px]]
+|-
+|HYW96
+|045
+|[['55 Chevy (2006)|'55 Chevy]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]
+|3/10
+|[[File:HYW96.jpg|center|75px]]
+|-
+|HYY15
+|045
+|[['55 Chevy (2006)|'55 Chevy]] (2nd Color - Zamac)
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]<br>{{WM|2025|white}}
+|3/10
+|[[File:HYY15 ZAMAK o4.jpg|center|thumb|72x72px]]
+|-
+|HYW97
+|046
+|[[Hirohata Merc]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]
+|4/10
+|[[File:1951Hirohata.jpg|center|75px]]
+|-
+|JBC36
+|046
+|[[Hirohata Merc]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]<br>{{STH|2025}}
+|4/10
+|[[File:JBC36-LOOSE.jpg|center|75px]]
+|-
+|HYW98
+|047
+|[[Mazda REPU]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2025)|<font color="black">HW J-Imports</font>]]
+|2/5
+|[[File:REPUnami.jpg|center|75px]]
+|-
+|HYW99
+|048
+|[[Subaru BRZ]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2025)|<font color="black">HW J-Imports</font>]]<br>{{NIM}}
+|3/5
+|[[File:SubaruBRZDrift.jpg|center|75px]]
+|-
+|HYY12
+|048
+|[[Subaru BRZ]] (2nd Color - Zamac)
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2025)|<font color="black">HW J-Imports</font>]]<br>{{NIM}}<br>{{WM|2025}}
+|3/5
+|[[File:S-l1200brz.jpg|center|75px]]
+|-
+|JBB55
+|048
+|[[Subaru BRZ]] (3rd Color)
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2025)|<font color="black">HW J-Imports</font>]]<br>{{NIM}}
+|3/5
+|[[File:SubaruBRZCustom.jpg|center|75px]]
+|-
+|HYX00
+|049
+|[['22 Ford Maverick Custom]]
+|bgcolor="#282321" |[[HW Modified Mini Collection (2025)|<font color="white">HW Modified</font>]]
+|1/5
+|[[File:FordMaverickCustom.jpg|center|75px]]
+|-
+|HYW16
+|050
+|[['66 Buick Riviera]]
+|bgcolor="#282321" |[[HW Modified Mini Collection (2025)|<font color="white">HW Modified</font>]]<br>{{NM|2025|white}}
+|2/5
+|[[File:'66BuickRiviera.jpg|center|75px]]
+|-
+|JBB56
+|050
+|[['66 Buick Riviera]] (2nd Color)
+|bgcolor="#282321" |[[HW Modified Mini Collection (2025)|<font color="white">HW Modified</font>]]<br>{{NM|2025|white}}
+|2/5
+|[[File:1966Riviera.jpg|center|75px]]
+|-
+|HYX01
+|051
+|[['69 Corvette Racer]]
+|bgcolor="#07A7E1" |[[HW Celebration Racers Mini Collection (2025)|<font color="white">HW Celebration Racers</font>]]<br><font color="white">'''Valentine's Day'''</font>
+|2/10
+|[[File:2025 '69 Corvette Racer.jpg|center|75px]]
+|-
+|HYX02
+|052
+|[[Mercedes-Benz 500 E]]
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|3/10
+|[[File:Merc500EGreen2025.jpg|center|75px]]
+|-
+|HYY43
+|052
+|[[Mercedes-Benz 500 E]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2025)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|6/12
+|[[File:Mercedes-Benz 500 E - 2025 Red Edition.jpg|center|75px]]
+|-
+|JBB60
+|052
+|[[Mercedes-Benz 500 E]] (3rd Color)
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|3/10
+|[[File:Mercedes500E.jpg|center|75px]]
+|-
+|HYX03
+|053
+|[['70 Chevy Camaro RS]]
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|4/10
+|[[File:1st '70 Camaro RS.jpg|center|75px]]
+|-
+|HYX04
+|054
+|[[Arkham Asylum Batmobile|Batman: Arkham Asylum Batmobile]]
+|bgcolor="black" |[[Batman Mini Collection (2025)|<font color="white">Batman</font>]]
+|2/5
+|[[File:2025 Arkham Asylum Batmobile.jpg|center|75px]]
+|-
+|HYX81
+|054
+|[[Arkham Asylum Batmobile|Batman: Arkham Asylum Batmobile]] (2nd Color)
+|bgcolor="black" |[[Batman Mini Collection (2025)|<font color="white">Batman</font>]]
+|2/5
+|[[File:AABatmobile.jpg|center|75px]]
+|-
+|HYX05
+|055
+|[[Humvee]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]
+|1/10
+|[[File:1st 2025 Humvee.jpg|center|75px]]
+|-
+|HYX26
+|056
+|[['70 Dodge Power Wagon]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]
+|2/10
+|[[File:1st 2025 '70 Dodge Power Wagon.jpg|center|75px]]
+|-
+|JBC22
+|057
+|[[Mailed It!]]
+|bgcolor="#D0CCC9" |[[HW Metro Mini Collection (2025)|<font color="black">HW Metro</font>]]<br>{{TH|2025}}
+|3/5
+|[[File:LubetskyMailedIt.jpg|center|75px]]
+|-
+|HYW21
+|058
+|[[Maserati Shamal]]
+|bgcolor="#D0CCC9" |[[HW Metro Mini Collection (2025)|<font color="black">HW Metro</font>]]<br>{{NM|2025}}
+|4/5
+|[[File:MaseratiShamal.jpg|center|75px]]
+|-
+|HYX76
+|058
+|[[Maserati Shamal]] (2nd Color)
+|bgcolor="#D0CCC9" |[[HW Metro Mini Collection (2025)|<font color="black">HW Metro</font>]]<br>{{NM|2025}}
+|4/5
+|[[File:1990Shamal.jpg|center|75px]]
+|-
+|HYW10
+|059
+|[[Formula 1|Oracle Red Bull Racing]]
+|bgcolor="#EA1B27" |[[Track Aces Mini Collection (2025)|<font color="black">Track Aces</font>]]<br>{{NM|2025}}
+|1/5
+|[[File:RedBullRacingRB20.jpg|center|75px]]
+|-
+|JBC07
+|059
+|[[Formula 1|Williams Racing]]
+|bgcolor="#EA1B27" |[[Track Aces Mini Collection (2025)|<font color="black">Track Aces</font>]]<br>{{NM|2025}}
+|1/5
+|[[File:WilliamsRacingFW46.jpg|center|75px]]
+|-
+|HYX78
+|059
+|[[Formula 1|Mercedes-AMG Petronas Formula One Team]]
+|bgcolor="#EA1B27" |[[Track Aces Mini Collection (2025)|<font color="black">Track Aces</font>]]<br>{{NM|2025}}
+|1/5
+|[[File:MercedesAMGW15.jpg|center|75px]]
+|-
+|HYX06
+|060
+|[[Supercharged]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]
+|5/10
+|[[File:HWRTSupercharged.jpg|center|75px]]
+|-
+|HYX64
+|060
+|[[Supercharged]] (2nd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]
+|5/10
+|[[File:Whitecharged.jpg|center|75px]]
+|-
+|HYX07
+|061
+|[[Hi-Roller II]]
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]
+|6/10
+|[[File:HYX07.jpg|center|75px]]
+|-
+|JBC37
+|061
+|[[Hi-Roller II]]
+| bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]<br>{{STH|2025}}
+|6/10
+|[[File:Hi-Roller II STH 2025.jpg|center|75px]]
+|-
+|JJB80<!-- toy number as shown on back of card, do not change -->
+|062
+|[[Datsun 240Z]]
+| bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]
+|4/10
+|[[File:SakuraDatsun.jpg|center|75px]]
+|-
+|HYY44
+|062
+|[[Datsun 240Z]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2025)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|7/12
+|[[File:Target 240z.jpg|center|75x75px]]
+|-
+|JBB66
+|062
+|[[Datsun 240Z]] (3rd Color)
+| bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]
+|4/10
+|[[File:Sakura240Z.jpg|center|75px]]
+|-
+|HYX09
+|063
+|[[Monteracer]]
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|4/10
+|[[File:1st 2025 Monteracer.jpg|center|75px]]
+|-
+|HYX86
+|063
+|[[Monteracer]] (2nd Color)
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|4/10
+|[[File:Montegreen.jpg|center|75px]]
+|-
+|HYX10
+|064
+|[[Arrow Dynamic]]
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|5/10
+|[[File:1st 2025 Arrow Dynamic.jpg|center|75px]]
+|-
+|HYX98
+|064
+|[[Arrow Dynamic]] (2nd Color)
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|5/10
+|[[File:ArrowDynamic.jpg|center|75px]]
+|-
+|HYX11
+|065
+|[[El Viento]]
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|6/10
+|[[File:ElViento2025.jpeg|center|75px]]
+|-
+|HYY06
+|065
+|[[El Viento]] (2nd Color)
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|6/10
+|[[File:YellowViento.jpg|center|75px]]
+|-
+|HYW20
+|066 
+|[[Street Shrieker]]
+|bgcolor="#DC2430" |[[Hot Wheels Let's Race Mini Collection (2025)|<font color="white">Hot Wheels Let's Race</font>]]<br>{{NM|2025|white}}
+|3/5
+|[[File:StreetShrieker.jpg|center|75px]]
+|-
+|JBC08
+|066 
+|[[Street Shrieker]] (2nd Color)
+|bgcolor="#DC2430" |[[Hot Wheels Let's Race Mini Collection (2025)|<font color="white">Hot Wheels Let's Race</font>]]<br>{{NM|2025|white}}
+|3/5
+|[[File:Screenshot 2025-10-24 12.10.21 PM.png|center|75x75px]]
+|-
+|HYX12
+|067
+|[[Rodger Dodger]]
+|bgcolor="#DC2430" |[[Hot Wheels Let's Race Mini Collection (2025)|<font color="white">Hot Wheels Let's Race</font>]]
+|4/5
+|[[File:2025 Rodger Dodger.jpg|center|75px]]
+|-
+|JHV10
+|068
+|[[Draggin' Wagon]]
+|bgcolor="#00AEE5"|[[HW Ride-Ons Mini Collection (2025)|<font color="white">HW Ride-Ons</font>]]
+|3/5
+|[[File:PurpleWagon.jpg|center|75px]]
+|-
+|HYX69
+|068
+|[[Draggin' Wagon]] (2nd Color)
+|bgcolor="#00AEE5"|[[HW Ride-Ons Mini Collection (2025)|<font color="white">HW Ride-Ons</font>]]
+|3/5
+|[[File:GreenWagon.jpg|center|75px]]
+|-
+|HYX14
+|069
+|[[Hi-Roller]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]
+|5/10
+|[[File:1st 2025 Hi-Roller.jpg|center|75px]]
+|-
+|HYX70
+|069
+|[[Hi-Roller]] (2nd Color)
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]
+|5/10
+|[[File:PinkRoller.jpg|center|75px]]
+|-
+|HYX15
+|070
+|[[HW50 Concept]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]
+|6/10
+|[[File:1st 2025 HW50 Concept.jpg|center|75px]]
+|-
+|HYX71
+|070
+|[[HW50 Concept]] (2nd Color)
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]
+|6/10
+|[[File:PurpleHW50.jpg|center|75px]]
+|-
+|HYX16
+|071
+|[[Punk Rod]]
+|bgcolor="#282321" |[[HW Modified Mini Collection (2025)|<font color="white">HW Modified</font>]]
+|3/5
+|[[File:Punk Rod (HW Modified).png|center|75px]]
+|-
+|HYX72
+|071
+|[[Punk Rod]] (2nd Color)
+|bgcolor="#282321" |[[HW Modified Mini Collection (2025)|<font color="white">HW Modified</font>]]
+|3/5
+|[[File:RedRod.jpg|center|75px]]
+|-
+|HYY16
+|071
+|[[Punk Rod]] (3rd Color - Zamac)
+|bgcolor="#282321" |[[HW Modified Mini Collection (2025)|<font color="white">HW Modified</font>]]<br>{{WM|2025|white}}
+|3/5
+|[[File:Punkroad2025zamac.png|center|75px]]
+|-
+|HYW15
+|072
+|[[Cupra e-Racer]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]<br>{{NM|2025|white}}
+|4/10
+|[[File:Cuprae-Racer.jpg|center|75px]]
+|-
+|HYX46
+|072
+|[[Cupra e-Racer]] (2nd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]<br>{{NM|2025|white}}
+|4/10
+|[[File:CupraLeón.jpg|center|75px]]
+|-
+|JBB16
+|073
+|[[2020 Ford Mustang Shelby GT500]]
+|bgcolor="#C61F26" |[[Mustang 60th Mini Collection (2025)|<font color="white">Mustang 60th</font>]]
+|2/5
+|[[File:1st 2025 2020 Ford Mustang Shelby GT500.jpg|center|75px]]
+|-
+|HYY41
+|073
+|[[2020 Ford Mustang Shelby GT500]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2025)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|4/12
+|[[File:2025 RED Ed HYY41 o1.jpg|center|75px]]
+|-
+|HYX17 
+|074
+|[[Porsche 911 GT3]]
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]
+|1/10
+|[[File:IsaiasPorsche.jpg|center|75px]]
+|-
+|HYX19
+|075
+|[[Jaguar Mk1]]
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]
+|2/10
+|[[File:RacingJaguar.jpg|center|75px]]
+|-
+|JBB58
+|075
+|[[Jaguar Mk1]] (2nd Color)
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]
+|2/10
+|[[File:1955JaguarMk1.jpg|center|75px]]
+|-
+|HYX20
+|076
+|[[1974 Brazilian Dodge Charger|'74 Brazilian Dodge Charger]]
+|bgcolor="#07A7E1" |[[HW Celebration Racers Mini Collection (2025)|<font color="white">HW Celebration Racers</font>]]<br><font color="white">'''International Women's Day'''</font>
+|3/10
+|[[File:IWDCharger.jpg|center|75px]]
+|-
+|HYX21
+|077
+|[[BMW 2002]]
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|5/10
+|[[File:1969BMW2002.jpg|center|75px]]
+|-
+|HYY14
+|077
+|[[BMW 2002]] (2nd Color - Zamac)
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]<br>{{WM|2025|white}}
+|5/10
+|[[File:HYY14 ZAMAK BMW 2002.jpg|center|75px]]
+|-
+|JBB61
+|077
+|[[BMW 2002]] (3rd Color)
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|5/10
+|[[File:BMW2002USDM.jpg|center|75px]]
+|-
+|HYX22 
+|078 
+|[['71 Lamborghini Miura SV]]
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|6/10
+|[[File:1971Miura.jpg|center|75px]]
+|-
+|HYX73
+|078 
+|[['71 Lamborghini Miura SV]] (2nd Color)
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|6/10
+|[[File:'71MiuraSV.jpg|center|75px]]
+|-
+|HYY27
+|078 
+|[['71 Lamborghini Miura SV]] (3rd Color)
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]<br><font color="white">'''Dollar Tree/Family Dollar Exclusive'''</font>
+|6/10
+|[[File:BlueMiura.jpg|center|75px]]
+|-
+|HYX23
+|079
+|[[Toyota GR86 Cup]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2025)|<font color="black">Compact Kings</font>]]
+|1/10
+|[[File:2023ToyotaGR86Cup.jpg|center|75px]]
+|-
+|HYX74
+|079
+|[[Toyota GR86 Cup]] (2nd Color)
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2025)|<font color="black">Compact Kings</font>]]
+|1/10
+|[[File:2024ToyotaGR86Cup.jpg|center|75px]]
+|-
+|JBB18 
+|080
+|[['15 Mazda MX-5 Miata]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2025)|<font color="black">Compact Kings</font>]]
+|2/10
+|[[File:MazdaMX-5Custom.jpg|center|75px]]
+|-
+|HYX25
+|081
+|[[Blazer 4×4|Chevy Blazer 4×4]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]
+|3/10
+|[[File:ChevyBlazer.jpg|center|75px]]
+|-
+|JBB78
+|081
+|[[Blazer 4×4|Chevy Blazer 4×4]] (2nd Color)
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]
+|3/10
+|[[File:Blazer copper (front).png|center|75x75px]]
+|-
+|HYW31
+|082
+|[[Tesla Cyberquad]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]<br>{{NM|2025|white}}
+|4/10
+|[[File:TeslaCyberquad.jpg|center|75px]]
+|-
+|HYX91
+|082
+|[[Tesla Cyberquad]] (2nd Color)
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]<br>{{NM|2025|white}}
+|4/10
+|[[File:Cyberquad.jpg|center|75px]]
+|-
+|HYX27
+|083
+|[[K.I.T.T.]]
+|bgcolor="#2A2673" |[[HW Screen Time Mini Collection (2025)|<font color="white">HW Screen Time</font>]]
+|5/10 
+|[[File:CustomKITT.jpg|center|75px]]
+|-
+|HYY73
+|084
+|[[Gotta Go]]
+|bgcolor="#8A2E81" |[[HW Designed By Mini Collection (2025)|<font color="white">HW Designed By</font>]]
+|3/5
+|[[File:1st 2025 Gotta Go.jpg|center|75px]]
+|-
+|HYX94
+|084
+|[[Gotta Go]] (2nd Color)
+|bgcolor="#8A2E81" |[[HW Designed By Mini Collection (2025)|<font color="white">HW Designed By</font>]]
+|3/5
+|[[File:GottaGo.jpg|center|75px]]
+|-
+|HYX29
+|085
+|[[Street Wiener]]
+|bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2025)|<font color="black">Fast Foodie</font>]]
+|1/5
+|[[File:1st 2025 Street Wiener (HWLR).jpg|center|75px]]
+|-
+|HYX83
+|085
+|[[Street Wiener]] (2nd Color)
+|bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2025)|<font color="black">Fast Foodie</font>]]
+|1/5
+|[[File:2nd 2025 Street Wiener.jpg|center|75px]]
+|-
+|HYX30
+|086
+|[[Silverado EV RST]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]
+|6/10
+|[[File:ChevySilveradoEVRST.jpg|center|75px]]
+|-
+|JBB64
+|086
+|[[Silverado EV RST]] (2nd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]
+|6/10
+|[[File:ChevroletSilveradoEV.jpg|center|75px]]
+|-
+|HYY28
+|086
+|[[Silverado EV RST]] (3rd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]<br><font color="white">'''Dollar Tree/Family Dollar Exclusive'''</font>
+|6/10
+|[[File:Dollartreesilverado.jpg|center|75px]]
+|-
+|HYX31
+|087
+|[['70 Plymouth Superbird]]
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]
+|7/10
+|[[File:ArtSuperbird.jpg|center|75px]]
+|-
+|HYX96
+|087
+|[['70 Plymouth Superbird]] (2nd Color)
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]
+|7/10
+|[[File:Artsybird.jpg|center|75px]]
+|-
+|HYX32
+|088
+|[[Ain't Fare]]
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]
+|8/10
+|[[File:GrafittiFare.jpg|center|75px]]
+|-
+|JBB67
+|088
+|[[Ain't Fare]] (2nd Color)
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]
+|8/10
+|[[File:StillAin'tFare.jpg|center|75px]]
+|-
+|HYX33
+|089 
+|[[Stockar]]
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|7/10
+|[[File:RacingStockar.jpg|center|75px]]
+|-
+|HYY07
+|089 
+|[[Stockar]] (2nd Color)
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|7/10
+|[[File:BlueStockar.jpg|center|75px]]
+|-
+|HYW23
+|090
+|[[Gordon Murray Automotive T.33]]
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2025)|<font color="black">Factory Fresh</font>]]<br>{{NM|2025}}
+|4/5
+|[[File:GMAT.33.jpg|center|75px]]
+|-
+|JBB70
+|090
+|[[Gordon Murray Automotive T.33]] (2nd Color)
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2025)|<font color="black">Factory Fresh</font>]]<br>{{NM|2025}}
+|4/5
+|[[File:GMAT33.jpg|center|75px]]
+|-
+|HYX34
+|091
+|[[Cruise Bruiser]]
+|bgcolor="#01A551" |[[HW Reverse Rake Mini Collection (2025)|<font color="white">HW Reverse Rake</font>]]
+|1/5
+|[[File:CruiseBruiser.jpg|center|75px]]
+|-
+|HYX77
+|091
+|[[Cruise Bruiser]] (2nd Color)
+|bgcolor="#01A551" |[[HW Reverse Rake Mini Collection (2025)|<font color="white">HW Reverse Rake</font>]]
+|1/5
+|[[File:YellowBruiser.jpg|center|75px]]
+|-
+|HYX35
+|092
+|[[Dune It Up]]
+|bgcolor="#EA1B27" |[[Track Aces Mini Collection (2025)|<font color="black">Track Aces</font>]]
+|2/5
+|[[File:DuneItUp.jpg|center|75px]]
+|-
+|HYX87
+|092
+|[[Dune It Up]] (2nd Color)
+|bgcolor="#EA1B27" |[[Track Aces Mini Collection (2025)|<font color="black">Track Aces</font>]]
+|2/5
+|[[File:RedItUp.jpg|center|75px]]
+|-
+|HYX36
+|093 
+|[[1975 Datsun Sunny Truck (B120)]]
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]<br>{{NIM}}
+|6/10
+|[[File:1975NissanSunny.jpg|center|75px]]
+|-
+|JBC38
+|093 
+|[[1975 Datsun Sunny Truck (B120)]]
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]<br>{{NIM}}<br>{{STH|2025}}
+|6/10
+|[[File:STH 1975 Datsun Sunny Truck (B120).jpg|center|75px]]
+|-
+|HYX37
+|094
+|[['99 Ford F-150 SVT Lightning]]
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]
+|7/10
+|[[File:FishingLightning.jpg|center|75px]]
+|-
+|JBB53
+|094
+|[['99 Ford F-150 SVT Lightning]] (2nd Color)
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]
+|7/10
+|[[File:LeewayLightning.jpg|center|75px]]
+|-
+|JBC23
+|095
+|[[Pedal Driver]]
+|bgcolor="#00AEE5" |[[HW Ride-Ons Mini Collection (2025)|<font color="white">HW Ride-Ons</font>]]<br>{{TH|2025}}
+|4/5
+|[[File:TreasurePedal.jpg|center|75px]]
+|-
+|HYY54
+|096 
+|[['23 Ram 1500]]
+|bgcolor="#01A551" |[[HW Reverse Rake Mini Collection (2025)|<font color="white">HW Reverse Rake</font>]]
+|2/5
+|[[File:2023RamTRX.jpg|center|75px]]
+|-
+|HYX39
+|097
+|[[Mid Mill]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]
+|7/10 
+|[[File:MidMill.jpg|center|75px]]
+|-
+|HYX79
+|097
+|[[Mid Mill]] (2nd Color)
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]
+|7/10 
+|[[File:TealMill.jpg|center|75px]]
+|-
+|HYW25
+|098
+|[[Hako Type D]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2025)|<font color="black">HW J-Imports</font>]]<br>{{NM|2025}}
+|4/5
+|[[File:SupotsukaFR.jpg|center|75px]]
+|-
+|HYX80
+|098
+|[[Hako Type D]] (2nd Color)
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2025)|<font color="black">HW J-Imports</font>]]<br>{{NM|2025}}
+|4/5
+|[[File:Supotsuaka.jpg|center|75px]]
+|-
+|HYX40
+|099
+|[[Cadillac Project GTP Hypercar]]
+|bgcolor="#32CD32" |[[HW Exotics Mini Collection (2025)|<font color="black">HW Exotics</font>]]
+|1/5
+|[[File:LeMonstreGTP.jpg|center|75px]]
+|-
+|HYY36
+|099
+|[[Cadillac Project GTP Hypercar]] (2nd Color - Zamac)
+|bgcolor="#32CD32" |[[HW Exotics Mini Collection (2025)|<font color="black">HW Exotics</font>]]<br>{{WM|2025}}
+|1/5
+|[[File:HYY36 ZAMAK Project GTP o1.jpg|center|thumb|69x69px]]
+|-
+|JBB91
+|099
+|[[Cadillac Project GTP Hypercar]] (3rd Color)
+|bgcolor="#32CD32" |[[HW Exotics Mini Collection (2025)|<font color="black">HW Exotics</font>]]
+|1/5
+|[[File:ActionExpressGTP.jpg|center|75px]]
+|-
+|HYX41
+|100
+|[[Porsche 904 Carrera GTS]]
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]
+|3/10 
+|[[File:Porsche904GTS.jpg|center|75px]]
+|-
+|HYY03
+|100
+|[[Porsche 904 Carrera GTS]] (2nd Color)
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]
+|3/10
+|[[File:1964Porsche904.jpg|center|75px]]
+|-
+|JBC54
+|100
+|[[Porsche 904 Carrera GTS]] (3rd Color)
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]<br>{{WG|white}}
+|3/10
+|[[File:JBC54 o4.jpg|center|75px]]
+|-
+|HYY99
+|101
+|[[Super Volt|Chevy Super Volt]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]
+|7/10
+|[[File:ChevyVolt.jpg|center|75px]]
+|-
+|HYX43
+|102 
+|[['76 Chevy Chevette]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2025)|<font color="black">Compact Kings</font>]]
+|3/10
+|[[File:NHRAChevette.jpg|center|75px]]
+|-
+|HYX44
+|103
+|[[TV Series Batmobile]]
+|bgcolor="black" |[[Batman Mini Collection (2025)|<font color="white">Batman</font>]]
+|3/5
+|[[File:'66Batmobile.jpg|center|75px]]
+|-
+|HYY05
+|103
+|[[TV Series Batmobile]] (2nd Color)
+|bgcolor="black" |[[Batman Mini Collection (2025)|<font color="white">Batman</font>]]
+|3/5
+|[[File:2025batman3of5red.jpg|center|thumb|72x72px]]
+|-
+|HYW26
+|104 
+|[[Optimus Prime]]
+|bgcolor="#2A2673" |[[HW Screen Time Mini Collection (2025)|<font color="white">HW Screen Time</font>]]<br>{{NM|2025|white}}
+|6/10 
+|[[File:Optimus.jpg|center|75px]]
+|-
+|HYY50
+|105
+|[[RD-06]]
+|bgcolor="#8A2E81" |[[HW Designed By Mini Collection (2025)|<font color="white">HW Designed By</font>]]
+|4/5
+|[[File:RD-06.jpg|center|75px]]
+|-
+|HYX82
+|105
+|[[RD-06]] (2nd Color)
+|bgcolor="#8A2E81" |[[HW Designed By Mini Collection (2025)|<font color="white">HW Designed By</font>]]
+|4/5
+|[[File:AcidTrip.jpg|center|75px]]
+|-
+|HYY51
+|106
+|[[Sushi Tuner]]
+|bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2025)|<font color="black">Fast Foodie</font>]]
+|2/5 
+|[[File:SalmonSushi.jpg|center|75px]]
+|-
+|JBC01
+|106
+|[[Sushi Tuner]] (2nd Color)
+|bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2025)|<font color="black">Fast Foodie</font>]]
+|2/5 
+|[[File:JBC01 SushiTuner o4.jpg|center|75px]]
+|-
+|HYY52
+|107
+|[[Aston Martin DB4GT High-Speed Edition]]
+|bgcolor="#231F20" |[[HW Dream Garage Mini Collection (2025)|<font color="white">HW Dream Garage</font>]]<br>
+|3/5
+|[[File:AstonSaltFlatRacer.jpg|center|75px]]
+|-
+|JBC39
+|107
+|[[Aston Martin DB4GT High-Speed Edition]]
+|bgcolor="#231F20" |[[HW Dream Garage Mini Collection (2025)|<font color="white">HW Dream Garage</font>]]<br>{{STH|2025}}
+|3/5
+|[[File:Aston Martin DB4GT High-Speed Edition STH 2025.jpg|center|75px]]
+|-
+|HYW28
+|108
+|[[Slide-Burn]]
+|bgcolor="#231F20" |[[HW Dream Garage Mini Collection (2025)|<font color="white">HW Dream Garage</font>]]<br>{{NM|2025|white}}
+|4/5 
+|[[File:Slide-Burn.jpg|center|75px]]
+|-
+|HYX84
+|108
+|[[Slide-Burn]] (2nd Color)
+|bgcolor="#231F20" |[[HW Dream Garage Mini Collection (2025)|<font color="white">HW Dream Garage</font>]]<br>{{NM|2025|white}}
+|4/5 
+|[[File:Green-Burn.jpg|center|75px]]
+|-
+|HYY53
+|109
+|[[Power Rocket]]
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|8/10
+|[[File:PowerRocket.jpg|center|75px]]
+|-
+|JBB69
+|109
+|[[Power Rocket]] (2nd Color)
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|8/10
+|[[File:PinkRocket.jpg|center|75px]]
+|-
+|JBC24
+|110
+|[[Rig Storm]]
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]<br>{{TH|2025}}
+|9/10
+|[[File:2025 Rig Storm.jpg|center|75px]]
+|-
+|HYX38
+|111
+|[['58 Impala|'58 Chevy Impala]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]
+|8/10 
+|[[File:1958Impala.jpg|center|75px]]
+|-
+|HYY55
+|112 
+|[[Later Crater]]
+|bgcolor="#01A551" |[[HW Reverse Rake Mini Collection (2025)|<font color="white">HW Reverse Rake</font>]]
+|3/5 
+|[[File:RedCrater.jpg|center|75px]]
+|-
+|JBB71
+|112 
+|[[Later Crater]] (2nd Color)
+|bgcolor="#01A551" |[[HW Reverse Rake Mini Collection (2025)|<font color="white">HW Reverse Rake</font>]]
+|3/5 
+|[[File:CraterRacer.jpg|center|75px]]
+|-
+|JBB17
+|113
+|[[Escort Rally|Ford Escort]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2025)|<font color="black">Compact Kings</font>]]
+|4/10
+|[[File:FordEscortMaxi.jpg|center|75px]]
+|-
+|JBB99
+|113
+|[[Escort Rally|Ford Escort]] (2nd Color)
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2025)|<font color="black">Compact Kings</font>]]
+|4/10
+|[[File:PurpleMaxi.jpg|center|75px]]
+|-
+|HYW27
+|114
+|[[Drift-Ender]]
+|bgcolor="#EBEBEB" |[[HW First Response Mini Collection (2025)|<font color="black">HW First Response </font>]]<br>{{NM|2025}}
+|4/5
+|[[File:Drift-Ender.jpg|center|75px]]
+|-
+|HYY00
+|114
+|[[Drift-Ender]] (2nd Color)
+|bgcolor="#EBEBEB" |[[HW First Response Mini Collection (2025)|<font color="black">HW First Response </font>]]<br>{{NM|2025}}
+|4/5
+|[[File:Drift-fender.jpg|center|75px]]
+|-
+|JBB19
+|115
+|[['75 Chevy Blazer Custom]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]<br>{{NIM|white}}
+|5/10
+|[[File:'75Blazer.jpg|center|75px]]
+|-
+|HYY01
+|115
+|[['75 Chevy Blazer Custom]] (2nd Color)
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]<br>{{NIM|white}}
+|5/10
+|[[File:1975ChevyBlazer.jpg|center|75px]]
+|-
+|HYY49
+|115
+|[['75 Chevy Blazer Custom]] (3rd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2025)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|12/12
+|[[File:Blazer. Red Edition (2025).jpg|center|75px]]
+|-
+|HYY57
+|116
+|[[Slide Kick]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]
+|1/10
+|[[File:ExperiSlide.jpg|center|75px]]
+|-
+|HYY02
+|116
+|[[Slide Kick]] (2nd Color)
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]
+|1/10
+|[[File:CyanSlide.jpg|center|75px]]
+|-
+|HYY58
+|117
+|[[Flippin Fast]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]
+|2/10 
+|[[File:ExperiFlip.jpg|center|75px]]
+|-
+|HYX88
+|117
+|[[Flippin Fast]] (2nd Color)
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]
+|2/10 
+|[[File:FidgetSpinner.jpg|center|75px]]
+|-
+|HYY59
+|118
+|[[Skull Shaker]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]
+|3/10
+|[[File:ExperiSkull.jpg|center|75px]]
+|-
+|JBB73
+|118
+|[[Skull Shaker]] (2nd Color)
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]
+|3/10
+|[[File:WhiteShaker.jpg|center|75px]]
+|-
+|HYY60
+|119
+|[['91 GMC Syclone]]
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]
+|8/10
+|[[File:1991GMCSyclone.jpg|center|75px]]
+|-
+|JBB89
+|119
+|[['91 GMC Syclone]] (2nd Color)
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]
+|8/10
+|[[File:Mainline 2025 '91 GMC Syclone Red Malaysia JBB89.jpg|center|75px]]
+|-
+|HYW22
+|120
+|[[Custom Kia EV6]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]<br>{{NM|2025|white}}
+|8/10
+|[[File:KiaEV6.jpg|center|75px]]
+|-
+|HYX63
+|120
+|[[Custom Kia EV6]] (2nd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]<br>{{NM|2025|white}}
+|8/10
+|[[File:HatsuneMiku.jpg|center|75px]]
+|-
+|HYY62
+|121
+|[['67 Ford Mustang Coupe]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]
+|1/10
+|[[File:1967MustangCustom.jpg|center|75px]]
+|-
+|HYY63
+|122
+|[[Range Rover Velar]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]
+|2/10
+|[[File:RangeRoverVelar.jpg|center|75px]]
+|-
+|HYY64
+|123
+|[[2018 Honda Civic Type R]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]
+|3/10
+|[[File:2018HondaFK8.jpg|center|75px]]
+|-
+|HYY26
+|123
+|[[2018 Honda Civic Type R]] (2nd Color)
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]<br><font color="black">'''Dollar Tree/Family Dollar Exclusive'''</font>
+|3/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JBB77
+|123
+|[[2018 Honda Civic Type R]] (3rd Color)
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]
+|3/10
+|[[File:2018HondaTypeR.jpg|center|75px]]
+|-
+|HYY65
+|124
+|[[Futurismo]]
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]
+|4/10
+|[[File:Futurismo.jpg|center|75px]]
+|-
+|HYX89
+|124
+|[[Futurismo]] (2nd Color)
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]
+|4/10
+|[[File:Purplerismo.jpg|center|75px]]
+|-
+|HYY66
+|125 
+|[[2020 Koenigsegg Jesko]]
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]
+|5/10
+|[[File:IkeaJesko.jpg|center|75px]]
+|-
+|JBB59
+|125 
+|[[2020 Koenigsegg Jesko]] (2nd Color)
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]
+|5/10
+|[[File:BattleJesko.jpg|center|75px]]
+|-
+|HYY67
+|126
+|[[HW Formula Solar]]
+|bgcolor="#07A7E1" |[[HW Celebration Racers Mini Collection (2025)|<font color="white">HW Celebration Racers</font>]]<br><font color="white">'''Earth Day'''</font>
+|4/10
+|[[File:SolarRacer.jpg|center|75px]]
+|-
+|HYY68
+|127
+|[['92 Ford Mustang]]
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|7/10
+|[[File:1992FordMustang.jpg|center|75px]]
+|-
+|HYY69
+|128
+|[[RRRoadster]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2025)|<font color="black">Compact Kings</font>]]
+|5/10
+|[[File:FCSter.jpg|center|75px]]
+|-
+|JBB97
+|128
+|[[RRRoadster]] (2nd Color)
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2025)|<font color="black">Compact Kings</font>]]
+|5/10
+|[[File:JBB97 Rrroadster 2025.jpg|center|75x75px]]
+|-
+|HYY70 
+|129 
+|[['68 Dodge Dart]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2025)|<font color="black">Compact Kings</font>]]
+|6/10 
+|[[File:1968DodgeDart.jpg|center|75px]]
+|-
+|HYY71
+|130
+|[['20 Jeep Gladiator]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]
+|6/10
+|[[File:NittoGladiator.jpg|center|75px]]
+|-
+|JBC40
+|130
+|[['20 Jeep Gladiator]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]<br>{{STH|2025}}
+|6/10
+|[[File:'20 Jeep Gladiator STH 2025.jpg|center|75px]]
+|-
+|HYY79
+|131 
+|[['71 Dodge Challenger]]
+|bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2025)|<font color="black">Muscle Mania</font>]]
+|1/10
+|[[File:1971Challenger.jpg|center|75px]]
+|-
+|HYW62
+|132
+|[[Snoopy]]
+|bgcolor="#2A2673" |[[HW Screen Time Mini Collection (2025)|<font color="white">HW Screen Time</font>]]
+|7/10
+|[[File:Snoopy25.jpg|center|75px]]
+|-
+|HYX28
+|133
+|[[Monster Dairy Delivery]]
+|bgcolor="#8A2E81" |[[HW Designed By Mini Collection (2025)|<font color="white">HW Designed By</font>]]
+|5/5
+|[[File:MonsterMilkDelivery.jpg|center|75px]]
+|-
+|HYX93
+|133
+|[[Monster Dairy Delivery]] (2nd Color)
+|bgcolor="#8A2E81" |[[HW Designed By Mini Collection (2025)|<font color="white">HW Designed By</font>]]
+|5/5
+|[[File:IcyDelivery.jpg|center|75px]]
+|-
+|HYY74
+|134
+|[['68 Corvette - Gas Monkey Garage]]
+|bgcolor="#231F20" |[[HW Dream Garage Mini Collection (2025)|<font color="white">HW Dream Garage</font>]]
+|5/5 
+|[[File:BlownCorvette.jpg|center|75px]]
+|-
+|HYY46
+|134
+|[['68 Corvette - Gas Monkey Garage]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2025)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|9/12
+|[[File:2025 RED Edition HYY46 Gas Monkey o4.jpg|center|75px]]
+|-
+|HYW30
+|135
+|[[Long Bloc]]
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]<br>{{NM|2025}}
+|9/10
+|[[File:LongBloc.jpg|center|75px]]
+|-
+|HYX97
+|135
+|[[Long Bloc]] (2nd Color)
+|bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]<br>{{NM|2025}}
+|9/10
+|[[File:GreenBloc.jpg|center|75px]]
+|-
+|HYY75
+|136
+|[[Salt Shaker]]
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|10/10
+|[[File:SaltShaker.jpg|center|75px]]
+|-
+|JBB80
+|136
+|[[Salt Shaker]] (2nd Color)
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2025)|<font color="white">X-Raycers</font>]]
+|10/10
+|[[File:SALT SHAKER JBB80 1 C.jpg|center|75px]]
+|-
+|HYY76
+|137
+|[[Rapid Pulse]]
+|bgcolor="#EBEBEB" |[[HW First Response Mini Collection (2025)|<font color="black">HW First Response </font>]]
+|5/5
+|[[File:EMTPulse.jpg|center|75px]]
+|-
+|JBB50
+|137
+|[[Rapid Pulse]] (2nd Color)
+|bgcolor="#EBEBEB" |[[HW First Response Mini Collection (2025)|<font color="black">HW First Response </font>]]
+|5/5
+|[[File:ResponsePulse.jpg|center|75px]]
+|-
+|HYY77
+|138
+|[[Pixel Shaker]]
+|bgcolor="#00AEE5" |[[HW Ride-Ons Mini Collection (2025)|<font color="white">HW Ride-Ons</font>]]
+|5/5
+|[[File:OrangePixel.jpg|center|75px]]
+|-
+|JBB54
+|138
+|[[Pixel Shaker]] (2nd Color)
+|bgcolor="#00AEE5" |[[HW Ride-Ons Mini Collection (2025)|<font color="white">HW Ride-Ons</font>]]
+|5/5
+|[[File:BluePixel.jpg|center|75px]]
+|-
+|HYY78
+|139
+|[[Custom '53 Cadillac]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]
+|9/10
+|[[File:1953CaddyPickup.jpg|center|75px]]
+|-
+|HYW24
+|140
+|[[Ford Model A Custom '31]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]<br>{{NM|2025|white}}
+|7/10
+|[[File:OldRed.jpg|center|75px]]
+|-
+|HYX92
+|140
+|[[Ford Model A Custom '31]] (2nd Color)
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]<br>{{NM|2025|white}}
+|7/10
+|[[File:EvilRed.jpg|center|75px]]
+|-
+|JBC25
+|141
+|[['85 Honda City Turbo II]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2025)|<font color="black">HW J-Imports</font>]]<br>{{TH|2025}}
+|5/5
+|[[File:1985HondaCity.jpg|center|75px]]
+|-
+|HYW41
+|142
+|[[McLaren W1]]
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]<br>{{NM|2025|white}}
+|6/10
+|[[File:McLarenW1.jpg|center|75px]]
+|-
+|JBC17
+|142
+|[[McLaren W1]] (2nd Color)
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]<br>{{NM|2025|white}}
+|6/10
+|[[File:'25McLarenW1.jpg|center|75px]]
+|-
+|JBC26
+|143
+|[[Birthday Burner]]
+|bgcolor="#07A7E1" |[[HW Celebration Racers Mini Collection (2025)|<font color="white">HW Celebration Racers</font>]]<br>{{TH|2025}}<br><font color="white">'''Happy Birthday!'''</font>
+|5/10
+|[[File:TreasureBurner.jpg|center|75px]]
+|-
+|HYY80
+|144
+|[[Nissan Skyline GT-R (BCNR33)]]
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|8/10
+|[[File:HKSPowerR33.jpg|center|75px]]
+|-
+|HYY04
+|144
+|[[Nissan Skyline GT-R (BCNR33)]] (2nd Color)
+|bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|8/10
+|[[File:HKST002.jpg|center|75px]]
+|-
+|HYY81
+|145
+|[[The Brave and the Bold Batmobile|Batmobile]]
+|bgcolor="black" |[[Batman Mini Collection (2025)|<font color="white">Batman</font>]]
+|4/5
+|[[File:BATBatmobile.jpg|center|75px]]
+|-
+|HYY82
+|146
+|[[Minecart]]
+|bgcolor="#2A2673" |[[HW Screen Time Mini Collection (2025)|<font color="white">HW Screen Time</font>]]
+|8/10
+|[[File:MinecraftMinecart.jpg|center|75px]]
+|-
+|HYY83
+|147 
+|[[1967 El Camino|Chevy El Camino]]
+|bgcolor="#2A2673" |[[HW Screen Time Mini Collection (2025)|<font color="white">HW Screen Time</font>]]<br>{{NIM|white}}
+|9/10
+|[[File:'67ElCamino.jpg|center|75px]]
+|-
+|HYW35
+|148
+|[[Cone Shaker]]
+|bgcolor="#D0CCC9" |[[HW Metro Mini Collection (2025)|<font color="black">HW Metro</font>]]<br>{{NM|2025}}
+|5/5
+|[[File:ConeShaker.jpg|center|75px]]
+|-
+|JBB62
+|148
+|[[Cone Shaker]] (2nd Color)
+|bgcolor="#D0CCC9" |[[HW Metro Mini Collection (2025)|<font color="black">HW Metro</font>]]<br>{{NM|2025}}
+|5/5
+|[[File:NeonShaker.jpg|center|75px]]
+|-
+|HYY84
+|149
+|[[Good Humor Truck|Quick Bite]]
+|bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2025)|<font color="black">Fast Foodie</font>]]
+|3/5 
+|[[File:FuegoFajitas.jpg|center|75px]]
+|-
+|JBB63
+|149
+|[[Good Humor Truck|Quick Bite]] (2nd Color)
+|bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2025)|<font color="black">Fast Foodie</font>]]
+|3/5 
+|[[File:Flamin'Fajitas.jpg|center|75px]]
+|-
+|HYY85
+|150
+|[[Honda CB750 Café]]
+| bgcolor="#87CEEB" |[[HW Moto Mini Collection (2025)|<font color="black">HW Moto</font>]]
+|1/5
+|[[File:HondaCaféRacer.jpg|center|75px]]
+|-
+|HYY37
+|150
+|[[Honda CB750 Café]] (2nd Color)
+| bgcolor="#87CEEB" |[[HW Moto Mini Collection (2025)|<font color="black">HW Moto</font>]]<br>{{KR}}
+|1/5
+|[[File:Honda750Cafe_Kroger.jpg|center|75px]]
+|-
+|JBB79
+|150
+|[[Honda CB750 Café]] (3rd Color)
+| bgcolor="#87CEEB" |[[HW Moto Mini Collection (2025)|<font color="black">HW Moto</font>]]
+|1/5
+|[[File:Honda CB750 Cafe.jpg|center|75px]]
+|-
+|HYY86
+|151
+|[[Rodger Dodger 2.0]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]
+|9/10 
+|[[File:EVDodger.jpg|center|75px]]
+|-
+|JBB65
+|151
+|[[Rodger Dodger 2.0]] (2nd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]
+|9/10 
+|[[File:EVDodger2.0.jpg|center|75px]]
+|-
+|HYY97
+|152
+|[['19 Chevy Silverado Trail Boss LT]]
+| bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]
+|8/10 
+|[[File:TrailBossLT.jpg|center|75px]]
+|-
+|HYY88
+|153
+|[[Buns of Steel]]
+|bgcolor="#DC2430" |[[Hot Wheels Let's Race Mini Collection (2025)|<font color="white">Hot Wheels Let's Race</font>]]
+|5/5
+|[[File:Bunso'Steel.jpg|center|75px]]
+|-
+|HYW87
+|154
+|[[Porsche 911 Rallye]]
+|bgcolor="#9A4A21" |[[Safari Mode Mini Collection (2025)|<font color="white">Safari Mode</font>]]
+|2/5
+|[[File:2022PorscheDakar.jpg|center|75px]]
+|-
+|JBC41
+|154
+|[[Porsche 911 Rallye]]
+|bgcolor="#9A4A21" |[[Safari Mode Mini Collection (2025)|<font color="white">Safari Mode</font>]]<br>{{STH|2025}}
+|2/5
+|[[File:PORSCHE 911 RALLYE.jpg|center|75x75px]]
+|-
+|HYY89
+|155
+|[[Big-Air Bel-Air]]
+| bgcolor="#9A4A21" |[[Safari Mode Mini Collection (2025)|<font color="white">Safari Mode</font>]]
+|3/5
+|[[File:OffRoadBelAir.jpg|center|75px]]
+|-
+|JBB51
+|155
+|[[Big-Air Bel-Air]] (2nd Color)
+| bgcolor="#9A4A21" |[[Safari Mode Mini Collection (2025)|<font color="white">Safari Mode</font>]]
+|3/5
+|[[File:BlueAirBelAir.jpg|center|75px]]
+|-
+|HYY90
+|156
+|[[HW Ultimate T-Rex Transporter]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]
+|4/10
+|[[File:GreenRex.jpg|center|75px]]
+|-
+|JBC10
+|156
+|[[HW Ultimate T-Rex Transporter]] (2nd Color)
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]
+|4/10
+|[[File:2nd 2025 HW Ultimate T-Rex Transporter-Transporteur.jpg|center|75x75px]]
+|-
+|HYY91
+|157
+|[['83 Chevy Silverado]]
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]
+|9/10
+|[[File:1983Silverado.jpg|center|75px]]
+|-
+|JMT29
+|157
+|[['83 Chevy Silverado]] (2nd Color)
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]
+|9/10
+|[[File:Hot Trucks 2025.jpg|center|75px]]
+|-
+|HYW33
+|158
+|[[Hoto Roto]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]<br>{{NM|2025|white}}
+|10/10
+|[[File:HotoRoto.jpg|center|75px]]
+|-
+|JBB74
+|158
+|[[Hoto Roto]] (2nd Color)
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2025)|<font color="white">Rod Squad</font>]]<br>{{NM|2025|white}}
+|10/10
+|[[File:CosmoHotRod.jpg|center|75px]]
+|-
+|HYY92
+|159
+|[[Ford GT]]
+|bgcolor="#282321" |[[HW Modified Mini Collection (2025)|<font color="white">HW Modified</font>]]
+|4/5
+|[[File:FordGTGT1.jpg|center|75px]]
+|-
+|JBB75
+|159
+|[[Ford GT]] (2nd Color)
+|bgcolor="#282321" |[[HW Modified Mini Collection (2025)|<font color="white">HW Modified</font>]]
+|4/5
+|[[File:FordGT1.jpg|center|75px]]
+|-
+|JBB02
+|160
+|[[Crate Racer]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]
+|5/10
+|[[File:HWTiresRacer.jpg|center|75px]]
+|-
+|JBB87
+|160
+|[[Crate Racer]] (2nd Color)
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]
+|5/10
+|[[File:HWCrateRacer.jpg|center|75px]]
+|-
+|HYY93
+|161
+|[['67 Shelby GT500 (2010)|'67 Shelby GT500]]
+| bgcolor="#C61F26" |[[Mustang 60th Mini Collection (2025)|<font color="white">Mustang 60th</font>]]
+|3/5
+|[[File:1967GT500.jpg|center|75px]]
+|-
+|JBB94
+|161
+|[['67 Shelby GT500 (2010)|'67 Shelby GT500]] (2nd Color)
+| bgcolor="#C61F26" |[[Mustang 60th Mini Collection (2025)|<font color="white">Mustang 60th</font>]]
+|3/5
+|[[File:Mainline 2025 '67 Shelby GT500 Black Malaysia JBB94.jpg|center|75px]]
+|-
+|JBB30
+|162
+|[[2018 Bentley Continental GT3]]
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]
+|7/10
+|[[File:BentleyGT3.jpg|center|75px]]
+|-
+|JBC18
+|162
+|[[2018 Bentley Continental GT3]] (2nd Color)
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]
+|7/10
+|[[File:Race day bentley gold.jpg|center|75x75px]]
+|-
+|HYY95
+|163
+|[['95 Mazda RX-7 Drift]]
+| bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]<br>{{NIM|white}}
+|9/10
+|[[File:1995MazdaDrift.jpg|center|75px]]
+|-
+|JBB57
+|163
+|[['95 Mazda RX-7 Drift]] (2nd Color)
+| bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]<br>{{NIM|white}}
+|9/10
+|[[File:MazdaDriftCar.jpg|center|75px]]
+|-
+|HYY96
+|164
+|[['70 Dodge Hemi Challenger]]
+| bgcolor="#D99526" |[[HW: '70s vs. '90s Mini Collection (2025)|<font color="white">HW: '70s vs. '90s</font>]]
+|10/10
+|[[File:1970Challenger.jpg|center|75px]]
+|-
+|HYY61
+|165
+|[['69 Mercury Cyclone]]
+|bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2025)|<font color="black">Muscle Mania</font>]] 
+|2/10
+|[[File:1969Cyclone.jpg|center|75px]]
+|-
+|HYY98
+|166
+|[[Disney Steamboat]]
+|bgcolor="#2A2673" |[[HW Screen Time Mini Collection (2025)|<font color="white">HW Screen Time</font>]]
+|10/10
+|[[File:Disney'sSteamboat.jpg|center|75px]]
+|-
+|HYX42
+|167
+|[[Mattel Dream Mobile]]
+|bgcolor="#07A7E1" |[[HW Celebration Racers Mini Collection (2025)|<font color="white">HW Celebration Racers</font>]]<br>'''[[Mattel|<font color="white">Mattel 80th Anniversary</font>]]'''
+|6/10
+|[[File:DreamCar.jpg|center|75px]]
+|-
+|JBC27
+|168
+|[[Nissan Leaf NISMO RC_02]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2025)|<font color="white">HW EV</font>]]<br>{{TH|2025}}
+|10/10
+|[[File:LeafNISMO.jpg|center|75px]]
+|-
+|JBB00
+|169
+|[['67 Austin Mini Van]]
+| bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]
+|10/10
+|[[File:AustinVan.jpg|center|75px]]
+|-
+|JBB68
+|169
+|[['67 Austin Mini Van]] (2nd Color)
+| bgcolor="#FDDD05" |[[HW Art Cars Mini Collection (2025)|<font color="black">HW Art Cars</font>]]
+|10/10
+|[[File:1967AustinVan.jpg|center|75px]]
+|-
+|JBB01
+|170
+|[[Madfast]]
+|bgcolor="#EA1B27" |[[Track Aces Mini Collection (2025)|<font color="black">Track Aces</font>]]
+|3/5
+|[[File:BenedictMadfast.jpg|center|75px]]
+|-
+|HYY09
+|170
+|[[Madfast]] (2nd Color)
+|bgcolor="#EA1B27" |[[Track Aces Mini Collection (2025)|<font color="black">Track Aces</font>]]
+|3/5
+|[[File:Redfast.jpg|center|75px]]
+|-
+|HYW36
+|171
+|[[Amaru GTC]]
+| bgcolor="#9A4A21" |[[Safari Mode Mini Collection (2025)|<font color="white">Safari Mode</font>]]<br/>{{NM|2025|white}}
+|4/5
+|[[File:AmaruGTC.jpg|center|75px]]
+|-
+|JBB52
+|171
+|[[Amaru GTC]] (2nd Color)
+| bgcolor="#9A4A21" |[[Safari Mode Mini Collection (2025)|<font color="white">Safari Mode</font>]]<br/>{{NM|2025|white}}
+|4/5
+|[[File:SafariSupercar.jpg|center|75px]]
+|-
+|HYW32
+|172
+|[[Renault Espace F1]]
+|bgcolor="#282321" |[[HW Modified Mini Collection (2025)|<font color="white">HW Modified</font>]]<br>{{NM|2025|white}}
+|5/5
+|[[File:RenaultEspaceF1.jpg|center|75px]]
+|-
+|JBB76
+|172
+|[[Renault Espace F1]] (2nd Color)
+|bgcolor="#282321" |[[HW Modified Mini Collection (2025)|<font color="white">HW Modified</font>]]<br>{{NM|2025|white}}
+|5/5
+|[[File:InvertEspace.jpg|center|75px]]
+|-
+|JBB03
+|173
+|[[1978 Dodge Li'l Red Express Truck]]
+|bgcolor="#F36C2A" |[[HW Hot Trucks Mini Collection (2025)|<font color="black">HW Hot Trucks</font>]]
+|10/10
+|[[File:DodgePickup.jpg|center|75px]]
+|-
+|HYW11
+|174
+|[[Peugeot 9X8 Hypercar]]
+|bgcolor="#32CD32" |[[HW Exotics Mini Collection (2025)|<font color="black">HW Exotics</font>]]<br>{{NM|2025}}
+|2/5
+|[[File:Peugeot9X8.jpg|center|75px]]
+|-
+|JBB04
+|175
+|[['71 Mustang Funny Car]]
+|bgcolor="#C61F26" |[[Mustang 60th Mini Collection (2025)|<font color="white">Mustang 60th</font>]]
+|4/5
+|[[File:FordFunnyCar.jpg|center|75px]]
+|-
+|JBC42
+|175
+|[['71 Mustang Funny Car]]
+|bgcolor="#C61F26" |[[Mustang 60th Mini Collection (2025)|<font color="white">Mustang 60th</font>]]<br>{{STH|2025}}
+|4/5
+|[[File:71 Mustang Funny Car.jpg|center|75x75px]]
+|-
+|HYW50
+|176
+|[['96 Dodge Viper GTS]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]<br>{{NM|2025}}
+|4/10
+|[[File:DodgeViperGTS.jpg|center|75px]]
+|-
+|JBB95
+|176
+|[['96 Dodge Viper GTS]] (2nd Color) 
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]<br>{{NM|2025}}
+|4/10
+|[[File:1996ViperGTS.jpg|center|75px]]
+|-
+|JBB07
+|177
+|[[Vespa 90 SS Super Sprint (1966)]]
+|bgcolor="#87CEEB" |[[HW Moto Mini Collection (2025)|<font color="black">HW Moto</font>]]
+|2/5
+|[[File:1966Vespa.jpg|center|75px]]
+|-
+|JBB05
+|178
+|[['17 Ford F-150 Raptor]]
+| bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]
+|9/10
+|[[File:2017FordRaptorRace.jpg|center|75px]]
+|-
+|HYY19
+|178
+|[['17 Ford F-150 Raptor]] (2nd Color - Zamac)
+| bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]<br>{{WM|2025|white}}
+|9/10
+|[[File:17 Ford F-150 Raptor Zamac (2).JPG|center|75x75px]]
+|-
+|JBB06
+|179
+|[['15 Land Rover Defender Double Cab]]
+| bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]
+|10/10
+|[[File:2015Defender.jpg|center|75px]]
+|-
+|HYY35
+|179
+|[['15 Land Rover Defender Double Cab]] (2nd Color)
+| bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]<br>{{KR|white}}
+|10/10
+|[[File:DefenderDoubleCab25DirtKroger.jpg|center|75px]]
+|-
+|JBC00
+|179
+|[['15 Land Rover Defender Double Cab]] (3rd Color)
+| bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2025)|<font color="white">HW Dirt</font>]]
+|10/10
+|[[File:Landdouble.jpg|center|75x75px]]
+|-
+|JBC28
+|180
+|[[Chill Mill]]
+|bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2025)|<font color="black">Fast Foodie</font>]]<br>{{TH|2025}}
+|4/5 
+|[[File:2025 Chill Mill (HWLR).jpg|center|75px]]
+|-
+|HYW43
+|181
+|[[Honda Motocompo]]
+|bgcolor="#87CEEB" |[[HW Moto Mini Collection (2025)|<font color="black">HW Moto</font>]]<br>{{NM|2025}}
+|3/5
+|[[File:HondaMotocompo.jpg|center|75px]]
+|-
+|JBC03
+|181
+|[[Honda Motocompo]] (2nd Color)
+|bgcolor="#87CEEB" |[[HW Moto Mini Collection (2025)|<font color="black">HW Moto</font>]]<br>{{NM|2025}}
+|3/5
+|[[File:2nd 2025 Honda Motocompo.jpg|center|75x75px]]
+|-
+|JBB08
+|182
+|[['62 Corvette Gasser]]
+|bgcolor="#01A551" |[[HW Reverse Rake Mini Collection (2025)|<font color="white">HW Reverse Rake</font>]]
+|4/5
+|[[File:ChevroletCorvetteGasser.jpg|center|75px]]
+|-
+|JBC43
+|182
+|[['62 Corvette Gasser]]
+|bgcolor="#01A551" |[[HW Reverse Rake Mini Collection (2025)|<font color="white">HW Reverse Rake</font>]]<br>{{STH|2025}}
+|4/5
+|[[File:‘62 Corvette Gasser.jpg|center|thumb|85x85px]]
+|-
+|JBB09
+|183
+|[[Drift'n Break]]
+|bgcolor="#FDBD13" |[[HW Wagons Mini Collection (2025)|<font color="black">HW Wagons</font>]]
+|1/5
+|[[File:DriftWagon.jpg|center|75px]]
+|-
+|JBC06
+|183
+|[[Drift'n Break]] (2nd Color)
+|bgcolor="#FDBD13" |[[HW Wagons Mini Collection (2025)|<font color="black">HW Wagons</font>]]
+|1/5
+|[[File:BrakeVan.jpg|center|75px]]
+|-
+|JBB10
+|184
+|[[Track Dwagon]]
+|bgcolor="#FDBD13" |[[HW Wagons Mini Collection (2025)|<font color="black">HW Wagons</font>]]
+|2/5
+|[[File:Track'dWagon.jpg|center|75px]]
+|-
+|HYY34
+|184
+|[[Track Dwagon]] (2nd Color)
+|bgcolor="#FDBD13" |[[HW Wagons Mini Collection (2025)|<font color="black">HW Wagons</font>]]<br>{{KR}}
+|2/5
+|[[File:Track-Dwagon-HW-Wagons-Kroger-2025.jpg|center|75px]]
+|-
+|JBB81
+|184
+|[[Track Dwagon]] (3rd Color)
+|bgcolor="#FDBD13" |[[HW Wagons Mini Collection (2025)|<font color="black">HW Wagons</font>]]
+|2/5
+|[[File:TrackDwagonP.jpg|center|75px]]
+|-
+|HYW38
+|185
+|[[BMW 635 CSi]]
+| bgcolor="#1E3C74" |[[Wild Widebody Mini Collection (2025)|<font color="white">Wild Widebody</font>]]<br>{{NM|2025|white}}
+|1/5
+|[[File:BMW635CSi.jpg|center|75px]]
+|-
+|JBB84
+|185
+|[[BMW 635 CSi]] (2nd Color)
+| bgcolor="#1E3C74" |[[Wild Widebody Mini Collection (2025)|<font color="white">Wild Widebody</font>]]<br>{{NM|2025|white}}
+|1/5
+|[[File:IMG 4595.JPG|center|75px]]
+|-
+|JBB11
+|186
+|[['89 Mercedes-Benz 560 SEC AMG]]
+|bgcolor="#1E3C74" |[[Wild Widebody Mini Collection (2025)|<font color="white">Wild Widebody</font>]]
+|2/5
+|[[File:560SECWidebody.jpg|center|75px]]
+|-
+|JBB85
+|186
+|[['89 Mercedes-Benz 560 SEC AMG]] (2nd Color)
+|bgcolor="#1E3C74" |[[Wild Widebody Mini Collection (2025)|<font color="white">Wild Widebody</font>]]
+|2/5
+|[[File:Mercedes560Blue.jpeg|center|75px]]
+|-
+|JBB12
+|187
+|[[Porsche 911 Carrera Clip]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]
+|6/10
+|[[File:CarreraClip.jpg|center|75px]]
+|-
+|JBC11
+|187
+|[[Porsche 911 Carrera Clip]] (2nd Color)
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]
+|6/10
+|[[File:2025porscheclipblue.jpg|center|75px]]
+|-
+|HYW39
+|188
+|[[Decidedly Go]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]<br/>{{NM|2025}}
+|7/10
+|[[File:DecidedlyGo.jpg|center|75px]]
+|-
+|JBC12
+|188
+|[[Decidedly Go]] (2nd Color)
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]<br/>{{NM|2025}}
+|7/10
+|[[File:DG8ballblue.jpg|center|75x75px]]
+|-
+|JBB13
+|189
+|[['67 Mustang]]
+|bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2025)|<font color="black">Muscle Mania</font>]] 
+|3/10
+|[[File:1967FordMustang.jpg|center|75px]]
+|-
+|JBB14
+|190
+|[[Gordon Murray Automotive T.50s]]
+|bgcolor="#32CD32" |[[HW Exotics Mini Collection (2025)|<font color="black">HW Exotics</font>]]
+|3/5
+|[[File:GMAT.50s.jpg|center|75px]]
+|-
+|HYY48
+|190
+|[[Gordon Murray Automotive T.50s]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2025)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|11/12
+|[[File:GMA T.50s (1).jpg|center|75px]]
+|-
+|HYW34
+|191
+|[[Ferrari SF90 Stradale]]
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2025)|<font color="black">Factory Fresh</font>]]<br>{{NM|2025}}
+|5/5
+|[[File:FerrariSF90Stradale.jpg|center|75px]]
+|-
+|HYY08
+|191
+|[[Ferrari SF90 Stradale]] (2nd Color)
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2025)|<font color="black">Factory Fresh</font>]]<br>{{NM|2025}}
+|5/5
+|[[File:2024FerrarISF90Stradale.jpg|center|75px]]
+|-
+|JBB31
+|192
+|[[Czinger 21C]]
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]
+|1/10
+|[[File:2024Czinger.jpg|center|75px]]
+|-
+|JBB96
+|192
+|[[Czinger 21C]] (2nd Color)
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]
+|1/10
+|[[File:Czinger-21C-Peak-Pursuit-White-2025.jpg|center|75x75px]]
+|-
+|HYX18
+|193
+|[['67 Lotus Type 49|'68 Lotus Type 49]]
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]
+|8/10
+|[[File:GoldLeafLotus.jpg|center|75px]]
+|-
+|HYY17
+|193
+|[['67 Lotus Type 49|'68 Lotus Type 49]] (2nd Color)
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]<br>{{KR|white}}
+|8/10
+|[[File:Lotus-Type-49-HW-Race-Day-ZAMAC-2025.jpg|center|75px]]
+|-
+|HYY56
+|194
+|[[Formula E Gen3]]
+|bgcolor="#EA1B27" |[[Track Aces Mini Collection (2025)|<font color="black">Track Aces</font>]]
+|4/5
+|[[File:McLarenFEGen3.jpg|center|75px]]
+|-
+|HYW40
+|195
+|[[Alfa Romeo Giulia TI Super]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2025)|<font color="black">Compact Kings</font>]]<br>{{NM|2025}}
+|7/10
+|[[File:AlfaRomeoGiuliaTISuper.jpg|center|75px]]
+|-
+|JBB98
+|195
+|[[Alfa Romeo Giulia TI Super]] (2nd Color)
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2025)|<font color="black">Compact Kings</font>]]<br>{{NM|2025}}
+|7/10
+|[[File:Alfa Romeo Giulia TI Super 1963 (1a) - HotWheels.jpg|center|75x75px]]
+|-
+|HYX24
+|196
+|[[Mazda RX-3 (Tooned)|Mazda RX-3]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2025)|<font color="black">Compact Kings</font>]]
+|8/10
+|[[File:'ToonedMazdaRX-3GT.jpg|center|75px]]
+|-
+|HYW42
+|197
+|[[Hot Wheengs]]
+|bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2025)|<font color="black">Fast Foodie</font>]]<br>{{NM|2025}}
+|5/5
+|[[File:HotWheengs.jpg|center|75px]]
+|-
+|JBC02
+|197
+|[[Hot Wheengs]] (2nd Color)
+|bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2025)|<font color="black">Fast Foodie</font>]]<br>{{NM|2025}}
+|5/5
+|[[File:2nd 2025 Hot Wheengs.jpg|center|75px]]
+|-
+|HYW59
+|198
+|[[Ferrari F40 Competizione]]
+|bgcolor="#32CD32" |[[HW Exotics Mini Collection (2025)|<font color="black">HW Exotics</font>]]<br>{{NM|2025}}
+|4/5
+|[[File:FerrariF40Competizione.jpg|center|75px]]
+|-
+|JBB92
+|198
+|[[Ferrari F40 Competizione]] (2nd Color)
+|bgcolor="#32CD32" |[[HW Exotics Mini Collection (2025)|<font color="black">HW Exotics</font>]]<br>{{NM|2025}}
+|4/5
+|[[File:FerrariF40C.jpg|center|75px]]
+|-
+|JBB20
+|199
+|[[Audi 90 quattro]]
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]
+|2/10
+|[[File:AudiQuattroGTO.jpg|center|75px]]
+|-
+|JBC04
+|199
+|[[Audi 90 quattro]] (2nd Color)
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]
+|2/10
+|[[File:Audi 90 Quattro IMSA GTO (1d) - HotWheels.jpg|center|75x75px]]
+|-
+|JBB21
+|200
+|[[VW T3 Custom]]
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]
+|3/10
+|[[File:VolkswagenT3Custom.jpg|center|75px]]
+|-
+|HYY47
+|200
+|[[VW T3 Custom]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2025)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|10/12
+|[[File:VW T3 Custom. Red Edition (1).jpg|center|75px]]
+|-
+|JBC05 
+|200
+|[[VW T3 Custom]] (3rd Color)
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]
+|3/10
+|[[File:JBC05 o4.jpg|center|75px]]
+|-
+|JBB22
+|201
+|[[Honda Civic Custom]]
+|bgcolor="#01A551" |[[HW Reverse Rake Mini Collection (2025)|<font color="white">HW Reverse Rake</font>]]
+|5/5
+|[[File:Honda Civic Custom 2025.jpg|center|75px]]
+|-
+|JBC29
+|202
+|[[Chevroletor]]
+|bgcolor="#EA1B27" |[[Track Aces Mini Collection (2025)|<font color="black">Track Aces</font>]]<br>{{TH|2025}}
+|5/5
+|[[File:2025 General Motors Chevroletor.jpg|center|75px]]
+|-
+|HYW44
+|203
+|[[Lil' Roar]]
+|bgcolor="#9A4A21" |[[Safari Mode Mini Collection (2025)|<font color="white">Safari Mode</font>]]<br/>{{NM|2025|white}}
+|5/5
+|[[File:Lil'Roar.jpg|center|75px]]
+|-
+|JBB23
+|204
+|[[Terra-Tracktyl]]
+|bgcolor="#F07121"|[[HW Track Champs Mini Collection (2025)|<font color="white">HW Track Champs</font>]]
+|1/5
+|[[File:Terratracktyl.jpg|center|75px]]
+|-
+|JBB82
+|204
+|[[Terra-Tracktyl]] (2nd Color)
+|bgcolor="#F07121"|[[HW Track Champs Mini Collection (2025)|<font color="white">HW Track Champs</font>]]
+|1/5
+|[[File:Terra-Tracktyl, 2nd Color.jpg|center|75px]]
+|-
+|JBB24
+|205
+|[[Pontiac Aztek Custom]]
+|bgcolor="#1E3C74" |[[Wild Widebody Mini Collection (2025)|<font color="white">Wild Widebody</font>]]
+|3/5
+|[[File:2004PontiacAztek.jpg|center|75px]]
+|-
+|JBC09
+|205
+|[[Pontiac Aztek Custom]] (2nd Color)
+|bgcolor="#1E3C74" |[[Wild Widebody Mini Collection (2025)|<font color="white">Wild Widebody</font>]]
+|3/5
+|[[File:AztekCustomQ.jpg|center|75px]]
+|-
+|JJM45
+|205
+|[[Pontiac Aztek Custom]] (3rd Color)
+|bgcolor="#1E3C74" |[[Wild Widebody Mini Collection (2025)|<font color="white">Wild Widebody</font>]]<br>{{DG|white}}
+|3/5
+|[[File:2026 dollar 4.jpg|center|100x100px]]
+|-
+|JBB25
+|206
+|[[Speed Driver]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]
+|8/10
+|[[File:SpeedDriver.jpg|center|75px]]
+|-
+|JBB88
+|206
+|[[Speed Driver]] (2nd Color)
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]
+|8/10
+|[[File:2nd 2025 Speed Driver.jpg|center|75px]]
+|-
+|JBB26
+|207
+|[[Ravenger S/T]]
+|bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2025)|<font color="black">Muscle Mania</font>]] 
+|4/10
+|[[File:Bluevenger.jpg|center|75px]]
+|-
+|JBC14
+|207
+|[[Ravenger S/T]] (2nd Color)
+|bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2025)|<font color="black">Muscle Mania</font>]] 
+|4/10
+|[[File:2nd 2025 Ravenger ST.jpg|center|75x75px]]
+|-
+|JBB27
+|208
+|[['69 Dodge Coronet Superbee]]
+|bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2025)|<font color="black">Muscle Mania</font>]] 
+|5/10
+|[[File:DodgeSuperbee.jpg|center|75px]]
+|-
+|JBB28
+|209
+|[[McLaren Speedtail]]
+|bgcolor="#32CD32" |[[HW Exotics Mini Collection (2025)|<font color="black">HW Exotics</font>]]
+|5/5
+|[[File:2019McLarenSpeedtail.jpg|center|75px]]
+|-
+|JBC44
+|209
+|[[McLaren Speedtail]]
+|bgcolor="#32CD32" |[[HW Exotics Mini Collection (2025)|<font color="black">HW Exotics</font>]]<br>{{STH|2025}}
+|5/5
+|[[File:McLaren Speedtail.jpg|center|thumb|75x75px]]
+|-
+|JBB29
+|210
+|[[Land Rover Defender 90]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]
+|5/10
+|[[File:LandRoverNinety.jpg|center|75px]] 
+|-
+|HYY18
+|210
+|[[Land Rover Defender 90]] (2nd Color - Zamac)
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]<br>{{WM|2025}}
+|5/10
+|[[File:LAND ROVER DEFENDER 90 HYY18 2 C.jpg|center|75px]]
+|-
+|JBC16
+|210
+|[[Land Rover Defender 90]] (3rd Color)
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]
+|5/10
+| [[File:2nd 2025 Land Rover Defender 90.jpg|center|75x75px]]
+|-
+|JJM44
+|210
+|[[Land Rover Defender 90]] (4th Color)
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]<br>{{DG}}
+|5/10
+| [[File:2026 dollar 3.jpg|center|100x100px]]
+|-
+|HYY94
+|211
+|[[Custom '18 Ford Mustang GT]]
+|bgcolor="#C61F26" |[[Mustang 60th Mini Collection (2025)|<font color="white">Mustang 60th</font>]]
+|5/5
+|[[File:2018CustomMustang.jpg|center|75px]]
+|-
+|JBC30
+|212
+|[[Honda S800 Racing]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2025)|<font color="black">Compact Kings</font>]]<br>{{TH|2025}}
+|9/10
+|[[File:1968HondaS800.jpg|center|75px]]
+|-
+|HYW46
+|213
+|[[Lotus Cortina]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2025)|<font color="black">Compact Kings</font>]]<br>{{NM|2025}}
+|10/10
+|[[File:LotusCortina.jpg|center|75px]]
+|-
+|JBB15
+|214
+|[[2013 SRT Viper]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]
+|6/10
+|[[File:2013SRTViper.jpg|center|75px]]
+|-
+|JBB32
+|215
+|[[Blitzspeeder]]
+|bgcolor="#F07121"|[[HW Track Champs Mini Collection (2025)|<font color="white">HW Track Champs</font>]]
+|2/5
+|[[File:Greenspeeder.jpg|center|75px]]
+|-
+|JBB83
+|215
+|[[Blitzspeeder]] (2nd Color)
+|bgcolor="#F07121"|[[HW Track Champs Mini Collection (2025)|<font color="white">HW Track Champs</font>]]
+|2/5
+|[[File:Blitzspeeder 2025, 2nd Color.jpg|center|75px]]
+|-
+|HYW45
+|216
+|[[Quick Chat]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]<br>{{NM|2025}}
+|9/10
+|[[File:QuickChat.jpg|center|75px]]
+|-
+|JBC13
+|216
+|[[Quick Chat]] (2nd Color)
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]<br>{{NM|2025}}
+|9/10
+|[[File:QCv2silver.jpg|center|75px]]
+|-
+|JBB33
+|217
+|[[King Kuda]]
+|bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2025)|<font color="black">Muscle Mania</font>]] 
+|6/10
+|[[File:KingKuda.jpg|center|75px]]
+|-
+|HYW47
+|218
+|[[Mod Mill]]
+|bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2025)|<font color="black">Muscle Mania</font>]]<br>{{NM|2025}}
+|7/10
+|[[File:ModMill.jpg|center|75px]]
+|-
+|JBC15
+|218
+|[[Mod Mill]] (2nd Color)
+|bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2025)|<font color="black">Muscle Mania</font>]]<br>{{NM|2025}}
+|7/10
+|[[File:Mod-Mill-Muscle-Mania-2025-Green.jpg|center|75x75px]]
+|-
+|JBB34
+|219
+|[[Ford Mustang Dark Horse]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]
+|7/10
+|[[File:DRKHRS.jpg|center|75px]]
+|-
+|JBB35
+|220
+|[[Porsche 911 GT3 RS (2016)|Porsche 911 GT3 RS]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]
+|8/10
+|[[File:2016PorscheGT3.jpg|center|75px]]
+|-
+|JBB36
+|221
+|[['94 Bugatti EB110 SS]]
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]
+|9/10
+|[[File:1994Bugatti.jpg|center|75px]]
+|-
+|JBC45
+|221
+|[['94 Bugatti EB110 SS]]
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]<br>{{STH|2025}}
+|9/10
+|[[File:'94 Bugatti EB110 SS.jpg|center|75px]]
+|-
+|HYW48
+|222
+|[[Ferrari 365 GTB4 Competizione]]
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]<br>{{NM|2025|white}}
+|10/10
+|[[File:Ferrari365Competizione.jpg|center|75px]]
+|-
+|JBC19
+|222
+|[[Ferrari 365 GTB4 Competizione]] (2nd Color)
+|bgcolor="#1F1F21" |[[HW Race Day Mini Collection (2025)|<font color="white">HW Race Day</font>]]<br>{{NM|2025|white}}
+|10/10
+|[[File:Ferrari365C.jpg|center|75px]]
+|-
+|JBB37
+|223
+|[[Layin' Lowrider]]
+|bgcolor="#07A7E1" |[[HW Celebration Racers Mini Collection (2025)|<font color="white">HW Celebration Racers</font>]]<br><font color="white">'''Cinco de Mayo'''</font>
+|7/10
+|[[File:Cincorider.jpg|center|75px]]
+|-
+|HYW51
+|224
+|[[Honda VFR750R (RC30)]]
+|bgcolor="#87CEEB" |[[HW Moto Mini Collection (2025)|<font color="black">HW Moto</font>]]<br>{{NM|2025}}
+|4/5
+|[[File:HondaVFR750R.jpg|center|75px]]
+|-
+|JBB38
+|225
+|[[Pagani Utopia]]
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]
+|4/10
+|[[File:2025PaganiUtopia.jpg|center|75px]]
+|-
+|JBB39
+|226
+|[[Mazda 787B]]
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]
+|5/10
+|[[File:Mazdaspeed787B.jpg|center|75px]]
+|-
+|JBB40
+|227
+|[[Volvo 240 Drift Wagon]]
+|bgcolor="#FDBD13" |[[HW Wagons Mini Collection (2025)|<font color="black">HW Wagons</font>]]
+|3/5
+|[[File:HYY20loose.png|center|75px]]
+|-
+|HYY20
+|227
+|[[Volvo 240 Drift Wagon]] (2nd Color - Zamac)
+|bgcolor="#FDBD13" |[[HW Wagons Mini Collection (2025)|<font color="black">HW Wagons</font>]]<br>{{WM|2025}}
+|3/5
+|[[File:Volvo 240 Drift Wagon.JPG|center|thumb|100x100px]]
+|-
+|HYW49
+|228
+|[[Twin Dorado]]
+|bgcolor="#F07121"|[[HW Track Champs Mini Collection (2025)|<font color="white">HW Track Champs</font>]]<br>{{NM|2025|white}}
+|3/5
+|[[File:TwinDorado.jpg|center|75px]]
+|-
+|JBC31
+|229
+|[[Shark Bite]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2025)|<font color="black">Experimotors</font>]]<br>{{TH|2025}}
+|10/10
+|[[File:2025 Shark Bite.jpg|center|75px]]
+|-
+|JBB41
+|230
+|[['73 Pontiac Firebird]]
+|bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2025)|<font color="black">Muscle Mania</font>]] 
+|8/10
+|[[File:1973Firebird.jpg|center|75px]]
+|-
+|JBB42
+|231
+|[['73 Honda Civic Custom]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]
+|9/10
+|[[File:1973CustomCivic.jpg|center|75px]]
+|-
+|JBC46
+|231
+|[['73 Honda Civic Custom]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]<br>{{STH|2025}}
+|9/10
+|[[File:‘73 HONDA CIVICE CUSTOM.jpg|center|75px]]
+|-
+|HYW57
+|232
+|[[1966 Bat Boat]]
+|bgcolor="black" |[[Batman Mini Collection (2025)|<font color="white">Batman</font>]]<br>{{NM|2025|white}}
+|5/5
+|[[File:Batboat.jpg|center|75px]]
+|-
+|JBB43
+|233
+|[[Custom '56 Ford Truck]]
+|bgcolor="#07A7E1"|[[HW Celebration Racers Mini Collection (2025)|<font color="white">HW Celebration Racers</font>]]<br><font color="white">'''Day of the Dead/Halloween'''
+|8/10
+|[[File:FordTruckCustom.jpg|center|75px]]
+|-
+|HYW52
+|234
+|[[Feline Lucky]]
+|bgcolor="#07A7E1" |[[HW Celebration Racers Mini Collection (2025)|<font color="white">HW Celebration Racers</font>]]<br>{{NM|2025|white}}<br><font color="white">'''''Maneki-neko'' Day'''</font>
+|9/10
+|[[File:FelineLucky.jpg|center|75px]]
+|-
+|JBC32
+|235
+|[[1966 Triumph Tiger 100]]
+| bgcolor="#87CEEB" |[[HW Moto Mini Collection (2025)|<font color="black">HW Moto</font>]]<br>{{TH|2025}}
+|5/5
+|[[File:TriumphRaceBike.jpg|center|75px]]
+|-
+|JBB44
+|236
+|[[Limited Grip]]
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]
+|6/10
+|[[File:LimitedGripDriftTruck.jpg|center|75px]]
+|-
+|HYW55
+|237
+|[[McMurtry Spéirling]]
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]<br>{{NM|2025}}
+|7/10
+|[[File:McMurtrySpéirling.jpg|center|75px]]
+|-
+|HYW54
+|238
+|[[Jaguar XJC V12 Coupe]]
+| bgcolor="#1E3C74" |[[Wild Widebody Mini Collection (2025)|<font color="white">Wild Widebody</font>]]<br>{{NM|2025|white}}
+|4/5
+|[[File:JaguarXJC.jpg|center|75px]]
+|-
+|HYY21
+|238
+|[[Jaguar XJC V12 Coupe]] (2nd Color - Zamac)
+| bgcolor="#1E3C74" |[[Wild Widebody Mini Collection (2025)|<font color="white">Wild Widebody</font>]]<br>{{NM|2025|white}}<br>{{WM|2025|white}}
+|4/5
+|[[File:HYY21 ZAMAK Jaguar o1.jpg|center|thumb|69x69px]]
+|-
+|HYW37
+|239
+|[[Porsche 911 Turbo Cabriolet]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2025)|<font color="black">Then and Now</font>]]<br>{{NM|2025}}
+|10/10
+|[[File:964TurboConvertible.jpg|center|75px]]
+|-
+|JBB45
+|240
+|[['20 Dodge Charger Hellcat]]
+|bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2025)|<font color="black">Muscle Mania</font>]]
+|9/10
+|[[File:2020DodgeHellcat.jpg|center|75px]]
+|-
+|JBC47
+|240
+|[['20 Dodge Charger Hellcat]]
+|bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2025)|<font color="black">Muscle Mania</font>]]<br>{{STH|2025}}
+|9/10
+|[[File:'20 Dodge Charger Hellcat.jpg|center|thumb|70x70px]]
+|-
+|JBB46
+|241
+|[[Mo-Stash]]
+|bgcolor="#07A7E1" |[[HW Celebration Racers Mini Collection (2025)|<font color="white">HW Celebration Racers</font>]]<br><font color="white">'''Movember'''</font>
+|10/10
+|[[File:MO-STASH JBB46 1 C.jpg|center|75px]]
+|-
+|HYW58
+|242
+|[[El Segundo Rallye]]
+|bgcolor="#F07121"|[[HW Track Champs Mini Collection (2025)|<font color="white">HW Track Champs</font>]]<br>{{NM|2025|white}}
+|4/5
+|[[File:ElSegundoRallye.jpg|center|75px]]
+|-
+|JBB47
+|243
+|[[Mazda RX-3]]
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]
+|8/10
+|[[File:Mazzdarx32025.jpg|center|75x75px]]
+|-
+|HYW56
+|244
+|[[Gone Mad]]
+|bgcolor="#FDBD13" |[[HW Wagons Mini Collection (2025)|<font color="black">HW Wagons</font>]]<br>{{NM|2025}}
+|4/5
+|[[File:GoneMad.jpg|center|75px]]
+|-
+|JBB48
+|245
+|[[BMW M3 Wagon]]
+|bgcolor="#FDBD13" |[[HW Wagons Mini Collection (2025)|<font color="black">HW Wagons</font>]]
+|5/5
+|[[File:M3WagonGreen.jpg|center|75px]]
+|-
+|JBC48
+|245
+|[[BMW M3 Wagon]]
+|bgcolor="#FDBD13" |[[HW Wagons Mini Collection (2025)|<font color="black">HW Wagons</font>]]<br>{{STH|2025}}
+|5/5
+|[[File:BMW M3 WAGON.jpg|center|75x75px]]
+|-
+|JBC33
+|246
+|[['84 Audi Sport quattro]]
+| bgcolor="#1E3C74" |[[Wild Widebody Mini Collection (2025)|<font color="white">Wild Widebody</font>]]<br>{{TH|2025}}
+|5/5
+|[[File:1984quattro.jpg|center|75px]]
+|-
+|JBB49
+|247
+|[[Ford RS200]]
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]<br>{{NIM}}
+|9/10
+|[[File:Regular 2025 Ford RS200.jpg|center|thumb|77x77px]]
+|-
+|JBC49
+|247
+|[[Ford RS200]]
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]<br>{{NIM}}<br>{{STH|2025}}
+|9/10
+|[[File:2025ML-247B (Large).JPG|center|75px]]
+|-
+|JJM43
+|247
+|[[Ford RS200]] (2nd Color)
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]<br>{{NIM}}<br>{{DG}}
+|9/10
+|[[File:2026 dollar 2.jpg|center|100x100px]]
+|-
+|HYW29
+|248
+|[[Polestar TRX]]
+|bgcolor="#F9C62C" |[[Peak Pursuit Mini Collection (2025)|<font color="black">Peak Pursuit</font>]]<br>{{NM|2025}}
+|10/10
+|[[File:PolestarTRX.jpg|center|75px]]
+|-
+|JBC34
+|249
+|[[Triumph TR6]]
+|bgcolor="#F07121"|[[HW Track Champs Mini Collection (2025)|<font color="white">HW Track Champs</font>]]<br>{{TH|2025}}
+|5/5
+|[[File:2025 Triumph TR6.jpg|center|75x75px]]
+|-
+|HYW53
+|250
+|[[1983 Porsche 928S]]
+|bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2025)|<font color="black">Muscle Mania</font>]]<br>{{NM|2025}}
+|10/10
+|[[File:Porsche928.jpg|center|75px]]
+|-
+|JJM42
+|250
+|[[1983 Porsche 928S]] (2nd Color)
+|bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2025)|<font color="black">Muscle Mania</font>]]<br>{{NM|2025}}<br>{{DG}}
+|10/10
+|[[File:JJM42 1.jpg|center|75px]]
+|-
+|}
+
+{{Lists}}
+[[Category:2025 Hot Wheels]]
+[[Category:Lists of Hot Wheels by year]]

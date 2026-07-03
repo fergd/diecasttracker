@@ -1,0 +1,1807 @@
+This article is a '''list of [[Hot Wheels]]''' released in '''2000.'''
+
+==[[:Category:Mainline Segment|Mainline Segment]]==
+===[[Future Fleet 2000 Series]]===
+{| class="wikitable" background="#C0C0C0" style="border:1px solid #C0C0C0;" border="1" cellspacing="1" width="60%"
+! style="border-style: none none solid solid; | '''Toy #'''
+! style="border-style: none none solid solid; | '''Col. #'''
+! style="border-style: none none solid solid; | '''Model Name'''
+! style="border-style: none none solid solid; | '''Series'''
+! style="border-style: none none solid solid; | '''Series #'''
+! style="border-style: none none solid solid; | '''Photo'''
+|-
+|26004
+|001
+|[[Ford GT-90]]
+|bgcolor="yellow"|Future Fleet 2000
+|1/4​
+|[[Image:Ford GT-90 Blk.JPG|75px]]
+|-
+|26005
+|002
+|[[Pontiac Rageous]]
+|bgcolor="yellow"|Future Fleet 2000
+|2/4​
+|[[Image:Pontiac Rageous Blk.JPG|75px]]
+|-
+|26006
+|003
+|[[Jeepster]]
+|bgcolor="yellow"|Future Fleet 2000
+|3/4​
+|[[Image:Jeepster_Blk.JPG|75px]]
+|-
+|26007
+|004
+|[[Chrysler Thunderbolt]]
+|bgcolor="yellow"|Future Fleet 2000
+|4/4​
+|[[Image:Chrysler_Thunderbolt_CD.JPG|75px]]
+|}
+
+===[[Hot Rod Magazine Series (2000)|Hot Rod Magazine Series]]===
+{| class="wikitable" background="#C0C0C0" style="border:1px solid #C0C0C0;" border="1" cellspacing="1" width="60%"
+! style="border-style: none none solid solid; | '''Toy #'''
+! style="border-style: none none solid solid; | '''Col. #'''
+! style="border-style: none none solid solid; | '''Model Name'''
+! style="border-style: none none solid solid; | '''Series'''
+! style="border-style: none none solid solid; | '''Series #'''
+! style="border-style: none none solid solid; | '''Photo'''
+|-
+|26016
+|005
+|[[Phaeton]]
+|bgcolor="black"|Hot Rod Magazine
+|1/4​
+|[[Image:Phaeton_Red.JPG|75px]]
+|-
+|26017
+|006
+|[[Track T]]
+|bgcolor="black"|Hot Rod Magazine
+|2/4​
+|[[Image:TrackT_YelSB.JPG|75px]]
+|-
+|26018
+|007
+|[[Tail Dragger]]
+|bgcolor="black"|Hot Rod Magazine
+|3/4​
+|[[Image:Tail_Dragger_Wht.JPG|75px]]
+|-
+|26019
+|008
+|[['33 Ford Roadster]]
+|bgcolor="black"|Hot Rod Magazine<br>'''New In Mainline'''
+|4/4​
+|[[File:33_Ford_Roadster_Grn.JPG|75px]]
+|}
+
+===[[Seein' 3-D Series (2000)|Seein' 3-D Series]]===
+{| class="wikitable" background="#C0C0C0" style="border:1px solid #C0C0C0;" border="1" cellspacing="1" width="60%"
+! style="border-style: none none solid solid; | '''Toy #'''
+! style="border-style: none none solid solid; | '''Col. #'''
+! style="border-style: none none solid solid; | '''Model Name'''
+! style="border-style: none none solid solid; | '''Series'''
+! style="border-style: none none solid solid; | '''Series #'''
+! style="border-style: none none solid solid; | '''Photo'''
+|-
+|26008
+|009
+|[[Propper Chopper]]
+|bgcolor="lightblue"|Seein' 3-D
+|1/4​
+|[[Image:Propperchopper.jpg|75px]]
+|-
+|26009
+|010
+|[[1970 Dodge Charger Daytona]]
+|bgcolor="lightblue"|Seein' 3-D
+|2/4​
+|[[Image:1970_Daytona_Blu5sp.JPG|75px]]
+|-
+|26010
+|011
+|[[Lexus SC400]]
+|bgcolor="lightblue"|Seein' 3-D
+|3/4​
+|[[Image:Lexussc400.jpg|75px]]
+|-
+|26011
+|012
+|[[Olds 442 W-30|Olds 442]]
+|bgcolor="lightblue"|Seein' 3-D
+|4/4​
+|[[Image:Olds 442 W-30 MtGrn.JPG|75px]]
+|}
+
+===[[Snack Time Series (2000)|Snack Time Series]]===
+{| class="wikitable" background="#C0C0C0" style="border:1px solid #C0C0C0;" border="1" cellspacing="1" width="60%"
+! style="border-style: none none solid solid; | '''Toy #'''
+! style="border-style: none none solid solid; | '''Col. #'''
+! style="border-style: none none solid solid; | '''Model Name'''
+! style="border-style: none none solid solid; | '''Series'''
+! style="border-style: none none solid solid; | '''Series #'''
+! style="border-style: none none solid solid; | '''Photo'''
+|-
+|26012
+|013
+|[[Callaway C7]]
+|bgcolor="yellow"|Snack Time
+|1/4​
+|[[Image:Callaway_C7_MtGrn5SP.JPG|75px]]
+|-
+|26013
+|014
+|[[IROC Firebird|Firebird]]
+|bgcolor="yellow"|Snack Time
+|2/4​
+|[[Image:IROC_Firebird_Org.JPG|75px]]
+|-
+|26014
+|015
+|[[Monte Carlo Concept Car]]
+|bgcolor="yellow"|Snack Time
+|3/4​
+|[[Image:Monte_Carlo_Concept_Blu.JPG|75px]]
+|-
+|26015
+|016
+|[[Dodge Sidewinder]]
+|bgcolor="yellow"|Snack Time
+|4/4​
+|[[Image:Dodge Sidwinder Yel.JPG|75px]]
+|}
+
+===[[Mad Maniax Series (2000)|Mad Maniax Series]]===
+{| class="wikitable" background="#C0C0C0" style="border:1px solid #C0C0C0;" border="1" cellspacing="1" width="60%"
+! style="border-style: none none solid solid; | '''Toy #'''
+! style="border-style: none none solid solid; | '''Col. #'''
+! style="border-style: none none solid solid; | '''Model Name'''
+! style="border-style: none none solid solid; | '''Series'''
+! style="border-style: none none solid solid; | '''Series #'''
+! style="border-style: none none solid solid; | '''Photo'''
+|-
+|26020
+|017
+|[[Hot Wheels 500]]
+|bgcolor="purple"|Mad Maniax
+|1/4​
+|[[Image:No_Fear_Race_Car_Blu.JPG|75px]]
+|-
+|26021
+|018
+|[[Camaro Z-28]]
+|bgcolor="purple"|Mad Maniax
+|2/4​
+|[[File:Camaro_Z28_Silv.JPG|75px]]
+|-
+|26022
+|019
+|[[Slideout]]
+|bgcolor="purple"|Mad Maniax
+|3/4​
+|[[Image:SlideOut Blk.JPG|75px]]
+|-
+|26023
+|020
+|[[Twin Mill II]]
+|bgcolor="purple"|Mad Maniax
+|4/4​
+|[[Image:Twin_Mill_II_Org.JPG|75px]]
+|}
+
+===[[Attack Pack Series (2000)|Attack Pack Series]]===
+{|class="wikitable" cellspacing="1" width="60%" border="1" style="border:1px solid #C0C0C0;"
+! style="border-style: none none solid solid; |'''Toy #'''
+! style="border-style: none none solid solid; |'''Col. #'''
+! style="border-style: none none solid solid; |'''Model Name'''
+! style="border-style: none none solid solid; |'''Series'''
+! style="border-style: none none solid solid; |'''Series #'''
+! style="border-style: none none solid solid; |'''Photo'''
+|-
+|26024
+|021
+|[[Nissan Hardbody|Nissan Truck]]
+|bgcolor="red"|Attack Pack
+|1/4​
+|[[Image:Nissan_Hardbody_Brn.JPG|75px]]
+|-
+|26025
+|022
+|[[Bywayman|Power Plower]]
+|bgcolor="red"|Attack Pack
+|2/4​
+|[[Image:Bywayman_Purpl.JPG|75px]]
+|-
+|26026
+|023
+|[[1979 Ford Truck|'79 Ford F-150]]
+|bgcolor="red"|Attack Pack
+|3/4​
+|[[File:Fordf150.jpg|75px]]
+|-
+|26027
+|024
+|[[Dodge Ram 1500 (1995)|Dodge Ram 1500]]
+|bgcolor="red"|Attack Pack
+|4/4​
+|[[Image:Ford_F-150_MtDkRd.JPG|75px]]
+|}
+
+===[[Circus on Wheels Series (2000)|Circus on Wheels Series]]===
+{| class="wikitable" background="#C0C0C0" style="border:1px solid #C0C0C0;" border="1" cellspacing="1" width="60%"
+! style="border-style: none none solid solid; | '''Toy #'''
+! style="border-style: none none solid solid; | '''Col. #'''
+! style="border-style: none none solid solid; | '''Model Name'''
+! style="border-style: none none solid solid; | '''Series'''
+! style="border-style: none none solid solid; | '''Series #'''
+! style="border-style: none none solid solid; | '''Photo'''
+|-
+|26028
+|025
+|[['56 Flashsider]]
+|bgcolor="brown"|Circus on Wheels Series
+|1/4​
+|[[File:56_Flashsider_MtRedL.JPG|75px]]
+|-
+|26029
+|026
+|[['32 Ford Delivery]]
+|bgcolor="brown"|Circus on Wheels Series
+|2/4​
+|[[Image:'32 Ford Delivery Circus.jpg|75px]]
+|-
+|26030
+|027
+|[[Fat Fendered '40]]
+|bgcolor="brown"|Circus on Wheels Series
+|3/4​
+|[[Image:'40's_Ford_2-Door_Blu.JPG|75px]]
+|-
+|26031
+|028
+|[[Dairy Delivery]]
+|bgcolor="brown"|Circus on Wheels Series
+|4/4​
+|[[File:Dairy_Delivery_Circus_2000_-_2820gf.jpg|75px]]
+|}
+
+===[[CD Customs Series (2000)|CD Customs Series]]===
+{| class="wikitable" background="#C0C0C0" style="border:1px solid #C0C0C0;" border="1" cellspacing="1" width="60%"
+! style="border-style: none none solid solid; | '''Toy #'''
+! style="border-style: none none solid solid; | '''Col. #'''
+! style="border-style: none none solid solid; | '''Model Name'''
+! style="border-style: none none solid solid; | '''Series'''
+! style="border-style: none none solid solid; | '''Series #'''
+! style="border-style: none none solid solid; | '''Photo'''
+|-
+|26032
+|029
+|[[Chrysler Pronto]]
+|bgcolor="gray"|CD Customs Series
+|1/4​
+|[[Image:Chrysler_Pronto_Grn.JPG|75px]]
+|-
+|26033
+|030
+|[[Pikes Peak Tacoma]]
+|bgcolor="gray"|CD Customs Series
+|2/4​
+|[[Image:Pikes Peak Tacoma Blk.JPG|75px]]
+|-
+|26034
+|031
+|[[Shadow Mk IIa]]
+|bgcolor="gray"|CD Customs Series
+|3/4​
+|[[Image:Shadow Mk II Wht.JPG|75px]]
+|-
+|26035
+|032
+|[[Pontiac Banshee]]
+|bgcolor="gray"|CD Customs Series
+|4/4​
+|[[File:Pontiac_Banshee_CDL.JPG|75px]]
+|}
+
+===[[Kung Fu Force Series (2000)|Kung Fu Force Series]]===
+{| class="wikitable" background="#C0C0C0" style="border:1px solid #C0C0C0;" border="1" cellspacing="1" width="60%"
+! style="border-style: none none solid solid; | '''Toy #'''
+! style="border-style: none none solid solid; | '''Col. #'''
+! style="border-style: none none solid solid; | '''Model Name'''
+! style="border-style: none none solid solid; | '''Series'''
+! style="border-style: none none solid solid; | '''Series #'''
+! style="border-style: none none solid solid; | '''Photo'''
+|-
+|26036
+|033
+|[[Toyota MR-2 Rally|Toyota MR2]]
+|bgcolor="red"|Kung Fu Force series
+|1/4​
+|[[Image:Toyota_Rally_Blk3sp.JPG|75px]]
+|-
+|26037
+|034
+|[['99 Mustang]]
+|bgcolor="red"|Kung Fu Force series
+|2/4​
+|[[Image:99_Mustang_Red.JPG|75px]]
+|-
+|26038
+|035
+|[[Shadow Jet II]]
+|bgcolor="red"|Kung Fu Force series
+|3/4​
+|[[Image:Shadow_Jet_II_Blu.JPG|75px]]
+|-
+|26039
+|036
+|[[Mini Truck]]
+|bgcolor="red"|Kung Fu Force series
+|4/4​
+|[[Image:Minitruck_MtGrn.JPG|75px]]
+|}
+
+===[[Speed Blaster Series (2000)|Speed Blaster Series]]===
+{|class="wikitable" cellspacing="1" width="60%" border="1" style="border:1px solid #C0C0C0;"
+! style="border-style: none none solid solid; |'''Toy #'''
+! style="border-style: none none solid solid; |'''Col. #'''
+! style="border-style: none none solid solid; |'''Model Name'''
+! style="border-style: none none solid solid; |'''Series'''
+! style="border-style: none none solid solid; |'''Series #'''
+! style="border-style: none none solid solid; |'''Photo'''
+|-
+|26040
+|037
+|[[Firebird Funny Car (1997)|Firebird Funny Car]]
+|bgcolor="lightblue"|Speed Blaster Series
+|1/4​
+|[[File:FireBird_Funny_1997_Org.JPG|75px]]
+|-
+|26041
+|038
+|[[At-A-Tude]]
+|bgcolor="lightblue"|Speed Blaster Series
+|2/4​
+|[[Image:At-A-Tude Gry.JPG|75px]]
+|-
+|26042
+|039
+|[[Mustang Cobra]]
+|bgcolor="lightblue"|Speed Blaster Series
+|3/4​
+|[[Image:Mustang_Cobra_Blu.JPG|75px]]
+|-
+|26043
+|040
+|[[Classic Cobra|Shelby Cobra 427 S/C]]
+|bgcolor="lightblue"|Speed Blaster Series
+|4/4​
+|[[File:Shelbycobra.white.jpg|75px]]
+|}
+
+===[[Tony Hawk Skate Series (2000)|Tony Hawk Skate Series]]===
+{| class="wikitable" background="#C0C0C0" style="border:1px solid #C0C0C0;" border="1" cellspacing="1" width="60%"
+! style="border-style: none none solid solid; | '''Toy #'''
+! style="border-style: none none solid solid; | '''Col. #'''
+! style="border-style: none none solid solid; | '''Model Name'''
+! style="border-style: none none solid solid; | '''Series'''
+! style="border-style: none none solid solid; | '''Series #'''
+! style="border-style: none none solid solid; | '''Photo'''
+|-
+|26044
+|041
+|[[Rigor Motor]]
+|bgcolor="yellow"|Tony Hawk Skate Series
+|1/4​
+|[[Image:Rigor_Motor_Blu.JPG|75px]]
+|-
+|26045
+|042
+|[[Sol-Aire CX4]]
+|bgcolor="yellow"|Tony Hawk Skate Series
+|2/4​
+|[[Image:Sol-Aire_Wht3SP.JPG|75px]]
+|-
+|26046
+|043
+|[[Speed Blaster]]
+|bgcolor="yellow"|Tony Hawk Skate Series
+|3/4​
+|[[File:Speed_Blaster_Org.JPG|75px]]
+|-
+|26047
+|044
+|[[Combat Medic]]
+|bgcolor="yellow"|Tony Hawk Skate Series
+|4/4​
+|[[Image:Tony Hawk Combat Medic - 6062df.jpg|75px]]
+|}
+
+===[[Secret Code Series (2000)|Secret Code Series]]===
+{| class="wikitable" background="#C0C0C0" style="border:1px solid #C0C0C0;" border="1" cellspacing="1" width="60%"
+! style="border-style: none none solid solid; | '''Toy #'''
+! style="border-style: none none solid solid; | '''Col. #'''
+! style="border-style: none none solid solid; | '''Model Name'''
+! style="border-style: none none solid solid; | '''Series'''
+! style="border-style: none none solid solid; | '''Series #'''
+! style="border-style: none none solid solid; | '''Photo'''
+|-
+|26048
+|045
+|[[Fiat 500C]]
+|bgcolor="9966CC"|Secret Code Series
+|1/4​
+|[[Image:Fiat 500 Red.JPG|75px]]
+|-
+|26049
+|046
+|[[Baby Boomer]]
+|bgcolor="9966CC"|Secret Code Series
+|2/4​
+|[[Image:Baby_Bommer_Blu.JPG|75px]]
+|-
+|26050
+|047
+|[[Tee'd Off]]
+|bgcolor="9966CC"|Secret Code Series
+|3/4​
+|[[Image:Teed Off - 00 Secret Code.jpg|75px]]
+|-
+|26051
+|048
+|[[Screamin' Hauler]]
+|bgcolor="9966CC"|Secret Code Series
+|4/4​
+|[[Image:Screamin_Hauler_Yel.JPG|75px]]
+|}
+
+==[[2000 Treasure Hunts Series|2000 Treasure Hunts]]==
+{|class="wikitable" style="border:1px solid #C0C0C0;" border="1" cellspacing="1" width="60%"
+! style="border-style: none none solid solid; |'''Toy #'''
+! style="border-style: none none solid solid; |'''Col. #'''
+! style="border-style: none none solid solid; |'''Model Name'''
+! style="border-style: none none solid solid; |'''Series'''
+! style="border-style: none none solid solid; |'''Series #'''
+! style="border-style: none none solid solid; |'''Photo'''
+|-
+|26371
+|049
+|[[Double Vision]]
+|bgcolor="green"|2000 Treasure Hunts
+|01/12​
+|[[File:Double_Vision_-_00TH.jpg|75px]]
+|-
+|26372
+|050
+|[[Tow Jam]]
+|bgcolor="green"|2000 Treasure Hunts
+|02/12​
+|[[File:Tow_Jam_-_00TH.jpg|75px]]
+|-
+|26373
+|051
+|[[1936 Cord]]
+|bgcolor="green"|2000 Treasure Hunts
+|03/12​
+|[[File:36_Cord_-_00TH_WW.jpg|75px]]
+|-
+|26374
+|052
+|[[Sweet 16 II]]
+|bgcolor="green"|2000 Treasure Hunts
+|04/12​
+|[[File:Sweet_16_II_-_00TH.jpg|75px]]
+|-
+|26375
+|053
+|[[Lakester]]
+|bgcolor="green"|2000 Treasure Hunts
+|05/12​
+|[[File:Lakester_-_00TH.jpg|75px]]
+|-
+|26376
+|054
+|[[Go Kart]]
+|bgcolor="green"|2000 Treasure Hunts
+|06/12​
+|[[File:Go_Kart_-_00TH.jpg|75px]]
+|-
+|26377
+|055
+|[[Chaparral 2]]
+|bgcolor="green"|2000 Treasure Hunts
+|07/12​
+|[[File:Chaparral_2_-_00TH.jpg|75px]]
+|-
+|26378
+|056
+|[['57 T-Bird]]
+|bgcolor="green"|2000 Treasure Hunts
+|08/12​
+|[[File:57_T-Bird_-_00TH.jpg|75px]]
+|-
+|26379
+|057
+|[[Pikes Peak Celica]]
+|bgcolor="green"|2000 Treasure Hunts
+|09/12​
+|[[File:Pikes_Peak_Celica_-_00TH.jpg|75px]]
+|-
+|26380
+|058
+|[['67 Pontiac GTO]]
+|bgcolor="green"|2000 Treasure Hunts
+|10/12​
+|[[File:67_GTO_-_00TH.jpg|75px]]
+|-
+|26381
+|059
+|[[Ford GT-40]]
+|bgcolor="green"|2000 Treasure Hunts
+|11/12​
+|[[File:Ford_GT-40_-_00TH.jpg|75px]]
+|-
+|26382
+|060
+|[['70 Chevelle|1970 Chevelle SS]]
+|bgcolor="green"|2000 Treasure Hunts
+|12/12​
+|[[File:70_Chevelle_SS_-_00TH.jpg|75px]]
+|}
+
+==[[2000 First Editions]]==
+{| class="wikitable" background="#C0C0C0" style="border:1px solid #C0C0C0;" border="1" cellspacing="1" width="60%"
+! style="border-style: none none solid solid; | '''Toy #'''
+! style="border-style: none none solid solid; | '''Col. #'''
+! style="border-style: none none solid solid; | '''Model Name'''
+! style="border-style: none none solid solid; | '''Series'''
+! style="border-style: none none solid solid; | '''Series #'''
+! style="border-style: none none solid solid; | '''Photo'''
+|-
+|23928
+|061
+|[[Ferrari 365 GTB/4]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|01/36​
+|[[Image:Ferrari 365 GTB.JPG|75px]]
+|-
+|23929
+|062
+|[[Ferrari 550 Maranello]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|02/36​
+|[[Image:Ferrari550Maranello.jpg|75px]]
+|-
+|24366
+|063
+|[['64 Lincoln Continental (2000)|1964 Lincoln Continental]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|03/36​
+|[[Image:64_Lincoln_Wht.JPG|75px]]
+|-
+|24368
+|064
+|[[Pro Stock Firebird]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|04/36​
+|[[Image:Pro_Stock_Firebird_Yel.JPG|75px]][[Image:Pro_Stock_Firebird_Blk.JPG|75px]]
+|-
+|24369
+|065
+|[[Deora II]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|05/36​
+|[[Image:2000 First Edition Deora II-BBB01.jpg|75px]]
+|-
+|24389
+|066
+|[[Deuce Roadster]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|06/36​
+|[[Image:Deuce Roadster UnP.JPG|75px]]
+|-
+|24370
+|067
+|[[Chevy Pro Stock Truck]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|07/36​
+|[[Image:Chevy Pro Stock Truck Org.JPG|75px]]
+|-
+|24371
+|068
+|[['68 El Camino]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|08/36​
+|[[Image:69 El Camino Wht.JPG|75px]]
+|-
+|24373
+|069
+|[[Phantastique]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|09/36​
+|[[Image:Phantastique Blu.JPG|75px]]
+|-
+|24367
+|070
+|[[Thomassima 3]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|10/36​
+|[[Image:Thomassima_3_LW.JPG|75px]]
+|-
+|24374
+|071
+|[[Ferrari 333 SP]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|11/36​
+|[[File:Ferrari 333 SP 01.jpg|75px]]
+|-
+|24377
+|072
+|[[Dodge Charger R/T]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|12/36​
+|[[Image:Dodge Charger RT5sp.JPG|75px]]
+|-
+|24378
+|073
+|[[Surf Crate]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|13/36​
+|[[Image:Surf Crate Prp.JPG|75px]]
+|-
+|24383
+|074
+|[['41 Willys]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|14/36​
+|[[Image:41willyscoupe.jpg|75px]]
+|-
+|24388
+|075
+|[[Lotus Elise 340R]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|15/36​
+|[[Image:Lotus Elise 340R Slv.JPG|75px]]
+|-
+|24392
+|076
+|[[Isuzu VehiCROSS|1999 Isuzu VehiCROSS]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|16/36​
+|[[Image:Isuzu VehiCross Slv.JPG|75px]]
+|-
+|24397
+|077
+|[[Anglia Panel Truck]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|17/36​
+|[[Image:Anglia Panel Truck Prp.JPG|75px]]
+|-
+|24400
+|078
+|[[So Fine]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|18/36​
+|[[Image:Sofine.jpg|75px]]
+|-
+|24372
+|079
+|[['65 Corvette|'65 Vette]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|19/36​
+|[[Image:65 Vette AGENTAIR 1.jpg|75px]]
+|-
+|24375
+|080
+|[[MX48 Turbo]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|20/26​
+|[[Image:MX48 Turbo Blu.JPG|75px]]
+|-
+|24376
+|081
+|[[Holden SS Commodore (VT)|Holden]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|21/36​
+|[[Image:Holden SS Commodore VT.JPG|75px]]
+|-
+|24379
+|082
+|[[Cabbin' Fever (2000)|Cabbin' Fever]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|22/36​
+|[[Image:2000_Cabin_First_Edition.jpg|75px]]
+|-
+|24384
+|083
+|[[Metrorail Nash Metropolitan|Metrorail]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|23/36​
+|[[Image:FE Metrorail.jpg|75px]]
+|-
+|24390
+|084
+|[[Muscle Tone]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|24/36​
+|[[Image:Muscle_Tone_00FE.jpg|75px]]
+|-
+|24393
+|085
+|[[Dodge Power Wagon]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|25/36​
+|[[Image:Dodge Power Wagon.JPG|75px]]
+|-
+|24395
+|086
+|[[Shoe Box]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|26/36​
+|[[Image:ShoeBoxHiLBest.jpg|75px]]
+|-
+|24396
+|087
+|[[Seared Tuner|Sho-Stopper]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|27/36​
+|[[Image:Seared_Tuner_-_00FE_3SP.JPG|75px]]
+|-
+|24381
+|088
+|[['67 Dodge Charger]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|28/36​
+|[[Image:'67_Charger.JPG|75px]]
+|-
+|24382
+|089
+|[[Vulture]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|29/36​
+|[[Image:Vulture5sp.JPG|75px]]
+|-
+|24386
+|090
+|[[Mini Cooper]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|30/36​
+|[[Image:Mini_-_00_FE.jpg|75px]]
+|-
+|24387
+|091
+|[[Roll Cage]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|31/36​
+|[[Image:Roll Cage Yel.JPG|75px]]
+|-
+|24391
+|092
+|[[Austin-Healey|Austin Healey]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|32/36​
+|[[Image:Austinhealy2000.jpg|75px]]
+|-
+|24394
+|093
+|[[Hammered Coupe]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|33/36​
+|[[Image:Hammered Coupe Prp.JPG|75px]]
+|-
+|24398
+|094
+|[[Arachnorod]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|34/36​
+|[[Image:Arachnorod.JPG|75px]]
+|-
+|24399
+|095
+|[[Greased Lightnin']]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|35/36​
+|[[Image:Greased Lightning 5sp.JPG|75px]]
+|-
+|27497
+|096
+|[[Blast Lane]]
+|bgcolor="white"|<font color="black">2000 First Editions</font>
+|36/36​
+|[[Image:BlastLProRor.jpg|75px]]
+|}
+
+==[[Virtual Collection Series (2000)|Virtual Collection]]==
+{|class="wikitable sortable" border="1" cellspacing="1" width="60%" style="border:1px solid #C0C0C0;"
+! style="border-style: none none solid solid; |'''Toy #'''
+! style="border-style: none none solid solid; |'''Col. #'''
+! style="border-style: none none solid solid; |'''Model Name'''
+! style="border-style: none none solid solid; |'''Series'''
+! style="border-style: none none solid solid; |'''Code'''
+! style="border-style: none none solid solid; |'''Photo'''
+|-
+|27064
+|097
+|[[1936 Cord]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''LIV42DA'''
+|[[Image:1936 Cord Grn.JPG|75px]]
+|-
+|27068
+|101
+|[[Hot Seat]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''XLR82XS'''
+|[[Image:Th HotSeat016.jpg|75px]]
+|-
+|27070
+|103
+|[[Tractor]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''IW84NO1'''
+|[[Image:Tractor GrnBlk.JPG|75px]]
+|-
+|27071
+|104
+|[[Speed-A-Saurus]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''SPDGTKT'''
+|[[Image:Speed_A-Saurus_BrtGrn.JPG|75px]]
+|-
+|27076
+|109
+|[[Monte Carlo Concept Car]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''2KUL4U'''
+|[[Image:Monte Carlo Concept Pnk.JPG|75px]]
+|-
+|27077
+|110
+|[[CAT Forklift|Fork Lift]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''MVNONUP'''
+|[[Image:CAT Forklift Org.JPG|75px]]
+|-
+|27078
+|111
+|[[CAT Wheel Loader|Wheel Loader]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''GSGZLR'''
+|[[Image:CAT Whee Loader Wht.JPG|75px]]
+|-
+|27079
+|112
+|[[Turbo Flame]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''SPLDRTN'''
+|[[Image:Turbo Flame Red.JPG|75px]]
+|-
+|27080
+|113
+|[[Flame Stopper]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''HYPRDRV'''
+|[[Image:Flame Stopper Org.JPG|75px]]
+|-
+|27081
+|114
+|[[Lamborghini Diablo]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''TPSPDR'''
+|[[Image:Lamborghini Diablo blu.JPG|75px]]
+|-
+|27082
+|115
+|[[Way 2 Fast]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''WAY2KUL'''
+|[[Image:Way 2 Fast DkRd.JPG|75px]]
+|-
+|27084
+|117
+|[[Tee'd Off]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''NJYNLF'''
+|[[Image:Teed Off - 00 Virtual Collection.jpg|75px]]
+|-
+|27085
+|118
+|[[Semi-Fast]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''MYLS2GO'''
+|[[Image:Semi-Fast Blu.JPG|75px]]
+|-
+|27090
+|123
+|[[Oshkosh Cement Mixer|Oshkosh Cement Truck]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''FSTFWD'''
+|[[Image:Oshkosh Cement Mixer Grn.JPG|75px]]
+|-
+|27093
+|126
+|[[Rodzilla]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''UNSTPBL'''
+|[[Image:Rodzilla Grn3sp.JPG|75px]]
+|-
+|27094
+|127
+|[[Track T]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''DRVNBY'''
+|[[Image:TrackT WhtSB.JPG|75px]]
+|-
+|27096
+|129
+|[[Turbolence]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''FASTRNU'''
+|[[Image:Turbolence Slv.JPG|75px]]
+|-
+|27100
+|133
+|[[Mercedes-Benz Unimog]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''RDTRPZ'''
+|[[Image:Mercedes Benz Unimog MtRedSB.JPG|75px]]
+|-
+|27102
+|135
+|[[Thunderstreak]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''CYAL8R'''
+|[[Image:Thunderstreak Prp.JPG|75px]]
+|-
+|22413
+|137
+|[[Dogfighter]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''FLYNBYU'''
+|[[Image:Dofighter Yel.JPG|75px]]
+|-
+|22414
+|138
+|[[Skullrider]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''LKNKUL'''
+|[[Image:Skullrider Red.JPG|75px]]
+|-
+|27108
+|142
+|[[Blimp]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''FLYNAWY'''
+|[[Image:Blimp VC.JPG|75px]]
+|-
+|27109
+|143
+|[[Recycling Truck]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''NVR2L8'''
+|[[Image:Recycling Truck Blue.JPG|75px]]
+|-
+|27110
+|144
+|[[Good Humor Truck|Ice Cream Truck]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''COOLONE'''
+|[[Image:Icecream2.jpg|75px]]
+|-
+|27111
+|145
+|[[Fire Eater|Fire-Eater]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''2DARESQ'''
+|[[Image:Fire Eater Wht.JPG|75px]]
+|-
+|27117
+|151
+|[[Go Kart]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''SPDBMP'''
+|[[Image:Go Kart Prpl.JPG|75px]]
+|-
+|27118
+|152
+|[[Fathom This]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''H2OSPDR'''
+|[[Image:Fathom This WhtOrg.JPG|75px]]
+|-
+|27119
+|153
+|[[Shadow Jet II]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''2QWK4U'''
+|[[Image:153 Virtual Collection Shadow Jet II.jpg|75px]]
+|-
+|27121
+|155
+|[[Splittin' Image II]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''DBLTBL'''
+|[[Image:Splittin' Image II Slv.JPG|75px]]
+|-
+|27122
+|156
+|[[Screamin' Hauler]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''HAULINA'''
+|[[Image:Screamin Hauler Red.JPG|75px]]
+|-
+|27123
+|157
+|[[Popcycle]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''PDLPWR'''
+|[[Image:Popcycle Grn.JPG|75px]]
+|-
+|27124
+|158
+|[[Super Modified]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''SPDDMN'''
+|[[Image:Super Modified Red.JPG|75px]]
+|-
+|27130
+|164
+|[[Phaeton]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''CNTA4IT'''
+|[[Image:Phaeton Blk.JPG|75px]]
+|-
+|27134
+|168
+|[[Lakester]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''LNDSPDR'''
+|[[Image:Lakester BlkLft.JPG|75px]]
+|-
+|27139
+|173
+|[[Baby Boomer]]
+|bgcolor="Blue"|2000 Virtual Collection
+|'''FSTBUGE'''
+|[[Image:Baby Bommer RedBt.JPG|75px]]
+|-
+|}
+
+==2000 Hot Wheels==
+{|class="wikitable" border="1" cellspacing="1" width="60%" style="border:1px solid #C0C0C0;"
+! style="border-style: none none solid solid; |'''Toy #'''
+! style="border-style: none none solid solid; |'''Col. #'''
+! style="border-style: none none solid solid; |'''Model Name'''
+! style="border-style: none none solid solid; |'''Series'''
+! style="border-style: none none solid solid; |'''Photo'''
+|-
+|27065
+|098
+|[['99 Mustang]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:99_Mustang_MtRed.JPG|75px]]
+|-
+|27066
+|099
+|[['38 Phantom Corsair|Phantom Corsair]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:38_Phantom_Corsair_Red.JPG|75px]]
+|-
+|27067
+|100
+|[[BMW M Roadster]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:BMW M Roadster RedR.JPG|75px]]
+|-
+|27069
+|102
+|[[T-Bird Stocker (1990)|'90 T-Bird]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:T-Brd_Stocker_Crm.JPG|75px]]
+|-
+|27072
+|105
+|[['57 Chevy]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:1957 Chevy 2000 Hot Wheels.JPG|75px]]
+|-
+|27073
+|106
+|[[Ferrari 348]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Ferrari_348_Blk3sp.JPG|75px]]
+|-
+|27074
+|107
+|[['70 Chevelle SS|'70 Chevelle]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:70_Chevelle_SS_Gld.JPG|75px]]
+|-
+|27075
+|108
+|[[Olds Aurora GTS-1|Olds Aurora]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Oldauroragts1.jpg|75px]]
+|-
+|27083
+|116
+|[['59 Chevy Impala|'59 Chevy]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:'59_Chevy_Impala_Silv.JPG|75px]]
+|-
+|27086
+|119
+|[[Pontiac Rageous]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Pontiac_Rageous_Blue.JPG|75px]]
+|-
+|27087
+|120
+|[[Mercedes SLK]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Mercedes_SLK_Grn.JPG|75px]]
+|-
+|27088
+|121
+|[[Mustang Cobra]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Mustang_Cobra_Red.JPG|75px]]
+|-
+|27089
+|122
+|[[Ferrari F40]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Ferrari F40 Yel5sp.JPG|75px]]
+|-
+|27091
+|124
+|[[Camaro Z-28]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Camaroz28.black.jpg|75px]]
+|-
+|27092
+|125
+|[[Porsche 930]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Porsche_930_WhtBlk.JPG|75px]]
+|-
+|27095
+|128
+|[[Porsche 911 GT3 Cup]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Porsche_911_GT3_Cup_Wht.JPG|75px]]
+|-
+|27097
+|130
+|[['63 T-Bird]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:'63 T-Bird - 6610cf.jpg|75px]]
+|-
+|27098
+|131
+|[[Mercedes C-Class]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:131.jpg|75px]]
+|-
+|27099
+|132
+|[[3-Window '34]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:3_Window_34_Grn3SP.JPG|75px]]
+|-
+|27101
+|134
+|[[Mercedes-Benz SL|Mercedes 500SL]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Mercedes-Benz_SL_Blu5ho.JPG|75px]]
+|-
+|27103
+|136
+|[[Ferrari F512M|Ferrari Testarossa]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Ferrari Testarrosa WhtUH2.JPG|75px]]
+|-
+|27104
+|139
+|[[Ford GT-40]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Ford_GT-40_Red5sp.JPG|75px]]
+|-
+|27105
+|140
+|[[Jeepster]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Jeepster_Grn.JPG|75px]]
+|-
+|27107
+|141
+|[[Camaro Convertible|'95 Camaro Convertible]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:95camaroconv.yellow.jpg|75px]]
+|-
+|27112
+|146
+|[[Porsche Carrera]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Porsche_Carrera_Blu.JPG|75px]]
+|-
+|27114
+|148
+|[[Pikes Peak Tacoma]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Pikes_Peak_Tacoma_Red.JPG|75px]]
+|-
+|27115
+|149
+|[[Shadow Mk IIa]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Shadow_Mk_II_Red.JPG|75px]]
+|-
+|27116
+|150
+|[[Chrysler Pronto]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Chrysler_Pronto_Prp.JPG|75px]]
+|-
+|27120
+|154
+|[[Corvette Stingray (1996)|Corvette Stingray]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:82_Corvette_Stingray_Blu.JPG|75px]]
+|-
+|27125
+|159
+|[[BMW 850i]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:BMW_850_LtBlu.JPG|75px]]
+|-
+|27126
+|160
+|[[Jaguar XJ220]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Jaguar_XJ220_-_Red.JPG|75px]]
+|-
+|27127
+|161
+|[[Ferrari F50 Challenge|Ferrari F50]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Ferrari_F50_Yel.JPG|75px]]
+|-
+|27128
+|162
+|[[Ferrari F355 Challenge|Ferrari 355 Challenge]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Ferrari_F355_Challenge_Yel.JPG|75px]]
+|-
+|27129
+|163
+|[[Mercedes CLK-LM]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Mercedes_CLK-LM_Red.JPG|75px]]
+|-
+|27131
+|165
+|[[Jaguar XK8]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Jaguar_XK8_Silv.JPG|75px]]
+|-
+|27132
+|166
+|[[Pikes Peak Celica]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:2000-166.jpg|75px]]
+|-
+|27133
+|167
+|[[Dodge Concept Car]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Dodge_Concept_Car_Wht.JPG|75px]]
+|-
+|27135
+|169
+|[[Panoz GTR-1]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:169.jpg|75px]]
+|-
+|27137
+|171
+|[['56 Ford|'56 Ford Truck]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:PB180291.JPG|75px]]
+|-
+|27138
+|172
+|[[Porsche 911 GT1-98]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Porsche_911_GT1-98_Prp.JPG|75px]]
+|-
+|27140
+|174
+|[[Split Window '63|'63 Vette]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Th 63corvette034.jpg|75px]]
+|-
+|27141
+|175
+|[[Olds Aurora GTS-1|Olds Aurora]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Oldauroragts1.orange.jpg|75px]]
+|-
+|25377
+|176
+|[[Solar Eagle III]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Solar Eagle III 2000.jpg|75px]]
+|-
+|25378
+|177
+|[[Flashfire]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Flashfire_Wht.JPG|75px]]
+|-
+|25385
+|178
+|[[Dodge Viper RT/10]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Viper_RT10_-_00_Sports_Stars_5-Pack.JPG|75px]]
+|-
+|25388
+|179
+|[[Camaro Convertible|'95 Camaro Convertible]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:95camaroconv.white.jpg|75px]]
+|-
+|25389
+|180
+|[[Jaguar D-Type]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Jaguar_D-Type_DkRed.JPG|75px]]
+|-
+|25390
+|181
+|[[GT Racer]]
+|bgcolor="blue"|2000 Hot Wheels
+|
+[[File:Image_Not_Available.jpg|75px]]
+|-
+|25393
+|182
+|[[Sweet 16 II]]
+|bgcolor="blue"|2000 Hot Wheels
+|
+[[File:Image_Not_Available.jpg|75px]]
+|-
+|25398
+|183
+|[[Buick Wildcat]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Buick_Wildcat_Grn.JPG|75px]]
+|-
+|25413
+|187
+|[[Panoz GTR-1]]
+|bgcolor="blue"|2000 Hot Wheels​
+|[[File:Panoz_GTR-1_Yel.JPG|75px]]
+|-
+|27106
+|188
+|[['97 Corvette]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:97_Corvette_Red.JPG|75px]]
+|-
+|25381
+|189
+|[[Semi-Fast]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Semi-Fast_Grn.JPG|75px]]
+|-
+|25382
+|190
+|[[Peterbilt Dump Truck]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Peterbilt_Dump_Trq.JPG|75px]]
+|-
+|25383
+|191
+|[[Ford Stake Bed Truck]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Ford_Stake_Dkred3sp.JPG|75px]]
+|-
+|25384
+|192
+|[['40 Ford]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:192_'40_Ford_Truck.jpg|75px]]
+|-
+|25415
+|193
+|[['40's Woodie|'40s Woodie]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:2000 '40's Woodie - 5987cf.jpg|75px]]
+|-
+|25416
+|194
+|[[T-Bird Stocker (1997)|T-Bird Stocker]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:5-Pack T-Bird Stocker - 6350df.jpg|75px]]
+|-
+|25417
+|195
+|[['32 Ford|'32 Ford Coupe]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:5-Pack '32 Ford - 6351df.jpg|75px]]
+|-
+|25418
+|196
+|[[Classic Nomad|Chevy Nomad]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:5-Pack Classic Nomad - 6353df.jpg|75px]]
+|-
+|25419
+|197
+|[['65 Chevy Impala|'65 Impala]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:'65 Impala - 6354cf.jpg|75px]]
+|-
+|25407
+|198
+|[[Bronco 4-Wheeler|Ford Bronco]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Bronco4wheeler.jpg|75px]]
+|-
+|25408
+|199
+|[[Jeep CJ-7|Roll Patrol]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Trailbuster_Red.JPG|75px]]
+|-
+|25422
+|200
+|[[Purple Passion]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Passion_AGENTAIR_29.jpg|75px]]
+|-
+|25424
+|201
+|[['65 Mustang Convertible|'65 Mustang]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:201.jpg|75px]]
+|-
+|25426
+|202
+|[[Hydroplane]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:202_Hydroplane.jpg|75px]]
+|-
+|25428
+|203
+|[[Beach Patrol|Surf Patrol]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Path_Beater_SlvL.JPG|75px]]
+|-
+|25432
+|204
+|[[Saltflat Racer]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Saltflat_Racer_Blk.JPG|75px]]
+|-
+|25434
+|205
+|[[Pikes Peak Celica]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:2000-205-xdroop.jpg|75px]]
+|-
+|25403
+|206
+|[[Rig Wrecker]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Rig_Wrecker_Blk.JPG|75px]]
+|-
+|25401
+|207
+|[[Police Cruiser (1996)|Police Car]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Police_Cruiser_LtBlu.JPG|75px]]
+|-
+|25395
+|208
+|[[Zender Fact 4]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Zender_Fact_4_RedSB.JPG|75px]]
+|-
+|25380
+|209
+|[[Customized C3500]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Customized_C3500_Yel.JPG|75px]]
+|-
+|29276
+|210
+|[[Lexus SC400]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Lexus_SC-400_MtBlu.JPG|75px]]
+|-
+|29266
+|211
+|[[Tow Jam]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Tow_Jam_BluR.JPG|75px]]
+|-
+|29267
+|212
+|[[Double Vision]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Double_Vision_Grn.JPG|75px]]
+|-
+|29268
+|213
+|[[Whatta Drag]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Whatta Drag Org.JPG|75px]]
+|-
+|29269
+|214
+|[[Super Comp Dragster]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Super Comp Dragster Yel.JPG|75px]]
+|-
+|29270
+|215
+|[[XT-3]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:XT-3_MRed.JPG|75px]]
+|-
+|29271
+|216
+|[[School Bus]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:School Bus Red.JPG|75px]]
+|-
+|29272
+|217
+|[['57 T-Bird]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:57tbird.jpg|75px]]
+|-
+|29273
+|218
+|[[Rescue Ranger]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:218 Rescue Ranger.jpg|75px]]
+|-
+|29274
+|219
+|[[Side Kick]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Side Kick GldR.JPG|75px]]
+|-
+|29275
+|220
+|[[Sweet 16]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Sweet_16_Blk.JPG|75px]]
+|-
+|29277
+|221
+|[[Rail Rodder]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Rail_Rodder_BlkFlm.JPG|75px]]
+|-
+|29278
+|222
+|[[Dogfighter]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:222_Dogfighter.jpg|75px]]
+|-
+|29279
+|223
+|[[Twang Thang]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:2000_223_Twang_Thang.jpg|75px]]
+|-
+|29280
+|224
+|[[Ford GT-90]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:224_Ford_GT-90.jpg|75px]]
+|-
+|29281
+|225
+|[[Chrysler Thunderbolt]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Chrysler_Thunderbolt_Red.JPG|75px]]
+|-
+|29282
+|226
+|[['67 Pontiac GTO]]
+|bgcolor="blue"|2000 Hot Wheels​
+|[[File:67_Pontiac_GTO_OrgR.JPG|75px]]
+|-
+|29283
+|227
+|[[Skullrider]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Skullrider_Blk.JPG|75px]]
+|-
+|29284
+|228
+|[['57 Chevy]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:228.jpg|75px]]
+|-
+|29285
+|229
+|[['80s Camaro|Blown Camaro]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:80s_Camaro_Red.JPG|75px]]
+|-
+|29286
+|230
+|[[Ferrari F355 Spider]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:SA400053.JPG|75px]]
+|-
+|29287
+|231
+|[[Treadator]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Treadator Gld.JPG|75px]]
+|-
+|29288
+|232
+|[[Porsche 959]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:232_Porsche_959.jpg|75px]]
+|-
+|29289
+|233
+|[[Oshkosh Snow Plow|Oshkosh Snowplow]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:Oshkosh Snow Plow 2000..jpg|75x75px]]
+|-
+|29290
+|234
+|[['33 Ford Roadster]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:33_Ford_Roadster_Blk.JPG|75px]]
+|-
+|29291
+|235
+|[[Ferrari 550 Maranello]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Ferrari_550_Maranello_Gry.JPG|75px]]
+|-
+|29292
+|236
+|[[Ferrari 365 GTB/4]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:236_Ferrari_365_GTB4.jpg|75px]]
+|-
+|29293
+|237
+|[['64 Lincoln Continental (2000)|1964 Lincoln Continental]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:64_Lincoln_Blk.JPG|75px]]
+|-
+|29294
+|238
+|[[Deuce Roadster]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:Deuce Roadster Gld.JPG|75px]]
+|-
+|29295
+|239
+|[[Tail Dragger]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:239_Tail_Dragger.jpg|75px]]
+|-
+|29296
+|240
+|[[Scorchin' Scooter]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:240_Scorchin'_Scooter.jpg|75px]]
+|-
+|29298
+|241
+|[[Propper Chopper]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:241_Propper_Chopper.jpg|75px]]
+|-
+|29299
+|242
+|[[Olds 442 W-30|Olds 442]]
+|bgcolor="blue"|2000 Hot Wheels​
+|[[Image:Olds_442_W-30_Wht.JPG|75px]]
+|-
+|29300
+|243
+|[[Deora II]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:2000_Open_Vamp_Deora_II-BBB01.jpg|75px]]
+|-
+|29301
+|244
+|[[Chevy Pro Stock Truck]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:244_Chevy_Pro_Stock_Truck.jpg|75px]]
+|-
+|29302
+|245
+|[[Phantastique]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:245_Phantastique.jpg|75px]]
+|-
+|29303
+|246
+|[['68 El Camino]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:246_'68_El_Camino.jpg|75px]]
+|-
+|29304
+|247
+|[[Ford F-150]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:247_Ford_F150.jpg|75px]]
+|-
+|29305
+|248
+|[[Way 2 Fast]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:248_Way_2_Fast.jpg|75px]]
+|-
+|29306
+|249
+|[['59 Impala]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[Image:'59_Chevy_Impala_BlkLWG.JPG|75px]]
+|-
+|29307
+|250
+|[[Porsche 911 GT1-98]]
+|bgcolor="blue"|2000 Hot Wheels
+|[[File:250 Porsche 911 GT1-98.jpg|75px]]
+|}
+
+==2000 [[Bonus Cars]]==
+{| class="wikitable" background="#C0C0C0" style="border:1px solid #C0C0C0;" border="1" cellspacing="1" width="60%"
+! style="border-style: none none solid solid; | '''Toy #'''
+! style="border-style: none none solid solid; | '''Col. #'''
+! style="border-style: none none solid solid; | '''Model Name'''
+! style="border-style: none none solid solid; | '''Series'''
+! style="border-style: none none solid solid; | '''Series #'''
+! style="border-style: none none solid solid; | '''Photo'''
+|-
+|
+|001
+|[[Way 2 Fast]]
+|bgcolor="yellow"|2000 Bonus Cars
+|1/4​
+|[[Image:Way 2 Fast Bns.JPG|75px]]
+|-
+|
+|002
+|[[1970 Mustang Mach 1]]
+|bgcolor="yellow"|2000 Bonus Cars
+|2/4​
+|[[Image:Picture166b.jpg|75px]]
+|-
+|
+|003
+|[[Jaguar XK8]]
+|bgcolor="yellow"|2000 Bonus Cars
+|3/4​
+|[[Image:Jaguar_XK8_Bon.JPG|75px]]
+|-
+|
+|004
+|[[Super Modified]]
+|bgcolor="yellow"|2000 Bonus Cars
+|4/4​
+|[[Image:Super Modified DkRed.JPG|75px]]
+|}
+
+==Hot Wheels by Year==
+{{Lists}}[[Category:Lists of Hot Wheels by year|2000]]
+[[Category:2000 Hot Wheels|2000]]

@@ -1,0 +1,3130 @@
+==2023 Hot Wheels #1-250==
+For 2023, the Hot Wheels mainline is numbered 1 through 250 with color variations not receiving a new number. Treasure Hunts and store exclusives are numbered. For the listing by series see [[List of 2023 Hot Wheels (by Series)]].
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+|-
+! style="border-style: none none solid solid; |Toy #
+! style="border-style: none none solid solid; |Col.#
+! style="border-style: none none solid solid; |Model Name
+! style="border-style: none none solid solid; |Series
+! style="border-style: none none solid solid; |Series #
+! style="border-style: none none solid solid; |Photo
+|-
+|HKG27
+|001
+|[[Volvo P1800 Gasser]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2023)|<font color="black">HW Dream Garage</font>]]<br>[[2023 New Models|<font color="black">'''New for 2023!'''</font>]]
+|1/5
+|[[File:Ain'tNoSaint.jpg|center|75px]]
+|-
+|HKJ94
+|001
+|[[Volvo P1800 Gasser]] (2nd Color)
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2023)|<font color="black">HW Dream Garage</font>]]<br>[[2023 New Models|<font color="black">'''New for 2023!'''</font>]]
+|1/5
+|[[File:HKJ94.jpg|center|75px]]
+|-
+|HKG79
+|002
+|[['87 Ford Sierra Cosworth]]
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]
+|1/10
+|[[File:HW-2023-002-1-HKG79-87 Ford Sierra Cosworth.png|center|75px]]
+|-
+|HKL51
+|002
+|[['87 Ford Sierra Cosworth]] (2nd Color)
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]<br>[[Kroger|<font color="black">'''Kroger  Exclusive'''</font>]]
+|1/10
+|[[File:Kroger Cosworth.JPG|center|75px]]
+|-
+|HKJ59
+|002
+|[['87 Ford Sierra Cosworth]] (3rd Color)
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]
+|1/10
+|[[File:HKJ59-LOOSE.jpg|center|75px]]
+|-
+|HKG97
+|003
+|[[Classic TV Series Batmobile (Tooned)|Classic TV Series Batmobile]]
+| bgcolor="black" |[[Batman Mini Collection (2023)|<font color="white">Batman</font>]]
+|1/5
+|[[File:HW-2023-003-1-HKG97-Classic TV Series Batmobile.png|center|75px]]
+|-
+|HKL16
+|003
+|[[Classic TV Series Batmobile (Tooned)|Classic TV Series Batmobile]]
+| bgcolor="black" |[[Batman Mini Collection (2023)|<font color="white">Batman</font>]]<br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|1/5
+|[[File:STH_2023A_BATMOBILE.jpg|center|75px]]
+|-
+|HKJ72
+|003
+|[[Classic TV Series Batmobile (Tooned)|Classic TV Series Batmobile]] (2nd Color)
+| bgcolor="black" |[[Batman Mini Collection (2023)|<font color="white">Batman</font>]]
+|1/5
+|[[File:HKJ72.jpg|center|75px]]
+|-
+|HKG25
+|004
+|[[Ford Escort RS2000]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]<br>[[2023 New Models|<font color="black">'''New for 2023!'''</font>]]
+|1/10
+|[[File:X-PackEscort.jpg|center|75px]]
+|-
+|HKL43
+|004
+|[[Ford Escort RS2000]] (2nd Color)
+| bgcolor="#E80018" |[[Red Edition|<font color="white">Red Edition</font>]]<br>[[2023 New Models|<font color="white">'''New for 2023!'''</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|1/12
+|[[File:Hot wheels Ford Escort RS2000 RED EDITION er.png|center|75px]]
+|-
+|HKJ77
+|004
+|[[Ford Escort RS2000]] (3rd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]<br>[[2023 New Models|<font color="black">'''New for 2023!'''</font>]]
+|1/10
+|[[File:2023NM-02B (Large).JPG|center|75px]]
+|-
+|HKH03
+|005
+|[[Dimachinni Veloce]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]
+|2/10
+|[[File:HKH03-LOOSE.jpg|center|75px]]
+|-
+|HKJ78
+|005
+|[[Dimachinni Veloce]] (2nd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]
+|2/10
+|[[File:HKJ78-LOOSE.jpg|center|75px]]
+|-
+|HKH07
+|006
+|[[HW K.I.T.T. Concept]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2023)|<font color="white">HW Screen Time</font>]]
+|1/10
+|[[File:KARRConcept.jpg|center|75px]]
+|-
+|HKH15
+|007
+|[[Bricking Trails]]
+| bgcolor="#ED2839" |[[Brick Rides Mini Collection (2023)|<font color="white">Brick Rides</font>]]
+|1/5
+|[[File:Bricking_Trails_2023.jpg|center|75px]]
+|-
+|HKJ85
+|007
+|[[Bricking Trails]] (2nd Color)
+| bgcolor="#ED2839" |[[Brick Rides Mini Collection (2023)|<font color="white">Brick Rides</font>]]
+|1/5
+|[[File:HKJ85.jpg|center|75px]]
+|-
+|HKG24
+|008
+|[[Dessert Drifter]]
+| bgcolor="#ffb6c1" |[[Sweet Rides Mini Collection (2023)|<font color="white">Sweet Rides</font>]]<br>[[2023 New Models|<font color="white">'''New for 2023!'''</font>]]
+|1/5
+|[[File:DessertDrifter.jpg|center|75px]]
+|-
+|HKJ90
+|008
+|[[Dessert Drifter]] (2nd Color)
+| bgcolor="#ffb6c1" |[[Sweet Rides Mini Collection (2023)|<font color="white">Sweet Rides</font>]]<br>[[2023 New Models|<font color="white">'''New for 2023!'''</font>]]
+|1/5
+|[[File:HKJ90.jpg|center|75px]]
+|-
+|HKH18
+|009
+|[[Sweet Driver]]
+| bgcolor="#ffb6c1" |[[Sweet Rides Mini Collection (2023)|<font color="white">Sweet Rides</font>]]
+|2/5
+|[[File:Sweet Driver Sweet Rides 2023.PNG|center|75px]]
+|-
+|HKJ91
+|009
+|[[Sweet Driver]] (2nd Color)
+| bgcolor="#ffb6c1" |[[Sweet Rides Mini Collection (2023)|<font color="white">Sweet Rides</font>]]
+|2/5
+|[[File:2023-009 HKJ91 Sweet Driver Brown open-1.jpg|center|75px]]
+|-
+|HKK98
+|010
+|[[Raijin Express]]
+| bgcolor="#FFAA1D" |[[HW Haulers Mini Collection (2023)|<font color="white">HW Haulers</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|1/5
+|[[File:RaijinHauler.jpg|center|75px]]
+|-
+|HKH24
+|011
+|[[Fast-Bed Hauler]]
+| bgcolor="#FFAA1D" |[[HW Haulers Mini Collection (2023)|<font color="white">HW Haulers</font>]]
+|2/5
+|[[File:HW-2023-011-1-HKH24-Fast-Bed Hauler.png|center|75px]]
+|-
+|HKJ97
+|011
+|[[Fast-Bed Hauler]] (2nd Color)
+| bgcolor="#FFAA1D" |[[HW Haulers Mini Collection (2023)|<font color="white">HW Haulers</font>]]
+|2/5
+|[[File:HKJ97-LOOSE.jpg|center|75px]]
+|-
+|HKH36
+|012
+|[[Roadster Bite]]
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]
+|1/10
+|[[File:HW-2023-012-1-HKH36-Roadster Bite.png|center|75px]]
+|-
+|HKK07
+|012
+|[[Roadster Bite]] (2nd Color)
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]
+|1/10
+|[[File:ROADROSTER BITE (2DO COLOR).jpg|center|75px]]
+|-
+|HKH37
+|013
+|[['17 Pagani Huayra Roadster]]
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]
+|2/10
+|[[File:HW_'17_Pagani_Huayra_Roadster_(2023_-_HKH37).jpg|center|75px]]
+|-
+|HKL23
+|013
+|[['17 Pagani Huayra Roadster]] (2nd Color - Zamac)
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive'''</font>]]
+|2/10
+|[[File:Mainline 2023 '17 Pagani Huayra Roadster Zamac Malaysia HKL23.jpg|center|75px]]
+|-
+|HKK08
+|013
+|[['17 Pagani Huayra Roadster]] (3rd Color)
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]
+|2/10
+|[[File:HKK08.jpg|center|75px]]
+|-
+|HKH38
+|014
+|[[Corvette Grand Sport Roadster]]
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]
+|3/10
+|[[File:HW-2023-014-1-HKH38-Corvette Grand Sport Roadster.png|center|75px]]
+|-
+|HKL44
+|014
+|[[Corvette Grand Sport Roadster]] (2nd Color)
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]<br>'''[[Kroger|<font color="white">Kroger Exclusive</font>]]'''
+|3/10
+|[[File:Corvette kroger.jpg|center|75px]]
+|-
+|HKK09
+|014
+|[[Corvette Grand Sport Roadster]] (3rd Color)
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]
+|3/10
+|[[File:20230529 100127.jpg|center|75px]]
+|-
+|HKH45
+|015
+|[[Track Manga]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+|1/10
+|[[File:HW-2023-015-1-HKH45-Track Manga.png|center|75px]]
+|-
+|HKK14
+|015
+|[[Track Manga]] (2nd Color)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+|1/10
+|[[File:HKK14.jpg|center|75px]]
+|-
+|HKK15
+|015
+|[[Track Manga]] (3rd Color)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+|1/10
+|[[File:Track Manga (Dark Red).jpg|center|75px]]
+|-
+|HKH46
+|016
+|[['70s Van|70s Van]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+|2/10
+|[[File:HW-2023-016-1-HKH46-70s Van.png|center|75px]]
+|-
+|HKL24
+|016
+|[['70s Van|70s Van]] (2nd Color - Zamac)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|2/10
+|[[File:2023-016 HKL24 ZAMAK 70sVan o1.jpg|center|75px]]<br>[[File:2023-016 HKL24 ZAMAK 70sVan o4.jpg|center|75px]]
+|-
+|HKK16
+|016
+|[['70s Van|70s Van]] (3rd Color)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+|2/10
+|[[File:HKK16.jpg|center|75px]]
+|-
+|HKH85
+|017
+|[[LB Super Silhouette Nissan Silvia (S15)]]
+| bgcolor="#414A4C" |[[HW Modified Mini Collection (2023)|<font color="white">HW Modified</font>]]
+|1/5
+|[[File:SilviaLibertyWalkBlack2023.jpg|center|75px]]
+|-
+|HKL52
+|017
+|[[LB Super Silhouette Nissan Silvia (S15)]] (2nd Color)
+| bgcolor="#E80018" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|2/12
+|[[File:RedEdLBSilvia.jpg|center|75px]]
+|-
+|HKK47
+|017
+|[[LB Super Silhouette Nissan Silvia (S15)]] (3rd Color) 
+| bgcolor="#414A4C" |[[HW Modified Mini Collection (2023)|<font color="white">HW Modified</font>]]
+|1/5
+|[[File:LB Super Silhouette Nissan Silvia (S15) 2023.jpg|center|75px]]
+|-
+|HKH83
+|018
+|[[1970 Pontiac Firebird]]
+| bgcolor="#414A4C" |[[HW Modified Mini Collection (2023)|<font color="white">HW Modified</font>]]
+|2/5
+|[[File:HW-2023-018-1-HKH83-1970 Pontiac Firebird.png|center|75px]]
+|-
+|HKK48
+|018
+|[[1970 Pontiac Firebird]] (2nd Color) 
+| bgcolor="#414A4C" |[[HW Modified Mini Collection (2023)|<font color="white">HW Modified</font>]]<br>'''[[Kroger|<font color="white">Kroger Exclusive</font>]]'''
+|2/5
+|[[File:1970 Pontiac Firebird Orange.jpg|center|75px]]
+|-
+|HKK49
+|018
+|[[1970 Pontiac Firebird]] (3rd Color)
+| bgcolor="#414A4C" |[[HW Modified Mini Collection (2023)|<font color="white">HW Modified</font>]]
+|2/5
+|[[File:HKK49.jpg|center|75px]]
+|-
+|HKH88
+|019
+|[[Airuption]]
+| bgcolor="#4000FF" |[[Sky Show Mini Collection (2023)|<font color="white">Sky Show</font>]]
+|1/5
+|[[File:HW-2023-019-1-HKH88-Airuption.png|center|75px]]
+|-
+|HKK51
+|019
+|[[Airuption]] (2nd Color)
+| bgcolor="#4000FF" |[[Sky Show Mini Collection (2023)|<font color="white">Sky Show</font>]]
+|1/5
+|[[File:HKK51.jpg|center|75px]]
+|-
+|HKG23
+|020
+|[[Nissan Patrol Custom]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]<br>[[2023 New Models|<font color="black">'''New for 2023!'''</font>]]
+|1/10
+|[[File:NissanPatrolCustom.jpg|center|75px]]
+|-
+|HKL46
+|020
+|[[Nissan Patrol Custom]] (2nd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]<br>[[2023 New Models|<font color="black">'''New for 2023!'''</font>]]<br>[[Kroger|<font color="black">'''Kroger  Exclusive'''</font>]]
+|1/10
+|[[File:Nissanpatrolcustomkrogerexclusive.jpg|center|75px]]
+|-
+|HKK61
+|020
+|[[Nissan Patrol Custom]] (3rd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]<br>[[2023 New Models|<font color="black">'''New for 2023!'''</font>]]
+|1/10
+|[[File:NissanPatrol.jpg|center|75px]]
+|-
+|HKJ10
+|021
+|[[Subaru WRX STI]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]
+|2/10
+|[[File:HW-2023-021-1-HKJ10-Subaru WRX STI.png|center|75px]]
+|-
+|HKK62
+|021
+|[[Subaru WRX STI]] (2nd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]
+|2/10
+|[[File:HKK62 - LOOSE.jpg|center|75px]]
+|-
+|HKK63
+|021
+|[[Subaru WRX STI]] (3rd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]
+|2/10
+|[[File:HKK63-LOOSE.jpg|center|75px]]
+|-
+|HKG26
+|022
+|[[Draggin' Wagon]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2023)|<font color="black">Experimotors</font>]]<br>[[2023 New Models|<font color="black">'''New for 2023!'''</font>]]
+|1/5
+|[[File:Draggin'Wagon.jpg|center|75px]]
+|-
+|HKK71
+|022
+|[[Draggin' Wagon]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2023)|<font color="black">Experimotors</font>]]<br>[[2023 New Models|<font color="black">'''New for 2023!'''</font>]]
+|1/5
+|[[File:HKK71.jpg|center|75px]]
+|-
+|HKJ26
+|023
+|[[Coupe Clip]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2023)|<font color="black">Experimotors</font>]]
+|2/5
+|[[File:HKJ26-LOOSE.jpg|center|75px]]
+|-
+|HKK72
+|023
+|[[Coupe Clip]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2023)|<font color="black">Experimotors</font>]]
+|2/5
+|[[File:HKK72-LOOSE.jpg|center|75px]]
+|-
+|HKJ32
+|024
+|[[Surfin' School Bus]]
+| bgcolor="#FF8000" |[[Surf's Up Mini Collection (2023)|<font color="black">Surf's Up</font>]]
+|1/5
+|[[File:HW-2023-024-1-HKJ32-Surfin' School Bus.png|center|75px]]
+|-
+|HKK79
+|024
+|[[Surfin' School Bus]] (2nd Color)
+| bgcolor="#FF8000" |[[Surf's Up Mini Collection (2023)|<font color="black">Surf's Up</font>]]
+|1/5
+|[[File:HKK79.jpg|center|75px]]
+|-
+|HKG80
+|025
+|[['84 Mustang SVO]]
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]
+|2/10
+|[[File:HKG80-LOOSE.jpg|center|75px]]
+|-
+|HKJ60
+|025
+|[['84 Mustang SVO]] (2nd Color)
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]
+|2/10
+|[[File:HKJ60-LOOSE.jpg|center|75px]]
+|-
+|HKG82
+|026
+|[['80 El Camino]]
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]
+|3/10
+|[[File:HW-2023-026-1-HKG82-80 El Camino.png|center|75px]]
+|-
+|HKL35
+|026
+|[['80 El Camino]] (2nd Color)
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]<br>[[Dollar General|<font color="black">'''Dollar General Exclusive''']]</font>
+|3/10
+|[[File:RCGEC802023-02a.jpg|center|75px]]
+|-
+|HKJ61
+|026
+|[['80 El Camino]] (3rd Color)
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]
+|3/10
+|[[File:HKJ61-LOOSE.jpg|center|75px]]
+|-
+|HKH02
+|027
+|[[Mercedes-Benz 300 SL]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]
+|3/10
+|[[File:HKH02-LOOSE.jpg|center|75px]]
+|-
+|HKL09
+|027
+|[[Mercedes-Benz 300 SL]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]<br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|3/10
+|[[File:Mercedes-benzs300sl.jpg|center|75px]]
+|-
+|HKH01
+|028
+|[[Mazda 787B]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]<br><font color="black">'''New in Mainline'''</font>
+|4/10
+|[[File:Mazda787.jpg|center|75px]]
+|-
+|HKL36
+|028
+|[[Mazda 787B]] (2nd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]<br><font color="black">'''New in Mainline'''</font><br>[[Dollar General|<font color="black">'''Dollar General Exclusive''']]</font>
+|4/10
+|[[File:DollarGeneral787BBlack.jpg|center|75px]]
+|-
+|HKJ79
+|028
+|[[Mazda 787B]] (3rd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]<br><font color="black">'''New in Mainline'''</font>
+|4/10
+|[[File:787BRacer.jpg|center|75px]]
+|-
+|GRX17
+|029
+|[[Standard Kart]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2023)|<font color="white">HW Screen Time</font>]]
+|2/10
+|[[File:HW-2023-029-1-HKxxx-Standard Kart.png|center|75px]]
+|-
+|HKH16
+|030
+|[[Custom Small Block]]
+| bgcolor="#ED2839" |[[Brick Rides Mini Collection (2023)|<font color="white">Brick Rides</font>]]
+|2/5
+|[[File:HW-2023-030-1-Custom Small Block.png|center|75px]]
+|-
+|HKJ86
+|030
+|[[Custom Small Block]] (2nd Color)
+| bgcolor="#ED2839" |[[Brick Rides Mini Collection (2023)|<font color="white">Brick Rides</font>]]
+|2/5
+|[[File:2023 (-30) Custom Small Block (Blue).jpg|center|75px]]
+|-
+|HKH19
+|031
+|[[Good Humor Truck|Quick Bite]]
+| bgcolor="#ffb6c1" |[[Sweet Rides Mini Collection (2023)|<font color="white">Sweet Rides</font>]]
+|3/5
+|[[File:HW-2023-031-1-HKH19-Quick Bite.png|center|75px]]
+|-
+|HKJ92
+|031
+|[[Good Humor Truck|Quick Bite]] (2nd Color)
+| bgcolor="#ffb6c1" |[[Sweet Rides Mini Collection (2023)|<font color="white">Sweet Rides</font>]]
+|3/5
+|[[File:2023-031 HKJ92 Quick Bite Green open-0.jpg|center|75px]]
+|-
+|HKJ49
+|032
+|[[Rodger Dodger]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2023)|<font color="black">HW Dream Garage</font>]]
+|2/5
+|[[File:HW-2023-032-1-HKxxx-Rodger Dodger.png|center|75px]]
+|-
+|HKH25
+|033
+|[[Baja Hauler]]
+| bgcolor="#FFAA1D" |[[HW Haulers Mini Collection (2023)|<font color="white">HW Haulers</font>]]
+|3/5
+|[[File:HW-2023-033-1-HKH25-Baja Hauler.png|center|75px]]
+|-
+|HKJ98
+|033
+|[[Baja Hauler]] (2nd Color)
+| bgcolor="#FFAA1D" |[[HW Haulers Mini Collection (2023)|<font color="white">HW Haulers</font>]]
+|3/5
+|[[File:HKJ98.jpg|center|75px]]
+|-
+|HKH41
+|034
+|[[Corvette C7 Z06 Convertible]]
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]
+|4/10
+|[[File:HW-2023-034-1-HKH41-Corvette C7 Z06 Convertible.png|center|75px]]
+|-
+|HKL37
+|034
+|[[Corvette C7 Z06 Convertible]] (2nd Color)
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]<br>[[Dollar General|<font color="white">'''Dollar General Exclusive'''</font>]]
+|4/10
+|[[File:DollarGeneralCorvetteZ06Green.jpg|center|75px]]
+|-
+|HKK10
+|034
+|[[Corvette C7 Z06 Convertible]] (3rd Color)
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]
+|4/10
+|[[File:HKK10.jpg|center|75px]]
+|-
+|HKH47
+|035
+|[[Baja Bone Shaker]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+| 3/10
+|[[File:HW_Baja_Bone_Shaker_(2023_-_HKH47).jpg|center|75px]]
+|-
+|HKH48
+|036
+|[[Custom '11 Camaro]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+| 4/10
+|[[File:HW-2023-036-1-HKxxx-Custom '11 Camaro.png|center|75px]]
+|-
+|HKK17
+|036
+|[[Custom '11 Camaro]] (2nd Color)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+| 4/10
+|[[File:HKK17-LOOSE.jpg|center|75px]]
+|-
+|HKG28
+|037
+|[[Tesla Model Y]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br>[[2023 New Models|<font color="black">'''New for 2023!'''</font>]]
+|1/10
+|[[File:TeslaModelY.jpg|center|75px]]
+|-
+|HKL53
+|037
+|[[Tesla Model Y]] (2nd Color)
+| bgcolor="#E80018" |[[Red Edition|<font color="white">Red Edition</font>]]<br>[[2023 New Models|<font color="white">'''New for 2023!'''</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|3/12
+|[[File:Telsa Model Y.jpg|center|75px]]
+|-
+|HKK20
+|037
+|[[Tesla Model Y]] (3rd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br>[[2023 New Models|<font color="black">'''New for 2023!'''</font>]]
+|1/10
+|[[File:HKK20-LOOSE.jpg|center|75px]]
+|-
+|HKH55
+|038
+|[[Porsche Panamera Turbo S E-Hybrid Sport Turismo]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]
+|2/10
+|[[File:HKH55.jpg|center|75px]]
+|-
+|HKL38
+|038
+|[[Porsche Panamera Turbo S E-Hybrid Sport Turismo]] (2nd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br>[[Dollar General|<font color="black">'''Dollar General Exclusive''']]</font>
+|2/10
+|[[File:1A8119 Porsche Panamera Turbo S E Hybrid.jpg|center|75px]]
+|-
+|HKH77
+|039
+|[[Turbine Sublime]]
+| bgcolor="#ff9505" |[[HW 55 Race Team Mini Collection (2023)|<font color="#4251AE">HW 55 Race Team</font>]]
+|1/5
+|[[File:2023TurbineSublimejwj.jpg|center|75px]]
+|-
+|HKK38
+|039
+|[[Turbine Sublime]] (2nd Color)
+| bgcolor="#ff9505" |[[HW 55 Race Team Mini Collection (2023)|<font color="#4251AE">HW 55 Race Team</font>]]
+|1/5
+|[[File:Turbine Sublime HKK38.jpg|center|75px]]
+|-
+|HKG29
+|040
+|[[Rally Speciale]]
+| bgcolor="#FF6E00" |[[HW Track Champs Mini Collection (2023)|<font color="white">HW Track Champs</font>]]<br>[[2023 New Models|<font color="white">'''New for 2023!'''</font>]]
+| 1/5
+|[[File:RallySpeciale.jpg|center|75px]]
+|-
+|HKK37
+|040
+|[[Rally Speciale]] (2nd Color)
+| bgcolor="#FF6E00" |[[HW Track Champs Mini Collection (2023)|<font color="white">HW Track Champs</font>]]<br>[[2023 New Models|<font color="white">'''New for 2023!'''</font>]]
+| 1/5
+|[[File:HW - Rally Speciale (2023 - HKK37).jpg|center|75px]]
+|-
+|HKH66
+|041
+|[[Hot Wired]]
+| bgcolor="#FF6E00" |[[HW Track Champs Mini Collection (2023)|<font color="white">HW Track Champs</font>]]
+|2/5 
+|[[File:HW-2023-041-1-Hot Wired.png|center|75px]]
+|-
+|HKK27
+|041
+|[[Hot Wired]] (2nd Color)
+| bgcolor="#FF6E00" |[[HW Track Champs Mini Collection (2023)|<font color="white">HW Track Champs</font>]]
+|2/5 
+|[[File:041 250.jpg|center|75px]]
+|-
+|HKH79
+|042
+|[[Skate Grom]]
+| bgcolor="#0066CC" |[[HW Sports Mini Collection (2023)|<font color="black">HW Sports</font>]]
+|1/5 
+|[[File:HW-2023-042-1-Skate Grom.png|center|75px]]
+|-
+|HKK42
+|042
+|[[Skate Grom]] (2nd Color)
+| bgcolor="#0066CC" |[[HW Sports Mini Collection (2023)|<font color="black">HW Sports</font>]]
+|1/5 
+|[[File:042 250.jpg|center|75px]]
+|-
+|HKH80
+|043
+|[[Tee'd Off 2]]
+| bgcolor="#0066CC" |[[HW Sports Mini Collection (2023)|<font color="black">HW Sports</font>]]
+|2/5 
+|[[File:HW-2023-043-1-HKxxx-Tee'd Off 2.png|center|75px]]
+|-
+|HKK43
+|043
+|[[Tee'd Off 2]] (2nd Color)
+| bgcolor="#0066CC" |[[HW Sports Mini Collection (2023)|<font color="black">HW Sports</font>]]
+|2/5 
+|[[File:043 250 2.jpg|center|75px]]
+|-
+|HKK44
+|043
+|[[Tee'd Off 2]] (3rd Color)
+| bgcolor="#0066CC" |[[HW Sports Mini Collection (2023)|<font color="black">HW Sports</font>]]
+|2/5 
+|[[File:2023 (-43) Tee'd Off 2 (Gold).jpg|center|75px]]
+|-
+|HKH84
+|044
+|[[2018 Bentley Continental GT3]]
+| bgcolor="#414A4C" |[[HW Modified Mini Collection (2023)|<font color="white">HW Modified</font>]]
+|3/5
+|[[File:HW_2018_Bentley_Continental_GT3_(2023_-_HKH84).jpg|center|75px]]
+|-
+|HKL45
+|044
+|[[2018 Bentley Continental GT3]] (2nd Color)
+| bgcolor="#414A4C" |[[HW Modified Mini Collection (2023)|<font color="white">HW Modified</font>]]
+|3/5
+|[[File:HKL45.jpg|center|75px]]
+|-
+|HKH89
+|045
+|[[Poison Arrow]]
+| bgcolor="#4000FF" |[[Sky Show Mini Collection (2023)|<font color="white">Sky Show</font>]]
+|2/5
+|[[File:HW-2023-045-1-Poison Arrow.png|center|75px]]
+|-
+|HKK52
+|045
+|[[Poison Arrow]] (2nd Color)
+| bgcolor="#4000FF" |[[Sky Show Mini Collection (2023)|<font color="white">Sky Show</font>]]
+|2/5
+|[[File:2023 (-45) Poison Arrow (Blue).jpg|center|75px]]
+|-
+|HKJ11
+|046
+|[[2023 Nissan Z]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]
+|3/10
+|[[File:'23NissanZ.jpg|center|75px]]
+|-
+|HKK64
+|046
+|[[2023 Nissan Z]] (2nd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]
+|3/10
+|[[File:2023NissanZ.jpg|center|75px]]
+|-
+|HKL39
+|046
+|[[2023 Nissan Z]] (3rd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]<br><font color="black">'''"From the Vault" Exclusive'''</font>
+|3/10
+|[[File:2023 Nissan Z 3rd Color.jpg|center|75px]]
+|-
+|HKJ12
+|047
+|[[Nissan Maxima Drift Car]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]
+|4/10
+|[[File:HKJ12_-_LOOSE.jpg|center|75px]]
+|-
+|HKK65
+|047
+|[[Nissan Maxima Drift Car]] (2nd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]
+|4/10
+|[[File:HKK65-LOOSE.jpg|center|75px]]
+|-
+| HKJ27
+|048
+|[[Gotta Go]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2023)|<font color="black">Experimotors</font>]]
+|3/5
+|[[File:HW-2023-048-1-Gotta Go.png|center|75px]]
+|-
+|HKK73
+|048
+|[[Gotta Go]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2023)|<font color="black">Experimotors</font>]]
+|3/5
+|[[File:20230529 100331.jpg|center|75px]]
+|-
+|HKJ33
+|049
+|[[Kool Kombi]]
+| bgcolor="#FF8000" |[[Surf's Up Mini Collection (2023)|<font color="black">Surf's Up</font>]]
+|2/5
+|[[File:HW_Volkswagen_Kool_Kombi_(2023_-_HKJ33).jpg|center|75px]]
+|-
+|HKL26
+|049
+|[[Kool Kombi]] (2nd Color - Zamac)
+| bgcolor="#FF8000" |[[Surf's Up Mini Collection (2023)|<font color="black">Surf's Up</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|2/5
+|[[File:2023 Hot Wheels Kool Kombi Zamac.jpg|center|75px]]
+|-
+|HKK80
+|049
+|[[Kool Kombi]] (3rd Color)
+| bgcolor="#FF8000" |[[Surf's Up Mini Collection (2023)|<font color="black">Surf's Up</font>]]
+|2/5
+|[[File:GrayKombi.jpg|center|75px]]
+|-
+|HKL06
+|050
+|[[Surf Crate]]
+| bgcolor="#FF8000" |[[Surf's Up Mini Collection (2023)|<font color="black">Surf's Up</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|3/5
+|[[File:HW-2023-050-1-Surf Crate.png|center|75px]]
+|-
+|HKG81
+|051
+|[['89 Mazda Savanna RX-7 FC3S]]
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]
+| 4/10
+|[[File:HW-2023-051-1-HKG81-89 Mazda Savanna RX-7 FC3S.png|center|75px]]
+|-
+|HKJ62
+|051
+|[['89 Mazda Savanna RX-7 FC3S]] (2nd Color)
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]
+| 4/10
+|[[File:HKJ62-LOOSE.jpg|center|75px]]
+|-
+|HKG86
+|052
+|[[1988 Jeep Wagoneer]]
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]<br><font color="black">'''New in Mainline'''</font>
+|5/10
+|[[File:'88JeepWagoneer.jpg|center|75px]]
+|-
+|HKJ63
+|052
+|[[1988 Jeep Wagoneer]] (2nd Color)
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]<br><font color="black">'''New in Mainline'''</font>
+|5/10
+|[[File:HKJ63.jpg|center|75px]]
+|-
+|HKL47
+|052
+|[[1988 Jeep Wagoneer]] (3rd Color)
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]<br><font color="black">'''New in Mainline'''</font><br>[[Kroger|<font color="black">'''Kroger  Exclusive'''</font>]]
+|5/10
+|[[File:2023-052 HKL47 '88 Jeep Wagoneer Teal Kroger open-1.jpg|center|75px]]
+|-
+|HKG91
+|053
+|[[Hot Wheels High]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]
+|1/10 
+|[[File:HW-2023-053-1-Hot Wheels High.png|center|75px]]
+|-
+|HKJ67
+|053
+|[[Hot Wheels High]] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]
+|1/10 
+|[[File:HKJ67.jpg|center|75px]]
+|-
+|HKJ68
+|053
+|[[Hot Wheels High]] (3rd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]
+|1/10 
+|[[File:HKJ68.jpg|center|75px]]
+|-
+|HKG92
+|054
+|[[Dodge Charger Drift Car|Dodge Charger Drift]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]
+|2/10 
+|[[File:HW-2023-054-1-HKG92-Dodge Charger Drift.png|center|75px]]
+|-
+|HKL58
+|054
+|[[Dodge Charger Drift Car|Dodge Charger Drift]] (2nd Color)
+| bgcolor="#E80018" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|7/12
+|[[File:40120121533.jpg|center|75px]]
+|-
+|HKJ69
+|054
+|[[Dodge Charger Drift Car|Dodge Charger Drift]] (3rd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]
+|2/10 
+|[[File:HKJ69.jpg|center|75px]]
+|-
+|HKG38
+|055
+|[[Batman Forever Batmobile]]
+| bgcolor="black" |[[Batman Mini Collection (2023)|<font color="white">Batman</font>]]<br>'''[[2023 New Models|<font color="white">New for 2023!</font>]]'''
+|2/5
+|[[File:ValKilmerBatmobile.jpg|center|75px]]
+|-
+|HKJ73
+|055
+|[[Batman Forever Batmobile]] (2nd Color)
+| bgcolor="black" |[[Batman Mini Collection (2023)|<font color="white">Batman</font>]]<br>'''[[2023 New Models|<font color="white">New for 2023!</font>]]'''
+|2/5
+|[[File:2023batman.png|center|75px]]
+|-
+|HKH05
+|056
+|[[1988 Ford T-Bird|Matt and Debbie Hay's 1988 Pro Street Thunderbird]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]
+|5/10
+|[[File:HKH05-LOOSE.jpg|center|75px]]
+|-
+|HKL25
+|056
+|[[1988 Ford T-Bird|Matt and Debbie Hay's 1988 Pro Street Thunderbird]] (2nd Color - Zamac)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]<br>'''[[Walmart Exclusive Zamac Editions|<font color="black">Walmart Exclusive</font>]]'''
+|5/10
+|[[File:2023-056 HKL25 Matt Debbie Hay's Zamac 1988 Pro Street Thunderbird o-1.jpg|center|75px]]
+|-
+|HKJ80
+|056
+|[[1988 Ford T-Bird|Matt and Debbie Hay's 1988 Pro Street Thunderbird]] (3rd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]
+|5/10
+|[[File:056 - Matt and Debbie Hay's 1988 Pro St. T-bird (Black).jpg|center|75px]]
+|-
+|HKH11
+|057
+|[[Barbie Extra]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2023)|<font color="white">HW Screen Time</font>]]
+|3/10
+|[[File:HW-2023-057-1-Barbie Extra.png|center|75px]]
+|-
+|HKG31
+|058
+|[[Brickin' Delivery]]
+| bgcolor="#ED2839" |[[Brick Rides Mini Collection (2023)|<font color="white">Brick Rides</font>]]<br>'''[[2023 New Models|<font color="white">New for 2023!</font>]]'''
+|3/5
+|[[File:Brickin'Delivery.jpg|center|75px]]
+|-
+|HKJ87
+|058
+|[[Brickin' Delivery]] (2nd Color)
+| bgcolor="#ED2839" |[[Brick Rides Mini Collection (2023)|<font color="white">Brick Rides</font>]]<br>'''[[2023 New Models|<font color="white">New for 2023!</font>]]'''
+|3/5
+|[[File:058 250.jpg|center|75px]]
+|-
+|HKH20
+|059
+|[[Roller Toaster]]
+| bgcolor="#ffb6c1" |[[Sweet Rides Mini Collection (2023)|<font color="white">Sweet Rides</font>]]
+|4/5
+|[[File:HW_Roller_Toaster_(2023_-_HKH20).jpg|center|75px]]
+|-
+|HKJ93
+|059
+|[[Roller Toaster]] (2nd Color)
+| bgcolor="#ffb6c1" |[[Sweet Rides Mini Collection (2023)|<font color="white">Sweet Rides</font>]]
+|4/5
+|[[File:20230529 100024.jpg|center|75px]]
+|-
+|HKH21
+|060
+|[[Bone Shaker]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2023)|<font color="black">HW Dream Garage</font>]]
+|3/5 
+|[[File:HW-2023-060-1-HKxxx-Bone Shaker.png|center|75px]]
+|-
+|HKJ95
+|060
+|[[Bone Shaker]] (2nd Color) 
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2023)|<font color="black">HW Dream Garage</font>]]
+|3/5 
+|[[File:HKJ95-LOOSE.jpg|center|75px]]
+|-
+|HKH26
+|061
+|[[Mercedes-Benz Unimog 1300L|Mercedes-Benz Unimog 1300]]
+| bgcolor="#FFAA1D" |[[HW Haulers Mini Collection (2023)|<font color="white">HW Haulers</font>]]
+|4/5
+|[[File:HW-2023-061-1-Mercedes-Benz Unimog 1300.png|center|75px]]
+|-
+|HKJ99
+|061
+|[[Mercedes-Benz Unimog 1300L]] (2nd Color)
+| bgcolor="#FFAA1D" |[[HW Haulers Mini Collection (2023)|<font color="white">HW Haulers</font>]]
+|4/5
+|[[File:2023-061_Mercedes_Benz_Unimog_1300L_Blue_open-1.jpg|center|75px]]
+|-
+|HKH39
+|062
+|[[Max Steel]]
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]
+|5/10
+|[[File:MaxSteelWhite2023.jpg|center|75px]]
+|-
+|HKH49
+|063
+|[['68 COPO Camaro]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+|5/10
+|[[File:HW-2023-063-1-HKxxx-68 COPO Camaro.png|center|75px]]
+|-
+|HKL12
+|063
+|[['68 COPO Camaro]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]<br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|5/10
+|[[File:'68COPOCamaro.jpg|center|75px]]
+|-
+|HKH50
+|064
+|[[Hot Wheels Ford Transit Connect]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+|6/10
+|[[File:HW-2023-064-1-HKxxx-Hot Wheels Ford Transit Connect.png|center|75px]]
+|-
+|HKK18
+|064
+|[[Hot Wheels Ford Transit Connect]] (2nd Color)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+|6/10
+|[[File:HKK18.jpg|center|75px]]
+|-
+|HKH52
+|065
+|[['76 Greenwood Corvette]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+|7/10
+|[[File:HW-2023-065-1-HKxxx-76 Greenwood Corvette.png|center|75px]]
+|-
+|HKH67
+|066
+|[[Dodge Van]]
+| bgcolor="#ff9505" |[[HW 55 Race Team Mini Collection (2023)|<font color="#4251AE">HW 55 Race Team</font>]]
+|2/5
+|[[File:DodgeRamVan.jpg|center|75px]]
+|-
+|HKK28
+|066
+|[[Dodge Van]] (2nd Color)
+| bgcolor="#ff9505" |[[HW 55 Race Team Mini Collection (2023)|<font color="#4251AE">HW 55 Race Team</font>]]
+|2/5
+|[[File:066 - Dodge Van (White).jpg|center|75px]]
+|-
+|HKG32
+|067
+|[[Ducati DesertX]]
+| bgcolor="#87CEEB" |[[HW Moto Mini Collection (2023)|<font color="black">HW Moto</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|1/5
+|[[File:DucatiDesertX.jpg|center|75px]]
+|-
+|HKK31
+|067
+|[[Ducati DesertX]] (2nd Color)
+| bgcolor="#87CEEB" |[[HW Moto Mini Collection (2023)|<font color="black">HW Moto</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|1/5
+|[[File:HKK31.jpg|center|75px]]
+|-
+|HKL01
+|068
+|[[BMW R nineT Racer]]
+| bgcolor="#87CEEB" |[[HW Moto Mini Collection (2023)|<font color="black">HW Moto</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|2/5
+|[[File:BMWRnineTRacer.jpg|center|75px]]
+|-
+|HKJ13
+|069
+|[[Nissan Skyline GT-R (R32)]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]
+|5/10
+|[[File:GodzillaR32.jpg|center|75px]]
+|-
+|HKG36
+|070
+|[[Rimac Nevera]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+| 4/10
+|[[File:RimacNevera.jpg|center|75px]]
+|-
+|HKK21
+|070
+|[[Rimac Nevera]] (2nd Color) 
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+| 4/10
+|[[File:RivieraNevera.jpg|center|75px]]
+|-
+|HKJ34
+|071
+|[[Deora III]]
+| bgcolor="#FF8000" |[[Surf's Up Mini Collection (2023)|<font color="black">Surf's Up</font>]]
+|4/5
+|[[File:HW-2023-071-1-Deora III.png|center|75px]]
+|-
+| HKK81
+|071
+|[[Deora III]] (2nd Color)
+| bgcolor="#FF8000" |[[Surf's Up Mini Collection (2023)|<font color="black">Surf's Up</font>]]
+|4/5
+|[[File:20230529 100340.jpg|center|75px]]
+|-
+|HKJ36
+|072
+|[[Pagani Zonda R]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2023)|<font color="black">HW Turbo</font>]]
+|1/5
+|[[File:BiancoZonda.jpg|center|75px]]
+|-
+|HKK83
+|072
+|[[Pagani Zonda R]] (2nd Color)
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2023)|<font color="black">HW Turbo</font>]]
+|1/5
+|[[File:BluZonda.jpg|center|75px]]
+|-
+|HKH22
+|073
+|[[Twinduction]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]
+|1/10 
+|[[File:Twinductionnew.JPG|center|75px]]
+|-
+|HKK88
+|073
+|[[Twinduction]] (2nd Color)
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]
+|1/10 
+|[[File:HW_-_Twinduction_%282023_-_HKK88%29.jpg|center|75px]]
+|-
+| HKG83
+|074
+|[['84 Corvette]]
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]<br>'''New in Mainline'''
+|6/10
+|[[File:HW-2023-074-1-HKG83-84 Corvette.png|center|75px]]
+|-
+|HKG85
+|075
+|[[Cadillac Seville|'82 Cadillac Seville]]
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]
+|7/10
+|[[File:HW-2023-075-1-HKG85-82 Cadillac Seville.png|center|75px]]
+|-
+|HKL57
+|075
+|[[Cadillac Seville|'82 Cadillac Seville]] (2nd Color)
+| bgcolor="#E80018" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|8/12
+|[[File:20231119191401.jpg|center|75px]]
+|-
+|HKJ64
+|075
+|[[Cadillac Seville|'82 Cadillac Seville]] (3rd Color)
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]
+|7/10
+|[[File:HKJ64-LOOSE.jpg|center|75px]]
+|-
+|HKG89
+|076
+|[[Time Attaxi]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]<br>'''[[Chinese New Year|<font color="black">Year of the Rabbit</font>]]'''
+|3/10
+|[[File:HW-2023-076-1-HKxxx-Time Attaxi.png|center|75px]]
+|-
+|HKG35
+|077
+|[[Audi 90 quattro|Audi '90 quattro]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+| 6/10
+|[[File:AudiquattroGTO.jpg|center|75px]]
+|-
+|HKJ81
+|077
+|[[Audi 90 quattro|Audi '90 quattro]] (2nd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|6/10
+|[[File:HKJ81.jpg|center|75px]]
+|-
+|HKH10
+|078
+|[[Snoopy]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2023)|<font color="white">HW Screen Time</font>]]
+|4/10
+|[[File:HW_-_Snoopy_(2023_-_HKH10).jpg|center|75px]]
+|-
+|HKH09
+|079
+|[[Armadillo|The Armadillo]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2023)|<font color="white">HW Screen Time</font>]]
+|5/10
+|[[File:HW-2023-079-1-HKxxx-The Armadillo.png|center|75px]]
+|-
+|HKH31
+|080
+|[[Lolux]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]
+|1/10 
+|[[File:HKH31-LOOSE.jpg|center|75px]]
+|-
+|HKK01
+|080
+|[[Lolux]] (2nd Color)
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]
+|1/10 
+|[[FIle:HKK01-LOOSE.jpg|center|75px]]
+|-
+|HKH29
+|081
+|[[Ford Mustang Mach-E 1400]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]
+|2/10 
+|[[File:HW-2023-081-1-HKxxx-Ford Mustang Mach-E 1400.png|center|75px]]
+|-
+|HKK02
+|081
+|[[Ford Mustang Mach-E 1400]] (2nd Color)
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]
+|2/10 
+|[[File:081 250.jpg|center|75px]]
+|-
+|HKH40
+|082
+|[[McLaren Elva]]
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]
+|6/10
+|[[File:2023McLarenElva.jpg|center|75px]]
+|-
+|HKL54
+|082
+|[[McLaren Elva]] (2nd Color)
+| bgcolor="#E80018" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|4/12
+|[[File:0122175212.jpg|center|75px]]
+|-
+|HKH51
+|083
+|[['08 Ford Focus]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+| 8/10
+|[[File:HKH51-LOOSE.jpg|center|75px]]
+|-
+|HKH56
+|084
+|[[Lotus Evija]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]
+|3/10 
+|[[File:2023LotusEvija.jpg|center|75px]]
+|-
+|HKL13
+|084
+|[[Lotus Evija]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|3/10
+|[[File:HW_-_Lotus_Evija_(2023_STH_-_HKL13).jpg|center|75px]]
+|-
+|HKG33
+|085
+|[[HW Braille Racer - Twin Mill]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2023)|<font color="black">Experimotors</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+| 4/5
+|[[File:BrailleTwinMill.jpg|center|75px]]
+|-
+|HKK74
+|085
+|[[HW Braille Racer - Twin Mill]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2023)|<font color="black">Experimotors</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+| 4/5
+|[[File:ZAMACBrailleTwinMill.jpg|center|75px]]
+|-
+|HKH68
+|086
+|[[Erikenstein Rod]]
+| bgcolor="#ff9505" |[[HW 55 Race Team Mini Collection (2023)|<font color="#4251AE">HW 55 Race Team</font>]]
+|3/5
+|[[File:Erikenstein2023RaceTeamBlue.jpg|center|75px]]
+|-
+|HKK29
+|086
+|[[Erikenstein Rod]] (2nd Color)
+| bgcolor="#ff9505" |[[HW 55 Race Team Mini Collection (2023)|<font color="#4251AE">HW 55 Race Team</font>]]
+|3/5
+|[[File:HKK29.jpg|center|75px]]
+|-
+|HKH74
+|087
+|[[Honda Super Cub]]
+| bgcolor="#87CEEB" |[[HW Moto Mini Collection (2023)|<font color="black">HW Moto</font>]]
+|3/5
+|[[File:HW-2023-087-1-Honda Super Cub.png|center|75px]]
+|-
+|HKK32
+|087
+|[[Honda Super Cub]] (2nd Color)
+| bgcolor="#87CEEB" |[[HW Moto Mini Collection (2023)|<font color="black">HW Moto</font>]]
+|3/5
+|[[File:HKK32-LOOSE.jpg|center|75px]]
+|-
+|HKH75
+|088
+|[[Chrysler Pacifica]]
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2023)|<font color="black">Mud Studs</font>]]
+|1/5
+|[[File:HW-2023-088-1-Chrysler Pacifica.png|center|75px]]
+|-
+|HKK35
+|088
+|[[Chrysler Pacifica]] (2nd Color)
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2023)|<font color="black">Mud Studs</font>]]
+|1/5
+|[[File:HKK35-LOOSE.jpg|center|75px]]
+|-
+|HKG34
+|089
+|[[Group C Fantasy]]
+| bgcolor="#FF6E00" |[[HW Track Champs Mini Collection (2023)|<font color="white">HW Track Champs</font>]]<br>[[2023 New Models|<font color="white">'''New for 2023!'''</font>]]
+|3/5
+|[[File:GroupCFantasy.jpg|center|75px]]
+|-
+|HKK39
+|089
+|[[Group C Fantasy]] (2nd Color)
+| bgcolor="#FF6E00" |[[HW Track Champs Mini Collection (2023)|<font color="white">HW Track Champs</font>]]<br>[[2023 New Models|<font color="white">'''New for 2023!'''</font>]]
+|3/5
+|[[File:20230529 100243.jpg|center|75px]]
+|-
+|HKH81
+|090
+|[[Head Gasket]]
+| bgcolor="#0066CC" |[[HW Sports Mini Collection (2023)|<font color="black">HW Sports</font>]]
+|3/5
+|[[File:HKH81-LOOSE.jpg|center|75px]]
+|-
+|HKK45
+|090
+|[[Head Gasket]] (2nd Color)
+| bgcolor="#0066CC" |[[HW Sports Mini Collection (2023)|<font color="black">HW Sports</font>]]
+|3/5
+|[[File:Head Gasket 2023.jpg|center|75px]]
+|-
+|HKH86
+|091
+|[[Nissan Leaf NISMO RC_02]]
+| bgcolor="#414A4C" |[[HW Modified Mini Collection (2023)|<font color="white">HW Modified</font>]]
+|4/5
+|[[File:HW-2023-091-1-HKH86-Nissan Leaf NISMO RC 02.png|center|75px]]
+|-
+|HKK50
+|091
+|[[Nissan Leaf NISMO RC_02]] (2nd Color)
+| bgcolor="#414A4C" |[[HW Modified Mini Collection (2023)|<font color="white">HW Modified</font>]]
+|4/5
+|[[File:HKK50-LOOSE.jpg|center|75px]]
+|-
+|HKK95
+|092
+|[[Mad Propz]]
+| bgcolor="#4000FF" |[[Sky Show Mini Collection (2023)|<font color="white">Sky Show</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|3/5
+|[[File:HW-2023-092-1-HKxxx-Mad Propz.png|center|75px]]
+|-
+|HKH98
+|093
+|[[Toon'd '83 Chevy Silverado]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]
+|1/10
+|[[File:HW-2023-093-1-HKxxx-Toon'd '83 Chevy Silverado.png|center|75px]]
+|-
+|HKK57
+|093
+|[[Toon'd '83 Chevy Silverado]] (2nd Color)
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]
+|1/10
+|[[File:Toondsilveradoloose.jpg|center|75px]]
+|-
+|HKJ02
+|094
+|[['67 Jeepster Commando]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]
+|2/10
+|[[File:HW-2023-094-1-HKxxx-67 Jeepster Commando.png|center|75px]]
+|-
+|HKL55
+|094
+|[['67 Jeepster Commando]] (2nd Color)
+| bgcolor="#E80018" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|5/12
+|[[File:67 Jeepster Commando White.jpg|center|75px]]
+|-
+|HKJ15
+|095
+|[[1986 Toyota Van]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]
+|6/10
+|[[File:HW-2023-095-1-HKJ15-1986 Toyota Van.png|center|75px]]
+|-
+|HKL56
+|095
+|[[1986 Toyota Van]] (2nd Color)
+| bgcolor="#E80018" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|6/12
+|[[File:2023 1986 Toyota Van Red Edition carded.jpg|center|75px]]
+|-
+|HKK66
+|095
+|[[1986 Toyota Van]] (3rd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]
+|6/10
+|[[File:HKK66.jpg|center|75px]]
+|-
+|HKJ16
+|096
+|[['90 Honda Civic EF]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]
+|7/10
+|[[File:HW-2023-096-1-HKJ16-90 Honda Civic EF.png|center|75px]]
+|-
+|HKL28
+|096
+|[['90 Honda Civic EF]] (2nd Color - Zamac)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]<br>'''[[Walmart Exclusive Zamac Editions|<font color="black">Walmart Exclusive</font>]]'''
+|7/10
+|[[File:1990 Honda Civic EF HW J Imports HKL28.JPG|center|75px]]
+|-
+|HKJ29
+|097
+|[[Lucid Air]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2023)|<font color="black">Factory Fresh</font>]]
+|1/5
+|[[File:HKJ29-LOOSE.jpg|center|75px]]
+|-
+|HKK76
+|097
+|[[Lucid Air]] (2nd Color)
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2023)|<font color="black">Factory Fresh</font>]]
+|1/5
+|[[File:097 250.jpg|center|75px]]
+|-
+|HKJ37
+|098
+|[[Aston Martin Vantage GTE]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2023)|<font color="black">HW Turbo</font>]]
+|2/5
+|[[File:AMRGulf.jpg|center|75px]]
+|-
+|HKK84
+|098
+|[[Aston Martin Vantage GTE]] (2nd Color)
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2023)|<font color="black">HW Turbo</font>]]
+|2/5
+|[[File:HKK84.jpg|center|75px]]
+|-
+|HKJ53
+|099
+|[[Custom Ford Maverick]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]
+|2/10
+|[[File:HW-2023-099-1-HKJ53-Custom Ford Maverick.png|center|75px]]
+|-
+|HKL42
+|099
+|[[Custom Ford Maverick]] (2nd Color)
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]<br><font color="black">'''"From the Vault" Exclusive'''</font>
+|2/10
+|[[File:2023 Custom Ford Maverick "From the Vault" 2nd Color.jpg|center|75px]]
+|-
+|HKJ51
+|100
+|[[Count Muscula]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]
+|3/10
+|[[File:HW-2023-100-1-Count Muscula.png|center|75px]]
+|-
+|HKK89
+|100
+|[[Count Muscula]] (2nd Color)
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]
+|3/10
+|[[File:HKK89-LOOSE.jpg|center|75px]]
+|-
+|HKG84
+|101
+|[[DMC DeLorean]]
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]
+|8/10
+|[[File:HW-2023-101-1-HKG84-DMC DeLorean.png|center|75px]]
+|-
+|HKJ65
+|101
+|[[DMC DeLorean]] (2nd Color)
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]
+|8/10
+|[[File:HKJ65-LOOSE.jpg|center|75px]]
+|-
+|HKL62
+|101
+|[[DMC DeLorean]] (3rd Color)
+| bgcolor="#E80018" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|10/12
+|[[file:RedEdDeLorean.jpg|center|75px]]
+|-
+|HKG93
+|102
+|[[Drone Duty]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]
+|4/10
+|[[File:HW-2023-102-1-HKxxx-Drone Duty.png|center|75px]]
+|-
+|HKJ70
+|102
+|[[Drone Duty]] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]
+|4/10
+|[[File:102 250.jpg|center|75px]]
+|-
+|HKG99
+|103
+|[[1989 Batmobile|Batmobile]]
+| bgcolor="black" |[[Batman Mini Collection (2023)|<font color="white">Batman</font>]]
+|3/5
+|[[File:HW_-_Batmobile_(2023_-_HKG99).jpg|center|75px]]
+|-
+|HKJ74
+|103
+|[[1989 Batmobile|Batmobile]] (2nd Color)
+| bgcolor="black" |[[Batman Mini Collection (2023)|<font color="white">Batman</font>]]
+|3/5
+|[[File:S-l1600w.png|center|75px]]
+|-
+|HKG37
+|104
+|[[Brick and Motor]]
+| bgcolor="#ED2839" |[[Brick Rides Mini Collection (2023)|<font color="white">Brick Rides</font>]]<br>'''[[2023 New Models|<font color="white">New for 2023!</font>]]'''
+|4/5
+|[[File:BrickandMotor.jpg|center|75px]]
+|-
+|HKJ88
+|104
+|[[Brick and Motor]] (2nd Color)
+| bgcolor="#ED2839" |[[Brick Rides Mini Collection (2023)|<font color="white">Brick Rides</font>]]<br>'''[[2023 New Models|<font color="white">New for 2023!</font>]]'''
+|4/5
+|[[File:104 250 2.jpg|center|75px]]
+|-
+|HKG39
+|105
+|[[El Segundo Coupe]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2023)|<font color="black">HW Dream Garage</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|4/5
+|[[File:ElSegundoCoupe.jpg|center|75px]]
+|-
+|HKJ96
+|105
+|[[El Segundo Coupe]] (2nd Color)
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2023)|<font color="black">HW Dream Garage</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|4/5
+|[[File:HKJ96-LOOSE.jpg|center|75px]]
+|-
+|HKH28
+|106
+|[['18 COPO Camaro SS]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]
+|3/10
+|[[File:HW-2023-106-1-HKxxx-18 COPO Camaro SS.png|center|75px]]
+|-
+|HKH32
+|107
+|[['86 Ford Thunderbird Pro Stock]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]<br><font color="black">'''New in Mainline'''</font>
+|4/10
+|[[File:'86FordT-Bird.jpg|center|75px]]
+|-
+|HKK03
+|107
+|[['86 Ford Thunderbird Pro Stock]] (2nd Color)
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]<br><font color="black">'''New in Mainline'''</font>
+|4/10
+|[[File:'86 Ford Thunderbird Pro Stock.jpg|center|75px]]
+|-
+|HKH57
+|108
+|[[Automobili Pininfarina Battista]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]
+|5/10
+|[[File:2023PininfarinaBattista.jpg|center|75px]]
+|-
+|HKK22
+|108
+|[[Automobili Pininfarina Battista]] (2nd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]
+|5/10
+|[[File:HW - Automobili Pininfarina Battista (2023 - HKK22).jpg|center|75px]]
+|-
+|HKL31
+|108
+|[[Automobili Pininfarina Battista]] (3rd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|5/10
+|[[File:2023-108 HKL31 Zamak Automobili Pininfarina Battista o-1.jpg|center|75px]]
+|-
+|HKH58
+|109
+|[[Audi RS e-tron GT]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]
+|6/10
+|[[File:2023AudiRSe-tronGT.jpg|center|75px]]
+|-
+|HKL59
+|109
+|[[Audi RS e-tron GT]] (2nd Color)
+| bgcolor="#E80018" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|9/12
+|[[File:Mainline 2023 Red Edition Audi RS E-Tron GT Black Malaysia HKL59.jpg|center|75px]]
+|-
+|HKH61
+|110
+|[['55 Chevy Bel Air Gasser]]
+| bgcolor="#74C365" |[[HW Gassers Mini Collection (2023)|<font color="black">HW Gassers</font>]]
+|1/5
+|[[File:Tri-FiveTerror.jpg|center|75px]]
+|-
+|HKK26
+|110
+|[['55 Chevy Bel Air Gasser]] (2nd Color)
+| bgcolor="#74C365" |[[HW Gassers Mini Collection (2023)|<font color="black">HW Gassers</font>]]
+|1/5
+|[[File:110 250.jpg|center|75px]]
+|-
+|HKL00
+|111
+|[[Mod Rod]]
+| bgcolor="#ff9505" |[[HW 55 Race Team Mini Collection (2023)|<font color="#4251AE">HW 55 Race Team</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|4/5
+|[[File:20230529 100141.jpg|center|75px]]
+|-
+|HKH78
+|112
+|[[Mach It Go]]
+| bgcolor="#FF6E00" |[[HW Track Champs Mini Collection (2023)|<font color="white">HW Track Champs</font>]]
+|4/5
+|[[File:HW-2023-112-1-HKxxx-Mach It Go.png|center|75px]]
+|-
+|HKK40
+|112
+|[[Mach It Go]] (2nd Color)
+| bgcolor="#FF6E00" |[[HW Track Champs Mini Collection (2023)|<font color="white">HW Track Champs</font>]]
+|4/5
+|[[File:112 250.jpg|center|75px]]
+|-
+|HKH82
+|113
+|[[Ice Shredder]]
+| bgcolor="#0066CC" |[[HW Sports Mini Collection (2023)|<font color="black">HW Sports</font>]]
+|4/5
+|[[File:IceShredder.jpg|center|75px]]
+|-
+|HKK46
+|113
+|[[Ice Shredder]] (2nd Color)
+| bgcolor="#0066CC" |[[HW Sports Mini Collection (2023)|<font color="black">HW Sports</font>]]
+|4/5
+|[[File:HKK46.jpg|center|75px]]
+|-
+|HKH87
+|114
+|[['15 Mazda MX-5 Miata]]
+| bgcolor="#414A4C" |[[HW Modified Mini Collection (2023)|<font color="white">HW Modified</font>]]
+|5/5
+|[[File:HW-2023-114-1-HKH87-15 Mazda MX-5 Miata.png|center|75px]]
+|-
+|HKL27
+|114
+|[['15 Mazda MX-5 Miata]] (2nd Color - Zamac)
+| bgcolor="#414A4C" |[[HW Modified Mini Collection (2023)|<font color="white">HW Modified</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive'''</font>]]
+|5/5
+|[[File:2015 Mazda MX5 Miata HW Modified HKL27.JPG|center|75px]]
+|-
+|HKH91
+|115
+|[[Water Bomber]]
+| bgcolor="#4000FF" |[[Sky Show Mini Collection (2023)|<font color="white">Sky Show</font>]]
+|4/5
+|[[File:HW-2023-115-1-HKxxx-Water Bomber.png|center|75px]]
+|-
+|HKK53
+|115
+|[[Water Bomber|HW Water Bomber]] (2nd Color)
+| bgcolor="#4000FF" |[[Sky Show Mini Collection (2023)|<font color="white">Sky Show</font>]]
+|4/5
+|[[File:HKK53.jpg|center|75px]]
+|-
+|HKJ00
+|116
+|[[GMC Hummer EV]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]
+|3/10
+|[[File:HW-2023-116-1-HKxxx-GMC Hummer EV.png|center|75px]]
+|-
+|HKL61
+|116
+|[[GMC Hummer EV]] (2nd Color)
+| bgcolor="#E80018" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|11/12
+|[[File:Fixed GMC Hummer EV RedEdition.jpg|center|75px]]
+|-
+|HKK58
+|116
+|[[GMC Hummer EV]] (3rd Color)
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]
+|3/10
+|[[File:HKK58-LOOSE.jpg|center|75px]]
+|-
+|HKG40
+|117
+|[['73 Honda Civic Custom]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|8/10
+|[[File:'73HondaCivicCustom.jpg|center|75px]]
+|-
+|HKK67
+|117
+|[['73 Honda Civic Custom]] (2nd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|8/10
+|[[File:HondaCVCCCustom.jpg|center|75px]]
+|-
+|HKJ14
+|118
+|[['68 Mazda Cosmo Sport|1968 Mazda Cosmo Sport]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]<br><font color="black">'''New in Mainline'''</font>
+|9/10
+|[[File:1968MazdaCosmoSport.jpg|center|75px]]
+|-
+|HKL20
+|118
+|[['68 Mazda Cosmo Sport|1968 Mazda Cosmo Sport]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]<br><font color="black">'''New in Mainline'''</font><br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|9/10
+|[[File:1968 Mazda Cosmo Sport.png|center|75px]]
+|-
+|HKJ28
+|119
+|[[Clip Rod]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2023)|<font color="black">Experimotors</font>]]
+|5/5
+|[[File:HW - Clip Rod (2023 - HKJ28) Card Front.jpg|center|75px]]
+|-
+|HKK75
+|119
+|[[Clip Rod]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2023)|<font color="black">Experimotors</font>]]
+|5/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|HKG30
+|120
+|[[BMW 507]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2023)|<font color="black">Factory Fresh</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|2/5
+|[[File:BMW507.jpg|center|75px]]
+|-
+|HKK77
+|120
+|[[BMW 507]] (2nd Color)
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2023)|<font color="black">Factory Fresh</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|2/5
+|[[File:HKK77-LOOSE.jpg|center|75px]]
+|-
+|HKJ30
+|121
+|[[Lotus Emira]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2023)|<font color="black">Factory Fresh</font>]]
+|3/5
+|[[File:2023LotusEmira.jpg|center|75px]]
+|-
+|HKK78
+|121
+|[[Lotus Emira]] (2nd Color)
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2023)|<font color="black">Factory Fresh</font>]]
+|3/5
+|[[File:HKK78-LOOSE.jpg|center|75px]]
+|-
+|HKJ35
+|122
+|[[Surf 'N Turf]]
+| bgcolor="#FF8000" |[[Surf's Up Mini Collection (2023)|<font color="black">Surf's Up</font>]]
+|5/5
+|[[File:HW-2023-122-1-HKxxx-Surf 'N Turf.png|center|75px]]
+|-
+|HKK82
+|122
+|[[Surf 'N Turf]] (2nd Color)
+| bgcolor="#FF8000" |[[Surf's Up Mini Collection (2023)|<font color="black">Surf's Up</font>]]
+|5/5
+|[[File:122 250.jpg|center|75px]]
+|-
+|HKJ55
+|123
+|[['70 Dodge Hemi Challenger]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]
+|4/10
+|[[File:HW-2023-123-1-HKJ55-70 Dodge Hemi Challenger.png|center|75px]]
+|-
+|HKL63
+|123
+|[['70 Dodge Hemi Challenger]] (2nd Color)
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]<br>[[Walgreens|<font color="black">'''Walgreens Exclusive'''</font>]]
+|4/10
+|[[File:WalgreensChallenger.jpg|center|75px]]
+|-
+|HKH04
+|124
+|[['32 Ford]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]
+|7/10
+|[[File:HW-2023-124-1-HKxxx-32 Ford.png|center|75px]]
+|-
+|HKG42
+|125
+|[[Porsche 911 Carrera RS 2.7]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|8/10
+|[[File:Porsche911CarreraRS.jpg|center|75px]]
+|-
+|HKJ82
+|125
+|[[Porsche 911 Carrera RS 2.7]] (2nd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|8/10
+|[[File:PorscheCarreraRS.jpg|center|75px]]
+|-
+|HKH06
+|126
+|[['71 Porsche 911]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]
+|9/10
+|[[File:'71Porsche911.jpg|center|75px]]
+|-
+|HKH12
+|127
+|[[The Beatles Yellow Submarine]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2023)|<font color="white">HW Screen Time</font>]]
+|6/10
+|[[File:The_Beatles_Yellow_Submarine_2023_mainline.jpg|center|75px]]
+|-
+|HKH17
+|128
+|[[Bricking Speed]]
+| bgcolor="#ED2839" |[[Brick Rides Mini Collection (2023)|<font color="white">Brick Rides</font>]]
+|5/5
+|[[File:Bricking_speed_2023.png|center|75px]]
+|-
+|HKJ89
+|128
+|[[Bricking Speed]] (2nd Color)
+| bgcolor="#ED2839" |[[Brick Rides Mini Collection (2023)|<font color="white">Brick Rides</font>]]
+|5/5
+|[[File:2023-128 HKJ89 Bricking Speed Red open-4.jpg|center|75px]]
+|-
+|HKK97
+|129
+|[[Donut Drifter]]
+| bgcolor="#ffb6c1" |[[Sweet Rides Mini Collection (2023)|<font color="white">Sweet Rides</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|5/5
+|[[File:HKK97.jpg|center|75px]]
+|-
+|HKH27
+|130
+|[[Hiway Hauler 2]]
+| bgcolor="#FFAA1D" |[[HW Haulers Mini Collection (2023)|<font color="white">HW Haulers</font>]]
+|5/5
+|[[File:HKH27.jpg|center|75px]]
+|-
+|HKK00
+|130
+|[[Hiway Hauler 2]] (2nd Color)
+| bgcolor="#FFAA1D" |[[HW Haulers Mini Collection (2023)|<font color="white">HW Haulers</font>]]
+|5/5
+|[[File:HKK00-LOOSE.jpg|center|75px]]
+|-
+|HKH43
+|131
+|[[Dodge Viper RT/10]]
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]
+|7/10
+|[[File:HKH43-LOOSE.jpg|center|75px]]
+|-
+|HKK11
+|131
+|[[Dodge Viper RT/10]] (2nd Color)
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]
+|7/10
+|[[File:131 250.jpg|center|75px]]
+|-
+|HKG60
+|132
+|[['72 Stingray Convertible]]
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]<br>'''[[2023 New Models|<font color="white">New for 2023!</font>]]'''
+|8/10
+|[[File:'72StingrayConvertible.jpg|center|75px]]
+|-
+|HKK12
+|132
+|[['72 Stingray Convertible]] (2nd Color)
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]<br>'''[[2023 New Models|<font color="white">New for 2023!</font>]]'''
+|8/10
+|[[File:HKK12-LOOSE.jpg|center|75px]]
+|-
+|HKG41
+|133
+|[[Rollin' Solo]]
+| bgcolor="#FF6E00" |[[HW Track Champs Mini Collection (2023)|<font color="white">HW Track Champs</font>]]<br>[[2023 New Models|<font color="white">'''New for 2023!'''</font>]]
+|5/5
+|[[File:Rollin'Solo.jpg|center|75px]]
+|-
+|HKK41
+|133
+|[[Rollin' Solo]] (2nd Color)
+| bgcolor="#FF6E00" |[[HW Track Champs Mini Collection (2023)|<font color="white">HW Track Champs</font>]]<br>[[2023 New Models|<font color="white">'''New for 2023!'''</font>]]
+|5/5
+|[[File:Rollin' Solo 2023 2nd Color.jpg|center|75px]]
+|-
+|HKJ38
+|134
+|[[Renault Sport R.S. 01]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2023)|<font color="black">HW Turbo</font>]]
+|3/5
+|[[File:Renault Sport R.S. 01 2023.jpg|center|75px]]
+|-
+|HKL21
+|134
+|[[Renault Sport R.S. 01]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2023)|<font color="black">HW Turbo</font>]]<br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|3/5
+|[[File:Renault sport rs.jpg|center|75px]]
+|-
+|HKJ52
+|135
+|[[2017 Camaro ZL1]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]
+|5/10
+|[[File:HKJ52.jpg|center|75px]]
+|-
+|HKL50
+|135
+|[[2017 Camaro ZL1]] (2nd Color)
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]<br>[[Kroger|<font color="black">'''Kroger  Exclusive'''</font>]]
+|5/10
+|[[File:ZL1-Kroger2023.jpg|center|75px]]
+|-
+|HKG90
+|136
+|[[Solar Reflex]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]
+|5/10
+|[[File:HKG90.jpg|center|75px]]
+|-
+|HKG98
+|137
+|[[The Brave and the Bold Batmobile|Batmobile]]
+| bgcolor="black" |[[Batman Mini Collection (2023)|<font color="white">Batman</font>]]
+|4/5
+|[[File:HKG98.jpg|center|75px]]
+|-
+|HKJ75
+|137
+|[[The Brave and the Bold Batmobile|Batmobile]] (2nd Color)
+| bgcolor="black" |[[Batman Mini Collection (2023)|<font color="white">Batman</font>]]
+|4/5
+|[[File:BatmobileBraveBold2023Gold.jpg|center|75px]]
+|-
+|HKG76
+|138
+|[[X-34 Landspeeder]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2023)|<font color="white">HW Screen Time</font>]]
+|6/10
+|[[File:138 250.jpg|center|75px]]
+|-
+|HKH23
+|139
+|[['68 Corvette - Gas Monkey Garage]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2023)|<font color="black">HW Dream Garage</font>]]
+|5/5
+|[[File:HKH23.jpg|center|75px]]
+|-
+|HKL10
+|139
+|[['68 Corvette - Gas Monkey Garage]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2023)|<font color="black">HW Dream Garage</font>]]<br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|5/5
+|[[File:HW - Gas Monkey '68 Corvette (2023 - HKL10).jpg|center|75px]]
+|-
+|HKH30
+|140
+|[[Mustang Funny Car|Mustang NHRA Funny Car]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]
+|5/10
+|[[File:HKH30-LOOSE.jpg|center|75px]]
+|-
+|HKK04
+|140
+|[[Mustang Funny Car|Mustang NHRA Funny Car]] (2nd Color)
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]
+|5/10
+|[[File:HKK04.jpg|center|75px]]
+|-
+|HKG49
+|141
+|[[Honda CB750 Café]]
+| bgcolor="#87CEEB" |[[HW Moto Mini Collection (2023)|<font color="black">HW Moto</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|4/5
+|[[File:HondaCB750.jpg|center|75px]]
+|-
+|HKK34
+|141
+|[[Honda CB750 Café]] (2nd Color)
+| bgcolor="#87CEEB" |[[HW Moto Mini Collection (2023)|<font color="black">HW Moto</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|4/5
+|[[File:HKK34-LOOSE.jpg|center|75px]]
+|-
+|HKH53
+|142
+|[['72 Ford Ranchero]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+|9/10
+|[[File:72FordRanchero2023ArtCars.jpg|center|75px]]
+|-
+|HKG44
+|143
+|[[Baja Bison T5]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|7/10
+|[[File:BajaBisonT5.jpg|center|75px]]
+|-
+|HKK23
+|143
+|[[Baja Bison T5]] (2nd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|7/10
+|[[File:HKK23.jpg|center|75px]]
+|-
+|HKH59
+|144
+|[[Fiat 500e]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br>'''New in Mainline'''
+|8/10
+|[[File:Fiat500e.jpg|center|75px]]
+|-
+|HKK24
+|144
+|[[Fiat 500e]] (2nd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br>'''New in Mainline'''
+|8/10
+|[[File:HKK24-LOOSE.jpg|center|75px]]
+|-
+|HKH63
+|145 
+|[['64 Nova Wagon Gasser]]
+| bgcolor="#74C365" |[[HW Gassers Mini Collection (2023)|<font color="black">HW Gassers</font>]]
+|2/5
+|[[File:HW_-_'64_Nova_Wagon_Gasser_(2023_-_HKH63).jpg|center|75px]]
+|-
+|HKL29
+|145 
+|[['64 Nova Wagon Gasser]] (2nd Color - Zamac)
+| bgcolor="#74C365" |[[HW Gassers Mini Collection (2023)|<font color="black">HW Gassers</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|2/5
+|[[File:2023-145 HKL29 '64 Nova Wagon Gasser Zamac open-2.jpg|center|75px]]
+|-
+|HKL03
+|146
+|[[Rise 'N Climb]]
+| bgcolor="#0066CC" |[[HW Sports Mini Collection (2023)|<font color="black">HW Sports</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|5/5
+|[[File:HKL03.jpg|center|75px]]
+|-
+|HKH99
+|147
+|[[Mazda REPU]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]
+|4/10
+|[[File:MazdaREPU.jpg|center|75px]]
+|-
+|HKJ17
+|148
+|[['88 Honda CR-X]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]
+|10/10
+|[[File:148-2023.jpg|center|75px]]
+|-
+|HKK68
+|148
+|[['88 Honda CR-X]] (2nd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2023)|<font color="black">HW J-Imports</font>]]
+|10/10
+|[[File:1988HondaCR-X.jpg|center|75px]]
+|-
+|HKJ31
+|149
+|[[Porsche Taycan Turbo S]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2023)|<font color="black">Factory Fresh</font>]]
+|4/5
+|[[File:149 - Porsche Taycan Turbo S.jpg|center|75px]]
+|-
+|HKL30
+|149
+|[[Porsche Taycan Turbo S]] (2nd Color - Zamac)
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2023)|<font color="black">Factory Fresh</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|4/5
+|[[File:2023-149 HKL30 Porsche Taycan Turbo Zamak ref-1.jpg|center|75px]]
+|-
+|HKG45
+|150
+|[['89 Mercedes-Benz 560 SEC AMG]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2023)|<font color="black">HW Turbo</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|4/5
+|[[File:Mercedes-Benz560SECAMG.jpg|center|75px]]
+|-
+|HKK85
+|150
+|[['89 Mercedes-Benz 560 SEC AMG]] (2nd Color)
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2023)|<font color="black">HW Turbo</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|4/5
+|[[File:Silver560.jpg|center|75px]]
+|-
+|HKJ54
+|151
+|[['18 Dodge Challenger SRT Demon]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]
+|6/10
+|[[File:HKJ54.jpg|center|75px]]
+|-
+|HKK90
+|151
+|[['18 Dodge Challenger SRT Demon]] (2nd Color)
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]
+|6/10
+|[[File:HKK90.jpg|center|75px]]
+|-
+|HKG88
+|152
+|[['84 Audi Sport quattro]]
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]
+|9/10
+|[[File:HKG88-LOOSE.jpg|center|75px]]
+|-
+|HKJ66
+|152
+|[['84 Audi Sport quattro]] (2nd Color)
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]
+|9/10
+|[[File:HKJ66-LOOSE.jpg|center|75px]]
+|-
+|HKG57
+|153
+|[['70 Dodge Charger (Tooned)|'70 Dodge Charger]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2023)|<font color="black">Tooned</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|2/5
+|[[File:'ToonedDodgeCharger.jpg|center|75px]]
+|-
+|HKH90
+|154
+|[[Corvette Grand Sport Roadster]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2023)|<font color="white">HW Screen Time</font>]]
+|8/10
+|[[File:Corvette Grand Sport Roadster (4th color) - 2023 HW Screen Time.jpg|center|75px]]
+|-
+|HKH42
+|155
+|[[Glory Chaser]]
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]
+|9/10
+|[[File:155 - Glory Chaser (Gulf).jpg|center|75px]]
+|-
+|HKL11
+|155
+|[[Glory Chaser]]
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]<br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|9/10
+|[[File:Glory chaser.jpg|center|75px]]
+|-
+|HKH44
+|156
+|[[BMW i8 Roadster]]
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]<br>'''<font color="white">New in Mainline</font>'''
+|10/10
+|[[File:HKH44-LOOSE.jpg|center|75px]]
+|-
+|HKK13
+|156
+|[[BMW i8 Roadster]] (2nd Color)
+| bgcolor="#353839" |[[HW Roadsters Mini Collection (2023)|<font color="white">HW Roadsters</font>]]<br>'''<font color="white">New in Mainline</font>'''
+|10/10
+|[[File:HKK13-LOOSE.jpg|center|75px]]
+|-
+|HKH54
+|157
+|[[Cloak and Dagger]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+|10/10
+|[[File:HKH54.jpg|center|75px]]
+|-
+|HKK19
+|157
+|[[Cloak and Dagger]] (2nd Color)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2023)|<font color="black">HW Art Cars</font>]]
+|10/10
+|[[File:CLOAK AND DAGGER (WHITE).PNG|center|75px]]
+|-
+|HKH60
+|158
+|[[Jaguar I-Pace eTrophy]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br><font color="black">'''New in Mainline'''
+|9/10
+|[[File:JaguarI-Pace.jpg|center|75px]]
+|-
+|HKK25
+|158
+|[[Jaguar I-Pace eTrophy]] (2nd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br><font color="black">'''New in Mainline'''
+|9/10
+|[[File:HKK25.jpg|center|75px]]
+|-
+|HKL33
+|158
+|[[Jaguar I-Pace eTrophy]] (3rd Color - ZAMAC)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br><font color="black">'''New in Mainline'''<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|9/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|HKG50
+|159
+|[[HW-4-TRAC]]
+| bgcolor="#ff9505" |[[HW 55 Race Team Mini Collection (2023)|<font color="#4251AE">HW 55 Race Team</font>]]<br>'''[[2023 New Models|<font color="#4251AE">New for 2023!</font>]]'''
+|5/5
+|[[File:HW-4-Trac.jpg|center|75px]]
+|-
+|HKK30
+|159
+|[[HW-4-TRAC]] (2nd Color)
+| bgcolor="#ff9505" |[[HW 55 Race Team Mini Collection (2023)|<font color="#4251AE">HW 55 Race Team</font>]]<br>'''[[2023 New Models|<font color="#4251AE">New for 2023!</font>]]'''
+|5/5
+|[[File:HW-4-Trac HKK30.jpg|center|75px]]
+|-
+|HKG43
+|160
+|[[Honda Super Cub Custom]]
+| bgcolor="#87CEEB" |[[HW Moto Mini Collection (2023)|<font color="black">HW Moto</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|5/5
+|[[File:HondaSuperCubCustom.jpg|center|75px]]
+|-
+|HKK33
+|160
+|[[Honda Super Cub Custom]] (2nd Color)
+| bgcolor="#87CEEB" |[[HW Moto Mini Collection (2023)|<font color="black">HW Moto</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|5/5
+|[[File:HondaSuperCubCustom-HKK33.jpg|center|75px]]
+|-
+|HTF60
+|160
+|[[Honda Super Cub Custom]] (3rd Color)
+| bgcolor="#87CEEB" |[[HW Moto Mini Collection (2023)|<font color="black">HW Moto</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''<br>[[Dollar General|<font color="black">'''Dollar General Exclusive''']]</font>
+|5/5
+|[[File:Mainline 2023 Honda Super Cub Custom White Malaysia HTF60.jpg|center|75px]]
+|-
+|HKH76
+|161
+|[['70 Dodge Power Wagon]]
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2023)|<font color="black">Mud Studs</font>]]
+|2/5
+|[[File:HKH76-LOOSE.jpg|center|75px]]
+|-
+|HKH92
+|162
+|[[Cloud Cutter]]
+| bgcolor="#4000FF" |[[Sky Show Mini Collection (2023)|<font color="white">Sky Show</font>]]
+|5/5
+|[[File:HKH92.jpg|center|75px]]
+|-
+|HKK54
+|162
+|[[Cloud Cutter]] (2nd Color)
+| bgcolor="#4000FF" |[[Sky Show Mini Collection (2023)|<font color="white">Sky Show</font>]]
+|5/5
+|[[File:CloudCutter-HKK54.jpg|center|75px]]
+|-
+|HKH93
+|163
+|[[Lamborghini Sián FKP 37]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]
+|1/10
+|[[File:HKH93-LOOSE.jpg|center|75px]]
+|-
+|HKL05
+|164
+|[[Ducati 1199 Panigale]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2023)|<font color="black">Factory Fresh</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|5/5
+|[[File:164 - Ducati 1199 Panigale (TH).jpg|center|75px]]
+|-
+|HKJ39
+|165
+|[[Fast FeLion]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2023)|<font color="black">HW Turbo</font>]]
+|5/5
+|[[File:FastFelion2023HWTurboMaroon.jpg|center|75px]]
+|-
+|HKK86
+|165
+|[[Fast FeLion]] (2nd Color)
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2023)|<font color="black">HW Turbo</font>]]
+|5/5
+|[[File:Mainline 2023 Fast Felion Gray Malaysia HKK86.jpg|center|75px]]
+|-
+|HKJ56
+|166
+|[['71 Plymouth GTX]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]
+| 7/10
+|[[File:HKJ56-LOOSE.jpg|center|75px]]
+|-
+|HKK91
+|166
+|[['71 Plymouth GTX]] (2nd Color)
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]
+|7/10
+|[[File:HKK91-LOOSE.jpg|center|75px]]
+|-
+|HKG87
+|167
+|[['82 Toyota Supra]]
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]<br><font color="black">'''New in Mainline'''</font>
+|10/10
+|[[File:'82ToyotaSupra.jpg|center|75px]]
+|-
+|HKL08
+|167
+|[['82 Toyota Supra]]
+| bgcolor="#F535AA" |[[HW: The '80s Mini Collection (2023)|<font color="black">HW: The '80s</font>]]<br><font color="black">'''New in Mainline'''</font><br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|10/10
+|[[File:'82 toyota supra.jpg|center|75px]]
+|-
+|HKG94
+|168
+|[[Mad Splash]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]
+|6/10
+|[[File:HW_-_Mad_Splash_(2023_-_HKG94).jpg|center|75px]]
+|-
+|HKJ71
+|168
+|[[Mad Splash]] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]
+|6/10
+|[[File:Mad Splash HW Metro 2023.PNG|center|75px]]
+|-
+|HKH00
+|169 
+|[[Batman: The Animated Series Batmobile|Batman: The Animated Series]]
+| bgcolor="black" |[[Batman Mini Collection (2023)|<font color="white">Batman</font>]]
+|5/5
+|[[File:20230529 100058.jpg|center|75px]]
+|-
+|HKJ76
+|169 
+|[[Batman: The Animated Series Batmobile|Batman: The Animated Series]] (2nd Color)
+| bgcolor="black" |[[Batman Mini Collection (2023)|<font color="white">Batman</font>]]
+|5/5
+|[[File:HKJ76.jpg|center|75px]]
+|-
+|HKH14 
+|170 
+|[[Tooned Twin Mill]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2023)|<font color="black">Tooned</font>]]
+|1/5
+|[[File:170 - Tooned Twin Mill.jpg|center|75px]]
+|-
+|HKJ84
+|170 
+|[[Tooned Twin Mill]] (2nd Color)
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2023)|<font color="black">Tooned</font>]]
+|1/5
+|[[File:Tooned Twin Mill HKJ84.jpg|center|75px]]
+|-
+|HKG53
+|171
+|[[Rockin' Railer]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|6/10
+|[[File:Rockin'Railer.jpg|center|75px]]
+|-
+|HKK05
+|171
+|[[Rockin' Railer]] (2nd Color)
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|6/10
+|[[File:Mainline 2023 First Edition Rockin' Railer Gray Malaysia HKK05.jpg|center|75px]]
+|-
+|HKH33
+|172 
+|[[Honda Civic Custom]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]
+|7/10
+|[[File:HondaDragCivic.jpg|center|75px]]
+|-
+|HKL48
+|172 
+|[[Honda Civic Custom]] (2nd Color)
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]<br>[[Kroger|<font color="black">'''Kroger  Exclusive'''</font>]]
+|7/10
+|[[File:KrogerCivic.jpg|center|75px]]
+|-
+|HKG51
+|173
+|[[Volkswagen ID. Buzz]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2023)|<font color="black">HW Green Speed</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|10/10
+|[[File:VolkswagenIDBuzz.jpg|center|75px]]
+|-
+|HKH64
+|174
+|[['62 Corvette Gasser]]
+| bgcolor="#74C365" |[[HW Gassers Mini Collection (2023)|<font color="black">HW Gassers</font>]]
+|3/5
+|[[File:HKH64-LOOSE.jpg|center|75px]]
+|-
+|HKL40
+|174
+|[['62 Corvette Gasser]] (2nd Color)
+| bgcolor="#74C365" |[[HW Gassers Mini Collection (2023)|<font color="black">HW Gassers</font>]]<br><font color="black">'''"From the Vault" Exclusive'''
+|3/5
+|[[File:TimePhoto 20231113 163854.jpg|center|75px]]
+|-
+|HKG47
+|175
+|[[Mitsubishi Pajero Evolution]]
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2023)|<font color="black">Mud Studs</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|3/5
+|[[File:MitsubishiPajeroEvo.jpg|center|75px]]
+|-
+|HKK36
+|175
+|[[Mitsubishi Pajero Evolution]] (2nd Color)
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2023)|<font color="black">Mud Studs</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|3/5
+|[[File:HKK36-LOOSE.jpg|center|75px]]
+|-
+|HKL02
+|176
+|[['95 Jeep Cherokee]]
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2023)|<font color="black">Mud Studs</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|4/5
+|[[File:HKL02-LOOSE.jpg|center|75px]]
+|-
+|HKH97
+|177
+|[[Porsche 911 GT3]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]
+|2/10
+|[[File:177 - Porsche 911 GT3.jpg|center|75px]]
+|-
+|HKL49
+|177
+|[[Porsche 911 GT3]] (2nd Color)
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]<br>[[Kroger|<font color="black">'''Kroger  Exclusive'''</font>]]
+|2/10
+|[[File:2023-177 HKL49 Porsche 911 GT3 '22 White Kroger open-1.jpg|center|75px]]
+|-
+|HKG54
+|178
+|[[Celero GT]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|3/10
+|[[File:CeleroGT.jpg|center|75px]]
+|-
+|HKK55
+|178
+|[[Celero GT]] (2nd Color)
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|3/10
+|[[File:HKK55-LOOSE.jpg|center|75px]]
+|-
+|HKJ18
+|179 
+|[[Lightnin' Bug]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2023)|<font color="white">HW Rescue</font>]]
+|1/10
+|[[File:Lightnin' Bug HKJ18.jpg|center|75px]]
+|-
+|HKK69
+|179 
+|[[Lightnin' Bug]] (2nd Color)
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2023)|<font color="white">HW Rescue</font>]]
+|1/10
+|[[File:Lightnin' Bug HKK69.jpg|center|75px]]
+|-
+|HKJ57
+|180
+|[['84 Pontiac Firebird]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]
+|8/10
+|[[File:'84TransAm.jpg|center|75px]]
+|-
+|HKK92
+|180
+|[['84 Pontiac Firebird]] (2nd Color)
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]
+|8/10
+|[[File:HKK92-LOOSE.jpg|center|75px]]
+|-
+|HKG73
+|181 
+|[['87 Dodge D100]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2023)|<font color="black">Baja Blazers</font>]]
+|1/10
+|[[File:HKG73-LOOSE.jpg|center|75px]]
+|-
+|HKG74 
+|182
+|[[Dune Crusher]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2023)|<font color="black">Baja Blazers</font>]]
+|2/10
+|[[File:182 250.jpg|center|75px]]
+|-
+|HKJ58
+|182
+|[[Dune Crusher]] (2nd Color)
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2023)|<font color="black">Baja Blazers</font>]]
+|2/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|HKG52
+|183
+|[[1956 Corvette]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2023)|<font color="white">HW Screen Time</font>]]<br>'''[[2023 New Models|<font color="white">New for 2023!</font>]]'''
+|9/10
+|[[File:1956Corvette.jpg|center|75px]]
+|-
+|HKK87
+|183
+|[[1956 Corvette]] (2nd Color)
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2023)|<font color="white">HW Screen Time</font>]]<br>'''[[2023 New Models|<font color="white">New for 2023!</font>]]'''
+|9/10
+|[[File:EVette.jpg|center|75px]]
+|-
+|HKH13 
+|184
+|[[2024 GMC Hummer EV]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2023)|<font color="white">HW Screen Time</font>]]<br><font color="white">'''New in Mainline'''</font>
+|10/10
+|[[File:2024GMCHummerEV.jpg|center|75px]]
+|-
+|HKG48 
+|185
+|[[Alfa Romeo GTV6 3.0]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|10/10
+|[[File:AlfaRomeoGTV6.jpg|center|75px]]
+|-
+|HKJ83
+|185
+|[[Alfa Romeo GTV6 3.0]] (2nd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2023)|<font color="black">Retro Racers</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|10/10
+|[[File:HKJ83.jpg|center|75px]]
+|-
+|HKH34
+|186
+|[[HW Poppa Wheelie]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]
+|8/10
+|[[File:Poppa Wheelie Drag Strip 2023.jpg|center|75px]]
+|-
+|HKK06
+|186
+|[[HW Poppa Wheelie]] (2nd Color)
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]
+|8/10
+|[[File:PoppaWheelieGrey2023.jpg|center|75px]]
+|-
+|HKH69
+|187
+|[['17 Audi RS 6 Avant]]
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2023)|<font color="black">HW Wagons</font>]]
+|1/5
+|[[File:187 - '17 Audi RS 6 Avant.jpg|center|75px]]
+|-
+|HKL41
+|187
+|[['17 Audi RS 6 Avant]] (2nd Color)
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2023)|<font color="black">HW Wagons</font>]]<br><font color="black">'''"From the Vault" Exclusive'''</font>
+|1/5
+|[[File:2023_'17_Audi_RS_6_Avant.jpg|center|75px]]
+|-
+|HKH95
+|188
+|[[Koenigsegg Gemera]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]
+|4/10
+|[[File:HKH95.jpg|center|75px]]
+|-
+|HKK56
+|188
+|[[Koenigsegg Gemera]] (2nd Color)
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]
+|4/10
+|[[File:HKK56-LOOSE.jpg|center|75px]]
+|-
+|HTF57
+|188
+|[[Koenigsegg Gemera]] (3rd Color)
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]<br>[[Dollar General|<font color="black">'''Dollar General Exclusive''']]</font>
+|4/10
+|[[File:Mainline 2023 Koenigsegg Gemera Black Malaysia HTF57.jpg|center|75px]]
+|-
+|HKJ01
+|189
+|[[Power Panel]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]
+|5/10
+|[[File:HKJ01-LOOSE.jpg|center|75px]]
+|-
+|HKK59
+|189
+|[[Power Panel]] (2nd Color)
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]
+|5/10
+|[[File:Power Panel Purple 2023.jpg|center|75px]]
+|-
+|HKG56
+|190
+|[[Limited Grip]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|6/10
+|[[File:LimitedGrip.jpg|center|75px]]
+|-
+|HKK60
+|190
+|[[Limited Grip]] (2nd Color)
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|6/10
+|[[File:HKK60-LOOSE.jpg|center|75px]]
+|-
+|HKJ06
+|191 
+|[['83 Chevy Silverado]]
+| bgcolor="#4CBB17" |[[HW Slammed Mini Collection (2023)|<font color="white">HW Slammed</font>]]
+|1/5
+|[[File:HKJ06-LOOSE.jpg|center|75px]]
+|-
+|HKJ20
+|192
+|[[Rescue Duty]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2023)|<font color="white">HW Rescue</font>]]
+|2/10
+|[[File:Rescue Duty HW Rescue 2023.PNG|center|75px]]
+|-
+|HKK70
+|192
+|[[Rescue Duty]] (2nd Color)
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2023)|<font color="white">HW Rescue</font>]]
+|2/10
+|[[File:HKK70 - 2nd Color - Red.jpg|center|75px]]
+|-
+|HKJ40
+|193
+|[[Corvette C7 Z06]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2023)|<font color="black">Then and Now</font>]]
+|1/10
+|[[File:Corvette C7 Z06 2023.jpg|center|75px]]
+|-
+|HKL32
+|193
+|[[Corvette C7 Z06]] (2nd Color - Zamac)
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2023)|<font color="black">Then and Now</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|1/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|HKL07
+|194
+|[[Toyota Land Cruiser]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2023)|<font color="black">Then and Now</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|2/10
+|[[File:194 250.jpg|center|75px]]
+|-
+|HKJ50
+|195
+|[['69 Shelby GT-500]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]
+|9/10
+|[[File:HKJ50-LOOSE.jpg|center|75px]]
+|-
+|HKL22
+|195
+|[['69 Shelby GT-500]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]<br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|9/10
+|[[File:Mainline 2023 '69 Shelby GT-500 Purple Super Hunt Malaysia HKL22.jpg|center|75px]]
+|-
+|HKG61
+|196
+|[['73 Jeep J10]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2023)|<font color="black">Baja Blazers</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|3/10
+|[[File:'73JeepJ10.jpg|center|75px]]
+|-
+|HKH35
+|197 
+|[['76 Chevy Chevette]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]<br><font color="black">'''New in Mainline'''</font>
+|9/10
+|[[File:HKH35.jpg|center|75px]]
+|-
+|HKL60
+|197 
+|[['76 Chevy Chevette]] (2nd Color)
+| bgcolor="#E80018" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font><br><font color="white">'''New in Mainline'''</font>
+|12/12
+|[[File:240111095656.jpg|center|75px]]
+|-
+|HKK99
+|198
+|[[Madfast]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2023)|<font color="black">HW Drag Strip</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|10/10
+|[[File:MadfastDragster.jpg|center|75px]]
+|-
+|HKH62
+|199
+|[['65 Mercury Comet Cyclone]]
+| bgcolor="#74C365" |[[HW Gassers Mini Collection (2023)|<font color="black">HW Gassers</font>]]<br><font color="black">'''New in Mainline'''</font>
+|4/5
+|[[File:HKH62-LOOSE.jpg|center|75px]]
+|-
+|HKL14
+|199
+|[['65 Mercury Comet Cyclone]]
+| bgcolor="#74C365" |[[HW Gassers Mini Collection (2023)|<font color="black">HW Gassers</font>]]<br><font color="black">'''New in Mainline'''</font><br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|4/5
+|[[File:2023 07 07 21 24 IMG 8258.jpg|center|75px]]
+|-
+|HKH71 
+|200
+|[[Jack Hammer]]
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2023)|<font color="black">HW Wagons</font>]]<br><font color="black">'''New in Mainline'''</font>
+|2/5
+|[[File:HKH71.jpg|center|75px]]
+|-
+|HKG55
+|201
+|[[Volvo XC40 Recharge]]
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2023)|<font color="black">Mud Studs</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|5/5
+|[[File:VolvoXC40Recharge.jpg|center|75px]]
+|-
+|HKG63
+|202
+|[[Trouble Decker]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|7/10
+|[[File:TroubleDecker.jpg|center|75px]]
+|-
+|HKJ19
+|203
+|[['10 Camaro SS]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2023)|<font color="white">HW Rescue</font>]]
+|3/10
+|[[File:HKJ19.jpg|center|75px]]
+|-
+|HKJ41
+|204
+|[[Toyota Land Cruiser 80]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2023)|<font color="black">Then and Now</font>]]
+|3/10
+|[[File:HKJ41-LOOSE.jpg|center|75px]]
+|-
+|HKJ43
+|205
+|[['07 Ford Mustang]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2023)|<font color="black">Then and Now</font>]]
+|4/10
+|[[File:HKJ43.jpg|center|75px]]
+|-
+|HKG59
+|206
+|[[Mod Speeder]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2023)|<font color="black">Muscle Mania</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|10/10
+|[[File:ModSpeeder.jpg|center|75px]]
+|-
+|HKG75
+|207
+|[['20 Toyota Tacoma]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2023)|<font color="black">Baja Blazers</font>]]
+|4/10
+|[[File:RAYSTacoma.jpg|center|75px]]
+|-
+|HKG46
+|208
+|[[Porsche 928S Safari]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2023)|<font color="black">Baja Blazers</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|5/10
+|[[File:Porsche928Safari.jpg|center|75px]]
+|-
+|HKG58
+|209
+|[[Mad Mike Drift Attack]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|5/10
+|[[File:MadMikeDriftAttack.jpg|center|75px]]
+|-
+|HKK94 
+|210
+|[[Time Shifter]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|8/10
+|[[File:HKK94-LOOSE.jpg|center|75px]]
+|-
+|HKG62
+|211
+|[['94 Toyota Supra (Tooned)|'94 Toyota Supra]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2023)|<font color="black">Tooned</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|3/5
+|[[File:'ToonedToyotaSupra.jpg|center|75px]]
+|-
+|HKH65
+|212
+|[[Pass'n Gasser]]
+| bgcolor="#74C365" |[[HW Gassers Mini Collection (2023)|<font color="black">HW Gassers</font>]]
+|5/5
+|[[File:2023-212 HKH65 Pass'n Gasser open-4.jpg|center|75px]]
+|-
+|HKG64
+|213
+|[[Bugatti Bolide]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|6/10
+|[[File:BugattiBolide.jpg|center|75px]]
+|-
+|HKJ03
+|214
+|[[Mighty K]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]
+|7/10
+|[[File:RyulaK.jpg|center|75px]]
+|-
+|HKL18
+|214
+|[[Mighty K]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]<br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|7/10
+|[[File:2023 07 07 21 22 IMG 8250.jpg|center|75px]]
+|-
+|HKJ21 
+|215
+|[[2018 Honda Civic Type R]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2023)|<font color="white">HW Rescue</font>]]
+|4/10
+|[[File:PoliceCivic.jpg|center|75px]]
+|-
+|HKJ42
+|216
+|[['62 Corvette]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2023)|<font color="black">Then and Now</font>]]
+|5/10
+|[[File:62Corvette23.jpg|center|75px]]
+|-
+|HKJ44 
+|217
+|[[2008 Tesla Roadster|Tesla Roadster]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2023)|<font color="black">Then and Now</font>]]
+|6/10
+|[[File:2008TeslaRoadster.jpg|center|75px]]
+|-
+|HKG72
+|218
+|[['57 Jeep FC]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2023)|<font color="black">Baja Blazers</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|6/10
+|[[File:'57JeepFC.jpg|center|75px]]
+|-
+|HKG96
+|219
+|[[Carbonator|Brutonator]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]
+|9/10
+|[[File:Brutonator.jpg|center|75px]]
+|-
+|HKG95
+|220
+|[[Haul-O-Gram]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2023)|<font color="black">HW Metro</font>]]
+|10/10
+|[[File:HaulOGram.jpg|center|75px]]
+|-
+|HKK96
+|221
+|[[Tooned Volkswagen Golf Mk1]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2023)|<font color="black">Tooned</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|4/5
+|[[File:2023-221 HKK96 Tooned Golf mk1 Blue TH open-00.jpg|center|75px]]
+|-
+|HKH70
+|222
+|[['64 Chevy Nova Wagon]]
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2023)|<font color="black">HW Wagons</font>]]
+|3/5
+|[[File:HKH70-LOOSE.jpg|center|75px]]
+|-
+|HKH96
+|223
+|[[Porsche 935 (2022)|Porsche 935]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]
+|7/10
+|[[File:2023-223 HKH96 Porsche 935 Blue open-4.jpg|center|75px]]
+|-
+|HKL17
+|223
+|[[Porsche 935 (2022)|Porsche 935]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]<br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|7/10
+|[[File:Porsche935-75.jpg|center|75px]]
+|-
+|HKH94
+|224
+|[[Lamborghini Reventón]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]
+|8/10
+|[[File:Reventon red Lambo.PNG|center|75px]]
+|-
+|HKJ04
+|225
+|[[Ford Bronco R]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]<br><font color="black">'''New in Mainline'''</font>
+|8/10
+|[[File:BorlaBronco.jpg|center|75px]]
+|-
+|HKL34
+|225
+|[[Ford Bronco R]] (2nd Color - Zamac)
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]<br><font color="black">'''New in Mainline'''</font><br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|8/10
+|[[File:Ford Bronco R ZAMAC 2023.jpg|center|75px]]
+|-
+|HKG66
+|226
+|[[Ford F-150 Lightning Custom]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|9/10
+|[[File:FordF-150Lightning.jpg|center|75px]]
+|-
+|HKJ05
+|227
+|[[Land Rover Defender 90]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2023)|<font color="black">HW Hot Trucks</font>]]
+|10/10
+|[[File:LRDefender90B.jpg|center|75px]]
+|-
+|HKG68
+|228
+|[[Custom '68 Camaro]]
+| bgcolor="#4CBB17" |[[HW Slammed Mini Collection (2023)|<font color="white">HW Slammed</font>]]<br>'''[[2023 New Models|<font color="white">New for 2023!</font>]]'''
+|2/5
+|[[File:DieselpunkCamaro.jpg|center|75px]]
+|-
+|HKJ22
+|229
+|[[H2GO]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2023)|<font color="white">HW Rescue</font>]]
+|5/10
+|[[File:HKJ22-LOOSE.jpg|center|75px]]
+|-
+|HKG67
+|230
+|[[Surf Duty]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2023)|<font color="white">HW Rescue</font>]]<br>'''[[2023 New Models|<font color="white">New for 2023!</font>]]'''
+|6/10
+|[[File:SurfDuty.jpg|center|75px]]
+|-
+|HKJ45
+|231
+|[['20 Dodge Charger Hellcat]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2023)|<font color="black">Then and Now</font>]]<br>'''<font color="black">New in Mainline</font>'''
+|7/10
+|[[File:HKJ45-LOOSE.jpg|center|75px]]
+|-
+|HKG77
+|232
+|[[Sand Burner]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2023)|<font color="black">Baja Blazers</font>]]
+|7/10
+|[[File:Sand Burner HKG77.jpg|center|75px]]
+|-
+|HKG78
+|233
+|[[Jeep Scrambler]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2023)|<font color="black">Baja Blazers</font>]]
+|8/10
+|[[File:HKG78-LOOSE.jpg|center|75px]]
+|-
+|HKG69
+|234
+|[[Porsche 911 Turbo 3.6 (964)]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2023)|<font color="black">Tooned</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|5/5
+|[[File:'ToonedPorsche964.jpg|center|75px]]
+|-
+|HKH72
+|235
+|[['71 Datsun Bluebird 510 Wagon|Datsun Bluebird Wagon (510)]]
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2023)|<font color="black">HW Wagons</font>]]
+|4/5
+|[[File:LoveWagon.jpg|center|75px]]
+|-
+|HKL15
+|235
+|[['71 Datsun Bluebird 510 Wagon|Datsun Bluebird Wagon (510)]]
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2023)|<font color="black">HW Wagons</font>]]<br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|4/5
+|[[File:73d9e391cee5f2365232c195406643f.jpg|center|75px]]
+|-
+|HKG71
+|236
+|[['92 Dodge Viper RT/10]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|9/10
+|[[File:DodgeViperRT10.jpg|center|75px]]
+|-
+|HKJ08
+|237
+|[[Layin' Lowrider]]
+| bgcolor="#4CBB17" |[[HW Slammed Mini Collection (2023)|<font color="white">HW Slammed</font>]]
+|3/5
+|[[File:HKJ08-LOOSE.jpg|center|75px]]
+|-
+|HKL04
+|238
+|[[2020 Ram 1500 Rebel]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2023)|<font color="white">HW Rescue</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|7/10
+|[[File:CoastPatrolRam.jpg|center|75px]]
+|-
+|HKJ23
+|239
+|[[Killer Copter|Skyfire]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2023)|<font color="white">HW Rescue</font>]]
+|8/10
+|[[File:Skyfire2023.jpg|center|75px]]
+|-
+|HKJ46
+|240
+|[['69 Dodge Charger 500]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2023)|<font color="black">Then and Now</font>]]
+|8/10
+|[[File:HKJ46-LOOSE.jpg|center|75px]]
+|-
+|HKK93
+|241
+|[[Volkswagen "Baja Bug"]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2023)|<font color="black">Baja Blazers</font>]]<br>[[2023 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|9/10
+|[[File:2023-241 HKK93 TH Volkswagen Baja Bug Red open-1.jpg|center|75px]]
+|-
+|HKG65
+|242
+|[[Land Rover Series II]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2023)|<font color="black">Baja Blazers</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|10/10
+|[[File:1966LandRoverSeriesII.jpg|center|75px]]
+|-
+|HKH73
+|243
+|[[Classic Nomad|Classic '55 Nomad]]
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2023)|<font color="black">HW Wagons</font>]]
+|5/5
+|[[File:HKH73.jpg|center|75px]]
+|-
+|HKJ48
+|244
+|[['69 Ford Mustang Boss 302]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2023)|<font color="black">Then and Now</font>]]
+|10/10
+|[[File:2023 '69 Ford Mustang Boss 302.jpg|center|75px]]
+|-
+|HTF59
+|244
+|[['69 Ford Mustang Boss 302]] (2nd Color)
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2023)|<font color="black">Then and Now</font>]]<br>[[Dollar General|<font color="black">'''Dollar General Exclusive''']]
+|10/10
+|[[File:DollarGeneralMustangBossSilver.jpg|center|75px]]
+|-
+|HKJ07
+|245
+|[[Volvo 240 Drift Wagon]]
+| bgcolor="#4CBB17" |[[HW Slammed Mini Collection (2023)|<font color="white">HW Slammed</font>]]
+|4/5
+|[[File:HKJ07.jpg|center|75px]]
+|-
+|HKL19
+|245
+|[[Volvo 240 Drift Wagon]]
+| bgcolor="#4CBB17" |[[HW Slammed Mini Collection (2023)|<font color="white">HW Slammed</font>]]<br>[[2023 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|4/5
+|[[File:20230920182859.jpg|center|75px]]
+|-
+|HKJ09
+|246
+|[['64 Lincoln Continental (2007)|'64 Lincoln Continental]]
+| bgcolor="#4CBB17" |[[HW Slammed Mini Collection (2023)|<font color="white">HW Slammed</font>]]
+|5/5
+|[[File:HKJ09-LOOSE.jpg|center|75px]]
+|-
+|HTF58
+|246
+|[['64 Lincoln Continental (2007)|'64 Lincoln Continental]] (2nd Color)
+| bgcolor="#4CBB17" |[[HW Slammed Mini Collection (2023)|<font color="white">HW Slammed</font>]]<br>[[Dollar General|<font color="white">'''Dollar General Exclusive''']]
+|5/5
+|[[File:DollarGeneralLincolnGreen.jpg|center|75px]]
+|-
+|HKJ24
+|247
+|[[Heavy Hitcher]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2023)|<font color="white">HW Rescue</font>]]
+|9/10
+|[[File:HKJ24-LOOSE.jpg|center|75px]]
+|-
+|HKJ25
+|248
+|[[Mad Manga]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2023)|<font color="white">HW Rescue</font>]]
+|10/10
+|[[File:HKJ25.jpg|center|75px]]
+|-
+|HKJ47
+|249
+|[[Tesla Roadster]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2023)|<font color="black">Then and Now</font>]]
+|9/10
+|[[File:2023TeslaRDSTR.jpg|center|75px]]
+|-
+|HKG70
+|250
+|[[McLaren Solus GT]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2023)|<font color="black">HW Exotics</font>]]<br>'''[[2023 New Models|<font color="black">New for 2023!</font>]]'''
+|10/10
+|[[File:McLarenSolusGT.jpg|center|75px]]
+|}
+
+{{Lists}}
+[[Category:Lists of Hot Wheels by year]]
+[[Category:2023 Hot Wheels]]

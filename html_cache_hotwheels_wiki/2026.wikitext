@@ -1,0 +1,2843 @@
+==2026 Hot Wheels #1-250==
+For 2026, the Hot Wheels mainline is numbered 1 through 250 with color variations not receiving a new number. Treasure Hunts and store exclusives are numbered. For the listing by series see [[List of 2026 Hot Wheels (by Series)]].
+
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+|-
+! style="border-style: none none solid solid; |Toy #
+! style="border-style: none none solid solid; |Col.#
+! style="border-style: none none solid solid; |Model Name
+! style="border-style: none none solid solid; |Series
+! style="border-style: none none solid solid; |Series #
+! style="border-style: none none solid solid; |Photo
+|-
+|JJJ02
+|001
+|[[Mazda MX-5 Miata (2025)|Mazda MX-5 Miata]]
+|bgcolor="#231F20"|[[HW Dream Garage Mini Collection (2026)|<font color="white">HW Dream Garage</font>]]
+|1/5
+|[[File:CyberpunkMazda.jpg|center|75px]]
+|-
+|JJL03
+|001
+|[[Mazda MX-5 Miata (2025)|Mazda MX-5 Miata]] (2nd Color)
+|bgcolor="#231F20"|[[HW Dream Garage Mini Collection (2026)|<font color="white">HW Dream Garage</font>]]
+|1/5
+|[[File:1990MazdaChimera.jpg|center|75px]]
+|-
+|JJH80
+|002
+|[['16 Lamborghini Centenario Roadster]]
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]
+|1/10
+|[[File:LamborghiniCentenario.jpg|center|75px]]
+|-
+|JJM49
+|002
+|[['16 Lamborghini Centenario Roadster]] (2nd Color)
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]<br>{{KR}}
+|1/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK74
+|002
+|[['16 Lamborghini Centenario Roadster]] (3rd Color)
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]<br>
+|1/10
+|[[File:CentenarioRoadster.jpg|center|75px]]
+|-
+|JJJ62
+|003
+|[[Gordon Murray Automotive T.33]]
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]
+|2/10
+|[[File:2025GMAT.33.jpg|center|75px]]
+|-
+|JJL44
+|003
+|[[Gordon Murray Automotive T.33]] (2nd Color)
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]
+|2/10
+|[[File:T33Coupe.jpg|center|75px]]
+|-
+|JJH83
+|004
+|[[Batmobile (2021)|Batmobile]]
+|bgcolor="black" |[[Batman Mini Collection (2026)|<font color="white">Batman</font>]]
+|1/5
+|[[File:GunmetalBatmobile.jpg|center|75px]]
+|-
+|JJK97
+|004
+|[[Batmobile (2021)|Batmobile]] (2nd Color)
+|bgcolor="black" |[[Batman Mini Collection (2026)|<font color="white">Batman</font>]]
+|1/5
+|[[File:BlueBatmobile.jpg|center|75px]]
+|-
+|JJH30
+|005
+|[[Pass 'n Go]]
+|bgcolor="#353839"|[[Drop Tops Mini Collection (2026)|<font color="white">Drop Tops</font>]]<br>{{NM|2026|white}}
+|1/5
+|[[File:Pass'nGo.jpg|center|75px]]
+|-
+|JJK98
+|005
+|[[Pass 'n Go]] (2nd Color)
+|bgcolor="#353839"|[[Drop Tops Mini Collection (2026)|<font color="white">Drop Tops</font>]]<br>{{NM|2026|white}}
+|1/5
+|[[File:MonopolyCar.jpg|center|75px]]
+|-
+|JJH84
+|006
+|[[RD-06]]
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2026)|<font color="white">X-Raycers</font>]]
+|1/5
+|[[File:XRD-06.jpg|center|75px]]
+|-
+|JJK66
+|006
+|[[RD-06]] (2nd Color)
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2026)|<font color="white">X-Raycers</font>]]
+|1/5
+|[[File:X2RD-06.jpg|center|75px]]
+|-
+|JJH85
+|007
+|[[Solar Reflex]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]
+|1/10
+|[[File:SolarReflexEV.jpg|center|75px]]
+|-
+|JJK67
+|007
+|[[Solar Reflex]] (2nd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]
+|1/10
+|[[File:ReflexEV.jpg|center|75px]]
+|-
+|JJH86
+|008
+|[[Ford Mustang Mach-E 1400]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]
+|2/10
+|[[File:MustangMach-E1400.jpg|center|75px]]
+|-
+|JJM61
+|008
+|[[Ford Mustang Mach-E 1400]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2026)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|1/12
+|[[File:JJM61 RED o1z.jpg|center|75px]]
+|-
+|JJK78
+|008
+|[[Ford Mustang Mach-E 1400]]  (3rd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]
+|2/10
+|[[File:MachE1400.jpg|center|75px]]
+|-
+|JJM00
+|009
+|[['87 Buick Regal GNX]]
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]<br>{{TH|2026}}
+|1/10
+|[[File:BuickRegal.jpg|center|75px]]
+|-
+|JJH87
+|010
+|[[2020 Ford Mustang Shelby GT500]]
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|2/10
+|[[File:2020FordShelbyGT500.jpg|center|75px]]
+|-
+|JJM50
+|010
+|[[2020 Ford Mustang Shelby GT500]] (2nd Color)
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]<br>{{KR}}
+|2/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK68
+|010
+|[[2020 Ford Mustang Shelby GT500]] (3rd Color)
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|2/10
+|[[File:'20ShelbyGT500.jpg|center|75px]]
+|-
+|JJH88
+|011
+|[[2018 Honda Civic Type R]]
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|3/10
+|[[File:2018FK8.jpg|center|75px]]
+|-
+|JJK87
+|011
+|[[2018 Honda Civic Type R]] (2nd Color)
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|3/10
+|[[File:HondaFK8.jpg|center|75px]]
+|-
+|JJH89
+|012
+|[[Carbonator]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2026)|<font color="black">Experimotors</font>]]
+|1/5
+|[[File:HNY26Carbonator.jpg|center|75px]]
+|-
+|JJH90
+|013
+|[[Drift-Ender]]
+|bgcolor="#F36C2A" |[[Truckin' Along Mini Collection (2026)|<font color="white">Truckin' Along</font>]]
+|1/5
+|[[File:DriftDefender.jpg|center|75px]]
+|-
+|JJM15
+|013
+|[[Drift-Ender]]
+|bgcolor="#F36C2A" |[[Truckin' Along Mini Collection (2026)|<font color="white">Truckin' Along</font>]]<br>{{STH|2026}}
+|1/5
+|[[File:STH Drift-Ender.jpg|center|75px]]
+|-
+|JJH91
+|014
+|[['20 Jeep Gladiator]]
+|bgcolor="#F36C2A" |[[Truckin' Along Mini Collection (2026)|<font color="white">Truckin' Along</font>]]
+|2/5
+|[[File:2020Gladiator.jpg|center|75px]]
+|-
+|JJM62
+|014
+|[['20 Jeep Gladiator]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2026)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|2/12
+|[[File:JJM62 RED o1.jpg|center|75px]]
+|-
+|JJH33
+|015
+|[[Porsche 911 Carrera T]]
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2026)|<font color="black">Factory Fresh</font>]]<br>{{NM|2026}}
+|1/5
+|[[File:Porsche911CarreraT.jpg|center|75px]]
+|-
+|JJM31
+|015
+|[[Porsche 911 Carrera T]] (2nd Color - Zamac)
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2026)|<font color="black">Factory Fresh</font>]]<br>{{NM|2026}}<br>{{WM|2026}}
+|1/5
+|[[File:JJM31 ZAMAK o4.jpg|center|75px]]
+|-
+|JJK80
+|015
+|[[Porsche 911 Carrera T]] (3rd Color)
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2026)|<font color="black">Factory Fresh</font>]]<br>{{NM|2026}}
+|1/5
+|[[File:2024CarreraT.jpg|center|75px]]
+|-
+|JJH92
+|016
+|[[Maserati Shamal]]
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2026)|<font color="black">Factory Fresh</font>]]
+|2/5
+|[[File:1992MaseratiShamal.jpg|center|75px]]
+|-
+|JJM57
+|016
+|[[Maserati Shamal]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2026)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|3/12
+|[[File:JJM57 RED o4.jpg|center|75px]]
+|-
+|JJL08
+|016
+|[[Maserati Shamal]] (3rd Color)
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2026)|<font color="black">Factory Fresh</font>]]
+|2/5
+|[[File:1992Shamal.jpg|center|75px]]
+|-
+|JJH32
+|017
+|[[Bounce'n Bass]]
+|bgcolor="#800080" |[[Layin' Low Mini Collection (2026)|<font color="white">Layin' Low</font>]]<br>{{NM|2026|white}}
+|1/5
+|[[File:Bounce'nBass.jpg|center|75px]]
+|-
+|JJK69
+|017
+|[[Bounce'n Bass]] (2nd Color)
+|bgcolor="#800080" |[[Layin' Low Mini Collection (2026)|<font color="white">Layin' Low</font>]]<br>{{NM|2026|white}}
+|1/5
+|[[File:Bouncin'Bass.jpg|center|75px]]
+|-
+|JJH93
+|018
+|[[Deora II]]
+|bgcolor="#89CFF0" |[[HW Fan Driven Mini Collection (2026)|<font color="white">HW Fan Driven</font>]]
+|1/5
+|[[File:Surfin'Deora.jpg|center|75px]]
+|-
+|JJK70
+|018
+|[[Deora II]] (2nd Color)
+|bgcolor="#89CFF0" |[[HW Fan Driven Mini Collection (2026)|<font color="white">HW Fan Driven</font>]]
+|1/5
+|[[File:PinkDeora.jpg|center|75px]]
+|-
+|JJH94
+|019
+|[[Rodger Dodger]]
+|bgcolor="#89CFF0" |[[HW Fan Driven Mini Collection (2026)|<font color="white">HW Fan Driven</font>]]
+|2/5
+|[[File:FanDrivenDodger.jpg|center|75px]]
+|-
+|JJM51
+|019
+|[[Rodger Dodger]] (2nd Color)
+|bgcolor="#89CFF0" |[[HW Fan Driven Mini Collection (2026)|<font color="white">HW Fan Driven</font>]]<br>{{KR|white}}
+|2/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK71
+|019
+|[[Rodger Dodger]] (3rd Color)
+|bgcolor="#89CFF0" |[[HW Fan Driven Mini Collection (2026)|<font color="white">HW Fan Driven</font>]]
+|2/5
+|[[File:BlackDodger.jpg|center|75px]]
+|-
+|JJH95
+|020
+|[[Formula 1|McLaren Formula 1 Team]]
+|bgcolor="#232122" |[[Formula 1 Mini Collection (2026)|<font color="white">Formula 1</font>]]
+|1/5
+|[[File:McLarenMastercardMCL39.jpg|center|75px]]
+|-
+|JJH96
+|021
+|[[Barbie Dream Camper]]
+|bgcolor="#FF0028" |[[Mattel Mini Collection (2026)|<font color="white">Mattel</font>]]
+|1/5
+|[[File:Dreamcamper.jpg|center|75px]]
+|-
+|JJK72
+|021
+|[[Barbie Dream Camper]] (2nd Color)
+|bgcolor="#FF0028" |[[Mattel Mini Collection (2026)|<font color="white">Mattel</font>]]
+|1/5
+|[[File:DreamCamper.jpg|center|75px]]
+|-
+|JJH31
+|022
+|[[Instant Boost]]
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]<br>{{NM|2026|white}}
+|1/10
+|[[File:InstantBoost.jpg|center|75px]]
+|-
+|JJK73
+|022
+|[[Instant Boost]] (2nd Color)
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]<br>{{NM|2026|white}}
+|1/10
+|[[File:BrewceAmericano.jpg|center|75px]]
+|-
+|JJH97
+|023
+|[['69 Dodge Charger Daytona]]
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]
+|2/10
+|[[File:1969DodgeDaytona.jpg|center|75px]]
+|-
+|JJM52
+|023
+|[['69 Dodge Charger Daytona]] (2nd Color)
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]<br>{{KR|white}}
+|2/10
+|[[File:69 Dodge Charger Dayt.jpg|center|75px]]
+|-
+|JJH82
+|024
+|[[Track Ripper]]
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]
+|3/10
+|[[File:TrackRipper.jpg|center|75px]]
+|-
+|JJM33
+|024
+|[[Track Ripper]] (2nd Color - Zamac)
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]<br>{{WM|2026|white}}
+|3/10
+|[[File:JJM33 o4.jpg|center|75px]]
+|-
+|JJK95
+|024
+|[[Track Ripper]] (3rd Color)
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]
+|3/10
+|[[File:Ripper.jpg|center|75px]]
+|-
+|JJH81
+|025
+|[[McMurtry Spéirling]]
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]
+|3/10
+|[[File:McMurtrySpéirlingPure.jpg|center|75px]]
+|-
+|JJK65
+|025
+|[[McMurtry Spéirling]] (2nd Color)
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]
+|3/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH34
+|026
+|[[Pagani Zonda Cinque (Tooned)|Pagani Zonda Cinque]]
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]<br>{{NM|2026}}
+|4/10
+|[[File:'ToonedZonda.jpg|center|75px]]
+|-
+|JJK75
+|026
+|[[Pagani Zonda Cinque (Tooned)|Pagani Zonda Cinque]] (2nd Color)
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]<br>{{NM|2026}}
+|4/10
+|[[File:'ToonedCinque.jpg|center|75px]]
+|-
+|JJM32
+|026
+|[[Pagani Zonda Cinque (Tooned)|Pagani Zonda Cinque]] (3rd Color - Zamac)
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]<br>{{NM|2026}}<br>{{WM|2026}}
+|4/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ00
+|027
+|[[Optimus Prime]]
+|bgcolor="#2A2673" |[[Screen Time Mini Collection (2026)|<font color="white">Screen Time</font>]]
+|1/10
+|[[File:Optimus.jpg|center|75px]]
+|-
+|JJH98
+|028
+|[[HW K.I.T.T. Concept]]
+|bgcolor="#2A2673" |[[Screen Time Mini Collection (2026)|<font color="white">Screen Time</font>]]
+|2/10
+|[[File:HWKITTConcept.jpg|center|75px]]
+|-
+|JJM01
+|029
+|[['92 Dodge Viper RT/10]]
+| bgcolor="#353839" |[[Drop Tops Mini Collection (2026)|<font color="white">Drop Tops</font>]]<br>{{TH|2026}}
+|2/5
+|[[File:1992Viper.jpg|center|75px]]
+|-
+|JJJ01
+|030
+|[[X-Steam]]
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2026)|<font color="white">X-Raycers</font>]]
+|2/5
+|[[File:X-SteamRacer.jpg|center|75px]]
+|-
+|JJK76
+|030
+|[[X-Steam]] (2nd Color)
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2026)|<font color="white">X-Raycers</font>]]
+|2/5
+|[[File:DreamerSteamer.jpg|center|75px]]
+|-
+|JJH36
+|031
+|[[La Liebre]]
+|bgcolor="#231F20"|[[HW Dream Garage Mini Collection (2026)|<font color="white">HW Dream Garage</font>]]<br>{{NM|2026|white}}
+|2/5
+|[[File:LaLiebre.jpg|center|75px]]
+|-
+|JJK77
+|031
+|[[La Liebre]] (2nd Color)
+|bgcolor="#231F20"|[[HW Dream Garage Mini Collection (2026)|<font color="white">HW Dream Garage</font>]]<br>{{NM|2026|white}}
+|2/5
+|[[File:BiancoLibre.jpg|center|75px]]
+|-
+|JJJ03
+|032
+|[[5 Alarm]]
+|bgcolor="#FFF979" |[[HW Heavyweights Mini Collection (2026)|<font color="black">HW Heavyweights</font>]]
+|1/5
+|[[File:HW5Alarm.jpg|center|75px]]
+|-
+|JJK99
+|032
+|[[5 Alarm]] (2nd Color)
+|bgcolor="#FFF979" |[[HW Heavyweights Mini Collection (2026)|<font color="black">HW Heavyweights</font>]]
+|1/5
+|[[File:5AlarmFireTruck.jpg|center|75px]]
+|-
+|JJJ04
+|033
+|[[Haulerback]]
+|bgcolor="#FFF979" |[[HW Heavyweights Mini Collection (2026)|<font color="black">HW Heavyweights</font>]]
+|2/5
+|[[File:CyberpunkTowtruck.jpg|center|75px]]
+|-
+|JJL00
+|033
+|[[Haulerback]] (2nd Color)
+|bgcolor="#FFF979" |[[HW Heavyweights Mini Collection (2026)|<font color="black">HW Heavyweights</font>]]
+|2/5
+|[[File:TurboHaulerback.jpg|center|75px]]
+|-
+|JJJ05
+|034
+|[[Porsche Taycan Turbo S]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]
+|3/10
+|[[File:2026PorscheTaycan.jpg|center|75px]]
+|-
+|JJL01
+|034
+|[[Porsche Taycan Turbo S]] (2nd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]
+|3/10
+|[[File:2026Taycan.jpg|center|75px]]
+|-
+|JJJ06
+|035
+|[[Wattzup]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]
+|4/10
+|[[File:TazerRacer.jpg|center|75px]]
+|-
+|JJK86
+|035
+|[[Wattzup]] (2nd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]
+|4/10
+|[[File:Owwie.jpg|center|75px]]
+|-
+|JJJ07
+|036
+|[['70 Dodge Hemi Challenger]]
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|4/10
+|[[File:1970DodgeChallengerHemi.jpg|center|75px]]
+|-
+|JJM38
+|036
+|[['70 Dodge Hemi Challenger]] (2nd Color - Zamac)
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]<br>{{WM|2026}}
+|4/10
+|[[File:JJM38 4.jpg|center|75px]]
+|-
+|JJK79
+|036
+|[['70 Dodge Hemi Challenger]] (3rd Color)
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|4/10
+|[[File:DarkChallenger.jpg|center|75px]]
+|-
+|JJJ08
+|037
+|[[Cupra e-Racer]]
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|5/10
+|[[File:NightspeedCupra.jpg|center|75px]]
+|-
+|JJL50
+|037
+|[[Cupra e-Racer]] (2nd Color)
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|5/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ09
+|038
+|[[24/Seven]]
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|6/10
+|[[File:24-Seven.jpg|center|75px]]
+|-
+|JJL51
+|038
+|[[24/Seven]] (2nd Color)
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|6/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ10
+|039
+|[[Roller Toaster]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2026)|<font color="black">Experimotors</font>]]
+|3/5
+|[[File:RollerToaster.jpg|center|75px]]
+|-
+|JJK88
+|039
+|[[Roller Toaster]] (2nd Color)
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2026)|<font color="black">Experimotors</font>]]
+|3/5
+|[[File:PopTartToaster.jpg|center|75px]]
+|-
+|JJJ11
+|040
+|[[HW Braille Racer - Twin Mill|Braille Racer - Twin Mill]]
+|bgcolor="#07A7E1" |[[HW All Drivers Welcome Mini Collection (2026)|<font color="white">HW All Drivers Welcome</font>]]<br><font color="white">'''World Braille Day'''</font>
+|1/5
+|[[File:BrailleRacer.jpg|center|75px]]
+|-
+|JJJ12
+|041
+|[[Ferrari SF90 Stradale]]
+|bgcolor="#D40000" |[[Ferrari Mini Collection (2026)|<font color="black">Ferrari</font>]]
+|1/5
+|[[File:2024FerrariSF90.jpg|center|75px]]
+|-
+|JJK89
+|041
+|[[Ferrari SF90 Stradale]] (2nd Color)
+|bgcolor="#D40000" |[[Ferrari Mini Collection (2026)|<font color="black">Ferrari</font>]]
+|1/5
+|[[File:2024SF90.jpg|center|75px]]
+|-
+|JJJ13
+|042
+|[['83 Chevy Silverado]]
+|bgcolor="#F36C2A" |[[Truckin' Along Mini Collection (2026)|<font color="white">Truckin' Along</font>]]
+|3/5
+|[[File:BlackWidowSilverado.jpg|center|75px]]
+|-
+|JJL07
+|042
+|[['83 Chevy Silverado]] (2nd Color)
+|bgcolor="#F36C2A" |[[Truckin' Along Mini Collection (2026)|<font color="white">Truckin' Along</font>]]
+|3/5
+|[[File:PinkWidowSilverado.jpg|center|75px]]
+|-
+|JJJ14
+|043
+|[[Ford Mustang GTD]]
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2026)|<font color="black">Factory Fresh</font>]]
+|3/5
+|[[File:2026FordMustangGTD.jpg|center|75px]]
+|-
+|JJM16
+|043
+|[[Ford Mustang GTD]]
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2026)|<font color="black">Factory Fresh</font>]]<br>{{STH|2026}}
+|3/5
+|[[File:MustangGTDTH.jpg|center|75px]]
+|-
+|JJJ15
+|044
+|[['59 Chevy Bel Air|'59 Chevy Impala]]
+|bgcolor="#800080" |[[Layin' Low Mini Collection (2026)|<font color="white">Layin' Low</font>]]
+|2/5
+|[[File:1959Impala.jpg|center|75px]]
+|-
+|JJM35
+|044
+|[['59 Chevy Bel Air|'59 Chevy Impala]] (2nd Color - Zamac)
+|bgcolor="#800080" |[[Layin' Low Mini Collection (2026)|<font color="white">Layin' Low</font>]]<br>{{WM|2026|white}}
+|2/5
+|[[File:JJM35 ZAMAK o1.jpg|center|75px]]
+|-
+|JJK81
+|044
+|[['59 Chevy Bel Air|'59 Chevy Impala]] (3rd Color)
+|bgcolor="#800080" |[[Layin' Low Mini Collection (2026)|<font color="white">Layin' Low</font>]]
+|2/5
+|[[File:1959BelAir.jpg|center|75px]]
+|-
+|JJJ16
+|045
+|[['47 Chevy Fleetline]]
+|bgcolor="#800080" |[[Layin' Low Mini Collection (2026)|<font color="white">Layin' Low</font>]]
+|3/5
+|[[File:1947Fleetline.jpg|center|75px]]
+|-
+|JJM64
+|045
+|[['47 Chevy Fleetline]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2026)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|4/12
+|[[File:47 chevy 2026.jpg|center|75px]]
+|-
+|JJJ17
+|046
+|[[Purple Passion]]
+|bgcolor="#89CFF0" |[[HW Fan Driven Mini Collection (2026)|<font color="white">HW Fan Driven</font>]]
+|3/5
+|[[File:PinkPassion.jpg|center|75px]]
+|-
+|JJK91
+|046
+|[[Purple Passion]] (2nd Color)
+|bgcolor="#89CFF0" |[[HW Fan Driven Mini Collection (2026)|<font color="white">HW Fan Driven</font>]]
+|3/5
+|[[File:PearlPassion.jpg|center|75px]]
+|-
+|JJH35
+|047
+|[[High-Tail Chaser]]
+|bgcolor="#282321" |[[HW Mods Mini Collection (2026)|<font color="white">HW Mods</font>]]<br>{{NM|2026|white}}
+|1/5
+|[[File:High-TailChaser.jpg|center|75px]]
+|-
+|JJK92
+|047
+|[[High-Tail Chaser]] (2nd Color)
+|bgcolor="#282321" |[[HW Mods Mini Collection (2026)|<font color="white">HW Mods</font>]]<br>{{NM|2026|white}}
+|1/5
+|[[File:Gray-TailChaser.jpg|center|75px]]
+|-
+|JJJ19
+|048
+|[[Monster High Ghoul Mobile]]
+|bgcolor="#FF0028" |[[Mattel Mini Collection (2026)|<font color="white">Mattel</font>]]
+|2/5
+|[[File:MonsterHighCar.jpg|center|75px]]
+|-
+|JJK93
+|048
+|[[Monster High Ghoul Mobile]] (2nd Color)
+|bgcolor="#FF0028" |[[Mattel Mini Collection (2026)|<font color="white">Mattel</font>]]
+|2/5
+|[[File:InvertaMobile.jpg|center|75px]]
+|-
+|JJJ18
+|049
+|[[Quick Chat]]
+|bgcolor="#FF0028" |[[Mattel Mini Collection (2026)|<font color="white">Mattel</font>]]
+|3/5
+|[[File:PhoneCall.jpg|center|75px]]
+|-
+|JJK82
+|049
+|[[Quick Chat]] (2nd Color)
+|bgcolor="#FF0028" |[[Mattel Mini Collection (2026)|<font color="white">Mattel</font>]]
+|3/5
+|[[File:PhoneShaker.jpg|center|75px]]
+|-
+|JJJ20
+|050
+|[[Bugatti Bolide]]
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]
+|4/10
+|[[File:RacingBolide.jpg|center|75px]]
+|-
+|JJL22
+|050
+|[[Bugatti Bolide]] (2nd Color)
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]
+|4/10
+|[[File:LéBolide.jpg|center|75px]]
+|-
+|JJJ21
+|051
+|[[The Dark Knight Batmobile]]
+|bgcolor="black" |[[Batman Mini Collection (2026)|<font color="white">Batman</font>]]
+|2/5
+|[[File:TheTumbler.jpg|center|75px]]
+|-
+|JJL13
+|051
+|[[The Dark Knight Batmobile]] (2nd Color)
+|bgcolor="black" |[[Batman Mini Collection (2026)|<font color="white">Batman</font>]]
+|2/5
+|[[File:TumblerBatmobile.jpg|center|75px]]
+|-
+|JJJ22
+|052
+|[[Porsche 911 Turbo Cabriolet]]
+| bgcolor="#353839" |[[Drop Tops Mini Collection (2026)|<font color="white">Drop Tops</font>]]
+|3/5
+|[[File:964Turbo.jpg|center|75px]]
+|-
+|JJM67
+|052
+|[[Porsche 911 Turbo Cabriolet]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2026)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|5/12
+|[[File:JJM67 RED o4.jpg|center|75px]]
+|-
+|JJJ23
+|053
+|[['69 Chevelle (X-Raycers)|'69 Chevelle]]
+| bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2026)|<font color="white">X-Raycers</font>]]
+|3/5
+|[[File:1969Chevelle.jpg|center|75px]]
+|-
+|JJK83
+|053
+|[['69 Chevelle (X-Raycers)|'69 Chevelle]] (2nd Color)
+| bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2026)|<font color="white">X-Raycers</font>]]
+|3/5
+|[[File:Chevellelicious.jpg|center|75px]]
+|-
+|JJJ24
+|054
+|[[Donut Drifter]]
+| bgcolor="#FFB6C1" |[[Sweet Rides Mini Collection (2026)|<font color="white">Sweet Rides</font>]]
+|1/5
+|[[File:DonutCar.jpg|center|75px]]
+|-
+|JJL31
+|054
+|[[Donut Drifter]] (2nd Color)
+| bgcolor="#FFB6C1" |[[Sweet Rides Mini Collection (2026)|<font color="white">Sweet Rides</font>]]
+|1/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ25
+|055
+|[[Dessert Drifter]]
+| bgcolor="#FFB6C1" |[[Sweet Rides Mini Collection (2026)|<font color="white">Sweet Rides</font>]]
+|2/5
+|[[File:JelloCar.jpg|center|75px]]
+|-
+|JJK84
+|055
+|[[Dessert Drifter]] (2nd Color)
+| bgcolor="#FFB6C1" |[[Sweet Rides Mini Collection (2026)|<font color="white">Sweet Rides</font>]]
+|2/5
+|[[File:OrangeJello.jpg|center|75px]]
+|-
+|JJJ26
+|056
+|[['67 Camaro (2022)|'67 Camaro]]
+|bgcolor="#231F20"|[[HW Dream Garage Mini Collection (2026)|<font color="white">HW Dream Garage</font>]]
+|3/5
+|[[File:DreamCamaro.jpg|center|75px]]
+|-
+|JJM46
+|056
+|[['67 Camaro (2022)|'67 Camaro]] (2nd Color)
+|bgcolor="#231F20"|[[HW Dream Garage Mini Collection (2026)|<font color="white">HW Dream Garage</font>]]<br>{{DT|white}}
+|3/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ27
+|057
+|[[Raijin Express]]
+|bgcolor="#FFF979" |[[HW Heavyweights Mini Collection (2026)|<font color="black">HW Heavyweights</font>]]
+|3/5
+|[[File:NekoRaijin.jpg|center|75px]]
+|-
+|JJK85
+|057
+|[[Raijin Express]] (2nd Color)
+|bgcolor="#FFF979" |[[HW Heavyweights Mini Collection (2026)|<font color="black">HW Heavyweights</font>]]
+|3/5
+|[[File:Darkraijin.jpg|center|75px]]
+|-
+|JJM02
+|058
+|[[Electro Silhouette]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]<br>[[2026 Treasure Hunts Series|<font color="#00cc00>'''Treasure Hunt'''</font>]]
+|5/10
+|[[File:ElectroSilhouetteTH.jpeg|center|75px]]
+|-
+|JJJ28
+|059
+|[[Lucid Air]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]
+|6/10
+|[[File:2022LucidAir.jpg|center|75px]]
+|-
+|JJL14
+|059
+|[[Lucid Air]] (2nd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]
+|6/10
+|[[File:LucidAirSapphire.jpg|center|75px]]
+|-
+|JJH37
+|060
+|[[Toyota Prius Custom]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]<br>{{NM|2026}}
+|1/10
+|[[File:ToyotaPriusCustom.jpg|center|75px]]
+|-
+|JJM48
+|060
+|[[Toyota Prius Custom]] (2nd Color)
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]<br>{{NM|2026}}<br>{{DT}}
+|1/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJL34
+|060
+|[[Toyota Prius Custom]] (3rd Color)
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]<br>{{NM|2026}}
+|1/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ29
+|061
+|[[Mazda RX-7]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]
+|2/10
+|[[File:1978MazdaRX-7.jpg|center|75px]]
+|-
+|JJL35
+|061
+|[[Mazda RX-7]] (2nd Color)
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]
+|2/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ30
+|062
+|[[Ferrari 365 GTB4 Competizione]]
+|bgcolor="#D40000" |[[Ferrari Mini Collection (2026)|<font color="black">Ferrari</font>]]
+|2/5
+|[[File:365Comp.jpg|center|75px]]
+|-
+|JJL06
+|062
+|[[Ferrari 365 GTB4 Competizione]] (2nd Color)
+|bgcolor="#D40000" |[[Ferrari Mini Collection (2026)|<font color="black">Ferrari</font>]]
+|2/5
+|[[File:Ferrari365GTB4C.jpg|center|75px]]
+|-
+|JJJ31
+|063
+|[[Ferrari F40 Competizione]]
+|bgcolor="#D40000" |[[Ferrari Mini Collection (2026)|<font color="black">Ferrari</font>]]
+|3/5
+|[[File:FerrariF40Comp.jpg|center|75px]]
+|-
+|JJM17
+|063
+|[[Ferrari F40 Competizione]]
+|bgcolor="#D40000" |[[Ferrari Mini Collection (2026)|<font color="black">Ferrari</font>]]<br>{{STH|2026}}
+|3/5
+|[[File:NardoF40Comp.jpg|center|75px]]
+|-
+|JJJ32
+|064
+|[[Mercedes-Benz Unimog 1300L]]
+|bgcolor="#F36C2A" |[[Truckin' Along Mini Collection (2026)|<font color="white">Truckin' Along</font>]]
+|4/5
+|[[File:Unimog1300.jpg|center|75px]]
+|-
+|JJH40
+|065
+|[[Drift Box]]
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]<br>{{NM|2026}}
+|1/10
+|[[File:DriftBox.jpg|center|75px]]
+|-
+|JJL09
+|065
+|[[Drift Box]] (2nd Color)
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]<br>{{NM|2026}}
+|1/10
+|[[File:NukeHatch.jpg|center|75px]]
+|-
+|JJJ33
+|066
+|[['17 Audi RS 6 Avant]]
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]
+|2/10
+|[[File:2017Avant.jpg|center|75px]]
+|-
+|JJK90
+|066
+|[['17 Audi RS 6 Avant]] (2nd Color)
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]
+|2/10
+|[[File:2017RS6.jpg|center|75px]]
+|-
+|JJJ34
+|067
+|[[Lotus Cortina]]
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]
+|3/10
+|[[File:1963Cortina.jpg|center|75px]]
+|-
+|JJM47
+|067
+|[[Lotus Cortina]] (2nd Color)
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]<br>{{DT}}
+|3/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJL16
+|067
+|[[Lotus Cortina]] (3rd Color)
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]
+|3/10
+|[[File:ConsulCortina.jpg|center|75px]]
+|-
+|JJJ35
+|068
+|[[Formula 1|Visa Cash App Racing Bulls Formula One Team]]
+|bgcolor="#232122" |[[Formula 1 Mini Collection (2026)|<font color="white">Formula 1</font>]]
+|2/5
+|[[File:VCARB02.jpg|center|75px]]
+|-
+|JJJ36
+|069
+|[[Volvo 240 Drift Wagon]]
+|bgcolor="#282321" |[[HW Mods Mini Collection (2026)|<font color="white">HW Mods</font>]]
+|2/5
+|[[File:VolvoDriftWagon.jpg|center|75px]]
+|-
+|JJL20
+|069
+|[[Volvo 240 Drift Wagon]] (2nd Color)
+|bgcolor="#282321" |[[HW Mods Mini Collection (2026)|<font color="white">HW Mods</font>]]
+|2/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ37
+|070
+|[[Decidedly Go]]
+|bgcolor="#FF0028" |[[Mattel Mini Collection (2026)|<font color="white">Mattel</font>]]
+|4/5
+|[[File:8Ballin'.jpg|center|75px]]
+|-
+|JJL12
+|070
+|[[Decidedly Go]] (2nd Color)
+|bgcolor="#FF0028" |[[Mattel Mini Collection (2026)|<font color="white">Mattel</font>]]
+|4/5
+|[[File:RedBallin'.jpg|center|75px]]
+|-
+|JJH39
+|071
+|[[Austin Mini Cooper S]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]<br>{{NM|2026}}
+|1/10
+|[[File:AustinMini.jpg|center|75px]]
+|-
+|JJK94
+|071
+|[[Austin Mini Cooper S]] (2nd Color)
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]<br>{{NM|2026}}
+|1/10
+|[[File:RacingMini.jpg|center|75px]]
+|-
+|JJJ38
+|072
+|[[Datsun 240Z]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]
+|2/10
+|[[File:1972240Z.jpg|center|75px]]
+|-
+|JJM69
+|072
+|[[Datsun 240Z]] (2nd Color)
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]
+|2/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJL53
+|072
+|[[Datsun 240Z]] (3rd Color)
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]
+|2/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JNG69
+|073
+|[[BMW M4 GT3]]
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]<br>{{NM|2026|white}}
+|5/10
+|[[File:BMWM4GT3.jpg|center|75px]]
+|-
+|JJJ39
+|074
+|[[McLaren W1]]
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]
+|5/10
+|[[File:2025W1.jpg|center|75px]]
+|-
+|JJM60
+|074
+|[[McLaren W1]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2026)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|6/12
+|[[File:Mclaren 2026.jpg|center|75px]]
+|-
+|JJL43
+|074
+|[[McLaren W1]] (3rd Color)
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]
+|5/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH43
+|075
+|[[X-cceleron]]
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]<br>{{NM|2026}}
+|6/10
+|[[File:X-cceleron.jpg|center|75px]]
+|-
+|JJL23
+|075
+|[[X-cceleron]] (2nd Color)
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]<br>{{NM|2026}}
+|6/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ40
+|076
+|[['76 Chevy Chevette]]
+|bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]
+|1/10
+|[[File:DragChevette.jpg|center|75px]]
+|-
+|JJL45
+|076
+|[['76 Chevy Chevette]] (2nd Color)
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]
+|1/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ41
+|077
+|[[Supercharged]]
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]
+|2/10
+|[[File:NHRASupercharged.jpg|center|75px]]
+|-
+|JJL02
+|077
+|[[Supercharged]] (2nd Color)
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]
+|2/10
+|[[File:ElectricFunnyCar.jpg|center|75px]]
+|-
+|JJJ43
+|078
+|[[Hako Type D]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]
+|1/10
+|[[File:CompactSupotsuka.jpg|center|75px]]
+|-
+|JJJ44
+|079
+|[[Hoto Roto]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]
+|2/10
+|[[File:BlackRoto.jpg|center|75px]]
+|-
+|JJL27
+|079
+|[[Hoto Roto]] (2nd Color)
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]
+|2/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ65
+|080
+|[[Kei Swap]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]
+|3/10
+|[[File:GabeSwap.jpg|center|75px]]
+|-
+|JJL28
+|080
+|[[Kei Swap]] (2nd Color)
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]
+|3/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJM03
+|081
+|[[Hot Wheengs]]
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2026)|<font color="white">X-Raycers</font>]]<br>[[2026 Treasure Hunts Series|<font color="#00cc00>'''Treasure Hunt'''</font>]]
+|4/5
+|[[File:HotSauce.jpg|center|75px]]
+|-
+|JJJ45
+|082
+|[[Birthday Burner]]
+| bgcolor="#FFB6C1" |[[Sweet Rides Mini Collection (2026)|<font color="white">Sweet Rides</font>]]
+|3/5
+|[[File:CakeBake.jpg|center|75px]]
+|-
+|JJJ46
+|083
+|[[Rapid Pulse]]
+|bgcolor="#FFF979" |[[HW Heavyweights Mini Collection (2026)|<font color="black">HW Heavyweights</font>]]
+|4/5
+|[[File:TrackPulse.jpg|center|75px]]
+|-
+|JJL04
+|083
+|[[Rapid Pulse]] (2nd Color)
+|bgcolor="#FFF979" |[[HW Heavyweights Mini Collection (2026)|<font color="black">HW Heavyweights</font>]]
+|4/5
+|[[File:HeavyPulse.jpg|center|75px]]
+|-
+|JJJ47
+|084
+|[[Polestar TRX]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]
+|7/10
+|[[File:RacingTRX.jpg|center|75px]]
+|-
+|JJL49
+|084
+|[[Polestar TRX|Polestar]] (2nd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]
+|7/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ48
+|085
+|[[Voltage Spike]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]
+|8/10
+|[[File:Spiker.jpg|center|75px]]
+|-
+|JJL32
+|085
+|[[Voltage Spike]] (2nd Color)
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]
+|8/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH46
+|086
+|[[VW ID. Buzz Bomb]]
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]<br>{{NM|2026}}
+|4/10
+|[[File:VolkswagenID.BuzzBomb.jpg|center|75px]]
+|-
+|JJL95
+|086
+|[[VW ID. Buzz Bomb]] (2nd Color)
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]<br>{{NM|2026}}
+|4/10
+|[[File:VWBuzzBomb.jpg|center|75px]]
+|-
+|JJJ49
+|087
+|[[Cruise Bruiser]]
+|bgcolor="#FDBD13" |[[Wagons Mini Collection (2026)|<font color="black">Wagons</font>]]
+|1/10
+|[[File:TanBruiser.jpg|center|75px]]
+|-
+|JJL33
+|087
+|[[Cruise Bruiser]] (2nd Color)
+|bgcolor="#FDBD13" |[[Wagons Mini Collection (2026)|<font color="black">Wagons</font>]]
+|1/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ50
+|088
+|[[Nissan Skyline 2000GT-R|Nissan Skyline 2000 GT-R]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]
+|3/10
+|[[File:1973NissanKenmeri.jpg|center|75px]]
+|-
+|JJL68
+|088
+|[[Nissan Skyline 2000GT-R|Nissan Skyline 2000 GT-R]] (2nd Color)
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]
+|3/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ51
+|089
+|[[1985 Honda CR-X]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]
+|4/10
+|[[File:1985HondaCR-XMugen.jpg|center|75px]]
+|-
+|JJM40
+|089
+|[[1985 Honda CR-X]] (2nd Color - Zamac)
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]<br>{{WM|2026}}
+|4/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJL86
+|089
+|[[1985 Honda CR-X]] (3rd Color)
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]
+|4/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ52
+|090
+|[['16 Cadillac ATS-V R]]
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|7/10
+|[[File:CadillacGT3.jpg|center|75px]]
+|-
+|JJL36
+|090
+|[['16 Cadillac ATS-V R]] (2nd Color)
+|bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|7/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ53
+|091
+|[[LB-WORKS Lamborghini Huracán Coupé]]
+| bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|8/10
+|[[File:LBHuracán.jpg|center|75px]]
+|-
+|JJJ54
+|092
+|[[Feline Lucky]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2026)|<font color="black">Experimotors</font>]]
+|2/5
+|[[File:I'mFelineLucky.jpg|center|75px]]
+|-
+|JJL72
+|092
+|[[Feline Lucky]] (2nd Color)
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2026)|<font color="black">Experimotors</font>]]
+|2/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ55
+|093
+|[[Coupe Clip|Coupé Clip]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2026)|<font color="black">Experimotors</font>]]
+|4/5
+|[[File:CoupéClip.jpg|center|75px]]
+|-
+|JJL05
+|093
+|[[Coupe Clip|El Segundo Coupé Clip]] (2nd Color)
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2026)|<font color="black">Experimotors</font>]]
+|4/5
+|[[File:ElSegundoCoupeClip.jpg|center|75px]]
+|-
+|JJH41
+|094
+|[[Ferrari 12Cilindri]]
+|bgcolor="#D40000" |[[Ferrari Mini Collection (2026)|<font color="black">Ferrari</font>]]<br>{{NM|2026}}
+|4/5
+|[[File:Ferrari12Cilindri.jpg|center|75px]]
+|-
+|JJL37
+|094
+|[[Ferrari 12Cilindri]] (2nd Color)
+|bgcolor="#D40000" |[[Ferrari Mini Collection (2026)|<font color="black">Ferrari</font>]]<br>{{NM|2026}}
+|4/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ56
+|095
+|[['64 Impala]]
+|bgcolor="#800080" |[[Layin' Low Mini Collection (2026)|<font color="white">Layin' Low</font>]]
+|4/5
+|[[File:1964ChevroletImpala.jpg|center|75px]]
+|-
+|JJM18
+|095
+|[['64 Impala]]
+|bgcolor="#800080" |[[Layin' Low Mini Collection (2026)|<font color="white">Layin' Low</font>]]<br>{{STH|2026}}
+|4/5
+|[[File:ImpalaSTH.jpg|center|75px]]
+|-
+|JJJ57
+|096
+|[[El Segundo Coupe]]
+|bgcolor="#89CFF0" |[[HW Fan Driven Mini Collection (2026)|<font color="white">HW Fan Driven</font>]]
+|4/5
+|[[File:RacingCoupe.jpg|center|75px]]
+|-
+|JJL17
+|096
+|[[El Segundo Coupe]] (2nd Color)
+|bgcolor="#89CFF0" |[[HW Fan Driven Mini Collection (2026)|<font color="white">HW Fan Driven</font>]]
+|4/5
+|[[File:ESCoupe.jpg|center|75px]]
+|-
+|JJJ58
+|097
+|[[Corvette Grand Sport]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]
+|3/10
+|[[File:C2GrandSport.jpg|center|75px]]
+|-
+|JJJ59
+|098
+|[['96 Porsche Carrera]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]
+|4/10
+|[[File:1996Porsche996.jpg|center|75px]]
+|-
+|JJL39
+|098
+|[['96 Porsche Carrera]] (2nd Color)
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]
+|4/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ60
+|099
+|[[Renault Espace F1]]
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]
+|6/10
+|[[File:RacingEspace.jpg|center|75px]]
+|-
+|JJL40
+|099
+|[[Renault Espace F1]] (2nd Color)
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]
+|6/10
+|[[File:TunedEspace.jpg|center|75px]]
+|-
+|JJJ61
+|100
+|[[Twin Dorado]]
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]
+|7/10
+|[[File:RacingDorado.jpg|center|75px]]
+|-
+|JJL54
+|100
+|[[Twin Dorado]] (2nd Color)
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]
+|7/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH99
+|101
+|[['17 Pagani Huayra Roadster]]
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]
+|7/10
+|[[File:2017Huayra.jpg|center|75px]]
+|-
+|JJK30
+|102
+|[[Pass'n Gasser]]
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]
+|3/10
+|[[File:Passin'Gas.jpg|center|75px]]
+|-
+|JJM59
+|102
+|[[Pass'n Gasser]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2026)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|?/12
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH47
+|103
+|[[Eggshelleracer]]
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]<br>{{NM|2026|white}}
+|4/10
+|[[File:Eggshelleracer.jpg|center|75px]]
+|-
+|JJL25
+|103
+|[[Eggshelleracer]] (2nd Color)
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]<br>{{NM|2026|white}}
+|4/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ63
+|104
+|[['68 Dodge Dart]]
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]
+|5/10
+|[[File:1968Dart.jpg|center|75px]]
+|-
+|JJL79
+|104
+|[['68 Dodge Dart]] (2nd Color)
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]
+|5/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ66
+|105
+|[['85 Honda City Turbo II]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]
+|4/10
+|[[File:HondaCityTurbo.jpg|center|75px]]
+|-
+|JJL47
+|105
+|[['85 Honda City Turbo II]] (2nd Color)
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]
+|4/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ82
+|106
+|[[Mazda RX-3]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]
+|5/10
+|[[File:MazdaRX-3Custom.jpg|center|75px]]
+|-
+|JJM58
+|106
+|[[Mazda RX-3]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2026)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|8/12
+|[[File:2026-106 RED Ed JJM58 RX-3 r1T.jpg|center|75px]]
+|-
+|JJJ67
+|107
+|[[1966 Bat Boat]]
+|bgcolor="black" |[[Batman Mini Collection (2026)|<font color="white">Batman</font>]]
+|3/5
+|[[File:1966Batboat.jpg|center|75px]]
+|-
+|JJJ68
+|108
+|[[The Simpsons Family Car]]
+|bgcolor="#2A2673" |[[Screen Time Mini Collection (2026)|<font color="white">Screen Time</font>]]
+|3/10
+|[[File:SimpsonsCar.jpg|center|75px]]
+|-
+|JJJ69
+|109
+|[[Time Shifter]]
+|bgcolor="#FDBD13" |[[Wagons Mini Collection (2026)|<font color="black">Wagons</font>]]
+|2/10
+|[[File:Shiftin'Time.jpg|center|75px]]
+|-
+|JJJ70
+|110
+|[['70 Chevelle SS Wagon]]
+|bgcolor="#FDBD13" |[[Wagons Mini Collection (2026)|<font color="black">Wagons</font>]]
+|3/10
+|[[File:ATNChevelle.jpg|center|75px]]
+|-
+|JJJ71
+|111
+|[[Long Bloc]]
+|bgcolor="#FDBD13" |[[Wagons Mini Collection (2026)|<font color="black">Wagons</font>]]
+|4/10
+|[[File:MoonBloc.jpg|center|75px]]
+|-
+|JJJ72
+|112
+|[['89 Mazda Savanna RX-7 FC3S]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]
+|5/10
+|[[File:1989MazdaRX-7.jpg|center|75px]]
+|-
+|JJL69
+|112
+|[['89 Mazda Savanna RX-7 FC3S]] (2nd Color)
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]
+|5/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ73
+|113
+|[[Corvette C7 Z06]]
+| bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|9/10
+|[[File:2015CorvetteZ06.jpg|center|75px]]
+|-
+|JJL89
+|113
+|[[Corvette C7 Z06]] (2nd Color)
+| bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|9/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH45
+|114
+|[[Custom '66 Toronado]]
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2026)|<font color="black">Factory Fresh</font>]]<br>{{NM|2026}}
+|4/5
+|[[File:OldsToronado.jpg|center|75px]]
+|-
+|JMB11
+|115
+|[[Custom 2020 Honda e]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]<br>{{NM|2026|white}}
+|9/10
+|[[File:HondaeCustom.jpg|center|75px]]
+|-
+|JJJ74
+|116
+|[['87 Ford Sierra Cosworth]]
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]
+|5/10
+|[[File:1987Sierra.jpg|center|75px]]
+|-
+|JJM19
+|116
+|[['87 Ford Sierra Cosworth]]
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]<br>{{STH|2026}}
+|5/10
+|[[File:2026ML-116B (Large).JPG|center|75px]]
+|-
+|JJJ75
+|117
+|[[Erikenstein Rod]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2026)|<font color="white">Rod Squad</font>]]
+|1/10
+|[[File:GreenRod.jpg|center|75px]]
+|-
+|JJL10
+|117
+|[[Erikenstein Rod]] (2nd Color)
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2026)|<font color="white">Rod Squad</font>]]
+|1/10
+|[[File:AcidRod.jpg|center|75px]]
+|-
+|JJJ77
+|118
+|[[Pedal Driver]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2026)|<font color="white">Rod Squad</font>]]
+|2/10
+|[[File:PedalDriver.jpg|center|75px]]
+|-
+|JJL11
+|118
+|[[Pedal Driver]] (2nd Color)
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2026)|<font color="white">Rod Squad</font>]]
+|2/10
+|[[File:RodDriver.jpg|center|75px]]
+|-
+|JJJ76
+|119
+|[['33 Ford Lo Boy]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2026)|<font color="white">Rod Squad</font>]]
+|3/10
+|[[File:FordLoBoy.jpg|center|75px]]
+|-
+|JJL18
+|119
+|[['33 Ford Lo Boy]] (2nd Color)
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2026)|<font color="white">Rod Squad</font>]]
+|3/10
+|[[File:LoBoyFord.jpg|center|75px]]
+|-
+|JJJ78
+|120
+|[[Formula 1|Scuderia Ferrari HP]]
+|bgcolor="#232122" |[[Formula 1 Mini Collection (2026)|<font color="white">Formula 1</font>]]
+|3/5
+|[[File:ScuderiaFerrariSF-25.jpg|center|75px]]
+|-
+|JJJ79
+|121
+|[[2023 Nissan Z]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]
+|5/10
+|[[File:2023NissanZSport.jpg|center|75px]]
+|-
+|JJM34
+|121
+|[[2023 Nissan Z]] (2nd Color - Zamac)
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]<br>{{WM|2026}}
+|5/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJM04
+|122
+|[[Cone Shaker]]
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]<br>{{TH|2026}}
+|8/10
+|[[File:HotConez.jpg|center|75px]]
+|-
+|JJH44
+|123
+|[[Maserati Tipo 61]]
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]<br>{{NM|2026|white}}
+|9/10
+|[[File:MaseratiBirdcage.jpg|center|75px]]
+|-
+|JJM39
+|123
+|[[Maserati Tipo 61]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2026)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|7/12
+|[[File:2026-123 RED Ed JJM39 Tipo61 r1T.jpg|center|75px]]
+|-
+|JJL41
+|123
+|[[Maserati Tipo 61]] (3rd Color)
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]<br>{{NM|2026|white}}
+|9/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJM05
+|124
+|[[2016 Ford GT Race]]
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]<br>{{TH|2026}}
+|8/10
+|[[File:2016FordGTLMGTE.jpg|center|75px]]
+|-
+|JJH55
+|125
+|[[2024 Aston Martin Vantage GT3]]
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]<br>{{NM|2026}}
+|9/10
+|[[File:AstonMartinVantageAMRGT3Evo.jpg|center|75px]]
+|-
+|JJL24
+|125
+|[[2024 Aston Martin Vantage GT3]] (2nd Color)
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]<br>{{NM|2026}}
+|9/10
+|[[File:VantageGT3Evo.jpg|center|75px]]
+|-
+|JJJ64
+|126
+|[['64 Dodge 330]]
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]<br>{{NIM|white}}
+|6/10
+|[[File:1964Dodge330.jpg|center|75px]]
+|-
+|JJL56
+|126
+|[['64 Dodge 330]] (2nd Color)
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]<br>{{NIM|white}}
+|6/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ80
+|127
+|[[Custom '72 Chevy LUV]]
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]
+|7/10
+|[[File:1972LUV.jpg|center|75px]]
+|-
+|JJL63
+|127
+|[[Custom '72 Chevy LUV]] (2nd Color)
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]
+|7/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JPJ80
+|128
+|[[Datsun 620]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]
+|6/10
+|[[File:DatsunnyDay.jpg|center|75px]]
+|-
+|JJL88
+|128
+|[[Datsun 620]] (2nd Color)
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]
+|6/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ83
+|129
+|[[Standard Kart]]
+|bgcolor="#2A2673" |[[Screen Time Mini Collection (2026)|<font color="white">Screen Time</font>]]
+|4/10
+|[[File:StandardKart.jpg|center|75px]]
+|-
+|JJJ84
+|130
+|[[2019 Audi R8 Spyder]]
+| bgcolor="#353839" |[[Drop Tops Mini Collection (2026)|<font color="white">Drop Tops</font>]]
+|4/5
+|[[File:2019AudiR8.jpg|center|75px]]
+|-
+|JJH48
+|131
+|[[Fiat Beast of Turin]]
+| bgcolor="#353839" |[[Drop Tops Mini Collection (2026)|<font color="white">Drop Tops</font>]]<br>{{NM|2026|white}}
+|5/5
+|[[File:FiatS76Record.jpg|center|75px]]
+|-
+|JJM66
+|131
+|[[Fiat Beast of Turin]] (2nd Color - Zamac)
+| bgcolor="#353839" |[[Drop Tops Mini Collection (2026)|<font color="white">Drop Tops</font>]]<br>{{NM|2026|white}}<br>{{WM|2026|white}}
+|5/5
+|[[File:BofTZamacFrontZoom.jpg|center|75px]]
+|-
+|JJJ85
+|132
+|[[Bullet Proof]]
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2026)|<font color="white">X-Raycers</font>]]
+|5/5
+|[[File:BulletProof.jpg|center|75px]]
+|-
+|JJL30
+|132
+|[[Bullet Proof]] (2nd Color)
+|bgcolor="#1A1A1A" |[[X-Raycers Mini Collection (2026)|<font color="white">X-Raycers</font>]]
+|5/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ86
+|133
+|[[8 Crate]]
+|bgcolor="#FDBD13" |[[Wagons Mini Collection (2026)|<font color="black">Wagons</font>]]
+|5/10
+|[[File:8CrateRanchWagon.jpg|center|75px]]
+|-
+|JJJ87
+|134
+|[['20 Dodge Charger Hellcat]]
+| bgcolor="#E60026" |[[Nightspeed Mini Collection (2026)|<font color="black">Nightspeed</font>]]
+|10/10
+|[[File:2020Hellcat.jpg|center|75px]]
+|-
+|JJJ88
+|135
+|[[Flippin Fast]]
+|bgcolor="#07A7E1" |[[HW All Drivers Welcome Mini Collection (2026)|<font color="white">HW All Drivers Welcome</font>]]<br><font color="white">'''World Autism Awareness Day'''</font>
+|2/5
+|[[File:ADWFast.jpg|center|75px]]
+|-
+|JJJ89
+|136
+|[['98 Honda Prelude]]
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2026)|<font color="black">Factory Fresh</font>]]
+|5/5
+|[[File:1998HondaPrelude.jpg|center|75px]]
+|-
+|JJL15
+|136
+|[['98 Honda Prelude]] (2nd Color)
+|bgcolor="#28AADE" |[[Factory Fresh Mini Collection (2026)|<font color="black">Factory Fresh</font>]]
+|5/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ90
+|137
+|[[La Troca]]
+|bgcolor="#800080" |[[Layin' Low Mini Collection (2026)|<font color="white">Layin' Low</font>]]
+|5/5
+|[[File:1950ChevyTruck.jpg|center|75px]]
+|-
+|JJJ91
+|138
+|[[Morgan Super 3]]
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]
+|6/10
+|[[File:Morgan3Wheeler.jpg|center|75px]]
+|-
+|JJL42
+|138
+|[[Morgan Super 3]] (2nd Color)
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]
+|6/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ92
+|139
+|[[Bone Shaker]]
+|bgcolor="#89CFF0" |[[HW Fan Driven Mini Collection (2026)|<font color="white">HW Fan Driven</font>]]
+|5/5
+|[[File:FanShaker.jpg|center|75px]]
+|-
+|JJL38
+|139
+|[[Bone Shaker]] (2nd Color)
+|bgcolor="#89CFF0" |[[HW Fan Driven Mini Collection (2026)|<font color="white">HW Fan Driven</font>]]
+|5/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ93
+|140
+|[[Mid Mill]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2026)|<font color="white">Rod Squad</font>]]
+|4/10
+|[[File:MoodyMill.jpg|center|75px]]
+|-
+|JJJ94
+|141
+|[[Screamliner]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2026)|<font color="white">Rod Squad</font>]]
+|5/10
+|[[File:Rodliner.jpg|center|75px]]
+|-
+|JJL19
+|141
+|[[Screamliner]] (2nd Color)
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2026)|<font color="white">Rod Squad</font>]]
+|5/10
+|[[File:Larryliner.jpg|center|75px]]
+|-
+|JJJ95
+|142
+|[[Mazda RX-3 (Tooned)|Mazda RX-3]]
+| bgcolor="#1EABAF" |[[Tooned Mini Collection (2026)|<font color="black">Tooned</font>]]
+|1/5
+|[[File:'ToonedRX-3GT.jpg|center|75px]]
+|-
+|JJH50
+|143
+|[[Deora Too'nd]]
+|bgcolor="#1EABAF" |[[Tooned Mini Collection (2026)|<font color="black">Tooned</font>]]<br>{{NM|2026}}
+|2/5
+|[[File:'ToonedDeoraII.jpg|center|75px]]
+|-
+|JJL21
+|143
+|[[Deora Too'nd]] (2nd Color)
+|bgcolor="#1EABAF" |[[Tooned Mini Collection (2026)|<font color="black">Tooned</font>]]<br>{{NM|2026}}
+|2/5
+|[[File:DeoraTooned.jpg|center|75px]]
+|-
+|JJJ96
+|144
+|[[Classic TV Series Batmobile (Tooned)|Classic TV Series Batmobile]]
+|bgcolor="black" |[[Batman Mini Collection (2026)|<font color="white">Batman</font>]]
+|4/5
+|[[File:'ToonedClassicBatmobile.jpg|center|75px]]
+|-
+|JJJ97
+|145
+|[[El Segundo Rallye]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2026)|<font color="white">HW Dirt</font>]]
+|1/10
+|[[File:ESRallyeDirt.jpg|center|75px]]
+|-
+|JJL29
+|145
+|[[El Segundo Rallye]] (2nd Color)
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2026)|<font color="white">HW Dirt</font>]]
+|1/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ98
+|146
+|[[Mazda Autozam]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2026)|<font color="white">HW Dirt</font>]]
+|2/10
+|[[File:Purplezam.jpg|center|75px]]
+|-
+|JJM06
+|147
+|[[2 Jet Z]]
+|bgcolor="#231F20"|[[HW Dream Garage Mini Collection (2026)|<font color="white">HW Dream Garage</font>]]<br>{{TH|2026}}
+|4/5
+|[[File:THJetZ.jpg|center|75px]]
+|-
+|JJH54
+|148
+|[[Tooned Purple Passion]]
+|bgcolor="#231F20"|[[HW Dream Garage Mini Collection (2026)|<font color="white">HW Dream Garage</font>]]<br>{{NM|2026|white}}
+|5/5
+|[[File:'ToonedPurplePassion.jpg|center|75px]]
+|-
+|JJL48
+|148
+|[[Tooned Purple Passion]] (2nd Color)
+|bgcolor="#231F20"|[[HW Dream Garage Mini Collection (2026)|<font color="white">HW Dream Garage</font>]]<br>{{NM|2026|white}}
+|5/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJJ99
+|149
+|[[Honda Odyssey]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]
+|6/10
+|[[File:2014HondaOdyssey.jpg|center|75px]]
+|-
+|JJM63
+|149
+|[[Honda Odyssey]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2026)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|9/12
+|[[File:RED Ed Honda DUM DUMS & ORIG r1.jpg|center|75px]]
+|-
+|JJH56
+|150
+|[[Dino 206 GT]]
+|bgcolor="#D40000" |[[Ferrari Mini Collection (2026)|<font color="black">Ferrari</font>]]<br>{{NM|2026|black}}
+|5/5
+|[[File:Dino206GT.jpg|center|75px]]
+|-
+|JJL74
+|150
+|[[Dino 206 GT]] (2nd Color)
+|bgcolor="#D40000" |[[Ferrari Mini Collection (2026)|<font color="black">Ferrari</font>]]<br>{{NM|2026|black}}
+|5/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH52
+|151
+|[[Ford F-150 Lightning SuperTruck]]
+|bgcolor="#F36C2A" |[[Truckin' Along Mini Collection (2026)|<font color="white">Truckin' Along</font>]]<br>{{NM|2026|white}}
+|5/5
+|[[File:FordSupertruck.jpg|center|75px]]
+|-
+|JJK00
+|152
+|[[BMW 635 CSi]]
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]
+|7/10
+|[[File:1980BMW635.jpg|center|75px]]
+|-
+|JJK01
+|153
+|[[Custom '41 Willys Coupe|'41 Willys]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2026)|<font color="white">Rod Squad</font>]]
+|6/10
+|[[File:WillysCoupe.jpg|center|75px]]
+|-
+|JJK02
+|154
+|[[Formula 1|Kick Sauber F1 Team]]
+|bgcolor="#232122" |[[Formula 1 Mini Collection (2026)|<font color="white">Formula 1</font>]]
+|4/5
+|[[File:KickSauberC45.jpg|center|75px]]
+|-
+|JJH53
+|155
+|[[Vairstrike]]
+|bgcolor="#282321" |[[HW Mods Mini Collection (2026)|<font color="white">HW Mods</font>]]<br>{{NM|2026|white}}
+|3/5
+|[[File:Vairstrike.jpg|center|75px]]
+|-
+|JJM36
+|155
+|[[Vairstrike]] (2nd Color - Zamac)
+|bgcolor="#282321" |[[HW Mods Mini Collection (2026)|<font color="white">HW Mods</font>]]<br>{{NM|2026|white}}<br>{{WM|2026|white}}
+|3/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK03
+|156
+|[[Custom Otto]]
+|bgcolor="#FF0028" |[[Mattel Mini Collection (2026)|<font color="white">Mattel</font>]]
+|5/5
+|[[File:CustomOtto.jpg|center|75px]]
+|-
+|JJM21
+|156
+|[[Custom Otto]]
+|bgcolor="#FF0028" |[[Mattel Mini Collection (2026)|<font color="white">Mattel</font>]]<br>{{STH|2026}}
+|5/5
+|[[File:STH OTTO o5.jpg|center|75px]]
+|-
+|JJK04
+|157
+|[['20 Toyota GR Supra]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]
+|6/10
+|[[File:2020ToyotaSupra.jpg|center|75px]]
+|-
+|JJM68
+|157
+|[['20 Toyota GR Supra]] (2nd Color)
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2026)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|?/12
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK05
+|158
+|[[Mach Speeder]]
+|bgcolor="#32CD32" |[[Exoticars Mini Collection (2026)|<font color="black">Exoticars</font>]]
+|10/10
+|[[File:ExotiSpeeder.jpg|center|75px]]
+|-
+|JJJ81
+|159
+|[[Honda Civic Custom]]
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]
+|8/10
+|[[File:HondaCivicDragster.jpg|center|75px]]
+|-
+|JJM20
+|159
+|[[Honda Civic Custom]]
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]<br>{{STH|2026}}
+|8/10
+|[[File:2026H tiaozi.jpg|center|75px]]
+|-
+|JJK07
+|160
+|[[Lotus Sport Elise]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]
+|7/10
+|[[File:LotusElise.jpg|center|75px]]
+|-
+|JJM22
+|160
+|[[Lotus Sport Elise]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]<br>{{STH|2026}}
+|7/10
+|[[File:LotusEliseSTH.jpg|center|75px]]
+|-
+|JJK08
+|161
+|[['70 Ford Escort RS1600]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2026)|<font color="white">HW Dirt</font>]]
+|3/10
+|[[File:1970Escort.jpg|center|75px]]
+|-
+|JJL58
+|161
+|[['70 Ford Escort RS1600]] (2nd Color)
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2026)|<font color="white">HW Dirt</font>]]
+|3/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJM07
+|162
+|[[Total Disposal]]
+|bgcolor="#FFF979" |[[HW Heavyweights Mini Collection (2026)|<font color="black">HW Heavyweights</font>]]<br>{{TH|2026}}
+|5/5
+|[[File:'ToonedTrashTruck.jpg|center|75px]]
+|-
+|JJH49
+|163
+|[[Cadillac Celestiq]]
+|bgcolor="#94C83C" |[[HW EV Mini Collection (2026)|<font color="white">HW EV</font>]]<br>{{NM|2026|white}}
+|10/10
+|[[File:CadillacCelestiq.jpg|center|75px]]
+|-
+|JJK10
+|164
+|[[Classic Nomad|Classic '55 Nomad]]
+|bgcolor="#FDBD13" |[[Wagons Mini Collection (2026)|<font color="black">Wagons</font>]]
+|6/10
+|[[File:1955Nomad.jpg|center|75px]]
+|-
+|JJM55
+|164
+|[[Classic Nomad|Classic '55 Nomad]] (2nd Color)
+|bgcolor="#FDBD13" |[[Wagons Mini Collection (2026)|<font color="black">Wagons</font>]]<br>{{KR}}
+|6/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK09
+|165
+|[[Gone Mad]]
+|bgcolor="#FDBD13" |[[Wagons Mini Collection (2026)|<font color="black">Wagons</font>]]
+|7/10
+|[[File:WagoneMad.jpg|center|75px]]
+|-
+|JJH64
+|166
+|[[Twin Tags]]
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2026)|<font color="black">Experimotors</font>]]<br>{{NM|2026}}
+|5/5
+|[[File:TwinTags.jpg|center|75px]]
+|-
+|JJL73
+|166
+|[[Twin Tags]] (2nd Color)
+|bgcolor="#FFFD37" |[[Experimotors Mini Collection (2026)|<font color="black">Experimotors</font>]]<br>{{NM|2026}}
+|5/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK11
+|167
+|[[Head Gasket]]
+|bgcolor="#07A7E1" |[[HW All Drivers Welcome Mini Collection (2026)|<font color="white">HW All Drivers Welcome</font>]]<br><font color="white">'''International Day of Play'''</font>
+|3/5
+|[[File:IDPGasket.jpg|center|75px]]
+|-
+|JJK12
+|168
+|[[Mailed It!]]
+|bgcolor="#2C84C7"|[[Team Wheels Mini Collection (2026)|<font color="black">Team Wheels</font>]]
+|1/5
+|[[File:MailDragster.jpg|center|75px]]
+|-
+|JJK13
+|169
+|[[Super Twin Mill]]
+|bgcolor="#DC2430"|[[Hot Wheels Let's Race Mini Collection (2026)|<font color="white">Hot Wheels Let's Race</font>]]
+|1/5
+|[[File:SuperTwinMillII.jpg|center|75px]]
+|-
+|JJK14
+|170
+|[['64 Lincoln Continental (2007)|'64 Lincoln Continental]]
+|bgcolor="#C0C0C0"|[[Cool Classics Mini Collection (2026)|<font color="black">Cool Classics</font>]]
+|1/10
+|[[File:LincolnContinental.jpg|center|75px]]
+|-
+|JJK15
+|171
+|[[1983 Porsche 928S]]
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]
+|8/10
+|[[File:1983Porsche928.jpg|center|75px]]
+|-
+|JJK16
+|172
+|[[Tooned Volkswagen Golf Mk1]]
+|bgcolor="#1EABAF" |[[Tooned Mini Collection (2026)|<font color="black">Tooned</font>]]
+|3/5
+|[[File:VroomyGolf.jpg|center|75px]]
+|-
+|JJM56
+|172
+|[[Tooned Volkswagen Golf Mk1]] (2nd Color)
+|bgcolor="#1EABAF" |[[Tooned Mini Collection (2026)|<font color="black">Tooned</font>]]<br>{{KR}}
+|3/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJL52
+|172
+|[[Tooned Volkswagen Golf Mk1]] (3rd Color)
+|bgcolor="#1EABAF" |[[Tooned Mini Collection (2026)|<font color="black">Tooned</font>]]
+|3/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH51
+|173
+|[[Ferrari F2004]]
+|bgcolor="#1F1F21" |[[HW Starting Grid Mini Collection (2026)|<font color="white">HW Starting Grid</font>]]<br>{{NM|2026|white}}
+|10/10
+|[[File:FerrariF2004.jpg|center|75px]]
+|-
+|JJK17
+|174
+|[[Duck N' Roll]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2026)|<font color="white">HW Dirt</font>]]
+|4/10
+|[[File:JeepN'Roll.jpg|center|75px]]
+|-
+|JJL59
+|174
+|[[Duck N' Roll]] (2nd Color)
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2026)|<font color="white">HW Dirt</font>]]
+|4/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK18
+|175
+|[['94 Audi Avant RS2]]
+|bgcolor="#FDBD13" |[[Wagons Mini Collection (2026)|<font color="black">Wagons</font>]]
+|8/10
+|[[File:1994AudiRS2Avant.jpg|center|75px]]
+|-
+|JJK19
+|176
+|[[Subaru Impreza|Subaru Impreza WRX]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]
+|7/10
+|[[File:2005SubaruImpreza.jpg|center|75px]]
+|-
+|JJM23
+|176
+|[[Subaru Impreza|Subaru Impreza WRX]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]<br>{{STH|2026}}
+|7/10
+|[[File:STHImpreza.jpg|center|75px]]
+|-
+|JJH58
+|177
+|[['88 Mitsubishi Starion]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]<br>{{NM|2026}}
+|8/10
+|[[File:MitsubishiStarion.jpg|center|75px]]
+|-
+|JJM54
+|177
+|[['88 Mitsubishi Starion]] (2nd Color)
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]<br>{{NM|2026}}<br>{{KR}}
+|8/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJL70
+|177
+|[['88 Mitsubishi Starion]] (3rd Color)
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]<br>{{NM|2026}}
+|8/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH61
+|178
+|[[Click Shift]]
+|bgcolor="#07A7E1" |[[HW All Drivers Welcome Mini Collection (2026)|<font color="white">HW All Drivers Welcome</font>]]<br>{{NM|2026|white}}<br>'''<font color="white">Easterseals</font>'''
+|4/5
+|[[File:ClickShift.jpg|center|75px]]
+|-
+|JJK20
+|179
+|[[Mountain Mauler]]
+|bgcolor="#DC2430"|[[Hot Wheels Let's Race Mini Collection (2026)|<font color="white">Hot Wheels Let's Race</font>]]
+|2/5
+|[[File:LRMauler.jpg|center|75px]]
+|-
+|JJK21
+|180
+|[['55 Chevy (2006)|'55 Chevy]]
+|bgcolor="#C0C0C0"|[[Cool Classics Mini Collection (2026)|<font color="black">Cool Classics</font>]]
+|2/10
+|[[File:1955ChevyFever.jpg|center|75px]]
+|-
+|JJH63
+|181
+|[[Mercedes-Benz CLA HW]]
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]<br>{{NM|2026}}
+|9/10
+|[[File:Mercedes-BenzCLAHW.jpg|center|75px]]
+|-
+|JJH60
+|182
+|[[Chop 'n Bloc]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2026)|<font color="white">Rod Squad</font>]]<br>{{NM|2026|white}}
+|7/10
+|[[File:Chop'nBloc.jpg|center|75px]]
+|-
+|JJK23
+|183
+|[['70 Buick GSX]]
+|bgcolor="#FF4F00" |[[HW Torque Mini Collection (2026)|<font color="black">HW Torque</font>]] 
+|1/10
+|[[File:1970BuickGSX.jpg|center|75px]]
+|-
+|JJM37
+|183
+|[['70 Buick GSX]] (2nd Color - Zamac)
+|bgcolor="#FF4F00" |[[HW Torque Mini Collection (2026)|<font color="black">HW Torque</font>]]<br>{{WM|2026}}
+|1/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK24
+|184
+|[['68 Shelby GT500]]
+|bgcolor="#FF4F00" |[[HW Torque Mini Collection (2026)|<font color="black">HW Torque</font>]] 
+|2/10
+|[[File:1968ShelbyGT500.jpg|center|75px]]
+|-
+|JJK25
+|185
+|[[Formula 1|Aston Martin Aramco Formula One Team]]
+|bgcolor="#232122" |[[Formula 1 Mini Collection (2026)|<font color="white">Formula 1</font>]]
+|5/5
+|[[File:AstonMartinAramcoAMR25.jpg|center|75px]]
+|-
+|JJM08
+|186
+|[[Amaru GTC]]
+|bgcolor="#282321" |[[HW Mods Mini Collection (2026)|<font color="white">HW Mods</font>]]<br>{{TH|2026}}
+|4/5
+|[[File:ModsAmaru.jpg|center|75px]]
+|-
+|JJH59
+|187
+|[[PT Fast]]
+|bgcolor="#282321" |[[HW Mods Mini Collection (2026)|<font color="white">HW Mods</font>]]<br>{{NM|2026|white}}
+|5/5
+|[[File:PTFast.jpg|center|75px]]
+|-
+|JJK26
+|188
+|[['70 Dodge Charger (Tooned)|'70 Dodge Charger]]
+|bgcolor="#1EABAF" |[[Tooned Mini Collection (2026)|<font color="black">Tooned</font>]]
+|4/5
+|[[File:'ToonedRT.jpg|center|75px]]
+|-
+|JJK27
+|189
+|[['11 Corvette Grand Sport]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]
+|7/10
+|[[File:2011Corvette.jpg|center|75px]]
+|-
+|JJK28
+|190
+|[['82 Toyota Supra]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]
+|8/10
+|[[File:1982CelicaSupra.jpg|center|75px]]
+|-
+|JJK06
+|191
+|[['65 Mercury Comet Cyclone]]
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]
+|9/10
+|[[File:1965Cyclone.jpg|center|75px]]
+|-
+|JJM53
+|191
+|[['65 Mercury Comet Cyclone]] (2nd Color)
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]<br>{{KR|white}}
+|9/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJL46
+|191
+|[['65 Mercury Comet Cyclone]] (3rd Color)
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]
+|9/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK29
+|192
+|[[Fiat 500C]]
+| bgcolor="#000080" |[[Drag Racers Mini Collection (2026)|<font color="white">Drag Racers</font>]]
+|10/10
+|[[File:Fiat500Drag.jpg|center|75px]]
+|-
+|JJK31
+|193
+|[['63 Chevy II]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]
+|8/10
+|[[File:1963ChevyII.jpg|center|75px]]
+|-
+|JJK32
+|194
+|[[Lil' Roar]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2026)|<font color="white">HW Dirt</font>]]
+|5/10
+|[[File:2003MiniCooper.jpg|center|75px]]
+|-
+|JJK33
+|195
+|[[Spider-Mobile]]
+|bgcolor="#2A2673" |[[Screen Time Mini Collection (2026)|<font color="white">Screen Time</font>]]
+|5/10
+|[[File:SpiderBuggy.jpg|center|75px]]
+|-
+|JJM09
+|196
+|[[Sweet Driver]]
+| bgcolor="#FFB6C1" |[[Sweet Rides Mini Collection (2026)|<font color="white">Sweet Rides</font>]]<br>{{TH|2026}}
+|4/5
+|[[File:CupcakeRacer.jpg|center|75px]]
+|-
+|JJH57
+|197
+|[[Mad Drip]]
+| bgcolor="#FFB6C1" |[[Sweet Rides Mini Collection (2026)|<font color="white">Sweet Rides</font>]]<br>{{NM|2026|white}}
+|5/5
+|[[File:MadDrip.jpg|center|75px]]
+|-
+|JJK34
+|198
+|[[Toyota AE86 Sprinter Trueno]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]
+|9/10
+|[[File:1987ToyotaTrueno.jpg|center|75px]]
+|-
+|JJK35
+|199
+|[[Nissan Skyline GT-R (BNR34)]]
+|bgcolor="#54CBF5" |[[HW J-Imports Mini Collection (2026)|<font color="black">HW J-Imports</font>]]
+|10/10
+|[[File:1999NissanSkylineR34.jpg|center|75px]]
+|-
+|JJK36
+|200
+|[[Punk Rod]]
+|bgcolor="#2C84C7"|[[Team Wheels Mini Collection (2026)|<font color="black">Team Wheels</font>]]
+|2/5
+|[[File:HWRTRod.jpg|center|75px]]
+|-
+|JJK37
+|201
+|[[1970 Pontiac Firebird]]
+|bgcolor="#2C84C7"|[[Team Wheels Mini Collection (2026)|<font color="black">Team Wheels</font>]]
+|3/5
+|[[File:HWRTFirebird.jpg|center|75px]]
+|-
+|JJM65
+|201
+|[[1970 Pontiac Firebird]]
+|bgcolor="#E80018" |[[Red Edition Mini Collection (2026)|<font color="white">Red Edition</font>]]<br>{{TG}}
+|?/12
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK38
+|202
+|[[Street Shaker]]
+|bgcolor="#F07121"|[[Trophy Case Mini Collection (2026)|<font color="white">Trophy Case</font>]]
+|1/5
+|[[File:2026Hammerhead.jpg|center|75px]]
+|-
+|JJK39
+|203
+|[[Street Shrieker]]
+|bgcolor="#DC2430"|[[Hot Wheels Let's Race Mini Collection (2026)|<font color="white">Hot Wheels Let's Race</font>]]
+|3/5
+|[[File:StreetShrieker.jpg|center|75px]]
+|-
+|JJK40
+|204
+|[[Mod Mill]]
+|bgcolor="#C0C0C0"|[[Cool Classics Mini Collection (2026)|<font color="black">Cool Classics</font>]]
+|3/10
+|[[File:CoolMill.jpg|center|75px]]
+|-
+|JJK22
+|205
+|[[Jaguar XJC V12 Coupe]]
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]
+|10/10
+|[[File:1976JaguarXJC.jpg|center|75px]]
+|-
+|JJL96
+|205
+|[[Jaguar XJC V12 Coupe]] (2nd Color)
+|bgcolor="#F9C62C" |[[HW Euro Mini Collection (2026)|<font color="black">HW Euro</font>]]
+|10/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK41
+|206
+|[[Bully Goat]]
+|bgcolor="#FF4F00" |[[HW Torque Mini Collection (2026)|<font color="black">HW Torque</font>]] 
+|3/10
+|[[File:BullyGTO.jpg|center|75px]]
+|-
+|JJK42
+|207
+|[['18 Camaro SS]]
+|bgcolor="#FF4F00" |[[HW Torque Mini Collection (2026)|<font color="black">HW Torque</font>]] 
+|4/10
+|[[File:2018Camaro.jpg|center|75px]]
+|-
+|JJK43
+|208
+|[[Porsche 911 Carrera RS 2.7]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]
+|9/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJM24
+|208
+|[[Porsche 911 Carrera RS 2.7]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]<br>{{STH|2026}}
+|9/10
+|[[File:1973PorscheRSTH.jpg|center|75px]]
+|-
+|JJH62
+|209
+|[[Mini JCW Electric]]
+|bgcolor="#EB1D25" |[[Then and Now Mini Collection (2026)|<font color="black">Then and Now</font>]]<br>{{NM|2026}}
+|10/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK44
+|210
+|[['19 Mercedes-Benz A-Class]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]
+|9/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH66
+|211
+|[[1972 Datsun Sunny Coupe]]
+|bgcolor="#F9E0E4" |[[Compact Kings Mini Collection (2026)|<font color="black">Compact Kings</font>]]<br>{{NM|2026}}
+|10/10
+|[[File:DatsunSunnyCoupe.jpg|center|75px]]
+|-
+|JJK45
+|212
+|[[Hyper Rocker]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2026)|<font color="white">HW Dirt</font>]]
+|6/10
+|[[File:HyperRocker.jpg|center|75px]]
+|-
+|JJK46
+|213
+|[['21 Ford Bronco]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2026)|<font color="white">HW Dirt</font>]]
+|7/10
+|[[File:2021FordBroncoBigBend.jpg|center|75px]]
+|-
+|JJK47
+|214
+|[['68 Corvette - Gas Monkey Garage]]
+|bgcolor="#2A2673" |[[Screen Time Mini Collection (2026)|<font color="white">Screen Time</font>]]
+|6/10
+|[[File:GMGCorvetteC3.jpg|center|75px]]
+|-
+|JJH65
+|215
+|[[Lil' Mad]]
+|bgcolor="#FDBD13" |[[Wagons Mini Collection (2026)|<font color="black">Wagons</font>]]<br>{{NM|2026}}
+|9/10
+|[[File:Lil'Mad.jpg|center|75px]]
+|-
+|JJH68
+|216
+|[[HW Test Ride]]
+|bgcolor="#F07121"|[[Trophy Case Mini Collection (2026)|<font color="white">Trophy Case</font>]]<br>{{NM|2026|white}}
+|2/5
+|[[File:HWTestRide.jpg|center|75px]]
+|-
+|JJM10
+|217
+|[[Mad Manga]]
+|bgcolor="#DC2430"|[[Hot Wheels Let's Race Mini Collection (2026)|<font color="white">Hot Wheels Let's Race</font>]]<br>{{TH|2026}}
+|4/5
+|[[File:MadManganese.jpg|center|75px]]
+|-
+|JJK48
+|218
+|[[Alfa Romeo Giulia TI Super]]
+|bgcolor="#C0C0C0"|[[Cool Classics Mini Collection (2026)|<font color="black">Cool Classics</font>]]
+|4/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH67
+|219
+|[[Project Twin Mill]]
+|bgcolor="#C0C0C0"|[[Cool Classics Mini Collection (2026)|<font color="black">Cool Classics</font>]]<br>{{NM|2026}}
+|5/10
+|[[File:ProjectTwinMill.jpg|center|75px]]
+|-
+|JJK49
+|220
+|[[Custom '62 Chevy|Custom '62 Chevy Pickup]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2026)|<font color="white">Rod Squad</font>]]
+|8/10
+|[[File:FiTechPickup.jpg|center|75px]]
+|-
+|JJK50
+|221
+|[['96 Dodge Viper GTS]]
+|bgcolor="#FF4F00" |[[HW Torque Mini Collection (2026)|<font color="black">HW Torque</font>]] 
+|5/10
+|[[File:MuscleViper.jpg|center|75px]]
+|-
+|JJK51
+|222
+|[['94 Toyota Supra (Tooned)|'94 Toyota Supra]]
+|bgcolor="#1EABAF" |[[Tooned Mini Collection (2026)|<font color="black">Tooned</font>]]
+|5/5
+|[[File:'Tooned1994Supra.jpg|center|75px]]
+|-
+|JJM25
+|222
+|[['94 Toyota Supra (Tooned)|'94 Toyota Supra]]
+|bgcolor="#1EABAF" |[[Tooned Mini Collection (2026)|<font color="black">Tooned</font>]]<br>{{STH|2026}}
+|5/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH69
+|223
+|[[2019 Audi TT Safari]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2026)|<font color="white">HW Dirt</font>]]<br>{{NM|2026|white}}
+|8/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK52
+|224
+|[[1970 Custom Plymouth Roadrunner]]
+|bgcolor="#2A2673" |[[Screen Time Mini Collection (2026)|<font color="white">Screen Time</font>]]<br>{{NIM|white}}
+|7/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK53
+|225
+|[[Nissan Maxima Drift Car]]
+|bgcolor="#FDBD13" |[[Wagons Mini Collection (2026)|<font color="black">Wagons</font>]]
+|10/10
+|[[File:K&NMaxima.jpg|center|75px]]
+|-
+|JJM26
+|225
+|[[Nissan Maxima Drift Car]]
+|bgcolor="#FDBD13" |[[Wagons Mini Collection (2026)|<font color="black">Wagons</font>]]<br>{{STH|2026}}
+|10/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH71
+|226
+|[[Salt Streaker]]
+|bgcolor="#2C84C7"|[[Team Wheels Mini Collection (2026)|<font color="black">Team Wheels</font>]]<br>{{NM|2026}}
+|4/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK54
+|227
+|[['71 Lamborghini Miura SV]]
+|bgcolor="#C0C0C0"|[[Cool Classics Mini Collection (2026)|<font color="black">Cool Classics</font>]]
+|6/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK55
+|228
+|[['66 Buick Riviera]]
+|bgcolor="#C0C0C0"|[[Cool Classics Mini Collection (2026)|<font color="black">Cool Classics</font>]]
+|7/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJM11
+|229
+|[[Ford Model A Custom '31]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2026)|<font color="white">Rod Squad</font>]]<br>{{TH|2026}}
+|9/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH70
+|230
+|[[Uncertain-T]]
+|bgcolor="#696969" |[[Rod Squad Mini Collection (2026)|<font color="white">Rod Squad</font>]]<br>{{NM|2026|white}}
+|10/10
+|[[File:UncertainT.jpg|center|75px]]
+|-
+|JJK56
+|231
+|[['68 Mercury Cougar (2014)|'68 Mercury Cougar]]
+|bgcolor="#FF4F00" |[[HW Torque Mini Collection (2026)|<font color="black">HW Torque</font>]] 
+|6/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK57
+|232
+|[[Slide-Burn]]
+|bgcolor="#FF4F00" |[[HW Torque Mini Collection (2026)|<font color="black">HW Torque</font>]] 
+|7/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH72
+|233
+|[[Armored Batmobile]]
+|bgcolor="black" |[[Batman Mini Collection (2026)|<font color="white">Batman</font>]]<br>{{NM|2026|white}}
+|5/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK58
+|234
+|[['23 Ram 1500]]
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2026)|<font color="white">HW Dirt</font>]]
+|9/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJM27
+|234
+|[['23 Ram 1500]] 
+|bgcolor="#BA6E11" |[[HW Dirt Mini Collection (2026)|<font color="white">HW Dirt</font>]]<br>{{STH|2026}}
+|9/10
+|[[File:RamTRXSTH.jpg|center|75px]]
+|-
+|JJK59
+|235
+|[[Party Wagon]]
+|bgcolor="#2A2673" |[[Screen Time Mini Collection (2026)|<font color="white">Screen Time</font>]]
+|8/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH74
+|236
+|[[Mickey Mouse Car]]
+|bgcolor="#2A2673" |[[Screen Time Mini Collection (2026)|<font color="white">Screen Time</font>]]<br>{{NM|2026|white}}
+|9/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK60
+|237
+|[[Circle Tracker]]
+|bgcolor="#07A7E1" |[[HW All Drivers Welcome Mini Collection (2026)|<font color="white">HW All Drivers Welcome</font>]]<br><font color="white">'''World Mental Health Day'''</font>
+|5/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJM12
+|238
+|[[Fast Fish]]
+|bgcolor="#2C84C7"|[[Team Wheels Mini Collection (2026)|<font color="black">Team Wheels</font>]]<br>{{TH|2026}}
+|5/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH75
+|239
+|[[Go-Realla-Fast]]
+|bgcolor="#F07121"|[[Trophy Case Mini Collection (2026)|<font color="white">Trophy Case</font>]]<br>{{NM|2026|white}}
+|3/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK61
+|240
+|[[Surf 'N Turf]]
+|bgcolor="#DC2430"|[[Hot Wheels Let's Race Mini Collection (2026)|<font color="white">Hot Wheels Let's Race</font>]]
+|5/5
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH73
+|241
+|[[1963 Ford Galaxie]]
+|bgcolor="#C0C0C0"|[[Cool Classics Mini Collection (2026)|<font color="black">Cool Classics</font>]]<br>{{NM|2026}}
+|8/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK62
+|242
+|[['96 Chevrolet Impala SS]]
+|bgcolor="#FF4F00" |[[HW Torque Mini Collection (2026)|<font color="black">HW Torque</font>]] 
+|8/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK63
+|245
+|[['70 Plymouth AAR Cuda]]
+|bgcolor="#FF4F00" |[[HW Torque Mini Collection (2026)|<font color="black">HW Torque</font>]]
+|9/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJM28
+|245
+|[['70 Plymouth AAR Cuda]] 
+|bgcolor="#FF4F00" |[[HW Torque Mini Collection (2026)|<font color="black">HW Torque</font>]]<br>{{STH|2026}}
+|9/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH77
+|246
+|[[Ridge Crest GT]]
+|bgcolor="#FF4F00" |[[HW Torque Mini Collection (2026)|<font color="black">HW Torque</font>]]<br>{{NM|2026}}
+|10/10
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|}
+<!-- graphics leads 
+Leeway Chang: Batman, Drag Racers, Exoticars, Experimotors, Factory Fresh, Ferrari, Formula 1, Hot Wheels Let's Race, HW All Drivers Welcome, HW Fan Driven, Mattel, Screen Time, Sweet Rides, Trophy Case, X-Raycers
+Mike McClone: Compact Kings, Cool Classics, Drop Tops, HW EV, HW Heavyweights, HW Mods, Rod Squad, Then and Now, Truckin' Along
+Andrés Andrieu: HW Dirt, HW Euro, HW J-Imports, Layin' Low, Nightspeed, Team Wheels
+Anton Henggono: HW Dream Garage, HW Starting Grid, HW Torque, Tooned, Wagons
+-->
+
+==Confirmed Mainline Castings==
+These are numbered releases that are confirmed but information is unclear. <!-- all 2025 New Models will likely reappear in 2026 in some form -->
+
+{| class="wikitable sortable" style="font-size: 85%; text-align: left;" width="100%"
+|-
+! style="border-style: none none solid solid; background:" |Toy #
+! style="border-style: none none solid solid; background:" |Col.#
+! style="border-style: none none solid solid; background:" |Model Name
+! style="border-style: none none solid solid; background:" |Series
+! style="border-style: none none solid solid; background:" |Series #
+! style="border-style: none none solid solid; background:" |Photo
+|-
+|JJH76
+|
+|[[Aston Martin DB5 Safari]]
+|TBD<br>{{NM|2026}}
+|
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJH79
+|
+|[[Custom Vanster 4WD]]
+|TBD<br>{{NM|2026}}
+|
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJM13
+|
+|[[Nissan Skyline H/T 2000GT-X|Nissan Skyline HT 2000GT-X]]
+|TBD<br>{{TH|2026}}
+|
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJK64
+|
+|[['67 Pontiac Firebird 400]]
+|TBD
+|
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|JJM29
+|
+|[['67 Pontiac Firebird 400]]
+|TBD<br>{{STH|2026}}
+|
+|[[File:Image Not Available.jpg|center|75px]]
+|-
+|}
+{{Lists}}
+[[Category:2026 Hot Wheels]]
+[[Category:Lists of Hot Wheels by year]]

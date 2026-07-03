@@ -1,0 +1,3456 @@
+The 2016 mainline offerings consist of 250 total numbered releases. The cars are divided into 30 segments. See [[2016 New Models]] for a list of new models and [[2016 Treasure Hunts Series]] for a list of Treasure Hunt cars. The badges for each series can be found at  http://www.hotwheelscollectors.com/news/2016-hot-wheels-mainline-preview.
+
+Also included in the mainline are 2 Target-exclusive Snowflake Editions, 2 Target-exclusive Spring Editions, and 4 Kroger Special Editions.
+
+==[[HW Race Team Mini Collection (2016)|HW Race Team]] [[File:HW_Race_Team.png|40px]]==
+'''Cool Hot Wheels-inspired race cars.'''
+{|style="font-size: 85%; text-align: left;" class="wikitable sortable" width="100%"
+!style="border-style: none none solid solid; background:#4169E1"|<font color="white">'''Toy #'''
+!style="border-style: none none solid solid; background:#4169E1"|<font color="white">'''Col.#'''
+!style="border-style: none none solid solid; background:#4169E1"|<font color="white">'''Model Name'''
+!style="border-style: none none solid solid; background:#4169E1"|<font color="white">'''Series'''
+!style="border-style: none none solid solid; background:#4169E1"|<font color="white">'''Series #'''
+!style="border-style: none none solid solid; background:#4169E1"|<font color="white">'''Photo'''
+|-
+|DHP37
+|001
+|[[Corvette C7.R]]
+|bgcolor="#4169E1"|<font color="white">HW Race Team</font>
+|1/10​
+|[[File:Corvette_C7R_-_16_HW_Race_Team_600pxOTD.jpg|75px]]
+|-
+|DHY07
+|001
+|[[Corvette C7.R]]<br>(2nd Color)
+| bgcolor="#4169E1" |<font color="white">HW Race Team<br>'''Kmart Exclusive'''</font>
+|1/10​
+|[[Image:Corvette_C7.R_White.JPG|75px]]
+|-
+|DHP38
+|002
+|[[SRT Viper GTS-R]]
+| bgcolor="#4169E1" |<font color="white">HW Race Team</font>
+|2/10​
+|[[File:2-2016.jpg|75px]]
+|-
+|DHX96
+|002
+|[[SRT Viper GTS-R]]<br>(2nd Color - Zamac)
+| bgcolor="#4169E1" |<font color="white">HW Race Team<br>'''Walmart Exclusive'''</font>
+|2/10​
+|[[Image:SRT_Viper_GTS-R_-_16_HW_Race_Team_ZAMAC_600pxOTD.jpg|75px]]
+|-
+|DHP39
+|003
+|[[Custom '12 Ford Mustang]]
+| bgcolor="#4169E1" |<font color="white">HW Race Team</font>
+|3/10​
+|[[File:Custom_12_Mustang_-_16_HW_Race_Team_600pxOTD.jpg|75px]]
+|-
+|DHP40
+|004
+|[[Bull Whip]]
+| bgcolor="#4169E1" |<font color="white">HW Race Team</font>
+|4/10​
+|[[File:Bull_Whip_-_16_HW_Race_Team_600pxOTD.jpg|75px]]
+|-
+|DHP41
+|005
+|[[Carbonic]]
+| bgcolor="#4169E1" |<font color="white">HW Race Team</font>
+|5/10​
+|[[File:Carbonic_-_16_HW_Race_Team_600pxOTD.jpg|75px]]
+|-
+|DHT77
+|005
+|[[Carbonic]]
+| bgcolor="#4169E1" |<font color="white">HW Race Team<br>[[2016 Treasure Hunts Series|<font color="#00cc00">'''Super Treasure Hunt''']]</font>
+|5/10​
+|[[Image:Carbonic_-_16_HW_Race_Team_SUPER_600pxOTD.png|75px]]
+|-
+|DHP42
+|006
+|[[2008 Lancer Evolution]]
+| bgcolor="#4169E1" |<font color="white">HW Race Team</font>
+|6/10​
+|[[File:08_Lancer_Evolution_-_16_HW_Race_Team_600pxOTD.jpg|75px]]
+|-
+|FBJ19
+|006
+|[[2008 Lancer Evolution]]<br>(2nd Color)
+| bgcolor="#4169E1" |<font color="white">HW Race Team<br>'''Kmart Exclusive'''</font>
+|6/10​
+|[[Image:FBJ19.jpg|75px]]
+|-
+|DHN87
+|007
+|[[Bone Speeder]]
+| bgcolor="#4169E1" |<font color="white">HW Race Team </font><br>'''[[2016 New Models|<font color="white">New for 2016!]]'''
+|7/10​
+|[[File:Bone_Speeder_-_16NM_HW_Race_Team_600pxOTD.jpg|75px]]
+|-
+|DHW82
+|007
+|[[Bone Speeder]]<br>(2nd Color)
+| bgcolor="#4169E1" |<font color="white">HW Race Team </font><br><font color="white">'''[[2016 New Models|<font color="white">New for 2016!]]'''
+|7/10​
+|[[Image:Bone_Speeder-2016_007_Red.jpg|75px]]
+|-
+|DHN88
+|008
+|[[Formula Flashback]]
+| bgcolor="#4169E1" |<font color="white">HW Race Team </font><br/>'''[[2016 New Models|<font color="white">New for 2016!]]'''
+|8/10​
+|[[File:Formula_Flashback_-_16NM_HW_Race_Team_600pxOTD.jpg|75px]]
+|-
+|DHN89
+|009
+|[[Futurismo]]
+| bgcolor="#4169E1" |<font color="white">HW Race Team </font><br><font color="white">'''[[2016 New Models|<font color="white">New for 2016!]]'''
+|9/10​
+|[[File:Futurismo_-_16NM_HW_Race_Team_600pxOTD.jpg|75px]]
+|-
+|DHP03
+|010
+|[[Night Shifter]]
+| bgcolor="#4169E1" |<font color="white">HW Race Team </font><br><font color="white">'''[[2016 New Models|<font color="white">New for 2016!]]'''
+|10/10​
+|[[File:Night_Shifter_-_16NM_HW_Race_Team_600pxOTD.jpg|75px]]
+|-
+|DHW77
+|010
+|[[Night Shifter]]<br>(2nd Color)
+| bgcolor="#4169E1" |<font color="white">HW Race Team </font><br><font color="white">'''[[2016 New Models|<font color="white">New for 2016!]]'''
+|10/10​
+|[[Image:Night_Shifter_-_16NM_HW_Race_Team_RED_600pxOTD.jpg|75px]]
+|}
+
+==[[X-Raycers Mini Collection (2016)|X-Raycers]] [[File:X-Raycers.png|40px]]==
+'''Cars with clear bodies and wheels, plus they're super fast on tracks!'''
+{|style="font-size: 85%; text-align: left;" class="wikitable sortable" width="100%"
+!style="border-style: none none solid solid; background:black"|<font color="white">'''Toy #'''
+!style="border-style: none none solid solid; background:black"|<font color="white">'''Col.#'''
+!style="border-style: none none solid solid; background:black"|<font color="white">'''Model Name'''
+!style="border-style: none none solid solid; background:black"|<font color="white">'''Series'''
+!style="border-style: none none solid solid; background:black"|<font color="white">'''Series #'''
+!style="border-style: none none solid solid; background:black"|<font color="white">'''Photo'''
+|-
+|DHP43
+|011
+|[[Stockar]]
+| bgcolor="black" |<font color="white">X-Raycers
+|1/10​
+|[[File:HW-2016-11-Stockar-XRaycers.jpg|75px]]
+|-
+|DHT92
+|011
+|[[Stockar]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">X-Raycers
+|1/10​
+|[[Image:Stockar_2016_2.png|75px]]
+|-
+|DHP44
+|012
+|[[Rig Storm]]
+| bgcolor="black" |<font color="white">X-Raycers</font><br>[[2016 Treasure Hunts Series|<font color="00cc00">'''Treasure Hunt'''</font>]]
+|2/10​
+|[[File:HW-2016-12-Rig_Storm-X_Raycers.jpg|75px]]
+|-
+|DHP45
+|013
+|[[Clear Speeder]]
+| bgcolor="black" |<font color="white">X-Raycers
+|3/10​
+|[[Image:ClearSpeederDHP45.jpg|75px]]
+|-
+|DHT93
+|013
+|[[Clear Speeder]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">X-Raycers
+|3/10​
+|[[Image:Clear_Speeder_2016_2.png|75px]]
+|-
+|DHP46
+|014
+|[[Speed Slayer]]
+| bgcolor="black" |<font color="white">X-Raycers
+|4/10​
+|[[Image:SpeedSlayerXRaycers.jpg|75px]]
+|-
+|DHT94
+|014
+|[[Speed Slayer]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">X-Raycers
+|4/10​
+|[[Image:Speed Slayer 2016 2.png|75px]]
+|-
+|DHP47
+|015
+|[[Bullet Proof]]
+| bgcolor="black" |<font color="white">X-Raycers
+|5/10​
+|[[Image:BulletProofDHP47.jpg|75px]]
+|-
+|DHT95
+|015
+|[[Bullet Proof]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">X-Raycers
+|5/10​
+|[[Image:Bullet_Proof_2016_2.png|75px]]
+|-
+|DHP48
+|016
+|[[Vandetta]]
+| bgcolor="black" |<font color="white">X-Raycers
+|6/10​
+|[[Image:VandettaDHP48.jpg|75px]]
+|-
+|DHP49
+|017
+|[[Cloak and Dagger]]
+| bgcolor="black" |<font color="white">X-Raycers
+|7/10​
+|[[Image:Unremovable .jpeg|75px]]
+|-
+|DHW49
+|017
+|[[Cloak and Dagger]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">X-Raycers
+|7/10​
+|[[Image:Cloak_and_Dagger_2016_2.png|75px]]
+|-
+|DHP50
+|018
+|[[Pharodox]]
+| bgcolor="black" |<font color="white">X-Raycers
+|8/10​
+|[[File:Pharodox 2016 1.png|75px]]
+|-
+|DHW50
+|018
+|[[Pharodox]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">X-Raycers
+|8/10​
+|[[Image:Pharodox_2016_2.png|75px]]
+|-
+|DHP51
+|019
+|[[Aero Pod]]
+| bgcolor="black" |<font color="white">X-Raycers
+|9/10​
+|[[File:AeroPodDHP51.jpg|75px]]
+|-
+|DHW51
+|019
+|[[Aero Pod]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">X-Raycers
+|9/10​
+|[[Image:AeroPodDHW51.jpg|75px]]
+|-
+|DHN91
+|020
+|[[Blitzspeeder]]
+| bgcolor="black" |<font color="white">X-Raycers<br>'''[[2016 New Models|<font color="white">New Model]]'''</font>
+|10/10​
+|[[File:DHN91_01.jpg|75px]]
+|-
+|DHW52
+|020
+|[[Blitzspeeder]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">X-Raycers<br>'''[[2016 New Models|<font color="white">New Model]]'''</font>
+|10/10​
+|[[Image:Blitzspeeder_2016_2.png|75px]]
+|}
+
+==[[HW Digital Circuit Mini Collection (2016)|HW Digital Circuit]] [[File:HW_Digital_Circuit.png|40px]]==
+'''Great on track, these cars also have special features online. Visit [http://www.hotwheels.com/en-us/index.html hotwheels.com] to learn more!'''
+{|style="font-size: 85%; text-align: left;" class="wikitable sortable" width="100%"
+!style="border-style: none none solid solid; background:#FFAA1D"|<font color="black">'''Toy #'''
+!style="border-style: none none solid solid; background:#FFAA1D"|<font color="black">'''Col.#'''
+!style="border-style: none none solid solid; background:#FFAA1D"|<font color="black">'''Model Name'''
+!style="border-style: none none solid solid; background:#FFAA1D"|<font color="black">'''Series'''
+!style="border-style: none none solid solid; background:#FFAA1D"|<font color="black">'''Series #'''
+!style="border-style: none none solid solid; background:#FFAA1D"|<font color="black">'''Photo'''
+|-
+|DHN93
+|021
+|[[2005 Ford Mustang]]
+| bgcolor="orange" |<font color="black">HW Digital Circuit<br>'''[[2016 New Models|<font color="black">New Model]]'''
+|1/10​
+|[[File:05FordMustangSEMA.jpg|75px]]
+|-
+|DHX15
+|021
+|[[2005 Ford Mustang]]<br>(2nd Color)
+| bgcolor="orange" |<font color="black">HW Digital Circuit<br>'''[[2016 New Models|<font color="black">New Model]]'''
+|1/10​
+|[[Image:Mustang-SEMA-recolor-HW2016.jpg|75px]]
+|-
+|DHP53
+|022
+|[['11 Corvette Grand Sport]]
+| bgcolor="orange" |<font color="black">HW Digital Circuit<br>'''[[2016 Treasure Hunts Series|<font color="00CC00">Treasure Hunt]]'''
+|2/10​
+|[[File:CorvetteZR1-TH-HW2016.jpg|75px]]
+|-
+|DHP54
+|023
+|[[Chevy Camaro Concept]]
+| bgcolor="orange" |<font color="black">HW Digital Circuit
+|3/10​
+|[[File:Url-1.jpg|75px]]
+|-
+|DHX16
+|023
+|[[Chevy Camaro Concept]]<br>(2nd Color)
+| bgcolor="orange" |<font color="black">HW Digital Circuit
+|3/10​
+|[[Image:DHX16-1.JPG|75px]]
+|-
+|DHP55
+|024
+|[[Ford Shelby Cobra Concept]]
+| bgcolor="orange" |<font color="black">HW Digital Circuit
+|4/10​
+|[[Image:Shelby-concept-hw-2016.jpg|75px]]
+|-
+|DHX17
+|024
+|[[Ford Shelby Cobra Concept]]<br>(2nd Color)
+| bgcolor="orange" |<font color="black">HW Digital Circuit
+|4/10​
+|[[Image:HW_Ford-Shelby-Cobra-Concept_Red_2016_RF_DSCF9326.jpg|75px]]
+|-
+|DHP56
+|025
+|[[Honda Racer]]
+| bgcolor="orange" |<font color="black">HW Digital Circuit
+|5/10​
+|[[Image:DHP56-LOOSE.jpg|75px]]
+|-
+|DHX18
+|025
+|[[Honda Racer]]<br>(2nd Color)
+| bgcolor="orange" |<font color="black">HW Digital Circuit
+|5/10​
+|[[Image:IMG_1316.JPG|75px]]
+|-
+|DHP57
+|026
+|[[Winning Formula]]
+| bgcolor="orange" |<font color="black">HW Digital Circuit
+|6/10​
+|[[Image:for.jpg|75px]]
+|-
+|DHW53
+|026
+|[[Winning Formula]]<br>(2nd Color)
+| bgcolor="orange" |<font color="black">HW Digital Circuit
+|6/10​
+|[[Image:Formulaviolet.jpg|75px]]
+|-
+|DHX93
+|026
+|[[Winning Formula]]<br>(3rd Color - Zamac)
+| bgcolor="orange" |<font color="black">HW Digital Circuit<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|6/10​
+|[[File:2016-026 DHX93 ZAMAK o4.jpg|75px]]
+|-
+|DHP58
+|027
+|[[GT Hunter]]
+| bgcolor="orange" |<font color="black">HW Digital Circuit
+|7/10​
+|[[Image:gt.jpg|75px]]
+|-
+|DHP59
+|028
+|[[Epic Fast]]
+| bgcolor="orange" |<font color="black">HW Digital Circuit
+|8/10​
+|[[Image:EpicFastDHP59.jpg|75px]]
+|-
+|DHW55
+|028
+|[[Epic Fast]]<br>(2nd Color)
+| bgcolor="orange" |<font color="black">HW Digital Circuit
+|8/10​
+|[[Image:Epic Fast green 3.jpg|75px]]
+|-
+|DHP60
+|029
+|[[D-Muscle]]
+| bgcolor="orange" |<font color="black">HW Digital Circuit<br>'''[[Chinese New Year|<font color="black">Year of the Monkey]]'''
+|9/10​
+|[[Image:DMuscleDHP60.jpg|75px]]
+|-
+|DHR03
+|030
+|[[Subaru WRX STI]]
+| bgcolor="orange" |<font color="black">HW Digital Circuit
+|10/10​
+|[[File:IMG 20160620 102339.jpg|75px]]
+|-
+|DHY11
+|030
+|[[Subaru WRX STI]]<br>(2nd Color)
+| bgcolor="orange" |<font color="black">HW Digital Circuit<br>'''Kmart Exclusive'''
+|10/10​
+|[[Image:IMG_20171231_190752-.jpg|75px]]
+|}
+
+==[[HW Tool-In-1 Mini Collection (2016)|HW Tool-In-1]] [[File:Tool-In-One.png|40px]]==
+'''These vehicles double as a variety of gadgets.'''
+{|style="font-size: 85%; text-align: left;" class="wikitable sortable" width="100%"
+!style="border-style: none none solid solid; background:#FAFA37"|<font color="black">'''Toy #'''
+!style="border-style: none none solid solid; background:#FAFA37"|<font color="black">'''Col.#'''
+!style="border-style: none none solid solid; background:#FAFA37"|<font color="black">'''Model Name'''
+!style="border-style: none none solid solid; background:#FAFA37"|<font color="black">'''Series'''
+!style="border-style: none none solid solid; background:#FAFA37"|<font color="black">'''Series #'''
+!style="border-style: none none solid solid; background:#FAFA37"|<font color="black">'''Photo'''
+|-
+|DHP61
+|031
+|[[Tooligan]]
+| bgcolor="yellow" |<font color="black">HW Tool-In-1</font>
+|1/5​
+|[[File:TooliganDHP61Loose.jpg|75px]]
+|-
+|DHP62
+|032
+|[[Carbonator]]
+| bgcolor="yellow" |<font color="black">HW Tool-In-1</font>
+|2/5​
+|[[File:2016-032 DHP62 Carbonator o4.jpg|75px]]
+|-
+|DHP52
+|033
+|[[Night Burner]]
+| bgcolor="yellow" |<font color="black">HW Tool-In-1 </font><br>[[2016 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt]]'''
+|3/5​
+|[[Image:NightBurnerDHP52Loose.jpg|75px]]
+|-
+|DHT20
+|034
+|[[Fast Cash]]
+| bgcolor="yellow" |<font color="black">HW Tool-In-1</font>
+|4/5​
+|[[Image:Fast Cash 2006 Tool-in-One.JPG|75px]]
+|-
+|DHR69
+|035
+|[[Tee'd Off 2]]
+| bgcolor="yellow" |<font color="black">HW Tool-In-1</font>
+|5/5​
+|[[Image:Tee'dOff2DHR69.jpg|75px]]
+|}
+
+==[[Super Chromes Mini Collection (2016)|Super Chromes]] [[File:Super_Chromes.png|40px]]==
+'''Mirror-like cars that shine on tracks!'''
+{|style="font-size: 85%; text-align: left;" class="wikitable sortable" width="100%"
+!style="border-style: none none solid solid; background:#a5a5a5"|<font color="black">'''Toy #'''
+!style="border-style: none none solid solid; background:#a5a5a5"|<font color="black">'''Col.#'''
+!style="border-style: none none solid solid; background:#a5a5a5"|<font color="black">'''Model Name'''
+!style="border-style: none none solid solid; background:#a5a5a5"|<font color="black">'''Series'''
+!style="border-style: none none solid solid; background:#a5a5a5"|<font color="black">'''Series #'''
+!style="border-style: none none solid solid; background:#a5a5a5"|<font color="black">'''Photo'''
+|-
+|DHP64
+|036
+|[[Teegray]]
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes</font>
+|1/10​
+|[[Image:tee.jpg|75px]]
+|-
+|DHW57
+|036
+|[[Teegray]]<br>(2nd Color)
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes</font>
+|1/10​
+|[[Image:Teegray_2016_2.png|75px]]
+|-
+|DHP65
+|037
+|[[Hot Wheels High]]
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes</font>
+|2/10​
+|[[File:HWHighDHP64.jpg|75px]]
+|-
+|DHW76
+|037
+|[[Hot Wheels High]]<br>(2nd Color)
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes</font>
+|2/10​
+|[[Image:Hot_Wheels_High_2016_2.png|75px]]
+|-
+|DHP66
+|038
+|[[Mig Rig]]
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes</font><br>'''[[2016 Treasure Hunts Series|<font color="#00cc00">Treasure Hunt]]'''
+|3/10​
+|[[File:DHP66_01.jpg|75px]]
+|-
+|DHP67
+|039
+|[[Nitro Tailgater]]
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes</font>
+|4/10​
+|[[Image:NitroTailgaterDHP67.jpg|75px]]
+|-
+|DHP68
+|040
+|[[X-Steam]]
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes</font>
+|5/10​
+|[[Image:X-Steam_2016_1.png|75px]]
+|-
+|DHW58
+|040
+|[[X-Steam]]<br>(2nd Color)
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes</font>
+|5/10​
+|[[Image:X-Steam_2016_2.png|75px]]
+|-
+|DHP69
+|041
+|[[Two Timer]]
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes</font>
+|6/10​
+|[[Image:two.jpg|75px]]
+|-
+|DHW59
+|041
+|[[Two Timer]]<br>(2nd Color)
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes</font>
+|6/10​
+|[[Image:Two_Timer_2016_3.png|75px]]
+|-
+|DHP70
+|042
+|[[Rev Rod]]
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes</font>
+|7/10​
+|[[Image:rev.jpg|75px]]
+|-
+|DHW60
+|042
+|[[Rev Rod]]<br>(2nd Color)
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes</font>
+|7/10​
+|[[Image:Rev_Rod_2016_2.png|75px]]
+|-
+|DHP71
+|043
+|[[HW Poppa Wheelie]]
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes</font>
+|8/10​
+|[[Image:poppa.jpg|75px]]
+|-
+|DHW61
+|043
+|[[HW Poppa Wheelie]]<br>(2nd Color)
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes</font>
+|8/10​
+|[[Image:HW_Poppa_Wheelie_2016_2.png|75px]]
+|-
+|DHN95
+|044
+|[[Monteracer]]
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes </font><br>[[2016 New Models|<font color="black">'''New Model''']]</font>
+|9/10​
+|[[Image:mon.jpg|75px]]
+|-
+|DHW62
+|044
+|[[Monteracer]]<br>(2nd Color)
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes </font><br>'''[[2016 New Models|<font color="black">'''New Model''']]</font>
+|9/10​
+|[[Image:Monteracer_2016_2.png|75px]]
+|-
+|DHN96
+|045
+|[[Z-Rod]]
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes </font><br>[[2016 New Models|<font color="black">'''New Model''']]</font>
+|10/10​
+|[[Image:Z-RodDHN96.jpg|75px]]
+|-
+|DHW63
+|045
+|[[Z-Rod]]<br>(2nd Color)
+| bgcolor="#a5a5a5" |<font color="black">Super Chromes </font><br/>[[2016 New Models|<font color="black">'''New Model''']]</font>
+|10/10​
+|[[Image:Z-Rod_2016_2.png|75px]]
+|}
+
+==[[HW Glow Wheels Mini Collection (2016)|HW Glow Wheels]] [[File:Glow_Wheels.png|40px]]==
+'''Glow-in-the-dark wheels to light up the track.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Toy #'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Col.#'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Model Name'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Series'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Series #'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Photo'''
+|-
+|DHP72
+|046
+|[[Twinduction]]
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|1/10​
+|[[Image:TwinductionDHP72.jpg|75px]]
+|-
+|DHW64
+|046
+|[[Twinduction]]<br>(2nd Color)
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|1/10​
+|[[Image:TwinductionDHW64.jpg|75px]]
+|-
+|DHP73
+|047
+|[[F1 Racer]]
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|2/10​
+|[[File:Glow_Wheels_-_2016_-_F1_Racer.jpg|75px]]
+|-
+|DHW65
+|047
+|[[F1 Racer]]<br>(2nd Color)
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|2/10​
+|[[File:F1-Racer-GW2.png|75px]]
+|-
+|DHP74
+|048
+|[[Formul8r]]
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|3/10​
+|[[File:Formul8r HW Glow Wheels.jpg|75px]]
+|-
+|DHW66
+|048
+|[[Formul8r]]<br>(2nd Color)
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|3/10​
+|[[Image:Formul8rJL.jpg|75px]]
+|-
+|DHN97
+|049
+|[[Voltage Spike]]
+| bgcolor="purple" |<font color="white">HW Glow Wheels</font><br>[[2016 New Models|<font color="white">'''New for 2016''']]</font>
+|4/10​
+|[[Image:VoltageSpike.jpg|75px]]
+|-
+|DHW67
+|049
+|[[Voltage Spike]]<br>(2nd Color)
+| bgcolor="purple" |HW Glow Wheels<br> </font>[[2016 New Models|<font color="white">'''New for 2016''']]
+|4/10​
+|[[File:Voltage-Spike-GW2.jpg|75px]]
+|-
+|DHP75
+|050
+|[[Rip Rod]]
+| bgcolor="purple" |<font color="white">HW Glow Wheels<br>'''[[2016 Treasure Hunts Series|<font color=#00CC00">Treasure Hunt]]'''</font>
+|5/10​
+|[[File:Rip_Rod_-_16_HW_Glow_Wheels_600pxDM.jpg|75px]]
+|-
+|DHP76
+|051
+|[[Wattzup]]
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|6/10​
+|[[Image:WattzupDHP76.jpg|75px]]
+|-
+|DHW68
+|051
+|[[Wattzup]]<br>(2nd Color)
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|6/10​
+|[[Image:WattzupDHW68.jpg|75px]]
+|-
+|DHP77
+|052
+|[[Arrow Dynamic]]
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|7/10​
+|[[File:ArrowDynamicDHP77.jpg|75px]]
+|-
+|DHW69
+|052
+|[[Arrow Dynamic]]<br>(2nd Color)
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|7/10​
+|[[File:Arrow-Dynamic-GW2.jpg|75px]]
+|-
+|DHP78
+|053
+|[[Loop Coupe]]
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|8/10​
+|[[Image:LoopCoupeDHP78.jpg|75px]]
+|-
+|DHW70
+|053
+|[[Loop Coupe]]<br>(2nd Color)
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|8/10​
+|[[File:Dhw70_c_16_003.jpg|75px]]
+|-
+|DHP79
+|054
+|[[SpecTyte]]
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|9/10​
+|[[File:20151117_083058-1-.jpg|75px]]
+|-
+|DHW71
+|054
+|[[SpecTyte]]<br>(2nd Color)
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|9/10​
+|[[File:Spectyte-GW2.jpg|75px]]
+|-
+|DHP80
+|055
+|[[Chicane]]
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|10/10​
+|[[Image:ChicaneDHP80.jpg|75px]]
+|-
+|DHW72
+|055
+|[[Chicane]]<br>(2nd Color)
+| bgcolor="purple" |<font color="white">HW Glow Wheels
+|10/10​
+|[[Image:ChicaneDHW72.jpg|75px]]
+|}
+
+==[[HW Mild to Wild Mini Collection (2016)|HW Mild to Wild]] [[File:Mild_To_Wild.png|40px]]==
+'''Can you find all 5 pairs? Each car comes in two styles: <font color="blue">Mild</font> (stock) and <font color="red">Wild</font> (modified).'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:blue"|<font color="white">'''Series'''
+! style="border-style: none none solid solid; background:blue"|<font color="white">'''Series #'''
+! style="border-style: none none solid solid; background:blue"|<font color="white">'''Photo'''
+|-
+|DHP81
+|056
+|[[Aston Martin V8 Vantage]]
+| bgcolor="blue" |<font color="white">HW Mild to Wild
+|1/10​
+|[[File:DSC_5589.jpg|75px]]
+|-
+|DHP82
+|057
+|[[Bone Shaker]]
+| bgcolor="blue" |<font color="white">HW Mild to Wild
+|2/10
+|[[File:Bone_Shaker_-_16_HW_Mild_to_Wild_600pxOTD.jpg|75px]]
+|-
+|DHP83
+|058
+|[[Corvette Stingray (1976)|Corvette Stingray]]
+| bgcolor="blue" |<font color="white">HW Mild to Wild
+|3/10​
+|[[File:HW-2016-58-Corvette_Stingray-MildToWild.jpg|75px]]
+|-
+|DHX81
+|058
+|[[Corvette Stingray (1976)|Corvette Stingray]]<br>(2nd Color - Zamac)
+| bgcolor="blue" |<font color="white">HW Mild to Wild<br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive''']]
+|3/10​
+|[[Image:Silver_Vette.jpg|75px]]
+|-
+|DHX34
+|058
+|[[Corvette Stingray (1976)|Corvette Stingray]]<br>(3rd Color)
+| bgcolor="blue" |<font color="white">HW Mild to Wild
+|3/10​
+|[[File:DHX34-1.JPG|75px]]
+|-
+|DHP84
+|059
+|[['10 Camaro SS]]
+| bgcolor="blue" |<font color="white">HW Mild to Wild
+|4/10​
+|[[File:DSC_5614.jpg|75px]]
+|-
+|DHP85
+|060
+|[[2010 Ford Mustang GT]]
+| bgcolor="blue" |<font color="white">HW Mild to Wild
+|5/10​
+|[[File:10mustang-MtW_hw2016.jpg|75px]]
+|-
+|DHP86
+|061
+|[[Aston Martin Vantage GT3]]
+| bgcolor="red" |<font color="black">HW Mild to Wild</font>
+|6/10​
+|[[File:DSC_5601.jpg|75px]]
+|-
+|DHP87
+|062
+|[[Baja Bone Shaker]]
+| bgcolor="red" |<font color="black">HW Mild to Wild</font>
+|7/10​
+|[[File:Baja_Bone_Shaker-_16_HW_Mild_to_Wild_600pxOTD.jpg|75px]]
+|-
+|DHP88
+|063
+|[['76 Greenwood Corvette]]
+| bgcolor="red" |<font color="black">HW Mild to Wild</font>
+|8/10​
+|[[Image:'76 Greenwood Corvette-2016 063.jpg|75px]]
+|-
+|DHX54
+|063
+|[['76 Greenwood Corvette]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">HW Mild to Wild</font>
+|8/10​
+|[[File:DHX54-1.JPG|75px]]
+|-
+|DHX84
+|063
+|[['76 Greenwood Corvette]]<br>(3rd Color - Zamac)
+| bgcolor="red" |<font color="black">HW Mild to Wild</font><br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|8/10​
+|[[Image:76-Greenwood-Corvette-h.jpg|75px]]
+|-
+|DHP89
+|064
+|[['10 Pro Stock Camaro]]
+| bgcolor="red" |<font color="black">HW Mild to Wild </font>
+|9/10​
+|[[Image:'10 pro stock camaro-2016 064.jpg|75px]]
+|-
+|DHT78
+|064
+|[['10 Pro Stock Camaro]]
+| bgcolor="red" |<font color="black">HW Mild to Wild</font><br>[[2016 Treasure Hunts Series|<font color=#00AA00">'''Super Treasure Hunt''']]'''</font>
+|9/10​
+|[[Image:Hot-Wheels-%25u201910-Pro-Stock-Camaro-Super-T-Hunt.jpg|75px]]
+|-
+|DHP90
+|065
+|[['13 Ford Mustang GT]]
+| bgcolor="red" |<font color="black">HW Mild to Wild</font>
+|10/10​
+|[[Image:IMG_20160221_195055.jpg|75px]]
+|}
+
+==[[HW Ride-Ons Mini Collection (2016)|HW Ride-Ons]] [[File:HW_Ride-Ons.png|40px]]==
+'''Designed to attach figures.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Photo'''
+|-
+|DHP91
+|066
+|[[Let's GO]]
+| bgcolor="lightblue" |<font color="black">HW Ride-Ons</font><br>[[2016 Treasure Hunts Series|<font color=#00CC00">'''Treasure Hunt''']]</font>
+|1/5​
+|[[Image:LetsGOTH.jpg|75px]]
+|-
+|DHP92
+|067
+|[[Pedal Driver]]
+| bgcolor="lightblue" |<font color="black">HW Ride-Ons</font>
+|2/5​
+|[[Image:HW_Pedal-Driver_Orange_DSCF7375.jpg|75px]]
+|-
+|DHW73
+|067
+|[[Pedal Driver]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="black">HW Ride-Ons</font>
+|2/5​
+|[[Image:PedalDriverDHW73Loose.jpg|75px]]
+|-
+|DHP93
+|068
+|[[Fig Rig]]
+| bgcolor="lightblue" |<font color="black">HW Ride-Ons</font>
+|3/5​
+|[[Image:FigRig-DHP93.jpg|75px]]
+|-
+|DHW74
+|068
+|[[Fig Rig]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="black">HW Ride-Ons</font>
+|3/5​
+|[[Image:FigRigDHW74.jpg|75px]]
+|-
+|DHP25
+|069
+|[[Grass Chomper]]
+| bgcolor="lightblue" |<font color="black">HW Ride-Ons</font><br>[[2016 New Models|<font color="black">'''New For 2016!!''']]</font>
+|4/5​
+|[[File:Grass_Chomper_-_16_HW_Ride-Ons_600pxDM.jpg|75px]]
+|-
+|DHW75
+|069
+|[[Grass Chomper]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="black">HW Ride-Ons</font><br>[[2016 New Models|<font color="black">'''New For 2016!!''']]
+|4/5​
+|[[Image:GrassChomperDHW65.jpg|75px]]
+|-
+|DPR89
+|070
+|[[Minecart]]
+| bgcolor="lightblue" |<font color="black">HW Ride-Ons</font><br>[[2016 New Models|<font color="black">'''New For 2016!!''']]
+|5/5​
+|[[File:Minecart_-_16NM_HW_Ride-Ons_600pxOTD.jpg|75px]]
+|}
+
+==[[HW Exotics Mini Collection (2016)|HW Exotics]] [[File:HW_Exotics.png|40px]]==
+'''Exotic super cars, always ready to race!'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:lime"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:lime"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:lime"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:lime"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:lime"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:lime"|<font color="black">'''Photo'''
+|-
+|DHP95
+|071
+|[[McLaren P1]]
+| bgcolor="lime" |<font color="black">HW Exotics</font>
+|1/10​
+|[[Image:McLarenP1DHP95.jpg|75px]]
+|-
+|DHX19
+|071
+|[[McLaren P1]]<br>(2nd Color)
+| bgcolor="lime" |<font color="black">HW Exotics</font>
+|1/10​
+|[[File:A0C2FF78-E52E-4DEB-B4E2-ECC099EC573C.jpeg|75px]]
+|-
+|DHP96
+|072
+|[[Lotus Esprit S1]]
+| bgcolor="lime" |<font color="black">HW Exotics</font>
+|2/10​
+|[[File:AZ9A3461.jpg|75px]]
+|-
+|DHP28
+|073
+|[['17 Ford GT]]
+| bgcolor="lime" |<font color="black">HW Exotics </font></font><br>[[2016 New Models|<font color="black">'''New for2016!!''']]</font>
+|3/10​
+|[[Image:Ford GT (2017) DHP28.jpg|75px]]
+|-
+|DHT79
+|073
+|[['17 Ford GT]]
+| bgcolor="lime" |<font color="black">HW Exotics<br>[[2016 New Models|<font color="black">'''New for2016!!''']]<br>[[2016 Treasure Hunts Series|<font color=#00CC00">'''Super Treasure Hunt''']]
+|3/10​
+|[[Image:IMG20160608213156.jpg|75px]]
+|-
+|DHP98
+|074
+|[[Porsche Carrera GT]]
+| bgcolor="lime" |<font color="black">HW Exotics</font>
+|4/10​
+|[[Image:2016 Porsche Carrera GT black.jpg|75px]]
+|-
+|DHX85
+|074
+|[[Porsche Carrera GT]]<br>(2nd Color - Zamac)
+| bgcolor="lime" |<font color="black">HW Exotics</font><br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|4/10​
+|[[File:ZAMAK DHX85 Carrera GT o4.jpg|75px]]
+|-
+|DHX20
+|074
+|[[Porsche Carrera GT]]<br>(3rd Color)
+| bgcolor="lime" |<font color="black">HW Exotics</font>
+|4/10​
+|[[File:02611.jpg|75px]]
+|-
+|DHP99
+|075
+|[[Cadillac Elmiraj]]
+| bgcolor="lime" |<font color="black">HW Exotics</font>
+|5/10​
+|[[Image:230.JPG|75px]]
+|-
+|DHR00
+|076
+|[[Lamborghini Huracán LP 610-4]]
+| bgcolor="lime" |<font color="black">HW Exotics</font>
+|6/10​
+|[[Image:HW Lamborghini-Huracan-LP-610-4 Orange 01 DSCF6697.jpg|75px]]
+|-
+|DHR23
+|077
+|[[Bentley Continental Supersports]]
+| bgcolor="lime" |<font color="black">HW Exotics</font>
+|7/10​
+|[[Image:20160117 142043-1.jpg|75px]]
+|-
+|DHP00
+|078
+|[[Porsche 911 GT3 RS (2016)|Porsche 911 GT3 RS]]
+| bgcolor="lime" |<font color="black">HW Exotics </font>< </font><br>[[2016 New Models|<font color="black">'''New for2016!!''']]
+|8/10​
+|[[Image:2016Porsche911GT3RSDHP00.jpg|75px]]
+|-
+|DHP01
+|079
+|[[Renault Sport R.S. 01]]
+| bgcolor="lime" |<font color="black">HW Exotics </font><br>[[2016 New Models|<font color="black">'''New for2016!!''']]
+|9/10​
+|[[Image:Renault Sport R.S.-2016 079.jpg|75px]]
+|-
+|DHX22
+|079
+|[[Renault Sport R.S. 01]]<br>(2nd Color)
+| bgcolor="lime" |<font color="black">HW Exotics </font><br>[[2016 New Models|<font color="black">'''New for2016!!''']]
+|9/10​
+|[[Image:Renault_Sport_RS_01_-_16NM_HW_Exotics_SLVR_600pxOTD.jpg|75px]]
+|-
+|DHR02
+|080
+|[[Lamborghini Sesto Elemento]]
+| bgcolor="lime" |<font color="black">HW Exotics</font>
+|10/10​
+|[[File:IMG_20160531_154112.jpg|75px]]
+|}
+
+==[[Night Burnerz Mini Collection (2016)|Night Burnerz]] [[File:Night_Burnerz.png|40px]]==
+'''Super speeders designed for night driving.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Toy #'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Col.#'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Model Name'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Series'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Series #'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Photo'''
+|-
+|DHR01
+|081
+|[[Driftsta]]
+| bgcolor="black" |<font color="white">Night Burnerz </font>
+|1/10​
+|[[Image:DriftstaDHR01OOP.jpg|75px]]
+|-
+|DHT80
+|081
+|[[Driftsta]]
+| bgcolor="black" |<font color="white">Night Burnerz </font><br>[[2016 Treasure Hunts Series|<font color=#00CC00">'''Super Treasure Hunt''']]</font>
+|1/10​
+|[[File:Driftsta_-_16TH_Night_Burnerz_600pxOTD.jpg|75px]]
+|-
+|DHP02
+|082
+|[[Lamborghini Huracán LP 620-2 Super Trofeo]]
+| bgcolor="black" |<font color="white">Night Burnerz </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]</font>
+|2/10​
+|[[File:Lamborghini_Huracan_LP_620-2_Super_Trofeo_-_16NM_Night_Burnerz_600pxOTD.jpg|75px]]
+|-
+|DHP63
+|083
+|[[Nissan Skyline GT-R (BNR34)|Nissan Skyline GT-R (R34)]]
+| bgcolor="black" |<font color="white">Night Burnerz</font>
+|3/10​
+|[[Image:NissanSkylineGT-R(R34)DHP63.jpg|75px]]
+|-
+|DHR04
+|084
+|[['69 Dodge Charger 500]]
+| bgcolor="black" |<font color="white">Night Burnerz</font>
+|4/10​
+|[[File:69_Charger_500_-_16_Night_Burnerz_RED_600pxOTD.jpg|75px]]
+|-
+|DHX91
+|084
+|[['69 Dodge Charger 500]]<br>(2nd Color - Zamac)
+| bgcolor="black" |<font color="white">Night Burnerz</font><br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive''']]
+|4/10​
+|[[File:69_Charger_500_-_16_Night_Burnerz_ZAMAC_600pxOTD.jpg|75px]]
+|-
+|DHX23
+|084
+|[['69 Dodge Charger 500]]<br>(3rd Color)
+| bgcolor="black" |<font color="white">Night Burnerz</font>
+|4/10​
+|[[File:69 Charger 500 - 16 Night Burnerz GREEN 600pxOTD.jpg|75px]]
+|-
+|DHR05
+|085
+|[[1985 Honda CR-X]]
+| bgcolor="black" |<font color="white">Night Burnerz </font><br><font color="white">'''New in Mainline'''</font>
+|5/10​
+|[[Image:'85 Honda CR-X-2016 085.jpg|75px]]
+|-
+|DHX24
+|085
+|[[1985 Honda CR-X]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">Night Burnerz</font><br><font color="white">'''New in Mainline'''</font>
+|5/10​
+|[[File:85HondaCRX-DHX24.jpg|75px]]
+|-
+|DWH81
+|086
+|[['69 Corvette Racer]]
+| bgcolor="black" |<font color="white">Night Burnerz </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]</font>
+|6/10​
+|[[Image:'69 Corvette Racer Unpackaged.JPG|75px]]
+|-
+|DHP04
+|087
+|[[Ford Shelby GT350R]]
+| bgcolor="black" |<font color="white">Night Burnerz </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]</font>
+|7/10​
+|[[Image:Ford Shelby GT350R-2016 087.jpg|75px]]
+|-
+|DHX25
+|087
+|[[Ford Shelby GT350R]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">Night Burnerz </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]</font>
+|7/10​
+|[[File:Ford Shelby GT350R - 16NM Night Burnerz RED 600pxOTD.jpg|75px]]
+|-
+|DHP05
+|088
+|[['15 Mazda MX-5 Miata]]
+| bgcolor="black" |<font color="white">Night Burnerz </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]</font>
+|8/10​
+|[[Image:15MX5MiataDHP05.jpg|75px]]
+|-
+|DHP06
+|089
+|[[Custom '01 Acura Integra GSR]]
+| bgcolor="black" |<font color="white">Night Burnerz </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]</font>
+|9/10​
+|[[File:IMG_20160214_193507.jpg|75px]]
+|-
+|DHX26
+|089
+|[[Custom '01 Acura Integra GSR]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">Night Burnerz </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]</font>
+|9/10​
+|[[File:Custom '01 Acura Integra GSR-2016 089 Recolor.jpg|75px]]
+|-
+|DHP07
+|090
+|[[Ford Focus RS|'16 Ford Focus RS]]
+| bgcolor="black" |<font color="white">Night Burnerz </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]</font>
+|10/10​
+|[[Image:16FordFocusRSDHP07.jpg|75px]]
+|}
+
+==[[HW Flames Mini Collection (2016)|HW Flames]] [[File:HW_Flames.png|40px]]==
+'''As [[Red Line Club|voted for online]], all featuring cool flame details!'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:red"|<font color="white">'''Toy #'''
+! style="border-style: none none solid solid; background:red"|<font color="white">'''Col.#'''
+! style="border-style: none none solid solid; background:red"|<font color="white">'''Model Name'''
+! style="border-style: none none solid solid; background:red"|<font color="white">'''Series'''
+! style="border-style: none none solid solid; background:red"|<font color="white">'''Series #'''
+! style="border-style: none none solid solid; background:red"|<font color="white">'''Photo'''
+|-
+|DHR06
+|091
+|[['69 Dodge Charger]]
+| bgcolor="red" |<font color="white">HW Flames</font>
+|1/10​
+|[[File:69_Charger_-_16_HW_Flames_YLW_600pxOTD.jpg|75px]]
+|-
+|FBJ20
+|091
+|[['69 Dodge Charger]]<br>(2nd Color)
+| bgcolor="red" |<font color="white">HW Flames</font><br><font color="white">'''Kmart Exclusive'''
+|1/10​
+|[[File:69_Charger_-_16_HW_Flames_BLK_600pxOTD.jpg|75px]]
+|-
+|DHR07
+|092
+|[['67 Chevelle SS 396]]
+| bgcolor="red" |<font color="white">HW Flames</font>
+|2/10​
+|[[File:HW-2016-92-'67_Chevelle_SS_396-Flames.jpg|75px]]
+|-
+|DHX38
+|092
+|[['67 Chevelle SS 396]]<br>(2nd Color)
+| bgcolor="red" |<font color="white">HW Flames</font><br><font color="white">'''Leap Year'''
+|2/10​
+|[[Image:67-chevelle-ss-396-16-hw-flames-leapyear-600pxotd.jpg|75px]]
+|-
+|DHX99
+|092
+|[['67 Chevelle SS 396]]<br>(3rd Color)
+| bgcolor="red" |<font color="white">HW Flames</font><br><font color="white">'''[[Toys R Us|Toys R Us Exclusive]]'''
+|2/10​
+|[[File:67-chevelle-ss-396-16-hw-flames-white-600pxotd.jpg|75px]]
+|-
+|DHR08
+|093
+|[['77 Pontiac Firebird T/A|'77 Pontiac Firebird]]
+| bgcolor="red" |<font color="white">HW Flames </font><br><font color="white">'''New in Mainline'''</font>
+|3/10​
+|[[File:HW-2016-93-'77_Pontiac_Firebird-Flames.jpg|75px]]
+|-
+|DHX82
+|093
+|[['77 Pontiac Firebird T/A|'77 Pontiac Firebird]]<br>(2nd Color - Zamac)
+| bgcolor="red" |<font color="white">HW Flames<br><font color="white">'''New in Mainline'''</font><br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive''']]
+|3/10​
+|[[File:IMG_20160213_182805411.jpg|75px]]
+|-
+|DHR09
+|094
+|[['69 Dodge Coronet Superbee]]
+| bgcolor="red" |<font color="white">HW Flames</font>
+|4/10​
+|[[File:HW_'69-Dodge-Coronet-Superbee_Green_DSCF7626.jpg|75px]]
+|-
+|DHX68
+|094
+|[['69 Dodge Coronet Superbee]]<br>(2nd Color)
+| bgcolor="red" |<font color="white">HW Flames</font>
+|4/10​
+|[[File:DSC_5571.jpg|75px]]
+|-
+|DHR10
+|095
+|[['66 Ford 427 Fairlane]]
+| bgcolor="red" |<font color="white">HW Flames</font>
+|5/10​
+|[[File:HW-2016-95-'66_Ford_427_Fairlane-Flames.jpg|75px]]
+|-
+|DHY08
+|095
+|[['66 Ford 427 Fairlane]]<br>(2nd Color)
+| bgcolor="red" |<font color="white">HW Flames</font><br><font color="white">'''Kmart Exclusive'''
+|5/10​
+|[[File:2016-66Ford425Fairlane-Orange-Carded.jpg|75px]]
+|-
+|DHX30
+|095
+|[['66 Ford 427 Fairlane]]<br>(3rd Color)
+| bgcolor="red" |<font color="white">HW Flames</font>
+|5/10​
+|[[File:DHX30-01.jpg|75px]]
+|-
+|DHR11
+|096
+|[[Custom '41 Willys Coupe|'41 Willys]]
+| bgcolor="red" |<font color="white">HW Flames</font>
+|6/10​
+|[[Image:willy.jpg|75px]]
+|-
+|DHR12
+|097
+|[['52 Hudson Hornet]]
+| bgcolor="red" |<font color="white">HW Flames<br><font color="white">'''New in Mainline''' </font>
+|7/10​
+|[[Image:Hudson-flames-2015_hw.jpg|75px]]
+|-
+|DHT91
+|097
+|[['52 Hudson Hornet]]
+| bgcolor="red" |<font color="white">HW Flames<br>'''[[2016 Treasure Hunts Series|<font color=#00CC00">Super Treasure Hunt]]'''<br><font color="white">'''New in Mainline'''</font>
+|7/10​
+|[[File:12108033_10153705338894595_5393002151271723804_n.jpg|75px]]
+|-
+|DHR13
+|098
+|[['70 Camaro]]
+| bgcolor="red" |<font color="white">HW Flames</font>
+|8/10​
+|[[File:IMG_20160420_160622.jpg|75px]]
+|-
+|DHX27
+|098
+|[['70 Camaro]]<br>(2nd Color)
+| bgcolor="red" |<font color="white">HW Flames</font>
+|8/10​
+|[[File:DSC 5574.jpg|75px]]
+|-
+|DHR14
+|099
+|[['65 Pontiac GTO]]
+| bgcolor="red" |<font color="white">HW Flames</font>
+|9/10​
+|[[File:`65 Pontiac GTO.JPG|75px]]
+|-
+|DHX28
+|099
+|[['65 Pontiac GTO]]<br>(2nd Color)
+| bgcolor="red" |<font color="white">HW Flames</font>
+|9/10​
+|[[File:67GTO.JPG|75px]]
+|-
+|DHR15
+|100
+|[['69 Mercury Cyclone]]
+| bgcolor="red" |<font color="white">HW Flames</font>
+|10/10​
+|[[Image:'69 Mercury Cyclone-2016 100.jpg|75px]]
+|-
+|DHX29
+|100
+|[['69 Mercury Cyclone]]<br>(2nd Color)
+| bgcolor="red" |<font color="white">HW Flames</font>
+|10/10​
+|[[File:DSC 5573.jpg|75px]]
+|}
+
+==[[Then and Now Mini Collection (2016)|Then and Now]] [[File:Then_and_Now.png|40px]]==
+'''Cars from the past and the present... Can you collect all 5 pairs?'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Photo'''
+|-
+|DHR16
+|101
+|[[Aston Martin 1963 DB5]]
+| bgcolor="red" |<font color="black">Then and Now</font>
+|1/10​
+|[[File:HW-2016-101-Aston_Martin_1963_DB5-ThenAndNow.jpg|75px]]
+|-
+|DHX74
+|101
+|[[Aston Martin 1963 DB5]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">Then and Now</font>
+|1/10​
+|[[File:Aston_Martin_1963_DB5_2016_2.png|75px]]
+|-
+|DHR17
+|102
+|[[Corvette Grand Sport Roadster]]
+| bgcolor="red" |<font color="black">Then and Now</font>
+|2/10​
+|[[Image:Corvette Grand Sport Roadster 2016 1.png|75px]]
+|-
+|DHX31
+|102
+|[[Corvette Grand Sport Roadster]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">Then and Now</font>
+|2/10​
+|[[File:Corvette_Grand_Sport_Roadster_2016_2.png|75px]]
+|-
+|DHR18
+|103
+|[['90 Acura NSX]]
+| bgcolor="red" |<font color="black">Then and Now </font>
+|3/10​
+|[[File:HW-2016-103-'90_Acura_NSX-ThenAndNow.jpg|75px]]
+|-
+|DHT81
+|103
+|[['90 Acura NSX]]
+| bgcolor="red" |<font color="black">Then and Now<br>[[2016 Treasure Hunts Series|<font color=#00CC00">'''Super Treasure Hunt''']]</font>
+|3/10​
+|[[File:1990HondaNSX.jpg|75px]]
+|-
+|DHR19
+|104
+|[['71 Dodge Challenger]]
+| bgcolor="red" |<font color="black">Then and Now</font>
+|4/10​
+|[[Image:'71 Dodge Challenger 2016 1.png|75px]]
+|-
+|DHY06
+|104
+|[['71 Dodge Challenger]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">Then and Now</font><br><font color="black">'''Kmart Exclusive'''
+|4/10​
+|[[File:'71_Dodge_Challenger_2016_2.png|75px]]
+|-
+|DHR20
+|105
+|[['68 Shelby GT500]]
+| bgcolor="red" |<font color="black">Then and Now</font>
+|5/10​
+|[[File:'68_Shelby_GT500_2016.png|75px]]
+|-
+|DHX75
+|105
+|[['68 Shelby GT500]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">Then and Now</font>
+|5/10​
+|[[File:'68_Shelby_GT500_2016_2.png|75px]]
+|-
+|DHR21
+|106
+|[[Aston Martin DBS]]
+| bgcolor="red" |<font color="black">Then and Now</font>
+|6/10​
+|[[File:HW-2016-106-Aston_Martin_DBS-ThenAndNow.jpg|75px]]
+|-
+|DHR22
+|107
+|[['14 Corvette Stingray Convertible|'14 Corvette Stingray]]
+| bgcolor="red" |<font color="black">Then and Now</font>
+|7/10​
+|[[File:'14 Corvette Stingray Convertible 2016 1.png|75px]]
+|-
+|DHN99
+|108
+|[['17 Acura NSX]]
+| bgcolor="red" |<font color="black">Then and Now<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|8/10​
+|[[File:2016NM21 (Large).JPG|75px]]
+|-
+|DHX21
+|108
+|[['17 Acura NSX]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">Then and Now<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|8/10​
+|[[File:'17_Acura_NSX_2016_2.png|75px]]
+|-
+|DHR24
+|109
+|[['15 Dodge Challenger SRT]]
+| bgcolor="red" |<font color="black">Then and Now</font>
+|9/10​
+|[[Image:'15 Dodge Challenger SRT 2016 2.png|75px]]
+|-
+|DHY10
+|109
+|[['15 Dodge Challenger SRT]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">Then and Now</font><br><font color="black">'''Kmart Exclusive'''
+|9/10​
+|[[File:'15 Dodge Challenger SRT 2016 3 KM.png|75px]]
+|-
+|DHR25
+|110
+|[[Custom '15 Ford Mustang]]
+| bgcolor="red" |<font color="black">Then and Now</font>
+|10/10​
+|[[Image:IMG_20160105_124947.jpg|75px]]
+|}
+
+==[[HW Showroom Mini Collection (2016)|HW Showroom]] [[File:HW_Showroom.png|40px]]==
+'''Show off your collection of top-of-the-line cars and extra special speeders.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Photo'''
+|-
+|DHR26
+|111
+|[['15 Jaguar F-Type Project 7]]
+| bgcolor="lightblue" |<font color="white">HW Showroom</font>
+|1/10​
+|[[Image:IMG_20160105_130314.jpg|75px]]
+|-
+|FBJ21
+|111
+|[['15 Jaguar F-Type Project 7]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="white">HW Showroom</font><br><font color="white">'''Kmart Exclusive'''
+|1/10​
+|[[File:15_Jaguar_F-Type_-_16_HW_Showroom_WHITE_600pxOTD.jpg|75px]]
+|-
+|DLK05
+|112
+|[[Aston Martin DB10]]
+| bgcolor="lightblue" |<font color="white">HW Showroom </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|2/10​
+|[[File:Aston_Martin_DB10_-_16_HW_Showroom_600pxDM.jpg|75px]]
+|-
+|DHR28
+|113
+|[[Volkswagen Caddy]]
+| bgcolor="lightblue" |<font color="white">HW Showroom</font>
+|3/10​​
+|[[File:HW-2016-113-Volkswagen_Caddy-Showroom.jpg|75px]]
+|-
+|DHT11
+|114
+|[[Porsche 993 GT2]]
+| bgcolor="lightblue" |<font color="white">HW Showroom </font>
+|4/10​
+|[[File:HW-2016-114-Porsche_993_GT2-Showroom.jpg|75px]]
+|-
+|DHT82
+|114
+|[[Porsche 993 GT2]]
+| bgcolor="lightblue" |<font color="white">HW Showroom<br>'''[[2016 Treasure Hunts Series|<font color=#00CC00">Super Treasure Hunt]]'''</font>
+|4/10​
+|[[File:Gt2superthunt2016.jpg|75px]]
+|-
+|DHP26
+|115
+|[[Honda Odyssey]]
+| bgcolor="lightblue" |<font color="white">HW Showroom<br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|5/10​
+|[[File:2014 Honda Odyssey-2016 115.jpg|75px]]
+|-
+|DHR31
+|116
+|[[Great Gatspeed]]
+| bgcolor="lightblue" |<font color="white">HW Showroom</font>
+|6/10​
+|[[Image:GreatGatspeedDHR31.jpg|75px]]
+|-
+|DHX83
+|116
+|[[Great Gatspeed]]<br>(2nd Color - Zamac)
+| bgcolor="lightblue" |<font color="white">HW Showroom</font><br><font color="white">'''Walmart Exclusive'''
+|6/10​
+|[[File:Great-Gatspeed-ZAMAC.jpg|75px]]
+|-
+|DHW78
+|116
+|[[Great Gatspeed]]<br>(3rd Color)
+| bgcolor="lightblue" |<font color="white">HW Showroom</font>
+|6/10​
+|[[File:Great_Gatspeed_2016_darkblue_beige.jpg|75px|Great Gatspeed 2016 dark blue / beige]]
+|-
+|DHP08
+|117
+|[[Gazella GT]]
+| bgcolor="lightblue" |<font color="white">HW Showroom </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|7/10​
+|[[File:HW Gazella-GT Red 2016 01 sm DSCF8063.jpg|75px]]
+|-
+|DHW79
+|117
+|[[Gazella GT]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="white">HW Showroom </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|7/10​
+|[[File:IMG_1337.jpg|75px]]
+|-
+|DHP09
+|118
+|[[Hi-Roller]]
+| bgcolor="lightblue" |<font color="white">HW Showroom </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|8/10​
+|[[File:HW-2016-118-Hi_Roller-Showroom.jpg|75px]]
+|-
+|DHW80
+|118
+|[[Hi-Roller]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="white">HW Showroom </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|8/10​
+|[[File:Hi-Roller-b.jpg|75px]]
+|-
+|DHP10
+|119
+|[[Side Ripper]]
+| bgcolor="lightblue" |<font color="white">HW Showroom </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|9/10​
+|[[File:2016NM26 (Large).JPG|75px]]
+|-
+|DHW81
+|119
+|[[Side Ripper]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="white">HW Showroom </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|9/10​
+|[[File:Side_Ripper.jpg|75px]]
+|-
+|DHP11
+|120
+|[[Porsche 356 Outlaw|Porsche 356A Outlaw]]
+| bgcolor="lightblue" |<font color="white">HW Showroom </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|10/10​
+|[[File:HW Porsche-356A-Outlaw Black 2016 DSCF7423.jpg|75px]]
+|-
+|DHX35
+|120
+|[[Porsche 356 Outlaw|Porsche 356A Outlaw]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="white">HW Showroom </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|10/10​
+|[[File:Porsche_356A_Outlaw-2015_120_Silver.jpg|75px]]
+|}
+
+==[[Muscle Mania Mini Collection (2016)|Muscle Mania]] [[File:Muscle_Mania.png|40px]]==
+'''Custom-striped muscle cars that look good when driving around town or racing.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:orange"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:orange"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:orange"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:orange"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:orange"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:orange"|<font color="black">'''Photo'''
+|-
+|DHR32
+|121
+|[[2015 Ford Mustang GT]]
+|bgcolor="orange" |<font color="black">Muscle Mania</font>
+|1/10
+|[[Image:15mustang-MM-2016_hw.jpg|75px]]
+|-
+|DHX36
+|121
+|[[2015 Ford Mustang GT]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">Muscle Mania</font>
+|1/10
+|[[File:DSC 5615.jpg|75px]]
+|-
+|DHX98
+|121
+|[[2015 Ford Mustang GT]]<br>(3rd Color)
+|bgcolor="orange" |<font color="black">Muscle Mania<br><font color="black">'''[[Toys R Us|Toys R Us Exclusive]]'''</font>
+|1/10
+|[[File:2015 Ford Mustang GT Model Cars 5f767534-cea6-43ef-9356-0d0ad60ffccd.jpg|75px]]
+|-
+|DHR33
+|122
+|[['72 Ford Gran Torino Sport]]
+|bgcolor="orange" |<font color="black">Muscle Mania</font>
+|2/10
+|[[Image:72 Ford Torino 2016 Orange.JPG|75px]]
+|-
+|DHX94
+|122
+|[['72 Ford Gran Torino Sport]]<br>(2nd Color - Zamac)
+|bgcolor="orange" |<font color="black">Muscle Mania<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]</font>
+|2/10
+|[[File:1972 Ford Gran Torino Sport .png|75px]]
+|-
+|DHX37
+|122
+|[['72 Ford Gran Torino Sport]]<br>(3rd Color)
+|bgcolor="orange" |<font color="black">Muscle Mania</font>
+|2/10
+|[[File:72 FGT DHX37.jpg|75px]]
+|-
+|DHR34
+|123
+|[['73 Pontiac Firebird]]
+|bgcolor="orange" |<font color="black">Muscle Mania</font>
+|3/10
+|[[Image:73.jpg|75px]]
+|-
+|DHX32
+|123
+|[['73 Pontiac Firebird]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">Muscle Mania</font>
+|3/10
+|[[File:73FirebirdX6999.jpg|75px]]
+|-
+|DHY09
+|123
+|[['73 Pontiac Firebird]]<br>(3rd Color)
+|bgcolor="orange" |<font color="black">Muscle Mania<br><font color="black">'''Kmart Exclusive'''</font>
+|3/10
+|[[File:DHY09 c 16 003.png|75px]]
+|-
+|DHR35
+|124
+|[['69 Dodge Charger Daytona]]
+|bgcolor="orange" |<font color="black">Muscle Mania</font>
+|4/10
+|[[File:69 Dodge Charger Daytona - 16 Muscle Mania Reg 600pxDM.jpg|75px]]
+|-
+|DHT83
+|124
+|[['69 Dodge Charger Daytona]]
+|bgcolor="orange" |<font color="black">Muscle Mania<br>'''[[2016 Treasure Hunts Series|<font color=#00CC00">Super Treasure Hunt]]'''</font>
+|4/10
+|[[File:69_Dodge_Charger_Daytona_-_16_Muscle_Mania_$uper_600pxDM.jpg|75px]]
+|-
+|DHR36
+|125
+|[['70 Plymouth AAR Cuda]]
+|bgcolor="orange" |<font color="black">Muscle Mania</font>
+|5/10
+|[[Image:aar.jpg|75px]]
+|-
+|DHX88
+|125
+|[['70 Plymouth AAR Cuda]]<br>(2nd Color - Zamac)
+|bgcolor="orange" |<font color="black">Muscle Mania<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]</font>
+|5/10
+|[[File:DHX88 c 16 003.png|75px]]
+|-
+|DHR37
+|126
+|[[Blown Camaro|Camaro Z28]]
+|bgcolor="orange" |<font color="black">Muscle Mania</font>
+|6/10
+|[[Image:z28.jpg|75px]]
+|-
+|DHP12
+|127
+|[[Muscle Speeder]]
+|bgcolor="orange" |<font color="black">Muscle Mania<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|7/10
+|[[Image:MuscleSpeederDHP12.jpg|75px]]
+|-
+|DHW54
+|127
+|[[Muscle Speeder]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">Muscle Mania<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|7/10
+|[[File:IMG 20160731 142429-1-.jpg|75px]]
+|-
+|DHP13
+|128
+|[['63 Chevy II]]
+|bgcolor="orange" |<font color="black">Muscle Mania<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|8/10
+|[[File:2016NM29 (Large).JPG|75px]]
+|-
+|DHX39
+|128
+|[['63 Chevy II]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">Muscle Mania<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|8/10
+|[[File:DHX39-1.JPG|75px]]
+|-
+|DHP14
+|129
+|[['16 Camaro SS]]
+|bgcolor="orange" |<font color="black">Muscle Mania<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|9/10
+|[[File:DHP14-1.JPG|75px]]
+|-
+|DHX40
+|129
+|[['16 Camaro SS]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">Muscle Mania<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|9/10
+|[[File:16CamaroSSRed.jpg|75px]]
+|-
+|DHP15
+|130
+|[['15 Dodge Charger SRT]]
+|bgcolor="orange" |<font color="black">Muscle Mania<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|10/10
+|[[File:2016NM31 (Large).JPG|75px]]
+|-
+|DHX41
+|130
+|[['15 Dodge Charger SRT]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">Muscle Mania<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|10/10
+|[[File:15 Dodge Charger SRT - 16 Muscle Mania WHITE 600pxOTD.jpg|75px]]
+|}
+
+==[[HW Moto Mini Collection (2016)|HW Moto]] [[File:HW_Moto.png|40px]]==
+'''Dream bikes and two-wheeled favorites.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Photo'''
+|-
+|DHR38
+|131
+|[[Ducati 1199 Panigale|Ducati 1199 Superleggera]]
+| bgcolor="lightblue" |<font color="black">HW Moto</font>
+|1/5​
+|[[Image:Ducati1199PanigaleDHR38.jpg|75px]]
+|-
+|DHR39
+|132
+|[[Ducati Diavel]]
+| bgcolor="lightblue" |<font color="black">HW Moto</font>
+|2/5​
+|[[Image:DucatiDiavelDHR39.jpg|75px]]
+|-
+|DHR40
+|133
+|[[Bad Bagger]]
+| bgcolor="lightblue" |<font color="black">HW Moto<br>'''[[2016 Treasure Hunts Series|<font color=#00CC00">Treasure Hunt]]'''</font>
+|3/5​
+|[[Image:BadBaggerTHunt.jpg|75px]]
+|-
+|DHR41
+|134
+|[[Fly-By]]
+| bgcolor="lightblue" |<font color="black">HW Moto</font>
+|4/5​
+|[[Image:Fly-ByDHR41.jpg|75px]]
+|-
+|DHP16
+|135
+|[[Honda Monkey Z50]]
+| bgcolor="lightblue" |<font color="black">HW Moto </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|5/5​
+|[[Image:Honda Monkey Z50-2016.jpg|75px]]
+|-
+|DHX42
+|135
+|[[Honda Monkey Z50]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="black">HW Moto </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|5/5​
+|[[File:Honda Monkey Z50-Yellow-HW-2016-135-Moto.jpg|75px]]
+|}
+
+==[[Sky Show Mini Collection (2016)|Sky Show]] [[File:Sky_Show.png|40px]]==
+'''Show planes and copters, plus their transport vehicles.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Photo'''
+|-
+|DHR42
+|136
+|[[Cloud Cutter]]
+| bgcolor="lightblue" |<font color="black">Sky Show</font>
+|1/5​
+|[[Image:CloudCutter-DHR42.jpg|75px]]
+|-
+|DHW83
+|136
+|[[Cloud Cutter]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="black">Sky Show</font>
+|1/5​
+|[[File:CloudCutterDHW83.jpg|75px]]
+|-
+|DHR43
+|137
+|[[Skyfire]]
+| bgcolor="lightblue" |<font color="black">Sky Show</font>
+|2/5​
+|[[Image:Killer_Copter_Skyfire_ORANGE_YELLOW.jpg|75px]]
+|-
+|DHW84
+|137
+|[[Skyfire]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="black">Sky Show</font>
+|2/5​
+|[[File:SKIFIRE DHW84.jpg|75px]]
+|-
+|DHR44
+|138
+|[[4ward Speed]]
+| bgcolor="lightblue" |<font color="black">Sky Show </font><br>[[2016 Treasure Hunts Series|<font color=#00CC00">'''Treasure Hunt]]'''</font>
+|3/5​
+|[[File:4ward_speed_t-hunt.png|75px]]
+|-
+|DHR45
+|139
+|[[Jet Threat 4.0]]
+| bgcolor="lightblue" |<font color="black">Sky Show</font>
+|4/5​
+|[[File:Jet Threat 4,0 2016 1.png|75px]]
+|-
+|DHW85
+|139
+|[[Jet Threat 4.0]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="black">Sky Show</font>
+|4/5​
+|[[File:Jet Threat 4,0 2016 2.png|75px]]
+|-
+|DHR46
+|140
+|[[Mad Propz]]
+| bgcolor="lightblue" |<font color="black">Sky Show</font>
+|5/5​
+|[[Image:mad.jpg|75px]]
+|-
+|DHW86
+|140
+|[[Mad Propz]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="black">Sky Show</font>
+|5/5​
+|[[File:Mad Propz 2016 2.png|75px]]
+|}
+
+==[[HW Hot Trucks Mini Collection (2016)|HW Hot Trucks]] [[File:HW_Hot_Trucks.png|40px]]==
+'''4 x 4s and trucks ready to work or race.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:orange"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:orange"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:orange"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:orange"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:orange"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:orange"|<font color="black">'''Photo'''
+|-
+|DHR47
+|141
+|[['15 Ford F-150]]
+|bgcolor="orange" |<font color="black">HW Hot Trucks</font>
+|1/10
+|[[Image:HW-2016-141-'15 Ford F 150-HotTrucks.jpg|75px]]
+|-
+|DHX43
+|141
+|[['15 Ford F-150]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">HW Hot Trucks</font>
+|1/10
+|[[Image:DHX43-01.JPG|75px]]
+|-
+|DHR48
+|142
+|[[Lamborghini Urus]]
+|bgcolor="orange" |<font color="black">HW Hot Trucks</font>
+|2/10
+|[[Image:HW-2016-142-Lamborghini Urus-HotTrucks.jpg|75px]]
+|-
+|DHX44
+|142
+|[[Lamborghini Urus]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">HW Hot Trucks</font>
+|2/10
+|[[Image:LamborghiniUrusX6999.jpg|75px]]
+|-
+|DHR49
+|143
+|[['67 Chevy C10]]
+|bgcolor="orange" |<font color="black">HW Hot Trucks</font>
+|3/10
+|[[Image:HW-2016-143-'67 Chevy C10-HotTrucks.jpg|75px]]
+|-
+|DHX45
+|143
+|[['67 Chevy C10]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">HW Hot Trucks</font>
+|3/10
+|[[Image:HW '67-Chevy-C10 Blue 2016 RF DSCF8240.jpg|75px]]
+|-
+|DHX92
+|143
+|[['67 Chevy C10]]<br>(3rd Color - ZAMAC)
+|bgcolor="orange" |<font color="black">HW Hot Trucks<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|3/10
+|[[Image:06cRCG.jpg|75px]]
+|-
+|DHR50
+|144
+|[[Dodge Ram 1500 (2007)|Dodge Ram 1500]]
+|bgcolor="orange" |<font color="black">HW Hot Trucks</font>
+|4/10
+|[[Image:HW-2016-144-Dodge Ram 1500-HotTrucks.jpg|75px]]
+|-
+|DXY65
+|144
+|[[Dodge Ram 1500 (2007)|Dodge Ram 1500]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">HW Hot Trucks<br>'''[[Walgreens]]''' <font color="black">'''Exclusive'''</font>
+|4/10
+|[[Image:07 Dodge Ram 1500 - 16 HW Hot Trucks P3 600pxOTD.jpg|75px]]
+|-
+|DHR51
+|145
+|[[Bad Mudder 2]]
+|bgcolor="orange" |<font color="black">HW Hot Trucks</font>
+|5/10
+|[[Image:Bad.jpg|75px]]
+|-
+|DHT84
+|145
+|[[Bad Mudder 2]]
+|bgcolor="orange" |<font color="black">HW Hot Trucks<br>'''[[2016 Treasure Hunts Series|<font color=#00CC00">Super Treasure Hunt]]'''</font>
+|5/10
+|[[Image:BM2Super.jpg|75px]]
+|-
+|DHR52
+|146
+|[[Off-Duty]]
+|bgcolor="orange" |<font color="black">HW Hot Trucks</font>
+|6/10
+|[[Image:OffDutyDHR52.jpg|75px]]
+|-
+|DHW87
+|146
+|[[Off-Duty]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">HW Hot Trucks</font>
+|6/10
+|[[Image:OffDuty2016Orange.jpg|75px]]
+|-
+|DHR53
+|147
+|[[Turbine Time]]
+|bgcolor="orange" |<font color="black">HW Hot Trucks</font>
+|7/10
+|[[Image:TurbineTimeDHR53.jpg|75px]]
+|-
+|DHW88
+|147
+|[[Turbine Time]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">HW Hot Trucks</font>
+|7/10
+|[[Image:147B.jpg|75px]]
+|-
+|DHP17
+|148
+|[[Custom '72 Chevy LUV]]
+|bgcolor="orange" |<font color="black">HW Hot Trucks<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|8/10
+|[[Image:HW-2016-148-Custom '72 Chevy Luv-HotTrucks.jpg|75px]]
+|-
+|DHX47
+|148
+|[[Custom '72 Chevy LUV]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">HW Hot Trucks<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|8/10
+|[[Image:72ChevyLuvX6999.jpg|75px]]
+|-
+|DHP18
+|149
+|[[Dawgzilla]]
+|bgcolor="orange" |<font color="black">HW Hot Trucks<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|9/10
+|[[Image:DawgzillaDHP18.jpg|75px]]
+|-
+|DHW89
+|149
+|[[Dawgzilla]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">HW Hot Trucks<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|9/10
+|[[Image:DawgzillaDHW89.jpg|75px]]
+|-
+|DHP19
+|150
+|[['17 Ford F-150 Raptor]]
+|bgcolor="orange" |<font color="black">HW Hot Trucks<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|10/10
+|[[Image:17 Ford F-150 Raptor - 16 HW Hot Trucks 600pxDM.jpg|75px]]
+|-
+|DHX48
+|150
+|[['17 Ford F-150 Raptor]]<br>(2nd Color)
+|bgcolor="orange" |<font color="black">HW Hot Trucks<br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|10/10
+|[[Image:'17 Ford F-150 Raptor-2016 150.jpg|75px]]
+|}
+
+==[[HW Daredevils Mini Collection (2016)|HW Daredevils]] [[File:HW_Daredevils.png|40px]]==
+'''Fearless stunt vehicles, ready for stunting action.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Photo'''
+|-
+|DHR54
+|151
+|[[Land Crusher|Dune Crusher]]
+| bgcolor="red" |<font color="black">HW Daredevils </font><br>[[2016 Treasure Hunts Series|<font color=#00CC00">'''Treasure Hunt''']]</font>
+|6/10​
+|[[Image:DuneCrusher-DHR54.jpg|75px]]
+|-
+|DHR55
+|152
+|[[Toyota Off-Road Truck]]
+| bgcolor="red" |<font color="black">HW Daredevils</font>
+|7/10​
+|[[File:Hilux-OffRoad_2016HW.jpg|75px]]
+|-
+|DHX49
+|152
+|[[Toyota Off-Road Truck]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">HW Daredevils</font>
+|7/10​
+|[[File:Dhx49 c 16 003.jpg|75px]]
+|-
+|DHR56
+|153
+|[[Custom Ford Bronco]]
+| bgcolor="red" |<font color="black">HW Daredevils</font>
+|8/10​
+|[[File:IMG_20160210_155839.jpg|75px]]
+|-
+|DHX50
+|153
+|[[Custom Ford Bronco]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">HW Daredevils</font>
+|8/10​
+|[[File:2016 Custom Ford Bronco.jpg|75px]]
+|-
+|DHY12
+|153
+|[[Custom Ford Bronco]]<br>(3rd Color)
+| bgcolor="red" |<font color="black">HW Daredevils</font><br><font color="black">'''Kmart Exclusive'''
+|8/10​
+|[[Image:16kmartbronco.JPG|75px]]
+|-
+|DHP20
+|154
+|[[Terrain Storm]]
+| bgcolor="red" |<font color="black">HW Daredevils </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|9/10​
+|[[Image:2016NM36 (Large).JPG|75px]]
+|-
+|DHW90
+|154
+|[[Terrain Storm]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">HW Daredevils </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|9/10​
+|[[File:154B.jpg|75px]]
+|-
+|DHP21
+|155
+|[[Tanknator]]
+| bgcolor="red" |<font color="black">HW Daredevils </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|10/10​
+|[[File:HW-2016-155-Tanknator-Daredevils.jpg|75px]]
+|-
+|DHW91
+|155
+|[[Tanknator]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">HW Daredevils </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|10/10​
+|[[File:TanknatorDHW91.jpg|75px]]
+|}
+
+==[[HW Snow Stormers Mini Collection (2016)|HW Snow Stormers]] [[File:HW_Snow_Stormers.png|40px]]==
+'''Chilled out and ready to take on the powder.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:#5F9EA0"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:#5F9EA0"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:#5F9EA0"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:#5F9EA0"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:#5F9EA0"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:#5F9EA0"|<font color="black">'''Photo'''
+|-
+|DHR57
+|156
+|[[So Plowed]]
+| bgcolor="#5F9EA0" |<font color="black">HW Snow Stormers</font>
+|1/5​
+|[[Image:2016soplowed.jpg|75px]]
+|-
+|DHW92
+|156
+|[[So Plowed]]<br>(2nd Color)
+| bgcolor="#5F9EA0" |<font color="black">HW Snow Stormers</font>
+|1/5​
+|[[File:DHW92C.JPG|75px]]
+|-
+|DHR58
+|157
+|[['12 Ford Fiesta]]
+| bgcolor="#5F9EA0" |<font color="black">HW Snow Stormers</font>
+|2/5​
+|[[File:HW-2016-157-'12_Ford_Fiesta-SnowStormers.jpg|75px]]
+|-
+|DHX80
+|157
+|[['12 Ford Fiesta]]<br>(2nd Color - Zamac)
+| bgcolor="#5F9EA0" |<font color="black">HW Snow Stormers</font><br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|2/5​
+|[[File:IMG 20160213 182547213.jpg|75px]]
+|-
+|DHX33
+|157
+|[['12 Ford Fiesta]]<br>(3rd Color)
+| bgcolor="#5F9EA0" |<font color="black">HW Snow Stormers</font>
+|2/5​
+|[[File:12FordFiestaDHX33.jpg|75px]]
+|-
+|DHR59
+|158
+|[[Hover Storm]]
+| bgcolor="#5F9EA0" |<font color="black">HW Snow Stormers</font>
+|3/5​
+|[[Image:Hover Storm (Year Unknown).jpg|75px]]
+|-
+|DHW93
+|158
+|[[Hover Storm]]<br>(2nd Color)
+| bgcolor="#5F9EA0" |<font color="black">HW Snow Stormers</font>
+|3/5​
+|[[File:158A.jpg|75px]]
+|-
+|DHR60
+|159
+|[[Ice Shredder]]
+| bgcolor="#5F9EA0" |<font color="black">HW Snow Stormers</font>
+|4/5​
+|[[Image:Ice_shredder_15.jpg|75px]]
+|-
+|DHW94
+|159
+|[[Ice Shredder]]<br>(2nd Color)
+| bgcolor="#5F9EA0" |<font color="black">HW Snow Stormers</font>
+|4/5​
+|[[File:Hot Wheels 3 ๑๗๐๘๒๔ 0053.jpg|75px]]
+|-
+|DHR61
+|160
+|[[Snow Stormer]]
+| bgcolor="#5F9EA0" |<font color="black">HW Snow Stormers</font>
+|5/5​
+|[[Image:SnowStormer.jpg|75px]]
+|-
+|DHW95
+|160
+|[[Snow Stormer]]<br>(2nd Color)
+| bgcolor="#5F9EA0" |<font color="black">HW Snow Stormers</font>
+|5/5​
+|[[File:Hot Wheels 3 ๑๗๐๘๒๔ 0056.jpg|75px]]
+|}
+
+
+==[[HW Daredevils Mini Collection (2016)|HW Daredevils]] [[File:HW_Daredevils.png|40px]]==
+'''Fearless stunt vehicles, ready for stunting action.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Photo'''
+|-
+|DHR62
+|161
+|[[Olds 442 W-30]]
+| bgcolor="red" |<font color="black">HW Daredevils</font>
+|1/10​
+|[[Image:70.jpg|75px]]
+|-
+|DHX52
+|161
+|[[Olds 442 W-30]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">HW Daredevils</font>
+|1/10​
+|[[File:S 108642311.jpg|75px]]
+|-
+|DHR63
+|162
+|[[Skate Brigade]]
+| bgcolor="red" |<font color="black">HW Daredevils</font><br><font color="black">'''New in Mainline'''
+|2/10​
+|[[Image:SkateBrigade.jpg|75px]]
+|-
+|DHR64
+|163
+|[[Mountain Mauler]]
+| bgcolor="red" |<font color="black">HW Daredevils </font><br>[[2016 Treasure Hunts Series|<font color=#00CC00">'''Treasure Hunt''']]
+|3/10​
+|[[Image:Mountai mauler.jpg|75px]]
+|-
+|DHR65
+|164
+|[[HW450F]]
+| bgcolor="red" |<font color="black">HW Daredevils</font>
+|4/10​
+|[[Image:450f.jpg|75px]]
+|-
+|DHW96
+|164
+|[[HW450F]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">HW Daredevils</font>
+|4/10​
+|[[File:2016-164 HW450F HWR WHITE o-1.jpg|75px]]
+|-
+|DHP22
+|165
+|[[Cruise Bruiser]]
+| bgcolor="red" |<font color="black">HW Daredevils </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|5/10​
+|[[File:Cruise_Bruiser_-_16_HW_Daredevils_600pxDM.jpg|75px]]
+|-
+|DHW97
+|165
+|[[Cruise Bruiser]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">HW Daredevils </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|5/10​
+|[[File:Cruise Bruiser - 16 HW Daredevils BLUE 600pxDM.jpg|75px]]
+|}
+
+==[[HW City Works Mini Collection (2016)|HW City Works]] [[File:HW_City_Works.png|40px]]==
+'''Utility vehicles to service the streets with style.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Photo'''
+|-
+|DHR66
+|166
+|[[Speed Dozer]]
+| bgcolor="yellow" |<font color="black">HW City Works</font>
+|1/10​
+|[[File:SpeedDozerDHR66.jpg|75px]]
+|-
+|DHW98
+|166
+|[[Speed Dozer]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW City Works</font>
+|1/10​
+|[[File:SpeedDozerDHW98.jpg|75px]]
+|-
+|DHR67
+|167
+|[[Fast Gassin]]
+| bgcolor="yellow" |<font color="black">HW City Works</font>
+|2/10​
+|[[File:HW_City_Works_-_2016_-_Fast_Gassin.jpg|75px]]
+|-
+|DHW99
+|167
+|[[Fast Gassin]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW City Works</font>
+|2/10​
+|[[File:DHW99 c 16 003.jpg|75px]]
+|-
+|DHR68
+|168
+|[[Repo Duty]]
+| bgcolor="yellow" |<font color="black">HW City Works </font><br>[[2016 Treasure Hunts Series|<font color=#00CC00">'''Treasure Hunt''']]</font>
+|3/10​
+|[[Image:Repo-Duty-g.jpg|75px]]
+|-
+|DHT76
+|169
+|[[Street Cleaver]]
+| bgcolor="yellow" |<font color="black">HW City Works</font>
+|4/10​
+|[[Image:StreetCleaverDHT76.jpg|75px]]
+|-
+|DHR70
+|170
+|[[The Haulinator]]
+| bgcolor="yellow" |<font color="black">HW City Works</font>
+|5/10​
+|[[Image:TheHaulinatorDHR70.jpg|75px]]
+|-
+|DHR71
+|171
+|[[Chill Mill]]
+| bgcolor="yellow" |<font color="black">HW City Works</font>
+|6/10​
+|[[File:ChillMillDHR71.jpg|75px]]
+|-
+|DHW56
+|171
+|[[Chill Mill]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW City Works</font>
+|6/10​
+|[[File:ChillMillDHW56.jpg|75px]]
+|-
+|DHP23
+|172
+|[[Time Attaxi]]
+| bgcolor="yellow" |<font color="black">HW City Works </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|7/10​
+|[[File:2016NM39 (Large).JPG|75px]]
+|-
+|DHP24
+|173
+|[[Crate Racer]]
+| bgcolor="yellow" |<font color="black">HW City Works </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|8/10​
+|[[Image:2016NM40 (Large).JPG|75px]]
+|-
+|DHX00
+|173
+|[[Crate Racer]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW City Works </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|8/10​
+|[[File:Crate Racer DHX00.png|75px]]
+|-
+|DHP94
+|174
+|[[Loopster]]
+| bgcolor="yellow" |<font color="black">HW City Works</font>
+|9/10​
+|[[Image:IMG 5967.jpg|75px]]
+|-
+|DHR30
+|175
+|[['67 Austin Mini Van]]
+| bgcolor="yellow" |<font color="black">HW City Works</font>
+|10/10​
+|[[Image:Austin-minivan_2016HW.jpg|75px]]
+|-
+|DHX53
+|175
+|[['67 Austin Mini Van]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW City Works</font>
+|10/10​
+|[[File:17F2777B-81B4-46A0-B192-30EEAC2A0174.png|75px]]
+|}
+
+==[[HW Speed Graphics Mini Collection (2016)|HW Speed Graphics]] [[File:HW_Speed_Graphics.png|40px]]==
+'''Real race performers that speed fast on track.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Photo'''
+|-
+|DHR72
+|176
+|[['96 Nissan 180SX Type X]]
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|1/10​
+|[[Image:IMG_20160221_194557.jpg|75px]]
+|-
+|DHX76
+|176
+|[['96 Nissan 180SX Type X]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|1/10​
+|[[File:DSC 5623.jpg|75px]]
+|-
+|DHR73
+|177
+|[[Toyota Supra]]
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|2/10​
+|[[Image:2016_Toyota_Supra.JPG|75px]]
+|-
+|DHX55
+|177
+|[[Toyota Supra]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|2/10​
+|[[File:Toyota Supra (DHX55) 01.jpg|75px]]
+|-
+|DHR74
+|178
+|[[Dodge Challenger Drift Car]]
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|3/10​
+|[[Image:DHR74-01.JPG|75px]]
+|-
+|DHX56
+|178
+|[[Dodge Challenger Drift Car]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|3/10​
+|[[File:DSC 5599.jpg|75px]]
+|-
+|DHR75
+|179
+|[['13 COPO Camaro|'13 Chevrolet COPO Camaro]]
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|4/10​
+|[[Image:CamaroCOPO-SG-2016_hw.jpg|75px]]
+|-
+|DHX57
+|179
+|[['13 COPO Camaro|'13 Chevrolet COPO Camaro]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|4/10​
+|[[File:'13 COPO Camaro - FRAM.jpg|75px]]
+|-
+|DHR76
+|180
+|[['14 Corvette Stingray]]
+| bgcolor="yellow" |<font color="black">HW Speed Graphics </font>
+|5/10​
+|[[File:'14 Corvette (DHR76).jpg|75px]]
+|-
+|DHT85
+|180
+|[['14 Corvette Stingray]]
+| bgcolor="yellow" |<font color="black">HW Speed Graphics </font><br>[[2016 Treasure Hunts Series|<font color=#00CC00">'''Super Treasure Hunt''']]</font>
+|5/10​
+|[[File:2016 180-250 HW Speed Graphics 05-10 '14 Corvette Stingray 'K&N' -Super Treasure Hunt- Black .jpg|75px]]
+|-
+|DHR77
+|181
+|[[Porsche 934 Turbo RSR]]
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|6/10​
+|[[File:HW-2016-181-Porsche_934_Turbo_RSR-SpeedGraphics.jpg|75px]]
+|-
+|DHX58
+|181
+|[[Porsche 934 Turbo RSR]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|6/10​
+|[[File:Porsche934Silver.jpg|75px]]
+|-
+|DHR78
+|182
+|[[Ford GT]]
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|7/10​
+|[[File:HW-2016-182-Ford_GT-SpeedGraphics.jpg|75px]]
+|-
+|DHX89
+|182
+|[[Ford GT]]<br>(2nd Color - Zamac)
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font><br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|7/10​
+|[[File:HW Ford-GT-(LM) Silver 2016 RF DSCF8814.jpg|75px]]
+|-
+|DHR79
+|183
+|[['69 Ford Torino Talladega]]
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|8/10​
+|[[File:69_Torino_Talladega_-_16_HW_Speed_Graphics_600pxDM.jpg|75px]]
+|-
+|DHR27
+|183
+|[['69 Ford Torino Talladega]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|8/10​
+|[[File:Ford Torino '69 Talladega UNION 76.jpg|75px]]
+|-
+|DHP27
+|184
+|[[Nissan Fairlady Z]]
+| bgcolor="yellow" |<font color="black">HW Speed Graphics </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|9/10​​
+|[[File:Nissan_Fairlady_Z_-_16_HW_Speed_Graphics_600pxDM.jpg|75px]]
+|-
+|DHP97
+|185
+|[['70 Ford Escort RS1600]]
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|10/10​
+|[[File:70_Ford_Escort_RS1600_-_16_HW_Speed_Graphics_600pxDM.jpg|75px]]
+|-
+|DHX59
+|185
+|[['70 Ford Escort RS1600]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Speed Graphics</font>
+|10/10​
+|[[File:DHX59-03.JPG|75px]]
+|}
+
+==[[BMW Mini Collection (2016)|BMW]] [[File:BMW.png|40px]]==
+'''Vehicles from one of your favorite auto makers.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Toy #'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Col.#'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Model Name'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Series'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Series #'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Photo'''
+|-
+|DHR80
+|186
+|[[BMW 2002]]
+| bgcolor="black" |<font color="white">BMW</font>
+|1/5​
+|[[Image:bmw 2002.jpg|75px]]
+|-
+|DHX60
+|186
+|[[BMW 2002]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">BMW</font>
+|1/5​
+|[[File:BMW 2002-2016 186.jpg|75px]]
+|-
+|DHX90
+|186
+|[[BMW 2002]]<br>(3rd Color - Zamac)
+| bgcolor="black" |<font color="white">BMW</font><br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive''']]
+|1/5​
+|[[File:BMW 2002 - 16 BMW Series ZAMAC 600pxOTD.jpg|75px]]
+|-
+|DHR81
+|187
+|[[BMW K 1300 R]]
+| bgcolor="black" |<font color="white">BMW</font>
+|2/5​
+|[[File:HW-2016-187-BMW_K_1300_R-BMW_Series.jpg|75px]]
+|-
+|DHX61
+|187
+|[[BMW K 1300 R]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">BMW</font>
+|2/5​
+|[[Image:2016_BMW_K1300R.jpg|75px]]
+|-
+|DHR82
+|188
+|[[BMW Z4 M Motorsport]]
+| bgcolor="black" |<font color="white">BMW </font>
+|3/5​
+|[[File:BMW_-_2016_-_BMW_Z4_M.jpg|75px]]
+|-
+|DHT86
+|188
+|[[BMW Z4 M Motorsport]]
+| bgcolor="black" |<font color="white">BMW </font><br>[[2016 Treasure Hunts Series|<font color=#00CC00">'''Super Treasure Hunt''']]</font>
+|3/5​
+|[[File:1042 BMW Z4 M Motorsport - spectraflame dark blue.jpg|75px]]
+|-
+|DHR83
+|189
+|[[BMW M4]]
+| bgcolor="black" |<font color="white">BMW</font>
+|4/5​
+|[[File:HW_BMW-M4_Red_2016_DSCF7783.jpg|75px]]
+|-
+|DHX62
+|189
+|[[BMW M4]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">BMW</font>
+|4/5​
+|[[File:BMW-M4-d.jpg|75px]]
+|-
+|DHP29
+|190
+|[['73 BMW 3.0 CSL Race Car]]
+| bgcolor="black" |<font color="white">BMW </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|5/5​
+|[[File:2016NM42 (Large).JPG|75px]]
+|-
+|DHX63
+|190
+|[['73 BMW 3.0 CSL Race Car]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">BMW </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|5/5​
+|[[File:73 BMW 3.0 CSL (DHX63) 02.jpg|75px]]
+|}
+
+==[[HW Art Cars Mini Collection (2016)|HW Art Cars]] [[File:HW_Art_Cars.png|40px]]==
+'''Colorful, art-inspired vehicles, ready to paint the town.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:yellow"|<font color="black">'''Photo'''
+|-
+|DHR84
+|191
+|[['65 Chevy Impala]]
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|1/10​
+|[[File:Impala-Lowrider-HW2016.jpg|75px]]
+|-
+|DHX64
+|191
+|[['65 Chevy Impala]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|1/10​
+|[[File:DSC 5564.jpg|75px]]
+|-
+|DHR85
+|192
+|[[Custom '69 Volkswagen Squareback]]
+| bgcolor="yellow" |<font color="black">HW Art Cars </font><br><font color="black">'''New in Mainline''' </font>
+|2/10​
+|[[Image:IMG_20160214_193936.jpg|75px]]
+|-
+|DHY05
+|192
+|[[Custom '69 Volkswagen Squareback]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Art Cars </font><br><font color="black">'''New in Mainline'''<br>'''Kmart Exclusive''' </font>
+|2/10​
+|[[File:HW-2016-192-Custom '69 Volkswagen Squareback-ArtCars-White.jpg|75px]]
+|-
+|DHX65
+|192
+|[[Custom '69 Volkswagen Squareback]]<br>(3rd Color)
+| bgcolor="yellow" |<font color="black">HW Art Cars </font><br><font color="black">'''New in Mainline''' </font>
+|2/10​
+|[[File:Cust 69 Volks Squar (V) Art C 2 - 16 - 1.png|75px]]
+|-
+|DHR86
+|193
+|[[Morris Mini]]
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|3/10​
+|[[File:Mini_Cooper_-_16_HW_Art_Cars_600pxDM.jpg|75px]]
+|-
+|DHX87
+|193
+|[[Morris Mini]]<br>(2nd Color - Zamac)
+| bgcolor="yellow" |<font color="black">HW Art Cars</font><br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|3/10​
+|[[File:Mini Cooper - 16 HW Art Cars ZAMAC 600pxOTD.jpg|75px]]
+|-
+|DHX66
+|193
+|[[Morris Mini]]<br>(3rd Color)
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|3/10​
+|[[File:Mini2016.jpg|75px]]
+|-
+|DHR87
+|194
+|[[Chrysler 300C (Blings)|Chrysler 300C]]
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|4/10​
+|[[File:HW_Art_Cars_-_2016_-_Chrysler_300C.jpg|75px]]
+|-
+|DHX67
+|194
+|[[Chrysler 300C (Blings)|Chrysler 300C]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|4/10​
+|[[File:HW CHRSLR 300C L.jpg|75px]]
+|-
+|DHR88
+|195
+|[[Muscle Tone]]
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|5/10​
+|[[Image:tone.jpg|75px]]
+|-
+|DHX01
+|195
+|[[Muscle Tone]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|5/10​
+|[[File:MuscleToneDHX01.jpg|75px]]
+|-
+|DHR89
+|196
+|[[Combat Medic]]
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|6/10​
+|[[File:Combat-Medic-HW2016.jpg|75px]]
+|-
+|DHX02
+|196
+|[[Combat Medic]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|6/10​
+|[[File:Combat Medic HW Art Cars 2016.jpg|75px]]
+|-
+|DHR90
+|197
+|[[Custom '77 Dodge Van]]
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|7/10​
+|[[File:HW_Art_Cars_-_2016_-_Custom_'77_Dodge_Van.jpg|75px]]
+|-
+|FBJ22
+|197
+|[[Custom '77 Dodge Van]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Art Cars</font><br><font color="black">'''Kmart Exclusive'''
+|7/10​
+|[[File:77 Dodge Van - 16 HW Art Cars Green 600pxOTD.jpg|75px]]
+|-
+|DHR91
+|198
+|[['07 Ford Mustang]]
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|8/10​
+|[[File:HW_Art_Cars_-_2016_-_'07_Ford_Mustang.jpg|75px]]
+|-
+|DHX69
+|198
+|[['07 Ford Mustang]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|8/10​
+|[[File:07' Ford Mustang (4537) HW L1190365.JPG|75px]]
+|-
+|DHR92
+|199
+|[[Boom Box]]
+| bgcolor="yellow" |<font color="black">HW Art Cars </font>
+|9/10​
+|[[File:HW_Art_Cars_-_2016_-_Boom_Box.jpg|75px]]
+|-
+|DHT87
+|199
+|[[Boom Box]]
+| bgcolor="yellow" |<font color="black">HW Art Cars </font><br>[[2016 Treasure Hunts Series|<font color=#00CC00">'''Super Treasure Hunt]]'''</font>
+|9/10​
+|[[Image:BoomBoxSTH.jpg|75px]]
+|-
+|DHR93
+|200
+|[[Chevy Silverado]]
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|10/10​
+|[[Image:chevy s.jpg|75px]]
+|-
+|DHX70
+|200
+|[[Chevy Silverado]]<br>(2nd Color)
+| bgcolor="yellow" |<font color="black">HW Art Cars</font>
+|10/10​
+|[[File:185c.jpg|75px]]
+|}
+
+==[[Street Beasts Mini Collection (2016)|Street Beasts]] [[File:Street_Beasts.png|40px]]==
+'''Creatures on wheels that are beasts on the street.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Photo'''
+|-
+|DHR94
+|201
+|[[Knight Draggin']]
+| bgcolor="lightblue" |<font color="black">Street Beasts</font>
+|1/10​
+|[[Image:Knight Draggin' 2016 1.png|75px]]
+|-
+|DHX03
+|201
+|[[Knight Draggin']]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="black">Street Beasts</font>
+|1/10​
+|[[File:Knight Draggin' 2016 2.png|75px]]
+|-
+|DHR95
+|202
+|[[Ratical Racer]]
+| bgcolor="lightblue" |<font color="black">Street Beasts</font>
+|2/10​
+|[[Image:RaticalRacerDHR95.jpg|75px]]
+|-
+|DHX04
+|202
+|[[Ratical Racer]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="black">Street Beasts</font>
+|2/10​
+|[[File:Ratical Racer 2016 2.png|75px]]
+|-
+|DHR96
+|203
+|[[Howlin' Heat]]
+| bgcolor="lightblue" |<font color="black">Street Beasts </font><br>[[2016 Treasure Hunts Series|<font color=#00CC00">'''Treasure Hunt]]'''</font>
+|3/10​
+|[[Image:Howlin' Heat 2016.png|75px]]
+|-
+|DHR97
+|204
+|[[Scorpedo]]
+| bgcolor="lightblue" |<font color="black">Street Beasts</font>
+|4/10​
+|[[Image:Scorpedo 2016 1.png|75px]]
+|-
+|DHX05
+|204
+|[[Scorpedo]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="black">Street Beasts</font>
+|4/10​
+|[[File:Scorpedo 2016 2.png|75px]]
+|-
+|DHR98
+|205
+|[[Speed Spider]]
+| bgcolor="lightblue" |<font color="black">Street Beasts </font><br><font color="black">'''New in Mainline'''</font>
+|5/10​
+|[[Image:Speed Spider 2016.png|75px]]
+|-
+|DHR99
+|206
+|[[Vampyra]]
+| bgcolor="lightblue" |<font color="black">Street Beasts</font>
+|6/10​
+|[[Image:StreetBeastsVampyra.jpg|75px]]
+|-
+|DHT00
+|207
+|[[Steer Clear]]
+| bgcolor="lightblue" |<font color="black">Street Beasts</font>
+|7/10​
+|[[Image:Steer Clear 2016.png|75px]]
+|-
+|DHP30
+|208
+|[[Shark Bite]]
+| bgcolor="lightblue" |<font color="black">Street Beasts </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|8/10​
+|[[File:Shark_BIte_-_16_Street_Beasts_BLUE_600px72OTD.png|75px]]
+|-
+|DHX06
+|208
+|[[Shark Bite]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="black">Street Beasts </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|8/10​
+|[[File:Shark Bite 2016 2.png|75px]]
+|-
+|DHP31
+|209
+|[[Turbot]]
+| bgcolor="lightblue" |<font color="black">Street Beasts </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|9/10​
+|[[File:TurbotDHP31OOP.jpg|75px]]
+|-
+|DHX07
+|209
+|[[Turbot]]<br>(2nd Color)
+| bgcolor="lightblue" |<font color="black">Street Beasts </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|9/10​
+|[[File:Turbot 2016 2.png|75px]]
+|-
+|DHP32
+|210
+|[[Purrfect Speed]]
+| bgcolor="lightblue" |<font color="black">Street Beasts </font><br>[[2016 New Models|<font color="black">'''New for 2016!!''']]
+|10/10​
+|[[Image:PurrfectSpeedDHP32Loose.jpg|75px]]
+|}
+
+==[[HW Rescue Mini Collection (2016)|HW Rescue]] [[File:HW_Rescue.png|40px]]==
+'''Fearless and fast to respond, these vehicles saves the day!'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:red"|<font color="black">'''Photo'''
+|-
+|DHT01
+|211
+|[['10 Camaro SS]] w/ Light Bar
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|1/10​
+|[[Image:bar.jpg|75px]]
+|-
+|DHX71
+|211
+|[['10 Camaro SS]] w/ Light Bar<br>(2nd Color)
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|1/10​
+|[[File:IMG 20181027 211139150.jpg|75px]]
+|-
+|DHT02
+|212
+|[[Sky Knife]]
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|2/10​
+|[[Image:sky.jpg|75px]]
+|-
+|DHT03
+|213
+|[[Blazer 4x4|Chevy Blazer 4x4]]
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|3/10​
+|[[Image:IMG_20160214_193648.jpg|75px]]
+|-
+|DHX72
+|213
+|[[Blazer 4x4|Chevy Blazer 4x4]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|3/10​
+|[[File:ChevyBlazerDHX72.jpg|75px]]
+|-
+|DHX86
+|213
+|[[Blazer 4x4|Chevy Blazer 4x4]]<br>(3rd Color - Zamac)
+| bgcolor="red" |<font color="black">HW Rescue</font><br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive''']]
+|3/10​
+|[[File:ChevyBlazerDHX86.jpg|75px]]
+|-
+|DHT04
+|214
+|[[Mad Splash]]
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|4/10​
+|[[Image:MadSplashDHT04.jpg|75px]]
+|-
+|DHT05
+|215
+|[[Dodge Charger SRT8]]
+| bgcolor="red" |<font color="black">HW Rescue </font><br>[[2016 Treasure Hunts Series|<font color=#00DD00">'''Treasure Hunt]]'''</font>
+|5/10​
+|[[Image:2016-11-11.0012 Dodge Charger SRT8 Treasure Hunt.JPG|75px]]
+|-
+|DHT06
+|216
+|[[Rescue Ranger|HW Rapid Responder]]
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|6/10​
+|[[File:HW-2016-216-Rapid_Responder-Rescue.jpg|75px]]
+|-
+|DHX08
+|216
+|[[Rescue Ranger|HW Rapid Responder]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|6/10​
+|[[File:216-0.jpg|75px]]
+|-
+|DHT07
+|217
+|[[Rapid Response]]
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|7/10​
+|[[Image:RapidResponseDHT07.png|75px]]
+|-
+|DHT08
+|218
+|[[Humvee]]
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|8/10​
+|[[File:20160126 201318.jpg|75px]]
+|-
+|DHX73
+|218
+|[[Humvee]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|8/10​
+|[[File:Humvee (4141) HW L1170942.JPG|75px]]
+|-
+|DHT09
+|219
+|[[Street Stealth]]
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|9/10​
+|[[File:Street Stealth DHT09 (black).jpg|75px]]
+|-
+|DHX09
+|219
+|[[Street Stealth]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|9/10​
+|[[Image:street.jpg|75px]]
+|-
+|DHT10
+|220
+|[[Backdrafter]]
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|10/10​
+|[[Image:BackdrafterDHT10.jpg|75px]]
+|-
+|DHX10
+|220
+|[[Backdrafter]]<br>(2nd Color)
+| bgcolor="red" |<font color="black">HW Rescue</font>
+|10/10​
+|[[File:BackdrafterDHX10.jpg|75px]]
+|}
+
+==[[HW Screen Time Mini Collection (2016)|HW Screen Time]] [[File:HW_Screen_Time.png|40px]]==
+'''Cars inspired by your favorite movies, TV shows, videogames, and more.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Toy #'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Col.#'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Model Name'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Series'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Series #'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Photo'''
+|-
+|DHR29
+|221
+|[[Back to the Future Time Machine - Hover Mode]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2016)|<font color="white">HW Screen Time]]</font>
+|1/5​
+|[[File:HW-2016-221-Back_To_The_Future_Time_Machine_Hover_Mode-ScreenTime.jpg|75px]]
+|-
+|DHT12
+|222
+|[[Snoopy]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2016)|<font color="white">HW Screen Time]]</font>
+|2/5​
+|[[File:IMG_20160422_152022.jpg|75px]]
+|-
+|DHT13
+|223
+|[[Grease Rod]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2016)|<font color="white">HW Screen Time]]</font><br>[[2016 Treasure Hunts Series|<font color=#00AA00">'''Treasure Hunt]]'''</font>
+|3/5​
+|[[Image:GreaseRodDHT13Loose.jpg|75px]]
+|-
+|DHT14
+|224
+|[[Cool-One]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2016)|<font color="white">HW Screen Time]]</font>
+|4/5​
+|[[Image:Cool-One - 16 HW Screen Time 600pxDM.jpg|75px]]
+|-
+|DHP33
+|225
+|[[The Beatles Yellow Submarine]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2016)|<font color="white">HW Screen Time]]</font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]</font>
+|5/5​
+|[[Image:The Beatles Yellow Submarine-2016 225.jpg|75px]]
+|}
+
+==[[Batman Mini Collection (2016)|Batman]] [[File:Batman™.png|40px]]==
+'''Help BATMAN fight crime and protect GOTHAM CITY in these BATMOBILE inspired vehicles.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Toy #'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Col.#'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Model Name'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Series'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Series #'''
+! style="border-style: none none solid solid; background:black"|<font color="white">'''Photo'''
+|-
+|DHT15
+|226
+|[[TV Series Batmobile]]
+| bgcolor="black" |<font color="white">Batman </font>
+|1/5​
+|[[File:HW TV-Series-Batmobile Flat-Black 2016 RF DSCF8800.jpg|75px]]
+|-
+|DHT88
+|226
+|[[TV Series Batmobile]]
+| bgcolor="black" |<font color="white">Batman </font><br>[[2016 Treasure Hunts Series|<font color=#00CC00">'''Super Treasure Hunt''']]</font>
+|1/5​
+|[[File:66_Batmobile_-_16_Batman_SUPER_600pxDM.jpg|75px]]
+|-
+|DHX95
+|226
+|[[TV Series Batmobile]]<br>(2nd Color - Zamac)
+| bgcolor="black" |<font color="white">Batman </font><br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive'''</font>]]
+|1/5​
+|[[File:66 Batmobile - 16 Batman ZAMAC 600pxOTD.jpg|75px]]
+|-
+|DHT16
+|227
+|[[The Bat]]
+| bgcolor="black" |<font color="white">Batman</font>
+|2/5​
+|[[File:DSC02124.JPG|75px]]
+|-
+|DHX77
+|227
+|[[The Bat]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">Batman</font>
+|2/5​
+|[[File:227.jpg|75px]]
+|-
+|DHT17
+|228
+|[[The Dark Knight Batmobile]]
+| bgcolor="black" |<font color="white">Batman</font>
+|3/5​
+|[[Image:BatmobileTumblerDHT17.jpg|75px]]
+|-
+|DHX78
+|228
+|[[The Dark Knight Batmobile]]<br>(2nd Color)
+| bgcolor="black" |<font color="white">Batman</font>
+|3/5​
+|[[File:The Dark Knight Batmobile – Batman 3 - 16 Cx.jpg|75px]]
+|-
+|DHT18
+|229
+|[[Batman: Arkham Knight Batmobile]]
+| bgcolor="black" |<font color="white">Batman</font>
+|4/5​
+|[[File:HW-2016-229-Batman_Arkham_Knight_Batmobile-Batman.jpg|75px]]
+|-
+|DHP34
+|230
+|[[Batman v Superman Batmobile|Batmobile]]
+| bgcolor="black" |<font color="white">Batman </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|5/5​
+|[[File:HW-2016-230-Batmobile-Batman.jpg|75px]]
+|}
+
+==[[HW Games Mini Collection (2016)|HW Games]] [[File:HW_Games.png|40px]]==
+'''Compete to win with cars inspired from the world of sports.'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:lightblue"|<font color="white">'''Toy #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="white">'''Col.#'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="white">'''Model Name'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="white">'''Series'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="white">'''Series #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="white">'''Photo'''
+|-
+|DHT19
+|231
+|[[Maximum Leeway]]
+| bgcolor="lightblue" |<font color="white">HW Games</font>
+|1/10​
+|[[Image:MaximumLeewayDHT19.jpg|75px]]
+|-
+|DHN94
+|232
+|[[Blade Raider]]
+| bgcolor="lightblue" |<font color="white">HW Games </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]</font>
+|2/10​
+|[[File:2016NM48 (Large).JPG|75px]]
+|-
+|DHT21
+|233
+|[[Velocita]]
+| bgcolor="lightblue" |<font color="white">HW Games</font>
+|3/10​
+|[[Image:VelocitaDHT21Loose.jpg|75px]]
+|-
+|DHT22
+|234
+|[[RRRoadster]]
+| bgcolor="lightblue" |<font color="white">HW Games</font>
+|4/10​
+|[[Image:RRRoadsterDHT22.jpg|75px]]
+|-
+|DHT23
+|235
+|[[Quick N' Sik]]
+| bgcolor="lightblue" |<font color="white">HW Games</font>
+|5/10​
+|[[File:Quick_N'_Sick_Cleaned_Up.jpg|75px]]
+|-
+|DHT24
+|236
+|[[MR11]]
+| bgcolor="lightblue" |<font color="white">HW Games</font>
+|6/10​
+|[[Image:MR11Games.jpg|75px]]
+|-
+|DHT25
+|237
+|[[Scoopa Di Fuego]]
+| bgcolor="lightblue" |<font color="white">HW Games</font>
+|7/10​
+|[[Image:ScoopaDiFuegoDHT25.jpg|75px]]
+|-
+|DHT26
+|238
+|[[Nitro Doorslammer]]
+| bgcolor="lightblue" |<font color="white">HW Games </font>
+|8/10​
+|[[Image:NitroDoorslammerDHT26.jpg|75px]]
+|-
+|DHT89
+|238
+|[[Nitro Doorslammer]]
+| bgcolor="lightblue" |<font color="white">HW Games </font><br>[[2016 Treasure Hunts Series|<font color=#00CC00">'''Super Treasure Hunt]]'''</font>
+|8/10​
+|[[Image:NitroDoorslammerSTH.jpg|75px]]
+|-
+|DHT27
+|239
+|[[Amazoom]]
+| bgcolor="lightblue" |<font color="white">HW Games</font>
+|9/10​
+|[[Image:Amazoom2016.jpg|75px]]
+|-
+|DHP35
+|240
+|[[Tour de Fast]]
+| bgcolor="lightblue" |<font color="white">HW Games </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|10/10​
+|[[File:Tour_de_Fast_-_16NM_HW_Games_600pxOTD.jpg|75px]]
+|}
+
+==[[HW Green Speed Mini Collection (2016)|HW Green Speed]] [[File:HW_Green_Speed.png|40px]]==
+'''Solar-powered and electric cars that prove you don't need gas to speed past the competition'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:green"|<font color="white">'''Toy #'''
+! style="border-style: none none solid solid; background:green"|<font color="white">'''Col.#'''
+! style="border-style: none none solid solid; background:green"|<font color="white">'''Model Name'''
+! style="border-style: none none solid solid; background:green"|<font color="white">'''Series'''
+! style="border-style: none none solid solid; background:green"|<font color="white">'''Series #'''
+! style="border-style: none none solid solid; background:green"|<font color="white">'''Photo'''
+|-
+|DHT28
+|241
+|[[2008 Tesla Roadster|Tesla Roadster]]
+| bgcolor="green" |<font color="white">HW Green Speed </font>
+|1/5​
+|[[File:00511.jpg|75px]]
+|-
+|DHT90
+|241
+|[[2008 Tesla Roadster|Tesla Roadster]]
+| bgcolor="green" |<font color="white">HW Green Speed </font><br>[[2016 Treasure Hunts Series|<font color=#00AA00">'''Super Treasure Hunt]]'''</font>
+|1/5​
+|[[File:HW_Green_Speed_-_2016_-_Tesla_Roadster_TH.jpg|75px]]
+|-
+|DHT29
+|242
+|[[Tesla Model S]]
+| bgcolor="green" |<font color="white">HW Green Speed</font>
+|2/5​
+|[[File:TeslaModelS-DHT29.jpg|75px]]
+|-
+|DHX79
+|242
+|[[Tesla Model S]]<br>(2nd Color)
+| bgcolor="green" |<font color="white">HW Green Speed</font>
+|2/5​
+|[[File:HW Tesla-Model-S Dark-Gray 2016 RF DSCF9398.jpg|75px]]
+|-
+|DHX97
+|242
+|[[Tesla Model S]]<br>(3rd Color - Zamac)
+| bgcolor="green" |<font color="white">HW Green Speed</font><br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive''']]
+|2/5​
+|[[File:Tesla Model S, with bare ZAMAC body, 2016 Walmart Exclusive.JPG|75px]]
+|-
+|DHT30
+|243
+|[[Super Volt]]
+| bgcolor="green" |<font color="white">HW Green Speed</font>
+|3/5​
+|[[Image:SuperVoltDHT30.jpg|75px]]
+|-
+|DHX46
+|243
+|[[Super Volt]]<br>(2nd Color)
+| bgcolor="green" |<font color="white">HW Green Speed</font>
+|3/5​
+|[[File:SuperVoltDHX46.jpg|75px]]
+|-
+|DHT31
+|244
+|[[Power Surge]]
+| bgcolor="green" |<font color="white">HW Green Speed</font>
+|4/5​
+|[[Image:PowerSurgeDHT31.jpg|75px]]
+|-
+|DHP36
+|245
+|[[HW Formula Solar]]
+| bgcolor="green" |<font color="white">HW Green Speed </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|5/5​
+|[[File:HW Formula Solar (DHT36).jpg|75px]]
+|-
+|DHX11
+|245
+|[[HW Formula Solar]]<br>(2nd Color)
+| bgcolor="green" |<font color="white">HW Green Speed </font><br>[[2016 New Models|<font color="white">'''New for 2016!!''']]
+|5/5​
+|[[File:HW Formula Solar (DHX11).jpg|75px]]
+|}
+
+==[[Dino Riders Mini Collection (2016)|Dino Riders]] [[File:Dino_Riders.png|40px]]==
+'''Watch out! Dinosaurs are on the loose, ready for a fun-filled adventure!'''
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:lime"|<font color="black">'''Toy #'''
+! style="border-style: none none solid solid; background:lime"|<font color="black">'''Col.#'''
+! style="border-style: none none solid solid; background:lime"|<font color="black">'''Model Name'''
+! style="border-style: none none solid solid; background:lime"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:lime"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:lime"|<font color="black">'''Photo'''
+|-
+|DHT32
+|246
+|[[Sting Rod II]]
+| bgcolor="lime" |<font color="black">Dino Riders</font>
+|1/5​
+|[[Image:2016 Sting Rod 2.jpg|75px]]
+|-
+|DHX12
+|246
+|[[Sting Rod II]]<br>(2nd Color)
+| bgcolor="lime" |<font color="black">Dino Riders</font>
+|1/5​
+|[[File:SR DHX12.jpg|75px]]
+|-
+|DHT33
+|247
+|[[Dragon Blaster]]
+| bgcolor="lime" |<font color="black">Dino Riders</font>
+|2/5​
+|[[Image:Dragon-Blaster-2016.jpg|75px]]
+|-
+|DHT34
+|248
+|[[Double Demon]]
+| bgcolor="lime" |<font color="black">Dino Riders</font>
+|3/5​
+|[[File:Dino_Riders_-_2016_-_Double_Demon.jpg|75px]]
+|-
+|DHX13
+|248
+|[[Double Demon]]<br>(2nd Color)
+| bgcolor="lime" |<font color="black">Dino Riders</font>
+|3/5​
+|[[File:WP 20170503 18 33 39 Pro.jpg|75px]]
+|-
+|DHT35
+|249
+|[[Fangster]]
+| bgcolor="lime" |<font color="black">Dino Riders</font>
+|4/5​
+|[[Image:2016 Fangster.jpg|75px]]
+|-
+|DHX14
+|249
+|[[Fangster]]<br>(2nd Color)
+| bgcolor="lime" |<font color="black">Dino Riders</font>
+|4/5​
+|[[File:FangsterDHX14.jpg|75px]]
+|-
+|DHT36
+|250
+|[[T-Rextroyer]]
+| bgcolor="lime" |<font color="black">Dino Riders<br>'''[[2016 Treasure Hunts Series|<font color=#00AA00">Treasure Hunt]]'''</font>
+|5/5​
+|[[Image:TRextroyerDHT36.jpg|75px]]
+|}
+
+==[[Kroger|Kroger Exclusive]] Special Editions==
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Toy #'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Col.#'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Model Name'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Series'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Series #'''
+! style="border-style: none none solid solid; background:purple"|<font color="white">'''Photo'''
+|-
+|DHY13
+|No #
+|[[Mountain Mauler]]
+| bgcolor="purple" |<font color="white">Special Edition</font>
+|1/4​
+|[[File:Kroger_Mountain_Mauler.jpg|75px]]
+|-
+|DHY14
+|No #
+|[[Hypertruck]]
+| bgcolor="purple" |<font color="white">Special Edition</font>
+|2/4​
+|[[Image:HypertruckDHY14.jpg|75px]]
+|-
+|DHY15
+|No #
+|[[F-Racer]]
+| bgcolor="purple" |<font color="white">Special Edition</font>
+|3/4​
+|[[File:Dhy15.jpg|75px]]
+|-
+|DLH90
+|No #
+|[[Maelstrom]]
+| bgcolor="purple" |<font color="white">Special Edition</font>
+|4/4​
+|[[File:2016Maelstrom.JPG|75px]]
+|}
+
+==Target-exclusive Special Editions==
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%
+! style="border-style: none none solid solid; background:green"|<font color="white">'''Toy #'''
+! style="border-style: none none solid solid; background:green"|<font color="white">'''Col.#'''
+! style="border-style: none none solid solid; background:green"|<font color="white">'''Model Name'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Series'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Series #'''
+! style="border-style: none none solid solid; background:lightblue"|<font color="black">'''Photo'''
+|-
+|DLP31
+|No #
+|[[24 Ours]]
+| bgcolor="lightblue" |<font color="black">Snowflake Edition</font>
+|No #​
+|[[File:2016 24 Ours.jpg|75px]]
+|-
+|DLP32
+|No #
+|[[Flight '03]]
+| bgcolor="lightblue" |<font color="black">Snowflake Edition</font>
+|No #​
+|[[Image:16sfDLP32yellow800.jpg|75px]]
+|-
+|DMY62
+|No #
+|[[Fast 4WD]]
+| bgcolor="green" |<font color="white">Spring Edition</font>
+|No #​
+|[[File:Fast4WDDMY62.jpg|75px]]
+|-
+|DMY63
+|No #
+|[[Anthracite]]
+| bgcolor="green" |<font color="white">Spring Edition</font>
+|No #​
+|[[File:Anthracite Spring Card.JPG|75px]]
+|}
+
+{{Lists}}
+[[Category:Lists of Hot Wheels by year|2016]]
+[[Category:2016 Hot Wheels]]

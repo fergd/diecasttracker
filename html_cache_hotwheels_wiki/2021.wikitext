@@ -1,0 +1,3214 @@
+==2021 Hot Wheels #1-250==
+For 2021, the Hot Wheels mainline is numbered 1 through 250 with color variations not receiving a new number. Treasure Hunts and store exclusives are numbered. For the listing by series see [[List of 2021 Hot Wheels (by Series)]].
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+|-
+! style="border-style: none none solid solid; background: #A3A3A3" |'''Toy #'''
+! style="border-style: none none solid solid; background: #A3A3A3" |'''Col.#'''
+! style="border-style: none none solid solid; background: #A3A3A3" |'''Model Name'''
+! style="border-style: none none solid solid; background: #A3A3A3" |'''Series'''
+! style="border-style: none none solid solid; background: #A3A3A3" |'''Series #'''
+! style="border-style: none none solid solid; background: #A3A3A3" |'''Photo'''
+|-
+|GRX19
+|001
+|[[The Nash]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2021)|<font color="white">HW Dream Garage</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|2/5
+|[[File:GRX90 - The Nash.jpg|75px]]
+|-
+|GRX64
+|002
+|[[Quad Rod (2017)|Quad Rod]]
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|1/10
+|[[File:HW-2021-002-1-GRX64-Quad Rod.png|75px]]
+|-
+|GTC50
+|002
+|[[Quad Rod (2017)|Quad Rod]] (2nd Color)
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|1/10
+|[[File:HW-2021-002-2-GTC50-Quad Rod (2nd Color).png|75px]]
+|-
+|GRX65
+|003
+|[['70 Dodge Power Wagon]]
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|2/10
+|[[File:HW-2021-003-1-GRX65-70 Dodge Power Wagon.png|75px]]
+|-
+|GTB58
+|003
+|[['70 Dodge Power Wagon]] (2nd Color)
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|2/10
+|[[File:HW-2021-003-2-GTB58-70 Dodge Power Wagon (2nd Color).png|75px]]
+|-
+| GTD54
+|003
+|[['70 Dodge Power Wagon]] (3rd Color)
+| bgcolor="red" |[[Red Edition Mini Collection (2021)|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|6/12
+|[[File:HW-2021-003-3-GTD54-70 Dodge Power Wagon (3rd Color).png|75px]]
+|-
+|GRX70
+|004
+|[[Toyota Off-Road Truck]]
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|3/10
+|[[File:HW-2021-004-1-GRX70-Toyota Off-Road Truck.png|75px]]
+|-
+|GTD49
+|004
+|[[Toyota Off-Road Truck]] (2nd Color)
+| bgcolor="red" |[[Red Edition Mini Collection (2021)|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|1/12
+|[[File:HW-2021-004-2-GTD49-Toyota Off-Road Truck (2nd Color).png|75px]]
+|-
+|GTC49
+|004
+|[[Toyota Off-Road Truck]] (3rd Color)
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|3/10
+|[[File:HW-2021-004-3-GTC49-Toyota Off-Road Truck (3rd Color).png|75px]]
+|-
+|GRX72
+|005
+|[[Tanknator]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]
+|1/10
+|[[File:Tanknator 2021 white.png|75px]]
+|-
+|GTC23
+|005
+|[[Tanknator]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]
+|1/10
+|[[File:Tanknator 2021 orange.png|75px]]
+|-
+|GRX73
+|006
+|[[Carbonator]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]
+|2/10
+|[[File:CARBONATOR orange 2021.png|75px]]
+|-
+|GTC18
+|006
+|[[Carbonator]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]
+|2/10
+|[[File:HW-2021-006-2-GTC18-Carbonator (2nd Color).png|75px]]
+|-
+|GTD57
+|006
+|[[Carbonator]] (3rd Color)
+| bgcolor="red" |[[Red_Edition#2021|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|9/12
+|[[File:HW-2021-006-3-GTD57-Carbonator (3rd Color).png|75px]]
+|-
+|GRX79
+|007
+|[[Hot Wheels Ford Transit Connect]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]
+|1/10
+|[[File:HW-2021-007-1-GRX79-Hot Wheels Ford Transit Connect.png|75px]]
+|-
+| GTC19
+|007
+|[[Hot Wheels Ford Transit Connect]] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]
+|1/10
+|[[File:HW-2021-007-2-GTC19-Hot Wheels Ford Transit Connect (2nd Color).png|75px]]
+|-
+|GRX86
+|008
+|[[Batman: Arkham Knight Batmobile]]
+| bgcolor="black" |[[Batman Mini Collection (2021)|<font color="white">Batman</font>]]
+|1/5
+|[[File:HW-2021-008-1-GRX86-Batman Arkham Knight Batmobile.png|75px]]
+|-
+|GTB54
+|008
+|[[Batman: Arkham Knight Batmobile]] (2nd Color)
+|bgcolor="black" |[[Batman Mini Collection (2021)|<font color="white">Batman</font>]]
+|1/5
+|[[File:HW-2021-008-2-GTB54-Batman Arkham Knight Batmobile (2nd Color).png|75px]]
+|-
+|GRX91
+|009
+|[[Triumph TR6]]
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]
+|1/10
+|[[File:GRX91 - Triumph TR6-1.jpg|75px]]
+|-
+|GTD50
+|009
+|[[Triumph TR6]] (2nd Color)
+| bgcolor="red" |[[Red Edition Mini Collection (2021)|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|2/12
+|[[File:HW-2021-009-2-GTD50-Triumph TR6 (2nd Color).png|75px]]
+|-
+|GTB87
+|009
+|[[Triumph TR6]] (3rd Color)
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]
+|1/10
+|[[File:HW-2021-009-3-GTB87-Triumph TR6 (3rd Color).png|75px]]
+|-
+|GRX90
+|010
+|[['64 Corvette Sting Ray]]
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]
+|2/10
+|[[File:HW-2021-010-1-GRX90-64 Corvette Sting Ray.png|75px]]
+|-
+|GTB88
+|010
+|[['64 Corvette Sting Ray]] (2nd Color)
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]
+|2/10
+|[[File:HW-2021-010-2-GTB88-64 Corvette Sting Ray (2nd Color).png|75px]]
+|-
+|GRX37
+|011
+|[[Hyperfin]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2021)|<font color="white">HW Screen Time</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+| 1/10
+|[[File:HW-2021-011-1-GRX37-Hyperfin.png|75px]]
+|-
+|GRX16
+|012
+|[[X-34 Landspeeder]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2021)|<font color="white">HW Screen Time</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+| 2/10
+|[[File:Landspeeder.jpg|75px]]
+|-
+|GRX41
+|013
+|[[Tooned Twin Mill]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2021)|<font color="black">Tooned</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|1/5
+|[[File:2021NM01_%28Large%29.JPG|75px]]
+|-
+|GTB69
+|013
+|[[Tooned Twin Mill]] (2nd Color)
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2021)|<font color="black">Tooned</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|1/5
+|[[File:HW-2021-013-2-GTB69-Tooned Twin Mill (2nd Color).png|75px]]
+|-
+|GTD28
+|013
+|[[Tooned Twin Mill]] (3rd Color - Zamac)
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2021)|<font color="black">Tooned</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|1/5
+|[[File:Tooned Twin Mill ZAMAC.jpg|75px]]
+|-
+|GRX98
+|014
+|[[Mattel Dream Mobile]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2021)|<font color="black">Tooned</font>]]
+|2/5
+|[[File:MATTEL DREAM MOBILE 2021 TOONED.png|75px]]
+|-
+|GTC20
+|014
+|[[Mattel Dream Mobile]] (2nd Color)
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2021)|<font color="black">Tooned</font>]]
+|2/5
+|[[File:HW-2021-014-2-GTC20-Mattel Dream Mobile (2nd Color).png|75px]]
+|-
+|GRY07
+|015
+|[[Buns of Steel]]
+| bgcolor="yellow" |[[Fast Foodie Mini Collection (2021)|<font color="black">Fast Foodie</font>]]
+|1/5
+|[[File:HW-2021-015-1-GRY07-Buns of Steel.png|75px]]
+|-
+|GTC22
+|015
+|[[Buns of Steel]] (2nd Color)
+| bgcolor="yellow" |[[Fast Foodie Mini Collection (2021)|<font color="black">Fast Foodie</font>]]
+|1/5
+|[[File:GTC22.jpg|left|frameless|118x118px]]
+|-
+|GRY11
+|016
+|[['96 Porsche Carrera]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2021)|<font color="white">HW Dream Garage</font>]]
+|1/5
+|[[File:HW-2021-016-1-GRY11-96 Porsche Carrera.png|75px]]
+|-
+|GTB93
+|016
+|[['96 Porsche Carrera]] (2nd Color)
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2021)|<font color="white">HW Dream Garage</font>]]
+|1/5
+|[[File:HW-2021-016-2-GTB93-96 Porsche Carrera (2nd Color).png|75px]]
+|-
+|GRY13
+|017
+|[[HW Warp Speeder]]
+| bgcolor="orange" |[[HW Glow Racers Mini Collection (2021)|<font color="black">HW Glow Racers</font>]]
+|1/5
+|[[File:HW-2021-017-1-GRY13-HW Warp Speeder.png|75px]]
+|-
+|GRY14
+|018
+|[[Hi-Roller]]
+| bgcolor="orange" |[[HW Glow Racers Mini Collection (2021)|<font color="black">HW Glow Racers</font>]]
+|2/5
+|[[File:HW-2021-018-1-GRY14-Hi-Roller.png|75px]]
+|-
+|GRY32
+|019
+|[[Rigor Motor]]
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|1/10
+|[[File:HW-2021-019-1-GRY32-Rigor Motor.png|75px]]
+|-
+|GTB49
+|019
+|[[Rigor Motor]] (2nd Color)
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|1/10
+|[[File:HW-2021-019-2-GTB49-Rigor Motor (2nd Color).png|75px]]
+|-
+|GRY31
+|020
+|[[Road Bandit]]
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|2/10
+|[[File:HW-2021-020-1-GRY31-Road Bandit.png|75px]]
+|-
+|GTC31
+|020
+|[[Road Bandit]] (2nd Color)
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|2/10
+|[[File:HW-2021-020-2-GTC31-Road Bandit (2nd Color).png|75px]]
+|-
+|GRX39
+|021
+|[[Barbie Dream Camper]]
+| bgcolor="#006400" |[[HW Getaways Mini Collection (2021)|<font color="white">HW Getaways</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|1/5
+|[[File:GRX39 - Barbie Dream Camper-1.jpg|75px]]
+|-
+|GRY52
+|022
+|[[RV There Yet]]
+| bgcolor="#006400" |[[HW Getaways Mini Collection (2021)|<font color="white">HW Getaways</font>]]
+|2/5
+|[[File:IMG 20201217 174932.jpg|75px]]
+|-
+|GTC36
+|022
+|[[RV There Yet]] (2nd Color)
+| bgcolor="#006400" |[[HW Getaways Mini Collection (2021)|<font color="white">HW Getaways</font>]]
+|2/5
+|[[File:HW-2021-022-2-GTC36-RV There Yet (2nd Color).png|75px]]
+|-
+|GRY55
+|023
+|[[Nissan 300ZX Twin Turbo]]
+| bgcolor="orange" |[[HW Turbo Mini Collection (2021)|<font color="white">HW Turbo</font>]]
+|1/5
+|[[File:HW-2021-023-1-GRY55-Nissan 300ZX Twin Turbo.png|75px]]
+|-
+|GTD10
+|023
+|[[Nissan 300ZX Twin Turbo]]
+| bgcolor="orange" |[[HW Turbo Mini Collection (2021)|<font color="white">HW Turbo</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00AA00>'''Super Treasure Hunt'''</font>]]
+|1/5
+|[[File:HW-2021-023-2-GTD10-Nissan 300ZX Twin Turbo.png|75px]]
+|-
+|GTD24
+|023
+|[[Nissan 300ZX Twin Turbo]] (2nd Color - Zamac)
+| bgcolor="orange" |[[HW Turbo Mini Collection (2021)|<font color="white">HW Turbo</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive'''</font>]]
+|1/5
+|[[File:HW-2021-023-3-GTD24-Nissan 300ZX Twin Turbo (2nd Color - Zamac).png|75px]]
+|-
+|GRY60
+|024
+|[[T-Rextroyer]]
+| bgcolor="lime" |[[Dino Riders Mini Collection (2021)|<font color="black">Dino Riders</font>]]
+|1/5
+|[[File:HW-2021-024-1-GRY60-T-Rextroyer.png|75px]]
+|-
+|GTC39
+|024
+|[[T-Rextroyer]] (2nd Color)
+| bgcolor="lime" |[[Dino Riders Mini Collection (2021)|<font color="black">Dino Riders</font>]]
+|1/5
+|[[File:HW-2021-024-2-GTC39-T-Rextroyer (2nd Color).png|75px]]
+|-
+|GRX29
+|025
+|[[2020 Jaguar F-Type]]
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+| 1/10
+|[[Image:Jag F-type Blue 21.jpg|75px]]
+|-
+|GTB71
+|025
+|[[2020 Jaguar F-Type]] (2nd Color)
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+| 1/10
+|[[File:EB8EF1B6-9CA1-48ED-9C65-9EF6A28F1193.jpeg|75px]]
+|-
+|GRY61
+|026
+|[[Aero Pod]]
+| bgcolor="lime" |[[Dino Riders Mini Collection (2021)|<font color="black">Dino Riders</font>]]
+|2/5
+|[[File:HW-2021-026-1-GRY61-Aero Pod.png|75px]]
+|-
+|GTC71
+|026
+|[[Aero Pod]] (2nd Color)
+| bgcolor="lime" |[[Dino Riders Mini Collection (2021)|<font color="black">Dino Riders</font>]]
+|2/5
+|[[File:HW-2021-026-2-GTC71-Aero Pod (2nd Color).png|75px]]
+|-
+|GRY68
+|027
+|[['32 Ford]]
+| bgcolor="white" |[[Mattel Games Mini Collection (2021)|<font color="grey">Mattel Games</font>]]
+|1/5
+|[[File:GRY68.jpg|75px]]
+|-
+|GTD51
+|027
+|[['32 Ford]] (2nd Color)
+| bgcolor="red" |[[Red Edition Mini Collection (2021)|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|3/12
+|[[File:HW-2021-027-2-GTD51-32 Ford (2nd Color).png|75px]]
+|-
+|GTB50
+|027
+|[['32 Ford]] (3rd Color)
+| bgcolor="white" |[[Mattel Games Mini Collection (2021)|<font color="grey">Mattel Games</font>]]
+|1/5
+|[[File:HW-2021-027-3-GTB50-32 Ford (3rd Color).png|75px]]
+|-
+|GTC96
+|028
+|[[Baja Bone Shaker]]
+| bgcolor="red" |[[Holiday Racers Mini Collection (2021)|<font color="white">Holiday Racers</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Treasure Hunt'''</font>]]
+|1/5
+|[[File:Baja-Bone-Shaker 2021 Holiday Racers Treasure Hunt.jpg|75px]]
+|-
+|GRY82
+|029
+|[[Retro-Active]]
+| bgcolor="blue" |[[Track Stars Mini Collection (2021)|<font color="black">Track Stars</font>]]
+|1/5
+|[[File:HW-2021-029-1-GRY82-Retro-Active.png|75px]]
+|-
+|GTC43
+|029
+|[[Retro-Active]] (2nd Color)
+| bgcolor="blue" |[[Track Stars Mini Collection (2021)|<font color="black">Track Stars</font>]]
+|1/5
+|[[File:RETRO-ACTIVE 2021.png|75px]]
+|-
+|GRY98
+|030
+|[[Poison Arrow]]
+| bgcolor="red" |[[HW Daredevils Mini Collection (2021)|<font color="black">HW Daredevils</font>]]
+|1/5
+|[[File:HW-2021-030-1-GRY98-Poison Arrow.png|75px]]
+|-
+|GTB26
+|031
+|[[Toyota AE86 Sprinter Trueno]]
+| bgcolor="deepred" |[[HW Drift Mini Collection (2021)|<font color="white">HW Drift</font>]]<br><font color="white">'''New in Mainline'''</font>
+| 1/5
+|[[File:HW-2021-031-1-GTB26-Toyota AE86 Sprinter Trueno.png|75px]]
+|-
+|GTD14
+|031
+|[[Toyota AE86 Sprinter Trueno]] (2nd Color - Zamac)
+| bgcolor="deepred" |[[HW Drift Mini Collection (2021)|<font color="white">HW Drift</font>]]<br><font color="white">'''New in Mainline'''</font><br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive'''</font>]]
+|1/5
+|[[File:HW-2021-031-2-GTD14-Toyota AE86 Sprinter Trueno (2nd Color - Zamac).png|75px]]
+|-
+|GTC14
+|031
+|[[Toyota AE86 Sprinter Trueno]] (3rd Color)
+| bgcolor="deepred" |[[HW Drift Mini Collection (2021)|<font color="white">HW Drift</font>]]<br><font color="white">'''New in Mainline'''</font>
+| 1/5
+|[[File:HW-2021-031-3-GTC14-Toyota AE86 Sprinter Trueno (3rd Color).png|75px]]
+|-
+|GRX66
+|032
+|[[Land Rover Defender 90]]
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|4/10
+|[[File:HW-2021-032-1-GRX66-Land Rover Defender 90.png|75px]]
+|-
+|GTC26
+|032
+|[[Land Rover Defender 90]] (2nd Color)
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|4/10
+|[[File:HW-2021-032-2-GTC26-Land Rover Defender 90 (2nd Color).png|75px]]
+|-
+|GTD26
+|032
+|[[Land Rover Defender 90]] (3rd Color - Zamac)
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive'''</font>]]
+|4/10
+|[[File:HW-2021-032-3-GTD26-Land Rover Defender 90 (3rd Color - Zamac).png|75px]]
+|-
+|GRX67
+|033
+|[['70 Volkswagen Baja Bug]]
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|5/10
+|[[File:HW-2021-033-1-GRX67-70 Volkswagen Baja Bug.png|75px]]
+|-
+|GTD35
+|033
+|[['70 Volkswagen Baja Bug]] (2nd Color)
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]<br><font color="white">'''Dollar General Exclusive'''</font>
+|5/10
+|[[File:HW-2021-033-2-GTD35-70 Volkswagen Baja Bug (2nd Color).png|75px]]
+|-
+|GTC17
+|033
+|[['70 Volkswagen Baja Bug]] (3rd Color)
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|5/10
+|[[File:HW-2021-033-3-GTC17-70 Volkswagen Baja Bug (3rd Color).png|75px]]
+|-
+|GRX74
+|034
+|[[The Haulinator]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]
+|3/10
+|[[File:THE HAULINATOR black 2021.png|75px]]
+|-
+|GRX75
+|035
+|[[HW Formula Solar]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]
+|4/10
+|[[File:HW FORMULA SOLAR yellow 2021.png|75px]]
+|-
+|GTC27
+|035
+|[[HW Formula Solar]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]
+|4/10
+|[[File:HW-2021-035-2-GTC27-HW Formula Solar (2nd Color).png|75px]]
+|-
+|GRX80
+|036
+|[[Heavy Hitcher]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]
+|2/10
+|[[File:HEAVY HITCHER 2021 HW METRO.png|75px]]
+|-
+|GTC28
+|036
+|[[Heavy Hitcher]] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]
+|2/10
+|[[File:HEAVY HITCHER 2021 HW METRO blue.png|75px]]
+|-
+|GRX92
+|037
+|[[Corvette Grand Sport Roadster]]
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]
+|3/10
+|[[File:HW-2021-037-1-GRX92-Corvette Grand Sport Roadster.png|75px]]
+|-
+|GTC99
+|037
+|[[Corvette Grand Sport Roadster]]
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Super Treasure Hunt'''</font>]]
+| 3/10
+|[[File:HW-2021-037-2-GTC99-Corvette Grand Sport Roadster.png|75px]]
+|-
+|GTD15
+|037
+|[[Corvette Grand Sport Roadster]] (2nd Color - Zamac)
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]<br>[[Walmart Exclusive Zamac Editions|'''<font color="black">Walmart Exclusive'''</font>]]
+|3/10
+|[[File:HW-2021-037-3-GTD15-Corvette Grand Sport Roadster (2nd Color - Zamac).png|75px]]
+|-
+|GRX94
+|038
+|[[Kool Kombi]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2021)|<font color="white">HW Screen Time</font>]]
+|3/10
+|[[Image:2021 Hot Wheels Kool Kombi (2).jpg|75px]]
+|-
+|GTD52
+|038
+|[[Kool Kombi]] (2nd Color)
+| bgcolor="red" |[[Red Edition Mini Collection (2021)|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|4/12
+|[[File:2021 Red Edition Kool Kombi loose.jpg|75px]]
+|-
+|GRX96
+|039
+|[[Party Wagon]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2021)|<font color="white">HW Screen Time</font>]]
+|4/10
+|[[Image:PVDW_Party_Wagon_2021.jpg|75px]]
+|-
+|GRY01
+|040
+|[[1968 Mustang ('Tooned)|'68 Mustang]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2021)|<font color="black">Tooned</font>]]
+|3/5
+|[[File:HW-2021-040-1-GRY01-68 Mustang.png|75px]]
+|-
+|GTC21
+|040
+|[[1968 Mustang ('Tooned)|'68 Mustang]] (2nd Color)
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2021)|<font color="black">Tooned</font>]]
+|3/5
+|[[File:HW-2021-040-2-GTC21-68 Mustang (2nd Color).png|75px]]
+|-
+|GTC84
+|041
+|[[Street Wiener]]
+| bgcolor="yellow" |[[Fast Foodie Mini Collection (2021)|<font color="black">Fast Foodie</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Treasure Hunt'''</font>]]
+|2/5
+|[[File:Streetweiner hotwheels.png|75px]]
+|-
+|GRY15
+|042
+|[[Cloak and Dagger]]
+| bgcolor="orange" |[[HW Glow Racers Mini Collection (2021)|<font color="black">HW Glow Racers</font>]]
+|3/5
+|[[File:HW CLOAK AND DAGGER Xraycers TRANSLUCENT ROSE.jpg|75px]]
+|-
+| GRY26
+|043
+|[[Volvo 850 Estate]]
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]
+|2/10
+|[[File:850 Estate Red 21.jpg|75px]]
+|-
+|GTC62
+|043
+|[[Volvo 850 Estate]] (2nd Color)
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]
+|2/10
+|[[Image:GTC62-01.JPG|75px]]
+|-
+|GRY33
+|044
+|[['80 El Camino]]
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|3/10
+|[[Image:80ElCamino.2021ArtCars.Red1.jpg|75px]]
+|-
+|GTB96
+|044
+|[['80 El Camino]] (2nd Color)
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|3/10
+|[[File:'80 EL CAMINO HW ART CARS.jpg|75px]]
+|-
+|GTD27
+|044
+|[['80 El Camino]] (3rd Color - Zamac)
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|3/10
+|[[File:HW-2021-044-3-GTD27-80 El Camino (3rd Color - Zamac).png|75px]]
+|-
+|GRY56
+|045
+|[['89 Porsche 944 Turbo]]
+| bgcolor="orange" |[[HW Turbo Mini Collection (2021)|<font color="white">HW Turbo</font>]]
+|2/5
+|[[Image:944.2021HWTurbo.UrbanOutlaw1.jpg|75px]]
+|-
+|GTC38
+|045
+|[['89 Porsche 944 Turbo]] (2nd Color)
+| bgcolor="orange" |[[HW Turbo Mini Collection (2021)|<font color="white">HW Turbo</font>]]
+|2/5
+|[[Image:GTC38-LOOSE.jpg|75px]]
+|-
+|GRY69
+|046
+|[[Zombot]]
+| bgcolor="white" |[[Mattel Games Mini Collection (2021)|<font color="grey">Mattel Games</font>]]
+|3/5
+|[[File:HW-2021-046-1-GRY69-Zombot.png|75px]]
+|-
+|GTB51
+|046
+|[[Zombot]] (2nd Color)
+| bgcolor="white" |[[Mattel Games Mini Collection (2021)|<font color="grey">Mattel Games</font>]]
+|3/5
+|[[File:HW-2021-046-2-GTB51-Zombot (2nd Color).png|75px]]
+|-
+|GRY77
+|047
+|[[Rockin' Santa Sled]]
+| bgcolor="red" |[[Holiday Racers Mini Collection (2021)|<font color="white">Holiday Racers</font>]]
+|2/5
+|[[File:ROCKIN' SANTA SLED 2021 HOLIDAY RACERS.png|75px]]
+|-
+|GRY78
+|048
+|[[Good Humor Truck|Quick Bite]]
+| bgcolor="red" |[[Holiday Racers Mini Collection (2021)|<font color="white">Holiday Racers</font>]]
+|3/5
+|[[File:GRY78_-_Quick_Bite-1.jpg|75px]]
+|-
+|GRY81
+|049
+|[[Fig Rig]]
+| bgcolor="blue" |[[Track Stars Mini Collection (2021)|<font color="black">Track Stars</font>]]
+|2/5
+|[[File:HW FIG RIG Track stars PURPLE.jpg|75px]]
+|-
+|GRX21
+|050
+|[[Dodge Van]]
+| bgcolor="deepred" |[[HW Drift Mini Collection (2021)|<font color="white">HW Drift</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+| 2/5
+|[[File:HW-2021-050-1-GRX21-Dodge Van.png|75px]]
+|-
+|GTB84
+|050
+|[[Dodge Van]] (2nd Color)
+| bgcolor="deepred" |[[HW Drift Mini Collection (2021)|<font color="white">HW Drift</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+| 2/5
+|[[File:HW-2021-050-2-GTB84-Dodge Van (2nd Color).png|75px]]
+|-
+|GRX51
+|051
+|[[Lancia Delta Integrale]]
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+| 6/10
+|[[Image:LanciaDeltaHFIntegrale.jpg|75px]]
+|-
+|GTB59
+|051
+|[[Lancia Delta Integrale]] (2nd Color)
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]<br>[[2021 New Models|<font color="white"">'''New for 2021!'''</font>]]
+| 6/10
+|[[Image:GTB59 Lancia Delta Integrale.jpg|75px]]
+|-
+|GTD45
+|051
+|[[Lancia Delta Integrale]] (3rd Color)
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]<br>'''[[Kroger|<font color="white"">Kroger Exclusive]]'''</font>
+|6/10
+|[[Image:Lancia_Delta_Integrale_GTD45.jpg|75px]]
+|-
+|GRX76
+|052
+|[[Clip Rod]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]
+|5/10
+|[[File:HW-2021-052-1-GRX76-Clip Rod.png|75px]]
+|-
+|GTC24
+|052
+|[[Clip Rod]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]
+|5/10
+|[[File:HW-2021-052-2-GTC24-Clip Rod (2nd Color).png|75px]]
+|-
+|GRX77
+|053
+|[[Loopster]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]
+|6/10
+|[[File:HW-2021-053-1-GRX77-Loopster.png|75px]]
+|-
+|GTC80
+|053
+|[[Loopster]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]
+|6/10
+|[[File:HW-2021-053-2-GTC80-Loopster (2nd Color).png|75px]]
+|-
+|GRX81
+|054
+|[[Speed Dozer]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]
+|3/10
+|[[File:HW-2021-054-1-GRX81-Speed Dozer.png|75px]]
+|-
+|GRX82
+|055
+|[[Surfin' School Bus]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]
+|4/10
+|[[File:HW-2021-055-1-GRX82-Surfin School Bus.png|75px]]
+|-
+|GTC61
+|055
+|[[Surfin' School Bus]] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]
+|4/10
+|[[File:HW-2021-055-2-GTC61-Surfin School Bus (2nd Color).png|75px]]
+|-
+|GRX87
+|056
+|[[Batmobile (The Batman)|The Batman Batmobile]]
+| bgcolor="black" |[[Batman Mini Collection (2021)|<font color="white">Batman</font>]]
+|2/5
+|[[File:HW-2021-056-1-GRX87-The Batman Batmobile.png|75px]]
+|-
+|GTB55
+|056
+|[[Batmobile (The Batman)|The Batman Batmobile]] (2nd Color)
+| bgcolor="black" |[[Batman Mini Collection (2021)|<font color="white">Batman</font>]]
+|2/5
+|[[File:HW-2021-056-2-GTB55-The Batman Batmobile (2nd Color).png|75px]]
+|-
+|GTB56
+|056
+|[[Batmobile (The Batman)|The Batman Batmobile]] (3rd Color)
+| bgcolor="black" |[[Batman Mini Collection (2021)|<font color="white">Batman</font>]]
+|2/5
+|[[File:HW-2021-056-3-GTB56-The Batman Batmobile (3rd Color).png|75px]]
+|-
+|GRX89
+|057
+|[[BMW M3 GT2]]
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]
+|4/10
+|[[File:HW-2021-057-1-GRX89-BMW M3 GT2.png|75px]]
+|-
+|GTC82
+|057
+|[[BMW M3 GT2]] (2nd Color)
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]
+|4/10
+|[[File:HW-2021-057-2-GTC82-BMW M3 GT2 (2nd Color).png|75px]]
+|-
+|GTD25
+|057
+|[[BMW M3 GT2]] (3rd Color - Zamac)
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive'''</font>]]
+|4/10
+|[[File:HW-2021-057-3-GTD25-BMW M3 GT2 (3rd Color - Zamac).png|75px]]
+|-
+|GRX60
+|058
+|[[Porsche 935 (2021)|Porsche 935]]
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|5/10
+|[[File:HW-2021-058-1-GRX60-Porsche 935.png|75px]]
+|-
+|GTB65
+|058
+|[[Porsche 935 (2021)|Porsche 935]] (2nd Color)
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|5/10
+|[[File:935GTB65.jpg|75px]]
+|-
+|GTD31
+|058
+|[[Porsche 935 (2021)|Porsche 935]] (3rd Color - Zamac)
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive'''</font>]]
+|5/10
+|[[File:HW-2021-058-3-GTB65-Porsche 935 (3rd Color - Zamac).png|75px]]
+|-
+|GRX99
+|059
+|[[Pixel Shaker]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2021)|<font color="black">Tooned</font>]]
+|4/5
+|[[File:HW-2021-059-1-GRX99-Pixel Shaker.png|75px]]
+|-
+|GTB89
+|059
+|[[Pixel Shaker]] (2nd Color)
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2021)|<font color="black">Tooned</font>]]
+|4/5
+|[[File:HW-2021-059-2-GTB89-Pixel Shaker (2nd Color).png|75px]]
+|-
+|GRY08
+|060
+|[[Donut Drifter]]
+| bgcolor="yellow" |[[Fast Foodie Mini Collection (2021)|<font color="black">Fast Foodie</font>]]
+|3/5
+|[[File:HW-2021-060-1-GRY08-Donut Drifter.png|75px]]
+|-
+|GTB92
+|060
+|[[Donut Drifter]] (2nd Color)
+| bgcolor="yellow" |[[Fast Foodie Mini Collection (2021)|<font color="black">Fast Foodie</font>]]
+|3/5
+|[[File:HW-2021-060-2-GTB92-Donut Drifter (2nd Color).png|75px]]
+|-
+|GTD60
+|060
+|[[Donut Drifter]] (3rd Color)
+| bgcolor="red" |[[Red Edition Mini Collection (2021)|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|12/12
+|[[File:HW-2021-060-3-GTD60-Donut Drifter (3rd Color).png|75px]]
+|-
+|GRY10
+|061
+|[[Twin Mill]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2021)|<font color="white">HW Dream Garage</font>]]
+|3/5
+|[[File:HW-2021-061-1-GRY10-Twin Mill.png|75px]]
+|-
+|GRY16
+|062
+|[[Lindster Prototype]]
+| bgcolor="orange" |[[HW Glow Racers Mini Collection (2021)|<font color="black">HW Glow Racers</font>]]
+|4/5
+|[[File:Lindster Prototype 2021 HW GLOW WHEELS.png|75px]]
+|-
+|GRY27
+|063
+|[[Honda Civic Si (2001)|Honda Civic Si]]
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]
+|3/10
+|[[Image:GRY27-01.JPG|75px]]
+|-
+|GTC63
+|063
+|[[Honda Civic Si (2001)|Honda Civic Si]] (2nd Color)
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]
+|3/10
+|[[Image:HW HONDA CIVIC SI Multipack exclusive BLACK.jpg|75px]]
+|-
+|GRY29
+|064
+|[['17 Lamborghini Urus]]
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]
+|4/10
+|[[File:HW-2021-064-1-GRY29-17 Lamborghini Urus.png|75px]]
+|-
+|GTB95
+|064
+|[['17 Lamborghini Urus]] (2nd Color)
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]
+|4/10
+|[[File:HW-2021-064-2-GTB95-17 Lamborghini Urus (2nd Color).png|75px]]
+|-
+|GTC88
+|065
+|[[Custom '77 Dodge Van]]
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Treasure Hunt'''</font>]]
+|4/10
+|[[File:Custom '77 Dodge Van 2021 HW arts.jpg|75px]]
+|-
+|GRY38
+|066
+|[[Surf 'N Turf]]
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|5/10
+|[[File:HW-2021-066-1-GRY38-Surf N Turf.png|75px]]
+|-
+|GTD16
+|066
+|[[Surf 'N Turf]] (2nd Color - Zamac)
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|5/10
+|[[File:HW-2021-066-2-GTD16-Surf N Turf (2nd Color - Zamac).png|75px]]
+|-
+| GTC56
+|066
+|[[Surf 'N Turf]] (3rd Color)
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|5/10
+|[[File:HW-2021-066-3-GTC56-Surf N Turf (3rd Color).png|75px]]
+|-
+|GRY40
+|067
+|[[2016 Ford GT Race]]
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]
+|1/10
+|[[Image:GRY40-01.JPG|75px]]
+|-
+|GTB52
+|067
+|[[2016 Ford GT Race]] (2nd Color)
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]
+|1/10
+|[[Image:GTB52 2016 Ford GT Race.jpg|75px]]
+|-
+| GRY42
+|068
+|[[Subaru WRX STI]]
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]
+|2/10
+|[[File:HW-2021-068-1-GRY42-Subaru WRX STI.png|75px]]
+|-
+|GTD18
+|068
+|[[Subaru WRX STI]] (2nd Color - Zamac)
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|2/10
+|[[File:HW-2021-068-2-GTD18-Subaru WRX STI (2nd Color - Zamac).png|75px]]
+|-
+|GTB98
+|068
+|[[Subaru WRX STI]] (3rd Color)
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]
+|2/10
+|[[File:HW-2021-068-3-GTB98-Subaru WRX STI (3rd Color).png|75px]]
+|-
+|GRY51
+|069
+|[[Hotweiler]]
+| bgcolor="lightblue" |[[Street Beasts Mini Collection (2021)|<font color="black">Street Beasts</font>]]
+|1/5
+|[[File:HW-2021-069-1-GRY51-Hotweiler.png|75px]]
+|-
+|GTB99
+|069
+|[[Hotweiler]] (2nd Color)
+| bgcolor="lightblue" |[[Street Beasts Mini Collection (2021)|<font color="black">Street Beasts</font>]]
+|1/5
+|[[File:HW-2021-069-2-GTB99-Hotweiler (2nd Color).png|75px]]
+|-
+|GRY53
+|070
+|[[Deora III]]
+| bgcolor="#006400" |[[HW Getaways Mini Collection (2021)|<font color="white">HW Getaways</font>]]
+|3/5
+|[[File:HW-2021-070-1-GRY53-Deora III.png|75px]]
+|-
+|GTC37
+|070
+|[[Deora III]] (2nd Color)
+| bgcolor="#006400" |[[HW Getaways Mini Collection (2021)|<font color="white">HW Getaways</font>]]
+|3/5
+|[[File:HW-2021-070-2-GTC37-Deora III (2nd Color).png|75px]]
+|-
+|GRY62
+|071
+|[[Tricera-Truck]]
+| bgcolor="lime" |[[Dino Riders Mini Collection (2021)|<font color="black">Dino Riders</font>]]
+|3/5
+|[[File:HW-2021-071-1-GRY62-Tricera-Truck.png|75px]]
+|-
+|GTC40
+|071
+|[[Tricera-Truck]] (2nd Color)
+| bgcolor="lime" |[[Dino Riders Mini Collection (2021)|<font color="black">Dino Riders</font>]]
+|3/5
+|[[File:HW-2021-071-2-GTC40-Tricera-Truck (2nd Color).png|75px]]
+|-
+|GRY64
+|072
+|[[Ion Motors Thresher]]
+| bgcolor="black" |[[Rod Squad Mini Collection (2021)|<font color="white">Rod Squad</font>]]
+|1/5
+|[[File:HW-2021-072-1-GRY64-Ion Motors Thresher.png|75px]]
+|-
+|GRY70
+|073
+|[[Rodger Dodger]]
+| bgcolor="white" |[[Mattel Games Mini Collection (2021)|<font color="grey">Mattel Games</font>]]
+|2/5
+|[[File:HW-2021-073-1-GRY70-Rodger Dodger.png|75px]]
+|-
+|GTD11
+|073
+|[[Rodger Dodger]]
+| bgcolor="white" |[[Mattel Games Mini Collection (2021)|<font color="grey">Mattel Games</font>]]<br><font color="grey">[[2021 Treasure Hunts Series|<font color="#00cc00>'''Super Treasure Hunt'''</font>]]</font>
+|2/5
+|[[File:HW-2021-073-2-GTD11-Rodger Dodger.png|75px]]
+|-
+|GRX45
+|074
+|[[Lethal Diesel]]
+| bgcolor="blue" |[[Track Stars Mini Collection (2021)|<font color="black">Track Stars</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|3/5
+|[[File:HW LethalDiesel-front.jpg|75px]]
+|-
+|GTB80
+|074
+|[[Lethal Diesel]] (2nd Color)
+| bgcolor="blue" |[[Track Stars Mini Collection (2021)|<font color="black">Track Stars</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|3/5
+|[[File:LethalDiesel.jpg|75px]]
+|-
+|GRX44
+|075
+|[[Head Gasket]]
+| bgcolor="red" |[[HW Daredevils Mini Collection (2021)|<font color="black">HW Daredevils</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|2/5
+|[[File:HW-2021-075-1-GRX44-Head Gasket.png|75px]]
+|-
+|GTB81
+|075
+|[[Head Gasket]] (2nd Color)
+| bgcolor="red" |[[HW Daredevils Mini Collection (2021)|<font color="black">HW Daredevils</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|2/5
+|[[File:HeadGasket.jpg|75px]]
+|-
+|GRY99
+|076
+|[[Blade Raider]]
+| bgcolor="red" |[[HW Daredevils Mini Collection (2021)|<font color="black">HW Daredevils</font>]]
+|3/5
+|[[File:HW-2021-076-1-GRY99-Blade Raider.png|75px]]
+|-
+|GTC64
+|076
+|[[Blade Raider]] (2nd Color)
+| bgcolor="red" |[[HW Daredevils Mini Collection (2021)|<font color="black">HW Daredevils</font>]]
+|3/5
+|[[File:HW-2021-076-2-GTC64-Blade Raider (2nd Color).png|75px]]
+|-
+|GTB29
+|077
+|[['69 Chevelle (X-Raycers)|'69 Chevelle]]
+| bgcolor="black" |[[X-Raycers Mini Collection (2021)|<font color="white">X-Raycers</font>]]
+|1/5
+|[[File:HW-2021-077-1-GTB29-69 Chevelle.png|75px]]
+|-
+|GTC46
+|077
+|[['69 Chevelle (X-Raycers)|'69 Chevelle]] (2nd Color)
+| bgcolor="black" |[[X-Raycers Mini Collection (2021)|<font color="white">X-Raycers</font>]]
+|1/5
+|[[File:HW-2021-077-2-GTC46-69 Chevelle (2nd Color).png|75px]]
+|-
+|GTB33
+|078
+|[[Ford GT-40]]
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|1/10
+|[[Image:GTB33-01.JPG|75px]]
+|-
+|GTD17
+|078
+|[[Ford GT-40]] (2nd Color - Zamac)
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|1/10
+|[[File:FORD GT-40 ZAMAC Then and Now Mini Collection (2021).png|75px]]
+|-
+|GTC66
+|078
+|[[Ford GT-40]] (3rd Color)
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|1/10
+|[[File:GTC66-01.JPG|75px]]
+|-
+|GTB34
+|079
+|[['17 Nissan GT-R (R35)]]
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|2/10
+|[[File:HW-2021-079-1-GTB34-17 Nissan GT-R (R35).png|75px]]
+|-
+|GTD41
+|079
+|[['17 Nissan GT-R (R35)]] (2nd Color)
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]<br>'''[[Kroger|<font color="black">Kroger Exclusive]]'''</font>
+|2/10
+|[[File:HW-2021-079-2-GTD41-17 Nissan GT-R (R35) (2nd Color).png|75px]]
+|-
+|GTC70
+|079
+|[['17 Nissan GT-R (R35)]] (3rd Color)
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|2/10
+|[[File:HW-2021-079-3-GTC70-17 Nissan GT-R (R35) (3rd Color).png|75px]]
+|-
+|GRX69
+|080
+|[['19 Chevy Silverado Trail Boss LT]]
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|7/10
+|[[File:HW-2021-080-1-GRX69-19 Chevy Silverado Trail Boss LT.png|75px]]
+|-
+|GTD20
+|080
+|[['19 Chevy Silverado Trail Boss LT]] (2nd Color - Zamac)
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|7/10
+|[[File:HW-2021-080-2-GTD20-19 Chevy Silverado Trail Boss LT (2nd Color - Zamac).png|75px]]
+|-
+|GTD56
+|080
+|[['19 Chevy Silverado Trail Boss LT]] (3rd Color)
+| bgcolor="red" |[[Red Edition Mini Collection (2021)|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|8/12
+|[[File:HW-2021-080-3-GTD56-19 Chevy Silverado Trail Boss LT (3rd Color).png|75px]]
+|-
+|GRX42
+|081
+|[[See Me Rollin']]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|7/10
+|[[File:HW-2021-081-1-GRX42-See Me Rollin.png|75px]]
+|-
+|GTB61
+|081
+|[[See Me Rollin']] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|7/10
+|[[File:HW-2021-081-2-GTB61-See Me Rollin (2nd Color).png|75px]]
+|-
+|GRX78
+|082
+|[[Speed Driver]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]
+|8/10
+|[[File:HW-2021-082-1-GRX78-Speed Driver.png|75px]]
+|-
+|GTC25
+|082
+|[[Speed Driver]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]
+|8/10
+|[[File:HW-2021-082-2-GTC25-Speed Driver (2nd Color).png|75px]]
+|-
+|GRX83
+|083
+|[[Fast-Bed Hauler]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]
+|5/10
+|[[File:HW-2021-083-1-GRX83-Fast-Bed Hauler.png|75px]]
+|-
+|GRY00
+|084
+|[[Manga Tuner]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2021)|<font color="black">Tooned</font>]]
+|5/5
+|[[File:HW-2021-084-1-GRY00-Manga Tuner.png|75px]]
+|-
+|GTC81
+|084
+|[[Manga Tuner]] (2nd Color)
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2021)|<font color="black">Tooned</font>]]
+|5/5
+|[[File:HW-2021-084-2-GTC81-Manga Tuner (2nd Color).png|75px]]
+|-
+|GRY05
+|085
+|[[Jaguar XE SV Project 8]]
+| bgcolor="purple" |[[HW Torque Mini Collection (2021)|<font color="black">HW Torque</font>]]
+| 1/5
+|[[File:HW-2021-085-1-GRY05-Jaguar XE SV Project 8.png|75px]]
+|-
+|GTB90
+|085
+|[[Jaguar XE SV Project 8]] (2nd Color)
+| bgcolor="purple" |[[HW Torque Mini Collection (2021)|<font color="black">HW Torque</font>]]
+| 1/5
+|[[File:HW-2021-085-2-GTB90-Jaguar XE SV Project 8 (2nd Color).png|75px]]
+|-
+|GRY04
+|086
+|[[2020 Koenigsegg Jesko]]
+| bgcolor="purple" |[[HW Torque Mini Collection (2021)|<font color="black">HW Torque</font>]]
+| 2/5
+|[[File:HW-2021-086-1-GRY04-2020 Koenigsegg Jesko.png|75px]]
+|-
+|GTC51
+|086
+|[[2020 Koenigsegg Jesko]] (2nd Color)
+| bgcolor="purple" |[[HW Torque Mini Collection (2021)|<font color="black">HW Torque</font>]]
+| 2/5
+|[[File:HW-2021-086-2-GTC51-2020 Koenigsegg Jesko (2nd Color).png|75px]]
+|-
+|GTD59
+|086
+|[[2020 Koenigsegg Jesko]] (3rd Color)
+| bgcolor="red" |[[Red Edition Mini Collection (2021)|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|11/12
+|[[File:HW-2021-086-3-GTD59-2020 Koenigsegg Jesko (3rd Color).png|75px]]
+|-
+|GRX32
+|087
+|[['06 Pontiac GTO]]
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]<br><font color="black">[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|5/10
+|[[File:HW-2021-087-1-GRX32-06 Pontiac GTO.png|75px]]
+|-
+|GTB72
+|087
+|[['06 Pontiac GTO]] (2nd Color)
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]<br><font color="black">[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|5/10
+|[[File:HW-2021-087-2-GTB72-06 Pontiac GTO (2nd Color).png|75px]]
+|-
+|GRY28
+|088
+|[['95 Mazda RX-7]]
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]
+|6/10
+|[[File:HW-2021-088-1-GRY28-95 Mazda RX-7.png|75px]]
+|-
+|GTD12
+|088
+|[['95 Mazda RX-7]]
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Super Treasure Hunt'''</font>]]
+| 6/10
+|[[File:HW-2021-088-2-GTD12-95 Mazda RX-7.png|75px]]
+|-
+|GRY36
+|089
+|[[Audacious]]
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|6/10
+|[[File:AUDACIOUS 2021 HW ART CARS.png|75px]]
+|-
+|GRY46
+|090
+|[[1985 Honda CR-X]]
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]
+|3/10
+|[[File:HW-2021-090-1-GRY46-1985 Honda CR-X.png|75px]]
+|-
+|GTD21
+|090
+|[[1985 Honda CR-X]] (2nd Color - Zamac)
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|3/10
+|[[File:HW-2021-090-2-GTD21-1985 Honda CR-X (2nd Color - Zamac).png|75px]]
+|-
+|GTC57
+|090
+|[[1985 Honda CR-X]] (3rd Color)
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]
+|3/10
+|[[File:HW-2021-090-3-GTC57-1985 Honda CR-X (3rd Color).png|75px]]
+|-
+|GRY48
+|091
+|[[Steer Clear]]
+| bgcolor="lightblue" |[[Street Beasts Mini Collection (2021)|<font color="black">Street Beasts</font>]]<br>[[Chinese New Year|<font color="black">'''Year of the Ox'''</font>]]
+|2/5
+|[[File:HW-2021-091-1-GRY48-Steer Clear.png|75px]]
+|-
+|GRY57
+|092
+|[['91 GMC Syclone]]
+| bgcolor="orange" |[[HW Turbo Mini Collection (2021)|<font color="white">HW Turbo</font>]]
+|3/5
+|[[File:91 GMC SYCLONE blue.png|75px]]
+|-
+|GTD19
+|092
+|[['91 GMC Syclone]] (2nd Color - Zamac)
+| bgcolor="orange" |[[HW Turbo Mini Collection (2021)|<font color="white">HW Turbo</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive'''</font>]]
+|3/5
+|[[File:91 GMC SYCLONE ZAMAC.png|75px]]
+|-
+|GTD47
+|092
+|[['91 GMC Syclone]] (3rd Color)
+| bgcolor="orange" |[[HW Turbo Mini Collection (2021)|<font color="white">HW Turbo</font>]]<br>'''[[Kroger|<font color="white">Kroger Exclusive]]'''</font>
+|3/5
+|[[File:HW-2021-092-3-GTD47-91 GMC Syclone (3rd Color).png|75px]]
+|-
+|GTC90
+|093
+|[[Motosaurus]]
+| bgcolor="lime" |[[Dino Riders Mini Collection (2021)|<font color="black">Dino Riders</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Treasure Hunt'''</font>]]
+|4/5
+|[[File:HW-2021-093-1-GTC90-Motosaurus.png|75px]]
+|-
+|GRY65
+|094
+|[[2 Jet Z]]
+| bgcolor="black" |[[Rod Squad Mini Collection (2021)|<font color="white">Rod Squad</font>]]
+|2/5
+|[[File:HW-2021-094-1-GRY65-2 Jet Z.png|75px]]
+|-
+|GTC41
+|094
+|[[2 Jet Z]] (2nd Color)
+| bgcolor="black" |[[Rod Squad Mini Collection (2021)|<font color="white">Rod Squad</font>]]
+|2/5
+|[[File:HW-2021-094-1-GTC41-2 Jet Z (2nd Color).png|75px]]
+|-
+|GRY73
+|095
+|[[Mars Rover Curiosity|Mars Perseverance Rover]]
+| bgcolor="#343434" |[[HW Space Mini Collection (2021)|<font color="white">HW Space</font>]]
+|1/5
+|[[File:HW-2021-095-1-GRY73-Mars Perseverance Rover.png|75px]]
+|-
+|GRY79
+|096
+|[[VW Bug|Volkswagen Beetle]]
+| bgcolor="red" |[[Holiday Racers Mini Collection (2021)|<font color="white">Holiday Racers</font>]]
+|4/5
+|[[File:HW-2021-096-1-GRY79-Volkswagen Beetle.png|75px]]
+|-
+|GTD22
+|096
+|[[VW Bug|Volkswagen Beetle]] (2nd Color - Zamac)
+| bgcolor="red" |[[Holiday Racers Mini Collection (2021)|<font color="white">Holiday Racers</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive'''</font>]]
+|4/5
+|[[File:HW-2021-096-2-GTD22-Volkswagen Beetle (2nd Color - Zamac).png|75px]]
+|-
+|GTC73
+|096
+|[[VW Bug|Volkswagen Beetle]] (3rd Color)
+| bgcolor="red" |[[Holiday Racers Mini Collection (2021)|<font color="white">Holiday Racers</font>]]
+|4/5
+|[[File:GTC73.jpg|75px]]
+|-
+|GTB00
+|097
+|[[Surf's Up]]
+| bgcolor="red" |[[HW Daredevils Mini Collection (2021)|<font color="black">HW Daredevils</font>]]
+|4/5
+|[[File:HW-2021-097-1-GTB00-Surfs Up.png|75px]]
+|-
+|GTC07
+|097
+|[[Surf's Up]] (2nd Color)
+| bgcolor="red" |[[HW Daredevils Mini Collection (2021)|<font color="black">HW Daredevils</font>]]
+|4/5
+|[[File:HW-2021-097-2-GTC07-Surfs Up (2nd Color).png|75px]]
+|-
+|GTB24
+|098
+|[[Astana Hotto]]
+| bgcolor="deepred" |[[HW Drift Mini Collection (2021)|<font color="white">HW Drift</font>]]
+|3/5
+|[[Image:2021AstanaHottoBlkML.jpg|75px]]
+|-
+|GTB28
+|099
+|[[Loco Motorin']]
+| bgcolor="black" |[[X-Raycers Mini Collection (2021)|<font color="white">X-Raycers</font>]]
+|2/5
+|[[File:HW-2021-099-1-GTB28-Loco Motorin.png|75px]]
+|-
+|GTC48
+|099
+|[[Loco Motorin']] (2nd Color)
+| bgcolor="black" |[[X-Raycers Mini Collection (2021)|<font color="white">X-Raycers</font>]]
+|2/5
+|[[File:HW-2021-099-2-GTC48-Loco Motorin (2nd Color).png|75px]]
+|-
+|GRX28
+|100
+|[['21 Ford Bronco]]
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|3/10
+|[[File:HW-2021-100-1-GRX28-21 Ford Bronco.png|75px]]
+|-
+|GTB86
+|100
+|[['21 Ford Bronco]] (2nd Color)
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|3/10
+|[[File:HW-2021-100-2-GTB86-21 Ford Bronco (2nd Color).png|alt=2021 Ford Bronco (Second Color: Orange)|left|79x79px]]
+|-
+|GRX68
+|101
+|[[2020 Ram 1500 Rebel]]
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|8/10
+|[[File:2020 RAM 1500 REBEL 2021 BAJA BLAZERS.png|75px]]
+|-
+|GTC79
+|101
+|[[2020 Ram 1500 Rebel]] (2nd Color)
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|8/10
+|[[File:HW-2021-101-2-GTC79-2020 Ram 1500 Rebel (2nd Color).png|75px]]
+|-
+|GRX49
+|102
+|[[Raijin Express]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|7/10
+|[[File:HW-2021-102-1-GRX49-Raijin Express.png|75px]]
+|-
+|GTB63
+|102
+|[[Raijin Express]] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|7/10
+|[[File:RaijinExpress2.jpg|75px]]
+|-
+|GTC87
+|103
+|[[Skull Shaker]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Treasure Hunt'''</font>]]
+|9/10
+|[[File:HW-2021-103-1-GTC87-Skull Shaker.png|75px]]
+|-
+|GRX88
+|104
+|[[Batplane]]
+| bgcolor="black" |[[Batman Mini Collection (2021)|<font color="white">Batman</font>]]
+|3/5
+|[[File:HW-2021-104-1-GRX88-Batplane.png|75px]]
+|-
+|GTB57
+|104
+|[[Batplane]] (2nd Color)
+| bgcolor="black" |[[Batman Mini Collection (2021)|<font color="white">Batman</font>]]
+|3/5
+|[[File:HW-2021-104-2-GTB57-Batplane (2nd Color).png|75px]]
+|-
+|GRX31
+|105
+|[[Corvette C8.R]]
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|6/10
+|[[File:HW-2021-105-1-GRX31-Corvette C8.R.png|75px]]
+|-
+|GTD53
+|105
+|[[Corvette C8.R]] (2nd Color)
+| bgcolor="red" |[[Red Edition Mini Collection (2021)|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font><br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|5/12
+|[[File:HW-2021-105-2-GTD53-Corvette C8.R (2nd Color).png|75px]]
+|-
+|GTB66
+|105
+|[[Corvette C8.R]] (3rd Color)
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|6/10
+|[[File:HW-2021-105-3-GTB66-Corvette C8.R (3rd Color).png|75px]]
+|-
+|GRX30
+|106
+|[['67 Ford GT40 Mk.IV]]
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|8/10
+|[[File:HW-2021-106-1-GRX30-67 Ford GT40 Mk.IV.png|75px]]
+|-
+|GTB67
+|106
+|[['67 Ford GT40 Mk.IV]] (2nd Color)
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|8/10
+|[[File:HW-2021-106-2-GTB67-67 Ford GT40 Mk.IV (2nd Color).png|75px]]
+|-
+|GRX97
+|107
+|[[The Mystery Machine]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2021)|<font color="white">HW Screen Time</font>]]
+|5/10
+|[[File:HW-2021-107-1-GRX97-The Mystery Machine.png|75px]]
+|-
+|GRX26
+|108
+|[[Car-de-Asada]]
+| bgcolor="yellow" |[[Fast Foodie Mini Collection (2021)|<font color="black">Fast Foodie</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|4/5
+|[[File:Car-de-Asada.jpg|75px]]
+|-
+|GTB70
+|108
+|[[Car-de-Asada]] (2nd Color)
+| bgcolor="yellow" |[[Fast Foodie Mini Collection (2021)|<font color="black">Fast Foodie</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|4/5
+|[[File:HW-2021-108-2-GTB70-Car-de-Asada (2nd Color).png|75px]]
+|-
+|GRY09
+|109
+|[[Aisle Driver]]
+| bgcolor="yellow" |[[Fast Foodie Mini Collection (2021)|<font color="black">Fast Foodie</font>]]
+|5/5
+|[[File:AISLE DRIVER 2021 FAST FOODIE.png|75px]]
+|-
+|GTC52
+|109
+|[[Aisle Driver]] (2nd Color)
+| bgcolor="yellow" |[[Fast Foodie Mini Collection (2021)|<font color="black">Fast Foodie</font>]]
+|5/5
+|[[File:HW-2021-109-2-GTC52-Aisle Driver (2nd Color).png|74x74px]]
+|-
+|GRY12
+|110
+|[['67 Camaro]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2021)|<font color="white">HW Dream Garage</font>]]
+|4/5
+|[[File:HW-2021-110-1-GRY12-67 Camaro.png|75px]]
+|-
+|GTD32
+|110
+|[['67 Camaro]] (2nd Color)
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2021)|<font color="white">HW Dream Garage</font>]]<br><font color="white">'''Dollar General Exclusive'''</font>
+|4/5
+|[[File:HW-2021-110-2-GTD32-67 Camaro (2nd Color).png|75px]]
+|-
+|GTC53
+|110
+|[['67 Camaro]] (3rd Color)
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2021)|<font color="white">HW Dream Garage</font>]]
+|4/5
+|[[File:HW-2021-110-3-GTC53-67 Camaro (3rd Color).png|75px]]
+|-
+|GRY17
+|111
+|[[Duck N' Roll]]
+| bgcolor="orange" |[[HW Glow Racers Mini Collection (2021)|<font color="black">HW Glow Racers</font>]]
+|5/5
+|[[File:HW-2021-111-1-GRY17-Duck N Roll.png|75px]]
+|-
+|GRY30
+|112
+|[[McLaren Speedtail]]
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]
+|7/10
+|[[File:HW-2021-112-1-GRY30-McLaren Speedtail.png|75px]]
+|-
+|GTC55
+|112
+|[[McLaren Speedtail]] (2nd Color)
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]
+|7/10
+|[[File:HW-2021-112-2-GTC55-McLaren Speedtail (2nd Color).png|75px]]
+|-
+|GRY34
+|113
+|[[GT Hunter]]
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|7/10
+|[[File:HW-2021-113-1-GRY34-GT Hunter.png|75px]]
+|-
+|GRY41
+|114
+|[[Corvette C7 Z06 Convertible]]
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]
+|4/10
+|[[File:HW-2021-114-1-GRY41-Corvette C7 Z06 Convertible.png|75px]]
+|-
+|GTD07
+|114
+|[[Corvette C7 Z06 Convertible]]
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Super Treasure Hunt'''</font>]]
+| 4/10
+|[[File:K&NC7STH.jpg|75px]]
+|-
+|GRY50
+|115
+|[[Preying Menace]]
+| bgcolor="lightblue" |[[Street Beasts Mini Collection (2021)|<font color="black">Street Beasts</font>]]
+|3/5
+|[[File:PREYING MENACE Street Beasts.png|75px]]
+|-
+|GTC35
+|115
+|[[Preying Menace]] (2nd Color)
+| bgcolor="lightblue" |[[Street Beasts Mini Collection (2021)|<font color="black">Street Beasts</font>]]
+|3/5
+|[[File:HW-2021-115-2-GTC35-Preying Menace (2nd Color).png|75px]]
+|-
+|GRX40
+|116
+|[[Twinnin' 'n Winnin']]
+| bgcolor="#006400" |[[HW Getaways Mini Collection (2021)|<font color="white">HW Getaways</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|4/5
+|[[File:HW-2021-116-1-GRX40-Twinnin n Winnin.png|75px]]
+|-
+|GTB78
+|116
+|[[Twinnin' 'n Winnin']] (2nd Color)
+| bgcolor="#006400" |[[HW Getaways Mini Collection (2021)|<font color="white">HW Getaways</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|4/5
+|[[File:HW-2021-116-2-GTB78-Twinnin n Winnin (2nd Color).png|75px]]
+|-
+|GRY54
+|117
+|[['20 Jeep Gladiator]]
+| bgcolor="#006400" |[[HW Getaways Mini Collection (2021)|<font color="white">HW Getaways</font>]]
+|5/5
+|[[File:HW-2021-117-1-GRY54-20 Jeep Gladiator.png|75px]]
+|-
+|GTD33
+|117
+|[['20 Jeep Gladiator]] (2nd Color)
+| bgcolor="#006400" |[[HW Getaways Mini Collection (2021)|<font color="white">HW Getaways</font>]]<br>'''<font color="white">Dollar General Exclusive'''</font>
+|5/5
+|[[File:HW-2021-117-2-GTD33-20 Jeep Gladiator (2nd Color).png|75px]]
+|-
+|GTC83
+|117
+|[['20 Jeep Gladiator]] (3rd Color)
+| bgcolor="#006400" |[[HW Getaways Mini Collection (2021)|<font color="white">HW Getaways</font>]]
+|5/5
+|[[File:HW-2021-117-3-GTC83-20 Jeep Gladiator (3rd Color).png|75px]]
+|-
+|GRY58
+|118
+|[[2019 Kia Stinger GT]]
+| bgcolor="orange" |[[HW Turbo Mini Collection (2021)|<font color="white">HW Turbo</font>]]
+|4/5
+|[[File:HW-2021-118-1-GRY58-2019 Kia Stinger GT.png|75px]]
+|-
+|GTC00
+|118
+|[[2019 Kia Stinger GT]] (2nd Color)
+| bgcolor="orange" |[[HW Turbo Mini Collection (2021)|<font color="white">HW Turbo</font>]]
+|4/5
+|[[File:HW-2021-118-2-GTC00-2019 Kia Stinger GT (2nd Color).png|75px]]
+|-
+|GRY63
+|119
+|[[Veloci-Racer]]
+| bgcolor="lime" |[[Dino Riders Mini Collection (2021)|<font color="black">Dino Riders</font>]]
+|5/5
+|[[File:VELOCI-RACER 2021 DINO RIDERS.png|75px]]
+|-
+|GRY66
+|120
+|[[Erikenstein Rod]]
+| bgcolor="black" |[[Rod Squad Mini Collection (2021)|<font color="white">Rod Squad</font>]]
+|3/5
+|[[File:HW-2021-120-1-GRY66-Erikenstein Rod.png|75px]]
+|-
+|GTD42
+|120
+|[[Erikenstein Rod]] (2nd Color)
+| bgcolor="black" |[[Rod Squad Mini Collection (2021)|<font color="white">Rod Squad</font>]]<br>'''[[Kroger|<font color="white">Kroger Exclusive]]'''</font>
+|3/5
+|[[File:ERIKENSTEIN ROD 2021 ROD SQUAD.png|75px]]
+|-
+|GTC59
+|120
+|[[Erikenstein Rod]] (3rd Color)
+| bgcolor="black" |[[Rod Squad Mini Collection (2021)|<font color="white">Rod Squad</font>]]
+|3/5
+|[[File:HW-2021-120-3-GTC59-Erikenstein Rod (3rd Color).png|75px]]
+|-
+|GRY71
+|121
+|[['55 Chevy Bel Air Gasser]]
+| bgcolor="white" |[[Mattel Games Mini Collection (2021)|<font color="grey">Mattel Games</font>]]
+|4/5
+|[[File:55 Chevy Bel Air Gasser (V) Mattel Games 4 - 21 IDG.jpg|75px]]
+|-
+|GRY80
+|122
+|[[Hot Tub]]
+| bgcolor="red" |[[Holiday Racers Mini Collection (2021)|<font color="white">Holiday Racers</font>]]
+|5/5
+|[[File:HW-2021-122-1-GRY80-Hot Tub.png|75px]]
+|-
+|GRY83
+|123
+|[[Grand Cross]]
+| bgcolor="blue" |[[Track Stars Mini Collection (2021)|<font color="black">Track Stars</font>]]
+|4/5
+|[[File:HW-2021-123-1-GRY83-Grand Cross.png|75px]]
+|-
+|GTC60
+|123
+|[[Grand Cross]] (2nd Color)
+| bgcolor="blue" |[[Track Stars Mini Collection (2021)|<font color="black">Track Stars</font>]]
+|4/5
+|[[File:HW-2021-123-2-GTC60-Grand Cross (2nd Color).png|75px]]
+|-
+|GTB01
+|124
+|[['98 Subaru Impreza 22B STi-Version]]
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]</font>
+| 1/10
+|[[Image:22b.png|75px]]
+|-
+|GTC74
+|124
+|[['98 Subaru Impreza 22B STi-Version]] (2nd Color)
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]</font>
+| 1/10
+|[[Image:GTC74 '98 Subaru Impreza 22B-STi Version Loose.jpg|75px]]
+|-
+|GTB05
+|125
+|[['98 Honda Prelude]]
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]</font>
+| 2/10
+|[[Image:98_Honda_Prelude_2021.jpg|75px]]
+|-
+|GTD34
+|125
+|[['98 Honda Prelude]] (2nd Color)
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]<br><font color="black">'''Dollar General Exclusive'''</font>
+|2/10
+|[[Image:Dollar gen perlude.jpg|75px]]
+|-
+|GTC08
+|125
+|[['98 Honda Prelude]] (3rd Color)
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]
+|2/10
+|[[File:GTC08.jpg|75px]]
+|-
+|GTB20
+|126
+|[[Formula E Gen 2 Car]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2021)|<font color="white">HW Green Speed</font>]]
+|1/5
+|[[File:FORMULA E GEN 2 CAR.png|75px]]
+|-
+|GTC13
+|126
+|[[Formula E Gen 2 Car]] (2nd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2021)|<font color="white">HW Green Speed</font>]]
+|1/5
+|[[File:HW-2021-126-2-GTC13-Formula E Gen 2 Car (2nd Color).png|75px]]
+|-
+|GTB25
+|127
+|[[Custom '18 Ford Mustang GT]]
+| bgcolor="deepred" |[[HW Drift Mini Collection (2021)|<font color="white">HW Drift</font>]]
+|4/5
+|[[Image:GTB25-01.JPG|75px]]
+|-
+|GTC45
+|127
+|[[Custom '18 Ford Mustang GT]] (2nd Color)
+| bgcolor="deepred" |[[HW Drift Mini Collection (2021)|<font color="white">HW Drift</font>]]
+|4/5
+|[[Image:GTC45-01.JPG|75px]]
+|-
+|GTD46
+|127
+|[[Custom '18 Ford Mustang GT]] (3rd Color)
+| bgcolor="deepred" |[[HW Drift Mini Collection (2021)|<font color="white">HW Drift</font>]]<br>'''[[Kroger|<font color="white">Kroger Exclusive]]'''</font>
+|4/5
+|[[File:HW-2021-127-3-GTD46-Custom 18 Ford Mustang GT (3rd Color).png|75px]]
+|-
+|GTB30
+|128
+|[[Forward Force]]
+| bgcolor="black" |[[X-Raycers Mini Collection (2021)|<font color="white">X-Raycers</font>]]
+|3/5
+|[[File:Forwardforcexraycers.jpg|75px]]
+|-
+|GTC47
+|128
+|[[Forward Force]] (2nd Color)
+| bgcolor="black" |[[X-Raycers Mini Collection (2021)|<font color="white">X-Raycers</font>]]
+|3/5
+|[[Image:GTC47 Forward Force Loose.jpg|75px]]
+|-
+|GTB35
+|129
+|[['15 Mazda MX-5 Miata]]
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|4/10
+|[[Image:Mx5.jpeg|75px]]
+|-
+|GTC67
+|129
+|[['15 Mazda MX-5 Miata]] (2nd Color)
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|4/10
+|[[File:HW-2021-129-2-GTC67-15 Mazda MX-5 Miata (2nd Color).png|75px]]
+|-
+|GRX71
+|130
+|[[Big-Air Bel-Air]]
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|10/10
+|[[File:HW-2021-130-1-GRX71-Big-Air Bel-Air.png|75px]]
+|-
+|GTD43
+|130
+|[[Big-Air Bel-Air]] (2nd Color)
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]<br>'''[[Kroger|<font color="white">Kroger Exclusive]]'''</font>
+|10/10
+|[[File:HW-2021-130-2-GTD43-Big-Air Bel-Air (2nd Color).png|75px]]
+|-
+|GTC65
+|130
+|[[Big-Air Bel-Air]] (3rd Color)
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]
+|10/10
+|[[File:HW-2021-130-3-GTC65-Big-Air Bel-Air (3rd Color).png|75px]]
+|-
+|GRX43
+|131
+|[[Custom Small Block]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|10/10
+|[[File:2021NM20 (Large).JPG|75px]]
+|-
+|GTB62
+|131
+|[[Custom Small Block]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2021)|<font color="black">Experimotors</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|10/10
+|[[File:CustomSmallBlock.jpg|75px]]
+|-
+|GRX84
+|132
+|[[Mad Propz]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]
+|6/10
+|[[File:132 - MAD PROPZ - 2021.jpg|75px]]
+|-
+|GRX93
+|133
+|[[2018 Bentley Continental GT3]]
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]
+|7/10
+|[[Image:21 bently.jpg|75px]]
+|-
+|GTC29
+|133
+|[[2018 Bentley Continental GT3]] (2nd Color)
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]
+|7/10
+|[[Image:GTC29 2018 Bentley Continental GT3 Loose.jpg|75px]]
+|-
+|GRY03
+|134
+|[['19 Corvette ZR1 Convertible]]
+| bgcolor="purple" |[[HW Torque Mini Collection (2021)|<font color="black">HW Torque</font>]]
+| 3/5
+|[[File:GRY03-01.JPG|75px]]
+|-
+|GTD55
+|134
+|[['19 Corvette ZR1 Convertible]] (2nd Color)
+| bgcolor="red" |[[Red Edition Mini Collection (2021)|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|7/12
+|[[File:HW-2021-134-2-GTD55-19 Corvette ZR1 Convertible (2nd Color).png|75px]]
+|-
+|GRX46
+|135
+|[[Cosmic Coupe]]
+| bgcolor="blue" |[[Track Stars Mini Collection (2021)|<font color="black">Track Stars</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|5/5
+|[[File:2021NM21 (Large).JPG|75px]]
+|-
+|GTC44
+|135
+|[[Cosmic Coupe]] (2nd Color)
+| bgcolor="blue" |[[Track Stars Mini Collection (2021)|<font color="black">Track Stars</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|5/5
+|[[File:CosmicCoupe.jpg|75px]]
+|-
+|GTC92
+|136
+|[[Tred Shredder]]
+| bgcolor="red" |[[HW Daredevils Mini Collection (2021)|<font color="black">HW Daredevils</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Treasure Hunt'''</font>]]
+|5/5
+|[[File:HW-2021-136-1-GTC92-Tred Shredder.png|75px]]
+|-
+|GTB27
+|137
+|[[Mazda RX-3]]
+| bgcolor="deepred" |[[HW Drift Mini Collection (2021)|<font color="white">HW Drift</font>]]
+|5/5
+|[[Image:GTB27-01.JPG|75px]]
+|-
+|GTD00
+|137
+|[[Mazda RX-3]]
+| bgcolor="deepred" |[[HW Drift Mini Collection (2021)|<font color="white">HW Drift</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Super Treasure Hunt'''</font>]]
+| 5/5
+|[[File:MMRX-3STH.jpg|75px]]
+|-
+|GRX35
+|138
+|[[Nissan R390 GT1]]
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+| 9/10
+|[[File:HW-2021-138-1-GRX35-Nissan R390 GT1.png|75px]]
+|-
+|GTB74
+|138
+|[[Nissan R390 GT1]] (2nd Color)
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+| 9/10
+|[[File:HW-2021-138-2-GTB74-Nissan R390 GT1 (2nd Color).png|75px]]
+|-
+|GRX85
+|139
+|[[Total Disposal]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]
+|8/10
+|[[File:Total Disposal 2021-GHB66 (7).jpg|75px]]
+|-
+|GRX54
+|140
+|[[DAVancenator]]
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|9/10
+|[[File:2021NM22 (Large).JPG|75px]]
+|-
+|GTB68
+|140
+|[[DAVancenator]] (2nd Color)
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|9/10
+|[[File:GTB68 DAVancenator Loose.jpg|75px]]
+|-
+|GRX38
+|141
+|[[Rally Baja Crawler]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2021)|<font color="white">HW Screen Time</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|6/10
+|[[File:2021ML141 (Large).JPG|75px]]
+|-
+|GTC72
+|141
+|[[Rally Baja Crawler]] (2nd Color)
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2021)|<font color="white">HW Screen Time</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|6/10
+|[[File:2021 - 141 - Rally Baja Crawler.jpg|75px]]
+|-
+|GRX95
+|142
+|[[Minecart]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2021)|<font color="white">HW Screen Time</font>]]
+|7/10
+|[[Image:2021 mine cart.JPG|75px]]
+|-
+|GRY02
+|143
+|[[2020 Ford Mustang Shelby GT500]]
+| bgcolor="purple" |[[HW Torque Mini Collection (2021)|<font color="black">HW Torque</font>]]
+| 4/5
+|[[File:HW-2021-143-1-GRY02-2020 Ford Mustang Shelby GT500.png|75px]]
+|-
+|GTD09
+|143
+|[[2020 Ford Mustang Shelby GT500]]
+| bgcolor="purple" |[[HW Torque Mini Collection (2021)|<font color="black">HW Torque</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Super Treasure Hunt'''</font>]]
+| 4/5
+|[[File:'20FordShelbyGT500STH.jpg|75px]]
+|-
+|GTC97
+|144
+|[[Deora II]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2021)|<font color="white">HW Dream Garage</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Treasure Hunt'''</font>]]
+|5/5
+|[[File:144 - DEORA II - 2021.jpg|75px]]
+|-
+|GRX59
+|145
+|[[Mercedes-Benz 500 E]]
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|8/10
+|[[File:HW-2021-145-1-GRX59-Mercedes-Benz 500 E.png|75px]]
+|-
+|GTB73
+|145
+|[[Mercedes-Benz 500 E]] (2nd Color)
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|8/10
+|[[File:HW-2021-145-2-GTB73-Mercedes-Benz 500 E (2nd Color).png|75px]]
+|-
+|GRY35
+|146
+|[[La Troca]]
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|8/10
+|[[File:HW-2021-146-1-GRY35-La Troca.png|75px]]
+|-
+|GTB97
+|146
+|[[La Troca]] (2nd Color)
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|8/10
+|[[File:HW-2021-146-2-GTB97-La Troca (2nd Color).png|75px]]
+|-
+|GRY49
+|147
+|[[Arachnorod]]
+| bgcolor="lightblue" |[[Street Beasts Mini Collection (2021)|<font color="black">Street Beasts</font>]]
+|4/5
+|[[File:HW-2021-147-1-GRY49-Arachnorod.png|75px]]
+|-
+|GRY59
+|148
+|[['17 Acura NSX]]
+| bgcolor="orange" |[[HW Turbo Mini Collection (2021)|<font color="white">HW Turbo</font>]]
+|5/5
+|[[File:GRY59-01.JPG|75px]]
+|-
+|GTC58
+|148
+|[['17 Acura NSX]] (2nd Color)
+| bgcolor="orange" |[[HW Turbo Mini Collection (2021)|<font color="white">HW Turbo</font>]]
+|5/5
+|[[File:GTC58-01.JPG|75px]]
+|-
+|GRY72
+|149
+|[['10 Pro Stock Camaro]]
+| bgcolor="white" |[[Mattel Games Mini Collection (2021)|<font color="grey">Mattel Games</font>]]
+|5/5
+|[[File:10-Pro-Stock-Camaro Mattel Games 2021 yellow.jpg|75px]]
+|-
+|GTD40
+|149
+|[['10 Pro Stock Camaro]] (2nd Color)
+| bgcolor="white" |[[Mattel Games Mini Collection (2021)|<font color="grey">Mattel Games</font>]]<br><font color="grey">'''[[Kroger|<font color="grey">Kroger Exclusive]]'''</font>
+|5/5
+|[[File:10-Pro-Stock-Camaro Mattel Games 2021 green Kroger Exclusive.jpg|75px]]
+|-
+|GRY74
+|150
+|[[Airuption]]
+| bgcolor="#343434" |[[HW Space Mini Collection (2021)|<font color="white">HW Space</font>]]
+|2/5
+|[[File:HW-2021-150-1-GRY74-Airuption.png|75px]]
+|-
+|GTC01
+|150
+|[[Airuption]] (2nd Color)
+| bgcolor="#343434" |[[HW Space Mini Collection (2021)|<font color="white">HW Space</font>]]
+|2/5
+|[[File:HW-2021-150-2-GTC01-Airuption (2nd Color).png|75px]]
+|-
+|GTB03
+|151
+|[['70 Toyota Celica]]
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]
+| 3/10
+|[[File:GTB03-01.JPG|75px]]
+|-
+|GTC09
+|151
+|[['70 Toyota Celica]] (2nd Color)
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]
+| 3/10
+|[[File:2021 - 151 - 70 Toyota Celica.jpg|75px]]
+|-
+|GTB21
+|152
+|[[Roborace Robocar]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2021)|<font color="white">HW Green Speed</font>]]
+|2/5
+|[[File:ROBORACE ROBOCAR 2021 HW GREEN SPEED.png|75px]]
+|-
+|GTC75
+|152
+|[[Roborace Robocar]] (2nd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2021)|<font color="white">HW Green Speed</font>]]
+|2/5
+|[[File:HW-2021-152-2-GTC75-Roborace Robocar (2nd Color).png|75px]]
+|-
+|GTB31
+|153
+|[[Slide Kick]]
+| bgcolor="black" |[[X-Raycers Mini Collection (2021)|<font color="white">X-Raycers</font>]]
+|4/5
+|[[File:Slidekick2021.jpg|75px]]
+|-
+|GTB32
+|154
+|[[2017 Camaro ZL1]]
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|5/10
+|[[File:GTB32-01.JPG|75px]]
+|-
+|GTC76
+|154
+|[[2017 Camaro ZL1]] (2nd Color)
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|5/10
+|[[File:GTC76-01.JPG|75px]]
+|-
+|GRX52
+|155
+|[[Ain't Fare]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|9/10
+|[[File:2021NM26 (Large).JPG|75px]]
+|-
+|GTB64
+|155
+|[[Ain't Fare]] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|9/10
+|[[File:Ain'tFare.jpg|75px]]
+|-
+|GTC94
+|156
+|[[Mustang Funny Car]]
+| bgcolor="black" |[[HW Race Day Mini Collection (2021)|<font color="white">HW Race Day</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Treasure Hunt'''</font>]]
+|10/10
+|[[File:MUSTANG FUNNY CAR 2021 HW RACE DAY Treasure Hunt.png|75px]]
+|-
+|GRX27
+|157
+|[['94 Audi Avant RS2]]
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|10/10
+|[[File:2021NM24 (Large).JPG|75px]]
+|-
+|GTB75
+|157
+|[['94 Audi Avant RS2]] (2nd Color)
+| bgcolor="lightblue" |[[Factory Fresh Mini Collection (2021)|<font color="black">Factory Fresh</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|10/10
+|[[File:GTB75 - 94 Audi RS2-1.JPG|75px]]
+|-
+|GRY37
+|158
+|[[Rocket Oil Special]]
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|9/10
+|[[File:HW-2021-158-1-GRY37-Rocket Oil Special.png|75px]]
+|-
+|GTC33
+|158
+|[[Rocket Oil Special]] (2nd Color)
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|9/10
+|[[File:HW-2021-158-2-GTC33-Rocket Oil Special (2nd Color).png|75px]]
+|-
+|GRY39
+|159
+|[[Mad Manga]]
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|10/10
+|[[File:HW-2021-159-1-GRY39-Mad Manga.png|75px]]
+|-
+|GTC32
+|159
+|[[Mad Manga]] (2nd Color)
+| bgcolor="yellow" |[[HW Art Cars Mini Collection (2021)|<font color="black">HW Art Cars</font>]]
+|10/10
+|[[File:HW-2021-159-2-GTC32-Mad Manga (2nd Color).png|75px]]
+|-
+|GRX53
+|160
+|[[Draftnator]]
+| bgcolor="black" |[[X-Raycers Mini Collection (2021)|<font color="white">X-Raycers</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|5/5
+|[[File:2021NM27 (Large).JPG|75px]]
+|-
+|GTB85
+|160
+|[[Draftnator]] (2nd Color)
+| bgcolor="black" |[[X-Raycers Mini Collection (2021)|<font color="white">X-Raycers</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|5/5
+|[[File:DraftnatorBlue.jpg|75px]]
+|-
+|GRY67
+|161
+|[[Bone Shaker]]
+| bgcolor="black" |[[Rod Squad Mini Collection (2021)|<font color="white">Rod Squad</font>]]
+|4/5
+|[[File:HW-2021-161-1-GRY67-Bone Shaker.png|75px]]
+|-
+|GTC42
+|161
+|[[Bone Shaker]] (2nd Color)
+| bgcolor="black" |[[Rod Squad Mini Collection (2021)|<font color="white">Rod Squad</font>]]
+|4/5
+|[[File:HW-2021-161-2-GTC42-Bone Shaker (2nd Color).png|75px]]
+|-
+|GTB02
+|162
+|[[Datsun Bluebird 510|'71 Datsun 510]]
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]
+| 4/10
+|[[Image:'71Datsun510.jpg|75px]]
+|-
+|GTD04
+|162
+|[[Datsun Bluebird 510|'71 Datsun 510]]
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Super Treasure Hunt'''</font>]]
+| 4/10
+|[[Image:2021Datsun510STH.jpg|75px]]
+|-
+|GTB36
+|163
+|[[Custom Ford Bronco]]
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|6/10
+|[[File:CUSTOM FORD BRONCO BLUE Then and Now Mini Collection (2021).png|75px]]
+|-
+|GTC77
+|163
+|[[Custom Ford Bronco]] (2nd Color)
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|6/10
+|[[File:HW-2021-163-2-GTC77-Custom Ford Bronco (2nd Color).png|75px]]
+|-
+|GTB38
+|164
+|[['17 Ford GT]]
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|7/10
+|[[File:GTB38-01.JPG|75px]]
+|-
+|GTD23
+|164
+|[['17 Ford GT]] (2nd Color - Zamac)
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|7/10
+|[[File:GTD23 - 17 Ford GT-1.jpg|75px]]
+|-
+|GTC78
+|164
+|[['17 Ford GT]] (3rd Color)
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|7/10
+|[[File:GTC78-01.JPG|75px]]
+|-
+|GTC89
+|165
+|[[Chrysler Pacifica]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2021)|<font color="black">HW Metro</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Treasure Hunt'''</font>]]
+|10/10
+|[[File:CHRYSLER PACIFICA HW metro treasure Hunt 2021.png|75px]]
+|-
+|GRX17
+|166
+|[[Standard Kart]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2021)|<font color="white">HW Screen Time</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|8/10
+|[[File:StandardKart.jpg|75px]]
+|-
+|GRY06
+|167
+|[['17 Ford F-150 Raptor]]
+| bgcolor="purple" |[[HW Torque Mini Collection (2021)|<font color="black">HW Torque</font>]]
+|5/5
+|[[File:HW-2021-167-1-GRY06-17 Ford F-150 Raptor.png|75px]]
+|-
+|GTB91
+|167
+|[['17 Ford F-150 Raptor]] (2nd Color)
+| bgcolor="purple" |[[HW Torque Mini Collection (2021)|<font color="black">HW Torque</font>]]
+|5/5
+|[[File:HW-2021-167-2-GTB91-17 Ford F-150 Raptor (2nd Color).png|75px]]
+|-
+|GRY18
+|168
+|[['87 Dodge D100]]
+| bgcolor="blue" |[[HW Race Team Mini Collection (2021)|<font color="black">HW Race Team</font>]]
+|1/10
+|[[File:HW-2021-168-1-GRY18-87 Dodge D100.png|75px]]
+|-
+|GTC30
+|168
+|[['87 Dodge D100]] (2nd Color)
+| bgcolor="blue" |[[HW Race Team Mini Collection (2021)|<font color="black">HW Race Team</font>]]
+| 1/10
+|[[File:HW-2021-168-2-GTC30-87 Dodge D100 (2nd Color).png|75px]]
+|-
+|GRX24
+|169
+|[[Ducati Scrambler Hot Wheels Edition]]
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+| 9/10
+|[[File:HW-2021-169-1-GRX24-Ducati Scrambler Hot Wheels Edition.png|75px]]
+|-
+|GTB60
+|169
+|[[Ducati Scrambler Hot Wheels Edition]] (2nd Color)
+| bgcolor="#c8bca4" |[[Baja Blazers Mini Collection (2021)|<font color="white">Baja Blazers</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+| 9/10
+|[[File:HW-2021-169-2-GTB60-Ducati Scrambler Hot Wheels Edition (2nd Color).png|75px]]
+|-
+|GRY44
+|170
+|[['69 COPO Camaro]]
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]<br><font color="black">'''New in Mainline'''</font>
+| 6/10
+|[[File:GRY44-01.JPG|75px]]
+|-
+|GRY45
+|171
+|[[Porsche 356 Outlaw]]
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]
+|7/10
+|[[File:PORSCHE 356A OUTLAW 2021 HW SPEED GRAPHICS.png|75px]]
+|-
+|GTD08
+|171
+|[[Porsche 356 Outlaw]]
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00>'''Super Treasure Hunt'''</font>]]
+| 7/10
+|[[File:GTD08 - Porsche 356 Outlaw-1.jpg|75px]]
+|-
+|GRX14
+|172
+|[[TURTOshell]]
+| bgcolor="lightblue" |[[Street Beasts Mini Collection (2021)|<font color="black">Street Beasts</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|5/5
+|[[File:HW-2021-172-1-GRX14-TURTOshell.png|75px]]
+|-
+|GTB77
+|172
+|[[TURTOshell]] (2nd Color)
+| bgcolor="lightblue" |[[Street Beasts Mini Collection (2021)|<font color="black">Street Beasts</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|5/5
+|[[File:TURTOshell.jpg|75px]]
+|-
+|GRY75
+|173
+|[[Bot Wheels]]
+| bgcolor="#343434" |[[HW Space Mini Collection (2021)|<font color="white">HW Space</font>]]
+|3/5
+|[[File:HW-2021-173-1-GRY75-Bot Wheels.png|75px]]
+|-
+|GTC02
+|173
+|[[Bot Wheels]] (2nd Color)
+| bgcolor="#343434" |[[HW Space Mini Collection (2021)|<font color="white">HW Space</font>]]
+|3/5
+|[[File:HW-2021-173-2-GTC02-Bot Wheels (2nd Color).png|75px]]
+|-
+|GRY84
+|174
+|[[Porsche 993 GT2]]
+| bgcolor="lime" |[[HW Exotics Mini Collection (2021)|<font color="black">HW Exotics</font>]]
+|1/10
+|[[File:PORSCHE 993 GT2 RED.png|75px]]
+|-
+|GTC03
+|174
+|[[Porsche 993 GT2]] (2nd Color)
+| bgcolor="lime" |[[HW Exotics Mini Collection (2021)|<font color="black">HW Exotics</font>]]
+|1/10
+|[[File:GTC03-01.JPG|75px]]
+|-
+|GRY94
+|175
+|[[Dodge Rampage|'82 Dodge Rampage]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2021)|<font color="white">HW Hot Trucks</font>]]
+|1/10
+|[[File:HW-2021-175-1-GRY94-82 Dodge Rampage.png|75px]]
+|-
+|GTC05
+|175
+|[[Dodge Rampage|'82 Dodge Rampage]] (2nd Color)
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2021)|<font color="white">HW Hot Trucks</font>]]
+|1/10
+|[[File:HW-2021-175-2-GTC05-82 Dodge Rampage (2nd Color).png|75px]]
+|-
+|GTB04
+|176
+|[['89 Mazda Savanna RX-7 FC3S]]
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]
+| 5/10
+|[[File:Whitefc3s.jpg|75px]]
+|-
+|GTC10
+|176
+|[['89 Mazda Savanna RX-7 FC3S]] (2nd Color)
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]
+| 5/10
+|[[File:GTC10-01.JPG|72px]]
+|-
+|GTB22
+|177
+|[[Tesla Cybertruck]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2021)|<font color="white">HW Green Speed</font>]]<br>'''New in Mainline'''
+|3/5
+|[[File:GTB22 Tesla Cybertruck Loose.jpg|75px]]
+|-
+|GRX20
+|178
+|[['20 Toyota GR Supra]]
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|5/10
+|[[File:2021NM28 (Large).JPG|75px]]
+|-
+|GTB76
+|178
+|[['20 Toyota GR Supra]] (2nd Color)
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|5/10
+|[[File:GTB76-01.JPG|75px]]
+|-
+|HCY48
+|178<!-- Incorrectly numbered as 160 -->
+|[['20 Toyota GR Supra]] (3rd Color)
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]<br><font color="black">'''GameStop Exclusive'''</font>
+|5/10
+|[[File:GameStopSupra.jpg|75px]]
+|-
+|GTB37
+|179
+|[['70 Chevy Camaro RS]]
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|8/10
+|[[File:HW-2021-179-1-GTB37-70 Chevy Camaro RS.png|75px]]
+|-
+|GTC69
+|179
+|[['70 Chevy Camaro RS]] (2nd Color)
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|8/10
+|[[File:HW-2021-179-2-GTC69-70 Chevy Camaro RS (2nd Color).png|75px]]
+|-
+|GTD48
+|179
+|[['70 Chevy Camaro RS]] (3rd Color)
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]<br><font color="black">'''[[Walgreens]] Exclusive'''</font>
+|8/10
+|[[File:GreenieCamaro.jpg|75px]]
+|-
+|GTB39
+|180
+|[[Nissan Skyline H/T 2000GT-R|Nissan Skyline 2000 GT-R]]
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|9/10
+|[[File:GTB39-01.jpg|75px]]
+|-
+|GTC68
+|180
+|[[Nissan Skyline H/T 2000GT-R|Nissan Skyline 2000 GT-R]] (2nd Color)
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]
+|9/10
+|[[File:GTC68-01.JPG|75px]]
+|-
+|HCY46
+|180
+|[[Nissan Skyline H/T 2000GT-R|Nissan Skyline 2000 GT-R]] (3rd Color)
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]<br>'''<font color="black">GameStop Exclusive'''</font>
+|9/10
+|[[File:SeafoamKenmeri.jpg|75px]]
+|-
+|GRX23
+|181
+|[[Batmobile (2021)|Batmobile]]
+| bgcolor="black" |[[Batman Mini Collection (2021)|<font color="white">Batman</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|4/5
+|[[File:HW-2021-181-1-GRX23-Batmobile.png|75px]]
+|-
+|GTB53
+|181
+|[[Batmobile (2021)|Batmobile]] (2nd Color)
+| bgcolor="black" |[[Batman Mini Collection (2021)|<font color="white">Batman</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|4/5
+|[[File:PattinsonBatmobile.jpg|75px]]
+|-
+|GRY19
+|182
+|[[HW450F]]
+| bgcolor="blue" |[[HW Race Team Mini Collection (2021)|<font color="black">HW Race Team</font>]]
+|2/10
+|[[File:HW-2021-182-1-GRY19-HW450F.png|75px]]
+|-
+|GRY43
+|183
+|[['67 Chevelle SS 396]]
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]
+|8/10
+|[[File:HW-2021-183-1-GRY43-67 Chevelle SS 396.png|75px]]
+|-
+|GTC34
+|183
+|[['67 Chevelle SS 396]] (2nd Color)
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]
+|8/10
+|[[File:HW-2021-183-2-GTC34-67 Chevelle SS 396 (2nd Color).png|75px]]
+|-
+|GRX50
+|184
+|[[Muscle and Blown]]
+| bgcolor="black" |[[Rod Squad Mini Collection (2021)|<font color="white">Rod Squad</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|5/5
+|[[File:HW-2021-184-1-GRX50-Muscle and Blown.png|75px]]
+|-
+|GTB79
+|184
+|[[Muscle and Blown]] (2nd Color)
+| bgcolor="black" |[[Rod Squad Mini Collection (2021)|<font color="white">Rod Squad</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|5/5
+|[[File:MuscleandBlown.jpg|75px]]
+|-
+|GRY92
+|185
+|[[Chevy Silverado Off Road]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2021)|<font color="white">HW Hot Trucks</font>]]<br><font color="black">'''New in Mainline'''</font>
+| 2/10
+|[[File:HW-2021-185-1-GRY92-Chevy Silverado Off Road.png|75px]]
+|-
+|GTC06
+|185
+|[[Chevy Silverado Off Road]] (2nd Color)
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2021)|<font color="white">HW Hot Trucks</font>]]<br><font color="black">'''New in Mainline'''</font>
+|2/10
+|[[File:HW-2021-185-2-GTC06-Chevy Silverado Off Road (2nd Color).png|75px]]
+|-
+|GTB06
+|186
+|[[2018 Honda Civic Type R]]
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]
+|6/10
+|[[File:GTB06 2018 Honda Civic Type R Loose.jpg|75px]]
+|-
+|GTD05
+|186
+|[[2018 Honda Civic Type R]]
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00">'''Super Treasure Hunt'''</font>]]
+|6/10
+|[[File:HKSFK8STH.jpg|75px]]
+|-
+|GRX33
+|187
+|[[Custom '70 Honda N600]]
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|7/10
+|[[File:2021NM32 (Large).JPG|75px]]
+|-
+|GTB82
+|187
+|[[Custom '70 Honda N600]] (2nd Color)
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|7/10
+|[[File:GTB82-01.JPG|75px]]
+|-
+|GTB08
+|188
+|[[Mercedes-Benz Unimog 1300L|Mercedes-Benz Unimog 1300]]
+| bgcolor="red" |[[HW Rescue Mini Collection (2021)|<font color="black">HW Rescue</font>]]
+|1/10
+|[[File:HW-2021-188-1-GTB08-Mercedes-Benz Unimog 1300.png|75px]]
+|-
+|GTC54
+|188
+|[[Mercedes-Benz Unimog 1300L|Mercedes-Benz Unimog 1300]] (2nd Color)
+| bgcolor="red" |[[HW Rescue Mini Collection (2021)|<font color="black">HW Rescue</font>]]
+| 1/10
+|[[File:HW-2021-188-2-GTC54-Mercedes-Benz Unimog 1300 (2nd Color).png|75px]]
+|-
+|GTB16
+| 189
+|[[Mod Rod]]
+| bgcolor="red" |[[HW Flames Mini Collection (2021)|<font color="white">HW Flames</font>]]
+|1/5
+|[[File:HW-2021-189-1-GTB16-Mod Rod.png|75px]]
+|-
+|GTC12
+|189
+|[[Mod Rod]] (2nd Color)
+| bgcolor="red" |[[HW Flames Mini Collection (2021)|<font color="white">HW Flames</font>]]
+|1/5
+|[[File:HW-2021-189-2-GTC12-Mod Rod (2nd Color).png|75px]]
+|-
+|GTC93
+|190
+|[['91 Mazda MX-5 Miata]]
+| bgcolor="red" |[[Then and Now Mini Collection (2021)|<font color="black">Then and Now</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|10/10
+|[[File:GTC93-01.JPG|75px]]
+|-
+|GTB40
+|191
+|[['85 Chevrolet Camaro IROC-Z]]
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]
+|1/10
+|[[File:HW-2021-191-1-GTB40-85 Chevrolet Camaro IROC-Z.png|75px]]
+|-
+|GTC16
+|191
+|[['85 Chevrolet Camaro IROC-Z]] (2nd Color)
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]
+|1/10
+|[[File:HW-2021-191-2-GTC16-85 Chevrolet Camaro IROC-Z (2nd Color).png|75px]]
+|-
+|GTB45
+|192
+|[['67 Ford Mustang Coupe]]
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]
+| 2/10
+|[[File:67 FORD MUSTANG COUPE 2021.png|75px]]
+|-
+|GTC15
+|192
+|[['67 Ford Mustang Coupe]] (2nd Color)
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]
+|2/10
+|[[File:HW-2021-192-2-GTC15-67 Ford Mustang Coupe (2nd Color).png|75px]]
+|-
+|GRX18
+|193
+|[[Disney Steamboat]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2021)|<font color="white">HW Screen Time</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|9/10
+|[[Image:GRX18 Disney Steamboat Loose.jpg|75px]]
+|-
+|GRY20
+|194
+|[[Dodge Charger Stock Car]]
+| bgcolor="blue" |[[HW Race Team Mini Collection (2021)|<font color="black">HW Race Team</font>]]
+|3/10
+|[[File:HW-2021-194-1-GRY20-Dodge Charger Stock Car.png|75px]]
+|-
+|GTD30
+|194
+|[[Dodge Charger Stock Car]] (2nd Color - Zamac)
+| bgcolor="blue" |[[HW Race Team Mini Collection (2021)|<font color="black">HW Race Team</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|3/10
+|[[File:HW-2021-194-2-GTD30-Dodge Charger Stock Car (2nd Color - Zamac).png|75px]]
+|-
+|GRY21
+|195
+|[[Indy 500 Oval]]
+| bgcolor="blue" |[[HW Race Team Mini Collection (2021)|<font color="black">HW Race Team</font>]]
+|4/10
+|[[File:HW-2021-195-1-GRY21-Indy 500 Oval.png|75px]]
+|-
+|GTB94
+|195
+|[[Indy 500 Oval]] (2nd Color)
+| bgcolor="blue" |[[HW Race Team Mini Collection (2021)|<font color="black">HW Race Team</font>]]
+|4/10
+|[[File:HW-2021-195-2-GTB94-Indy 500 Oval (2nd Color).png|75px]]
+|-
+|GRY47
+|196
+|[[Mercedes-Benz 300 SL]]
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]<br><font color="black">'''New in Mainline'''</font>
+|9/10
+|[[File:HW-2021-196-1-GRY47-Mercedes-Benz 300 SL.png|75px]]
+|-
+|GRX61
+|197
+|[[LB-WORKS Lamborghini Huracán Coupé]]
+| bgcolor="yellow" |[[HW Speed Graphics Mini Collection (2021)|<font color="black">HW Speed Graphics</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|10/10
+|[[File:GRX61 LB-Works Lamborghini Huracan Coupe Loose.jpg|75px]]
+|-
+|GRY76
+|198
+|[['70s Van|70s Van]]
+| bgcolor="#343434" |[[HW Space Mini Collection (2021)|<font color="white">HW Space</font>]]
+|4/5
+|[[File:SpaceJamVan.jpg|75px]]
+|-
+|GTC91
+|199
+|[[Ollie Rocket]]
+| bgcolor="#343434" |[[HW Space Mini Collection (2021)|<font color="white">HW Space</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|5/5
+|[[File:HW-2021-199-1-GTC91-Ollie Rocket.png|75px]]
+|-
+|GRY85
+|200
+|[[Impavido 1]]
+| bgcolor="lime" |[[HW Exotics Mini Collection (2021)|<font color="black">HW Exotics</font>]]
+|2/10
+|[[File:HW-2021-200-1-GRY85-Impavido 1.png|75px]]
+|-
+|GRY86
+|201
+|[[Geoterra]]
+| bgcolor="lime" |[[HW Exotics Mini Collection (2021)|<font color="black">HW Exotics</font>]]
+|3/10
+|[[File:HW-2021-201-1-GRY86-Geoterra.png|75px]]
+|-
+|GTC04
+|201
+|[[Geoterra]] (2nd Color)
+| bgcolor="lime" |[[HW Exotics Mini Collection (2021)|<font color="black">HW Exotics</font>]]
+|3/10
+|[[File:HW-2021-201-2-GTC04-Geoterra (2nd Color).png|75px]]
+|-
+|GRY93
+|202
+|[[Toyota Land Cruiser]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2021)|<font color="white">HW Hot Trucks</font>]]<br><font color="black">'''New in Mainline'''</font>
+|3/10
+|[[File:HW-2021-202-1-GRY93-Toyota Land Cruiser.png|75px]]
+|-
+|GTD58
+|202
+|[[Toyota Land Cruiser]] (2nd Color)
+| bgcolor="red" |[[Red Edition Mini Collection (2021)|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font><br><font color="white">'''New in Mainline'''</font>
+|10/12
+|[[File:HW-2021-202-2-GTD58-Toyota Land Cruiser (2nd Color).png|75px]]
+|-
+|GRY91
+|203
+|[['67 Chevy C10]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2021)|<font color="white">HW Hot Trucks</font>]]
+|4/10
+|[[File:GRY91 '67 Chevy C10 Loose.jpg|75px]]
+|-
+|GRX63
+|204
+|[[LB-Silhouette WORKS GT Nissan 35GT-RR VER.2]]
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|8/10
+|[[File:GRX63 LB-Silhouette Works GT Nissan 35GT-RR Ver.2 Loose.jpg|75px]]
+|-
+|GTC11
+|204
+|[[LB-Silhouette WORKS GT Nissan 35GT-RR VER.2]] (2nd Color)
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|8/10
+|[[File:LBWKGT-R.jpg|75px]]
+|-
+|GRX48
+|205
+|[[Water Bomber]]
+| bgcolor="red" |[[HW Rescue Mini Collection (2021)|<font color="black">HW Rescue</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|2/10
+|[[File:WaterBomber.jpg|75px]]
+|-
+|GTB83
+|205
+|[[Water Bomber]] (2nd Color)
+| bgcolor="red" |[[HW Rescue Mini Collection (2021)|<font color="black">HW Rescue</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|2/10
+|[[File:HW-2021-205-2-GTB83-Water Bomber (2nd Color).png|75px]]
+|-
+|GTB09
+|206
+|[[Rescue Ranger|HW Rapid Responder]]
+| bgcolor="red" |[[HW Rescue Mini Collection (2021)|<font color="black">HW Rescue</font>]]
+| 3/10
+|[[File:HW-2021-206-1-GTB09-HW Rapid Responder.png|75px]]
+|-
+|GTB17
+|207
+|[['68 Mercury Cougar (2014)|'68 Mercury Cougar]]
+| bgcolor="red" |[[HW Flames Mini Collection (2021)|<font color="white">HW Flames</font>]]<br>
+|2/5<br>
+|[[File:GTB17 '68 Mercury Cougar Loose.jpg|75px]]
+|-
+|GTD02
+|207
+|[['68 Mercury Cougar (2014)|'68 Mercury Cougar]]
+| bgcolor="red" |[[HW Flames Mini Collection (2021)|<font color="white">HW Flames</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00">'''Super Treasure Hunt'''</font>]]
+|2/5
+|[[File:GTD02 - 68 Mercury Cougar.jpg|75px]]
+|-
+|GTB23
+|208
+|[[Porsche Taycan Turbo S]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2021)|<font color="white">HW Green Speed</font>]]<br>'''New in Mainline'''
+|4/5
+|[[File:PorscheTaycan.jpg|75px]]
+|-
+|GTB42
+|209
+|[['71 Plymouth Road Runner]]
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]
+|3/10
+|[[Image:GTB42-01.JPG|75px]]
+|-
+|GRX47
+|210
+|[[GT-Scorcher]]
+| bgcolor="blue" |[[HW Race Team Mini Collection (2021)|<font color="black">HW Race Team</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|5/10
+|[[File:GT-Scorcher.jpg|75px]]
+|-
+|GRY87
+|211
+|[[2019 Audi R8 Spyder]]
+| bgcolor="lime" |[[HW Exotics Mini Collection (2021)|<font color="black">HW Exotics</font>]]
+|4/10
+|[[Image:GRY87-01.jpg|75px]]
+|-
+|GTD01
+|211
+|[[2019 Audi R8 Spyder]]
+| bgcolor="lime" |[[HW Exotics Mini Collection (2021)|<font color="black">HW Exotics</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00">'''Super Treasure Hunt'''</font>]]
+|4/10
+|[[File:2019 Audi R8 Spyder.jpg|75px]]
+|-
+|GTC95
+|212
+|[[1978 Dodge Li'l Red Express Truck]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2021)|<font color="white">HW Hot Trucks</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00AA00">'''Treasure Hunt'''</font>]]
+|5/10
+|[[File:HW-2021-212-1-GTC95-1978 Dodge Lil Red Express Truck.png|75px]]
+|-
+|GTB07
+|213
+|[[Nissan Silvia (S13)]]
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]
+|9/10
+|[[File:S13red.jpg|75px]]
+|-
+|GRX62
+|214
+|[['99 Honda Civic Type R (EK9)]]
+| bgcolor="lightblue" |[[HW J-Imports Mini Collection (2021)|<font color="black">HW J-Imports</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|10/10
+|[[File:2021NM42_(Large).JPG|75px]]
+|-
+|GTB13
+|215
+|[[Aston Martin One-77]]
+| bgcolor="red" |[[HW Rescue Mini Collection (2021)|<font color="black">HW Rescue</font>]]
+|4/10
+|[[File:GTB13-01.JPG|75px]]
+|-
+|GTB11
+|216
+|[[Dodge Charger Drift Car|Dodge Charger Drift]]
+| bgcolor="red" |[[HW Rescue Mini Collection (2021)|<font color="black">HW Rescue</font>]]
+|5/10
+|[[File:HW-2021-216-1-GTB11-Dodge Charger Drift.png|75px]]
+|-
+|GRX36
+|217
+|[[Nissan Leaf NISMO RC_02]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2021)|<font color="white">HW Green Speed</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|5/5
+|[[File:GRX36 Nissan Leaf Nismo RC 02 Loose.jpg|75px]]
+|-
+|GTB43
+|218
+|[['87 Buick Regal GNX]]
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]<br><font color="black">'''New in Mainline'''
+|4/10
+|[[Image:GTB43-01.JPG|75px]]
+|-
+|GTD44
+|218
+|[['87 Buick Regal GNX]] (2nd Color)
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]<br><font color="black">'''New in Mainline'''<br>'''[[Kroger|<font color="black">Kroger Exclusive]]'''</font>
+|4/10
+|[[Image:87_Buick_Regal_GNX_GTD44.jpg|75px]]
+|-
+|GTB44
+|219
+|[[AMC Rebel Machine]]
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]<br>'''New in Mainline'''
+|5/10
+|[[File:GTB44.jpg|75px]]
+|-
+|GTD29
+|219
+|[[AMC Rebel Machine]] (2nd Color - Zamac)
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]<br><font color="black">'''New in Mainline'''<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|5/10
+|[[File:HW-2021-219-2-GTB44-AMC Rebel Machine (2nd Color - Zamac).png|75px]]
+|-
+|GTC85
+|220
+|[[Justice League Batmobile]]
+| bgcolor="black" |[[Batman Mini Collection (2021)|<font color="white">Batman</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|5/5
+|[[File:HW-2021-220-1-GTC85-Justice League Batmobile.png|75px]]
+|-
+|GRX15
+| 221
+|[[X-Jet]]
+| bgcolor="purple" |[[HW Screen Time Mini Collection (2021)|<font color="white">HW Screen Time</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|10/10
+|[[File:X-Jet.jpg|75px]]
+|-
+|GRY23
+|222
+|[[Mad Splash]]
+| bgcolor="blue" |[[HW Race Team Mini Collection (2021)|<font color="black">HW Race Team</font>]]
+|6/10
+|[[File:HW-2021-222-1-GRY23-Mad Splash.png|75px]]
+|-
+|GRY88
+|223
+|[[Porsche 914 Safari]]
+| bgcolor="lime" |[[HW Exotics Mini Collection (2021)|<font color="black">HW Exotics</font>]]
+|5/10
+|[[File:HW-2021-223-1-GRY88-Porsche 914 Safari.png|75px]]
+|-
+|GRX25
+|224
+|[['94 Bugatti EB110 SS]]
+| bgcolor="lime" |[[HW Exotics Mini Collection (2021)|<font color="black">HW Exotics</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|6/10
+|[[File:BugattiEB110.jpg|75px]]
+|-
+|GRY95
+|225
+|[['49 Ford F1]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2021)|<font color="white">HW Hot Trucks</font>]]
+|6/10
+|[[File:'49 FORD F1.jpg|75px]]
+|-
+|GTD03
+|225
+|[['49 Ford F1]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2021)|<font color="white">HW Hot Trucks</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00AA00">'''Super Treasure Hunt'''</font>]]
+|6/10
+|[[File:49' Ford F1 STH.jpg|75px]]
+|-
+|GRX22
+|226
+|[[Toyota Land Cruiser 80]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2021)|<font color="white">HW Hot Trucks</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|7/10
+|[[File:ToyotaLandCruiser80.jpg|75px]]
+|-
+|GTB12
+|227
+|[['96 Chevrolet Impala SS]]
+| bgcolor="red" |[[HW Rescue Mini Collection (2021)|<font color="black">HW Rescue</font>]]
+|6/10
+|[[File:RescueImpala.jpg|75px]]
+|-
+|GTB14
+|228
+|[['15 Dodge Charger SRT]]
+| bgcolor="red" |[[HW Rescue Mini Collection (2021)|<font color="black">HW Rescue</font>]]
+|7/10
+|[[File:RescueCharger.jpg|75px]]
+|-
+|GTB19
+|229
+|[['52 Chevy Truck|'52 Chevy]]
+| bgcolor="red" |[[HW Flames Mini Collection (2021)|<font color="white">HW Flames</font>]]<br>
+|3/5
+|[[File:HW-2021-229-1-GTB19-52 Chevy.png|75px]]
+|-
+|GRX56
+|230
+|[[FusionBusta]]
+| bgcolor="red" |[[HW Flames Mini Collection (2021)|<font color="white">HW Flames</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|4/5
+|[[Image:FusionBusta.jpg|75px]]
+|-
+|GTB41
+|231
+|[['67 Oldsmobile 442]]
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]
+|6/10
+|[[Image:67_Oldsmobile_442_Gulf.jpg|75px]]
+|-
+|GRY24
+|232
+|[['64 Nova Wagon Gasser]]
+| bgcolor="blue" |[[HW Race Team Mini Collection (2021)|<font color="black">HW Race Team</font>]]
+|7/10
+|[[File:'64 CHEVY NOVA WAGON GASSER.jpg|75px]]
+|-
+|GTD06
+|232
+|[['64 Nova Wagon Gasser]]
+| bgcolor="blue" |[[HW Race Team Mini Collection (2021)|<font color="black">HW Race Team</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00">'''Super Treasure Hunt'''</font>]]
+|7/10
+|[[File:HW-2021-232-2-GRY24-64 Nova Wagon Gasser.png|75px]]
+|-
+|GRX55
+| 233
+|[[Sand Burner]]
+| bgcolor="blue" |[[HW Race Team Mini Collection (2021)|<font color="black">HW Race Team</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|8/10
+|[[Image:SandBurner.jpg|75px]]
+|-
+|GRY89
+|234
+|[[Crescendo]]
+| bgcolor="lime" |[[HW Exotics Mini Collection (2021)|<font color="black">HW Exotics</font>]]
+|7/10
+|[[File:Crescendo.jpg|75px]]
+|-
+|GRX57
+|235
+|[[McLaren F1]]
+| bgcolor="lime" |[[HW Exotics Mini Collection (2021)|<font color="black">HW Exotics</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|8/10
+|[[File:McLarenF1.jpg|75px]]
+|-
+|GRY96
+|236
+|[['19 Ford Ranger Raptor]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2021)|<font color="white">HW Hot Trucks</font>]]
+|8/10
+|[[File:'19 FORD RANGER RAPTOR.jpg|75px]]
+|-
+|GRY97
+|237
+|[['99 Ford F-150 SVT Lightning]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2021)|<font color="white">HW Hot Trucks</font>]]
+|9/10
+|[[File:'99FordLightning.jpg|75px]]
+|-
+|GTB10
+|238
+|[[Alpha Pursuit]]
+| bgcolor="red" |[[HW Rescue Mini Collection (2021)|<font color="black">HW Rescue</font>]]
+|8/10
+|[[File:AlphaPursuit.jpg|75px]]
+|-
+|GTB47
+|239
+|[['68 Plymouth Barracuda Formula S]]
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]
+|7/10
+|[[File:'68 PLYMOUTH BARRACUDA FORMULA S.jpg|75px]]
+|-
+|GTC98
+|240
+|[['65 Ford Galaxie]]
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00AA00">'''Treasure Hunt'''</font>]]
+|8/10
+|[[File:1965 ford galaxie 500 2021-2.jpg|75px]]
+|-
+|GRY22
+|241
+|[[Dodge Challenger Drift Car]]
+| bgcolor="blue" |[[HW Race Team Mini Collection (2021)|<font color="black">HW Race Team</font>]]
+|9/10
+|[[File:Dodge Challenger Drift Car HW Race Team 2021 blue.jpg|75px]]
+|-
+|GRY25
+|242
+|[[Moto Wing]]
+| bgcolor="blue" |[[HW Race Team Mini Collection (2021)|<font color="black">HW Race Team</font>]]
+|10/10
+|[[File:HW-2021-242-1-GRY25-Moto Wing.png|75px]]
+|-
+|GRX58
+|243
+|[[Aston Martin V12 Speedster]]
+| bgcolor="lime" |[[HW Exotics Mini Collection (2021)|<font color="black">HW Exotics</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]
+|9/10
+|[[Image:AstonMartinV12Speedster.jpg|75px]]
+|-
+|HCY47
+|243
+|[[Aston Martin V12 Speedster]] (2nd Color)
+| bgcolor="lime" |[[HW Exotics Mini Collection (2021)|<font color="black">HW Exotics</font>]]<br>[[2021 New Models|<font color="black">'''New for 2021!'''</font>]]<br>'''<font color="black">GameStop Exclusive'''
+|9/10
+|[[Image:GamestopSpeedster.jpg|75px]]
+|-
+|GRY90
+|244
+|[[Pagani Huayra]]
+| bgcolor="lime" |[[HW Exotics Mini Collection (2021)|<font color="black">HW Exotics</font>]]
+|10/10
+|[[Image:GRY90-01.JPG|75px]]
+|-
+|GRX34
+|245
+|[[Range Rover Classic]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2021)|<font color="white">HW Hot Trucks</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]
+|10/10
+|[[File:'81RangeRoverClassic.jpg|75px]]
+|-
+|HCY49
+|245
+|[[Range Rover Classic]] (2nd Color)
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2021)|<font color="white">HW Hot Trucks</font>]]<br>[[2021 New Models|<font color="white">'''New for 2021!'''</font>]]<br>'''<font color="black">GameStop Exclusive'''
+|10/10
+|[[File:GamestopRR.jpg|75px]]
+|-
+|GTB15
+|246
+|[[Fire Eater|Fire-Eater]]
+| bgcolor="red" |[[HW Rescue Mini Collection (2021)|<font color="black">HW Rescue</font>]]
+|9/10
+|[[File:HW-2021-246-1-GTB15-Fire-Eater.png|75px]]
+|-
+|GTC86
+|247
+|[[Lamborghini Countach Pace Car|Lamborghini Countach Police Car]]
+| bgcolor="red" |[[HW Rescue Mini Collection (2021)|<font color="black">HW Rescue</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|10/10
+|[[File:HW-2021-247-1-GTC86-Lamborghini Countach Police Car.png|75px]]
+|-
+|GTB18
+|248
+|[[Bad Bagger]]
+| bgcolor="red" |[[HW Flames Mini Collection (2021)|<font color="white">HW Flames</font>]]<br>
+|5/5
+|[[File:HW-2021-248-1-GTB18-Bad Bagger.png|75px]]
+|-
+|GTB46
+|249
+|[[Hot Bird]]
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]
+|9/10
+|[[File:HotBird.jpg|75px]]
+|-
+|GTB48
+|250
+|[[Classic Cobra|Shelby Cobra 427 S/C]]
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]
+|10/10
+|[[File:HW-2021-250-1-GTB48-Shelby Cobra 427 SC.png|75px]]
+|-
+|GTD13
+|250
+|[[Classic Cobra|Shelby Cobra 427 S/C]]
+| bgcolor="orange" |[[Muscle Mania Mini Collection (2021)|<font color="black">Muscle Mania</font>]]<br>[[2021 Treasure Hunts Series|<font color="#00cc00">'''Super Treasure Hunt'''</font>]]
+|10/10
+|[[File:Shelby_Cobra_427_S-C.jpg|75px]]
+|-
+|}
+
+==[[Hot_Wheels_id#2021_Mainline_Chase_Series|Hot Wheels id: Chase Series]]==
+
+{| class="wikitable sortable" style="font-size: 85%; text-align: left;" width="100%"
+|-
+! style="border-style: none none solid solid; background: #A3A3A3" |'''Toy #'''
+! style="border-style: none none solid solid; background: #A3A3A3" |'''Col.#'''
+! style="border-style: none none solid solid; background: #A3A3A3" |'''Model Name'''
+! style="border-style: none none solid solid; background: #A3A3A3" |'''Series'''
+! style="border-style: none none solid solid; background: #A3A3A3" |'''Series #'''
+! style="border-style: none none solid solid; background: #A3A3A3" |'''Photo'''
+|-
+|GTD61
+|No #
+|[[Batman: Arkham Knight Batmobile]]
+|Hot Wheels id
+|1/8
+|[[File:ArkhamBatmobileIDChase.jpg|75px]]
+|-
+|GTD63
+|No #
+|[[Twin Mill]]
+|Hot Wheels id
+|2/8
+|[[File:TwinMillID.jpg|75px]]
+|-
+|GTD62
+|No #
+|[[GT Hunter]]
+|Hot Wheels id
+|3/8
+|[[File:GTHunteridChase.jpg|75px]]
+|-
+|GTD67
+|No #
+|[[Arachnorod]]
+|Hot Wheels id
+|4/8
+|[[File:ArachnorodIDChase.jpg|75px]]
+|-
+|GTD68
+|No #
+|[['69 COPO Camaro]]
+|Hot Wheels id
+| 5/8
+|[[File:Id5hwjpg.jpg|75px]]
+|-
+|GTD65
+|No #
+|[[Porsche Taycan Turbo S]]
+|Hot Wheels id
+|6/8
+|[[File:PorscheTaycanTurboSidChase.jpg|75px]]
+|-
+|GTD66
+|No #
+|[['15 Dodge Charger SRT]]
+|Hot Wheels id
+|7/8
+|[[File:GTD66.jpg|75px]]
+|-
+|GTD64
+|No #
+|[[Pagani Huayra]]
+|Hot Wheels id
+|8/8
+|[[File:8of8 2021.jpg|75px]]
+|}
+
+=='''Hot Wheels'''==
+{{Lists}}
+[[Category:2021 Hot Wheels]]
+[[Category:Lists of Hot Wheels by year]]

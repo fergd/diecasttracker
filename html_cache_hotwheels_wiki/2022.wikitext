@@ -1,0 +1,3144 @@
+==2022 Hot Wheels #1-250==
+For 2022, the Hot Wheels mainline is numbered 1 through 250 with color variations not receiving a new number. Treasure Hunts and store exclusives are numbered. For the listing by series see [[List of 2022 Hot Wheels (by Series)]].
+{| class="sortable wikitable" style="font-size: 85%; text-align: left;" width="100%"
+|-
+! style="border-style: none none solid solid; |Toy #
+! style="border-style: none none solid solid; |Col.#
+! style="border-style: none none solid solid; |Model Name
+! style="border-style: none none solid solid; |Series
+! style="border-style: none none solid solid; |Series #
+! style="border-style: none none solid solid; |Photo
+|-
+|HCT05
+|001
+|[[1970 Pontiac Firebird]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2022)|<font color="black">HW Dream Garage</font>]]<br/ >[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|1/5
+|[[File:'70PontiacFirebird.jpg|75px]]
+|-
+|HCX22
+|001
+|[[1970 Pontiac Firebird]] (2nd Color)
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2022)|<font color="black">HW Dream Garage</font>]]<br/ >[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|1/5
+|[[File:PontiacFirebird Front.png|75px]]
+|-
+|HCT80
+|002
+|[[Twinnin' 'n Winnin']]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]
+|1/10
+|[[File:HCT80.jpg|75px]]
+|-
+|HCW83
+|002
+|[[Twinnin' 'n Winnin']] (2nd Color)
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]
+|1/10
+|[[File:Twinnin_2022.jpg|75px]]
+|-
+|HCV09
+|003
+|[[Baja Bone Shaker]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]
+|2/10
+|[[File:Baja Bone Shaker 2022.jpg|75px]]
+|-
+|HCW68
+|003
+|[[Baja Bone Shaker]] (2nd Color)
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]
+|2/10
+|[[File:HCW68 Carded.jpg|75px]]
+|-
+|HCV46
+|004
+|[[Bubble Matic]]
+|bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|1/10
+|[[File:BubbleMatic.jpg|75px]]
+|-
+|HCW69
+|004
+|[[Bubble Matic]] (2nd Color)
+|bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|1/10
+|[[File:Blue_HCW69_4-250.jpg|75px]]
+|-
+|HCT32
+|005
+|[[Mighty K]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]<br/ >[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|1/10
+|[[File:MightyK.jpg|75px]]
+|-
+|HCW70
+|005
+|[[Mighty K]] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]<br/ >[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|1/10
+|[[File:PinkMightyK.jpg|75px]]
+|-
+|HCW57
+|006
+|[[Fast Gassin]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]
+|2/10
+|[[File:2022-fast-gassin-1.jpg|75px]]
+|-
+|HCW94
+|006
+|[[Fast Gassin]] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]
+|2/10
+|[[File:FAST GASSIN HCW94.jpg|75px]]
+|-
+|HCX94
+|007
+|[[The Dark Knight Batmobile]]
+| bgcolor="black" |[[Batman Mini Collection (2022)|<font color="white">Batman</font>]]<br/ >[[2022 Treasure Hunts Series|<font color="#00cc00>'''Treasure Hunt'''</font>]]
+|1/5
+|[[File:The_Dark_Knight_Batmobile_-_2022_TH.jpg|75px]]
+|-
+|HCT55
+|008
+|[[Standard Kart]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2022)|<font color="white">HW Screen Time</font>]]
+|1/10
+|[[File:StandardKart2022.jpg|75px]]
+|-
+|HCV00
+|009
+|[[Minecart]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2022)|<font color="white">HW Screen Time</font>]]
+|2/10
+|[[File:9-250_HCV00.jpg|75px]]
+|-
+|HCT27
+|010
+|[[Tooned Volkswagen Golf Mk1]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2022)|<font color="black">Tooned</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|1/5
+|[[File:'ToonedGolf.jpg|75px]]
+|-
+|HCW71
+|010
+|[[Tooned Volkswagen Golf Mk1]] (2nd Color)
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2022)|<font color="black">Tooned</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|1/5
+|[[File:HCW71 Carded.jpg|75px]]
+|-
+|HCT68
+|011
+|[[Car-de-Asada]]
+| bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2022)|<font color="black">Fast Foodie</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|1/5
+|[[File:Car-De-Asada 2022.jpg|75px]]
+|-
+|HCW72
+|011
+|[[Car-de-Asada]] (2nd Color)
+| bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2022)|<font color="black">Fast Foodie</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|1/5
+|[[File:HCW72.jpg|75px]]
+|-
+|HCT16
+|012
+|[[Porsche 935 (2022)|Porsche 935]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|1/10
+|[[File:'19Porsche935.jpg|75px]]
+|-
+|HCW73
+|012
+|[[Porsche 935 (2022)|Porsche 935]] (2nd Color)
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|1/10
+|[[File:Porsche935 Front.png|75px]]
+|-
+|HCY66
+|012
+|[[Porsche 935 (2022)|Porsche 935]] (3rd Color)
+| bgcolor="red" |[[Red Edition|<font color="white">Red Edition</font>]]<br>[[2022 New Models|<font color="white">'''New for 2022!'''</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|9/12
+|[[File:RedEd935.jpg|75px]]
+|-
+|HCV25
+|013
+|[['85 Honda City Turbo II]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|2/10
+|[[File:HCV25-01.JPG|75px]]
+|-
+|HCW74
+|013
+|[['85 Honda City Turbo II]] (2nd Color)
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|2/10
+|[[File:HCW74.jpg|75px]]
+|-
+|HCV44
+|014
+|[[Skull Crusher]]
+| bgcolor="#6CB4EE" |[[Street Beasts Mini Collection (2022)|<font color="black">Street Beasts</font>]]
+|1/5
+|[[File:Skull_Crusher_2022.jpg|75px]]
+|-
+|HCW75
+|014
+|[[Skull Crusher]] (2nd Color)
+| bgcolor="#6CB4EE" |[[Street Beasts Mini Collection (2022)|<font color="black">Street Beasts</font>]]
+|1/5
+|[[File:HCW75.jpg|75px]]
+|-
+|HCV40
+|015
+|[[Let's GO]]
+| bgcolor="#0087BD" |[[HW Ride-Ons Mini Collection (2022)|<font color="black">HW Ride-Ons</font>]]
+|1/5
+|[[File:HCV40.jpg|75px]]
+|-
+|HCW76
+|015
+|[[Let's GO]] (2nd Color)
+| bgcolor="#0087BD" |[[HW Ride-Ons Mini Collection (2022)|<font color="black">HW Ride-Ons</font>]]
+|1/5
+|[[File:HCW76.png|75px]]
+|-
+|HCV41
+|016
+|[[Bogzilla]]
+| bgcolor="#0087BD" |[[HW Ride-Ons Mini Collection (2022)|<font color="black">HW Ride-Ons</font>]]
+|2/5
+|[[File:2022HWBogzillaGreenUS-16.jpg|75px]]
+|-
+|HCW85
+|016
+|[[Bogzilla]] (2nd Color)
+| bgcolor="#0087BD" |[[HW Ride-Ons Mini Collection (2022)|<font color="black">HW Ride-Ons</font>]]
+|2/5
+|[[File:HCW85.jpg|75px]]
+|-
+|HCV01
+|017
+|[[Toyota AE86 Sprinter Trueno]]
+| bgcolor="lime" |[[HW Hatchbacks Mini Collection (2022)|<font color="black">HW Hatchbacks</font>]]
+|1/5
+|[[File:HCV01-01.JPG|75px]]
+|-
+|HCW77
+|017
+|[[Toyota AE86 Sprinter Trueno]] (2nd Color)
+| bgcolor="lime" |[[HW Hatchbacks Mini Collection (2022)|<font color="black">HW Hatchbacks</font>]]
+|1/5
+|[[File:Ae86trueno_20220515_222501.jpg|75px]]
+|-
+|HCV27
+|018
+|[['19 Mercedes-Benz A-Class]]
+| bgcolor="lime" |[[HW Hatchbacks Mini Collection (2022)|<font color="black">HW Hatchbacks</font>]]
+|2/5
+|[[File:HCV27.jpg|75px]]
+|-
+|HCY24
+|018
+|[['19 Mercedes-Benz A-Class]] (2nd Color - Zamac)
+| bgcolor="lime" |[[HW Hatchbacks Mini Collection (2022)|<font color="black">HW Hatchbacks</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|2/5
+|[[File:2019 Mercedes Zamac Loose.JPG|75px]]
+|-
+|HCW78
+|018
+|[['19 Mercedes-Benz A-Class]] (3rd Color)
+| bgcolor="lime" |[[HW Hatchbacks Mini Collection (2022)|<font color="black">HW Hatchbacks</font>]]
+|2/5
+|[[File:Pietervdw HW Mercedes A Yellow.jpg|75px]]
+|-
+|HCT61
+|019
+|[[The Nash]]
+| bgcolor="#D7B1CB" |[[Compact Kings Mini Collection (2022)|<font color="black">Compact Kings</font>]]
+|1/5
+|[[File:Nash 2022.jpg|75px]]
+|-
+|HCW79
+|019
+|[[The Nash]] (2nd Color)
+| bgcolor="#D7B1CB" |[[Compact Kings Mini Collection (2022)|<font color="black">Compact Kings</font>]]
+|1/5
+|[[File:HCW79.jpg|75px]]
+|-
+|HCV05
+|020
+|[['55 Chevy (2006)|'55 Chevy]]
+| bgcolor="#00ccff" |[[Chevy Bel Air Mini Collection (2022)|<font color="black">Chevy Bel Air</font>]]
+|1/5
+|[[File:HCV05 2022 020 '55 Chevy.jpg|75px]]
+|-
+|HCY10
+|020
+|[['55 Chevy (2006)|'55 Chevy]]
+| bgcolor="#00ccff" |[[Chevy Bel Air Mini Collection (2022)|<font color="black">Chevy Bel Air</font>]]<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|1/5
+|[[File:'55 chevy.jpg|75px]]
+|-
+|HCW84
+|020
+|[['55 Chevy (2006)|'55 Chevy]] (2nd Color)
+| bgcolor="#00ccff" |[[Chevy Bel Air Mini Collection (2022)|<font color="black">Chevy Bel Air</font>]]
+|1/5
+|[[File:HCW84.jpg|75px]]
+|-
+|HCV23
+|021
+|[['76 Greenwood Corvette]]
+| bgcolor="#d8d8d8" |[[HW Contoured Mini Collection (2022)|<font color="black">HW Contoured</font>]]
+|1/5
+|[[File:HCV23_2022_021_76 Greenwood Corvette.jpg|75px]]
+|-
+|HCY60
+|021
+|[['76 Greenwood Corvette]] (2nd Color)
+| bgcolor="red" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|3/12
+|[[File:76 Greenwood Corvette - Red Edition.jpg|75px]]
+|-
+|HCW80
+|021
+|[['76 Greenwood Corvette]] (3rd Color)
+| bgcolor="#d8d8d8" |[[HW Contoured Mini Collection (2022)|<font color="black">HW Contoured</font>]]
+|1/5
+|[[File:Pietervdw HW GreenwoodCorvetteGreen.jpg|75px]]
+|-
+|HCT41
+|022
+|[[Roadster Bite]]
+| bgcolor="#5865f2" |[[HW Speed Team Mini Collection (2022)|<font color="black">HW Speed Team</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|1/5
+|[[File:RoadsterBite.jpg|75px]]
+|-
+|HCW81
+|022
+|[[Roadster Bite]] (2nd Color)
+| bgcolor="#5865f2" |[[HW Speed Team Mini Collection (2022)|<font color="black">HW Speed Team</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|1/5
+|[[File:SilverBite.jpg|75px]]
+|-
+|HCV97
+|023
+|[[2020 Ram 1500 Rebel]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]
+|1/10
+|[[File:HCV97.jpg|75px]]
+|-
+|HCX93
+|023
+|[[2020 Ram 1500 Rebel]] (2nd Color)
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]
+|1/10
+|[[File:1dodgeran.jpg|75px]]
+|-
+|HCV58
+|024
+|[[Mazda REPU]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]
+|2/10
+|[[File:HCV58_2022_024_Mazda REPU.jpg|75px]]
+|-
+|HCY26
+|024
+|[[Mazda REPU]] (2nd Color - Zamac)
+|bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|2/10
+|[[File:Mazda Repu - ZAMAC.jpg|75px]]
+|-
+|HCW82
+|024
+|[[Mazda REPU]] (3rd Color)
+|bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]
+|2/10
+|[[File:HCW82.jpg|75px]]
+|-
+|HCV03
+|025
+|[[Humvee]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]
+|3/10
+|[[File:Humvee Baja Blazers 2022.jpg|75px]]
+|-
+|HCT50
+|026
+|[['20 Jeep Gladiator]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]
+|4/10
+|[[File:HCT50_026_20 Jeep Gladiator.jpg|75px]]
+|-
+|HCY25
+|026
+|[['20 Jeep Gladiator]] (2nd Color - Zamac)
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|4/10
+|[[File:20 Jeep Gladiator - ZAMAC.jpg|75px]]
+|-
+|HCW66
+|026
+|[['20 Jeep Gladiator]] (3rd Color)
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]
+|4/10
+|[[File:20 JEEP GLADIATOR HCW66.jpg|75px]]
+|-
+|HCT36
+|027
+|[[Bricking Trails]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|2/10
+|[[File:BrickingTrails.jpg|75px]]
+|-
+|HCW86
+|027
+|[[Bricking Trails]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|2/10
+|[[File:BrickingTrails2.jpg|75px]]
+|-
+|HCV67
+|028
+|[[Tooligan]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]
+|3/10
+|[[File:Tooligan.jpg|75px]]
+|-
+|HCX90
+|028
+|[[Tooligan]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]
+|3/10
+|[[File:HCX90.jpg|75px]]
+|-
+|HCT48
+|029
+|[[2009 Ford F-150]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]
+|3/10
+|[[File:2009_ford_f150_2022.jpg|75px]]
+|-
+|HCV02
+|030
+|[[Street Cleaver]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]
+|4/10
+|[[File:STREET CLEAVER HCV02.jpg|75px]]
+|-
+|HCW98
+|030
+|[[Street Cleaver]] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]
+|4/10
+|[[File:HCW98.jpg|75px]]
+|-
+|HCV73
+|031
+|[[Loco Motorin']]
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]
+|5/10
+|[[File:HCV73.jpg|75px]]
+|-
+|HCX83
+|031
+|[[Loco Motorin']] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]
+|5/10
+|[[File:HCX83.jpg|75px]]
+|-
+|HCV63
+|032
+|[[Arkham Asylum Batmobile|Batman: Arkham Asylum Batmobile]]
+| bgcolor="black" |[[Batman Mini Collection (2022)|<font color="white">Batman</font>]]
+|2/5
+|[[File:Batman Arkaham Asylum Batmobile 2022.jpeg|75px]]
+|-
+|HCW59
+|032
+|[[Arkham Asylum Batmobile|Batman: Arkham Asylum Batmobile]] (2nd Color)
+| bgcolor="black" |[[Batman Mini Collection (2022)|<font color="white">Batman</font>]]
+|2/5
+|[[File:HCW59 Carded.jpg|75px]]
+|-
+|HCW63
+|032
+|[[Arkham Asylum Batmobile|Batman: Arkham Asylum Batmobile]] (3rd Color)
+| bgcolor="black" |[[Batman Mini Collection (2022)|<font color="white">Batman</font>]]
+|2/5
+|[[File:HCW63.jpg|75px]]
+|-
+|HCT21
+|033
+|[['87 Ford Sierra Cosworth]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|1/10
+|[[File:'87FordSierra.jpg|75px]]
+|-
+|HCW87
+|033
+|[['87 Ford Sierra Cosworth]] (2nd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|1/10
+|[[File:Pietervdw HW Ford Sierra blue.jpg|75px]]
+|-
+|HCW51
+|034
+|[['73 BMW 3.0 CSL Race Car]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]
+|2/10
+|[[File:HCW51-01.JPG|75px]]
+|-
+|HCY20
+|034
+|[['73 BMW 3.0 CSL Race Car]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|2/10
+|[[File:2022-ML034_(Large).JPG|75px]]
+|-
+|HCY58
+|034
+|[['73 BMW 3.0 CSL Race Car]] (2nd Color)
+| bgcolor="red" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|1/12
+|[[File:2022 Hot Wheels 73 BMW Red Edition carded.jpg|75px]]
+|-
+|HCT56
+|035
+|[[Disney Steamboat]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2022)|<font color="white">HW Screen Time</font>]]
+|3/10
+|[[File:Msg2087543911-39721.jpg|75px]]
+|-
+|HCV45
+|036
+|[[Skull Shaker]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2022)|<font color="black">Tooned</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|2/5
+|[[File:HCV45-Carded.jpg|75px]]
+|-
+|HCX87
+|036
+|[[Skull Shaker]] (2nd Color)
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2022)|<font color="black">Tooned</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|2/5
+|[[File:SKULL CRUSHER HCX87.jpg|75px]]
+|-
+|HCX97
+|037
+|[[Good Humor Truck|Quick Bite]]
+| bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2022)|<font color="black">Fast Foodie</font>]]<br>[[2022 Treasure Hunts Series|<font color="#00cc00>'''Treasure Hunt'''</font>]]
+|2/5
+|[[File:HCX97_037_Quick Bite.jpg|75px]]
+|-
+|HCW49
+|038
+|[['16 Cadillac ATS-V R]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]
+|3/10
+|[[File:HCW49-01.JPG|75px]]
+|-
+|HCV66
+|039
+|[[Veloci-Racer]]
+| bgcolor="#6CB4EE" |[[Street Beasts Mini Collection (2022)|<font color="black">Street Beasts</font>]]
+|2/5
+|[[File:Veloci-Racer-2022.jpg|75px]]
+|-
+|HCX27
+|039
+|[[Veloci-Racer]] (2nd Color)
+| bgcolor="#6CB4EE" |[[Street Beasts Mini Collection (2022)|<font color="black">Street Beasts</font>]]
+|2/5
+|[[File:VELOCI-RACER HCX27.jpg|75px]]
+|-
+|HCV42
+|040
+|[[Fig Rig]]
+| bgcolor="#0087BD" |[[HW Ride-Ons Mini Collection (2022)|<font color="black">HW Ride-Ons<font/>]]
+|3/5
+|[[File:HCV42-Carded.jpg|75px]]
+|-
+|HCV28
+|041
+|[[Ford Focus RS]]
+| bgcolor="lime" |[[HW Hatchbacks Mini Collection (2022)|<font color="black">HW Hatchbacks<font/>]]
+|3/5
+|[[File:HCV28-01.JPG|75px]]
+|-
+|HCY50
+|041
+|[[Ford Focus RS]] (2nd Color)
+| bgcolor="lime" |[[HW Hatchbacks Mini Collection (2022)|<font color="black">HW Hatchbacks<font/>]]<br>'''[[Kroger|<font color="black">Kroger Exclusive]]'''</font>
+|3/5
+|[[File:HCY50_-_Ford_Focus_RS-1.jpg|75px]]
+|-
+|HCX73
+|041
+|[[Ford Focus RS]] (3rd Color)
+| bgcolor="lime" |[[HW Hatchbacks Mini Collection (2022)|<font color="black">HW Hatchbacks<font/>]]
+|3/5
+|[[File:Ford Focus RS orange (2022).jpeg|75px]]
+|-
+|HCV26
+|042
+|[[VW Bug|Volkswagen Beetle]]
+| bgcolor="#D7B1CB" |[[Compact Kings Mini Collection (2022)|<font color="black">Compact Kings<font/>]][[Compact Kings Mini Collection (2022)|<font color="black">]][[Compact Kings Mini Collection (2022)|<font color="black">]][[Compact Kings Mini Collection (2022)|<font color="black">]]
+|2/5
+|[[File:Beetle. Blue Woodie. Compact Kings.jpg|75px]]
+|-
+|HCY59
+|042
+|[[VW Bug|Volkswagen Beetle]] (2nd Color)
+| bgcolor="red" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|2/12
+|[[File:2022-042 HCY59 RED Ed VW Bug Black open-4b.jpg|75px]]
+|-
+|HCW88
+|042
+|[[VW Bug|Volkswagen Beetle]] (3rd Color)
+| bgcolor="#D7B1CB" |[[Compact Kings Mini Collection (2022)|<font color="black">Compact Kings<font/>]][[Compact Kings Mini Collection (2022)|<font color="black">]][[Compact Kings Mini Collection (2022)|<font color="black">]][[Compact Kings Mini Collection (2022)|<font color="black">]]
+|2/5
+|[[File:20220401 181203.jpg|75px]]
+|-
+|HCV06
+|043
+|[['55 Chevy Bel Air Gasser]]
+| bgcolor="#00ccff" |[[Chevy Bel Air Mini Collection (2022)|<font color="black">Chevy Bel Air</font>]]
+|2/5
+|[[File:2022ML-043A_(Large).JPG|75px]]
+|-
+|HCW89
+|043
+|[['55 Chevy Bel Air Gasser]] (2nd Color)
+| bgcolor="#00ccff" |[[Chevy Bel Air Mini Collection (2022)|<font color="black">Chevy Bel Air</font>]]
+|2/5
+|[[File:Pietervdw HW Gasser Triassic Five Purple.JPG|75px]]
+|-
+|HCV07
+|044
+|[['57 Chevy]]
+| bgcolor="#00ccff" |[[Chevy Bel Air Mini Collection (2022)|<font color="black">Chevy Bel Air</font>]]
+|3/5
+|[[File:'57_Chevy_2022_01.jpg|75px]]
+|-
+|HCX92
+|044
+|[['57 Chevy]] (2nd Color)
+| bgcolor="#00ccff" |[[Chevy Bel Air Mini Collection (2022)|<font color="black">Chevy Bel Air</font>]]
+|3/5
+|[[File:HCX92-LOOSE.jpg|75px]]
+|-
+|HCW40
+|045
+|[[Fly-By]]
+| bgcolor="#d8d8d8" |[[HW Contoured Mini Collection (2022)|<font color="black">HW Contoured</font>]]
+|2/5
+|[[File:FLY-BY.jpg|75px]]
+|-
+|HCV24
+|046
+|[['70 Chevy Chevelle SS|'70 Chevy Chevelle]]
+| bgcolor="#d8d8d8" |[[HW Contoured Mini Collection (2022)|<font color="black">HW Contoured</font>]]
+|3/5
+|[[File:HCV24-01.JPG|75px]]
+|-
+|HCV61
+|047
+|[[Fast Fish]]
+| bgcolor="#5865f2" |[[HW Speed Team Mini Collection (2022)|<font color="black">HW Speed Team</font>]]
+|2/5
+|[[File:2022 Fast Fish Yellow loose.JPG|75px]]
+|-
+|HCX67
+|047
+|[[Fast Fish]] (2nd Color)
+| bgcolor="#5865f2" |[[HW Speed Team Mini Collection (2022)|<font color="black">HW Speed Team</font>]]
+|2/5
+|[[File:FAST FISH HCX67.jpg|75px]]
+|-
+|HCW46
+|048
+|[[La Fasta]]
+| bgcolor="#5865f2" |[[HW Speed Team Mini Collection (2022)|<font color="black">HW Speed Team</font>]]
+|3/5
+|[[File:La_Fasta_2022.jpg|75px]]
+|-
+|HCX76
+|048
+|[[La Fasta]] (2nd Color)
+| bgcolor="#5865f2" |[[HW Speed Team Mini Collection (2022)|<font color="black">HW Speed Team</font>]]
+|3/5
+|[[File:LA FASTA HCX76.jpg|75px]]
+|-
+|HCV57
+|049
+|[[Tesla Cybertruck]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]
+|3/10
+|[[File:TeslaCybertruck Front.png|93x93px]]
+|-
+|HCV13
+|050
+|[[Track Manga]]
+| bgcolor="#FF7900" |[[Spoiler Alert Mini Collection (2022)|<font color="black">Spoiler Alert</font>]]
+|1/5
+|[[File:Track_Manga_-_Spoiler_Alert_2022.jpg|75px]]
+|-
+|HCW97
+|050
+|[[Track Manga]] (2nd Color)
+| bgcolor="#FF7900" |[[Spoiler Alert Mini Collection (2022)|<font color="black">Spoiler Alert</font>]]
+|1/5
+|[[File:Red_HCW97_50-250.jpg|75px]]
+|-
+|HCW38
+|051
+|[[Blade Raider]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]
+|5/10
+|[[File:BLADE RUNNER .jpg|75px]]
+|-
+|HCW92
+|051
+|[[Blade Raider]] (2nd Color)
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]
+|5/10
+|[[File:Blade_Raider_profile.jpg|75px]]
+|-
+|HCV55
+|052
+|[[HW450F]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]
+|6/10
+|[[File:20220111 094317(1).jpg|75px]]
+|-
+|HCT49
+|053
+|[['19 Chevy Silverado Trail Boss LT]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]
+|7/10
+|[[File:HCT49_053_19 Chevy Silverado Trail Boss LT.jpg|75px]]
+|-
+|HCW64
+|053
+|[['19 Chevy Silverado Trail Boss LT]] (2nd Color)
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]
+|7/10
+|[[File:19 CHEVY SILVERADO TRAIL BOSS LT HCW64.jpg|75px]]
+|-
+|HCT81
+|054
+|[[See Me Rollin']]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]
+|4/10
+|[[File:SeeMeRollin'.jpg|75px]]
+|-
+|HCW93
+|054
+|[[See Me Rollin']] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]
+|4/10
+|[[File:Green_HCW93_54-250.jpg|75px]]
+|-
+|HCT63
+|055
+|[[Dodge Van]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|6/10
+|[[File:Dodge Van Purple 22.jpg|75px]]
+|-
+|HCY16
+|055
+|[[Dodge Van]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|6/10
+|[[File:DODGE VAN.jpg|75px]]
+|-
+|HJP28
+|055
+|[[Dodge Van]] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]<br>'''Best Buy Exclusive'''<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|6/10
+|[[File:BestBuyVan.jpg|75px]]
+|-
+|HCT79
+|056
+|[[Barbie Dream Camper]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]
+|7/10
+|[[File:HCT79 056 Barbie Dream Camper.jpg|75px]]
+|-
+|HCW37
+|057
+|[[McLaren F1 GTR]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]
+|3/10
+|[[File:HCW37-01.JPG|75px]]
+|-
+|HCY51
+|057
+|[[McLaren F1 GTR]] (2nd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]<br>'''[[Kroger|<font color="black">Kroger Exclusive]]'''</font>
+|3/10
+|[[File:Kroger.jpeg|75px]]
+|-
+|HCX86
+|057
+|[[McLaren F1 GTR]] (3rd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]
+|3/10
+|[[File:HCX86.jpg|75px]]
+|-
+|HCT72
+|058
+|[['67 Ford GT40 Mk.IV]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|4/10
+|[[File:GulfMkIV.jpg|75px]]
+|-
+|HCW67
+|058
+|[['67 Ford GT40 Mk.IV]] (2nd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|4/10
+|[[File:White_HCW67_58-250.jpg|75px]]
+|-
+|HCT86
+|059
+|[[GT-Scorcher]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|5/10
+|[[File:GT-Scorcher_2022_01.jpg|75px]]
+|-
+|HCW99
+|059
+|[[GT-Scorcher]] (2nd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|5/10
+|[[File:GT-SCORCHER HCW99.jpg|75px]]
+|-
+|HCT54
+|060
+|[[X-Jet]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2022)|<font color="white">HW Screen Time</font>]]
+|4/10
+|[[File:X-Jet_2022_1.jpg|75px]]
+|-
+|HCT40
+|061
+|[[Sweet Driver]]
+| bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2022)|<font color="black">Fast Foodie</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|3/5
+|[[File:SweetDriver.jpg|75px]]
+|-
+|HCW95
+|061
+|[[Sweet Driver]] (2nd Color)
+| bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2022)|<font color="black">Fast Foodie</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|3/5
+|[[File:Sweet Driver Fast Foodie 2022.PNG|75px]]
+|-
+|HCW56
+|062
+|[[Bully Goat]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]
+|1/10
+|[[File:2022HWBullyGoatPurpleUS-62.jpg|75px]]
+|-
+|HCX03
+|062
+|[[Bully Goat]] (2nd Color)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]
+|1/10
+|[[File:Bullygoatgraffiti.jpg|75px]]
+|-
+|HCW34
+|063
+|[['68 Dodge Dart]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]
+|2/10
+|[[File:Dodge Dart HW Art Cars 2022 white.jpg|76px]]
+|-
+|HCY52
+|063
+|[['68 Dodge Dart]] (2nd Color)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]<br>'''[[Kroger|<font color="black">Kroger Exclusive]]'''</font>
+|2/10
+|[[File:68 DODGE DART HCY52.jpg|75px]]
+|-
+|HCW96
+|063
+|[['68 Dodge Dart]] (3rd Color)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]
+|2/10
+|[[File:HCW96.jpg|75px]]
+|-
+|HCT77
+|064
+|[[Nissan R390 GT1]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|4/10
+|[[File:HCT77-01.JPG|75px]]
+|-
+|HCY27
+|064
+|[[Nissan R390 GT1]] (2nd Color - Zamac)
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|4/10
+|[[File:HW-2022-064-2-HCY27-Nissan R390 GT1 (2nd Colour - Zamac).png|75px]]
+|-
+|HCT67
+|065
+|[['94 Bugatti EB110 SS]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|5/10
+|[[File:SchumiBugatti.jpg|75px]]
+|-
+|HCX91
+|065
+|[['94 Bugatti EB110 SS]] (2nd Color)
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|5/10
+|[[File:BugattiEB110SS Front.png|93x93px]]
+|-
+|HCY01
+|066
+|[[Pixel Shaker]]
+| bgcolor="#0087BD" |[[HW Ride-Ons Mini Collection (2022)|<font color="black">HW Ride-Ons</font>]]<br>[[2022 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|4/5
+|[[File:PixelShaker.jpg|75px]]
+|-
+|HCV32
+|067
+|[[Subaru WRX STI]]
+| bgcolor="lime" |[[HW Hatchbacks Mini Collection (2022)|<font color="black">HW Hatchbacks</font>]]
+|4/5
+|[[File:HCV32-01.JPG|75px]]
+|-
+|HCX04
+|067
+|[[Subaru WRX STI]] (2nd Color)
+| bgcolor="lime" |[[HW Hatchbacks Mini Collection (2022)|<font color="black">HW Hatchbacks</font>]]
+|4/5
+|[[File:SUBARU WRX STI HCX04.jpg|75px]]
+|-
+|HCY64
+|067
+|[[Subaru WRX STI]] (3rd Color)
+| bgcolor="red" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|7/12
+|[[File:Subaru wrx sti red edition 2022.png|75px]]
+|-
+|HCT70
+|068
+|[['21 Ford Bronco]]
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2022)|<font color="black">Mud Studs</font>]]
+|1/5
+|[[File:21 Bronco Grey 22.jpg|75px]]
+|-
+|HCW91
+|068
+|[['21 Ford Bronco]] (2nd Color)
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2022)|<font color="black">Mud Studs</font>]]
+|1/5
+|[[File:Ford Bronco(red).png|75px]]
+|-
+|HCW53
+|069
+|[[Rocket Box]]
+| bgcolor="#D7B1CB" |[[Compact Kings Mini Collection (2022)|<font color="black">Compact Kings]][[Compact Kings Mini Collection (2022)|<font color="black">]][[Compact Kings Mini Collection (2022)|<font color="black">]][[Compact Kings Mini Collection (2022)|<font color="black">]]
+|3/5
+|[[File:Rocket_Box_2022_1.jpeg|75px]]
+|-
+|HCX07
+|069
+|[[Rocket Box]] (2nd Color)
+| bgcolor="#D7B1CB" |[[Compact Kings Mini Collection (2022)|<font color="black">Compact Kings]][[Compact Kings Mini Collection (2022)|<font color="black">]][[Compact Kings Mini Collection (2022)|<font color="black">]][[Compact Kings Mini Collection (2022)|<font color="black">]]
+|3/5
+|[[File:ROCKET BOX HCX07.jpg|75px]]
+|-
+|HCV08
+|070
+|[['59 Chevy Bel Air|'59 Chevy Impala]]
+| bgcolor="#00ccff" |[[Chevy Bel Air Mini Collection (2022)|<font color="black">Chevy Bel Air</font>]]
+|4/5
+|[[File:59_Impala_Pink_22.jpg|75px]]
+|-
+|HCY43
+|070
+|[['59 Chevy Bel Air|'59 Chevy Impala]] (2nd Color)
+| bgcolor="#00ccff" |[[Chevy Bel Air Mini Collection (2022)|<font color="black">Chevy Bel Air</font>]]<br>[[:Category:Dollar General Exclusive|<font color="black">'''Dollar General Exclusive'''</font>]]
+|4/5
+|[[File:59 CHEVY IMPALA HCY43.jpg|75px]]
+|-
+|HCT42
+|071
+|[[Mach It Go]]
+| bgcolor="#5865f2" |[[HW Speed Team Mini Collection (2022)|<font color="black">HW Speed Team</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|4/5
+|[[File:MachItGo.jpg|75px]]
+|-
+|HCW90
+|071
+|[[Mach It Go]] (2nd Color)
+| bgcolor="#5865f2" |[[HW Speed Team Mini Collection (2022)|<font color="black">HW Speed Team</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|4/5
+|[[File:HW-2022-071-2-HCW90-Mach It Go (2nd Colour).png|75px]]
+|-
+|HCT18
+|072
+|[['20 Toyota Tacoma]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|4/10
+|[[File:'20ToyotaTacoma.jpg|75px]]
+|-
+|HCX56
+|072
+|[['20 Toyota Tacoma]] (2nd Color)
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|4/10
+|[[File:ToyotaTacoma.jpg|75px]]
+|-
+|HCT06
+|073
+|[[Ford Mustang Mach-E 1400]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2022)|<font color="black">HW Green Speed</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|1/5
+|[[File:Mach-E1400.jpg|75px]]
+|-
+|HCX38
+|073
+|[[Ford Mustang Mach-E 1400]] (2nd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2022)|<font color="black">HW Green Speed</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|1/5
+|[[File:HCX38-01.JPG|75px]]
+|-
+|HCY30
+|073
+|[[Ford Mustang Mach-E 1400]] (3rd Color - Zamac)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2022)|<font color="black">HW Green Speed</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|1/5
+|[[File:FORD MUSTANG MACH-E 1400 HCY30.jpg|75px]]
+|-
+|HCV15
+|074
+|[[Custom Ford Bronco]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]
+|8/10
+|[[File:Custom Ford Bronco 2022 red .png|75px]]
+|-
+|HCY45
+|074
+|[[Custom Ford Bronco]] (2nd Color)
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]<br>[[:Category:Dollar General Exclusive|<font color="black">'''Dollar General Exclusive'''</font>]]
+|8/10
+|[[File:Custom Ford Bronco - Yellow.jpg|75px]]
+|-
+|HCV47
+|075
+|[[Airuption]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]
+|5/10
+|[[File:Experimotors-airuption-2022-HCV47.jpg|75px]]
+|-
+|HCV93
+|076
+|[['56 Ford Truck|'56 Ford F-100]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]
+|8/10
+|[[File:2022ML-076 (Large).JPG|75px]]
+|-
+|HCY61
+|076
+|[['56 Ford Truck|'56 Ford F-100]] (2nd Color)
+| bgcolor="red" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|4/12
+|[[File:56 Ford F-100 - Red Edition.jpg|75px]]
+|-
+|HCT89
+|077
+|[[Ain't Fare]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|9/10
+|[[File:Ain't Fare HW Metro 2022.PNG|75px]]
+|-
+|HCX00
+|077
+|[[Ain't Fare]] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|9/10
+|[[File:HCX00.jpg|75px]]
+|-
+|HCT04
+|078
+|[[Classic TV Series Batmobile (Tooned)|Classic TV Series Batmobile]]
+| bgcolor="black" |[[Batman Mini Collection (2022)|<font color="white">Batman</font>]]<br>[[2022 New Models|<font color="white">'''New for 2022!'''</font>]]
+|3/5
+|[[File:'ToonedBatmobile.jpg|75px]]
+|-
+|HCW60
+|078
+|[[Classic TV Series Batmobile (Tooned)|Classic TV Series Batmobile]] (2nd Color)
+| bgcolor="black" |[[Batman Mini Collection (2022)|<font color="white">Batman</font>]]<br>[[2022 New Models|<font color="white">'''New for 2022!'''</font>]]
+|3/5
+|[[File:CLASSIC TV SERIES BATMOBILE HCW60.jpg|75px]]
+|-
+|HCV10
+|079
+|[['69 COPO Corvette]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]
+|6/10
+|[[File:2022 COPO Corv Blue.jpg|75px]]
+|-
+|HCY28
+|079
+|[['69 COPO Corvette]] (2nd Color - Zamac)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|6/10
+|[[File:69 Copo Corvette - ZAMAC Walmart Exclusive.jpg|75px]]
+|-
+|HCV53
+|080
+|[[U.S.S. Enterprise NCC-1701]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2022)|<font color="white">HW Screen Time</font>]]
+|5/10
+|[[File:Msg2087543911-39715.jpg|75px]]
+|-
+|HCY08
+|081
+|[[Tooned Twin Mill]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2022)|<font color="black">Tooned</font>]]<br>[[2022 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|3/5
+|[[File:Tooned Twin Mill 2022 1 TH Sealed.jpg|75px]]
+|-
+|HCV51
+|082
+|[[Donut Drifter]]
+| bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2022)|<font color="black">Fast Foodie</font>]]
+|4/5
+|[[File:2022_donut_drifter.jpg|75px]]
+|-
+|HCX84
+|082
+|[[Donut Drifter]] (2nd Color)
+| bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2022)|<font color="black">Fast Foodie</font>]]
+|4/5
+|[[File:HCX84.jpg|75px]]
+|-
+|HCT31
+|083
+|[[Count Muscula]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2022)|<font color="black">HW Dream Garage</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|2/5
+|[[File:CountMuscula.jpg|75px]]
+|-
+|HCX01
+|083
+|[[Count Muscula]] (2nd Color)
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2022)|<font color="black">HW Dream Garage</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|2/5
+|[[File:COUNT MUSCULA HCX01.jpg|75px]]
+|-
+|HCT92
+|084
+|[[FusionBusta]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2022)|<font color="black">HW Dream Garage</font>]]
+|3/5
+|[[File:Fusion_Busta._Purple._2022.jpg|75px]]
+|-
+|HCX66
+|084
+|[[FusionBusta]] (2nd Color)
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2022)|<font color="black">HW Dream Garage</font>]]
+|3/5
+|[[File:HCX66 carded.jpg|75px]]
+|-
+|HCT08
+|085
+|[[Lamborghini Sián FKP 37]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|1/10
+|[[File:LamborghiniSianFKP37 Front.png|93x93px]]
+|-
+|HCT95
+|086
+|[[Mercedes-Benz 500 E]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]
+|2/10
+|[[File:Mercedes-Benz 500 E (2022, red) by @mercedes diecast 64.jpg|75px]]
+|-
+|HCY42
+|086
+|[[Mercedes-Benz 500 E]] (2nd Color)
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]<br>[[:Category:Dollar General Exclusive|<font color="black">'''Dollar General Exclusive'''</font>]]
+|2/10
+|[[File:2022HWMercedesBenz500EDGExclWhite-86.jpg|75px]]
+|-
+|HCT53
+|087
+|[[Raijin Express]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|3/10
+|[[File:Raijin_Express_2022_01.jpg|75px]]
+|-
+|HCX59
+|087
+|[[Raijin Express]] (2nd Color)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|3/10
+|[[File:GoldenRaijinExpress.jpg|75px]]
+|-
+|HCV36
+|088
+|[[Purrfect Speed]]
+| bgcolor="#6CB4EE" |[[Street Beasts Mini Collection (2022)|<font color="black">Street Beasts</font>]]<br>[[Chinese New Year|<font color="black">'''Year of the Tiger'''</font>]]
+|3/5
+|[[File:Purrfect Speed 2022.jpg|75px]]
+|-
+|HCT59
+|089
+|[[TURTOshell]]
+| bgcolor="#6CB4EE" |[[Street Beasts Mini Collection (2022)|<font color="black">Street Beasts</font>]]
+|4/5
+|[[File:TURTOshell 2022.jpg|75px]]
+|-
+|HCX05
+|089
+|[[TURTOshell]] (2nd Color)
+| bgcolor="#6CB4EE" |[[Street Beasts Mini Collection (2022)|<font color="black">Street Beasts</font>]]
+|4/5
+|[[File:HCX05 carded.jpg|75px]]
+|-
+|HCW58
+|090
+|[[Kick Kart]]
+| bgcolor="#0087BD" |[[HW Ride-Ons Mini Collection (2022)|<font color="black">HW Ride-Ons</font>]]
+|5/5
+|[[File:HCW58.jpg|75px]]
+|-
+|HCX06
+|090
+|[[Kick Kart]] (2nd Color)
+| bgcolor="#0087BD" |[[HW Ride-Ons Mini Collection (2022)|<font color="black">HW Ride-Ons</font>]]
+|5/5
+|[[File:KICK CART HCX06.jpg|75px]]
+|-
+|HCT64
+|091
+|[[Toyota Land Cruiser 80]]
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2022)|<font color="black">Mud Studs</font>]]
+|2/5
+|[[File:OverlandJ80.jpg|75px]]
+|-
+|HCY57
+|091
+|[[Toyota Land Cruiser 80]] (2nd Color)
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2022)|<font color="black">Mud Studs</font>]]<br>'''[[Kroger|<font color="black">Kroger Exclusive]]'''</font>
+|2/5
+|[[File:KrogerCruiser.jpg|75px]]
+|-
+|HCV22
+|092
+|[[Mad Manga]]
+| bgcolor="#d8d8d8" |[[HW Contoured Mini Collection (2022)|<font color="black">HW Contoured</font>]]
+|4/5
+|[[File:Mad_Manga_(2022_Contoured).jpg|75px]]
+|-
+|HCT51
+|093
+|[['63 Studebaker Champ]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]
+|5/10
+|[[File:'63 studebaker champ.jpg|75px]]
+|-
+|HCY14
+|093
+|[['63 Studebaker Champ]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|5/10
+|[[File:‘63 studebaker.jpg|75px]]
+|-
+|HCT57
+|094
+|[[Rally Baja Crawler]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]
+|6/10
+|[[File:HCT57.jpg|75px]]
+|-
+|HCT58
+|095
+|[[Hyperfin]]
+| bgcolor="#FF4F00" |[[HW Daredevils Mini Collection (2022)|<font color="black">HW Daredevils</font>]]
+|1/5
+|[[File:HYPERFIN HCT58.jpg|75px]]
+|-
+|HCV38
+|096
+|[[Wheelie Chair]]
+| bgcolor="#FF4F00" |[[HW Daredevils Mini Collection (2022)|<font color="black">HW Daredevils</font>]]
+|2/5
+|[[File:NM10Reece.JPG|75px]]
+|-
+|HCX08
+|096
+|[[Wheelie Chair]] (2nd Color)
+| bgcolor="#FF4F00" |[[HW Daredevils Mini Collection (2022)|<font color="black">HW Daredevils</font>]]
+|2/5
+|[[File:WHEELIE CHAIR HCX08.jpg|75px]]
+|-
+|HCV76
+|097
+|[[Mazda RX-7]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]
+|1/10
+|[[File:Mazda RX-7 2022 Version.jpg|75px]]
+|-
+|HCX24
+|097
+|[[Mazda RX-7]] (2nd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]
+|1/10
+|[[File:Mazda rx7.jpg|75px]]
+|-
+|HCV84
+|098
+|[[Custom '01 Acura Integra GSR]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]
+|2/10
+|[[File:CUSTOM 01 ACURA INTEGRA GSR HCV84.jpg|75px]]
+|-
+|HCY44
+|098
+|[[Custom '01 Acura Integra GSR]] (2nd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]<br>[[:Category:Dollar General Exclusive|<font color="black">'''Dollar General Exclusive'''</font>]]
+|2/10
+|[[File:2022HWCustom01AcuraIntegraGSRDGBlue-98.jpg|75px]]
+|-
+|HCT90
+|099
+|[[DAVancenator]]
+| bgcolor="#FF7900" |[[Spoiler Alert Mini Collection (2022)|<font color="black">Spoiler Alert</font>]]
+|2/5
+|[[File:DAVancenator_2022_01.jpg|75px]]
+|-
+|HCX19
+|099
+|[[DAVancenator]] (2nd Color)
+| bgcolor="#FF7900" |[[Spoiler Alert Mini Collection (2022)|<font color="black">Spoiler Alert</font>]]
+|2/5
+|[[File:DAVancenator22SpoilerAlertBlack.jpg|75px]]
+|-
+|HCT78
+|100
+|[[Nissan Leaf NISMO RC_02]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2022)|<font color="black">HW Green Speed</font>]]
+|2/5
+|[[File:Nissan_Leaf_Nismo_RC_02_2022_Mainline.JPG|75px]]
+|-
+|HCY53
+|100
+|[[Nissan Leaf NISMO RC_02]] (2nd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2022)|<font color="black">HW Green Speed</font>]]<br>'''[[Kroger|<font color="black">Kroger Exclusive]]'''</font>
+|2/5
+|[[File:2022 Nissan Leaf Black.jpg|75px]]
+|-
+|HCX89
+|100
+|[[Nissan Leaf NISMO RC_02]] (3rd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2022)|<font color="black">HW Green Speed</font>]]
+|2/5
+|[[File:NissanLeafNismoRC 02 Front.png|93x93px]]
+|-
+|HCT38
+|101
+|[[Coupe Clip]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|6/10
+|[[File:CoupeClip.jpg|75px]]
+|-
+|HCX09
+|101
+|[[Coupe Clip]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|6/10
+|[[File:HCX09.jpg|75px]]
+|-
+|HCW55
+|102
+|[[Cockney Cab II]]
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]
+|10/10
+|[[File:Cockney Cab II HW Metro 2022.jpg|75px]]
+|-
+|HCX10
+|102
+|[[Cockney Cab II]] (2nd Color)
+| bgcolor="silver" |[[HW Metro Mini Collection (2022)|<font color="black">HW Metro</font>]]
+|10/10
+|[[File:COCKNEY CAB II HCX10.jpg|75px]]
+|-
+|HCV69
+|103
+|[[Aston Martin Valhalla Concept]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2022)|<font color="white">HW Screen Time</font>]]<br>'''<font color="white">New in Mainline</font>'''
+|6/10
+|[[File:ValhallaBond.jpg|75px]]
+|-
+|HCT26
+|104
+|[[Toon'd '83 Chevy Silverado]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2022)|<font color="black">Tooned</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|4/5
+|[[File:Toon'dSilverado.jpg|75px]]
+|-
+|HCX11
+|104
+|[[Toon'd '83 Chevy Silverado]] (2nd Color)
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2022)|<font color="black">Tooned</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|4/5
+|[[File:2022HWToond83ChevySilveradoRedUSA-104.jpg|75px]]
+|-
+|HCV43
+|105
+|[[Bone Shaker]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2022)|<font color="black">HW Dream Garage</font>]]
+|4/5
+|[[File:2022-105 HCV43 Black Bone Shaker o1.jpg|75px]]
+|-
+|HCY32
+|105
+|[[Bone Shaker]] (2nd Color - Zamac)
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2022)|<font color="black">HW Dream Garage</font>]]
+|4/5
+|[[File:2022-105 HCY32 Zamak Bone Shaker o-1.jpg|75px]]
+|-
+|HCX12
+|105
+|[[Bone Shaker]] (3rd Color)
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2022)|<font color="black">HW Dream Garage</font>]]
+|4/5
+|[[File:BONE SHAKER HCX12.jpg|75px]]
+|-
+|HCW39
+|106
+|[[2020 Corvette]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]<br>'''<font color="black">New in Mainline</font>'''
+|3/10
+|[[File:'20CorvetteC8.jpg|75px]]
+|-
+|HCY11
+|106
+|[[2020 Corvette]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]<br>'''<font color="black">New in Mainline</font>'''<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|3/10
+|[[File:2020 corvetteSTH.jpg|75px]]
+|-
+|HCT93
+|107
+|[[McLaren F1]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|4/10
+|[[File:Pietervdw HW McLaren P1black.jpg|75px]]
+|-
+|HCX13
+|107
+|[[McLaren F1]] (2nd Color)
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|4/10
+|[[File:'93McLarenF1.jpg|75px]]
+|-
+|HJP31
+|107
+|[[McLaren F1]] (3rd Color)
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]<br>'''Best Buy Exclusive'''<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|4/10
+|[[File:BestBuyMcLaren.jpg|75px]]
+|-
+|HCV74
+|108
+|[['69 Chevy Pickup (2020 retool)|'69 Chevy Pickup]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]
+|4/10
+|[[File:69 Chevy Pickup.jpg|75px]]
+|-
+|HCX45
+|108
+|[['69 Chevy Pickup (2020 retool)|'69 Chevy Pickup]] (2nd Color)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]
+|4/10
+|[[File:HCX45.jpg|70px]]
+|-
+|HCW33
+|109
+|[['71 Dodge Charger]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]
+|5/10
+|[[File:HCW33.jpg|75px]]
+|-
+|HCY31
+|109
+|[['71 Dodge Charger]] (2nd Color - Zamac)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|5/10
+|[[File:Hot Wheels Skate 2023 - 71 Dodge Charger - HW Art Cars - ZAMAC.png|76px]]
+|-
+|HCX14
+|109
+|[['71 Dodge Charger]] (3rd Color)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]
+|5/10
+|[[File:HCX14.jpg|70px]]
+|-
+|HCT23
+|110
+|[[LB Super Silhouette Nissan Silvia (S15)]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|6/10
+|[[File:LBWKSilvia.jpg|75px]]
+|-
+|HCX15
+|110
+|[[LB Super Silhouette Nissan Silvia (S15)]] (2nd Color)
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|6/10
+|[[File:YellowLBWKSilvia.jpg|75px]]
+|-
+|HCV19
+|111
+|[['70 Chevelle SS Wagon]]
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2022)|<font color="black">HW Wagons</font>]]
+|1/5
+|[[File:HW Wagons 2022 '70 Chevelle SS Wagon HCV19.jpg|75px]]
+|-
+|HCX23
+|111
+|[['70 Chevelle SS Wagon]] (2nd Color)
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2022)|<font color="black">HW Wagons</font>]]
+|1/5
+|[[File:HW-2022-111-2-HCX23-70 Chevelle SS Wagon (2nd Colour).png|75px]]
+|-
+|HCY56
+|111
+|[['70 Chevelle SS Wagon]] (3rd Color)
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2022)|<font color="black">HW Wagons</font>]]<br>'''[[Kroger|<font color="black">Kroger Exclusive]]'''</font>
+|1/5
+|[[File:KrogerChevelle.jpg|75px]]
+|-
+|HCV14
+|112
+|[[Big-Air Bel-Air]]
+| bgcolor="#00ccff" |[[Chevy Bel Air Mini Collection (2022)|<font color="black">Chevy Bel Air</font>]]
+|5/5
+|[[File:HCV14.jpg|75px]]
+|-
+|HCY29
+|112
+|[[Big-Air Bel-Air]] (2nd Color - Zamac)
+| bgcolor="#00ccff" |[[Chevy Bel Air Mini Collection (2022)|<font color="black">Chevy Bel Air</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|5/5
+|[[File:Big-Air Bel-Air - Silver - ZAMAC.jpg|75px]]
+|-
+|HCX75
+|112
+|[[Big-Air Bel-Air]] (3rd Color)
+| bgcolor="#00ccff" |[[Chevy Bel Air Mini Collection (2022)|<font color="black">Chevy Bel Air</font>]]
+|5/5
+|[[File:HW-2022-112-3-HCX75-Big-Air Bel-Air (3rd Colour).png|75px]]
+|-
+|HCY05
+|113
+|[[Draftnator]]
+| bgcolor="#5865f2" |[[HW Speed Team Mini Collection (2022)|<font color="black">HW Speed Team</font>]]<br>[[2022 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|5/5
+|[[File:HCY05.jpg|75px]]
+|-
+|HCV33
+|114
+|[['83 Chevy Silverado]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]
+|7/10
+|[[File:'83Silverado.jpg|75px]]
+|-
+|HCY62
+|114
+|[['83 Chevy Silverado]] (2nd Color)
+| bgcolor="red" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|5/12
+|[[File:RedEdSilverado.jpg|75px]]
+|-
+|HCT33
+|115
+|[[Lolux]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|8/10
+|[[File:Lolux.jpg|75px]]
+|-
+|HCX16
+|115
+|[[Lolux]] (2nd Color)
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|8/10
+|[[File:20221015 182532.jpg|75px]]
+|-
+|HCV95
+|116
+|[[La Troca]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]
+|9/10
+|[[File:HCV95.jpg|75px]]
+|-
+|HCX77
+|116
+|[[La Troca]] (2nd Color)
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]
+|9/10
+|[[File:HW-2022-116-2-HCX77-La Troca (2nd Colour).png|75px]]
+|-
+|HCT66
+|117
+|[[Ducati Scrambler Hot Wheels Edition]]
+| bgcolor="#FF4F00" |[[HW Daredevils Mini Collection (2022)|<font color="black">HW Daredevils</font>]]
+|3/5
+|[[File:Black_HCT66_117-250.jpg|75px]]
+|-
+|HCV85
+|118
+|[[Honda S2000]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|3/10
+|[[File:HCV85.jpg|75px]]
+|-
+|HCX25
+|118
+|[[Honda S2000]] (2nd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|3/10
+|[[File:HCX25.jpg|75px]]
+|-
+|HCY33
+|118
+|[[Honda S2000]] (3rd Color - Zamac)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|3/10
+|[[File:ZAMACS2000.jpg|75px]]
+|-
+|HCV77
+|119
+|[['91 Mazda MX-5 Miata]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|4/10
+|[[File:N0KIDN.jpg|75px]]
+|-
+|HCV50
+|120
+|[[Hyper Rocker]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2022)|<font color="white">HW Rescue</font>]]
+|1/10
+|[[File:Hyper_Rocker(Yellow)_2022.jpg|75px]]
+|-
+|HCX26
+|120
+|[[Hyper Rocker]] (2nd Color)
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2022)|<font color="white">HW Rescue</font>]]
+|1/10
+|[[File:HYPER ROCKER HCX26.jpg|75px]]
+|-
+|HCT84
+|121
+|[[Lethal Diesel]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2022)|<font color="white">HW Rescue</font>]]
+|2/10
+|[[File:HCT84.jpg|75px]]
+|-
+|HCX17
+|121
+|[[Lethal Diesel]] (2nd Color)
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2022)|<font color="white">HW Rescue</font>]]
+|2/10
+|[[File:HCX17.jpg|75px]]
+|-
+|HCT85
+|122
+|[[Cosmic Coupe]]
+| bgcolor="#353839" |[[X-Raycers Mini Collection (2022)|<font color="white">X-Raycers</font>]]
+|1/5
+|[[File:Cosmic Coupe X-Raycers 2022.jpg|75px]]
+|-
+|HCX18
+|122
+|[[Cosmic Coupe]] (2nd Color)
+| bgcolor="#353839" |[[X-Raycers Mini Collection (2022)|<font color="white">X-Raycers</font>]]
+|1/5
+|[[File:2022-122 HCX18 Cosmic Coupe Glow Blue open-1.jpg|75px]]
+|-
+|HCT28
+|123
+|[[Glory Chaser]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|7/10
+|[[File:GloryChaser.jpg|75px]]
+|-
+|HCX20
+|123
+|[[Glory Chaser]] (2nd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|7/10
+|[[File:2022HWGloryChaserRedInt-123.jpg|75px]]
+|-
+|HCT13
+|124
+|[[2023 Nissan Z|Nissan Z Proto]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|5/10
+|[[File:NissanZProto.jpg|75px]]
+|-
+|HCX34
+|124
+|[[2023 Nissan Z|Nissan Z Proto]] (2nd Color)
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|5/10
+|[[File:ZProtoWhite.jpg|75px]]
+|-
+|HCT98
+|125
+|[['99 Honda Civic Type R (EK9)]]
+| bgcolor="lime" |[[HW Hatchbacks Mini Collection (2022)|<font color="black">HW Hatchbacks</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|5/5
+|[[File:'99_Honda_Civic_(2022_Yellow).jpg|75px]]
+|-
+|HCY12
+|125
+|[['99 Honda Civic Type R (EK9)]]
+| bgcolor="lime" |[[HW Hatchbacks Mini Collection (2022)|<font color="black">HW Hatchbacks</font>]]<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|5/5
+|[[File:Civic EK9.jpg|75px]]
+|-
+|HCY63
+|125
+|[['99 Honda Civic Type R (EK9)]] (2nd Color)
+| bgcolor="red" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font><br>[[Ryu Asada|<font color="white">'''Ryu's Rides'''</font>]]
+|6/12
+|[[File:RedEditionEK.jpg|75px]]
+|-
+|HCY03
+|126
+|[['17 Jeep Wrangler]]
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2022)|<font color="black">Mud Studs</font>]]<br>[[2022 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|3/5
+|[[File:17 JEEP WRANGLER HCY03 TH.jpg|75px]]
+|-
+|HCW42
+|127
+|[[Rennen Rig]]
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]
+|10/10
+|[[File:HCW42.jpg|75px]]
+|-
+|HCX55
+|127
+|[[Rennen Rig]] (2nd Color)
+| bgcolor="orange" |[[HW Hot Trucks Mini Collection (2022)|<font color="black">HW Hot Trucks</font>]]
+|10/10
+|[[File:HW-2022-127-2-HCX55-Rennen Rig (2nd Colour).png|75px]]
+|-
+|HCT39
+|128
+|[[Layin' Lowrider]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|7/10
+|[[File:Layin'Lowrider.jpg|75px]]
+|-
+|HCX29
+|128
+|[[Layin' Lowrider]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|7/10
+|[[File:LayinLowriderBlue2022.jpg|75px]]
+|-
+|HCV70
+|129
+|[['70 Dodge Charger]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]
+|9/10
+|[[File:Charger70 fast&furious.jpg|75px]]
+|-
+|HCT03
+|130
+|[[GMC Hummer EV]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2022)|<font color="black">HW Green Speed</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|3/5
+|[[File:GMCHummerEV.jpg|75px]]
+|-
+|HCX41
+|130
+|[[GMC Hummer EV]] (2nd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2022)|<font color="black">HW Green Speed</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|3/5
+|[[File:HCX41.jpg|100x100px]]
+|-
+|HCV64
+|131
+|[[TV Series Batmobile]]
+| bgcolor="black" |[[Batman Mini Collection (2022)|<font color="white">Batman</font>]]
+|4/5
+|[[File:HCV64 Carded.jpg|75px]]
+|-
+|HCW61
+|131
+|[[TV Series Batmobile]] (2nd Color)
+| bgcolor="black" |[[Batman Mini Collection (2022)|<font color="white">Batman</font>]]
+|4/5
+|[[File:HCW61.jpg|75px]]
+|-
+|HCT96
+|132
+|[[Porsche 935 (2021)|Porsche 935]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]
+|8/10
+|[[File:Porsche 935 - Blue.jpg|75px]]
+|-
+|HJP30
+|132
+|[[Porsche 935 (2021)|Porsche 935]] (2nd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers<br>'''Best Buy Exclusive'''</font>]]
+|8/10
+|[[File:BestBuy935.jpg|75px]]
+|-
+|HCV39
+|133
+|[[K.I.T.T. Super Pursuit Mode]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2022)|<font color="white">HW Screen Time</font>]]<br>'''<font color="white">New in Mainline</font>'''
+|7/10
+|[[File:KITTSPM.jpg|75px]]
+|-
+|HCT35
+|134
+|[[Barbie Extra]]
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2022)|<font color="black">Tooned</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|5/5
+|[[File:BarbieExtraCar.jpg|75px]]
+|-
+|HCX32
+|134
+|[[Barbie Extra]] (2nd Color)
+| bgcolor="#5f9ea0" |[[Tooned Mini Collection (2022)|<font color="black">Tooned</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|5/5
+|[[File:BarbiePinkCar.jpg|75px]]
+|-
+|HCV52
+|135
+|[[Carbonator]]
+| bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2022)|<font color="black">Fast Foodie</font>]]
+|5/5
+|[[File:Green_HCV52_135-250.jpg|75px]]
+|-
+|HCX33
+|135
+|[[Carbonator]] (2nd Color)
+| bgcolor="#FFEF00" |[[Fast Foodie Mini Collection (2022)|<font color="black">Fast Foodie</font>]]
+|5/5
+|[[File:2022-135 HCX33 Carbonator Earth Day Blue o-4.jpg|75px]]
+|-
+|HCW31
+|136
+|[[Lotus Sport Elise]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]
+|6/10
+|[[File:HCW31-01.JPG|75px]]
+|-
+|HCX44
+|136
+|[[Lotus Sport Elise]] (2nd Color)
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]
+|6/10
+|[[File:LotusSportElise Front.png|93x93px]]
+|-
+|HCV48
+|137
+|[[Cyber Speeder]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]
+|7/10
+|[[File:2022-CyberSpeeder-Red-Mainline.jpg|75px]]
+|-
+|HCX46
+|137
+|[[Cyber Speeder]] (2nd Color)
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]
+|7/10
+|[[File:2022-CyberSpeeder-White-Mainline.jpg|75px]]
+|-
+|HCT01
+|138
+|[[Koenigsegg Gemera]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|8/10
+|[[File:KoenigseggGemera.jpg|75px]]
+|-
+|HCX35
+|138
+|[[Koenigsegg Gemera]] (2nd Color)
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|8/10
+|[[File:KoenigseggGemera Front.png|93x93px]]
+|-
+|HCY06
+|139
+|[[Duck N' Roll]]
+| bgcolor="#6CB4EE" |[[Street Beasts Mini Collection (2022)|<font color="black">Street Beasts</font>]]<br>[[2022 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|5/5
+|[[File:2022-139 HCY06 TH Duck N' Roll open-1.jpg|75px]]
+|-
+|HCV21
+|140
+|[[Volvo 850 Estate]]
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2022)|<font color="black">HW Wagons</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|2/5
+|[[File:Volvo 850 Estate HW Wagons 2022.jpg|75px]]
+|-
+|HCX36
+|140
+|[[Volvo 850 Estate]] (2nd Color)
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2022)|<font color="black">HW Wagons</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|2/5
+|[[File:HCX36.jpg|75px]]
+|-
+|HCT75
+|141
+|[[Custom '70 Honda N600]]
+| bgcolor="#D7B1CB" |[[Compact Kings Mini Collection (2022)|<font color="black">Compact Kings</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|4/5
+|[[File:HondaN600.jpg|75px]]
+|-
+|HJP32
+|141
+|[[Custom '70 Honda N600]] (2nd Color)
+| bgcolor="#D7B1CB" |[[Compact Kings Mini Collection (2022)|<font color="black">Compact Kings</font>]]<br>'''Best Buy Exclusive'''<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|4/5
+|[[File:BestBuyN600.jpg|75px]]
+|-
+|HCW48
+|142
+|[[Volkswagen Käfer Racer]]
+| bgcolor="#d8d8d8" |[[HW Contoured Mini Collection (2022)|<font color="black">HW Contoured</font>]]
+|5/5
+|[[File:VOLKSWAGEN KAFER RACER HCW48.jpg|75px]]
+|-
+|HCY09
+|142
+|[[Volkswagen Käfer Racer]]
+| bgcolor="#d8d8d8" |[[HW Contoured Mini Collection (2022)|<font color="black">HW Contoured</font>]]<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|5/5
+|[[File:2022-142 HCY09 Käfer Racer STH open-1.jpg|75px]]
+|-
+|HCV78
+|143
+|[[Mazda RX-3]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]
+|5/10
+|[[File:HCV78-01.JPG|75px]]
+|-
+|HCY54
+|143
+|[[Mazda RX-3]] (2nd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]<br>'''[[Kroger|<font color="black">Kroger Exclusive]]'''</font>
+|5/10
+|[[File:KrogerRX-3.jpg|75px]]
+|-
+|HCV83
+|144
+|[['90 Acura NSX]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|6/10
+|[[File:'90HondaNSX.jpg|75px]]
+|-
+|HCX58
+|144
+|[['90 Acura NSX]] (2nd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]<br>[[Ryu Asada|<font color="black">'''Ryu's Rides'''</font>]]
+|6/10
+|[[File:HW-2022-144-2-HCX58-90 Acura NSX (2nd Colour).png|75px]]
+|-
+|HCW54
+|145
+|[[Snow Stormer]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2022)|<font color="white">HW Rescue</font>]]
+|3/10
+|[[File:SNOW STORMER HCW54.jpg|75px]]
+|-
+|HCX47
+|145
+|[[Snow Stormer]] (2nd Color)
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2022)|<font color="white">HW Rescue</font>]]
+|3/10
+|[[File:HCX47.jpg|70px]]
+|-
+|HCV12
+|146
+|[[2005 Ford Mustang]]
+| bgcolor="#FF7900" |[[Spoiler Alert Mini Collection (2022)|<font color="black">Spoiler Alert</font>]]
+|3/5
+|[[File:2005 Ford Mustang (2022).jpg|75px]]
+|-
+|HCX88
+|146
+|[[2005 Ford Mustang]] (2nd Color)
+| bgcolor="#FF7900" |[[Spoiler Alert Mini Collection (2022)|<font color="black">Spoiler Alert</font>]]
+|3/5
+|[[File:HCX88 carded.jpg|75px]]
+|-
+|HCT24
+|147
+|[[Lucid Air]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2022)|<font color="black">HW Green Speed</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|4/5
+|[[File:LucidAir Front.png|93x93px]]
+|-
+|HCX40
+|147
+|[[Lucid Air]] (2nd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2022)|<font color="black">HW Green Speed</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|4/5
+|[[File:HCX40.jpg|75px]]
+|-
+|HCV60
+|148
+|[[Driftsta]]
+| bgcolor="#FF69B4" |[[HW Drift Mini Collection (2022)|<font color="black">HW Drift</font>]]
+|1/5
+|[[File:HCV60.jpg|75px]]
+|-
+|HCX43
+|148
+|[[Driftsta]] (2nd Color)
+| bgcolor="#FF69B4" |[[HW Drift Mini Collection (2022)|<font color="black">HW Drift</font>]]
+|1/5
+|[[File:HCX43-LOOSE.jpg|75px]]
+|-
+|HCT52
+|149
+|[[Electrack]]
+| bgcolor="#353839" |[[X-Raycers Mini Collection (2022)|<font color="white">X-Raycers</font>]]
+|2/5
+|[[File:HCT52 Carded.jpg|75px]]
+|-
+|HCX63
+|149
+|[[Electrack]] (2nd Color)
+| bgcolor="#353839" |[[X-Raycers Mini Collection (2022)|<font color="white">X-Raycers</font>]]
+|2/5
+|[[File:HCX63 carded.jpg|109x109px]]
+|-
+|HCT10
+|150
+|[['95 Jeep Cherokee]]
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|10/10
+|[[File:'95JeepCherokee.jpg|75px]]
+|-
+|HCX28
+|150
+|[['95 Jeep Cherokee]] (2nd Color)
+| bgcolor="#D2B48C" |[[Baja Blazers Mini Collection (2022)|<font color="black">Baja Blazers</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|10/10
+|[[File:HCX28.jpg|75px]]
+|-
+|HCT82
+|151
+|[[Custom Small Block]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]
+|8/10
+|[[File:CUSTOM SMALL BLOCK HCT82.jpg|75px]]
+|-
+|HCX69
+|151
+|[[Custom Small Block]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]
+|8/10
+|[[File:20221015 181015.jpg|75px]]
+|-
+|HCV65
+|152
+|[[Classic Cobra|Shelby Cobra 427 S/C]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]
+|9/10
+|[[File:SHELBY COBRA 427 SC HCV65.jpg|75px]]
+|-
+|HCX48
+|152
+|[[Classic Cobra|Shelby Cobra 427 S/C]] (2nd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]
+|9/10
+|[[File:HCX48 carded.jpg|75px]]
+|-
+|HCT47
+|153
+|[[BMW R nineT Racer]]
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|10/10
+|[[File:BMWRnineT.jpg|75px]]
+|-
+|HCX31
+|153
+|[[BMW R nineT Racer]] (2nd Color)
+| bgcolor="#355e3b" |[[Retro Racers Mini Collection (2022)|<font color="black">Retro Racers</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|10/10
+|[[File:HCX31.jpg|75px]]
+|-
+|HCT99
+|154
+|[[LB-Silhouette WORKS GT Nissan 35GT-RR VER.2]]
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2022)|<font color="black">HW Dream Garage</font>]]
+|5/5
+|[[File:LBSWGT-RV2.jpg|75px]]
+|-
+|HCX49
+|154
+|[[LB-Silhouette WORKS GT Nissan 35GT-RR VER.2]] (2nd Color)
+| bgcolor="grey" |[[HW Dream Garage Mini Collection (2022)|<font color="black">HW Dream Garage</font>]]
+|5/5
+|[[File:HW-2022-154-2-HCX49-LB-Silhouette WORKS GT Nissan 35GT-RR VER.2 (2nd Colour).png|75px]]
+|-
+|HCV91
+|155
+|[['47 Chevy Fleetline]]
+| bgcolor="#696969" |[[Rod Squad Mini Collection (2022)|<font color="white">Rod Squad</font>]]
+|1/5
+|[[File:47 CHEVY FLEETLINE HCV91.jpg|75px]]
+|-
+|HCX50
+|155
+|[['47 Chevy Fleetline]] (2nd Color)
+| bgcolor="#696969" |[[Rod Squad Mini Collection (2022)|<font color="white">Rod Squad</font>]]
+|1/5
+|[[File:HW-2022-155-2-HCX50-47 Chevy Fleetline (2nd Colour).png|75px]]
+|-
+|HCV56
+|156
+|[[Alfa Romeo 8C Competizione]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]
+|7/10
+|[[File:HCV56.jpg|75px]]
+|-
+|HCY34
+|156
+|[[Alfa Romeo 8C Competizione]] (2nd Color - Zamac)
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|7/10
+|[[File:HW-2022-156-2-HCY34-Alfa Romeo 8C Competizione (2nd Colour - Zamac).png|75px]]
+|-
+|HCW47
+|157
+|[['17 Ford GT]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]
+|9/10
+|[[File:FordGT Front.png|93x93px]]
+|-
+|HCY70
+|157
+|[['17 Ford GT]] (2nd Color)
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]<br>[[Walgreens|<font color="black">'''Walgreens Exclusive'''</font>]]
+|9/10
+|[[File:GreenieFordGT.jpg|75px]]
+|-
+|HCT71
+|158
+|[[2020 Jaguar F-Type]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]
+|10/10
+|[[File:2022_2020_Jaguar_F-Type_Regular.jpg|75px]]
+|-
+|HCY17
+|158
+|[[2020 Jaguar F-Type]]
+| bgcolor="#ffd300" |[[HW Turbo Mini Collection (2022)|<font color="black">HW Turbo</font>]]<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|10/10
+|[[File:HW-2022-158-2-HCY17-2020 Jaguar F-Type.png|75px]]
+|-
+|HCT76
+|159
+|[[Range Rover Classic]]
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2022)|<font color="black">Mud Studs</font>]]
+|4/5
+|[[File:RANGE ROVER CLASSIC HCT76 .jpg|75px]]
+|-
+|HCX52
+|159
+|[[Range Rover Classic]] (2nd Color)
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2022)|<font color="black">Mud Studs</font>]]
+|4/5
+|[[File:HCX52.jpg|75px]]
+|-
+|HCW52
+|160
+|[[Volkswagen "Baja Bug"]]
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2022)|<font color="black">Mud Studs</font>]]<br>'''New in Mainline'''
+|5/5
+|[[File:BajaBug.jpg|75px]]
+|-
+|HCY35
+|160
+|[[Volkswagen "Baja Bug"]] (2nd Color - Zamac)
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2022)|<font color="black">Mud Studs</font>]]<br>'''New in Mainline'''<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|5/5
+|[[File:2022-160 HCY35 Zamak Baja OR6sp RARE open-1.jpg|75px]]
+|-
+|HCX74
+|160
+|[[Volkswagen "Baja Bug"]] (3rd Color)
+| bgcolor="#00A550" |[[Mud Studs Mini Collection (2022)|<font color="black">Mud Studs</font>]]<br>'''New in Mainline'''
+|5/5
+|[[File:2022-160 HCX74 Baja Bug Mint open-1.jpg|75px]]
+|-
+|HCY07
+|161
+|[[Mini Cooper|Morris Mini]]
+| bgcolor="#D7B1CB" |[[Compact Kings Mini Collection (2022)|<font color="black">Compact Kings</font>]]<br>[[2022 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|5/5
+|[[File:RiehlmanMini.jpg|75px]]
+|-
+|HCV04
+|162
+|[[Tesla Roadster]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]<br>'''New in Mainline'''
+|1/10
+|[[File:2022TeslaRoadster Front.png|93x93px]]
+|-
+|HCT34
+|163
+|[[Dimachinni Veloce]]
+| bgcolor="#FF4F00" |[[HW Daredevils Mini Collection (2022)|<font color="black">HW Daredevils</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|4/5
+|[[File:DimachinniVeloce.jpg|75px]]
+|-
+|HCX57
+|163
+|[[Dimachinni Veloce]] (2nd Color)
+| bgcolor="#FF4F00" |[[HW Daredevils Mini Collection (2022)|<font color="black">HW Daredevils</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|4/5
+|[[File:HW-2022-163-2-HCX57-Dimachinni Veloce (2nd Colour).png|75px]]
+|-
+|HCV49
+|164
+|[[Track Ripper]]
+| bgcolor="#FF7900" |[[Spoiler Alert Mini Collection (2022)|<font color="black">Spoiler Alert</font>]]
+|4/5
+|[[File:Track Ripper 2022.jpg|75px]]
+|-
+|HCX68
+|164
+|[[Track Ripper]] (2nd Color)
+| bgcolor="#FF7900" |[[Spoiler Alert Mini Collection (2022)|<font color="black">Spoiler Alert</font>]]
+|4/5
+|[[File:TrackRipper2022SpoilerAlertred.jpg|75px]]
+|-
+|HCT37
+|165
+|[[Bricking Speed]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|9/10
+|[[File:BrickingSpeed.jpg|75px]]
+|-
+|HCX30
+|165
+|[[Bricking Speed]] (2nd Color)
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|9/10
+|[[File:HW-2022-165-2-HCX30-Bricking Speed (2nd Colour).png|75px]]
+|-
+|HCX96
+|166
+|[[Gotta Go]]
+| bgcolor="yellow" |[[Experimotors Mini Collection (2022)|<font color="black">Experimotors</font>]]<br>[[2022 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|10/10
+|[[File:GOTTA GO HCX96 TH.jpg|75px]]
+|-
+|HCV54
+|167
+|[[Back to the Future Time Machine]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2022)|<font color="white">HW Screen Time</font>]]
+|8/10
+|[[File:TimeMachine.jpg|75px]]
+|-
+|HCV17
+|168
+|[[Mod Rod]]
+| bgcolor="#696969" |[[Rod Squad Mini Collection (2022)|<font color="white">Rod Squad</font>]]
+|2/5
+|[[File:ModRodModSquad2022Black.jpg|75px]]
+|-
+|HCW65
+|168
+|[[Mod Rod]] (2nd Color)
+| bgcolor="#696969" |[[Rod Squad Mini Collection (2022)|<font color="white">Rod Squad</font>]]
+|2/5
+|[[File:HCW65-LOOSE.jpg|75px]]
+|-
+|HCT46
+|169
+|[[Honda Super Cub]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|8/10
+|[[File:HondaSuperCub.jpg|75px]]
+|-
+|HCX21
+|169
+|[[Honda Super Cub]] (2nd Color)
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|8/10
+|[[File:HW-2022-169-2-HCX21-Honda Super Cub (2nd Colour).png|75px]]
+|-
+|HCW44
+|170
+|[[MS-T Suzuka]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]
+|6/10
+|[[File:HCW44.jpg|75px]]
+|-
+|HCX51
+|170
+|[[MS-T Suzuka]] (2nd Color)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]
+|6/10
+|[[File:HW-2022-170-2-HCX51-MS-T Suzuka (2nd Colour).png|75px]]
+|-
+|HCV89
+|171
+|[[Automobili Pininfarina Battista]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]<br><font color="black">'''New in Mainline'''
+|2/10
+|[[File:PinifariniBattista Front.png|93x93px]]
+|-
+|HCY65
+|171
+|[[Automobili Pininfarina Battista]] (2nd Color)
+| bgcolor="red" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font><br><font color="white">'''New in Mainline'''</font>
+|8/12
+|[[File:RossoBattista.jpg|75px]]
+|-
+|HCX53
+|171
+|[[Automobili Pininfarina Battista]] (3rd Color)
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]<br><font color="black">'''New in Mainline'''
+|2/10
+|[[File:BattistaBluIconica.jpg|75px]]
+|-
+|HCT97
+|172
+|[[LB-WORKS Lamborghini Huracán Coupé]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]
+|3/10
+|[[File:LB-WorksLamborghiniHuracanCoupe Front.png|93x93px]]
+|-
+|HCY55
+|172
+|[[LB-WORKS Lamborghini Huracán Coupé]] (2nd Color)
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]<br>'''[[Kroger|<font color="black">Kroger Exclusive]]'''</font>
+|3/10
+|[[File:KrogerLambo.jpg|75px]]
+|-
+|HCT15
+|173
+|[[1986 Toyota Van]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|7/10
+|[[File:ToyotaVan.jpg|75px]]
+|-
+|HCX37
+|173
+|[[1986 Toyota Van]] (2nd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|7/10
+|[[File:HW-2022-173-2-HCX37-1986 Toyota Van (2nd Colour).png|75px]]
+|-
+|HCW32
+|174
+|[[Nissan Skyline 2000GT-R LBWK]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]<br><font color="black">'''New in Mainline'''
+|8/10
+|[[File:KatoSkyline.jpg|75px]]
+|-
+|HCV87
+|175
+|[[Custom '18 Ford Mustang GT]]
+| bgcolor="#FF7900" |[[Spoiler Alert Mini Collection (2022)|<font color="black">Spoiler Alert</font>]]
+|5/5
+|[[File:HCV87-01.JPG|75px]]
+|-
+|HCY18
+|175
+|[[Custom '18 Ford Mustang GT]]
+| bgcolor="#FF7900" |[[Spoiler Alert Mini Collection (2022)|<font color="black">Spoiler Alert</font>]]<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|5/5
+|[[File:Custom'18MustangGT.jpg|75px]]
+|-
+|HCR99
+|176
+|[[Audi RS e-tron GT]]
+| bgcolor="green" |[[HW Green Speed Mini Collection (2022)|<font color="black">HW Green Speed</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|5/5
+|[[File:AudiRSetronGT Front.png|93x93px]]
+|-
+|HCX39
+|176
+|[[Audi RS e-tron GT]] (2nd Color)
+| bgcolor="green" |[[HW Green Speed Mini Collection (2022)|<font color="black">HW Green Speed</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|5/5
+|[[File:HCX39.jpg|100x100px]]
+|-
+|HCV86
+|177
+|[['95 Mazda RX-7]]
+| bgcolor="#FF69B4" |[[HW Drift Mini Collection (2022)|<font color="black">HW Drift</font>]]
+|2/5
+|[[File:95 MAZDA RX-7 HCV86.jpg|75px]]
+|-
+|HCX62
+|177
+|[['95 Mazda RX-7]] (2nd Color)
+| bgcolor="#FF69B4" |[[HW Drift Mini Collection (2022)|<font color="black">HW Drift</font>]]
+|2/5
+|[[File:HCX62.jpg|75px]]
+|-
+|HCT65
+|178
+|[[Batmobile (2021)|Batmobile]]
+| bgcolor="black" |[[Batman Mini Collection (2022)|<font color="white">Batman</font>]]
+|5/5
+|[[File:PattinsonBatmobileGunmetal.jpg|75px]]
+|-
+|HCY36
+|178
+|[[Batmobile (2021)|Batmobile]] (2nd Color - Zamac)
+| bgcolor="black" |[[Batman Mini Collection (2022)|<font color="white">Batman</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="white">'''Walmart Exclusive'''</font>]]
+|5/5
+|[[File:HW-2022-178-2-HCY36-Batmobile (2nd Colour - Zamac).png|75px]]
+|-
+|HCW62
+|178
+|[[Batmobile (2021)|Batmobile]] (3rd Color)
+| bgcolor="black" |[[Batman Mini Collection (2022)|<font color="white">Batman</font>]]
+|5/5
+|[[File:HW-2022-178-3-HCW62-Batmobile (3rd Colour).png|75px]]
+|-
+|HCT14
+|179
+|[[Armadillo]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2022)|<font color="white">HW Screen Time</font>]]<br>[[2022 New Models|<font color="white">'''New for 2022!'''</font>]]
+|9/10
+|[[File:Armadillo.jpg|75px]]
+|-
+|HCV29
+|180
+|[['84 Audi Sport quattro]]
+| bgcolor="#202A44" |[[Rally Champs Mini Collection (2022)|<font color="white">Rally Champs</font>]]
+|1/5
+|[[File:AudiUrQuattro.jpg|75px]]
+|-
+|HCX60
+|180
+|[['84 Audi Sport quattro]] (2nd Color)
+| bgcolor="#202A44" |[[Rally Champs Mini Collection (2022)|<font color="white">Rally Champs</font>]]
+|1/5
+|[[File:HW-2022-180-2-HCX60-84 Audi Sport quattro (2nd Colour).png|75px]]
+|-
+|HCY39
+|180
+|[['84 Audi Sport quattro]] (3rd Color - Zamac)
+| bgcolor="#202A44" |[[Rally Champs Mini Collection (2022)|<font color="white">Rally Champs</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|1/5
+|[[File:HW-2022-180-3-HCY39-84 Audi Sport Quattro (3rd Colour - Zamac).png|75px]]
+|-
+|HCV92
+|181
+|[['40 Ford|'40 Ford Pickup]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2022)|<font color="black">HW Drag Strip</font>]]
+|1/10
+|[[File:HCV92 carded.jpg|75px]]
+|-
+|HCX61
+|181
+|[['40 Ford|'40 Ford Pickup]] (2nd Color)
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2022)|<font color="black">HW Drag Strip</font>]]
+|1/10
+|[[File:HW-2022-181-2-HCX61-40 Ford Pickup (2nd Colour).png|75px]]
+|-
+|HCT74
+|182
+|[['06 Pontiac GTO]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2022)|<font color="black">HW Drag Strip</font>]]
+|2/10
+|[[File:2022ML182_(Large).JPG|75px]]
+|-
+|HCY37
+|182
+|[['06 Pontiac GTO]] (2nd Color - Zamac)
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2022)|<font color="black">HW Drag Strip</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|2/10
+|[[File:HW-2022-182-2-HCY37-06 Pontiac GTO (2nd Colour - Zamac).png|75px]]
+|-
+|HCX70
+|182
+|[['06 Pontiac GTO]] (3rd Color)
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2022)|<font color="black">HW Drag Strip</font>]]
+|2/10
+|[[File:HW-2022-182-3-HCX70-06 Pontiac GTO (3rd Colour).png|75px]]
+|-
+|HCT94
+|183
+|[[Aston Martin V12 Speedster]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]
+|9/10
+|[[File:AstonMartinV12Speedster Front.png|93x93px]]
+|-
+|HCX71
+|183
+|[[Aston Martin V12 Speedster]] (2nd Color)
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]
+|9/10
+|[[File:HW-2022-183-2-HCX71-Aston Martin V12 Speedster (2nd Colour).png|75px]]
+|-
+|HCT83
+|184
+|[[Head Gasket]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]
+|7/10
+|[[File:HEAD GASKET HCT83.jpg|75px]]
+|-
+|HCX65
+|184
+|[[Head Gasket]] (2nd Color)
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]
+|7/10
+|[[File:HW-2022-184-2-HCX65-Head Gasket (2nd Colour).png|75px]]
+|-
+|HCR98
+|185
+|[[HW K.I.T.T. Concept]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|4/10
+|[[File:KITTConcept.jpg|75px]]
+|-
+|HCX99
+|186
+|[['87 Dodge D100]]
+| bgcolor="#FF4F00" |[[HW Daredevils Mini Collection (2022)|<font color="black">HW Daredevils</font>]]<br>[[2022 Treasure Hunts Series|<font color="#00cc00">'''Treasure Hunt'''</font>]]
+|5/5
+|[[File:HW-2022-186-1-HCX99-87 Dodge D100.png|75px]]
+|-
+|HCV11
+|187
+|[[Nissan Skyline H/T 2000GT-X|Nissan Skyline HT 2000GT-X]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]
+|9/10
+|[[File:SeafoamHako.jpg|75px]]
+|-
+|HCY15
+|187
+|[[Nissan Skyline H/T 2000GT-X|Nissan Skyline HT 2000GT-X]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|9/10
+|[[File:HakoSuper.jpg|75px]]
+|-
+|HCW25
+|188
+|[[Ford Mustang GT Concept]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2022)|<font color="white">HW Rescue</font>]]
+|4/10
+|[[File:FORD MUSTANG GT CONCEPT HCW25.jpg|75px]]
+|-
+|HCT30
+|189
+|[[Turbine Sublime]]
+| bgcolor="#353839" |[[X-Raycers Mini Collection (2022)|<font color="white">X-Raycers</font>]]<br>[[2022 New Models|<font color="white">'''New for 2022!'''</font>]]
+|3/5
+|[[File:TurbineSublime.jpg|75px]]
+|-
+|HCX42
+|189
+|[[Turbine Sublime]] (2nd Color)
+| bgcolor="#353839" |[[X-Raycers Mini Collection (2022)|<font color="white">X-Raycers</font>]]<br>[[2022 New Models|<font color="white">'''New for 2022!'''</font>]]
+|3/5
+|[[File:TurbineSublimeOrange.jpg|75px]]
+|-
+|HCT73
+|190
+|[[Corvette C8.R]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2022)|<font color="black">Then and Now</font>]]
+| 1/10
+|[[File:HCT73-01.JPG|75px]]
+|-
+|HCV62
+|191
+|[[Twin Mill]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2022)|<font color="black">Then and Now</font>]]
+| 2/10
+|[[File:Twin Mill Then & Now 2022.PNG|75px]]
+|-
+|HCV37
+|192
+|[['65 Mustang 2+2 Fastback]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2022)|<font color="black">Muscle Mania</font>]]
+|1/10
+|[[File:2022ML192_(Large).JPG|75px]]
+|-
+|HCY68
+|192
+|[['65 Mustang 2+2 Fastback]] (2nd Color)
+| bgcolor="red" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|11/12
+|[[File:HW-2022-192-3-HCY68-65 Mustang 2+2 Fastback (2nd Colour).png|75px]]
+|-
+|HCX81
+|192
+|[['65 Mustang 2+2 Fastback]] (3rd Color)
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2022)|<font color="black">Muscle Mania</font>]]
+|1/10
+|[[File:HW-2022-192-2-HCX81-65 Mustang 2+2 Fastback (3rd Colour).png|75px]]
+|-
+|HCV68
+|193
+|[['69 COPO Camaro]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2022)|<font color="black">Muscle Mania</font>]]
+|2/10
+|[[File:2022ML193_(Large).JPG|75px]]
+|-
+|HCX82
+|193
+|[['69 COPO Camaro]] (2nd Color)
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2022)|<font color="black">Muscle Mania</font>]]
+|2/10
+|[[File:69 camaro 2022 yellow.png|112x112px]]
+|-
+|HCT60
+|194
+|[[X-34 Landspeeder]]
+| bgcolor="#4B0082" |[[HW Screen Time Mini Collection (2022)|<font color="white">HW Screen Time</font>]]
+|10/10
+|[[File:HW-2022-194-1-HCT60-X-34 Landspeeder.png|75px]]
+|-
+|HCT91
+|195
+|[[Sand Burner]]
+| bgcolor="#202A44" |[[Rally Champs Mini Collection (2022)|<font color="white">Rally Champs</font>]]<br>'''[[Ryu Asada|<font color="white">Ryu's Rides</font>]]'''
+|2/5
+|[[File:Hct91.jpg|75px]]
+|-
+|HCX64
+|195
+|[[Sand Burner]] (2nd Color)
+| bgcolor="#202A44" |[[Rally Champs Mini Collection (2022)|<font color="white">Rally Champs</font>]]<br>'''[[Ryu Asada|<font color="white">Ryu's Rides</font>]]'''
+|2/5
+|[[File:SandBurnerRed2022.jpg|75px]]
+|-
+|HCV94
+|196
+|[['68 El Camino]]
+| bgcolor="#696969" |[[Rod Squad Mini Collection (2022)|<font color="white">Rod Squad</font>]]
+|3/5
+|[[File:68ElCaminoRodSquad2022Blue.jpg|75px]]
+|-
+|HCY38
+|196
+|[['68 El Camino]] (2nd Color - Zamac)
+| bgcolor="#696969" |[[Rod Squad Mini Collection (2022)|<font color="white">Rod Squad</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|3/5
+|[[File:Hot Wheels Skate 2022 - 68 El Camino - Rod Squad - ZAMAC.png|73px]]
+|-
+|HCT44
+|197
+|[[Hot Wired]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2022)|<font color="black">HW Drag Strip</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|3/10
+|[[File:HotWired.jpg|75px]]
+|-
+|HCV31
+|198
+|[['18 Dodge Challenger SRT Demon]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2022)|<font color="black">HW Drag Strip</font>]]
+|4/10
+|[[File:2022ML198_(Large).JPG|75px]]
+|-
+|HCY69
+|198
+|[['18 Dodge Challenger SRT Demon]] (2nd Color)
+| bgcolor="red" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|12/12
+|[[File:HW-2022-198-2-HCY69-18 Dodge Challenger SRT Demon (2nd Colour).png|75px]]
+|-
+|HCT22
+|199
+|[[Porsche 911 GT3]]
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|10/10
+|[[File:Porsche911GT3 Front.png|93x93px]]
+|-
+|HCX85
+|199
+|[[Porsche 911 GT3]] (2nd Color)
+| bgcolor="#77B5FE" |[[Factory Fresh Mini Collection (2022)|<font color="black">Factory Fresh</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|10/10
+|[[File:HW-2022-199-2-HCX85-Porsche 911 GT3 (2nd Colour).png|75px]]
+|-
+|HCX98
+|200
+|[['58 Impala]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]<br>'''[[2022 Treasure Hunts Series|<font color="#00cc00">Treasure Hunt</font>]]'''
+|8/10
+|[[File:DayOfTheDeadImpala.jpg|75px]]
+|-
+|HCV20
+|201
+|[[Cruise Bruiser]]
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2022)|<font color="black">HW Wagons</font>]]<br>
+|3/5
+|[[File:HCV20 carded.jpg|109x109px]]
+|-
+|HCX72
+|201
+|[[Cruise Bruiser]] (2nd Color)
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2022)|<font color="black">HW Wagons</font>]]<br>
+|3/5
+|[[File:2022CruseBrusierWhite.jpg|75px]]
+|-
+|HCV34
+|202
+|[['71 Lamborghini Miura SV]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]<br><font color="black">'''New in Mainline'''
+|5/10
+|[[File:HCV34-LOOSE.jpg|75px]]
+|-
+|HCY13
+|202
+|[['71 Lamborghini Miura SV]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]<br><font color="black">'''New in Mainline'''<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|5/10
+|[[File:Lamborghini Miura STH 2022.jpg|75px]]
+|-
+|HCX02
+|202
+|[['71 Lamborghini Miura SV]] (2nd Color)
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]<br><font color="black">'''New in Mainline'''
+|5/10
+|[[File:2022MiuraBlue.jpg|75px]]
+|-
+|HCT09
+|203
+|[[McLaren Elva]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|6/10
+|[[File:McLarenElva.jpg|75px]]
+|-
+|HCX54
+|203
+|[[McLaren Elva]] (2nd Color)
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|6/10
+|[[File:HW-2022-203-2-HCX54-McLaren Elva (2nd Colour).png|75px]]
+|-
+|HCT11
+|204
+|[[Honda Civic Custom]]
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|10/10
+|[[File:HondaCivicCustom.jpg|75px]]
+|-
+|HCX78
+|204
+|[[Honda Civic Custom]] (2nd Color)
+| bgcolor="#87CEFA" |[[HW J-Imports Mini Collection (2022)|<font color="black">HW J-Imports</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|10/10
+|[[File:HW-2022-204-2-HCX78-Honda Civic Custom (2nd Colour).png|75px]]
+|-
+|HCW35
+|205
+|[[Rapid Response|HW Rapid Response]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2022)|<font color="white">HW Rescue</font>]]
+|5/10
+|[[File:HCW35 carded.jpg|75px]]
+|-
+|HCX79
+|205
+|[[Rapid Response|HW Rapid Response]] (2nd Color)
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2022)|<font color="white">HW Rescue</font>]]
+|5/10
+|[[File:HW-2022-205-2-HCX79-HW Rapid Response (2nd Colour).png|75px]]
+|-
+|HCW24
+|206
+|[['15 Dodge Charger SRT]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2022)|<font color="white">HW Rescue</font>]]
+|6/10
+|[[File:HCW24-Card.jpg|75px]]
+|-
+|HCV88
+|207
+|[[Dodge Challenger Drift Car]]
+| bgcolor="#FF69B4" |[[HW Drift Mini Collection (2022)|<font color="black">HW Drift</font>]]
+|3/5
+|[[File:HW-2022-207-1-HCV88-Dodge Challenger Drift Car.png|75px]]
+|-
+|HCX80
+|207
+|[[Dodge Challenger Drift Car]] (2nd Color)
+| bgcolor="#FF69B4" |[[HW Drift Mini Collection (2022)|<font color="black">HW Drift</font>]]
+|3/5
+|[[File:HW-2022-207-2-HCX80-Dodge Challenger Drift Car (2nd Color).png|75px]]
+|-
+|HCV80
+|208
+|[[Dodge Viper RT/10]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2022)|<font color="black">Then and Now</font>]]
+| 3/10
+|[[File:DodgeRT10.jpg|75px]]
+|-
+|HCY40
+|208
+|[[Dodge Viper RT/10]] (2nd Color - Zamac)
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2022)|<font color="black">Then and Now</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|3/10
+|[[File:HW-2022-208-2-HCY40-Dodge Viper RT10 (2nd Colour - Zamac).png|75px]]
+|-
+|HCV71
+|209
+|[['69 Dodge Charger 500]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2022)|<font color="black">Muscle Mania</font>]]
+|3/10
+|[[File:HCV71.jpg|75px]]
+|-
+|HCT88
+|210
+|[[Lancia Delta Integrale]]
+| bgcolor="#202A44" |[[Rally Champs Mini Collection (2022)|<font color="white">Rally Champs</font>]]<br>
+|3/5
+|[[File:HCT88-01.JPG|75px]]
+|-
+|HCV90
+|211
+|[[Supercharged]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2022)|<font color="black">HW Drag Strip</font>]]<br>'''New in Mainline'''
+|5/10
+|[[File:HCV90.jpg|100x100px]]
+|-
+|HCW50
+|212
+|[[Aristo Rat]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2022)|<font color="black">HW Drag Strip</font>]]
+|6/10
+|[[File:HCW50 carded.jpg|109x109px]]
+|-
+|HCW43
+|213
+|[[Electro Silhouette]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]
+|9/10
+|[[File:HCW43.jpg|75px]]
+|-
+|HCT17
+|214
+|[[Nissan Maxima Drift Car]]
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2022)|<font color="black">HW Wagons</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|4/5
+|[[File:NissanMaximaDriftCar Front.png|93x93px]]
+|-
+|HCT02
+|215
+|[[Pagani Zonda R]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|7/10
+|[[File:PaganiZondaR Front.png|93x93px]]
+|-
+|HCW26
+|216
+|[[Rescue Duty]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2022)|<font color="white">HW Rescue</font>]]
+|7/10
+|[[File:HW-2022-216-1-HCW26-Rescue Duty.png|75px]]
+|-
+|HCY02
+|217
+|[[HW Warp Speeder]]
+| bgcolor="#353839" |[[X-Raycers Mini Collection (2022)|<font color="white">X-Raycers</font>]]<br>'''[[2022 Treasure Hunts Series|<font color="#00cc00">Treasure Hunt</font>]]'''
+|4/5
+|[[File:HW Warp Speeder.jpg|75px]]
+|-
+|HCT45
+|218
+|[[Lightnin' Bug]]
+| bgcolor="#353839" |[[X-Raycers Mini Collection (2022)|<font color="white">X-Raycers</font>]]<br>[[2022 New Models|<font color="white">'''New for 2022!'''</font>]]
+|5/5
+|[[File:Lightnin'Bug.jpg|75px]]
+|-
+|HCV82
+|219
+|[['18 Camaro SS]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2022)|<font color="black">Then and Now</font>]]
+| 4/10
+|[[File:HW-2022-219-1-HCV82-18 Camaro SS.png|75px]]
+|-
+|HCY67
+|219
+|[['18 Camaro SS]] (2nd Color)
+| bgcolor="red" |[[Red Edition|<font color="white">Red Edition</font>]]<br><font color="white">'''Target Exclusive'''</font>
+|10/12
+|[[File:HW-2022-219-2-HCY67-18 Camaro SS (2nd Colour).png|75px]]
+|-
+|HCV16
+|220
+|[[Toyota Supra]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2022)|<font color="black">Then and Now</font>]]
+| 5/10
+|[[File:Toyota Supra Front.png|93x93px]]
+|-
+|HCW28
+|221
+|[['84 Mustang SVO]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2022)|<font color="black">Muscle Mania</font>]]<br>'''New in Mainline'''
+|4/10
+|[[File:'84MustangSVO Front.png|93x93px]]
+|-
+|HCY19
+|221
+|[['84 Mustang SVO]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2022)|<font color="black">Muscle Mania</font>]]<br>'''New in Mainline'''<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|4/10
+|[[File:HW-2022-221-2-HCY19-84 Mustang SVO.png|75px]]
+|-
+|HCV72
+|222
+|[['69 Camaro Convertible]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2022)|<font color="black">Muscle Mania</font>]]
+|5/10
+|[[File:HW-2022-222-1-HCV72-69 Camaro Convertible.png|75px]]
+|-
+|HCY41
+|222
+|[['69 Camaro Convertible]] (2nd Color - Zamac)
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2022)|<font color="black">Muscle Mania</font>]]<br>[[Walmart Exclusive Zamac Editions|<font color="black">'''Walmart Exclusive'''</font>]]
+|5/10
+|[[File:HW-2022-222-2-HCY41-69 Camaro Convertible (2nd Colour - Zamac).png|75px]]
+|-
+|HCY04
+|223
+|[['98 Subaru Impreza 22B STi-Version]]
+| bgcolor="#202A44" |[[Rally Champs Mini Collection (2022)|<font color="white">Rally Champs</font>]]<br>'''[[2022 Treasure Hunts Series|<font color="#00cc00">Treasure Hunt</font>]]'''<br>'''[[Ryu Asada|<font color="white">Ryu's Rides</font>]]'''
+|4/5
+|[[File:'98Impreza22B.jpg|75px]]
+|-
+|HCT29
+|224
+|[[Max Steel]]
+| bgcolor="#696969" |[[Rod Squad Mini Collection (2022)|<font color="white">Rod Squad</font>]]<br>[[2022 New Models|<font color="white">'''New for 2022!'''</font>]]
+|4/5
+|[[File:MaxSteel.jpg|75px]]
+|-
+|HCT12
+|225
+|[['62 Corvette Gasser]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2022)|<font color="black">HW Drag Strip</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|7/10
+|[[File:'62CorvetteGasser.jpg|75px]]
+|-
+|HCW45
+|226
+|[[Altered Ego]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2022)|<font color="black">HW Drag Strip</font>]]
+|8/10
+|[[File:HCW45.jpg|70px]]
+|-
+|HCW41
+|227
+|[[Velocita]]
+| bgcolor="#FAFA37" |[[HW Art Cars Mini Collection (2022)|<font color="black">HW Art Cars</font>]]
+|10/10
+|[[File:HCW41.jpg|75px]]
+|-
+|HCT69
+|228
+|[['94 Audi Avant RS2]]
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2022)|<font color="black">HW Wagons</font>]]
+|5/5
+|[[File:'94AudiAvantRS2 Front.png|75px]]
+|-
+|HCY22
+|228
+|[['94 Audi Avant RS2]]
+| bgcolor="#ECC20D" |[[HW Wagons Mini Collection (2022)|<font color="black">HW Wagons</font>]]<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|5/5
+|[[File:'94_Audi_Avant_RS2_STH.jpeg|75px]]
+|-
+|HCT07
+|229
+|[[Lotus Evija]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|8/10
+|[[File:LotusEvija.jpg|75px]]
+|-
+|HCW27
+|230
+|[[5 Alarm]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2022)|<font color="white">HW Rescue</font>]]
+|8/10
+|[[File:2022-5Alarm-Pink-Mainline.jpg|75px]]
+|-
+|HCT87
+|231
+|[[Water Bomber]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2022)|<font color="white">HW Rescue</font>]]
+|9/10
+|[[File:HW-2022-231-1-HCT87-Water Bomber.png|75px]]
+|-
+|HCT20
+|232
+|[[Volvo 240 Drift Wagon]]
+| bgcolor="#FF69B4" |[[HW Drift Mini Collection (2022)|<font color="black">HW Drift</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|4/5
+|[[File:Volvo240DriftWagon Front.png|93x93px]]
+|-
+|HCV35
+|233
+|[[Corvette C6R]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2022)|<font color="black">Then and Now</font>]]
+| 6/10
+|[[File:HW-2022-233-1-HCV35-Corvette C6R.png|75px]]
+|-
+|HCV96
+|234
+|[[Twin Mill III]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2022)|<font color="black">Then and Now</font>]]
+| 7/10
+||[[File:Twin Mill III Then & Now 2022.PNG|75px]]
+|-
+|HCW30
+|235
+|[['15 Dodge Challenger SRT]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2022)|<font color="black">Muscle Mania</font>]]
+|6/10
+|[[File:HCW30-01.JPG|75px]]
+|-
+|HCV59
+|236
+|[['68 Mercury Cougar (2014)|'68 Mercury Cougar]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2022)|<font color="black">Muscle Mania</font>]]
+|7/10
+|[[File:HCV59-Card.jpg|75px]]
+|-
+|HCV75
+|237
+|[['32 Ford]]
+| bgcolor="#696969" |[[Rod Squad Mini Collection (2022)|<font color="white">Rod Squad</font>]]
+|5/5
+|[[File:HW-2022-237-1-HCV75-32 Ford.png|75px]]
+|-
+|HCY21
+|237
+|[['32 Ford]]
+| bgcolor="#696969" |[[Rod Squad Mini Collection (2022)|<font color="white">Rod Squad</font>]]<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|5/5
+|[[File:HW-2022-237-2-HCY21-32 Ford.png|75px]]
+|-
+|HCT19
+|238
+|[[Aston Martin Vantage GTE]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|9/10
+|[[File:AMRVantageGTE.jpg|75px]]
+|-
+|HCT43
+|239
+|[[Drone Duty]]
+| bgcolor="#C40234" |[[HW Rescue Mini Collection (2022)|<font color="white">HW Rescue</font>]]<br>[[2022 New Models|<font color="white">'''New for 2022!'''</font>]]
+|10/10
+|[[File:DroneDuty.jpg|75px]]
+|-
+|HCY00
+|240
+|[[Muscle and Blown]]
+| bgcolor="#FF69B4" |[[HW Drift Mini Collection (2022)|<font color="black">HW Drift</font>]]<br>'''[[2022 Treasure Hunts Series|<font color="#00cc00">Treasure Hunt</font>]]'''
+|5/5
+|[[File:DriftandBlown.jpg|75px]]
+|-
+|HCT62
+|241
+|[['20 Toyota GR Supra]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2022)|<font color="black">Then and Now</font>]]
+| 8/10
+|[[File:'20ToyotaGRSupra.jpg|75px]]
+|-
+|HCV79
+|242
+|[[Dodge Viper SRT10 ACR]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2022)|<font color="black">Then and Now</font>]]
+| 9/10
+|[[File:HW-2022-242-1-HCV79-Dodge Viper SRT10 ACR.png|75px]]
+|-
+|HCV18
+|243
+|[[SS Express|Chevelle SS Express]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2022)|<font color="black">Muscle Mania</font>]]<br>'''New in Mainline'''
+|8/10
+|[[File:HCV18-LOOSE.jpg|75px]]
+|-
+|HCV30
+|244
+|[['70 Ford Escort RS1600]]
+| bgcolor="#202A44" |[[Rally Champs Mini Collection (2022)|<font color="white">Rally Champs</font>]]<br>
+|5/5
+|[[File:HW-2022-244-1-HCV30-70 Ford Escort RS1600.png|75px]]
+|-
+|HCX95
+|245
+|[['71 Mustang Funny Car]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2022)|<font color="black">HW Drag Strip</font>]]<br>'''[[2022 Treasure Hunts Series|<font color="#00cc00">Treasure Hunt</font>]]'''
+|9/10
+|[[File:HW-2022-245-1-HCX95-71 Mustang Funny Car1.png|75px]]
+|-
+|HCT25
+|246
+|[[1988 Ford T-Bird|Matt and Debbie Hay's 1988 Pro Street Thunderbird]]
+| bgcolor="#E5E4E2" |[[HW Drag Strip Mini Collection (2022)|<font color="black">HW Drag Strip</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|10/10
+|[[File:ProStreetThunderbird.jpg|75px]]
+|-
+|HCT00
+|247
+|[[Lotus Emira]]
+| bgcolor="#32CD32" |[[HW Exotics Mini Collection (2022)|<font color="black">HW Exotics</font>]]<br>[[2022 New Models|<font color="black">'''New for 2022!'''</font>]]
+|10/10
+|[[File:LotusEmira.jpg|75px]]
+|-
+|HCV81
+|248
+|[['81 Camaro]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2022)|<font color="black">Then and Now</font>]]
+| 10/10
+|[[File:HW-2022-248-1-HCV81-81 Camaro.png|75px]]
+|-
+|HCY23
+|248
+|[['81 Camaro]]
+| bgcolor="#FF7538" |[[Then and Now Mini Collection (2022)|<font color="black">Then and Now</font>]]<br>[[2022 Treasure Hunts Series|<font color="#C6930A">'''Super Treasure Hunt'''</font>]]
+|10/10
+|[[File:HW-2022-248-2-HCY23-81 Camaro.png|75px]]
+|-
+|HCW36
+|249
+|[[Ford Shelby GT350R]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2022)|<font color="black">Muscle Mania</font>]]
+|9/10
+|[[File:HW-2022-249-1-HCW36-Ford Shelby GT350R.png|75px]]
+|-
+|HCW29
+|250
+|[['72 Ford Gran Torino Sport]]
+| bgcolor="#FF4F00" |[[Muscle Mania Mini Collection (2022)|<font color="black">Muscle Mania</font>]]
+|10/10
+|[[File:2022TorinoMuscleMania.jpg|75px]]
+|-
+|}
+{{Lists}}
+[[Category:2022 Hot Wheels]]
+[[Category:Lists of Hot Wheels by year]]
