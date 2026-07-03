@@ -239,6 +239,8 @@ async def scan_card(
     return {
         "inventory_id": new_id,
         "packaging_type": packaging_type,
+        "photo_path": saved_path,
+        "base_photo_path": base_saved_path,
         "extracted": extracted,
         "validation": {
             "status": match_result.status,
@@ -408,6 +410,9 @@ class InventoryUpdate(BaseModel):
     canonical_casting_name: Optional[str] = None
     canonical_series: Optional[str] = None
     canonical_year: Optional[int] = None
+    extracted_collector_num: Optional[str] = None
+    extracted_sku: Optional[str] = None
+    extracted_color: Optional[str] = None
     match_status: Optional[str] = None
     condition: Optional[str] = None
     acquired_date: Optional[str] = None

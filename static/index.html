@@ -50,6 +50,7 @@
     --md-sys-color-on-surface-variant: #49454F;
     --md-sys-color-outline: #79747E;
     --md-sys-color-outline-variant: #CAC4D0;
+    --md-sys-color-surface-container-low: #F7F2FA;
     --md-sys-color-surface-container: #F3EDF7;
     --md-sys-color-surface-container-high: #ECE6F0;
     --md-sys-color-surface-container-highest: #E6E0E9;
@@ -71,6 +72,7 @@
       --md-sys-color-on-surface-variant: #CAC4D0;
       --md-sys-color-outline: #938F99;
       --md-sys-color-outline-variant: #49454F;
+      --md-sys-color-surface-container-low: #1D1B20;
       --md-sys-color-surface-container: #211F26;
       --md-sys-color-surface-container-high: #2B2930;
       --md-sys-color-surface-container-highest: #36343B;
@@ -79,7 +81,7 @@
 
   body {
     margin: 0;
-    padding: 20px 20px 40px;
+    padding: 0 20px 40px;
     max-width: 480px;
     margin-inline: auto;
     background: var(--md-sys-color-surface);
@@ -89,17 +91,35 @@
     box-sizing: border-box;
   }
 
-  header { margin-bottom: 16px; }
-  header p { color: var(--md-sys-color-on-surface-variant); margin-top: 6px; }
-
-  .toolbar {
+  /* ---- Top app bar (hand-built - @material/web ships no app-bar
+     component; this follows the M3 "small" top app bar spec: 64dp height,
+     leading nav/back icon, title, trailing actions). Reused, with its
+     content swapped via JS, across the list view, the contextual
+     multi-select state, and the detail view. */
+  .top-app-bar {
+    position: sticky;
+    top: 0;
+    z-index: 10;
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
     gap: 4px;
-    margin-bottom: 12px;
+    height: 64px;
+    margin: 0 -20px 12px;
+    padding: 0 4px;
+    background: var(--md-sys-color-surface);
   }
-
-  md-tabs { margin-bottom: 20px; border-radius: var(--md-sys-shape-corner-medium, 12px); overflow: hidden; }
+  .top-app-bar.contextual {
+    background: var(--md-sys-color-surface-container);
+  }
+  .top-app-bar-title {
+    flex: 1;
+    margin: 0;
+    padding-left: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .top-app-bar-actions { display: flex; align-items: center; flex: none; }
 
   #basePrompt {
     margin-bottom: 20px;
@@ -131,11 +151,45 @@
     background: transparent;
     padding: 0;
   }
-  md-list-item {
+  /* Filled card, per M3 (surface-container-highest, no shadow) - not
+     elevated. An elevated card's drop shadow reads as "one important,
+     separated thing," which is wrong for 50 rows in a scrollable list. */
+  md-list-item.item-card {
     border-radius: var(--md-sys-shape-corner-medium, 12px);
     margin-bottom: 10px;
-    background: var(--md-sys-color-surface-container);
-    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.30), 0 1px 3px 1px rgba(0,0,0,0.15);
+    background: var(--md-sys-color-surface-container-highest);
+    cursor: pointer;
+  }
+  md-list-item.item-card.selected {
+    background: var(--md-sys-color-primary-container);
+  }
+  md-list-item.item-card [slot="headline"] {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .thumb-wrap { position: relative; width: 56px; height: 56px; flex: none; }
+  .thumb, .thumb-placeholder {
+    width: 56px;
+    height: 56px;
+    border-radius: var(--md-sys-shape-corner-small, 8px);
+    object-fit: cover;
+    display: flex;
+  }
+  .thumb-placeholder {
+    background: var(--md-sys-color-surface-container-high);
+    color: var(--md-sys-color-on-surface-variant);
+    align-items: center;
+    justify-content: center;
+  }
+  .thumb-placeholder md-icon { width: 24px; height: 24px; }
+  .select-checkbox {
+    position: absolute;
+    top: -6px;
+    left: -6px;
+    background: var(--md-sys-color-surface);
+    border-radius: 50%;
   }
 
   .end-row {
@@ -148,10 +202,6 @@
     flex-direction: column;
     align-items: flex-end;
     gap: 4px;
-  }
-  md-icon-button.delete-btn {
-    --md-icon-button-icon-color: var(--md-sys-color-outline);
-    --md-icon-button-icon-size: 20px;
   }
   .status-pill {
     font: var(--md-sys-typescale-label-small-font);
@@ -192,61 +242,183 @@
   .status-ok { color: #2E7D32; }
   .status-warn { color: var(--md-sys-color-error); }
 
-  .edit-field { width: 100%; margin-bottom: 12px; }
+  /* ---- Detail view ---------------------------------------------------- */
+  #detailView { display: none; }
+  .detail-photos { display: flex; gap: 8px; margin-bottom: 20px; }
+  .detail-photos img {
+    flex: 1;
+    min-width: 0;
+    height: 220px;
+    object-fit: cover;
+    border-radius: var(--md-sys-shape-corner-medium, 12px);
+    background: var(--md-sys-color-surface-container-low);
+  }
+  .detail-section { margin-bottom: 8px; }
+  .detail-section h3 {
+    font: var(--md-sys-typescale-title-small-font);
+    color: var(--md-sys-color-on-surface-variant);
+    margin: 0 0 12px;
+  }
+  .detail-field { width: 100%; margin-bottom: 12px; }
+  .detail-readonly-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 12px;
+    font: var(--md-sys-typescale-body-medium-font);
+    padding: 6px 0;
+  }
+  .detail-readonly-row span:first-child { color: var(--md-sys-color-on-surface-variant); flex: none; }
+  .detail-readonly-row span:last-child { text-align: right; }
+  .detail-summary-text {
+    font: var(--md-sys-typescale-body-small-font);
+    color: var(--md-sys-color-on-surface-variant);
+    margin: 4px 0 0;
+  }
+  md-divider { margin: 8px 0 20px; }
+
 </style>
 </head>
 <body>
 
-  <header>
-    <h1 class="md-typescale-headline-small">Diecast Inventory</h1>
-    <p class="md-typescale-body-medium">Snap a card or a loose car — it's extracted and checked against the reference database automatically.</p>
-  </header>
-
-  <div class="toolbar">
-    <md-icon-button id="statusBtn" aria-label="Diagnostics">
-      <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></md-icon>
+  <div id="topAppBar" class="top-app-bar">
+    <md-icon-button id="backBtn" aria-label="Back" style="display:none">
+      <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg></md-icon>
     </md-icon-button>
-    <md-icon-button id="exportBtn" aria-label="Export inventory as JSON">
-      <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></md-icon>
-    </md-icon-button>
+    <h1 id="appBarTitle" class="md-typescale-title-large top-app-bar-title">Diecast Inventory</h1>
+
+    <div id="appBarActions" class="top-app-bar-actions">
+      <md-icon-button id="selectModeBtn" aria-label="Select items">
+        <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M222-200 80-342l56-56 85 85 170-170 56 57-225 226Zm0-320L80-662l56-56 85 85 170-170 56 57-225 226Zm298 240v-80h360v80H520Zm0-320v-80h360v80H520Z"/></svg></md-icon>
+      </md-icon-button>
+      <md-icon-button id="sortBtn" aria-label="Sort">
+        <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M120-240v-80h240v80H120Zm0-200v-80h480v80H120Zm0-200v-80h720v80H120Z"/></svg></md-icon>
+      </md-icon-button>
+      <md-menu id="sortMenu" anchor="sortBtn">
+        <md-menu-item data-sort="casting_name"><div slot="headline">Model<span class="sort-dir"></span></div></md-menu-item>
+        <md-menu-item data-sort="brand"><div slot="headline">Brand<span class="sort-dir"></span></div></md-menu-item>
+        <md-menu-item data-sort="car_make"><div slot="headline">Car make<span class="sort-dir"></span></div></md-menu-item>
+        <md-menu-item data-sort="year"><div slot="headline">Year<span class="sort-dir"></span></div></md-menu-item>
+        <md-menu-item data-sort="series"><div slot="headline">Theme<span class="sort-dir"></span></div></md-menu-item>
+      </md-menu>
+      <md-icon-button id="statusBtn" aria-label="Diagnostics">
+        <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></md-icon>
+      </md-icon-button>
+      <md-icon-button id="exportBtn" aria-label="Export inventory as JSON">
+        <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></md-icon>
+      </md-icon-button>
+    </div>
+
+    <div id="selectionActions" class="top-app-bar-actions" style="display:none">
+      <md-icon-button id="bulkStatusBtn" aria-label="Set status">
+        <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></md-icon>
+      </md-icon-button>
+      <md-menu id="bulkStatusMenu" anchor="bulkStatusBtn">
+        <md-menu-item data-status="in_collection"><div slot="headline">In collection</div></md-menu-item>
+        <md-menu-item data-status="listed"><div slot="headline">Listed</div></md-menu-item>
+        <md-menu-item data-status="sold"><div slot="headline">Sold</div></md-menu-item>
+      </md-menu>
+      <md-icon-button id="bulkDeleteBtn" aria-label="Delete selected">
+        <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg></md-icon>
+      </md-icon-button>
+      <md-icon-button id="cancelSelectBtn" aria-label="Cancel selection">
+        <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></md-icon>
+      </md-icon-button>
+    </div>
+
+    <div id="detailActions" class="top-app-bar-actions" style="display:none">
+      <md-icon-button id="detailSaveBtn" aria-label="Save">
+        <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M840-680v480q0 33-23.5 56.5T760-120H200q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h480l160 160Zm-80 34L646-760H200v560h560v-446ZM480-240q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM240-560h360v-160H240v160Zm-40-86v446-560 114Z"/></svg></md-icon>
+      </md-icon-button>
+      <md-icon-button id="detailDeleteBtn" aria-label="Delete">
+        <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg></md-icon>
+      </md-icon-button>
+    </div>
   </div>
 
-  <md-tabs id="packagingTabs">
-    <md-primary-tab id="cardedTab" active inline-icon>
-      <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m159-168-34-14q-31-13-41.5-45t3.5-63l72-156v278Zm160 88q-33 0-56.5-23.5T239-160v-240l106 294q3 7 6 13.5t8 12.5h-40Zm206-4q-32 12-62-3t-42-47L243-622q-12-32 2-62.5t46-41.5l302-110q32-12 62 3t42 47l178 488q12 32-2 62.5T827-194L525-84Zm-86-476q17 0 28.5-11.5T479-600q0-17-11.5-28.5T439-640q-17 0-28.5 11.5T399-600q0 17 11.5 28.5T439-560Zm58 400 302-110-178-490-302 110 178 490ZM319-650l302-110-302 110Z"/></svg></md-icon>
-      Carded
-    </md-primary-tab>
-    <md-primary-tab id="looseTab" inline-icon>
-      <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h440q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z"/></svg></md-icon>
-      Loose
-    </md-primary-tab>
-  </md-tabs>
+  <div id="listView">
+    <p class="md-typescale-body-medium" style="color:var(--md-sys-color-on-surface-variant); margin-top:0;">
+      Snap a card or a loose car — it's extracted and checked against the reference database automatically.
+    </p>
 
-  <p id="basePrompt" class="md-typescale-body-small" style="display:none;"></p>
+    <md-tabs id="packagingTabs">
+      <md-primary-tab id="cardedTab" active inline-icon>
+        <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m159-168-34-14q-31-13-41.5-45t3.5-63l72-156v278Zm160 88q-33 0-56.5-23.5T239-160v-240l106 294q3 7 6 13.5t8 12.5h-40Zm206-4q-32 12-62-3t-42-47L243-622q-12-32 2-62.5t46-41.5l302-110q32-12 62 3t42 47l178 488q12 32-2 62.5T827-194L525-84Zm-86-476q17 0 28.5-11.5T479-600q0-17-11.5-28.5T439-640q-17 0-28.5 11.5T399-600q0 17 11.5 28.5T439-560Zm58 400 302-110-178-490-302 110 178 490ZM319-650l302-110-302 110Z"/></svg></md-icon>
+        Carded
+      </md-primary-tab>
+      <md-primary-tab id="looseTab" inline-icon>
+        <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h440q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z"/></svg></md-icon>
+        Loose
+      </md-primary-tab>
+    </md-tabs>
 
-  <md-outlined-button id="baseBtn">
-    <md-icon slot="icon" id="baseBtnIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-143 0-253-90T88-400h82q28 106 114 173t196 67q86 0 160-42.5T756-320H640v-80h240v240h-80v-80q-57 76-141 118T480-80Zm0-280q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-560v-240h80v80q57-76 141-118t179-42q143 0 253 90t139 230h-82q-28-106-114-173t-196-67q-86 0-160 42.5T204-640h116v80H80Z"/></svg></md-icon>
-    <span id="baseBtnLabel">Add base/underside photo</span>
-  </md-outlined-button>
-  <input type="file" id="baseInput" accept="image/*" capture="environment" hidden>
+    <p id="basePrompt" class="md-typescale-body-small" style="display:none;"></p>
 
-  <md-text-button id="skipSecondBtn">Scan without this photo</md-text-button>
+    <md-outlined-button id="baseBtn">
+      <md-icon slot="icon" id="baseBtnIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-143 0-253-90T88-400h82q28 106 114 173t196 67q86 0 160-42.5T756-320H640v-80h240v240h-80v-80q-57 76-141 118T480-80Zm0-280q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-560v-240h80v80q57-76 141-118t179-42q143 0 253 90t139 230h-82q-28-106-114-173t-196-67q-86 0-160 42.5T204-640h116v80H80Z"/></svg></md-icon>
+      <span id="baseBtnLabel">Add base/underside photo</span>
+    </md-outlined-button>
+    <input type="file" id="baseInput" accept="image/*" capture="environment" hidden>
 
-  <input type="file" id="cameraInput" accept="image/*" capture="environment" hidden>
+    <md-text-button id="skipSecondBtn">Scan without this photo</md-text-button>
 
-  <div id="captureFab">
-    <md-fab id="scanFabBtn" variant="primary" label="Scan a car">
-      <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg></md-icon>
-    </md-fab>
+    <input type="file" id="cameraInput" accept="image/*" capture="environment" hidden>
+
+    <div id="captureFab">
+      <md-fab id="scanFabBtn" variant="primary" label="Scan a car">
+        <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg></md-icon>
+      </md-fab>
+    </div>
+
+    <md-list id="results"></md-list>
+
+    <div id="emptyState">
+      <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-80q-33 0-56.5-23.5T120-160v-451q-18-11-29-28.5T80-680v-120q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v120q0 23-11 40.5T840-611v451q0 33-23.5 56.5T760-80H200Zm0-520v440h560v-440H200Zm-40-80h640v-120H160v120Zm200 280h240v-80H360v80Zm120 20Z"/></svg></md-icon>
+      <p class="md-typescale-body-medium">Nothing scanned yet</p>
+    </div>
   </div>
 
-  <md-list id="results"></md-list>
+  <div id="detailView">
+    <div class="detail-photos" id="detailPhotos"></div>
 
-  <div id="emptyState">
-    <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-80q-33 0-56.5-23.5T120-160v-451q-18-11-29-28.5T80-680v-120q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v120q0 23-11 40.5T840-611v451q0 33-23.5 56.5T760-80H200Zm0-520v440h560v-440H200Zm-40-80h640v-120H160v120Zm200 280h240v-80H360v80Zm120 20Z"/></svg></md-icon>
-    <p class="md-typescale-body-medium">Nothing scanned yet</p>
+    <div class="detail-section">
+      <h3>Identification</h3>
+      <md-outlined-text-field class="detail-field" id="detBrand" label="Brand"></md-outlined-text-field>
+      <md-outlined-text-field class="detail-field" id="detCarMake" label="Car make"></md-outlined-text-field>
+      <md-outlined-text-field class="detail-field" id="detCastingName" label="Casting name"></md-outlined-text-field>
+      <md-outlined-text-field class="detail-field" id="detSeries" label="Series / theme"></md-outlined-text-field>
+      <md-outlined-text-field class="detail-field" id="detYear" label="Year" type="number"></md-outlined-text-field>
+      <md-outlined-text-field class="detail-field" id="detCollectorNum" label="Collector #"></md-outlined-text-field>
+      <md-outlined-text-field class="detail-field" id="detSku" label="Sku / Toy #"></md-outlined-text-field>
+      <md-outlined-text-field class="detail-field" id="detColor" label="Color"></md-outlined-text-field>
+    </div>
+
+    <md-divider></md-divider>
+    <div class="detail-section">
+      <h3>Match</h3>
+      <div id="detMatchContent"></div>
+    </div>
+
+    <md-divider></md-divider>
+    <div class="detail-section">
+      <h3>Pricing</h3>
+      <div id="detPricingContent"></div>
+    </div>
+
+    <md-divider></md-divider>
+    <div class="detail-section">
+      <h3>Your tracking</h3>
+      <md-outlined-select class="detail-field" id="detStatus" label="Status">
+        <md-select-option value="in_collection"><div slot="headline">In collection</div></md-select-option>
+        <md-select-option value="listed"><div slot="headline">Listed</div></md-select-option>
+        <md-select-option value="sold"><div slot="headline">Sold</div></md-select-option>
+      </md-outlined-select>
+      <md-outlined-text-field class="detail-field" id="detCondition" label="Condition notes"></md-outlined-text-field>
+      <md-outlined-text-field class="detail-field" id="detAcquiredDate" label="Acquired date" type="date"></md-outlined-text-field>
+      <md-outlined-text-field class="detail-field" id="detCostBasis" label="Cost basis (USD)" type="number"></md-outlined-text-field>
+      <md-outlined-text-field class="detail-field" id="detListingPrice" label="Listing price (USD)" type="number"></md-outlined-text-field>
+      <md-outlined-text-field class="detail-field" id="detSoldPrice" label="Sold price (USD)" type="number"></md-outlined-text-field>
+    </div>
   </div>
-
 
   <md-dialog id="errorDialog">
     <div slot="headline">Scan didn't go through</div>
@@ -265,22 +437,45 @@
     </div>
   </md-dialog>
 
-  <md-dialog id="editDialog">
-    <div slot="headline">Edit item</div>
-    <div slot="content">
-      <md-outlined-text-field class="edit-field" id="editBrand" label="Brand"></md-outlined-text-field>
-      <md-outlined-text-field class="edit-field" id="editCastingName" label="Casting name"></md-outlined-text-field>
-      <md-outlined-text-field class="edit-field" id="editSeries" label="Series"></md-outlined-text-field>
-      <md-outlined-text-field class="edit-field" id="editYear" label="Year" type="number"></md-outlined-text-field>
-      <md-outlined-text-field class="edit-field" id="editCondition" label="Condition notes"></md-outlined-text-field>
-    </div>
+  <md-dialog id="bulkDeleteDialog">
+    <div slot="headline">Delete items?</div>
+    <div slot="content" id="bulkDeleteDialogContent" class="md-typescale-body-medium"></div>
     <div slot="actions">
-      <md-text-button id="editDialogCancel">Cancel</md-text-button>
-      <md-filled-button id="editDialogSave">Save</md-filled-button>
+      <md-text-button id="bulkDeleteCancel">Cancel</md-text-button>
+      <md-filled-button id="bulkDeleteConfirm">Delete</md-filled-button>
+    </div>
+  </md-dialog>
+
+  <md-dialog id="detailDeleteDialog">
+    <div slot="headline">Delete this item?</div>
+    <div slot="content" class="md-typescale-body-medium">This removes it and its photos permanently.</div>
+    <div slot="actions">
+      <md-text-button id="detailDeleteCancel">Cancel</md-text-button>
+      <md-filled-button id="detailDeleteConfirm">Delete</md-filled-button>
     </div>
   </md-dialog>
 
   <script type="module">
+    // ---- Element refs -----------------------------------------------------
+    const topAppBar = document.getElementById('topAppBar');
+    const backBtn = document.getElementById('backBtn');
+    const appBarTitle = document.getElementById('appBarTitle');
+    const appBarActions = document.getElementById('appBarActions');
+    const selectionActions = document.getElementById('selectionActions');
+    const detailActions = document.getElementById('detailActions');
+    const selectModeBtn = document.getElementById('selectModeBtn');
+    const sortBtn = document.getElementById('sortBtn');
+    const sortMenu = document.getElementById('sortMenu');
+    const bulkStatusBtn = document.getElementById('bulkStatusBtn');
+    const bulkStatusMenu = document.getElementById('bulkStatusMenu');
+    const bulkDeleteBtn = document.getElementById('bulkDeleteBtn');
+    const cancelSelectBtn = document.getElementById('cancelSelectBtn');
+    const detailSaveBtn = document.getElementById('detailSaveBtn');
+    const detailDeleteBtn = document.getElementById('detailDeleteBtn');
+
+    const listView = document.getElementById('listView');
+    const detailView = document.getElementById('detailView');
+
     const cameraInput = document.getElementById('cameraInput');
     const baseInput = document.getElementById('baseInput');
     const results = document.getElementById('results');
@@ -303,34 +498,61 @@
     const statusDialogClose = document.getElementById('statusDialogClose');
     const testLiveSearchBtn = document.getElementById('testLiveSearchBtn');
 
-    const editDialog = document.getElementById('editDialog');
-    const editBrand = document.getElementById('editBrand');
-    const editCastingName = document.getElementById('editCastingName');
-    const editSeries = document.getElementById('editSeries');
-    const editYear = document.getElementById('editYear');
-    const editCondition = document.getElementById('editCondition');
-    const editDialogCancel = document.getElementById('editDialogCancel');
-    const editDialogSave = document.getElementById('editDialogSave');
+    const bulkDeleteDialog = document.getElementById('bulkDeleteDialog');
+    const bulkDeleteDialogContent = document.getElementById('bulkDeleteDialogContent');
+    const bulkDeleteCancel = document.getElementById('bulkDeleteCancel');
+    const bulkDeleteConfirm = document.getElementById('bulkDeleteConfirm');
+
+    const detailDeleteDialog = document.getElementById('detailDeleteDialog');
+    const detailDeleteCancel = document.getElementById('detailDeleteCancel');
+    const detailDeleteConfirm = document.getElementById('detailDeleteConfirm');
+
+    const detailPhotos = document.getElementById('detailPhotos');
+    const detBrand = document.getElementById('detBrand');
+    const detCarMake = document.getElementById('detCarMake');
+    const detCastingName = document.getElementById('detCastingName');
+    const detSeries = document.getElementById('detSeries');
+    const detYear = document.getElementById('detYear');
+    const detCollectorNum = document.getElementById('detCollectorNum');
+    const detSku = document.getElementById('detSku');
+    const detColor = document.getElementById('detColor');
+    const detMatchContent = document.getElementById('detMatchContent');
+    const detPricingContent = document.getElementById('detPricingContent');
+    const detStatus = document.getElementById('detStatus');
+    const detCondition = document.getElementById('detCondition');
+    const detAcquiredDate = document.getElementById('detAcquiredDate');
+    const detCostBasis = document.getElementById('detCostBasis');
+    const detListingPrice = document.getElementById('detListingPrice');
+    const detSoldPrice = document.getElementById('detSoldPrice');
 
     const ICON_FLIP_CAMERA = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-143 0-253-90T88-400h82q28 106 114 173t196 67q86 0 160-42.5T756-320H640v-80h240v240h-80v-80q-57 76-141 118T480-80Zm0-280q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-560v-240h80v80q57-76 141-118t179-42q143 0 253 90t139 230h-82q-28-106-114-173t-196-67q-86 0-160 42.5T204-640h116v80H80Z"/></svg>';
     const ICON_CHECK_CIRCLE = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>';
-    const ICON_DELETE = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M280-120q-33 0-56.5-23.5T200-200v-520h-40v-80h200v-40h240v40h200v80h-40v520q0 33-23.5 56.5T680-120H280Zm400-600H280v520h400v-520ZM360-280h80v-360h-80v360Zm160 0h80v-360h-80v360ZM280-720v520-520Z"/></svg>';
-    const ICON_EDIT = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-200h57l391-391-57-57-391 391v57Zm-80 80v-170l528-527q12-11 26.5-17t30.5-6q16 0 31 6t26 18l55 56q12 11 17.5 26t5.5 30q0 16-5.5 30.5T817-647L290-120H120Zm640-584-56-56 56 56Zm-141 85-28-29 57 57-29-28Z"/></svg>';
+    const ICON_CAR_PLACEHOLDER = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h440q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z"/></svg>';
 
     let packagingType = 'carded';
     let pendingMainPhoto = null;
     let pendingBasePhoto = null;
-    let editingId = null;
+
+    // ---- State model --------------------------------------------------
+    // Single source of truth for everything in the list/detail views - the
+    // old version of this app appended DOM nodes directly as data arrived
+    // and never held a re-sortable/re-filterable array. Sort and
+    // multi-select both need one.
+    let allItems = [];
+    let selectMode = false;
+    let selectedIds = new Set();
+    let sortKey = 'created_at';
+    let sortDir = 'desc';
 
     errorDialogClose.addEventListener('click', () => errorDialog.close());
     statusDialogClose.addEventListener('click', () => statusDialog.close());
-    editDialogCancel.addEventListener('click', () => editDialog.close());
 
     function showError(message) {
       errorDialogContent.textContent = message;
       errorDialog.show();
     }
 
+    // ---- Capture flow (unchanged behavior from before the redesign) ----
     // The second-photo step means different things per packaging type: for
     // loose cars it's the base/underside stamp (casting name + year); for
     // carded cars it's the back of the card, which usually has the sku/
@@ -425,11 +647,12 @@
           throw new Error(data.detail || `Server error (status ${resp.status})`);
         }
         loadingItem.remove();
-        renderItem(fromScanResponse(data));
+        allItems.unshift(fromScanResponse(data));
+        renderList();
       } catch (err) {
         loadingItem.remove();
         showError(err.message);
-        if (results.children.length === 0) emptyState.style.display = 'block';
+        if (allItems.length === 0) emptyState.style.display = 'block';
       }
 
       pendingMainPhoto = null;
@@ -449,10 +672,15 @@
       return {
         id: data.inventory_id,
         packaging_type: data.packaging_type,
+        photo_path: data.photo_path || null,
+        base_photo_path: data.base_photo_path || null,
         brand: v.canonical_brand || ex.brand || null,
+        car_make: ex.car_make || null,
         casting_name: v.canonical_casting_name || ex.casting_name || null,
         series: v.canonical_series || ex.series || null,
         year: v.canonical_year || ex.release_year || null,
+        collector_number: ex.collector_number || null,
+        sku: ex.sku || null,
         color: ex.color || null,
         status: v.status,
         confidence: v.confidence,
@@ -463,6 +691,11 @@
         live_recommended_price_usd: live.recommended_listing_price_usd,
         live_summary: (!live.skipped) ? live.summary : null,
         condition: null,
+        tracking_status: 'in_collection',
+        acquired_date: null,
+        cost_basis_usd: null,
+        listing_price_usd: null,
+        sold_price_usd: null,
       };
     }
 
@@ -470,10 +703,15 @@
       return {
         id: row.id,
         packaging_type: row.packaging_type,
+        photo_path: row.photo_path || null,
+        base_photo_path: row.base_photo_path || null,
         brand: row.canonical_brand || row.extracted_brand || null,
+        car_make: row.car_make || null,
         casting_name: row.canonical_casting_name || row.extracted_casting_name || null,
         series: row.canonical_series || row.extracted_series || null,
         year: row.canonical_year || row.extracted_year || null,
+        collector_number: row.extracted_collector_num || null,
+        sku: row.extracted_sku || null,
         color: row.extracted_color || null,
         status: row.match_status,
         confidence: row.match_confidence || 0,
@@ -484,49 +722,374 @@
         live_recommended_price_usd: row.live_recommended_price_usd,
         live_summary: row.live_price_summary,
         condition: row.condition,
+        tracking_status: row.status || 'in_collection',
+        acquired_date: row.acquired_date,
+        cost_basis_usd: row.cost_basis_usd,
+        listing_price_usd: row.listing_price_usd,
+        sold_price_usd: row.sold_price_usd,
       };
     }
 
-    async function deleteItem(id, itemEl) {
+    // ---- List rendering --------------------------------------------------
+    function sortValue(item, key) {
+      if (key === 'year') return item.year ? Number(item.year) : null;
+      if (key === 'casting_name') return item.casting_name;
+      if (key === 'brand') return item.brand;
+      if (key === 'car_make') return item.car_make;
+      if (key === 'series') return item.series;
+      return item.created_at;
+    }
+
+    function sortedItems() {
+      if (sortKey === 'created_at') {
+        // Original load order from the API is already newest-first; just
+        // respect direction on top of that rather than re-deriving a
+        // timestamp we don't consistently carry on fresh-scan items.
+        const copy = allItems.slice();
+        return sortDir === 'desc' ? copy : copy.reverse();
+      }
+      const copy = allItems.slice();
+      copy.sort((a, b) => {
+        const av = sortValue(a, sortKey), bv = sortValue(b, sortKey);
+        if (av == null && bv == null) return 0;
+        if (av == null) return 1;   // nulls always last, regardless of direction
+        if (bv == null) return -1;
+        let cmp;
+        if (typeof av === 'number' && typeof bv === 'number') cmp = av - bv;
+        else cmp = String(av).localeCompare(String(bv));
+        return sortDir === 'desc' ? -cmp : cmp;
+      });
+      return copy;
+    }
+
+    function buildThumb(item) {
+      const wrap = document.createElement('div');
+      wrap.className = 'thumb-wrap';
+      wrap.slot = 'start';
+
+      if (item.photo_path) {
+        const img = document.createElement('img');
+        img.className = 'thumb';
+        img.src = '/' + item.photo_path;
+        img.alt = '';
+        img.loading = 'lazy';
+        img.addEventListener('error', () => {
+          img.replaceWith(buildThumbPlaceholder());
+        });
+        wrap.appendChild(img);
+      } else {
+        wrap.appendChild(buildThumbPlaceholder());
+      }
+
+      if (selectMode) {
+        const cb = document.createElement('md-checkbox');
+        cb.className = 'select-checkbox';
+        cb.checked = selectedIds.has(item.id);
+        // The card itself handles the click/toggle - this checkbox is a
+        // visual indicator, not an independent control, so it shouldn't
+        // eat the tap or need its own listener.
+        cb.style.pointerEvents = 'none';
+        wrap.appendChild(cb);
+      }
+      return wrap;
+    }
+
+    function buildThumbPlaceholder() {
+      const div = document.createElement('div');
+      div.className = 'thumb thumb-placeholder';
+      const icon = document.createElement('md-icon');
+      icon.innerHTML = ICON_CAR_PLACEHOLDER;
+      div.appendChild(icon);
+      return div;
+    }
+
+    function buildItemElement(item) {
+      const name = item.casting_name || 'Unrecognized item';
+      const metaLine = [item.brand, item.car_make, item.year].filter(Boolean).join(' · ');
+
+      const el = document.createElement('md-list-item');
+      el.className = 'item-card';
+      el.dataset.inventoryId = item.id;
+      if (selectMode && selectedIds.has(item.id)) el.classList.add('selected');
+
+      el.appendChild(buildThumb(item));
+
+      const headline = document.createElement('div');
+      headline.slot = 'headline';
+      headline.textContent = name;
+      el.appendChild(headline);
+
+      const supporting = document.createElement('div');
+      supporting.slot = 'supporting-text';
+      supporting.textContent = metaLine || '—';
+      el.appendChild(supporting);
+
+      const endStack = document.createElement('div');
+      endStack.slot = 'end';
+      endStack.className = 'end-stack';
+
+      if (item.live_recommended_price_usd) {
+        const price = document.createElement('div');
+        price.className = 'price-text';
+        price.textContent = `~$${item.live_recommended_price_usd.toFixed(2)}`;
+        endStack.appendChild(price);
+      } else if (item.live_price_low_usd || item.live_price_high_usd) {
+        const price = document.createElement('div');
+        price.className = 'price-text';
+        const low = item.live_price_low_usd, high = item.live_price_high_usd;
+        price.textContent = (low && high && low !== high)
+          ? `$${low.toFixed(2)}–$${high.toFixed(2)}`
+          : `~$${(low || high).toFixed(2)}`;
+        endStack.appendChild(price);
+      } else if (item.guide_price_usd) {
+        const price = document.createElement('div');
+        price.className = 'price-text';
+        price.textContent = `~$${item.guide_price_usd.toFixed(2)}`;
+        endStack.appendChild(price);
+      }
+
+      const pill = document.createElement('span');
+      pill.className = `status-pill ${item.status}`;
+      pill.textContent = `${(item.status || 'unknown').replace('_', ' ')} · ${(item.confidence * 100).toFixed(0)}%`;
+      pill.title = item.match_notes || 'Similarity between what was read off the card and the closest reference database entry.';
+      endStack.appendChild(pill);
+
+      el.appendChild(endStack);
+
+      el.addEventListener('click', () => {
+        if (selectMode) {
+          toggleSelected(item.id);
+        } else {
+          location.hash = '#/item/' + item.id;
+        }
+      });
+
+      return el;
+    }
+
+    function renderList() {
+      results.innerHTML = '';
+      const items = sortedItems();
+      for (const item of items) {
+        results.appendChild(buildItemElement(item));
+      }
+      emptyState.style.display = items.length === 0 ? 'block' : 'none';
+    }
+
+    // ---- History: load everything already scanned, on page open ---------
+    async function loadHistory() {
       try {
-        const resp = await fetch(`/inventory/${id}`, { method: 'DELETE' });
-        let data;
-        try {
-          data = await resp.json();
-        } catch {
-          throw new Error(`Server sent back something unreadable (status ${resp.status}).`);
-        }
-        if (!resp.ok) {
-          throw new Error(data.detail || `Server error (status ${resp.status})`);
-        }
-        itemEl.remove();
-        if (results.children.length === 0) emptyState.style.display = 'block';
+        const resp = await fetch('/inventory');
+        const rows = await resp.json();
+        if (!resp.ok) throw new Error(rows.detail || 'Failed to load inventory history.');
+        allItems = rows.map(fromDbRow);
+        renderList();
       } catch (err) {
-        showError(`Couldn't delete: ${err.message}`);
+        showError(`Couldn't load your scan history: ${err.message}`);
+      } finally {
+        renderRoute();
       }
     }
 
-    function openEditDialog(item) {
-      editingId = item.id;
-      editBrand.value = item.brand || '';
-      editCastingName.value = item.casting_name || '';
-      editSeries.value = item.series || '';
-      editYear.value = item.year || '';
-      editCondition.value = item.condition || '';
-      editDialog.show();
+    // ---- Top app bar mode switching --------------------------------------
+    function setAppBarMode(mode, title) {
+      // mode: 'list' | 'select' | 'detail'
+      backBtn.style.display = mode === 'detail' ? 'inline-flex' : 'none';
+      appBarActions.style.display = mode === 'list' ? 'flex' : 'none';
+      selectionActions.style.display = mode === 'select' ? 'flex' : 'none';
+      detailActions.style.display = mode === 'detail' ? 'flex' : 'none';
+      topAppBar.classList.toggle('contextual', mode === 'select');
+      appBarTitle.textContent = title;
     }
 
-    editDialogSave.addEventListener('click', async () => {
-      if (editingId == null) return;
+    // ---- Multi-select -----------------------------------------------------
+    function toggleSelected(id) {
+      if (selectedIds.has(id)) selectedIds.delete(id); else selectedIds.add(id);
+      if (selectedIds.size === 0) {
+        exitSelectMode();
+      } else {
+        setAppBarMode('select', `${selectedIds.size} selected`);
+        renderList();
+      }
+    }
+
+    function exitSelectMode() {
+      selectMode = false;
+      selectedIds.clear();
+      setAppBarMode('list', 'Diecast Inventory');
+      renderList();
+    }
+
+    selectModeBtn.addEventListener('click', () => {
+      selectMode = true;
+      selectedIds.clear();
+      setAppBarMode('select', '0 selected');
+      renderList();
+    });
+    cancelSelectBtn.addEventListener('click', exitSelectMode);
+
+    bulkDeleteBtn.addEventListener('click', () => {
+      const n = selectedIds.size;
+      if (n === 0) return;
+      bulkDeleteDialogContent.textContent = `Delete ${n} item${n === 1 ? '' : 's'}? This also removes their photos. This can't be undone.`;
+      bulkDeleteDialog.show();
+    });
+    bulkDeleteCancel.addEventListener('click', () => bulkDeleteDialog.close());
+    bulkDeleteConfirm.addEventListener('click', async () => {
+      bulkDeleteDialog.close();
+      const ids = Array.from(selectedIds);
+      try {
+        await Promise.all(ids.map(id => fetch(`/inventory/${id}`, { method: 'DELETE' })));
+      } catch (err) {
+        showError(`Some deletes may not have gone through: ${err.message}`);
+      }
+      allItems = allItems.filter(it => !selectedIds.has(it.id));
+      exitSelectMode();
+    });
+
+    bulkStatusBtn.addEventListener('click', () => { bulkStatusMenu.open = !bulkStatusMenu.open; });
+    bulkStatusMenu.querySelectorAll('md-menu-item').forEach(item => {
+      item.addEventListener('click', async () => {
+        bulkStatusMenu.open = false;
+        const newStatus = item.dataset.status;
+        const ids = Array.from(selectedIds);
+        try {
+          await Promise.all(ids.map(id => fetch(`/inventory/${id}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ status: newStatus }),
+          })));
+        } catch (err) {
+          showError(`Some status updates may not have gone through: ${err.message}`);
+        }
+        for (const it of allItems) {
+          if (selectedIds.has(it.id)) it.tracking_status = newStatus;
+        }
+        exitSelectMode();
+      });
+    });
+
+    // ---- Sort ---------------------------------------------------------
+    function updateSortMenu() {
+      sortMenu.querySelectorAll('md-menu-item').forEach(item => {
+        const dirSpan = item.querySelector('.sort-dir');
+        dirSpan.textContent = item.dataset.sort === sortKey ? (sortDir === 'desc' ? ' ↓' : ' ↑') : '';
+      });
+    }
+    sortBtn.addEventListener('click', () => { sortMenu.open = !sortMenu.open; });
+    sortMenu.querySelectorAll('md-menu-item').forEach(item => {
+      item.addEventListener('click', () => {
+        sortMenu.open = false;
+        const key = item.dataset.sort;
+        if (key === sortKey) {
+          sortDir = sortDir === 'desc' ? 'asc' : 'desc';
+        } else {
+          sortKey = key;
+          sortDir = key === 'year' ? 'desc' : 'asc';
+        }
+        updateSortMenu();
+        renderList();
+      });
+    });
+    updateSortMenu();
+
+    // ---- Detail view / routing --------------------------------------------
+    function money(n) { return (n || n === 0) ? `$${Number(n).toFixed(2)}` : null; }
+
+    function buildDetailView(item) {
+      detailPhotos.innerHTML = '';
+      if (item.photo_path) {
+        const img = document.createElement('img');
+        img.src = '/' + item.photo_path;
+        img.alt = '';
+        detailPhotos.appendChild(img);
+      }
+      if (item.base_photo_path) {
+        const img = document.createElement('img');
+        img.src = '/' + item.base_photo_path;
+        img.alt = '';
+        detailPhotos.appendChild(img);
+      }
+
+      detBrand.value = item.brand || '';
+      detCarMake.value = item.car_make || '';
+      detCastingName.value = item.casting_name || '';
+      detSeries.value = item.series || '';
+      detYear.value = item.year || '';
+      detCollectorNum.value = item.collector_number || '';
+      detSku.value = item.sku || '';
+      detColor.value = item.color || '';
+
+      detMatchContent.innerHTML = `
+        <div class="detail-readonly-row"><span>Status</span><span class="status-pill ${item.status}">${(item.status || 'unknown').replace('_', ' ')} · ${(item.confidence * 100).toFixed(0)}%</span></div>
+        ${item.match_notes ? `<p class="detail-summary-text">${item.match_notes}</p>` : ''}
+      `;
+
+      const priceRows = [];
+      if (item.guide_price_usd) priceRows.push(`<div class="detail-readonly-row"><span>Guide price</span><span>${money(item.guide_price_usd)}</span></div>`);
+      if (item.live_recommended_price_usd) priceRows.push(`<div class="detail-readonly-row"><span>Recommended listing</span><span>${money(item.live_recommended_price_usd)}</span></div>`);
+      if (item.live_price_low_usd || item.live_price_high_usd) {
+        const low = item.live_price_low_usd, high = item.live_price_high_usd;
+        const rangeText = (low && high && low !== high) ? `${money(low)}–${money(high)}` : money(low || high);
+        priceRows.push(`<div class="detail-readonly-row"><span>eBay range</span><span>${rangeText}</span></div>`);
+      }
+      detPricingContent.innerHTML = (priceRows.length ? priceRows.join('') : '<p class="detail-summary-text">No pricing data yet.</p>')
+        + (item.live_summary ? `<p class="detail-summary-text">${item.live_summary}</p>` : '');
+
+      detStatus.value = item.tracking_status || 'in_collection';
+      detCondition.value = item.condition || '';
+      detAcquiredDate.value = item.acquired_date || '';
+      detCostBasis.value = item.cost_basis_usd ?? '';
+      detListingPrice.value = item.listing_price_usd ?? '';
+      detSoldPrice.value = item.sold_price_usd ?? '';
+    }
+
+    let currentDetailId = null;
+
+    function showDetail(id) {
+      const item = allItems.find(it => it.id === id);
+      if (!item) { location.hash = ''; return; }
+      currentDetailId = id;
+      buildDetailView(item);
+      listView.style.display = 'none';
+      detailView.style.display = 'block';
+      setAppBarMode('detail', item.casting_name || 'Unrecognized item');
+    }
+
+    function showList() {
+      currentDetailId = null;
+      listView.style.display = 'block';
+      detailView.style.display = 'none';
+      setAppBarMode(selectMode ? 'select' : 'list', selectMode ? `${selectedIds.size} selected` : 'Diecast Inventory');
+    }
+
+    function renderRoute() {
+      const m = location.hash.match(/^#\/item\/(\d+)/);
+      if (m) showDetail(Number(m[1])); else showList();
+    }
+    window.addEventListener('hashchange', renderRoute);
+    backBtn.addEventListener('click', () => { location.hash = ''; });
+
+    detailSaveBtn.addEventListener('click', async () => {
+      if (currentDetailId == null) return;
       const payload = {
-        canonical_brand: editBrand.value || null,
-        canonical_casting_name: editCastingName.value || null,
-        canonical_series: editSeries.value || null,
-        canonical_year: editYear.value ? parseInt(editYear.value, 10) : null,
-        condition: editCondition.value || null,
+        canonical_brand: detBrand.value || null,
+        car_make: detCarMake.value || null,
+        canonical_casting_name: detCastingName.value || null,
+        canonical_series: detSeries.value || null,
+        canonical_year: detYear.value ? parseInt(detYear.value, 10) : null,
+        extracted_collector_num: detCollectorNum.value || null,
+        extracted_sku: detSku.value || null,
+        extracted_color: detColor.value || null,
+        status: detStatus.value || null,
+        condition: detCondition.value || null,
+        acquired_date: detAcquiredDate.value || null,
+        cost_basis_usd: detCostBasis.value ? parseFloat(detCostBasis.value) : null,
+        listing_price_usd: detListingPrice.value ? parseFloat(detListingPrice.value) : null,
+        sold_price_usd: detSoldPrice.value ? parseFloat(detSoldPrice.value) : null,
       };
       try {
-        const resp = await fetch(`/inventory/${editingId}`, {
+        const resp = await fetch(`/inventory/${currentDetailId}`, {
           method: 'PUT',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify(payload),
@@ -537,131 +1100,34 @@
         }
         if (!resp.ok) throw new Error(data.detail || `Server error (status ${resp.status})`);
 
-        // Re-render this item in place with the updated data
-        const oldEl = results.querySelector(`md-list-item[data-inventory-id="${editingId}"]`);
-        const newEl = buildItemElement(fromDbRow(data));
-        if (oldEl) oldEl.replaceWith(newEl); else results.prepend(newEl);
-        editDialog.close();
+        const updated = fromDbRow(data);
+        const idx = allItems.findIndex(it => it.id === currentDetailId);
+        if (idx !== -1) allItems[idx] = updated;
+        location.hash = '';
       } catch (err) {
         showError(`Couldn't save: ${err.message}`);
       }
     });
 
-    function buildItemElement(item) {
-      const name = item.casting_name || 'Unrecognized item';
-      const packagingLabel = item.packaging_type === 'loose' ? 'Loose' : 'Carded';
-      const metaLine = [packagingLabel, item.brand, item.series, item.year].filter(Boolean).join(' · ');
-
-      const el = document.createElement('md-list-item');
-      el.dataset.inventoryId = item.id;
-
-      const headline = document.createElement('div');
-      headline.slot = 'headline';
-      headline.textContent = name;
-      el.appendChild(headline);
-
-      const supportingLines = [metaLine, item.color].filter(Boolean);
-      // match_notes is only genuinely useful to surface when the match itself
-      // is in question - for a confirmed item it's just "Strong match." noise.
-      if (item.match_notes && item.status !== 'confirmed') supportingLines.push(item.match_notes);
-      if (item.live_summary) supportingLines.push(item.live_summary);
-      if (item.condition) supportingLines.push(`Condition: ${item.condition}`);
-      const supporting = document.createElement('div');
-      supporting.slot = 'supporting-text';
-      supporting.textContent = supportingLines.join('\n');
-      supporting.style.whiteSpace = 'pre-line';
-      el.appendChild(supporting);
-
-      const endRow = document.createElement('div');
-      endRow.slot = 'end';
-      endRow.className = 'end-row';
-
-      const endStack = document.createElement('div');
-      endStack.className = 'end-stack';
-
-      if (item.live_recommended_price_usd) {
-        const price = document.createElement('div');
-        price.className = 'price-text';
-        price.textContent = `List at ~$${item.live_recommended_price_usd.toFixed(2)}`;
-        endStack.appendChild(price);
-
-        if (item.live_price_low_usd || item.live_price_high_usd) {
-          const range = document.createElement('div');
-          range.className = 'price-range-text';
-          const low = item.live_price_low_usd, high = item.live_price_high_usd;
-          range.textContent = (low && high && low !== high)
-            ? `eBay: $${low.toFixed(2)}–$${high.toFixed(2)}`
-            : `eBay: ~$${(low || high).toFixed(2)}`;
-          endStack.appendChild(range);
-        }
-      } else if (item.live_price_low_usd || item.live_price_high_usd) {
-        const price = document.createElement('div');
-        price.className = 'price-text';
-        const low = item.live_price_low_usd, high = item.live_price_high_usd;
-        price.textContent = (low && high && low !== high)
-          ? `$${low.toFixed(2)}–$${high.toFixed(2)} eBay`
-          : `~$${(low || high).toFixed(2)} eBay`;
-        endStack.appendChild(price);
-      } else if (item.guide_price_usd) {
-        const price = document.createElement('div');
-        price.className = 'price-text';
-        price.textContent = `~$${item.guide_price_usd.toFixed(2)} guide`;
-        endStack.appendChild(price);
-      }
-
-      const pill = document.createElement('span');
-      pill.className = `status-pill ${item.status}`;
-      pill.textContent = `${(item.status || 'unknown').replace('_', ' ')} · ${(item.confidence * 100).toFixed(0)}%`;
-      pill.title = item.match_notes || 'Similarity between what was read off the card and the closest reference database entry.';
-      endStack.appendChild(pill);
-
-      const editBtn = document.createElement('md-icon-button');
-      editBtn.setAttribute('aria-label', `Edit ${name}`);
-      const editIcon = document.createElement('md-icon');
-      editIcon.innerHTML = ICON_EDIT;
-      editBtn.appendChild(editIcon);
-      editBtn.addEventListener('click', () => openEditDialog(item));
-
-      const deleteBtn = document.createElement('md-icon-button');
-      deleteBtn.className = 'delete-btn';
-      deleteBtn.setAttribute('aria-label', `Delete ${name}`);
-      const deleteIcon = document.createElement('md-icon');
-      deleteIcon.innerHTML = ICON_DELETE;
-      deleteBtn.appendChild(deleteIcon);
-      deleteBtn.addEventListener('click', () => deleteItem(item.id, el));
-
-      endRow.appendChild(endStack);
-      endRow.appendChild(editBtn);
-      endRow.appendChild(deleteBtn);
-      el.appendChild(endRow);
-      return el;
-    }
-
-    function renderItem(item, { toTop = true } = {}) {
-      const el = buildItemElement(item);
-      if (toTop) results.prepend(el); else results.appendChild(el);
-    }
-
-    // ---- History: load everything already scanned, on page open ---------
-    async function loadHistory() {
+    detailDeleteBtn.addEventListener('click', () => detailDeleteDialog.show());
+    detailDeleteCancel.addEventListener('click', () => detailDeleteDialog.close());
+    detailDeleteConfirm.addEventListener('click', async () => {
+      detailDeleteDialog.close();
+      if (currentDetailId == null) return;
       try {
-        const resp = await fetch('/inventory');
-        const rows = await resp.json();
-        if (!resp.ok) throw new Error(rows.detail || 'Failed to load inventory history.');
-        if (rows.length === 0) {
-          emptyState.style.display = 'block';
-          return;
+        const resp = await fetch(`/inventory/${currentDetailId}`, { method: 'DELETE' });
+        let data;
+        try { data = await resp.json(); } catch {
+          throw new Error(`Server sent back something unreadable (status ${resp.status}).`);
         }
-        emptyState.style.display = 'none';
-        // /inventory returns newest-first already; appending in that order
-        // top-to-bottom preserves newest-at-top.
-        for (const row of rows) {
-          renderItem(fromDbRow(row), { toTop: false });
-        }
+        if (!resp.ok) throw new Error(data.detail || `Server error (status ${resp.status})`);
+        allItems = allItems.filter(it => it.id !== currentDetailId);
+        location.hash = '';
       } catch (err) {
-        showError(`Couldn't load your scan history: ${err.message}`);
+        showError(`Couldn't delete: ${err.message}`);
       }
-    }
+    });
+
     loadHistory();
     resetBaseBtn();
     updateSecondPhotoVisibility();
