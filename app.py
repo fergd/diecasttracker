@@ -43,6 +43,7 @@ PHOTO_DIR.mkdir(exist_ok=True)
 app = FastAPI(title="Diecast Inventory")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 app.mount("/static", StaticFiles(directory="static"), name="static")
+app.mount("/photos", StaticFiles(directory="photos"), name="photos")
 
 # Canonical column set for the inventory table, kept in sync with schema.sql.
 # CREATE TABLE IF NOT EXISTS (in schema.sql) is a no-op on a table that
@@ -56,6 +57,7 @@ INVENTORY_COLUMNS = {
     "base_photo_path": "TEXT",
     "packaging_type": "TEXT DEFAULT 'carded'",
     "extracted_brand": "TEXT",
+    "car_make": "TEXT",
     "extracted_casting_name": "TEXT",
     "extracted_collector_num": "TEXT",
     "extracted_sku": "TEXT",
@@ -203,7 +205,7 @@ async def scan_card(
         cur.execute("""
             INSERT INTO inventory (
                 photo_path, base_photo_path, packaging_type,
-                extracted_brand, extracted_casting_name,
+                extracted_brand, car_make, extracted_casting_name,
                 extracted_collector_num, extracted_sku, extracted_series, extracted_year,
                 extracted_color, extracted_raw_json,
                 match_reference_id, match_confidence, match_status, match_notes,
@@ -211,10 +213,10 @@ async def scan_card(
                 guide_price_usd,
                 live_price_low_usd, live_price_high_usd, live_recommended_price_usd,
                 live_price_summary, live_price_fetched_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             saved_path, base_saved_path, packaging_type,
-            extracted.get("brand"), extracted.get("casting_name"),
+            extracted.get("brand"), extracted.get("car_make"), extracted.get("casting_name"),
             extracted.get("collector_number"), extracted.get("sku"), extracted.get("series"),
             str(extracted.get("release_year") or extracted.get("copyright_year_on_base") or "") or None,
             extracted.get("color"), json.dumps(extracted),
@@ -402,6 +404,7 @@ class InventoryUpdate(BaseModel):
     """All fields optional - only what's provided gets updated (PATCH-style
     semantics on a PUT route, which is fine for a single-user personal tool)."""
     canonical_brand: Optional[str] = None
+    car_make: Optional[str] = None
     canonical_casting_name: Optional[str] = None
     canonical_series: Optional[str] = None
     canonical_year: Optional[int] = None

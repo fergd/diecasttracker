@@ -40,6 +40,10 @@ CREATE TABLE IF NOT EXISTS inventory (
 
     -- raw extraction, exactly as the vision model returned it
     extracted_brand         TEXT,
+    car_make                 TEXT,      -- real-world vehicle manufacturer (e.g. "Chevrolet", "Ford"),
+                                          -- distinct from extracted_brand (Hot Wheels/Matchbox, the
+                                          -- collectible line) - no reference-DB verification for this
+                                          -- one, so it's directly user-editable too, like condition
     extracted_casting_name  TEXT,
     extracted_collector_num TEXT,
     extracted_sku            TEXT,      -- manufacturer item/Toy # code, e.g. "CFH06" - exact identifier,

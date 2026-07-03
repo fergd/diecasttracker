@@ -24,6 +24,13 @@ fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
 {
   "packaging_type": "carded",
   "brand": "Hot Wheels" or "Matchbox" or other diecast brand,
+  "car_make": the REAL-WORLD vehicle manufacturer the casting represents (e.g.
+              "Chevrolet", "Ford", "Nissan", "Volkswagen") - distinct from "brand"
+              above, which is the collectible line (Hot Wheels/Matchbox), not the
+              car itself. Read this from the casting name if it names a real make
+              (e.g. "Custom '72 Chevy Luv" -> "Chevrolet"), or from any licensed-
+              manufacturer text/logo on the card. null if the casting is a fully
+              custom/fictional Hot Wheels design with no real-world make,
   "casting_name": the car's model/casting name as printed on the card,
   "collector_number": the number printed on the card (may be a fraction like "8/10"
                        for a series position, or a standalone number like "148" for
@@ -69,6 +76,11 @@ the raw JSON object:
   "brand": "Hot Wheels" or "Matchbox" or other diecast brand if identifiable from
             base markings (e.g. "MATTEL" + country of manufacture is a Hot Wheels
             signal), else your best guess with lower confidence,
+  "car_make": the REAL-WORLD vehicle manufacturer the casting represents (e.g.
+              "Chevrolet", "Ford", "Nissan") - distinct from "brand" above (the
+              collectible line). Infer from the casting name if it names a real
+              make, or from body styling if recognizable. null if this is a fully
+              custom/fictional design or can't be determined,
   "casting_name": the car's model/casting name - read from the base stamp if a base
                    photo was provided and text is legible, otherwise your best visual
                    identification based on body shape/proportions/distinguishing
