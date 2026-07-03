@@ -115,6 +115,26 @@ it's been lost.
 - **Auth.** Wide open on your tailnet, fine as long as Tailscale stays the
   access boundary.
 
+## Hot Wheels 2019+ reference data (Hallsguide)
+
+South Texas Diecast's per-year pages stop at 2018 (their site pivoted to a
+different content model after that). For 2019 onward, use Hall's Guide
+instead - actively maintained, covers 2000-2026 continuously plus the full
+1968-1999 Redline era:
+
+```bash
+python reference_import_hallsguide.py --years 2019 2020 2021 2022 2023 2024 2025 2026
+```
+
+Verified against real fetched HTML before being handed over (not just
+guessed from rendered text) - including the trickiest case: casting names
+that contain their own parentheses (e.g. "Nissan Skyline GT-R (BNR32)"),
+which could easily be misparsed as the series name if you grab the wrong
+parenthetical group. Treasure Hunt / Super TH variant prices are
+deliberately excluded from the averaged guide price, since blending a rare
+$35 chase price into a $2-3 mainline casting's "typical value" would be
+misleading.
+
 ## Matchbox reference data (vintage 1953-1982)
 
 Since Hot Wheels didn't exist until 1968, anything older in your collection

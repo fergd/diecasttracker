@@ -73,6 +73,7 @@ INVENTORY_COLUMNS = {
     "guide_price_usd": "REAL",
     "live_price_low_usd": "REAL",
     "live_price_high_usd": "REAL",
+    "live_recommended_price_usd": "REAL",
     "live_price_summary": "TEXT",
     "live_price_fetched_at": "TEXT",
     "condition": "TEXT",
@@ -163,7 +164,8 @@ async def scan_card(
     # web search against a guessed/garbled name would just waste the search
     # budget on a query unlikely to return anything useful. Cached by casting
     # identity in live_pricing.py, so repeat scans of the same casting are free.
-    live_price = {"price_low_usd": None, "price_high_usd": None, "summary": None, "cached": False, "skipped": True}
+    live_price = {"price_low_usd": None, "price_high_usd": None, "recommended_listing_price_usd": None,
+                  "summary": None, "cached": False, "skipped": True}
     if match_result.status in ("confirmed", "needs_review"):
         try:
             live_price = get_live_price(
@@ -178,7 +180,7 @@ async def scan_card(
             # failure here should never take down an otherwise-successful
             # extraction + validation. Log it and move on with nulls.
             logger.warning(f"Live price lookup failed (non-fatal): {e}")
-            live_price = {"price_low_usd": None, "price_high_usd": None,
+            live_price = {"price_low_usd": None, "price_high_usd": None, "recommended_listing_price_usd": None,
                           "summary": f"Live price lookup failed: {e}", "cached": False, "error": True}
 
     try:
@@ -193,8 +195,9 @@ async def scan_card(
                 match_reference_id, match_confidence, match_status, match_notes,
                 canonical_brand, canonical_casting_name, canonical_series, canonical_year,
                 guide_price_usd,
-                live_price_low_usd, live_price_high_usd, live_price_summary, live_price_fetched_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+                live_price_low_usd, live_price_high_usd, live_recommended_price_usd,
+                live_price_summary, live_price_fetched_at
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             saved_path, base_saved_path, packaging_type,
             extracted.get("brand"), extracted.get("casting_name"),
@@ -206,6 +209,7 @@ async def scan_card(
             match_result.canonical_series, match_result.canonical_year,
             match_result.suggested_price_usd,
             live_price.get("price_low_usd"), live_price.get("price_high_usd"),
+            live_price.get("recommended_listing_price_usd"),
             live_price.get("summary"),
             None if live_price.get("skipped") else "now",
         ))
@@ -233,6 +237,7 @@ async def scan_card(
         "live_price": {
             "price_low_usd": live_price.get("price_low_usd"),
             "price_high_usd": live_price.get("price_high_usd"),
+            "recommended_listing_price_usd": live_price.get("recommended_listing_price_usd"),
             "summary": live_price.get("summary"),
             "cached": live_price.get("cached", False),
             "skipped": live_price.get("skipped", False),

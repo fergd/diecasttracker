@@ -164,6 +164,10 @@
     font: var(--md-sys-typescale-label-medium-font);
     color: var(--md-sys-color-primary);
   }
+  .price-range-text {
+    font: var(--md-sys-typescale-label-small-font);
+    color: var(--md-sys-color-on-surface-variant);
+  }
 
   #emptyState {
     text-align: center;
@@ -432,6 +436,7 @@
         guide_price_usd: v.guide_price_usd,
         live_price_low_usd: live.price_low_usd,
         live_price_high_usd: live.price_high_usd,
+        live_recommended_price_usd: live.recommended_listing_price_usd,
         live_summary: (!live.skipped) ? live.summary : null,
         condition: null,
       };
@@ -451,6 +456,7 @@
         guide_price_usd: row.guide_price_usd,
         live_price_low_usd: row.live_price_low_usd,
         live_price_high_usd: row.live_price_high_usd,
+        live_recommended_price_usd: row.live_recommended_price_usd,
         live_summary: row.live_price_summary,
         condition: row.condition,
       };
@@ -545,13 +551,28 @@
       const endStack = document.createElement('div');
       endStack.className = 'end-stack';
 
-      if (item.live_price_low_usd || item.live_price_high_usd) {
+      if (item.live_recommended_price_usd) {
+        const price = document.createElement('div');
+        price.className = 'price-text';
+        price.textContent = `List at ~$${item.live_recommended_price_usd.toFixed(2)}`;
+        endStack.appendChild(price);
+
+        if (item.live_price_low_usd || item.live_price_high_usd) {
+          const range = document.createElement('div');
+          range.className = 'price-range-text';
+          const low = item.live_price_low_usd, high = item.live_price_high_usd;
+          range.textContent = (low && high && low !== high)
+            ? `eBay: $${low.toFixed(2)}–$${high.toFixed(2)}`
+            : `eBay: ~$${(low || high).toFixed(2)}`;
+          endStack.appendChild(range);
+        }
+      } else if (item.live_price_low_usd || item.live_price_high_usd) {
         const price = document.createElement('div');
         price.className = 'price-text';
         const low = item.live_price_low_usd, high = item.live_price_high_usd;
         price.textContent = (low && high && low !== high)
-          ? `$${low.toFixed(2)}–$${high.toFixed(2)} live`
-          : `~$${(low || high).toFixed(2)} live`;
+          ? `$${low.toFixed(2)}–$${high.toFixed(2)} eBay`
+          : `~$${(low || high).toFixed(2)} eBay`;
         endStack.appendChild(price);
       } else if (item.guide_price_usd) {
         const price = document.createElement('div');

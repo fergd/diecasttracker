@@ -37,8 +37,8 @@ MODEL = "claude-haiku-4-5-20251001"  # same cost-efficient choice as extraction
 MAX_SEARCHES_PER_LOOKUP = 3           # hard ceiling on web_search calls per lookup
 CACHE_MAX_AGE_DAYS = 30                # how long a cached live price stays valid
 
-PRICE_LOOKUP_PROMPT = """Search the web for current asking and/or recently sold \
-prices for this specific diecast car:
+PRICE_LOOKUP_PROMPT = """Search eBay for what this specific diecast car actually \
+sells for:
 
 Casting: {casting_name}
 Series: {series}
@@ -46,18 +46,24 @@ Year: {year}
 Packaging: {packaging_type} (carded/packaged vs. loose/unpackaged - price for THIS \
 packaging specifically; the two differ a lot for the same casting)
 
-Focus on eBay and other collector marketplaces. Prefer sold/completed listings over \
-asking prices where you can find them. Ignore results for unrelated castings or the \
-wrong packaging type.
+Prioritize SOLD/completed listings over active asking prices - an asking price tells \
+you what a seller hopes for, a sold price tells you what a buyer actually paid. If you \
+can't find sold listings, active listings are a fallback but say so in the summary. \
+Ignore results for unrelated castings or the wrong packaging type.
 
 Respond with ONLY a JSON object, no preamble, no markdown fences:
 {{
-  "price_low_usd": lowest reasonable current price in USD you found for this exact
-                     casting + packaging, or null if nothing relevant turned up,
-  "price_high_usd": highest reasonable current price in USD you found, or null,
-  "summary": one brief sentence on what you found and where (e.g. "3 eBay sold
-              listings from the past month, $6-11"), or a short note that nothing
-              specific was found
+  "price_low_usd": lowest reasonable price in USD you found for this exact casting +
+                     packaging, or null if nothing relevant turned up,
+  "price_high_usd": highest reasonable price in USD you found, or null,
+  "recommended_listing_price_usd": the single price point most likely to actually
+                     result in a sale within a reasonable time - not the ceiling, not
+                     the floor, but a realistic competitive listing price based on
+                     what similar items actually sold for. null if you couldn't find
+                     enough data to recommend one,
+  "summary": one brief sentence on what you found (e.g. "4 eBay sold listings from
+              the past month, $6-11, most clustered around $8"), or a short note that
+              nothing specific was found
 }}"""
 
 
@@ -78,6 +84,7 @@ def _fetch_cached(conn: sqlite3.Connection, casting_name: str, series: str | Non
     return {
         "price_low_usd": row["price_low_usd"],
         "price_high_usd": row["price_high_usd"],
+        "recommended_listing_price_usd": row["recommended_listing_price_usd"] if "recommended_listing_price_usd" in row.keys() else None,
         "summary": row["summary"],
         "cached": True,
         "fetched_at": row["fetched_at"],
@@ -104,6 +111,9 @@ def _search_live_price(casting_name: str, series: str | None, year: int | None,
                 "type": "web_search_20250305",
                 "name": "web_search",
                 "max_uses": MAX_SEARCHES_PER_LOOKUP,
+                "allowed_domains": ["ebay.com"],   # search eBay specifically, not
+                                                     # a generic web search - this is
+                                                     # what was actually asked for
             }],
         )
     except anthropic.APIStatusError as e:
@@ -137,11 +147,13 @@ def _search_live_price(casting_name: str, series: str | None, year: int | None,
         parsed = json.loads(raw_text)
     except json.JSONDecodeError:
         parsed = {"price_low_usd": None, "price_high_usd": None,
+                   "recommended_listing_price_usd": None,
                    "summary": "Search completed but response wasn't parseable."}
 
     return {
         "price_low_usd": parsed.get("price_low_usd"),
         "price_high_usd": parsed.get("price_high_usd"),
+        "recommended_listing_price_usd": parsed.get("recommended_listing_price_usd"),
         "summary": parsed.get("summary"),
         "search_count": search_count,
         "cached": False,
@@ -151,12 +163,14 @@ def _search_live_price(casting_name: str, series: str | None, year: int | None,
 def get_live_price(casting_name: str, series: str | None, year: int | None,
                     packaging_type: str, db_path: str = "inventory.db") -> dict:
     """
-    Returns a dict with price_low_usd, price_high_usd, summary, cached (bool).
-    Never raises - a failed lookup returns a dict with an 'error' note instead,
-    so a live-pricing hiccup never takes down the rest of a scan.
+    Returns a dict with price_low_usd, price_high_usd,
+    recommended_listing_price_usd, summary, cached (bool). Never raises - a
+    failed lookup returns a dict with an 'error' note instead, so a
+    live-pricing hiccup never takes down the rest of a scan.
     """
     if not casting_name:
         return {"price_low_usd": None, "price_high_usd": None,
+                "recommended_listing_price_usd": None,
                 "summary": None, "cached": False, "skipped": True}
 
     conn = sqlite3.connect(db_path)
@@ -173,6 +187,7 @@ def get_live_price(casting_name: str, series: str | None, year: int | None,
         conn.close()
         return {
             "price_low_usd": None, "price_high_usd": None,
+            "recommended_listing_price_usd": None,
             "summary": f"Live price lookup failed: {e}",
             "cached": False, "error": True,
         }
@@ -180,17 +195,20 @@ def get_live_price(casting_name: str, series: str | None, year: int | None,
     conn.execute("""
         INSERT INTO live_price_cache
             (casting_name, series_name, release_year, packaging_type,
-             price_low_usd, price_high_usd, summary, search_count)
-        VALUES (?, ?, ?, ?, ?, ?, ?, ?)
+             price_low_usd, price_high_usd, recommended_listing_price_usd,
+             summary, search_count)
+        VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)
         ON CONFLICT(casting_name, series_name, release_year, packaging_type)
         DO UPDATE SET
             price_low_usd = excluded.price_low_usd,
             price_high_usd = excluded.price_high_usd,
+            recommended_listing_price_usd = excluded.recommended_listing_price_usd,
             summary = excluded.summary,
             search_count = excluded.search_count,
             fetched_at = CURRENT_TIMESTAMP
     """, (casting_name, series, year, packaging_type,
           result["price_low_usd"], result["price_high_usd"],
+          result["recommended_listing_price_usd"],
           result["summary"], result["search_count"]))
     conn.commit()
     conn.close()

@@ -67,6 +67,7 @@ CREATE TABLE IF NOT EXISTS inventory (
     -- than looked up from scratch on every single scan
     live_price_low_usd    REAL,
     live_price_high_usd    REAL,
+    live_recommended_price_usd REAL,   -- the "list it here to actually sell" price
     live_price_summary      TEXT,        -- brief note on what was found, e.g. "3 recent eBay sold listings, $6-11"
     live_price_fetched_at    TEXT,
 
@@ -101,6 +102,8 @@ CREATE TABLE IF NOT EXISTS live_price_cache (
     packaging_type  TEXT NOT NULL,        -- 'carded' or 'loose' - priced separately, prices differ a lot
     price_low_usd   REAL,
     price_high_usd  REAL,
+    recommended_listing_price_usd REAL,   -- a realistic "list it here to actually sell"
+                                            -- price point, not just the range ceiling/floor
     summary         TEXT,                  -- short model-written note on what it found and where
     search_count    INTEGER,               -- how many web searches this lookup actually used (cost visibility)
     fetched_at      TEXT DEFAULT CURRENT_TIMESTAMP
