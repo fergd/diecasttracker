@@ -106,6 +106,24 @@ def _candidate_rows(conn: sqlite3.Connection, brand: str | None, year: str | Non
     return cur.fetchall()
 
 
+def _sku_match(conn: sqlite3.Connection, sku: str, brand: str | None) -> sqlite3.Row | None:
+    """
+    Exact SKU/Toy# lookup - a real Mattel item code (e.g. "CFH06") uniquely
+    identifies a casting + colorway, unlike a casting name which needs fuzzy
+    matching and can collide across reissues. Trust an exact hit over any
+    fuzzy name score. Matchbox reference rows currently have no sku data
+    (see reference_import_*.py), so this only ever fires for Hot Wheels.
+    """
+    conn.row_factory = sqlite3.Row
+    cur = conn.cursor()
+    cur.execute("""
+        SELECT * FROM reference_castings
+        WHERE sku = ? AND (brand = ? OR ? IS NULL)
+        LIMIT 1
+    """, (sku.strip(), brand, brand))
+    return cur.fetchone()
+
+
 def validate_extraction(extracted: dict, packaging_type: str = "carded") -> MatchResult:
     """
     extracted is the raw JSON dict from vision_extract.py. For carded cars the
@@ -115,6 +133,23 @@ def validate_extraction(extracted: dict, packaging_type: str = "carded") -> Matc
     (unreliable - see the downgrade rule below).
     """
     conn = sqlite3.connect(DB_PATH)
+
+    sku = (extracted.get("sku") or "").strip()
+    if sku:
+        row = _sku_match(conn, sku, extracted.get("brand"))
+        if row is not None:
+            conn.close()
+            return MatchResult(
+                status="confirmed", confidence=1.0, reference_id=row["id"],
+                canonical_brand=row["brand"], canonical_casting_name=row["casting_name"],
+                canonical_series=row["series_name"], canonical_year=row["release_year"],
+                suggested_price_usd=suggested_price(row, packaging_type),
+                notes=f"Exact SKU match ('{sku}') - the most reliable ID available.",
+            )
+        # SKU was read but not found in the reference DB - fall through to
+        # fuzzy name matching rather than giving up (the DB may just not
+        # cover this specific release yet, or the code was misread).
+
     candidates = _candidate_rows(conn, extracted.get("brand"), extracted.get("release_year"))
     conn.close()
 

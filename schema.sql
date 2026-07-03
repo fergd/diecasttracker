@@ -31,8 +31,9 @@ CREATE INDEX IF NOT EXISTS idx_ref_year_brand ON reference_castings(release_year
 CREATE TABLE IF NOT EXISTS inventory (
     id                  INTEGER PRIMARY KEY AUTOINCREMENT,
     photo_path          TEXT,          -- primary photo: card front (carded) or car body (loose)
-    base_photo_path      TEXT,          -- loose cars only: shot of the underside/base stamp, where the
-                                          -- casting name + copyright year are usually stamped in the metal
+    base_photo_path      TEXT,          -- optional second photo: underside/base stamp for loose cars
+                                          -- (casting name + copyright year, stamped in the metal), or
+                                          -- back-of-card for carded cars (usually has the sku/Toy # code)
 
     packaging_type       TEXT DEFAULT 'carded',  -- 'carded' or 'loose' - drives both extraction prompt
                                                     -- and which reference price column to use
@@ -41,6 +42,8 @@ CREATE TABLE IF NOT EXISTS inventory (
     extracted_brand         TEXT,
     extracted_casting_name  TEXT,
     extracted_collector_num TEXT,
+    extracted_sku            TEXT,      -- manufacturer item/Toy # code, e.g. "CFH06" - exact identifier,
+                                          -- much more reliable than fuzzy-matching the casting name
     extracted_series        TEXT,
     extracted_year           TEXT,
     extracted_color          TEXT,

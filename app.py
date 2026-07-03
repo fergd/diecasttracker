@@ -58,6 +58,7 @@ INVENTORY_COLUMNS = {
     "extracted_brand": "TEXT",
     "extracted_casting_name": "TEXT",
     "extracted_collector_num": "TEXT",
+    "extracted_sku": "TEXT",
     "extracted_series": "TEXT",
     "extracted_year": "TEXT",
     "extracted_color": "TEXT",
@@ -134,19 +135,22 @@ def index():
 async def scan_card(
     photo: UploadFile = File(...),
     packaging_type: str = Form("carded"),          # 'carded' or 'loose'
-    base_photo: Optional[UploadFile] = File(None),   # loose cars only - underside/base shot
+    base_photo: Optional[UploadFile] = File(None),   # underside/base shot (loose) or
+                                                        # back-of-card shot (carded) - optional
+                                                        # second photo either way
 ):
     """
-    Core endpoint: accepts a photo (plus an optional base photo for loose
-    cars), runs vision extraction, validates against the reference DB,
-    stores the result, and returns everything so the frontend can show what
-    happened (including when it needs manual review).
+    Core endpoint: accepts a photo (plus an optional second photo - base/
+    underside for loose, back-of-card for carded), runs vision extraction,
+    validates against the reference DB, stores the result, and returns
+    everything so the frontend can show what happened (including when it
+    needs manual review).
     """
     if packaging_type not in ("carded", "loose"):
         packaging_type = "carded"
 
     saved_path = _save_upload(photo)
-    base_saved_path = _save_upload(base_photo) if (packaging_type == "loose" and base_photo) else None
+    base_saved_path = _save_upload(base_photo) if base_photo else None
 
     try:
         extracted = extract_card_details(saved_path, packaging_type=packaging_type,
@@ -200,18 +204,18 @@ async def scan_card(
             INSERT INTO inventory (
                 photo_path, base_photo_path, packaging_type,
                 extracted_brand, extracted_casting_name,
-                extracted_collector_num, extracted_series, extracted_year,
+                extracted_collector_num, extracted_sku, extracted_series, extracted_year,
                 extracted_color, extracted_raw_json,
                 match_reference_id, match_confidence, match_status, match_notes,
                 canonical_brand, canonical_casting_name, canonical_series, canonical_year,
                 guide_price_usd,
                 live_price_low_usd, live_price_high_usd, live_recommended_price_usd,
                 live_price_summary, live_price_fetched_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             saved_path, base_saved_path, packaging_type,
             extracted.get("brand"), extracted.get("casting_name"),
-            extracted.get("collector_number"), extracted.get("series"),
+            extracted.get("collector_number"), extracted.get("sku"), extracted.get("series"),
             str(extracted.get("release_year") or extracted.get("copyright_year_on_base") or "") or None,
             extracted.get("color"), json.dumps(extracted),
             match_result.reference_id, match_result.confidence, match_result.status,

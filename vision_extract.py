@@ -17,7 +17,7 @@ import anthropic
 
 MODEL = "claude-haiku-4-5-20251001"  # cheap, fast, well-suited to extraction
 
-CARDED_PROMPT = """You are looking at a photo of a carded (packaged) Hot Wheels or \
+CARDED_PROMPT = """You are looking at photo(s) of a carded (packaged) Hot Wheels or \
 Matchbox diecast car. Read the text printed on the card and extract the following \
 fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
 
@@ -28,6 +28,17 @@ fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
   "collector_number": the number printed on the card (may be a fraction like "8/10"
                        for a series position, or a standalone number like "148" for
                        a year collector number - transcribe exactly as printed),
+  "sku": the manufacturer's item/Toy # code - a short alphanumeric code (e.g. "CFH06",
+         "N9637", "DVK33") usually printed on the BACK of the card near the barcode,
+         sometimes also on the front. This is a much more reliable identifier than the
+         casting name (exact, not fuzzy) - read it carefully if a back-of-card photo
+         was provided. null if not visible in any provided photo,
+  "sku_full_code": occasionally a longer code appears alongside the short one, with a
+                    dash suffix (e.g. "T9710-09AOQ") - that suffix is usually a
+                    batch/assortment code specific to that individual case, not part
+                    of the casting's identity. Transcribe the FULL string here if a
+                    suffixed code is visible, else null. (The "sku" field above should
+                    still just be the short primary code, e.g. "T9710" from that example.)
   "series": the named series/theme printed on the card (e.g. "HW Hot Trucks"),
   "release_year": the year if visible (from a "NEW FOR ____" flag or copyright date),
   "color": brief description of the car's visible color/deco,
@@ -97,10 +108,13 @@ def extract_card_details(image_path: str, packaging_type: str = "carded",
                           base_image_path: str | None = None) -> dict:
     """
     packaging_type: 'carded' or 'loose'. Determines which prompt/schema is used.
-    base_image_path: for loose cars only - an optional second photo of the car's
-                      underside, where casting name + copyright year are usually
-                      stamped. Strongly recommended for loose cars; identification
-                      without it falls back to visual-only guessing (see prompt).
+    base_image_path: an optional second photo. For loose cars, the underside/base,
+                      where casting name + copyright year are usually stamped -
+                      strongly recommended; identification without it falls back to
+                      visual-only guessing (see prompt). For carded cars, the BACK of
+                      the card, which usually carries the sku/Toy # code - optional,
+                      but a much more reliable identifier than the printed casting
+                      name alone.
 
     Raises RuntimeError with a clean, user-facing message on API failure (bad key,
     no credits, rate limit, etc) - callers (app.py) turn this into a proper JSON
@@ -109,7 +123,7 @@ def extract_card_details(image_path: str, packaging_type: str = "carded",
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
     content = [_load_image_block(image_path)]
-    if packaging_type == "loose" and base_image_path:
+    if base_image_path:
         content.append(_load_image_block(base_image_path))
 
     prompt = LOOSE_PROMPT if packaging_type == "loose" else CARDED_PROMPT
@@ -144,6 +158,7 @@ def extract_card_details(image_path: str, packaging_type: str = "carded",
         return {
             "packaging_type": packaging_type,
             "brand": None, "casting_name": None, "collector_number": None,
+            "sku": None, "sku_full_code": None,
             "series": None, "release_year": None, "color": None,
             "special_flags": [], "card_condition_notes": None,
             "extraction_confidence": 0.0,

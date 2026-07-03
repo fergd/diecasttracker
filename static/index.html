@@ -109,8 +109,10 @@
     color: var(--md-sys-color-on-secondary-container);
   }
 
-  #baseBtn { display: none; width: 100%; margin-bottom: 24px; }
+  #baseBtn { display: none; width: 100%; margin-bottom: 8px; }
   #baseBtn.show { display: inline-flex; }
+  #skipSecondBtn { display: none; width: 100%; margin-bottom: 24px; }
+  #skipSecondBtn.show { display: inline-flex; }
 
   /* Primary scan action. Deliberately NOT position:fixed - fixed positioning
      combined with mobile browser dynamic toolbars (and, on wide desktop
@@ -220,17 +222,15 @@
     </md-primary-tab>
   </md-tabs>
 
-  <p id="basePrompt" class="md-typescale-body-small" style="display:none;">
-    Loose cars are identified from the base stamp (casting name + year, stamped into
-    the metal underside) — a lot more reliable than guessing from body shape alone.
-    Snap the front first, then the base.
-  </p>
+  <p id="basePrompt" class="md-typescale-body-small" style="display:none;"></p>
 
   <md-outlined-button id="baseBtn">
     <md-icon slot="icon" id="baseBtnIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-143 0-253-90T88-400h82q28 106 114 173t196 67q86 0 160-42.5T756-320H640v-80h240v240h-80v-80q-57 76-141 118T480-80Zm0-280q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-560v-240h80v80q57-76 141-118t179-42q143 0 253 90t139 230h-82q-28-106-114-173t-196-67q-86 0-160 42.5T204-640h116v80H80Z"/></svg></md-icon>
     <span id="baseBtnLabel">Add base/underside photo</span>
   </md-outlined-button>
   <input type="file" id="baseInput" accept="image/*" capture="environment" hidden>
+
+  <md-text-button id="skipSecondBtn">Scan without this photo</md-text-button>
 
   <input type="file" id="cameraInput" accept="image/*" capture="environment" hidden>
 
@@ -290,6 +290,7 @@
     const baseBtn = document.getElementById('baseBtn');
     const baseBtnIcon = document.getElementById('baseBtnIcon');
     const baseBtnLabel = document.getElementById('baseBtnLabel');
+    const skipSecondBtn = document.getElementById('skipSecondBtn');
     const captureFab = document.getElementById('scanFabBtn');
     const errorDialog = document.getElementById('errorDialog');
     const errorDialogContent = document.getElementById('errorDialogContent');
@@ -330,18 +331,40 @@
       errorDialog.show();
     }
 
+    // The second-photo step means different things per packaging type: for
+    // loose cars it's the base/underside stamp (casting name + year); for
+    // carded cars it's the back of the card, which usually has the sku/
+    // Toy # code - a much more reliable identifier than the casting name
+    // alone (see match.py's exact-SKU lookup). Same UI elements, different
+    // copy, both optional - `skipSecondBtn` scans with just the main photo.
     function resetBaseBtn() {
       baseBtnIcon.innerHTML = ICON_FLIP_CAMERA;
-      baseBtnLabel.textContent = 'Add base/underside photo';
+      if (packagingType === 'loose') {
+        basePrompt.textContent = 'Loose cars are identified from the base stamp (casting name + '
+          + 'year, stamped into the metal underside) — a lot more reliable than guessing from body '
+          + 'shape alone. Snap the front first, then the base.';
+        baseBtnLabel.textContent = 'Add base/underside photo';
+      } else {
+        basePrompt.textContent = 'The back of the card usually has the sku/Toy # code (e.g. '
+          + '"CFH06") printed near the barcode — capturing it lets matching use an exact code '
+          + 'lookup instead of guessing from the name alone.';
+        baseBtnLabel.textContent = 'Add back-of-card photo';
+      }
+    }
+
+    function updateSecondPhotoVisibility() {
+      const active = packagingType === 'loose' || !!pendingMainPhoto;
+      basePrompt.style.display = active ? 'block' : 'none';
+      baseBtn.classList.toggle('show', active);
+      skipSecondBtn.classList.toggle('show', active && !!pendingMainPhoto);
     }
 
     function setPackaging(type) {
       packagingType = type;
-      basePrompt.style.display = type === 'loose' ? 'block' : 'none';
-      baseBtn.classList.toggle('show', type === 'loose');
       pendingMainPhoto = null;
       pendingBasePhoto = null;
       resetBaseBtn();
+      updateSecondPhotoVisibility();
     }
     packagingTabs.addEventListener('change', (e) => {
       setPackaging(e.target.activeTabIndex === 1 ? 'loose' : 'carded');
@@ -349,14 +372,13 @@
 
     captureFab.addEventListener('click', () => cameraInput.click());
     baseBtn.addEventListener('click', () => baseInput.click());
+    skipSecondBtn.addEventListener('click', () => submitScan());
 
     cameraInput.addEventListener('change', async (e) => {
       const file = e.target.files[0];
       if (!file) return;
       pendingMainPhoto = file;
-      if (packagingType === 'carded') {
-        await submitScan();
-      }
+      updateSecondPhotoVisibility();
       cameraInput.value = '';
     });
 
@@ -365,7 +387,7 @@
       if (!file) return;
       pendingBasePhoto = file;
       baseBtnIcon.innerHTML = ICON_CHECK_CIRCLE;
-      baseBtnLabel.textContent = 'Base photo attached — scanning…';
+      baseBtnLabel.textContent = 'Photo attached — scanning…';
       baseInput.value = '';
       await submitScan();
     });
@@ -413,6 +435,7 @@
       pendingMainPhoto = null;
       pendingBasePhoto = null;
       resetBaseBtn();
+      updateSecondPhotoVisibility();
     }
 
     // ---- Normalizing adapters -------------------------------------------
@@ -640,6 +663,8 @@
       }
     }
     loadHistory();
+    resetBaseBtn();
+    updateSecondPhotoVisibility();
 
     // ---- Diagnostics -------------------------------------------------
     statusBtn.addEventListener('click', async () => {
