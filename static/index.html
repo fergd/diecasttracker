@@ -433,6 +433,7 @@
         color: ex.color || null,
         status: v.status,
         confidence: v.confidence,
+        match_notes: v.notes,
         guide_price_usd: v.guide_price_usd,
         live_price_low_usd: live.price_low_usd,
         live_price_high_usd: live.price_high_usd,
@@ -453,6 +454,7 @@
         color: row.extracted_color || null,
         status: row.match_status,
         confidence: row.match_confidence || 0,
+        match_notes: row.match_notes,
         guide_price_usd: row.guide_price_usd,
         live_price_low_usd: row.live_price_low_usd,
         live_price_high_usd: row.live_price_high_usd,
@@ -536,6 +538,9 @@
       el.appendChild(headline);
 
       const supportingLines = [metaLine, item.color].filter(Boolean);
+      // match_notes is only genuinely useful to surface when the match itself
+      // is in question - for a confirmed item it's just "Strong match." noise.
+      if (item.match_notes && item.status !== 'confirmed') supportingLines.push(item.match_notes);
       if (item.live_summary) supportingLines.push(item.live_summary);
       if (item.condition) supportingLines.push(`Condition: ${item.condition}`);
       const supporting = document.createElement('div');
@@ -584,6 +589,7 @@
       const pill = document.createElement('span');
       pill.className = `status-pill ${item.status}`;
       pill.textContent = `${(item.status || 'unknown').replace('_', ' ')} · ${(item.confidence * 100).toFixed(0)}%`;
+      pill.title = item.match_notes || 'Similarity between what was read off the card and the closest reference database entry.';
       endStack.appendChild(pill);
 
       const editBtn = document.createElement('md-icon-button');

@@ -49,22 +49,29 @@ packaging specifically; the two differ a lot for the same casting)
 
 Prioritize SOLD/completed listings over active asking prices - an asking price tells \
 you what a seller hopes for, a sold price tells you what a buyer actually paid. If you \
-can't find sold listings, active listings are a fallback but say so in the summary. \
-Ignore results for unrelated castings or the wrong packaging type.
+can't find sold listings, DO NOT leave the price fields empty - fall back to the range/ \
+average of active asking listings instead, and say clearly in the summary that these \
+are asking prices, not confirmed sales (e.g. "No sold listings found; 3 active asking \
+prices average ~$9"). Only leave the price fields null if you found no relevant \
+listings of either kind. Ignore results for unrelated castings or the wrong packaging \
+type.
 
 Respond with ONLY a JSON object, no preamble, no markdown fences:
 {{
   "price_low_usd": lowest reasonable price in USD you found for this exact casting +
-                     packaging, or null if nothing relevant turned up,
+                     packaging (from sold listings if available, otherwise active
+                     asking listings), or null if nothing relevant turned up,
   "price_high_usd": highest reasonable price in USD you found, or null,
   "recommended_listing_price_usd": the single price point most likely to actually
                      result in a sale within a reasonable time - not the ceiling, not
                      the floor, but a realistic competitive listing price based on
-                     what similar items actually sold for. null if you couldn't find
-                     enough data to recommend one,
+                     what similar items actually sold for, or on asking prices if
+                     that's all that's available. null if you couldn't find enough
+                     data to recommend one,
   "summary": one brief sentence on what you found (e.g. "4 eBay sold listings from
-              the past month, $6-11, most clustered around $8"), or a short note that
-              nothing specific was found
+              the past month, $6-11, most clustered around $8"), or, if only asking
+              prices were available, one that says so (e.g. "No sold listings found;
+              based on 3 active asking prices, $7-11")
 }}"""
 
 
