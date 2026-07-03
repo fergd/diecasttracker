@@ -145,27 +145,12 @@
     align-items: flex-end;
     gap: 10px;
   }
-  .batch-pill {
-    display: flex; align-items: center; gap: 8px;
-    padding: 10px 18px; border-radius: 9999px;
-    border: 1px solid var(--accent-amber);
-    background: rgba(255,179,0,0.10);
-    color: var(--accent-amber);
-    font-family: var(--font-display); font-weight: 600; font-size: 14px;
-    cursor: pointer;
-  }
-  .batch-pill.active { background: var(--accent-amber); color: #1C1C24; }
-  .batch-pill md-icon { width: 18px; height: 18px; }
   #scanFabBtn {
     --md-fab-container-color: var(--md-sys-color-primary);
     --md-fab-icon-color: #FFFFFF;
     --md-fab-label-text-color: #FFFFFF;
     --md-fab-container-shape: 9999px;
     box-shadow: 0 4px 20px rgba(255,69,0,0.4);
-  }
-  #scanFabBtn.batch-active {
-    --md-fab-container-color: var(--accent-amber);
-    box-shadow: 0 4px 20px rgba(255,179,0,0.4);
   }
   #scanFabBtn:active { transform: scale(0.95); }
 
@@ -505,10 +490,6 @@
   </div>
 
   <div class="fab-stack">
-    <button type="button" class="batch-pill" id="batchToggleBtn">
-      <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-118 120-398l66-50 294 228 294-228 66 50-360 280Zm0-202L120-600l360-280 360 280-360 280Zm0-280Zm0 178 230-178-230-178-230 178 230 178Z"/></svg></md-icon>
-      <span id="batchToggleLabel">Batch</span>
-    </button>
     <md-fab id="scanFabBtn" variant="primary" label="Scan a car">
       <md-icon slot="icon" id="scanFabIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg></md-icon>
     </md-fab>
@@ -605,8 +586,6 @@
     const scanningBanner = document.getElementById('scanningBanner');
     const captureFab = document.getElementById('scanFabBtn');
     const scanFabIcon = document.getElementById('scanFabIcon');
-    const batchToggleBtn = document.getElementById('batchToggleBtn');
-    const batchToggleLabel = document.getElementById('batchToggleLabel');
 
     const statusBtn = document.getElementById('statusBtn');
     const exportBtn = document.getElementById('exportBtn');
@@ -641,8 +620,6 @@
     let packagingType = 'carded';
     let pendingMainPhoto = null;
     let pendingBasePhoto = null;
-    let batchMode = false;
-    let batchCount = 0;
 
     // ================================================================
     // State model
@@ -753,48 +730,7 @@
       scanFabIcon.innerHTML = scanning ? ICON_FAB_SPINNER : ICON_CAMERA;
     }
 
-    function updateBatchUi() {
-      batchToggleBtn.classList.toggle('active', batchMode);
-      batchToggleBtn.style.display = batchMode ? 'none' : 'flex';
-      captureFab.classList.toggle('batch-active', batchMode);
-      captureFab.label = batchMode ? `Stop batch (${batchCount})` : 'Scan a car';
-    }
-    batchToggleBtn.addEventListener('click', () => {
-      batchMode = true;
-      batchCount = 0;
-      updateBatchUi();
-    });
-    // While batch mode is active, the small pill is hidden (see
-    // updateBatchUi) - stopping happens via a press-and-hold on the main
-    // FAB, since the FAB's primary tap is reserved for "take the next
-    // photo" (a native camera capture can't be scripted/looped
-    // automatically, so batch mode still means one manual tap per car,
-    // just without the confirmation sheet in between).
-    let batchStopTimer = null;
-    let batchJustStopped = false;
-    captureFab.addEventListener('pointerdown', () => {
-      if (!batchMode) return;
-      batchStopTimer = setTimeout(() => {
-        batchMode = false;
-        updateBatchUi();
-        batchStopTimer = null;
-        batchJustStopped = true; // suppress the click that follows this same press
-      }, 600);
-    });
-    function cancelBatchStopTimer() {
-      if (batchStopTimer) { clearTimeout(batchStopTimer); batchStopTimer = null; }
-    }
-    captureFab.addEventListener('pointerup', cancelBatchStopTimer);
-    captureFab.addEventListener('pointercancel', cancelBatchStopTimer);
-
-    captureFab.addEventListener('click', () => {
-      // The stop-batch timeout clears batchStopTimer itself right before
-      // this click fires (click follows pointerup), so checking the timer
-      // variable here would already read null - a separate flag is needed
-      // to actually suppress the click that ends the same long-press.
-      if (batchJustStopped) { batchJustStopped = false; return; }
-      cameraInput.click();
-    });
+    captureFab.addEventListener('click', () => cameraInput.click());
     baseBtn.addEventListener('click', () => baseInput.click());
     skipSecondBtn.addEventListener('click', () => submitScan());
 
@@ -853,25 +789,11 @@
         return;
       }
 
-      if (batchMode) {
-        // Never shown a confirmation sheet in batch mode - auto-add and
-        // keep the FAB disabled for a beat so the result registers before
-        // the next tap is accepted.
-        allItems.unshift(newItem);
-        renderList();
-        batchCount++;
-        updateBatchUi();
-        scanningBanner.classList.remove('show');
-        scanFabIcon.innerHTML = ICON_CAMERA;
-        captureFab.disabled = true;
-        setTimeout(() => { captureFab.disabled = false; }, 1200);
-      } else {
-        setScanning(false);
-        openScanConfirmSheet(newItem);
-      }
+      setScanning(false);
+      openScanConfirmSheet(newItem);
     }
 
-    // ---- Scan confirmation sheet (never auto-add outside batch mode) ----
+    // ---- Scan confirmation sheet - never auto-add to the list ----
     const scanConfirmScrim = document.getElementById('scanConfirmScrim');
     const scanConfirmSheet = document.getElementById('scanConfirmSheet');
     const scanConfirmThumb = document.getElementById('scanConfirmThumb');
@@ -1594,7 +1516,6 @@
     loadHistory();
     resetBaseBtn();
     updateSecondPhotoVisibility();
-    updateBatchUi();
 
     // ================================================================
     // Diagnostics
