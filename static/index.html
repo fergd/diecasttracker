@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diecast Inventory</title>
+<title>Diecast Tracker</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <!-- Icons are inlined as raw SVG (real Material Symbols path data) rather
      than loaded as a webfont - no runtime network dependency, immune to any
      DNS-level filtering on the network. -->
@@ -26,57 +26,38 @@
 
 <style>
   /* ============================================================
-     Material 3 baseline color tokens, defined explicitly.
-     Material Web's components already have these baked in as internal
-     fallback defaults, so this doesn't change how components render - but
-     it's what makes var(--md-sys-color-*) actually resolve to something in
-     OUR OWN custom CSS below. Without this block defined, any of our own
-     CSS referencing these tokens silently resolves to nothing.
-     Values are Material 3's standard baseline "purple" scheme.
+     Design tokens - fixed dark theme (no light mode) per the
+     Figma Make design handoff. Structural CSS still uses the
+     --md-sys-color-* names Material Web's own components read
+     internally, just repointed at this palette instead of M3
+     baseline purple.
      ============================================================ */
   :root {
-    --md-sys-color-primary: #6750A4;
+    --md-sys-color-primary: #FF4500;             /* Hot Wheels red */
     --md-sys-color-on-primary: #FFFFFF;
-    --md-sys-color-primary-container: #EADDFF;
-    --md-sys-color-on-primary-container: #21005D;
-    --md-sys-color-secondary-container: #E8DEF8;
-    --md-sys-color-on-secondary-container: #1D192B;
-    --md-sys-color-tertiary-container: #FFD8E4;
-    --md-sys-color-on-tertiary-container: #31111D;
-    --md-sys-color-error-container: #F9DEDC;
-    --md-sys-color-on-error-container: #410E0B;
-    --md-sys-color-surface: #FFFBFE;
-    --md-sys-color-on-surface: #1C1B1F;
-    --md-sys-color-on-surface-variant: #49454F;
-    --md-sys-color-outline: #79747E;
-    --md-sys-color-outline-variant: #CAC4D0;
-    --md-sys-color-surface-container-low: #F7F2FA;
-    --md-sys-color-surface-container: #F3EDF7;
-    --md-sys-color-surface-container-high: #ECE6F0;
-    --md-sys-color-surface-container-highest: #E6E0E9;
-  }
-  @media (prefers-color-scheme: dark) {
-    :root {
-      --md-sys-color-primary: #D0BCFF;
-      --md-sys-color-on-primary: #381E72;
-      --md-sys-color-primary-container: #4F378B;
-      --md-sys-color-on-primary-container: #EADDFF;
-      --md-sys-color-secondary-container: #4A4458;
-      --md-sys-color-on-secondary-container: #E8DEF8;
-      --md-sys-color-tertiary-container: #633B48;
-      --md-sys-color-on-tertiary-container: #FFD8E4;
-      --md-sys-color-error-container: #8C1D18;
-      --md-sys-color-on-error-container: #F9DEDC;
-      --md-sys-color-surface: #141218;
-      --md-sys-color-on-surface: #E6E1E5;
-      --md-sys-color-on-surface-variant: #CAC4D0;
-      --md-sys-color-outline: #938F99;
-      --md-sys-color-outline-variant: #49454F;
-      --md-sys-color-surface-container-low: #1D1B20;
-      --md-sys-color-surface-container: #211F26;
-      --md-sys-color-surface-container-high: #2B2930;
-      --md-sys-color-surface-container-highest: #36343B;
-    }
+    --md-sys-color-primary-container: #FF4500;
+    --md-sys-color-on-primary-container: #FFFFFF;
+    --md-sys-color-secondary-container: rgba(245,158,11,0.13);
+    --md-sys-color-on-secondary-container: #F59E0B;
+    --md-sys-color-tertiary-container: rgba(34,197,94,0.13);
+    --md-sys-color-on-tertiary-container: #22C55E;
+    --md-sys-color-error: #EF4444;
+    --md-sys-color-error-container: rgba(239,68,68,0.13);
+    --md-sys-color-on-error-container: #EF4444;
+    --md-sys-color-surface: #0B0B0F;              /* background */
+    --md-sys-color-on-surface: #EDEDF5;           /* foreground */
+    --md-sys-color-on-surface-variant: #6B6B85;   /* muted text */
+    --md-sys-color-outline: #6B6B85;
+    --md-sys-color-outline-variant: rgba(255,255,255,0.06);
+    --md-sys-color-surface-container-low: #14141A;
+    --md-sys-color-surface-container: #14141A;    /* card surface */
+    --md-sys-color-surface-container-high: #1C1C24;   /* elevated surface */
+    --md-sys-color-surface-container-highest: #1C1C24;
+
+    --accent-amber: #FFB300;
+    --font-display: 'Rajdhani', sans-serif;
+    --font-body: 'Inter', sans-serif;
+    --font-mono: 'DM Mono', monospace;
   }
 
   body {
@@ -86,16 +67,14 @@
     margin-inline: auto;
     background: var(--md-sys-color-surface);
     color: var(--md-sys-color-on-surface);
-    font-family: 'Roboto', sans-serif;
+    font-family: var(--font-body);
     min-height: 100vh;
     box-sizing: border-box;
   }
 
   /* ---- Top app bar (hand-built - @material/web ships no app-bar
-     component; this follows the M3 "small" top app bar spec: 64dp height,
-     leading nav/back icon, title, trailing actions). Reused, with its
-     content swapped via JS, across the list view, the contextual
-     multi-select state, and the detail view. */
+     component). Reused, with its content swapped via JS, across the list
+     view, the contextual multi-select state, and the detail view. */
   .top-app-bar {
     position: sticky;
     top: 0;
@@ -118,21 +97,57 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: 20px;
   }
   .top-app-bar-actions { display: flex; align-items: center; flex: none; }
+  #detailDeleteBtn, #bulkDeleteBtn { --md-icon-button-icon-color: var(--md-sys-color-error); }
+  #detailSaveBtn {
+    --md-icon-button-icon-color: #FFFFFF;
+    background: var(--md-sys-color-primary);
+    border-radius: 9999px;
+  }
 
   #basePrompt {
     margin-bottom: 20px;
     padding: 14px 16px;
-    border-radius: var(--md-sys-shape-corner-medium, 12px);
-    background: var(--md-sys-color-secondary-container);
-    color: var(--md-sys-color-on-secondary-container);
+    border-radius: 12px;
+    background: var(--md-sys-color-surface-container);
+    border: 1px solid var(--md-sys-color-outline-variant);
+    color: var(--md-sys-color-on-surface-variant);
+    font-size: 13px;
   }
 
   #baseBtn { display: none; width: 100%; margin-bottom: 8px; }
   #baseBtn.show { display: inline-flex; }
   #skipSecondBtn { display: none; width: 100%; margin-bottom: 24px; }
   #skipSecondBtn.show { display: inline-flex; }
+
+  md-tabs {
+    margin-bottom: 20px;
+    --md-primary-tab-active-indicator-color: var(--md-sys-color-primary);
+    --md-primary-tab-active-label-text-color: var(--md-sys-color-primary);
+    --md-primary-tab-active-icon-color: var(--md-sys-color-primary);
+    --md-primary-tab-container-color: var(--md-sys-color-surface);
+  }
+
+  /* Full-width red-tinted banner shown while a scan is in flight, instead
+     of a spinner buried in the list. */
+  #scanningBanner {
+    display: none;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    margin-bottom: 10px;
+    border-radius: 12px;
+    background: rgba(255,69,0,0.10);
+    border: 1px solid rgba(255,69,0,0.25);
+    color: var(--md-sys-color-primary);
+    font-size: 14px;
+  }
+  #scanningBanner.show { display: flex; }
+  #scanningBanner md-circular-progress { --md-circular-progress-active-indicator-color: var(--md-sys-color-primary); }
 
   /* Primary scan action. Deliberately NOT position:fixed - fixed positioning
      combined with mobile browser dynamic toolbars (and, on wide desktop
@@ -146,44 +161,58 @@
     justify-content: center;
     margin: 4px 0 28px;
   }
+  #scanFabBtn {
+    --md-fab-container-color: var(--md-sys-color-primary);
+    --md-fab-icon-color: #FFFFFF;
+    --md-fab-label-text-color: #FFFFFF;
+    --md-fab-container-shape: 9999px;
+    box-shadow: 0 4px 20px rgba(255,69,0,0.4);
+  }
+  #scanFabBtn:active { transform: scale(0.95); }
 
   md-list {
     background: transparent;
     padding: 0;
   }
-  /* Filled card, per M3 (surface-container-highest, no shadow) - not
-     elevated. An elevated card's drop shadow reads as "one important,
-     separated thing," which is wrong for 50 rows in a scrollable list. */
+  /* Filled card, dark surface - no drop shadow. */
   md-list-item.item-card {
-    border-radius: var(--md-sys-shape-corner-medium, 12px);
+    border-radius: 16px;
     margin-bottom: 10px;
-    background: var(--md-sys-color-surface-container-highest);
+    background: var(--md-sys-color-surface-container);
+    border: 1px solid var(--md-sys-color-outline-variant);
     cursor: pointer;
   }
   md-list-item.item-card.selected {
-    background: var(--md-sys-color-primary-container);
+    background: rgba(255,69,0,0.07);
   }
   md-list-item.item-card [slot="headline"] {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
+    font-family: var(--font-display);
+    font-weight: 600;
+    font-size: 15px;
+  }
+  md-list-item.item-card [slot="supporting-text"] {
+    font-family: var(--font-body);
+    color: var(--md-sys-color-on-surface-variant);
   }
 
-  .thumb-wrap { position: relative; width: 56px; height: 56px; flex: none; }
+  .thumb-wrap { position: relative; width: 52px; height: 52px; flex: none; }
   .thumb, .thumb-placeholder {
-    width: 56px;
-    height: 56px;
-    border-radius: var(--md-sys-shape-corner-small, 8px);
+    width: 52px;
+    height: 52px;
+    border-radius: 10px;
     object-fit: cover;
     display: flex;
   }
   .thumb-placeholder {
-    background: var(--md-sys-color-surface-container-high);
-    color: var(--md-sys-color-on-surface-variant);
+    background: linear-gradient(135deg, #7A1F3D, #B0264F);
+    color: rgba(255,255,255,0.5);
     align-items: center;
     justify-content: center;
   }
-  .thumb-placeholder md-icon { width: 24px; height: 24px; }
+  .thumb-placeholder md-icon { width: 22px; height: 22px; }
   .select-checkbox {
     position: absolute;
     top: -6px;
@@ -192,32 +221,34 @@
     border-radius: 50%;
   }
 
-  .end-row {
-    display: flex;
-    align-items: center;
-    gap: 4px;
-  }
   .end-stack {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
     gap: 4px;
   }
-  .status-pill {
-    font: var(--md-sys-typescale-label-small-font);
-    padding: 3px 10px;
-    border-radius: 999px;
+  .pill-row { display: flex; align-items: center; gap: 4px; }
+  .status-pill, .tracking-pill {
+    font-family: var(--font-mono);
+    font-size: 10.5px;
+    padding: 2px 8px;
+    border-radius: 9999px;
     white-space: nowrap;
   }
-  .status-pill.confirmed { background: var(--md-sys-color-tertiary-container); color: var(--md-sys-color-on-tertiary-container); }
-  .status-pill.needs_review { background: var(--md-sys-color-secondary-container); color: var(--md-sys-color-on-secondary-container); }
-  .status-pill.no_match { background: var(--md-sys-color-error-container); color: var(--md-sys-color-on-error-container); }
+  .status-pill.confirmed { background: rgba(34,197,94,0.13); color: #22C55E; }
+  .status-pill.needs_review { background: rgba(245,158,11,0.13); color: #F59E0B; }
+  .status-pill.no_match { background: rgba(239,68,68,0.13); color: #EF4444; }
+  .tracking-pill.in_collection { background: rgba(96,165,250,0.13); color: #60A5FA; }
+  .tracking-pill.listed { background: rgba(251,191,36,0.13); color: #FBBF24; }
+  .tracking-pill.sold { background: rgba(52,211,153,0.13); color: #34D399; }
   .price-text {
-    font: var(--md-sys-typescale-label-medium-font);
-    color: var(--md-sys-color-primary);
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--md-sys-color-on-surface);
   }
   .price-range-text {
-    font: var(--md-sys-typescale-label-small-font);
+    font-family: var(--font-mono);
+    font-size: 11px;
     color: var(--md-sys-color-on-surface-variant);
   }
 
@@ -239,43 +270,135 @@
     padding: 2px 0;
     color: var(--md-sys-color-on-surface-variant);
   }
-  .status-ok { color: #2E7D32; }
+  .status-ok { color: #22C55E; }
   .status-warn { color: var(--md-sys-color-error); }
 
   /* ---- Detail view ---------------------------------------------------- */
   #detailView { display: none; }
-  .detail-photos { display: flex; gap: 8px; margin-bottom: 20px; }
-  .detail-photos img {
+  .detail-photos { display: flex; gap: 8px; margin-bottom: 24px; }
+  .photo-slot {
     flex: 1;
     min-width: 0;
-    height: 220px;
-    object-fit: cover;
-    border-radius: var(--md-sys-shape-corner-medium, 12px);
+    aspect-ratio: 3 / 4;
+    border-radius: 16px;
+    overflow: hidden;
     background: var(--md-sys-color-surface-container-low);
-  }
-  .detail-section { margin-bottom: 8px; }
-  .detail-section h3 {
-    font: var(--md-sys-typescale-title-small-font);
-    color: var(--md-sys-color-on-surface-variant);
-    margin: 0 0 12px;
-  }
-  .detail-field { width: 100%; margin-bottom: 12px; }
-  .detail-readonly-row {
     display: flex;
-    justify-content: space-between;
-    gap: 12px;
-    font: var(--md-sys-typescale-body-medium-font);
-    padding: 6px 0;
+    align-items: center;
+    justify-content: center;
+    position: relative;
   }
-  .detail-readonly-row span:first-child { color: var(--md-sys-color-on-surface-variant); flex: none; }
-  .detail-readonly-row span:last-child { text-align: right; }
-  .detail-summary-text {
-    font: var(--md-sys-typescale-body-small-font);
+  .photo-slot img { width: 100%; height: 100%; object-fit: cover; }
+  .photo-slot-empty md-icon { width: 40px; height: 40px; color: var(--md-sys-color-on-surface-variant); opacity: 0.4; }
+  .photo-slot-add {
+    flex-direction: column;
+    gap: 10px;
+    background: transparent;
+    border: 1px dashed var(--md-sys-color-outline-variant);
+    cursor: pointer;
+  }
+  .photo-slot-add-icon {
+    width: 40px; height: 40px; border-radius: 50%;
+    background: rgba(255,69,0,0.15);
+    display: flex; align-items: center; justify-content: center;
+    color: var(--md-sys-color-primary);
+  }
+  .photo-slot-add-icon md-icon { width: 20px; height: 20px; }
+  .photo-slot-add span {
+    font-family: var(--font-body);
+    font-size: 13px;
     color: var(--md-sys-color-on-surface-variant);
-    margin: 4px 0 0;
+    text-align: center;
+    padding: 0 10px;
   }
-  md-divider { margin: 8px 0 20px; }
 
+  .detail-section-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0 0 10px;
+  }
+  .detail-section-header md-icon { width: 16px; height: 16px; color: var(--md-sys-color-primary); }
+  .detail-section-header h3 {
+    font-family: var(--font-mono);
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    font-size: 11px;
+    color: var(--md-sys-color-on-surface-variant);
+    margin: 0;
+  }
+  .detail-card {
+    background: var(--md-sys-color-surface-container);
+    border: 1px solid var(--md-sys-color-outline-variant);
+    border-radius: 16px;
+    overflow: hidden;
+    margin-bottom: 24px;
+  }
+  .field-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 16px;
+    border-bottom: 1px solid var(--md-sys-color-outline-variant);
+  }
+  .field-row:last-child { border-bottom: none; }
+  .field-row .field-label {
+    width: 132px;
+    flex: none;
+    font-family: var(--font-body);
+    font-size: 13px;
+    color: var(--md-sys-color-on-surface-variant);
+  }
+  .field-row .field-value {
+    flex: 1;
+    min-width: 0;
+    font-family: var(--font-body);
+    font-size: 14px;
+    text-align: right;
+  }
+  .field-row .field-value.mono { font-family: var(--font-mono); }
+  .field-row .field-value-wrap { flex: 1; min-width: 0; }
+
+  .row-input {
+    width: 100%;
+    --md-filled-field-container-color: transparent;
+    --md-filled-text-field-container-color: transparent;
+    --md-filled-text-field-active-indicator-color: transparent;
+    --md-filled-text-field-hover-active-indicator-color: transparent;
+    --md-filled-text-field-focus-active-indicator-color: var(--md-sys-color-primary);
+    --md-filled-text-field-focus-active-indicator-height: 2px;
+    --md-filled-text-field-top-space: 2px;
+    --md-filled-text-field-bottom-space: 2px;
+    --md-filled-text-field-leading-space: 0px;
+    --md-filled-text-field-trailing-space: 0px;
+    --md-filled-text-field-input-text-color: var(--md-sys-color-on-surface);
+    --md-filled-text-field-input-text-font: var(--font-body);
+    --md-filled-text-field-input-text-size: 14px;
+  }
+  .row-input[data-mono="true"] { --md-filled-text-field-input-text-font: var(--font-mono); }
+
+  .detail-summary-text {
+    font-family: var(--font-body);
+    font-size: 12.5px;
+    color: var(--md-sys-color-on-surface-variant);
+    margin: 10px 16px 0;
+  }
+
+  .status-toggle { display: flex; gap: 8px; padding: 14px 16px; }
+  .status-toggle-btn {
+    flex: 1;
+    padding: 8px 4px;
+    border-radius: 9999px;
+    border: 1px solid var(--md-sys-color-outline-variant);
+    background: transparent;
+    color: var(--md-sys-color-on-surface-variant);
+    font-family: var(--font-mono);
+    font-size: 11px;
+    cursor: pointer;
+  }
+  .status-toggle-btn.active[data-value="in_collection"] { background: rgba(96,165,250,0.13); color: #60A5FA; border-color: #60A5FA; }
+  .status-toggle-btn.active[data-value="listed"] { background: rgba(251,191,36,0.13); color: #FBBF24; border-color: #FBBF24; }
+  .status-toggle-btn.active[data-value="sold"] { background: rgba(52,211,153,0.13); color: #34D399; border-color: #34D399; }
 </style>
 </head>
 <body>
@@ -284,7 +407,7 @@
     <md-icon-button id="backBtn" aria-label="Back" style="display:none">
       <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg></md-icon>
     </md-icon-button>
-    <h1 id="appBarTitle" class="md-typescale-title-large top-app-bar-title">Diecast Inventory</h1>
+    <h1 id="appBarTitle" class="top-app-bar-title">Diecast Tracker</h1>
 
     <div id="appBarActions" class="top-app-bar-actions">
       <md-icon-button id="selectModeBtn" aria-label="Select items">
@@ -336,7 +459,7 @@
   </div>
 
   <div id="listView">
-    <p class="md-typescale-body-medium" style="color:var(--md-sys-color-on-surface-variant); margin-top:0;">
+    <p class="md-typescale-body-medium" style="color:var(--md-sys-color-on-surface-variant); margin-top:0; font-family:var(--font-body);">
       Snap a card or a loose car — it's extracted and checked against the reference database automatically.
     </p>
 
@@ -363,9 +486,14 @@
 
     <input type="file" id="cameraInput" accept="image/*" capture="environment" hidden>
 
+    <div id="scanningBanner">
+      <md-circular-progress indeterminate style="--md-circular-progress-size: 20px;"></md-circular-progress>
+      <span>Scanning car…</span>
+    </div>
+
     <div id="captureFab">
       <md-fab id="scanFabBtn" variant="primary" label="Scan a car">
-        <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg></md-icon>
+        <md-icon slot="icon" id="scanFabIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg></md-icon>
       </md-fab>
     </div>
 
@@ -379,43 +507,49 @@
 
   <div id="detailView">
     <div class="detail-photos" id="detailPhotos"></div>
+    <input type="file" id="detailPhotoInput" accept="image/*" capture="environment" hidden>
 
-    <div class="detail-section">
+    <div class="detail-section-header">
+      <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M856-390 570-104q-12 12-27 18t-30 6q-15 0-30-6t-27-18L103-457q-11-11-17-25.5T80-513v-287q0-33 23.5-56.5T160-880h287q16 0 31 6.5t26 17.5l352 353q12 12 17.5 27t5.5 30q0 15-5.5 29.5T856-390ZM513-160l286-286-353-354H160v286l353 354ZM260-640q25 0 42.5-17.5T320-700q0-25-17.5-42.5T260-760q-25 0-42.5 17.5T200-700q0 25 17.5 42.5T260-640Zm220 160Z"/></svg></md-icon>
       <h3>Identification</h3>
-      <md-outlined-text-field class="detail-field" id="detBrand" label="Brand"></md-outlined-text-field>
-      <md-outlined-text-field class="detail-field" id="detCarMake" label="Car make"></md-outlined-text-field>
-      <md-outlined-text-field class="detail-field" id="detCastingName" label="Casting name"></md-outlined-text-field>
-      <md-outlined-text-field class="detail-field" id="detSeries" label="Series / theme"></md-outlined-text-field>
-      <md-outlined-text-field class="detail-field" id="detYear" label="Year" type="number"></md-outlined-text-field>
-      <md-outlined-text-field class="detail-field" id="detCollectorNum" label="Collector #"></md-outlined-text-field>
-      <md-outlined-text-field class="detail-field" id="detSku" label="Sku / Toy #"></md-outlined-text-field>
-      <md-outlined-text-field class="detail-field" id="detColor" label="Color"></md-outlined-text-field>
+    </div>
+    <div class="detail-card">
+      <div class="field-row"><span class="field-label">Brand</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detBrand"></md-filled-text-field></div></div>
+      <div class="field-row"><span class="field-label">Car make</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detCarMake"></md-filled-text-field></div></div>
+      <div class="field-row"><span class="field-label">Casting name</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detCastingName"></md-filled-text-field></div></div>
+      <div class="field-row"><span class="field-label">Series / theme</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detSeries"></md-filled-text-field></div></div>
+      <div class="field-row"><span class="field-label">Year</span><div class="field-value-wrap"><md-filled-text-field class="row-input" data-mono="true" type="number" id="detYear"></md-filled-text-field></div></div>
+      <div class="field-row"><span class="field-label">Collector #</span><div class="field-value-wrap"><md-filled-text-field class="row-input" data-mono="true" id="detCollectorNum"></md-filled-text-field></div></div>
+      <div class="field-row"><span class="field-label">SKU / Toy #</span><div class="field-value-wrap"><md-filled-text-field class="row-input" data-mono="true" id="detSku"></md-filled-text-field></div></div>
+      <div class="field-row"><span class="field-label">Color / deco</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detColor"></md-filled-text-field></div></div>
     </div>
 
-    <md-divider></md-divider>
-    <div class="detail-section">
+    <div class="detail-section-header">
+      <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></md-icon>
       <h3>Match</h3>
-      <div id="detMatchContent"></div>
     </div>
+    <div class="detail-card" id="detMatchCard"></div>
 
-    <md-divider></md-divider>
-    <div class="detail-section">
+    <div class="detail-section-header">
+      <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M441-120v-86q-53-12-91.5-46T293-348l74-30q15 48 44.5 73t77.5 25q41 0 69.5-18.5T587-356q0-35-22-55.5T463-458q-86-27-118-64.5T313-614q0-65 42-101t86-41v-84h80v84q50 8 82.5 36.5T651-650l-74 32q-12-32-34-48t-60-16q-44 0-67 19.5T393-614q0 33 30 52t104 40q69 20 104.5 63.5T667-358q0 71-42 108t-104 46v84h-80Z"/></svg></md-icon>
       <h3>Pricing</h3>
-      <div id="detPricingContent"></div>
     </div>
+    <div class="detail-card" id="detPricingCard"></div>
 
-    <md-divider></md-divider>
-    <div class="detail-section">
-      <h3>Your tracking</h3>
-      <md-outlined-select class="detail-field" id="detStatus" label="Status">
-        <md-select-option value="in_collection"><div slot="headline">In collection</div></md-select-option>
-        <md-select-option value="listed"><div slot="headline">Listed</div></md-select-option>
-        <md-select-option value="sold"><div slot="headline">Sold</div></md-select-option>
-      </md-outlined-select>
-      <md-outlined-text-field class="detail-field" id="detCondition" label="Condition notes"></md-outlined-text-field>
-      <md-outlined-text-field class="detail-field" id="detCostBasis" label="Cost basis (USD)" type="number"></md-outlined-text-field>
-      <md-outlined-text-field class="detail-field" id="detListingPrice" label="Listing price (USD)" type="number"></md-outlined-text-field>
-      <md-outlined-text-field class="detail-field" id="detSoldPrice" label="Sold price (USD)" type="number"></md-outlined-text-field>
+    <div class="detail-section-header">
+      <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-120v-640q0-33 23.5-56.5T280-840h400q33 0 56.5 23.5T760-760v640L480-240 200-120Zm80-122 200-86 200 86v-518H280v518Zm0-518h400-400Z"/></svg></md-icon>
+      <h3>Your Tracking</h3>
+    </div>
+    <div class="detail-card">
+      <div class="status-toggle" id="detStatusToggle">
+        <button type="button" class="status-toggle-btn" data-value="in_collection">In collection</button>
+        <button type="button" class="status-toggle-btn" data-value="listed">Listed</button>
+        <button type="button" class="status-toggle-btn" data-value="sold">Sold</button>
+      </div>
+      <div class="field-row"><span class="field-label">Condition notes</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detCondition"></md-filled-text-field></div></div>
+      <div class="field-row"><span class="field-label">Cost basis (USD)</span><div class="field-value-wrap"><md-filled-text-field class="row-input" data-mono="true" type="number" id="detCostBasis"></md-filled-text-field></div></div>
+      <div class="field-row"><span class="field-label">Listing price (USD)</span><div class="field-value-wrap"><md-filled-text-field class="row-input" data-mono="true" type="number" id="detListingPrice"></md-filled-text-field></div></div>
+      <div class="field-row"><span class="field-label">Sold price (USD)</span><div class="field-value-wrap"><md-filled-text-field class="row-input" data-mono="true" type="number" id="detSoldPrice"></md-filled-text-field></div></div>
     </div>
   </div>
 
@@ -477,6 +611,7 @@
 
     const cameraInput = document.getElementById('cameraInput');
     const baseInput = document.getElementById('baseInput');
+    const detailPhotoInput = document.getElementById('detailPhotoInput');
     const results = document.getElementById('results');
     const emptyState = document.getElementById('emptyState');
     const packagingTabs = document.getElementById('packagingTabs');
@@ -485,7 +620,9 @@
     const baseBtnIcon = document.getElementById('baseBtnIcon');
     const baseBtnLabel = document.getElementById('baseBtnLabel');
     const skipSecondBtn = document.getElementById('skipSecondBtn');
+    const scanningBanner = document.getElementById('scanningBanner');
     const captureFab = document.getElementById('scanFabBtn');
+    const scanFabIcon = document.getElementById('scanFabIcon');
     const errorDialog = document.getElementById('errorDialog');
     const errorDialogContent = document.getElementById('errorDialogContent');
     const errorDialogClose = document.getElementById('errorDialogClose');
@@ -515,9 +652,9 @@
     const detCollectorNum = document.getElementById('detCollectorNum');
     const detSku = document.getElementById('detSku');
     const detColor = document.getElementById('detColor');
-    const detMatchContent = document.getElementById('detMatchContent');
-    const detPricingContent = document.getElementById('detPricingContent');
-    const detStatus = document.getElementById('detStatus');
+    const detMatchCard = document.getElementById('detMatchCard');
+    const detPricingCard = document.getElementById('detPricingCard');
+    const detStatusToggle = document.getElementById('detStatusToggle');
     const detCondition = document.getElementById('detCondition');
     const detCostBasis = document.getElementById('detCostBasis');
     const detListingPrice = document.getElementById('detListingPrice');
@@ -526,10 +663,12 @@
     const ICON_FLIP_CAMERA = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-143 0-253-90T88-400h82q28 106 114 173t196 67q86 0 160-42.5T756-320H640v-80h240v240h-80v-80q-57 76-141 118T480-80Zm0-280q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-560v-240h80v80q57-76 141-118t179-42q143 0 253 90t139 230h-82q-28-106-114-173t-196-67q-86 0-160 42.5T204-640h116v80H80Z"/></svg>';
     const ICON_CHECK_CIRCLE = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>';
     const ICON_CAR_PLACEHOLDER = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h440q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z"/></svg>';
+    const ICON_ADD = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>';
 
     let packagingType = 'carded';
     let pendingMainPhoto = null;
     let pendingBasePhoto = null;
+    let isScanning = false;
 
     // ---- State model --------------------------------------------------
     // Single source of truth for everything in the list/detail views - the
@@ -550,7 +689,12 @@
       errorDialog.show();
     }
 
-    // ---- Capture flow (unchanged behavior from before the redesign) ----
+    // ---- Capture flow ---------------------------------------------------
+    // The packaging tabs now do double duty: they pick which packaging a
+    // new scan is captured as, AND filter the list to that packaging type
+    // (see sortedItems()) - one control, two purposes, since it's the same
+    // screen either way.
+    //
     // The second-photo step means different things per packaging type: for
     // loose cars it's the base/underside stamp (casting name + year); for
     // carded cars it's the back of the card, which usually has the sku/
@@ -585,10 +729,23 @@
       pendingBasePhoto = null;
       resetBaseBtn();
       updateSecondPhotoVisibility();
+      renderList();
     }
     packagingTabs.addEventListener('change', (e) => {
       setPackaging(e.target.activeTabIndex === 1 ? 'loose' : 'carded');
     });
+
+    // The FAB's own icon swaps to a spinner while scanning - kept as a
+    // separate constant so it can be reverted exactly afterward.
+    const ICON_CAMERA = scanFabIcon.innerHTML;
+    const ICON_FAB_SPINNER = '<md-circular-progress indeterminate style="--md-circular-progress-size:20px; --md-circular-progress-active-indicator-color:#fff;"></md-circular-progress>';
+
+    function setScanning(scanning) {
+      isScanning = scanning;
+      captureFab.disabled = scanning;
+      scanningBanner.classList.toggle('show', scanning);
+      scanFabIcon.innerHTML = scanning ? ICON_FAB_SPINNER : ICON_CAMERA;
+    }
 
     captureFab.addEventListener('click', () => cameraInput.click());
     baseBtn.addEventListener('click', () => baseInput.click());
@@ -615,18 +772,7 @@
     async function submitScan() {
       if (!pendingMainPhoto) return;
       emptyState.style.display = 'none';
-
-      const loadingItem = document.createElement('md-list-item');
-      const progress = document.createElement('md-circular-progress');
-      progress.slot = 'start';
-      progress.indeterminate = true;
-      progress.style.setProperty('--md-circular-progress-size', '24px');
-      loadingItem.appendChild(progress);
-      const headline = document.createElement('div');
-      headline.slot = 'headline';
-      headline.textContent = 'Scanning…';
-      loadingItem.appendChild(headline);
-      results.prepend(loadingItem);
+      setScanning(true);
 
       const formData = new FormData();
       formData.append('photo', pendingMainPhoto);
@@ -644,17 +790,16 @@
         if (!resp.ok) {
           throw new Error(data.detail || `Server error (status ${resp.status})`);
         }
-        loadingItem.remove();
         allItems.unshift(fromScanResponse(data));
         renderList();
       } catch (err) {
-        loadingItem.remove();
         showError(err.message);
         if (allItems.length === 0) emptyState.style.display = 'block';
       }
 
       pendingMainPhoto = null;
       pendingBasePhoto = null;
+      setScanning(false);
       resetBaseBtn();
       updateSecondPhotoVisibility();
     }
@@ -737,14 +882,14 @@
     }
 
     function sortedItems() {
+      const filtered = allItems.filter(it => (it.packaging_type || 'carded') === packagingType);
       if (sortKey === 'created_at') {
         // Original load order from the API is already newest-first; just
         // respect direction on top of that rather than re-deriving a
         // timestamp we don't consistently carry on fresh-scan items.
-        const copy = allItems.slice();
-        return sortDir === 'desc' ? copy : copy.reverse();
+        return sortDir === 'desc' ? filtered : filtered.slice().reverse();
       }
-      const copy = allItems.slice();
+      const copy = filtered.slice();
       copy.sort((a, b) => {
         const av = sortValue(a, sortKey), bv = sortValue(b, sortKey);
         if (av == null && bv == null) return 0;
@@ -799,6 +944,9 @@
       return div;
     }
 
+    const MATCH_LABELS = { confirmed: 'Confirmed', needs_review: 'Needs Review', no_match: 'No Match' };
+    const TRACKING_LABELS = { in_collection: 'In collection', listed: 'Listed', sold: 'Sold' };
+
     function buildItemElement(item) {
       const name = item.casting_name || 'Unrecognized item';
       const metaLine = [item.brand, item.car_make, item.year].filter(Boolean).join(' · ');
@@ -844,12 +992,21 @@
         endStack.appendChild(price);
       }
 
+      const pillRow = document.createElement('div');
+      pillRow.className = 'pill-row';
+
+      const trackingPill = document.createElement('span');
+      trackingPill.className = `tracking-pill ${item.tracking_status || 'in_collection'}`;
+      trackingPill.textContent = TRACKING_LABELS[item.tracking_status] || 'In collection';
+      pillRow.appendChild(trackingPill);
+
       const pill = document.createElement('span');
       pill.className = `status-pill ${item.status}`;
-      pill.textContent = `${(item.status || 'unknown').replace('_', ' ')} · ${(item.confidence * 100).toFixed(0)}%`;
+      pill.textContent = `${MATCH_LABELS[item.status] || 'Unknown'} ${(item.confidence * 100).toFixed(0)}%`;
       pill.title = item.match_notes || 'Similarity between what was read off the card and the closest reference database entry.';
-      endStack.appendChild(pill);
+      pillRow.appendChild(pill);
 
+      endStack.appendChild(pillRow);
       el.appendChild(endStack);
 
       el.addEventListener('click', () => {
@@ -912,7 +1069,7 @@
     function exitSelectMode() {
       selectMode = false;
       selectedIds.clear();
-      setAppBarMode('list', 'Diecast Inventory');
+      setAppBarMode('list', 'Diecast Tracker');
       renderList();
     }
 
@@ -992,20 +1149,80 @@
     // ---- Detail view / routing --------------------------------------------
     function money(n) { return (n || n === 0) ? `$${Number(n).toFixed(2)}` : null; }
 
-    function buildDetailView(item) {
+    function fieldRow(label, valueHtml, mono) {
+      return `<div class="field-row"><span class="field-label">${label}</span><span class="field-value${mono ? ' mono' : ''}">${valueHtml}</span></div>`;
+    }
+
+    function buildDetailPhotos(item) {
       detailPhotos.innerHTML = '';
+
+      const mainSlot = document.createElement('div');
+      mainSlot.className = 'photo-slot';
       if (item.photo_path) {
         const img = document.createElement('img');
         img.src = '/' + item.photo_path;
         img.alt = '';
-        detailPhotos.appendChild(img);
+        mainSlot.appendChild(img);
+      } else {
+        mainSlot.classList.add('photo-slot-empty');
+        const icon = document.createElement('md-icon');
+        icon.innerHTML = ICON_CAR_PLACEHOLDER;
+        mainSlot.appendChild(icon);
       }
+      detailPhotos.appendChild(mainSlot);
+
+      const secondSlot = document.createElement('div');
+      secondSlot.className = 'photo-slot';
       if (item.base_photo_path) {
         const img = document.createElement('img');
         img.src = '/' + item.base_photo_path;
         img.alt = '';
-        detailPhotos.appendChild(img);
+        secondSlot.appendChild(img);
+      } else {
+        secondSlot.classList.add('photo-slot-add');
+        secondSlot.innerHTML = `<div class="photo-slot-add-icon"><md-icon>${ICON_ADD}</md-icon></div><span>Add an additional photo</span>`;
+        secondSlot.addEventListener('click', () => detailPhotoInput.click());
       }
+      detailPhotos.appendChild(secondSlot);
+    }
+
+    detailPhotoInput.addEventListener('change', async (e) => {
+      const file = e.target.files[0];
+      detailPhotoInput.value = '';
+      if (!file || currentDetailId == null) return;
+      const formData = new FormData();
+      formData.append('photo', file);
+      try {
+        const resp = await fetch(`/inventory/${currentDetailId}/photo`, { method: 'POST', body: formData });
+        let data;
+        try { data = await resp.json(); } catch {
+          throw new Error(`Server sent back something unreadable (status ${resp.status}).`);
+        }
+        if (!resp.ok) throw new Error(data.detail || `Server error (status ${resp.status})`);
+        const updated = fromDbRow(data);
+        const idx = allItems.findIndex(it => it.id === currentDetailId);
+        if (idx !== -1) allItems[idx] = updated;
+        buildDetailPhotos(updated);
+      } catch (err) {
+        showError(`Couldn't add photo: ${err.message}`);
+      }
+    });
+
+    let detStatusValue = 'in_collection';
+    detStatusToggle.querySelectorAll('.status-toggle-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        detStatusValue = btn.dataset.value;
+        updateStatusToggle();
+      });
+    });
+    function updateStatusToggle() {
+      detStatusToggle.querySelectorAll('.status-toggle-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.value === detStatusValue);
+      });
+    }
+
+    function buildDetailView(item) {
+      buildDetailPhotos(item);
 
       detBrand.value = item.brand || '';
       detCarMake.value = item.car_make || '';
@@ -1016,23 +1233,24 @@
       detSku.value = item.sku || '';
       detColor.value = item.color || '';
 
-      detMatchContent.innerHTML = `
-        <div class="detail-readonly-row"><span>Status</span><span class="status-pill ${item.status}">${(item.status || 'unknown').replace('_', ' ')} · ${(item.confidence * 100).toFixed(0)}%</span></div>
-        ${item.match_notes ? `<p class="detail-summary-text">${item.match_notes}</p>` : ''}
-      `;
+      detMatchCard.innerHTML =
+        fieldRow('Status', `<span class="status-pill ${item.status}">${MATCH_LABELS[item.status] || 'Unknown'} ${(item.confidence * 100).toFixed(0)}%</span>`)
+        + fieldRow('Packaging', item.packaging_type === 'loose' ? 'Loose' : 'Carded')
+        + (item.match_notes ? `<p class="detail-summary-text">${item.match_notes}</p>` : '');
 
       const priceRows = [];
-      if (item.guide_price_usd) priceRows.push(`<div class="detail-readonly-row"><span>Guide price</span><span>${money(item.guide_price_usd)}</span></div>`);
-      if (item.live_recommended_price_usd) priceRows.push(`<div class="detail-readonly-row"><span>Recommended listing</span><span>${money(item.live_recommended_price_usd)}</span></div>`);
+      if (item.guide_price_usd) priceRows.push(fieldRow('Guide price', money(item.guide_price_usd), true));
+      if (item.live_recommended_price_usd) priceRows.push(fieldRow('Recommended listing', money(item.live_recommended_price_usd), true));
       if (item.live_price_low_usd || item.live_price_high_usd) {
         const low = item.live_price_low_usd, high = item.live_price_high_usd;
         const rangeText = (low && high && low !== high) ? `${money(low)}–${money(high)}` : money(low || high);
-        priceRows.push(`<div class="detail-readonly-row"><span>eBay range</span><span>${rangeText}</span></div>`);
+        priceRows.push(fieldRow('eBay range', rangeText, true));
       }
-      detPricingContent.innerHTML = (priceRows.length ? priceRows.join('') : '<p class="detail-summary-text">No pricing data yet.</p>')
+      detPricingCard.innerHTML = (priceRows.length ? priceRows.join('') : '<p class="detail-summary-text">No pricing data yet.</p>')
         + (item.live_summary ? `<p class="detail-summary-text">${item.live_summary}</p>` : '');
 
-      detStatus.value = item.tracking_status || 'in_collection';
+      detStatusValue = item.tracking_status || 'in_collection';
+      updateStatusToggle();
       detCondition.value = item.condition || '';
       detCostBasis.value = item.cost_basis_usd ?? '';
       detListingPrice.value = item.listing_price_usd ?? '';
@@ -1055,7 +1273,7 @@
       currentDetailId = null;
       listView.style.display = 'block';
       detailView.style.display = 'none';
-      setAppBarMode(selectMode ? 'select' : 'list', selectMode ? `${selectedIds.size} selected` : 'Diecast Inventory');
+      setAppBarMode(selectMode ? 'select' : 'list', selectMode ? `${selectedIds.size} selected` : 'Diecast Tracker');
     }
 
     function renderRoute() {
@@ -1076,7 +1294,7 @@
         extracted_collector_num: detCollectorNum.value || null,
         extracted_sku: detSku.value || null,
         extracted_color: detColor.value || null,
-        status: detStatus.value || null,
+        status: detStatusValue || null,
         condition: detCondition.value || null,
         cost_basis_usd: detCostBasis.value ? parseFloat(detCostBasis.value) : null,
         listing_price_usd: detListingPrice.value ? parseFloat(detListingPrice.value) : null,

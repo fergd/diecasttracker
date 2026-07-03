@@ -452,6 +452,33 @@ def update_item(item_id: int, update: InventoryUpdate):
     return dict(row)
 
 
+@app.post("/inventory/{item_id}/photo")
+async def add_secondary_photo(item_id: int, photo: UploadFile = File(...)):
+    """Attach (or replace) the secondary photo on an already-saved item - for
+    when the back-of-card/base shot wasn't taken during the original scan.
+    Doesn't re-run extraction/matching, just stores the file."""
+    conn = get_conn()
+    existing = conn.execute("SELECT base_photo_path FROM inventory WHERE id = ?", (item_id,)).fetchone()
+    if existing is None:
+        conn.close()
+        raise HTTPException(status_code=404, detail=f"No inventory item with id {item_id}")
+
+    old_path = existing["base_photo_path"]
+    saved_path = _save_upload(photo)
+    conn.execute("UPDATE inventory SET base_photo_path = ? WHERE id = ?", (saved_path, item_id))
+    conn.commit()
+    row = conn.execute("SELECT * FROM inventory WHERE id = ?", (item_id,)).fetchone()
+    conn.close()
+
+    if old_path and old_path != saved_path:
+        try:
+            Path(old_path).unlink(missing_ok=True)
+        except OSError as e:
+            logger.warning(f"Could not delete replaced photo file {old_path}: {e}")
+
+    return dict(row)
+
+
 @app.delete("/inventory/{item_id}")
 def delete_item(item_id: int):
     """Remove a scan - for bad extractions, no_match junk, or duplicates."""
