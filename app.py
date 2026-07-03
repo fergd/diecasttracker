@@ -189,6 +189,8 @@ async def scan_card(
                 series=match_result.canonical_series,
                 year=match_result.canonical_year,
                 packaging_type=packaging_type,
+                brand=match_result.canonical_brand,
+                sku=match_result.canonical_sku,
                 db_path=DB_PATH,
             )
         except Exception as e:
@@ -376,6 +378,7 @@ def test_live_search():
         result = get_live_price(
             casting_name="Custom '72 Chevy Luv",   # a real, well-documented casting
             series="HW Hot Trucks", year=2016, packaging_type="carded",
+            brand="Hot Wheels", sku=None,
             db_path=DB_PATH,
         )
         return {"ok": not result.get("error", False), "result": result}

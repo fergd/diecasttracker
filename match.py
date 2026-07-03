@@ -39,6 +39,9 @@ class MatchResult:
     canonical_casting_name: str | None
     canonical_series: str | None
     canonical_year: int | None
+    canonical_sku: str | None   # from the matched reference row, when available - a much
+                                  # stronger eBay search term than the casting name alone,
+                                  # since sellers commonly put the exact Toy # in listing titles
     suggested_price_usd: float | None
     notes: str
 
@@ -143,6 +146,7 @@ def validate_extraction(extracted: dict, packaging_type: str = "carded") -> Matc
                 status="confirmed", confidence=1.0, reference_id=row["id"],
                 canonical_brand=row["brand"], canonical_casting_name=row["casting_name"],
                 canonical_series=row["series_name"], canonical_year=row["release_year"],
+                canonical_sku=row["sku"],
                 suggested_price_usd=suggested_price(row, packaging_type),
                 notes=f"Exact SKU match ('{sku}') - the most reliable ID available.",
             )
@@ -157,6 +161,7 @@ def validate_extraction(extracted: dict, packaging_type: str = "carded") -> Matc
         return MatchResult(
             status="no_match", confidence=0.0, reference_id=None,
             canonical_brand=None, canonical_casting_name=None, canonical_series=None, canonical_year=None,
+            canonical_sku=None,
             suggested_price_usd=None,
             notes="No reference rows found for this brand/year window - "
                   "reference DB may not be seeded for this era yet."
@@ -167,6 +172,7 @@ def validate_extraction(extracted: dict, packaging_type: str = "carded") -> Matc
         return MatchResult(
             status="no_match", confidence=0.0, reference_id=None,
             canonical_brand=None, canonical_casting_name=None, canonical_series=None, canonical_year=None,
+            canonical_sku=None,
             suggested_price_usd=None,
             notes="Extraction returned no casting name to match against."
         )
@@ -183,6 +189,7 @@ def validate_extraction(extracted: dict, packaging_type: str = "carded") -> Matc
         return MatchResult(
             status="no_match", confidence=0.0, reference_id=None,
             canonical_brand=None, canonical_casting_name=None, canonical_series=None, canonical_year=None,
+            canonical_sku=None,
             suggested_price_usd=None,
             notes="Fuzzy match produced no candidates."
         )
@@ -244,6 +251,7 @@ def validate_extraction(extracted: dict, packaging_type: str = "carded") -> Matc
         canonical_casting_name=row["casting_name"] if status != "no_match" else None,
         canonical_series=row["series_name"] if status != "no_match" else None,
         canonical_year=row["release_year"] if status != "no_match" else None,
+        canonical_sku=row["sku"] if status != "no_match" else None,
         suggested_price_usd=suggested_price(row, packaging_type) if status != "no_match" else None,
         notes="; ".join(notes) if notes else "Strong match.",
     )

@@ -413,7 +413,6 @@
         <md-select-option value="sold"><div slot="headline">Sold</div></md-select-option>
       </md-outlined-select>
       <md-outlined-text-field class="detail-field" id="detCondition" label="Condition notes"></md-outlined-text-field>
-      <md-outlined-text-field class="detail-field" id="detAcquiredDate" label="Acquired date" type="date"></md-outlined-text-field>
       <md-outlined-text-field class="detail-field" id="detCostBasis" label="Cost basis (USD)" type="number"></md-outlined-text-field>
       <md-outlined-text-field class="detail-field" id="detListingPrice" label="Listing price (USD)" type="number"></md-outlined-text-field>
       <md-outlined-text-field class="detail-field" id="detSoldPrice" label="Sold price (USD)" type="number"></md-outlined-text-field>
@@ -520,7 +519,6 @@
     const detPricingContent = document.getElementById('detPricingContent');
     const detStatus = document.getElementById('detStatus');
     const detCondition = document.getElementById('detCondition');
-    const detAcquiredDate = document.getElementById('detAcquiredDate');
     const detCostBasis = document.getElementById('detCostBasis');
     const detListingPrice = document.getElementById('detListingPrice');
     const detSoldPrice = document.getElementById('detSoldPrice');
@@ -692,7 +690,6 @@
         live_summary: (!live.skipped) ? live.summary : null,
         condition: null,
         tracking_status: 'in_collection',
-        acquired_date: null,
         cost_basis_usd: null,
         listing_price_usd: null,
         sold_price_usd: null,
@@ -723,7 +720,6 @@
         live_summary: row.live_price_summary,
         condition: row.condition,
         tracking_status: row.status || 'in_collection',
-        acquired_date: row.acquired_date,
         cost_basis_usd: row.cost_basis_usd,
         listing_price_usd: row.listing_price_usd,
         sold_price_usd: row.sold_price_usd,
@@ -1038,7 +1034,6 @@
 
       detStatus.value = item.tracking_status || 'in_collection';
       detCondition.value = item.condition || '';
-      detAcquiredDate.value = item.acquired_date || '';
       detCostBasis.value = item.cost_basis_usd ?? '';
       detListingPrice.value = item.listing_price_usd ?? '';
       detSoldPrice.value = item.sold_price_usd ?? '';
@@ -1083,7 +1078,6 @@
         extracted_color: detColor.value || null,
         status: detStatus.value || null,
         condition: detCondition.value || null,
-        acquired_date: detAcquiredDate.value || null,
         cost_basis_usd: detCostBasis.value ? parseFloat(detCostBasis.value) : null,
         listing_price_usd: detListingPrice.value ? parseFloat(detListingPrice.value) : null,
         sold_price_usd: detSoldPrice.value ? parseFloat(detSoldPrice.value) : null,

@@ -41,11 +41,18 @@ CACHE_MAX_AGE_DAYS = 30                # how long a cached live price stays vali
 PRICE_LOOKUP_PROMPT = """Search eBay for what this specific diecast car actually \
 sells for:
 
+Brand: {brand}
 Casting: {casting_name}
 Series: {series}
 Year: {year}
 Packaging: {packaging_type} (carded/packaged vs. loose/unpackaged - price for THIS \
-packaging specifically; the two differ a lot for the same casting)
+packaging specifically; the two differ a lot for the same casting){sku_line}
+
+Try a search combining brand + casting name first (e.g. "Hot Wheels {casting_name}"). \
+If a sku/Toy # code is given above, also try including it directly - sellers very \
+commonly put the exact code in their listing title (e.g. "Hot Wheels Ford Fiesta \
+T9710"), which narrows results far better than the casting name alone and is worth a \
+dedicated search of its own, not just a fallback.
 
 Prioritize SOLD/completed listings over active asking prices - an asking price tells \
 you what a seller hopes for, a sold price tells you what a buyer actually paid. If you \
@@ -100,14 +107,18 @@ def _fetch_cached(conn: sqlite3.Connection, casting_name: str, series: str | Non
 
 
 def _search_live_price(casting_name: str, series: str | None, year: int | None,
-                        packaging_type: str) -> dict:
+                        packaging_type: str, brand: str | None = None,
+                        sku: str | None = None) -> dict:
     client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env
 
+    sku_line = f"\nSku/Toy # code: {sku}" if sku else ""
     prompt = PRICE_LOOKUP_PROMPT.format(
+        brand=brand or "unknown",
         casting_name=casting_name,
         series=series or "unknown",
         year=year or "unknown",
         packaging_type=packaging_type,
+        sku_line=sku_line,
     )
 
     try:
@@ -180,8 +191,14 @@ def _search_live_price(casting_name: str, series: str | None, year: int | None,
 
 
 def get_live_price(casting_name: str, series: str | None, year: int | None,
-                    packaging_type: str, db_path: str = "inventory.db") -> dict:
+                    packaging_type: str, brand: str | None = None, sku: str | None = None,
+                    db_path: str = "inventory.db") -> dict:
     """
+    brand/sku are search-quality inputs only, not part of the cache key -
+    they're just extra context that helps the web_search find the right
+    listings for the same casting identity (casting_name/series/year/
+    packaging_type already uniquely identifies it for caching purposes).
+
     Returns a dict with price_low_usd, price_high_usd,
     recommended_listing_price_usd, summary, cached (bool). Never raises - a
     failed lookup returns a dict with an 'error' note instead, so a
@@ -201,7 +218,7 @@ def get_live_price(casting_name: str, series: str | None, year: int | None,
         return cached
 
     try:
-        result = _search_live_price(casting_name, series, year, packaging_type)
+        result = _search_live_price(casting_name, series, year, packaging_type, brand, sku)
     except Exception as e:
         conn.close()
         return {
