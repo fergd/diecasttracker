@@ -28,6 +28,7 @@ the number of cars you scan or how many times you rescan the same one.
 """
 
 import json
+import re
 import sqlite3
 from datetime import datetime, timedelta
 
@@ -139,12 +140,23 @@ def _search_live_price(casting_name: str, series: str | None, year: int | None,
         )
 
     # Pull the final text block - that's where the JSON answer should be.
+    # Despite being asked for ONLY JSON, Claude routinely wraps it in a
+    # ```json fence and/or prefixes it with a sentence of narration (e.g.
+    # "Based on my search results, ..."), especially after a multi-search
+    # tool-use turn - so a plain prefix-strip isn't reliable. Look for a
+    # fenced block first, then fall back to the outermost {...} span.
     text_blocks = [b.text for b in response.content if getattr(b, "type", None) == "text"]
     raw_text = (text_blocks[-1] if text_blocks else "").strip()
-    raw_text = raw_text.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
+
+    fence_match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", raw_text, re.DOTALL)
+    if fence_match:
+        json_text = fence_match.group(1)
+    else:
+        start, end = raw_text.find("{"), raw_text.rfind("}")
+        json_text = raw_text[start:end + 1] if start != -1 and end > start else raw_text
 
     try:
-        parsed = json.loads(raw_text)
+        parsed = json.loads(json_text)
     except json.JSONDecodeError:
         parsed = {"price_low_usd": None, "price_high_usd": None,
                    "recommended_listing_price_usd": None,
