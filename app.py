@@ -85,17 +85,26 @@ INVENTORY_COLUMNS = {
 }
 
 
-def _migrate_inventory_table(conn: sqlite3.Connection):
-    existing = {row[1] for row in conn.execute("PRAGMA table_info(inventory)").fetchall()}
+# Same problem as INVENTORY_COLUMNS above, for live_price_cache - it also
+# persists across deployments and also gets schema additions over time
+# (e.g. recommended_listing_price_usd was added after some installs already
+# had the table created).
+LIVE_PRICE_CACHE_COLUMNS = {
+    "recommended_listing_price_usd": "REAL",
+}
+
+
+def _migrate_table(conn: sqlite3.Connection, table_name: str, columns: dict):
+    existing = {row[1] for row in conn.execute(f"PRAGMA table_info({table_name})").fetchall()}
     if not existing:
         return  # table doesn't exist yet - executescript above already created it fully
-    for col, coltype in INVENTORY_COLUMNS.items():
+    for col, coltype in columns.items():
         if col not in existing:
             try:
-                conn.execute(f"ALTER TABLE inventory ADD COLUMN {col} {coltype}")
-                logger.info(f"Migrated inventory table: added missing column '{col}'")
+                conn.execute(f"ALTER TABLE {table_name} ADD COLUMN {col} {coltype}")
+                logger.info(f"Migrated {table_name} table: added missing column '{col}'")
             except sqlite3.OperationalError as e:
-                logger.warning(f"Could not add column '{col}': {e}")
+                logger.warning(f"Could not add column '{col}' to {table_name}: {e}")
     conn.commit()
 
 
@@ -103,7 +112,8 @@ def get_conn():
     conn = sqlite3.connect(DB_PATH)
     conn.row_factory = sqlite3.Row
     conn.executescript(Path("schema.sql").read_text())
-    _migrate_inventory_table(conn)
+    _migrate_table(conn, "inventory", INVENTORY_COLUMNS)
+    _migrate_table(conn, "live_price_cache", LIVE_PRICE_CACHE_COLUMNS)
     return conn
 
 
