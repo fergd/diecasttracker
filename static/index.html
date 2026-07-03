@@ -25,33 +25,17 @@
 </script>
 
 <style>
-  /* ============================================================
-     Design tokens - fixed dark theme (no light mode) per the
-     Figma Make design handoff. Structural CSS still uses the
-     --md-sys-color-* names Material Web's own components read
-     internally, just repointed at this palette instead of M3
-     baseline purple.
-     ============================================================ */
   :root {
-    --md-sys-color-primary: #FF4500;             /* Hot Wheels red */
+    --md-sys-color-primary: #FF4500;
     --md-sys-color-on-primary: #FFFFFF;
-    --md-sys-color-primary-container: #FF4500;
-    --md-sys-color-on-primary-container: #FFFFFF;
-    --md-sys-color-secondary-container: rgba(245,158,11,0.13);
-    --md-sys-color-on-secondary-container: #F59E0B;
-    --md-sys-color-tertiary-container: rgba(34,197,94,0.13);
-    --md-sys-color-on-tertiary-container: #22C55E;
     --md-sys-color-error: #EF4444;
-    --md-sys-color-error-container: rgba(239,68,68,0.13);
-    --md-sys-color-on-error-container: #EF4444;
-    --md-sys-color-surface: #0B0B0F;              /* background */
-    --md-sys-color-on-surface: #EDEDF5;           /* foreground */
-    --md-sys-color-on-surface-variant: #6B6B85;   /* muted text */
+    --md-sys-color-surface: #0B0B0F;
+    --md-sys-color-on-surface: #EDEDF5;
+    --md-sys-color-on-surface-variant: #6B6B85;
     --md-sys-color-outline: #6B6B85;
     --md-sys-color-outline-variant: rgba(255,255,255,0.06);
-    --md-sys-color-surface-container-low: #14141A;
-    --md-sys-color-surface-container: #14141A;    /* card surface */
-    --md-sys-color-surface-container-high: #1C1C24;   /* elevated surface */
+    --md-sys-color-surface-container: #14141A;
+    --md-sys-color-surface-container-high: #1C1C24;
     --md-sys-color-surface-container-highest: #1C1C24;
 
     --accent-amber: #FFB300;
@@ -60,21 +44,20 @@
     --font-mono: 'DM Mono', monospace;
   }
 
+  * { box-sizing: border-box; }
+
   body {
     margin: 0;
-    padding: 0 20px 40px;
+    padding: 0 20px 120px;
     max-width: 480px;
     margin-inline: auto;
     background: var(--md-sys-color-surface);
     color: var(--md-sys-color-on-surface);
     font-family: var(--font-body);
     min-height: 100vh;
-    box-sizing: border-box;
   }
 
-  /* ---- Top app bar (hand-built - @material/web ships no app-bar
-     component). Reused, with its content swapped via JS, across the list
-     view, the contextual multi-select state, and the detail view. */
+  /* ---- Top app bar ----------------------------------------------------- */
   .top-app-bar {
     position: sticky;
     top: 0;
@@ -83,84 +66,96 @@
     align-items: center;
     gap: 4px;
     height: 64px;
-    margin: 0 -20px 12px;
+    margin: 0 -20px 8px;
     padding: 0 4px;
     background: var(--md-sys-color-surface);
   }
-  .top-app-bar.contextual {
-    background: var(--md-sys-color-surface-container);
-  }
+  .top-app-bar.contextual { background: var(--md-sys-color-surface-container); }
   .top-app-bar-title {
-    flex: 1;
-    margin: 0;
-    padding-left: 4px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-family: var(--font-display);
-    font-weight: 700;
-    font-size: 20px;
+    flex: 1; margin: 0; padding-left: 4px;
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    font-family: var(--font-display); font-weight: 700; font-size: 20px;
   }
   .top-app-bar-actions { display: flex; align-items: center; flex: none; }
   #detailDeleteBtn, #bulkDeleteBtn { --md-icon-button-icon-color: var(--md-sys-color-error); }
-  #detailSaveBtn {
-    --md-icon-button-icon-color: #FFFFFF;
-    background: var(--md-sys-color-primary);
-    border-radius: 9999px;
-  }
+  #detailSaveBtn { --md-icon-button-icon-color: #FFFFFF; background: var(--md-sys-color-primary); border-radius: 9999px; }
 
-  #basePrompt {
-    margin-bottom: 20px;
-    padding: 14px 16px;
-    border-radius: 12px;
-    background: var(--md-sys-color-surface-container);
-    border: 1px solid var(--md-sys-color-outline-variant);
-    color: var(--md-sys-color-on-surface-variant);
-    font-size: 13px;
-  }
-
-  #baseBtn { display: none; width: 100%; margin-bottom: 8px; }
-  #baseBtn.show { display: inline-flex; }
-  #skipSecondBtn { display: none; width: 100%; margin-bottom: 24px; }
-  #skipSecondBtn.show { display: inline-flex; }
-
+  /* ---- Tabs + filter bar ------------------------------------------------ */
   md-tabs {
-    margin-bottom: 20px;
+    margin-bottom: 14px;
     --md-primary-tab-active-indicator-color: var(--md-sys-color-primary);
     --md-primary-tab-active-label-text-color: var(--md-sys-color-primary);
     --md-primary-tab-active-icon-color: var(--md-sys-color-primary);
     --md-primary-tab-container-color: var(--md-sys-color-surface);
   }
+  .filter-bar { overflow-x: auto; margin: 0 -20px 16px; padding: 0 20px; scrollbar-width: none; }
+  .filter-bar::-webkit-scrollbar { display: none; }
+  .filter-scroll { display: flex; gap: 8px; align-items: center; width: max-content; }
+  .filter-divider { width: 1px; height: 20px; background: var(--md-sys-color-outline-variant); flex: none; margin: 0 2px; }
+  .chip {
+    flex: none;
+    padding: 6px 14px;
+    border-radius: 9999px;
+    border: 1px solid var(--md-sys-color-outline-variant);
+    background: transparent;
+    color: var(--md-sys-color-on-surface-variant);
+    font-family: var(--font-body);
+    font-size: 13px;
+    font-weight: 500;
+    cursor: pointer;
+    white-space: nowrap;
+  }
+  .chip.active[data-match=""] { background: rgba(255,69,0,0.13); color: var(--md-sys-color-primary); border-color: var(--md-sys-color-primary); }
+  .chip.active[data-match="confirmed"] { background: rgba(34,197,94,0.13); color: #22C55E; border-color: #22C55E; }
+  .chip.active[data-match="needs_review"] { background: rgba(245,158,11,0.13); color: #F59E0B; border-color: #F59E0B; }
+  .chip.active[data-match="no_match"] { background: rgba(239,68,68,0.13); color: #EF4444; border-color: #EF4444; }
+  .chip.active[data-status="in_collection"] { background: rgba(96,165,250,0.13); color: #60A5FA; border-color: #60A5FA; }
+  .chip.active[data-status="listed"] { background: rgba(251,191,36,0.13); color: #FBBF24; border-color: #FBBF24; }
+  .chip.active[data-status="sold"] { background: rgba(52,211,153,0.13); color: #34D399; border-color: #34D399; }
 
-  /* Full-width red-tinted banner shown while a scan is in flight, instead
-     of a spinner buried in the list. */
+  #basePrompt {
+    margin-bottom: 20px; padding: 14px 16px; border-radius: 12px;
+    background: var(--md-sys-color-surface-container);
+    border: 1px solid var(--md-sys-color-outline-variant);
+    color: var(--md-sys-color-on-surface-variant);
+    font-size: 13px;
+  }
+  #baseBtn { display: none; width: 100%; margin-bottom: 8px; }
+  #baseBtn.show { display: inline-flex; }
+  #skipSecondBtn { display: none; width: 100%; margin-bottom: 24px; }
+  #skipSecondBtn.show { display: inline-flex; }
+
   #scanningBanner {
-    display: none;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 16px;
-    margin-bottom: 10px;
-    border-radius: 12px;
-    background: rgba(255,69,0,0.10);
-    border: 1px solid rgba(255,69,0,0.25);
-    color: var(--md-sys-color-primary);
-    font-size: 14px;
+    display: none; align-items: center; gap: 12px;
+    padding: 12px 16px; margin-bottom: 10px; border-radius: 12px;
+    background: rgba(255,69,0,0.10); border: 1px solid rgba(255,69,0,0.25);
+    color: var(--md-sys-color-primary); font-size: 14px;
   }
   #scanningBanner.show { display: flex; }
-  #scanningBanner md-circular-progress { --md-circular-progress-active-indicator-color: var(--md-sys-color-primary); }
 
-  /* Primary scan action. Deliberately NOT position:fixed - fixed positioning
-     combined with mobile browser dynamic toolbars (and, on wide desktop
-     windows, a centered narrow content column) is a well-known source of
-     "element ends up somewhere unexpected" bugs that are hard to diagnose
-     without the exact device/browser in hand. Inline placement is simple
-     and correct everywhere, which matters more here than chasing the
-     floating-FAB convention. */
-  #captureFab {
+  /* ---- Fixed FAB stack (bottom-right, stays aligned with the centered
+     480px column even on wide viewports via the calc() trick below) ---- */
+  .fab-stack {
+    position: fixed;
+    right: max(20px, calc(50vw - 240px + 20px));
+    bottom: 24px;
+    z-index: 30;
     display: flex;
-    justify-content: center;
-    margin: 4px 0 28px;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 10px;
   }
+  .batch-pill {
+    display: flex; align-items: center; gap: 8px;
+    padding: 10px 18px; border-radius: 9999px;
+    border: 1px solid var(--accent-amber);
+    background: rgba(255,179,0,0.10);
+    color: var(--accent-amber);
+    font-family: var(--font-display); font-weight: 600; font-size: 14px;
+    cursor: pointer;
+  }
+  .batch-pill.active { background: var(--accent-amber); color: #1C1C24; }
+  .batch-pill md-icon { width: 18px; height: 18px; }
   #scanFabBtn {
     --md-fab-container-color: var(--md-sys-color-primary);
     --md-fab-icon-color: #FFFFFF;
@@ -168,72 +163,58 @@
     --md-fab-container-shape: 9999px;
     box-shadow: 0 4px 20px rgba(255,69,0,0.4);
   }
+  #scanFabBtn.batch-active {
+    --md-fab-container-color: var(--accent-amber);
+    box-shadow: 0 4px 20px rgba(255,179,0,0.4);
+  }
   #scanFabBtn:active { transform: scale(0.95); }
 
-  md-list {
-    background: transparent;
-    padding: 0;
-  }
-  /* Filled card, dark surface - no drop shadow. */
-  md-list-item.item-card {
-    border-radius: 16px;
-    margin-bottom: 10px;
-    background: var(--md-sys-color-surface-container);
-    border: 1px solid var(--md-sys-color-outline-variant);
+  /* ---- List rows - a plain divided list, NOT individual cards --------- */
+  #results { margin: 0; }
+  .item-row {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 16px 4px;
+    border-bottom: 1px solid var(--md-sys-color-outline-variant);
+    touch-action: pan-y;
     cursor: pointer;
+    user-select: none;
   }
-  md-list-item.item-card.selected {
-    background: rgba(255,69,0,0.07);
-  }
-  md-list-item.item-card [slot="headline"] {
-    overflow: hidden;
-    text-overflow: ellipsis;
-    white-space: nowrap;
-    font-family: var(--font-display);
-    font-weight: 600;
-    font-size: 15px;
-  }
-  md-list-item.item-card [slot="supporting-text"] {
-    font-family: var(--font-body);
-    color: var(--md-sys-color-on-surface-variant);
-  }
+  .item-row:last-child { border-bottom: none; }
+  .item-row.selected { background: rgba(255,69,0,0.07); border-radius: 10px; }
+  .item-row:active { opacity: 0.85; }
 
   .thumb-wrap { position: relative; width: 52px; height: 52px; flex: none; }
   .thumb, .thumb-placeholder {
-    width: 52px;
-    height: 52px;
-    border-radius: 10px;
-    object-fit: cover;
-    display: flex;
+    width: 52px; height: 52px; border-radius: 10px; object-fit: cover; display: flex;
   }
-  .thumb-placeholder {
-    background: linear-gradient(135deg, #7A1F3D, #B0264F);
-    color: rgba(255,255,255,0.5);
-    align-items: center;
-    justify-content: center;
-  }
+  .thumb-placeholder { align-items: center; justify-content: center; }
   .thumb-placeholder md-icon { width: 22px; height: 22px; }
   .select-checkbox {
-    position: absolute;
-    top: -6px;
-    left: -6px;
-    background: var(--md-sys-color-surface);
-    border-radius: 50%;
+    position: absolute; top: -6px; left: -6px;
+    background: var(--md-sys-color-surface); border-radius: 50%;
   }
 
-  .end-stack {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-    gap: 4px;
+  .item-row-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 5px; }
+  .item-row-name {
+    font-family: var(--font-display); font-weight: 600; font-size: 15px; color: var(--md-sys-color-on-surface);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
-  .pill-row { display: flex; align-items: center; gap: 4px; }
+  .item-row-subtitle {
+    font-family: var(--font-body); font-size: 13px; color: var(--md-sys-color-on-surface-variant);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  }
+  .item-row-end { flex: none; display: flex; flex-direction: column; align-items: flex-end; gap: 6px; }
+  .price-line { display: flex; align-items: baseline; gap: 6px; }
+  .price-text { font-family: var(--font-mono); font-size: 15px; font-weight: 500; color: var(--md-sys-color-on-surface); }
+  .profit-text { font-family: var(--font-mono); font-size: 12px; }
+  .profit-text.profit-high { color: #22C55E; }
+  .profit-text.profit-low { color: #F59E0B; }
+  .profit-text.profit-negative { color: #EF4444; }
+
   .status-pill, .tracking-pill {
-    font-family: var(--font-mono);
-    font-size: 10.5px;
-    padding: 2px 8px;
-    border-radius: 9999px;
-    white-space: nowrap;
+    font-family: var(--font-mono); font-size: 10.5px; padding: 2px 8px; border-radius: 9999px; white-space: nowrap;
   }
   .status-pill.confirmed { background: rgba(34,197,94,0.13); color: #22C55E; }
   .status-pill.needs_review { background: rgba(245,158,11,0.13); color: #F59E0B; }
@@ -241,121 +222,57 @@
   .tracking-pill.in_collection { background: rgba(96,165,250,0.13); color: #60A5FA; }
   .tracking-pill.listed { background: rgba(251,191,36,0.13); color: #FBBF24; }
   .tracking-pill.sold { background: rgba(52,211,153,0.13); color: #34D399; }
-  .price-text {
-    font-family: var(--font-mono);
-    font-size: 13px;
-    color: var(--md-sys-color-on-surface);
-  }
-  .price-range-text {
-    font-family: var(--font-mono);
-    font-size: 11px;
-    color: var(--md-sys-color-on-surface-variant);
-  }
 
-  #emptyState {
-    text-align: center;
-    padding: 56px 16px;
-    color: var(--md-sys-color-on-surface-variant);
+  #emptyState, #filteredEmptyState {
+    text-align: center; padding: 56px 16px; color: var(--md-sys-color-on-surface-variant);
   }
   #emptyState md-icon { width: 40px; height: 40px; margin-bottom: 12px; }
+  #filteredEmptyState a { color: var(--md-sys-color-error); cursor: pointer; text-decoration: underline; }
 
   md-icon svg { width: 1em; height: 1em; fill: currentColor; display: block; }
 
-  #statusDialogContent, #exportDialogContent { max-width: 400px; }
   .status-section { margin-bottom: 16px; }
-  .status-section h3 { font: var(--md-sys-typescale-title-small-font); margin: 0 0 6px; }
+  .status-section h3 { font: var(--md-sys-typescale-title-small-font); margin: 0 0 6px; font-family: var(--font-body); }
   .coverage-row {
-    display: flex; justify-content: space-between;
-    font: var(--md-sys-typescale-body-small-font);
-    padding: 2px 0;
-    color: var(--md-sys-color-on-surface-variant);
+    display: flex; justify-content: space-between; font-size: 13px;
+    padding: 2px 0; color: var(--md-sys-color-on-surface-variant);
   }
   .status-ok { color: #22C55E; }
   .status-warn { color: var(--md-sys-color-error); }
 
-  /* ---- Detail view ---------------------------------------------------- */
+  /* ---- Detail view ------------------------------------------------------ */
   #detailView { display: none; }
   .detail-photos { display: flex; gap: 8px; margin-bottom: 24px; }
   .photo-slot {
-    flex: 1;
-    min-width: 0;
-    aspect-ratio: 3 / 4;
-    border-radius: 16px;
-    overflow: hidden;
-    background: var(--md-sys-color-surface-container-low);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+    flex: 1; min-width: 0; aspect-ratio: 3 / 4; border-radius: 16px; overflow: hidden;
+    background: var(--md-sys-color-surface-container);
+    display: flex; align-items: center; justify-content: center; position: relative;
   }
-  .photo-slot img { width: 100%; height: 100%; object-fit: cover; }
+  .photo-slot img { width: 100%; height: 100%; object-fit: cover; cursor: zoom-in; }
   .photo-slot-empty md-icon { width: 40px; height: 40px; color: var(--md-sys-color-on-surface-variant); opacity: 0.4; }
-  .photo-slot-add {
-    flex-direction: column;
-    gap: 10px;
-    background: transparent;
-    border: 1px dashed var(--md-sys-color-outline-variant);
-    cursor: pointer;
-  }
+  .photo-slot-add { flex-direction: column; gap: 10px; background: transparent; border: 1px dashed var(--md-sys-color-outline-variant); cursor: pointer; }
   .photo-slot-add-icon {
-    width: 40px; height: 40px; border-radius: 50%;
-    background: rgba(255,69,0,0.15);
-    display: flex; align-items: center; justify-content: center;
-    color: var(--md-sys-color-primary);
+    width: 40px; height: 40px; border-radius: 50%; background: rgba(255,69,0,0.15);
+    display: flex; align-items: center; justify-content: center; color: var(--md-sys-color-primary);
   }
   .photo-slot-add-icon md-icon { width: 20px; height: 20px; }
-  .photo-slot-add span {
-    font-family: var(--font-body);
-    font-size: 13px;
-    color: var(--md-sys-color-on-surface-variant);
-    text-align: center;
-    padding: 0 10px;
-  }
+  .photo-slot-add span { font-family: var(--font-body); font-size: 13px; color: var(--md-sys-color-on-surface-variant); text-align: center; padding: 0 10px; }
 
-  .detail-section-header {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    margin: 0 0 10px;
-  }
+  .detail-section-header { display: flex; align-items: center; gap: 8px; margin: 0 0 10px; }
   .detail-section-header md-icon { width: 16px; height: 16px; color: var(--md-sys-color-primary); }
   .detail-section-header h3 {
-    font-family: var(--font-mono);
-    text-transform: uppercase;
-    letter-spacing: 0.08em;
-    font-size: 11px;
-    color: var(--md-sys-color-on-surface-variant);
-    margin: 0;
+    font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em;
+    font-size: 11px; color: var(--md-sys-color-on-surface-variant); margin: 0;
   }
   .detail-card {
     background: var(--md-sys-color-surface-container);
     border: 1px solid var(--md-sys-color-outline-variant);
-    border-radius: 16px;
-    overflow: hidden;
-    margin-bottom: 24px;
+    border-radius: 16px; overflow: hidden; margin-bottom: 24px;
   }
-  .field-row {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    padding: 12px 16px;
-    border-bottom: 1px solid var(--md-sys-color-outline-variant);
-  }
+  .field-row { display: flex; align-items: center; gap: 12px; padding: 12px 16px; border-bottom: 1px solid var(--md-sys-color-outline-variant); }
   .field-row:last-child { border-bottom: none; }
-  .field-row .field-label {
-    width: 132px;
-    flex: none;
-    font-family: var(--font-body);
-    font-size: 13px;
-    color: var(--md-sys-color-on-surface-variant);
-  }
-  .field-row .field-value {
-    flex: 1;
-    min-width: 0;
-    font-family: var(--font-body);
-    font-size: 14px;
-    text-align: right;
-  }
+  .field-row .field-label { width: 132px; flex: none; font-family: var(--font-body); font-size: 13px; color: var(--md-sys-color-on-surface-variant); }
+  .field-row .field-value { flex: 1; min-width: 0; font-family: var(--font-body); font-size: 14px; text-align: right; }
   .field-row .field-value.mono { font-family: var(--font-mono); }
   .field-row .field-value-wrap { flex: 1; min-width: 0; }
 
@@ -377,28 +294,58 @@
   }
   .row-input[data-mono="true"] { --md-filled-text-field-input-text-font: var(--font-mono); }
 
-  .detail-summary-text {
-    font-family: var(--font-body);
-    font-size: 12.5px;
-    color: var(--md-sys-color-on-surface-variant);
-    margin: 10px 16px 0;
-  }
+  .detail-summary-text { font-family: var(--font-body); font-size: 12.5px; color: var(--md-sys-color-on-surface-variant); margin: 10px 16px; }
+  .detail-summary-text.stale { color: var(--accent-amber); }
 
   .status-toggle { display: flex; gap: 8px; padding: 14px 16px; }
   .status-toggle-btn {
-    flex: 1;
-    padding: 8px 4px;
-    border-radius: 9999px;
-    border: 1px solid var(--md-sys-color-outline-variant);
-    background: transparent;
-    color: var(--md-sys-color-on-surface-variant);
-    font-family: var(--font-mono);
-    font-size: 11px;
-    cursor: pointer;
+    flex: 1; padding: 8px 4px; border-radius: 9999px; border: 1px solid var(--md-sys-color-outline-variant);
+    background: transparent; color: var(--md-sys-color-on-surface-variant);
+    font-family: var(--font-mono); font-size: 11px; cursor: pointer;
   }
   .status-toggle-btn.active[data-value="in_collection"] { background: rgba(96,165,250,0.13); color: #60A5FA; border-color: #60A5FA; }
   .status-toggle-btn.active[data-value="listed"] { background: rgba(251,191,36,0.13); color: #FBBF24; border-color: #FBBF24; }
   .status-toggle-btn.active[data-value="sold"] { background: rgba(52,211,153,0.13); color: #34D399; border-color: #34D399; }
+
+  /* ---- Lightbox ---------------------------------------------------------- */
+  .lightbox-scrim {
+    display: none; position: fixed; inset: 0; z-index: 60;
+    background: rgba(0,0,0,0.92); align-items: center; justify-content: center;
+    touch-action: none;
+  }
+  .lightbox-scrim.show { display: flex; }
+  #lightboxImg { max-width: 92vw; max-height: 92vh; touch-action: none; transform-origin: center center; }
+
+  /* ---- Bottom sheets (hand-built - @material/web has no sheet
+     component) ----------------------------------------------------------- */
+  .sheet-scrim {
+    display: none; position: fixed; inset: 0; z-index: 40;
+    background: rgba(0,0,0,0.55);
+  }
+  .sheet-scrim.show { display: block; }
+  .sheet {
+    position: fixed; left: 0; right: 0; bottom: 0; z-index: 41;
+    max-width: 480px; margin-inline: auto;
+    background: #1C1C24;
+    border-radius: 24px 24px 0 0;
+    padding: 12px 20px 24px;
+    box-sizing: border-box;
+    max-height: 85vh;
+    overflow-y: auto;
+    transform: translateY(100%);
+    transition: transform 0.25s ease;
+  }
+  .sheet.show { transform: translateY(0); }
+  .sheet-handle { width: 36px; height: 4px; border-radius: 999px; background: var(--md-sys-color-outline-variant); margin: 0 auto 16px; }
+  .sheet-headline { font-family: var(--font-display); font-weight: 700; font-size: 18px; margin: 0 0 10px; }
+  .sheet-content { font-family: var(--font-body); font-size: 14px; color: var(--md-sys-color-on-surface-variant); }
+  .sheet-actions { display: flex; gap: 12px; margin-top: 20px; }
+  .sheet-actions md-text-button, .sheet-actions md-filled-button { flex: 1; }
+
+  .scan-confirm-thumb { width: 64px; height: 64px; border-radius: 12px; object-fit: cover; flex: none; }
+  .scan-confirm-row { display: flex; gap: 14px; align-items: center; margin-bottom: 14px; }
+  .scan-confirm-name { font-family: var(--font-display); font-weight: 600; font-size: 16px; color: var(--md-sys-color-on-surface); }
+  .scan-confirm-meta { font-family: var(--font-body); font-size: 13px; color: var(--md-sys-color-on-surface-variant); margin-top: 2px; }
 </style>
 </head>
 <body>
@@ -414,7 +361,7 @@
         <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M222-200 80-342l56-56 85 85 170-170 56 57-225 226Zm0-320L80-662l56-56 85 85 170-170 56 57-225 226Zm298 240v-80h360v80H520Zm0-320v-80h360v80H520Z"/></svg></md-icon>
       </md-icon-button>
       <md-icon-button id="sortBtn" aria-label="Sort">
-        <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M120-240v-80h240v80H120Zm0-200v-80h480v80H120Zm0-200v-80h720v80H120Z"/></svg></md-icon>
+        <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-120v-240h80v80h320v80H520v80h-80Zm-320-80v-80h240v80H120Zm160-160v-80H120v-80h160v-80h80v240h-80Zm160-80v-80h400v80H440Zm160-160v-240h80v80h160v80H680v80h-80Zm-480-80v-80h400v80H120Z"/></svg></md-icon>
       </md-icon-button>
       <md-menu id="sortMenu" anchor="sortBtn">
         <md-menu-item data-sort="casting_name"><div slot="headline">Model<span class="sort-dir"></span></div></md-menu-item>
@@ -424,7 +371,7 @@
         <md-menu-item data-sort="series"><div slot="headline">Theme<span class="sort-dir"></span></div></md-menu-item>
       </md-menu>
       <md-icon-button id="statusBtn" aria-label="Diagnostics">
-        <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-280h80v-240h-80v240Zm40-320q17 0 28.5-11.5T520-640q0-17-11.5-28.5T480-680q-17 0-28.5 11.5T440-640q0 17 11.5 28.5T480-600Zm0 520q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg></md-icon>
+        <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M80-600v-120q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v120h-80v-120H160v120H80Zm80 440q-33 0-56.5-23.5T80-240v-120h80v120h640v-120h80v120q0 33-23.5 56.5T800-160H160Zm240-120q11 0 21-5.5t15-16.5l124-248 44 88q5 11 15 16.5t21 5.5h240v-80H665l-69-138q-5-11-15-15.5t-21-4.5q-11 0-21 4.5T524-658L400-410l-44-88q-5-11-15-16.5t-21-5.5H80v80h215l69 138q5 11 15 16.5t21 5.5Zm80-200Z"/></svg></md-icon>
       </md-icon-button>
       <md-icon-button id="exportBtn" aria-label="Export inventory as JSON">
         <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-320 280-520l56-58 104 104v-326h80v326l104-104 56 58-200 200ZM240-160q-33 0-56.5-23.5T160-240v-120h80v120h480v-120h80v120q0 33-23.5 56.5T720-160H240Z"/></svg></md-icon>
@@ -459,10 +406,6 @@
   </div>
 
   <div id="listView">
-    <p class="md-typescale-body-medium" style="color:var(--md-sys-color-on-surface-variant); margin-top:0; font-family:var(--font-body);">
-      Snap a card or a loose car — it's extracted and checked against the reference database automatically.
-    </p>
-
     <md-tabs id="packagingTabs">
       <md-primary-tab id="cardedTab" active inline-icon>
         <md-icon slot="icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m159-168-34-14q-31-13-41.5-45t3.5-63l72-156v278Zm160 88q-33 0-56.5-23.5T239-160v-240l106 294q3 7 6 13.5t8 12.5h-40Zm206-4q-32 12-62-3t-42-47L243-622q-12-32 2-62.5t46-41.5l302-110q32-12 62 3t42 47l178 488q12 32-2 62.5T827-194L525-84Zm-86-476q17 0 28.5-11.5T479-600q0-17-11.5-28.5T439-640q-17 0-28.5 11.5T399-600q0 17 11.5 28.5T439-560Zm58 400 302-110-178-490-302 110 178 490ZM319-650l302-110-302 110Z"/></svg></md-icon>
@@ -474,16 +417,26 @@
       </md-primary-tab>
     </md-tabs>
 
-    <p id="basePrompt" class="md-typescale-body-small" style="display:none;"></p>
+    <div class="filter-bar">
+      <div class="filter-scroll">
+        <button class="chip match-chip active" data-match="">All</button>
+        <button class="chip match-chip" data-match="confirmed">Confirmed</button>
+        <button class="chip match-chip" data-match="needs_review">Review</button>
+        <button class="chip match-chip" data-match="no_match">No match</button>
+        <span class="filter-divider"></span>
+        <button class="chip status-chip" data-status="in_collection">Collection</button>
+        <button class="chip status-chip" data-status="listed">Listed</button>
+        <button class="chip status-chip" data-status="sold">Sold</button>
+      </div>
+    </div>
 
+    <p id="basePrompt" class="md-typescale-body-small" style="display:none;"></p>
     <md-outlined-button id="baseBtn">
       <md-icon slot="icon" id="baseBtnIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-143 0-253-90T88-400h82q28 106 114 173t196 67q86 0 160-42.5T756-320H640v-80h240v240h-80v-80q-57 76-141 118T480-80Zm0-280q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-560v-240h80v80q57-76 141-118t179-42q143 0 253 90t139 230h-82q-28-106-114-173t-196-67q-86 0-160 42.5T204-640h116v80H80Z"/></svg></md-icon>
       <span id="baseBtnLabel">Add base/underside photo</span>
     </md-outlined-button>
     <input type="file" id="baseInput" accept="image/*" capture="environment" hidden>
-
     <md-text-button id="skipSecondBtn">Scan without this photo</md-text-button>
-
     <input type="file" id="cameraInput" accept="image/*" capture="environment" hidden>
 
     <div id="scanningBanner">
@@ -491,17 +444,15 @@
       <span>Scanning car…</span>
     </div>
 
-    <div id="captureFab">
-      <md-fab id="scanFabBtn" variant="primary" label="Scan a car">
-        <md-icon slot="icon" id="scanFabIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg></md-icon>
-      </md-fab>
-    </div>
-
-    <md-list id="results"></md-list>
+    <div id="results"></div>
 
     <div id="emptyState">
       <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M200-80q-33 0-56.5-23.5T120-160v-451q-18-11-29-28.5T80-680v-120q0-33 23.5-56.5T160-880h640q33 0 56.5 23.5T880-800v120q0 23-11 40.5T840-611v451q0 33-23.5 56.5T760-80H200Zm0-520v440h560v-440H200Zm-40-80h640v-120H160v120Zm200 280h240v-80H360v80Zm120 20Z"/></svg></md-icon>
       <p class="md-typescale-body-medium">Nothing scanned yet</p>
+    </div>
+    <div id="filteredEmptyState" style="display:none">
+      <p class="md-typescale-body-medium">No items match this filter.</p>
+      <a id="clearFiltersLink">Clear filters</a>
     </div>
   </div>
 
@@ -553,43 +504,72 @@
     </div>
   </div>
 
-  <md-dialog id="errorDialog">
-    <div slot="headline">Scan didn't go through</div>
-    <div slot="content" id="errorDialogContent" class="md-typescale-body-medium"></div>
-    <div slot="actions">
-      <md-text-button id="errorDialogClose">Close</md-text-button>
-    </div>
-  </md-dialog>
+  <div class="fab-stack">
+    <button type="button" class="batch-pill" id="batchToggleBtn">
+      <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-118 120-398l66-50 294 228 294-228 66 50-360 280Zm0-202L120-600l360-280 360 280-360 280Zm0-280Zm0 178 230-178-230-178-230 178 230 178Z"/></svg></md-icon>
+      <span id="batchToggleLabel">Batch</span>
+    </button>
+    <md-fab id="scanFabBtn" variant="primary" label="Scan a car">
+      <md-icon slot="icon" id="scanFabIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg></md-icon>
+    </md-fab>
+  </div>
 
-  <md-dialog id="statusDialog">
-    <div slot="headline">Pipeline status</div>
-    <div slot="content" id="statusDialogContent" class="md-typescale-body-medium">Loading…</div>
-    <div slot="actions">
-      <md-text-button id="testLiveSearchBtn">Test live search (uses 1 real search)</md-text-button>
-      <md-text-button id="statusDialogClose">Close</md-text-button>
-    </div>
-  </md-dialog>
+  <div class="lightbox-scrim" id="lightboxScrim">
+    <img id="lightboxImg" alt="">
+  </div>
 
-  <md-dialog id="bulkDeleteDialog">
-    <div slot="headline">Delete items?</div>
-    <div slot="content" id="bulkDeleteDialogContent" class="md-typescale-body-medium"></div>
-    <div slot="actions">
-      <md-text-button id="bulkDeleteCancel">Cancel</md-text-button>
-      <md-filled-button id="bulkDeleteConfirm">Delete</md-filled-button>
-    </div>
-  </md-dialog>
+  <!-- ---- Bottom sheets ---- -->
+  <div class="sheet-scrim" id="errorScrim"></div>
+  <div class="sheet" id="errorSheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-headline">Scan didn't go through</div>
+    <div class="sheet-content" id="errorSheetContent"></div>
+    <div class="sheet-actions"><md-filled-button id="errorSheetClose">Close</md-filled-button></div>
+  </div>
 
-  <md-dialog id="detailDeleteDialog">
-    <div slot="headline">Delete this item?</div>
-    <div slot="content" class="md-typescale-body-medium">This removes it and its photos permanently.</div>
-    <div slot="actions">
-      <md-text-button id="detailDeleteCancel">Cancel</md-text-button>
-      <md-filled-button id="detailDeleteConfirm">Delete</md-filled-button>
+  <div class="sheet-scrim" id="statusScrim"></div>
+  <div class="sheet" id="statusSheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-headline">Pipeline status</div>
+    <div class="sheet-content" id="statusSheetContent">Loading…</div>
+    <div class="sheet-actions">
+      <md-text-button id="testLiveSearchBtn">Test live search</md-text-button>
+      <md-filled-button id="statusSheetClose">Close</md-filled-button>
     </div>
-  </md-dialog>
+  </div>
+
+  <div class="sheet-scrim" id="deleteScrim"></div>
+  <div class="sheet" id="deleteSheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-headline">Delete?</div>
+    <div class="sheet-content" id="deleteSheetContent"></div>
+    <div class="sheet-actions">
+      <md-text-button id="deleteSheetCancel">Cancel</md-text-button>
+      <md-filled-button id="deleteSheetConfirm" style="--md-filled-button-container-color: var(--md-sys-color-error);">Delete</md-filled-button>
+    </div>
+  </div>
+
+  <div class="sheet-scrim" id="scanConfirmScrim"></div>
+  <div class="sheet" id="scanConfirmSheet">
+    <div class="sheet-handle"></div>
+    <div class="scan-confirm-row">
+      <img class="scan-confirm-thumb" id="scanConfirmThumb" alt="">
+      <div>
+        <div class="scan-confirm-name" id="scanConfirmName"></div>
+        <div class="scan-confirm-meta" id="scanConfirmMeta"></div>
+      </div>
+    </div>
+    <div id="scanConfirmMatch"></div>
+    <div class="sheet-actions">
+      <md-text-button id="scanConfirmReject">Reject</md-text-button>
+      <md-filled-button id="scanConfirmAdd">Add to collection</md-filled-button>
+    </div>
+  </div>
 
   <script type="module">
-    // ---- Element refs -----------------------------------------------------
+    // ================================================================
+    // Element refs
+    // ================================================================
     const topAppBar = document.getElementById('topAppBar');
     const backBtn = document.getElementById('backBtn');
     const appBarTitle = document.getElementById('appBarTitle');
@@ -614,6 +594,8 @@
     const detailPhotoInput = document.getElementById('detailPhotoInput');
     const results = document.getElementById('results');
     const emptyState = document.getElementById('emptyState');
+    const filteredEmptyState = document.getElementById('filteredEmptyState');
+    const clearFiltersLink = document.getElementById('clearFiltersLink');
     const packagingTabs = document.getElementById('packagingTabs');
     const basePrompt = document.getElementById('basePrompt');
     const baseBtn = document.getElementById('baseBtn');
@@ -623,25 +605,13 @@
     const scanningBanner = document.getElementById('scanningBanner');
     const captureFab = document.getElementById('scanFabBtn');
     const scanFabIcon = document.getElementById('scanFabIcon');
-    const errorDialog = document.getElementById('errorDialog');
-    const errorDialogContent = document.getElementById('errorDialogContent');
-    const errorDialogClose = document.getElementById('errorDialogClose');
+    const batchToggleBtn = document.getElementById('batchToggleBtn');
+    const batchToggleLabel = document.getElementById('batchToggleLabel');
 
     const statusBtn = document.getElementById('statusBtn');
     const exportBtn = document.getElementById('exportBtn');
-    const statusDialog = document.getElementById('statusDialog');
-    const statusDialogContent = document.getElementById('statusDialogContent');
-    const statusDialogClose = document.getElementById('statusDialogClose');
+    const statusSheetContent = document.getElementById('statusSheetContent');
     const testLiveSearchBtn = document.getElementById('testLiveSearchBtn');
-
-    const bulkDeleteDialog = document.getElementById('bulkDeleteDialog');
-    const bulkDeleteDialogContent = document.getElementById('bulkDeleteDialogContent');
-    const bulkDeleteCancel = document.getElementById('bulkDeleteCancel');
-    const bulkDeleteConfirm = document.getElementById('bulkDeleteConfirm');
-
-    const detailDeleteDialog = document.getElementById('detailDeleteDialog');
-    const detailDeleteCancel = document.getElementById('detailDeleteCancel');
-    const detailDeleteConfirm = document.getElementById('detailDeleteConfirm');
 
     const detailPhotos = document.getElementById('detailPhotos');
     const detBrand = document.getElementById('detBrand');
@@ -660,6 +630,9 @@
     const detListingPrice = document.getElementById('detListingPrice');
     const detSoldPrice = document.getElementById('detSoldPrice');
 
+    const lightboxScrim = document.getElementById('lightboxScrim');
+    const lightboxImg = document.getElementById('lightboxImg');
+
     const ICON_FLIP_CAMERA = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-143 0-253-90T88-400h82q28 106 114 173t196 67q86 0 160-42.5T756-320H640v-80h240v240h-80v-80q-57 76-141 118T480-80Zm0-280q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-560v-240h80v80q57-76 141-118t179-42q143 0 253 90t139 230h-82q-28-106-114-173t-196-67q-86 0-160 42.5T204-640h116v80H80Z"/></svg>';
     const ICON_CHECK_CIRCLE = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>';
     const ICON_CAR_PLACEHOLDER = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h440q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z"/></svg>';
@@ -668,39 +641,78 @@
     let packagingType = 'carded';
     let pendingMainPhoto = null;
     let pendingBasePhoto = null;
-    let isScanning = false;
+    let batchMode = false;
+    let batchCount = 0;
 
-    // ---- State model --------------------------------------------------
-    // Single source of truth for everything in the list/detail views - the
-    // old version of this app appended DOM nodes directly as data arrived
-    // and never held a re-sortable/re-filterable array. Sort and
-    // multi-select both need one.
+    // ================================================================
+    // State model
+    // ================================================================
     let allItems = [];
     let selectMode = false;
     let selectedIds = new Set();
     let sortKey = 'created_at';
     let sortDir = 'desc';
+    let matchFilter = null;   // null | 'confirmed' | 'needs_review' | 'no_match'
+    let statusFilter = null;  // null | 'in_collection' | 'listed' | 'sold'
 
-    errorDialogClose.addEventListener('click', () => errorDialog.close());
-    statusDialogClose.addEventListener('click', () => statusDialog.close());
-
-    function showError(message) {
-      errorDialogContent.textContent = message;
-      errorDialog.show();
+    // ================================================================
+    // Bottom sheet helper (generic - @material/web has no sheet
+    // component, so this is a hand-built scrim+sheet pair with a
+    // slide-up transition, reused for every confirmation/dialog in
+    // the app rather than mixing sheets with md-dialog).
+    // ================================================================
+    function openSheet(sheet, scrim) {
+      scrim.classList.add('show');
+      requestAnimationFrame(() => sheet.classList.add('show'));
+    }
+    function closeSheet(sheet, scrim) {
+      sheet.classList.remove('show');
+      setTimeout(() => scrim.classList.remove('show'), 250);
     }
 
-    // ---- Capture flow ---------------------------------------------------
-    // The packaging tabs now do double duty: they pick which packaging a
-    // new scan is captured as, AND filter the list to that packaging type
-    // (see sortedItems()) - one control, two purposes, since it's the same
-    // screen either way.
+    const errorScrim = document.getElementById('errorScrim');
+    const errorSheet = document.getElementById('errorSheet');
+    const errorSheetContent = document.getElementById('errorSheetContent');
+    document.getElementById('errorSheetClose').addEventListener('click', () => closeSheet(errorSheet, errorScrim));
+    errorScrim.addEventListener('click', () => closeSheet(errorSheet, errorScrim));
+    function showError(message) {
+      errorSheetContent.textContent = message;
+      openSheet(errorSheet, errorScrim);
+    }
+
+    const statusScrim = document.getElementById('statusScrim');
+    const statusSheet = document.getElementById('statusSheet');
+    document.getElementById('statusSheetClose').addEventListener('click', () => closeSheet(statusSheet, statusScrim));
+    statusScrim.addEventListener('click', () => closeSheet(statusSheet, statusScrim));
+
+    const deleteScrim = document.getElementById('deleteScrim');
+    const deleteSheet = document.getElementById('deleteSheet');
+    const deleteSheetContent = document.getElementById('deleteSheetContent');
+    const deleteSheetConfirm = document.getElementById('deleteSheetConfirm');
+    let pendingDeleteAction = null;
+    function openDeleteConfirm(message, onConfirm) {
+      deleteSheetContent.textContent = message;
+      pendingDeleteAction = onConfirm;
+      openSheet(deleteSheet, deleteScrim);
+    }
+    document.getElementById('deleteSheetCancel').addEventListener('click', () => closeSheet(deleteSheet, deleteScrim));
+    deleteScrim.addEventListener('click', () => closeSheet(deleteSheet, deleteScrim));
+    deleteSheetConfirm.addEventListener('click', () => {
+      closeSheet(deleteSheet, deleteScrim);
+      if (pendingDeleteAction) pendingDeleteAction();
+      pendingDeleteAction = null;
+    });
+
+    // ================================================================
+    // Capture flow
+    // ================================================================
+    // The packaging tabs do double duty: they pick which packaging a new
+    // scan is captured as, AND filter the list to that packaging type
+    // (see sortedItems()) - one control, two purposes.
     //
     // The second-photo step means different things per packaging type: for
-    // loose cars it's the base/underside stamp (casting name + year); for
-    // carded cars it's the back of the card, which usually has the sku/
-    // Toy # code - a much more reliable identifier than the casting name
-    // alone (see match.py's exact-SKU lookup). Same UI elements, different
-    // copy, both optional - `skipSecondBtn` scans with just the main photo.
+    // loose cars it's the base/underside stamp; for carded cars it's the
+    // back of the card, which usually has the sku/Toy # code.
     function resetBaseBtn() {
       baseBtnIcon.innerHTML = ICON_FLIP_CAMERA;
       if (packagingType === 'loose') {
@@ -715,14 +727,12 @@
         baseBtnLabel.textContent = 'Add back-of-card photo';
       }
     }
-
     function updateSecondPhotoVisibility() {
       const active = packagingType === 'loose' || !!pendingMainPhoto;
       basePrompt.style.display = active ? 'block' : 'none';
       baseBtn.classList.toggle('show', active);
       skipSecondBtn.classList.toggle('show', active && !!pendingMainPhoto);
     }
-
     function setPackaging(type) {
       packagingType = type;
       pendingMainPhoto = null;
@@ -735,19 +745,56 @@
       setPackaging(e.target.activeTabIndex === 1 ? 'loose' : 'carded');
     });
 
-    // The FAB's own icon swaps to a spinner while scanning - kept as a
-    // separate constant so it can be reverted exactly afterward.
     const ICON_CAMERA = scanFabIcon.innerHTML;
     const ICON_FAB_SPINNER = '<md-circular-progress indeterminate style="--md-circular-progress-size:20px; --md-circular-progress-active-indicator-color:#fff;"></md-circular-progress>';
-
     function setScanning(scanning) {
-      isScanning = scanning;
       captureFab.disabled = scanning;
       scanningBanner.classList.toggle('show', scanning);
       scanFabIcon.innerHTML = scanning ? ICON_FAB_SPINNER : ICON_CAMERA;
     }
 
-    captureFab.addEventListener('click', () => cameraInput.click());
+    function updateBatchUi() {
+      batchToggleBtn.classList.toggle('active', batchMode);
+      batchToggleBtn.style.display = batchMode ? 'none' : 'flex';
+      captureFab.classList.toggle('batch-active', batchMode);
+      captureFab.label = batchMode ? `Stop batch (${batchCount})` : 'Scan a car';
+    }
+    batchToggleBtn.addEventListener('click', () => {
+      batchMode = true;
+      batchCount = 0;
+      updateBatchUi();
+    });
+    // While batch mode is active, the small pill is hidden (see
+    // updateBatchUi) - stopping happens via a press-and-hold on the main
+    // FAB, since the FAB's primary tap is reserved for "take the next
+    // photo" (a native camera capture can't be scripted/looped
+    // automatically, so batch mode still means one manual tap per car,
+    // just without the confirmation sheet in between).
+    let batchStopTimer = null;
+    let batchJustStopped = false;
+    captureFab.addEventListener('pointerdown', () => {
+      if (!batchMode) return;
+      batchStopTimer = setTimeout(() => {
+        batchMode = false;
+        updateBatchUi();
+        batchStopTimer = null;
+        batchJustStopped = true; // suppress the click that follows this same press
+      }, 600);
+    });
+    function cancelBatchStopTimer() {
+      if (batchStopTimer) { clearTimeout(batchStopTimer); batchStopTimer = null; }
+    }
+    captureFab.addEventListener('pointerup', cancelBatchStopTimer);
+    captureFab.addEventListener('pointercancel', cancelBatchStopTimer);
+
+    captureFab.addEventListener('click', () => {
+      // The stop-batch timeout clears batchStopTimer itself right before
+      // this click fires (click follows pointerup), so checking the timer
+      // variable here would already read null - a separate flag is needed
+      // to actually suppress the click that ends the same long-press.
+      if (batchJustStopped) { batchJustStopped = false; return; }
+      cameraInput.click();
+    });
     baseBtn.addEventListener('click', () => baseInput.click());
     skipSecondBtn.addEventListener('click', () => submitScan());
 
@@ -779,6 +826,7 @@
       formData.append('packaging_type', packagingType);
       if (pendingBasePhoto) formData.append('base_photo', pendingBasePhoto);
 
+      let newItem = null, errMsg = null;
       try {
         const resp = await fetch('/scan', { method: 'POST', body: formData });
         let data;
@@ -787,29 +835,86 @@
         } catch {
           throw new Error(`Server sent back something unreadable (status ${resp.status}). Check the server logs on backupbox.`);
         }
-        if (!resp.ok) {
-          throw new Error(data.detail || `Server error (status ${resp.status})`);
-        }
-        allItems.unshift(fromScanResponse(data));
-        renderList();
+        if (!resp.ok) throw new Error(data.detail || `Server error (status ${resp.status})`);
+        newItem = fromScanResponse(data);
       } catch (err) {
-        showError(err.message);
-        if (allItems.length === 0) emptyState.style.display = 'block';
+        errMsg = err.message;
       }
 
       pendingMainPhoto = null;
       pendingBasePhoto = null;
-      setScanning(false);
       resetBaseBtn();
       updateSecondPhotoVisibility();
+
+      if (errMsg) {
+        setScanning(false);
+        showError(errMsg);
+        if (allItems.length === 0) emptyState.style.display = 'block';
+        return;
+      }
+
+      if (batchMode) {
+        // Never shown a confirmation sheet in batch mode - auto-add and
+        // keep the FAB disabled for a beat so the result registers before
+        // the next tap is accepted.
+        allItems.unshift(newItem);
+        renderList();
+        batchCount++;
+        updateBatchUi();
+        scanningBanner.classList.remove('show');
+        scanFabIcon.innerHTML = ICON_CAMERA;
+        captureFab.disabled = true;
+        setTimeout(() => { captureFab.disabled = false; }, 1200);
+      } else {
+        setScanning(false);
+        openScanConfirmSheet(newItem);
+      }
     }
 
-    // ---- Normalizing adapters -------------------------------------------
-    // /scan and GET /inventory return differently-shaped payloads (a fresh
-    // scan's nested {validation, extracted, live_price} vs. a flat DB row).
-    // Both get converted to one common shape so rendering only has to be
-    // written once.
+    // ---- Scan confirmation sheet (never auto-add outside batch mode) ----
+    const scanConfirmScrim = document.getElementById('scanConfirmScrim');
+    const scanConfirmSheet = document.getElementById('scanConfirmSheet');
+    const scanConfirmThumb = document.getElementById('scanConfirmThumb');
+    const scanConfirmName = document.getElementById('scanConfirmName');
+    const scanConfirmMeta = document.getElementById('scanConfirmMeta');
+    const scanConfirmMatch = document.getElementById('scanConfirmMatch');
+    let scanConfirmPendingItem = null;
 
+    function openScanConfirmSheet(item) {
+      scanConfirmPendingItem = item;
+      scanConfirmThumb.src = item.photo_path ? '/' + item.photo_path : '';
+      scanConfirmThumb.style.visibility = item.photo_path ? 'visible' : 'hidden';
+      scanConfirmName.textContent = item.casting_name || 'Unrecognized item';
+      scanConfirmMeta.textContent = [item.brand, item.car_make, item.year].filter(Boolean).join(' · ') || '—';
+      const price = item.live_recommended_price_usd || item.guide_price_usd;
+      scanConfirmMatch.innerHTML =
+        `<span class="status-pill ${item.status}">${MATCH_LABELS[item.status] || 'Unknown'} ${(item.confidence * 100).toFixed(0)}%</span>`
+        + (item.match_notes ? `<p class="detail-summary-text" style="margin-left:0;">${item.match_notes}</p>` : '')
+        + (price ? `<p class="detail-summary-text" style="margin-left:0;">Recommended price: ${money(price)}</p>` : '');
+      openSheet(scanConfirmSheet, scanConfirmScrim);
+    }
+    document.getElementById('scanConfirmReject').addEventListener('click', async () => {
+      closeSheet(scanConfirmSheet, scanConfirmScrim);
+      const item = scanConfirmPendingItem;
+      scanConfirmPendingItem = null;
+      if (!item) return;
+      // /scan already persisted this row (extraction+pricing already
+      // happened, cost already spent) - rejecting just discards it rather
+      // than adding a second "dry run" code path to the backend.
+      try { await fetch(`/inventory/${item.id}`, { method: 'DELETE' }); } catch { /* best effort */ }
+    });
+    document.getElementById('scanConfirmAdd').addEventListener('click', () => {
+      closeSheet(scanConfirmSheet, scanConfirmScrim);
+      const item = scanConfirmPendingItem;
+      scanConfirmPendingItem = null;
+      if (!item) return;
+      allItems.unshift(item);
+      renderList();
+    });
+
+    // ================================================================
+    // Normalizing adapters
+    // ================================================================
     function fromScanResponse(data) {
       const v = data.validation, ex = data.extracted, live = data.live_price || {};
       return {
@@ -833,6 +938,7 @@
         live_price_high_usd: live.price_high_usd,
         live_recommended_price_usd: live.recommended_listing_price_usd,
         live_summary: (!live.skipped) ? live.summary : null,
+        live_price_fetched_at: (!live.skipped && !live.error) ? new Date().toISOString() : null,
         condition: null,
         tracking_status: 'in_collection',
         cost_basis_usd: null,
@@ -863,6 +969,7 @@
         live_price_high_usd: row.live_price_high_usd,
         live_recommended_price_usd: row.live_recommended_price_usd,
         live_summary: row.live_price_summary,
+        live_price_fetched_at: row.live_price_fetched_at || null,
         condition: row.condition,
         tracking_status: row.status || 'in_collection',
         cost_basis_usd: row.cost_basis_usd,
@@ -871,7 +978,9 @@
       };
     }
 
-    // ---- List rendering --------------------------------------------------
+    // ================================================================
+    // List rendering
+    // ================================================================
     function sortValue(item, key) {
       if (key === 'year') return item.year ? Number(item.year) : null;
       if (key === 'casting_name') return item.casting_name;
@@ -882,18 +991,18 @@
     }
 
     function sortedItems() {
-      const filtered = allItems.filter(it => (it.packaging_type || 'carded') === packagingType);
+      let filtered = allItems.filter(it => (it.packaging_type || 'carded') === packagingType);
+      if (matchFilter) filtered = filtered.filter(it => it.status === matchFilter);
+      if (statusFilter) filtered = filtered.filter(it => (it.tracking_status || 'in_collection') === statusFilter);
+
       if (sortKey === 'created_at') {
-        // Original load order from the API is already newest-first; just
-        // respect direction on top of that rather than re-deriving a
-        // timestamp we don't consistently carry on fresh-scan items.
         return sortDir === 'desc' ? filtered : filtered.slice().reverse();
       }
       const copy = filtered.slice();
       copy.sort((a, b) => {
         const av = sortValue(a, sortKey), bv = sortValue(b, sortKey);
         if (av == null && bv == null) return 0;
-        if (av == null) return 1;   // nulls always last, regardless of direction
+        if (av == null) return 1;
         if (bv == null) return -1;
         let cmp;
         if (typeof av === 'number' && typeof bv === 'number') cmp = av - bv;
@@ -903,10 +1012,13 @@
       return copy;
     }
 
+    // Deterministic per-item hue for the no-photo thumbnail placeholder -
+    // spreads sequential ids across the wheel rather than clustering.
+    function thumbHue(id) { return (id * 47) % 360; }
+
     function buildThumb(item) {
       const wrap = document.createElement('div');
       wrap.className = 'thumb-wrap';
-      wrap.slot = 'start';
 
       if (item.photo_path) {
         const img = document.createElement('img');
@@ -914,30 +1026,28 @@
         img.src = '/' + item.photo_path;
         img.alt = '';
         img.loading = 'lazy';
-        img.addEventListener('error', () => {
-          img.replaceWith(buildThumbPlaceholder());
-        });
+        img.addEventListener('error', () => { img.replaceWith(buildThumbPlaceholder(item.id)); });
         wrap.appendChild(img);
       } else {
-        wrap.appendChild(buildThumbPlaceholder());
+        wrap.appendChild(buildThumbPlaceholder(item.id));
       }
 
       if (selectMode) {
         const cb = document.createElement('md-checkbox');
         cb.className = 'select-checkbox';
         cb.checked = selectedIds.has(item.id);
-        // The card itself handles the click/toggle - this checkbox is a
-        // visual indicator, not an independent control, so it shouldn't
-        // eat the tap or need its own listener.
         cb.style.pointerEvents = 'none';
         wrap.appendChild(cb);
       }
       return wrap;
     }
 
-    function buildThumbPlaceholder() {
+    function buildThumbPlaceholder(id) {
+      const hue = thumbHue(id);
       const div = document.createElement('div');
       div.className = 'thumb thumb-placeholder';
+      div.style.background = `hsl(${hue} 42% 24%)`;
+      div.style.color = `hsl(${hue} 38% 62%)`;
       const icon = document.createElement('md-icon');
       icon.innerHTML = ICON_CAR_PLACEHOLDER;
       div.appendChild(icon);
@@ -946,76 +1056,113 @@
 
     const MATCH_LABELS = { confirmed: 'Confirmed', needs_review: 'Needs Review', no_match: 'No Match' };
     const TRACKING_LABELS = { in_collection: 'In collection', listed: 'Listed', sold: 'Sold' };
+    const TRACKING_ORDER = ['in_collection', 'listed', 'sold'];
+
+    function profitInfo(item) {
+      const basis = item.cost_basis_usd;
+      const price = item.live_recommended_price_usd || item.guide_price_usd;
+      if (basis == null || price == null || basis === 0) return null;
+      const pct = ((price - basis) / basis) * 100;
+      const cls = pct < 0 ? 'profit-negative' : pct < 30 ? 'profit-low' : 'profit-high';
+      return { pct, cls, text: `${pct >= 0 ? '+' : ''}${Math.round(pct)}%` };
+    }
 
     function buildItemElement(item) {
       const name = item.casting_name || 'Unrecognized item';
       const metaLine = [item.brand, item.car_make, item.year].filter(Boolean).join(' · ');
+      const price = item.live_recommended_price_usd || item.live_price_low_usd || item.live_price_high_usd || item.guide_price_usd;
+      const profit = profitInfo(item);
 
-      const el = document.createElement('md-list-item');
-      el.className = 'item-card';
+      const el = document.createElement('div');
+      el.className = 'item-row';
       el.dataset.inventoryId = item.id;
       if (selectMode && selectedIds.has(item.id)) el.classList.add('selected');
 
       el.appendChild(buildThumb(item));
 
-      const headline = document.createElement('div');
-      headline.slot = 'headline';
-      headline.textContent = name;
-      el.appendChild(headline);
+      const main = document.createElement('div');
+      main.className = 'item-row-main';
 
-      const supporting = document.createElement('div');
-      supporting.slot = 'supporting-text';
-      supporting.textContent = metaLine || '—';
-      el.appendChild(supporting);
+      const nameEl = document.createElement('div');
+      nameEl.className = 'item-row-name';
+      nameEl.textContent = name;
+      main.appendChild(nameEl);
 
-      const endStack = document.createElement('div');
-      endStack.slot = 'end';
-      endStack.className = 'end-stack';
+      const subEl = document.createElement('div');
+      subEl.className = 'item-row-subtitle';
+      subEl.textContent = metaLine || '—';
+      main.appendChild(subEl);
 
-      if (item.live_recommended_price_usd) {
-        const price = document.createElement('div');
-        price.className = 'price-text';
-        price.textContent = `~$${item.live_recommended_price_usd.toFixed(2)}`;
-        endStack.appendChild(price);
-      } else if (item.live_price_low_usd || item.live_price_high_usd) {
-        const price = document.createElement('div');
-        price.className = 'price-text';
-        const low = item.live_price_low_usd, high = item.live_price_high_usd;
-        price.textContent = (low && high && low !== high)
-          ? `$${low.toFixed(2)}–$${high.toFixed(2)}`
-          : `~$${(low || high).toFixed(2)}`;
-        endStack.appendChild(price);
-      } else if (item.guide_price_usd) {
-        const price = document.createElement('div');
-        price.className = 'price-text';
-        price.textContent = `~$${item.guide_price_usd.toFixed(2)}`;
-        endStack.appendChild(price);
+      const pill = document.createElement('span');
+      pill.className = `status-pill ${item.status}`;
+      pill.style.alignSelf = 'flex-start';
+      pill.textContent = `${MATCH_LABELS[item.status] || 'Unknown'} ${(item.confidence * 100).toFixed(0)}%`;
+      pill.title = item.match_notes || 'Similarity between what was read off the card and the closest reference database entry.';
+      main.appendChild(pill);
+
+      el.appendChild(main);
+
+      const end = document.createElement('div');
+      end.className = 'item-row-end';
+
+      if (price) {
+        const priceLine = document.createElement('div');
+        priceLine.className = 'price-line';
+        const priceEl = document.createElement('span');
+        priceEl.className = 'price-text';
+        priceEl.textContent = `$${price.toFixed(2)}`;
+        priceLine.appendChild(priceEl);
+        if (profit) {
+          const profitEl = document.createElement('span');
+          profitEl.className = `profit-text ${profit.cls}`;
+          profitEl.textContent = profit.text;
+          priceLine.appendChild(profitEl);
+        }
+        end.appendChild(priceLine);
       }
-
-      const pillRow = document.createElement('div');
-      pillRow.className = 'pill-row';
 
       const trackingPill = document.createElement('span');
       trackingPill.className = `tracking-pill ${item.tracking_status || 'in_collection'}`;
       trackingPill.textContent = TRACKING_LABELS[item.tracking_status] || 'In collection';
-      pillRow.appendChild(trackingPill);
+      end.appendChild(trackingPill);
 
-      const pill = document.createElement('span');
-      pill.className = `status-pill ${item.status}`;
-      pill.textContent = `${MATCH_LABELS[item.status] || 'Unknown'} ${(item.confidence * 100).toFixed(0)}%`;
-      pill.title = item.match_notes || 'Similarity between what was read off the card and the closest reference database entry.';
-      pillRow.appendChild(pill);
+      el.appendChild(end);
 
-      endStack.appendChild(pillRow);
-      el.appendChild(endStack);
-
-      el.addEventListener('click', () => {
-        if (selectMode) {
-          toggleSelected(item.id);
-        } else {
-          location.hash = '#/item/' + item.id;
-        }
+      // ---- Tap vs. swipe: swipe left = delete, swipe right = cycle
+      // tracking status, small movement = tap-to-open (or toggle-select).
+      let drag = null;
+      el.addEventListener('pointerdown', (e) => {
+        if (selectMode) return;
+        drag = { startX: e.clientX, dx: 0, pointerId: e.pointerId };
+        el.setPointerCapture(e.pointerId);
       });
+      el.addEventListener('pointermove', (e) => {
+        if (!drag || drag.pointerId !== e.pointerId) return;
+        drag.dx = e.clientX - drag.startX;
+        const clamped = Math.max(-120, Math.min(120, drag.dx));
+        el.style.transform = `translateX(${clamped}px)`;
+        el.style.background = clamped < -24 ? 'rgba(239,68,68,0.10)' : clamped > 24 ? 'rgba(96,165,250,0.10)' : '';
+      });
+      function endDrag(e) {
+        if (!drag || drag.pointerId !== e.pointerId) return;
+        const dx = drag.dx;
+        el.style.transform = '';
+        el.style.background = '';
+        drag = null;
+        if (Math.abs(dx) < 10) {
+          if (selectMode) toggleSelected(item.id);
+          else location.hash = '#/item/' + item.id;
+        } else if (dx < -80) {
+          openDeleteConfirm(`Delete "${name}"? This also removes its photos. This can't be undone.`, () => deleteSingleItem(item.id));
+        } else if (dx > 80) {
+          cycleTrackingStatus(item.id);
+        }
+      }
+      el.addEventListener('pointerup', endDrag);
+      el.addEventListener('pointercancel', endDrag);
+      if (selectMode) {
+        el.addEventListener('click', () => toggleSelected(item.id));
+      }
 
       return el;
     }
@@ -1023,13 +1170,87 @@
     function renderList() {
       results.innerHTML = '';
       const items = sortedItems();
-      for (const item of items) {
-        results.appendChild(buildItemElement(item));
+      for (const item of items) results.appendChild(buildItemElement(item));
+
+      const filtersActive = !!(matchFilter || statusFilter);
+      if (items.length === 0 && filtersActive) {
+        emptyState.style.display = 'none';
+        filteredEmptyState.style.display = 'block';
+      } else if (items.length === 0) {
+        filteredEmptyState.style.display = 'none';
+        emptyState.style.display = 'block';
+      } else {
+        emptyState.style.display = 'none';
+        filteredEmptyState.style.display = 'none';
       }
-      emptyState.style.display = items.length === 0 ? 'block' : 'none';
     }
 
-    // ---- History: load everything already scanned, on page open ---------
+    async function cycleTrackingStatus(id) {
+      const item = allItems.find(it => it.id === id);
+      if (!item) return;
+      const next = TRACKING_ORDER[(TRACKING_ORDER.indexOf(item.tracking_status || 'in_collection') + 1) % TRACKING_ORDER.length];
+      item.tracking_status = next;
+      renderList();
+      try {
+        await fetch(`/inventory/${id}`, {
+          method: 'PUT', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ status: next }),
+        });
+      } catch (err) {
+        showError(`Couldn't update status: ${err.message}`);
+      }
+    }
+
+    async function deleteSingleItem(id) {
+      try {
+        const resp = await fetch(`/inventory/${id}`, { method: 'DELETE' });
+        let data;
+        try { data = await resp.json(); } catch {
+          throw new Error(`Server sent back something unreadable (status ${resp.status}).`);
+        }
+        if (!resp.ok) throw new Error(data.detail || `Server error (status ${resp.status})`);
+        allItems = allItems.filter(it => it.id !== id);
+        if (currentDetailId === id) location.hash = ''; else renderList();
+      } catch (err) {
+        showError(`Couldn't delete: ${err.message}`);
+      }
+    }
+
+    // ---- Filter chips ----
+    document.querySelectorAll('.match-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        matchFilter = chip.dataset.match || null;
+        updateFilterChips();
+        renderList();
+      });
+    });
+    document.querySelectorAll('.status-chip').forEach(chip => {
+      chip.addEventListener('click', () => {
+        const val = chip.dataset.status;
+        statusFilter = (statusFilter === val) ? null : val;
+        updateFilterChips();
+        renderList();
+      });
+    });
+    function updateFilterChips() {
+      document.querySelectorAll('.match-chip').forEach(chip => {
+        const val = chip.dataset.match || null;
+        chip.classList.toggle('active', matchFilter === val);
+      });
+      document.querySelectorAll('.status-chip').forEach(chip => {
+        chip.classList.toggle('active', statusFilter === chip.dataset.status);
+      });
+    }
+    clearFiltersLink.addEventListener('click', () => {
+      matchFilter = null;
+      statusFilter = null;
+      updateFilterChips();
+      renderList();
+    });
+
+    // ================================================================
+    // History load
+    // ================================================================
     async function loadHistory() {
       try {
         const resp = await fetch('/inventory');
@@ -1044,9 +1265,10 @@
       }
     }
 
-    // ---- Top app bar mode switching --------------------------------------
+    // ================================================================
+    // Top app bar mode switching
+    // ================================================================
     function setAppBarMode(mode, title) {
-      // mode: 'list' | 'select' | 'detail'
       backBtn.style.display = mode === 'detail' ? 'inline-flex' : 'none';
       appBarActions.style.display = mode === 'list' ? 'flex' : 'none';
       selectionActions.style.display = mode === 'select' ? 'flex' : 'none';
@@ -1055,7 +1277,9 @@
       appBarTitle.textContent = title;
     }
 
-    // ---- Multi-select -----------------------------------------------------
+    // ================================================================
+    // Multi-select
+    // ================================================================
     function toggleSelected(id) {
       if (selectedIds.has(id)) selectedIds.delete(id); else selectedIds.add(id);
       if (selectedIds.size === 0) {
@@ -1065,14 +1289,12 @@
         renderList();
       }
     }
-
     function exitSelectMode() {
       selectMode = false;
       selectedIds.clear();
       setAppBarMode('list', 'Diecast Tracker');
       renderList();
     }
-
     selectModeBtn.addEventListener('click', () => {
       selectMode = true;
       selectedIds.clear();
@@ -1084,20 +1306,16 @@
     bulkDeleteBtn.addEventListener('click', () => {
       const n = selectedIds.size;
       if (n === 0) return;
-      bulkDeleteDialogContent.textContent = `Delete ${n} item${n === 1 ? '' : 's'}? This also removes their photos. This can't be undone.`;
-      bulkDeleteDialog.show();
-    });
-    bulkDeleteCancel.addEventListener('click', () => bulkDeleteDialog.close());
-    bulkDeleteConfirm.addEventListener('click', async () => {
-      bulkDeleteDialog.close();
-      const ids = Array.from(selectedIds);
-      try {
-        await Promise.all(ids.map(id => fetch(`/inventory/${id}`, { method: 'DELETE' })));
-      } catch (err) {
-        showError(`Some deletes may not have gone through: ${err.message}`);
-      }
-      allItems = allItems.filter(it => !selectedIds.has(it.id));
-      exitSelectMode();
+      openDeleteConfirm(`Delete ${n} item${n === 1 ? '' : 's'}? This also removes their photos. This can't be undone.`, async () => {
+        const ids = Array.from(selectedIds);
+        try {
+          await Promise.all(ids.map(id => fetch(`/inventory/${id}`, { method: 'DELETE' })));
+        } catch (err) {
+          showError(`Some deletes may not have gone through: ${err.message}`);
+        }
+        allItems = allItems.filter(it => !selectedIds.has(it.id));
+        exitSelectMode();
+      });
     });
 
     bulkStatusBtn.addEventListener('click', () => { bulkStatusMenu.open = !bulkStatusMenu.open; });
@@ -1108,21 +1326,20 @@
         const ids = Array.from(selectedIds);
         try {
           await Promise.all(ids.map(id => fetch(`/inventory/${id}`, {
-            method: 'PUT',
-            headers: { 'Content-Type': 'application/json' },
+            method: 'PUT', headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ status: newStatus }),
           })));
         } catch (err) {
           showError(`Some status updates may not have gone through: ${err.message}`);
         }
-        for (const it of allItems) {
-          if (selectedIds.has(it.id)) it.tracking_status = newStatus;
-        }
+        for (const it of allItems) if (selectedIds.has(it.id)) it.tracking_status = newStatus;
         exitSelectMode();
       });
     });
 
-    // ---- Sort ---------------------------------------------------------
+    // ================================================================
+    // Sort
+    // ================================================================
     function updateSortMenu() {
       sortMenu.querySelectorAll('md-menu-item').forEach(item => {
         const dirSpan = item.querySelector('.sort-dir');
@@ -1134,21 +1351,63 @@
       item.addEventListener('click', () => {
         sortMenu.open = false;
         const key = item.dataset.sort;
-        if (key === sortKey) {
-          sortDir = sortDir === 'desc' ? 'asc' : 'desc';
-        } else {
-          sortKey = key;
-          sortDir = key === 'year' ? 'desc' : 'asc';
-        }
+        if (key === sortKey) sortDir = sortDir === 'desc' ? 'asc' : 'desc';
+        else { sortKey = key; sortDir = key === 'year' ? 'desc' : 'asc'; }
         updateSortMenu();
         renderList();
       });
     });
     updateSortMenu();
 
-    // ---- Detail view / routing --------------------------------------------
-    function money(n) { return (n || n === 0) ? `$${Number(n).toFixed(2)}` : null; }
+    // ================================================================
+    // Lightbox (pinch-to-zoom up to 4x, tap to close)
+    // ================================================================
+    let lightboxScale = 1;
+    let pinchStartDist = null;
+    let pinchStartScale = 1;
+    const activePointers = new Map();
 
+    function openLightbox(src) {
+      lightboxImg.src = src;
+      lightboxScale = 1;
+      lightboxImg.style.transform = 'scale(1)';
+      lightboxScrim.classList.add('show');
+    }
+    function closeLightbox() {
+      lightboxScrim.classList.remove('show');
+      activePointers.clear();
+      pinchStartDist = null;
+    }
+    lightboxScrim.addEventListener('click', (e) => { if (e.target === lightboxScrim) closeLightbox(); });
+    lightboxImg.addEventListener('click', () => { if (lightboxScale <= 1.05) closeLightbox(); });
+    lightboxImg.addEventListener('pointerdown', (e) => {
+      activePointers.set(e.pointerId, e);
+      lightboxImg.setPointerCapture(e.pointerId);
+    });
+    lightboxImg.addEventListener('pointermove', (e) => {
+      if (!activePointers.has(e.pointerId)) return;
+      activePointers.set(e.pointerId, e);
+      if (activePointers.size === 2) {
+        const pts = Array.from(activePointers.values());
+        const dist = Math.hypot(pts[0].clientX - pts[1].clientX, pts[0].clientY - pts[1].clientY);
+        if (pinchStartDist == null) { pinchStartDist = dist; pinchStartScale = lightboxScale; }
+        else {
+          lightboxScale = Math.max(1, Math.min(4, pinchStartScale * (dist / pinchStartDist)));
+          lightboxImg.style.transform = `scale(${lightboxScale})`;
+        }
+      }
+    });
+    function endLightboxPointer(e) {
+      activePointers.delete(e.pointerId);
+      if (activePointers.size < 2) pinchStartDist = null;
+    }
+    lightboxImg.addEventListener('pointerup', endLightboxPointer);
+    lightboxImg.addEventListener('pointercancel', endLightboxPointer);
+
+    // ================================================================
+    // Detail view / routing
+    // ================================================================
+    function money(n) { return (n || n === 0) ? `$${Number(n).toFixed(2)}` : null; }
     function fieldRow(label, valueHtml, mono) {
       return `<div class="field-row"><span class="field-label">${label}</span><span class="field-value${mono ? ' mono' : ''}">${valueHtml}</span></div>`;
     }
@@ -1162,6 +1421,7 @@
         const img = document.createElement('img');
         img.src = '/' + item.photo_path;
         img.alt = '';
+        img.addEventListener('click', () => openLightbox(img.src));
         mainSlot.appendChild(img);
       } else {
         mainSlot.classList.add('photo-slot-empty');
@@ -1177,6 +1437,7 @@
         const img = document.createElement('img');
         img.src = '/' + item.base_photo_path;
         img.alt = '';
+        img.addEventListener('click', () => openLightbox(img.src));
         secondSlot.appendChild(img);
       } else {
         secondSlot.classList.add('photo-slot-add');
@@ -1210,15 +1471,32 @@
 
     let detStatusValue = 'in_collection';
     detStatusToggle.querySelectorAll('.status-toggle-btn').forEach(btn => {
-      btn.addEventListener('click', () => {
-        detStatusValue = btn.dataset.value;
-        updateStatusToggle();
-      });
+      btn.addEventListener('click', () => { detStatusValue = btn.dataset.value; updateStatusToggle(); });
     });
     function updateStatusToggle() {
       detStatusToggle.querySelectorAll('.status-toggle-btn').forEach(btn => {
         btn.classList.toggle('active', btn.dataset.value === detStatusValue);
       });
+    }
+
+    function buildPricingCard(item) {
+      const guide = item.guide_price_usd != null ? money(item.guide_price_usd) : '—';
+      const rec = item.live_recommended_price_usd != null ? money(item.live_recommended_price_usd) : '—';
+      let rangeText = '—';
+      if (item.live_price_low_usd != null || item.live_price_high_usd != null) {
+        const low = item.live_price_low_usd, high = item.live_price_high_usd;
+        rangeText = (low != null && high != null && low !== high) ? `${money(low)}–${money(high)}` : money(low ?? high);
+      }
+      let html = fieldRow('Guide price', guide, true) + fieldRow('Recommended listing', rec, true) + fieldRow('eBay range', rangeText, true);
+
+      if (item.live_price_fetched_at) {
+        const days = Math.floor((Date.now() - new Date(item.live_price_fetched_at).getTime()) / 86400000);
+        const label = days <= 0 ? 'Updated today' : days === 1 ? 'Updated yesterday' : `Updated ${days} days ago`;
+        const stale = days > 7;
+        html += `<p class="detail-summary-text${stale ? ' stale' : ''}">${stale ? '● ' : ''}${label}${stale ? ' — price data may be outdated, consider refreshing' : ''}</p>`;
+      }
+      if (item.live_summary) html += `<p class="detail-summary-text">${item.live_summary}</p>`;
+      return html;
     }
 
     function buildDetailView(item) {
@@ -1238,16 +1516,7 @@
         + fieldRow('Packaging', item.packaging_type === 'loose' ? 'Loose' : 'Carded')
         + (item.match_notes ? `<p class="detail-summary-text">${item.match_notes}</p>` : '');
 
-      const priceRows = [];
-      if (item.guide_price_usd) priceRows.push(fieldRow('Guide price', money(item.guide_price_usd), true));
-      if (item.live_recommended_price_usd) priceRows.push(fieldRow('Recommended listing', money(item.live_recommended_price_usd), true));
-      if (item.live_price_low_usd || item.live_price_high_usd) {
-        const low = item.live_price_low_usd, high = item.live_price_high_usd;
-        const rangeText = (low && high && low !== high) ? `${money(low)}–${money(high)}` : money(low || high);
-        priceRows.push(fieldRow('eBay range', rangeText, true));
-      }
-      detPricingCard.innerHTML = (priceRows.length ? priceRows.join('') : '<p class="detail-summary-text">No pricing data yet.</p>')
-        + (item.live_summary ? `<p class="detail-summary-text">${item.live_summary}</p>` : '');
+      detPricingCard.innerHTML = buildPricingCard(item);
 
       detStatusValue = item.tracking_status || 'in_collection';
       updateStatusToggle();
@@ -1268,14 +1537,12 @@
       detailView.style.display = 'block';
       setAppBarMode('detail', item.casting_name || 'Unrecognized item');
     }
-
     function showList() {
       currentDetailId = null;
       listView.style.display = 'block';
       detailView.style.display = 'none';
       setAppBarMode(selectMode ? 'select' : 'list', selectMode ? `${selectedIds.size} selected` : 'Diecast Tracker');
     }
-
     function renderRoute() {
       const m = location.hash.match(/^#\/item\/(\d+)/);
       if (m) showDetail(Number(m[1])); else showList();
@@ -1302,16 +1569,13 @@
       };
       try {
         const resp = await fetch(`/inventory/${currentDetailId}`, {
-          method: 'PUT',
-          headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify(payload),
+          method: 'PUT', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(payload),
         });
         let data;
         try { data = await resp.json(); } catch {
           throw new Error(`Server sent back something unreadable (status ${resp.status}).`);
         }
         if (!resp.ok) throw new Error(data.detail || `Server error (status ${resp.status})`);
-
         const updated = fromDbRow(data);
         const idx = allItems.findIndex(it => it.id === currentDetailId);
         if (idx !== -1) allItems[idx] = updated;
@@ -1321,51 +1585,35 @@
       }
     });
 
-    detailDeleteBtn.addEventListener('click', () => detailDeleteDialog.show());
-    detailDeleteCancel.addEventListener('click', () => detailDeleteDialog.close());
-    detailDeleteConfirm.addEventListener('click', async () => {
-      detailDeleteDialog.close();
+    detailDeleteBtn.addEventListener('click', () => {
       if (currentDetailId == null) return;
-      try {
-        const resp = await fetch(`/inventory/${currentDetailId}`, { method: 'DELETE' });
-        let data;
-        try { data = await resp.json(); } catch {
-          throw new Error(`Server sent back something unreadable (status ${resp.status}).`);
-        }
-        if (!resp.ok) throw new Error(data.detail || `Server error (status ${resp.status})`);
-        allItems = allItems.filter(it => it.id !== currentDetailId);
-        location.hash = '';
-      } catch (err) {
-        showError(`Couldn't delete: ${err.message}`);
-      }
+      const item = allItems.find(it => it.id === currentDetailId);
+      openDeleteConfirm(`Delete "${item ? (item.casting_name || 'this item') : 'this item'}"? This removes it and its photos permanently.`, () => deleteSingleItem(currentDetailId));
     });
 
     loadHistory();
     resetBaseBtn();
     updateSecondPhotoVisibility();
+    updateBatchUi();
 
-    // ---- Diagnostics -------------------------------------------------
+    // ================================================================
+    // Diagnostics
+    // ================================================================
     statusBtn.addEventListener('click', async () => {
-      statusDialogContent.innerHTML = 'Loading…';
-      statusDialog.show();
+      statusSheetContent.innerHTML = 'Loading…';
+      openSheet(statusSheet, statusScrim);
       try {
         const resp = await fetch('/status');
         let s;
-        try {
-          s = await resp.json();
-        } catch {
+        try { s = await resp.json(); } catch {
           throw new Error(`Server sent back something unreadable (status ${resp.status}).`);
         }
         if (!resp.ok) {
-          // This is the bug that caused a confusing "everything's empty/
-          // unconfigured" screen when the real problem was a 404 (e.g. an
-          // older app.py without this route deployed) - never render an
-          // error body as if it were valid status data.
           throw new Error(s.detail || `Server error (status ${resp.status}) - the /status route may not exist on the currently running app.py. Confirm the latest backend code is actually deployed.`);
         }
-        statusDialogContent.innerHTML = renderStatusHtml(s);
+        statusSheetContent.innerHTML = renderStatusHtml(s);
       } catch (err) {
-        statusDialogContent.textContent = `Couldn't load status: ${err.message}`;
+        statusSheetContent.textContent = `Couldn't load status: ${err.message}`;
       }
     });
 
@@ -1388,27 +1636,22 @@
           const yearRange = years.length ? `${years[0]}–${years[years.length - 1]} (${years.length} years)` : 'none';
           html += `<div class="coverage-row"><span>${brand}</span><span>${yearRange}</span></div>`;
         }
-        if (Object.keys(byBrand).length === 0) {
-          html += `<div class="status-warn">No reference data imported yet - run reference_import.py.</div>`;
-        }
+        if (Object.keys(byBrand).length === 0) html += `<div class="status-warn">No reference data imported yet - run reference_import.py.</div>`;
       }
       html += `</div>`;
 
       html += `<div class="status-section"><h3>Live price cache</h3>`;
       const cache = s.live_price_cache || {};
-      html += `<div class="coverage-row"><span>Distinct castings priced</span><span>${cache.total_cached_castings ?? 0}</span></div>`;
-      html += `</div>`;
+      html += `<div class="coverage-row"><span>Distinct castings priced</span><span>${cache.total_cached_castings ?? 0}</span></div></div>`;
 
       html += `<div class="status-section"><h3>Your inventory</h3>`;
       const inv = s.inventory || {};
       html += `<div class="coverage-row"><span>Total items</span><span>${inv.total_items ?? 0}</span></div>`;
       const byStatus = inv.by_match_status || {};
-      for (const st of Object.keys(byStatus)) {
-        html += `<div class="coverage-row"><span>${st.replace('_', ' ')}</span><span>${byStatus[st]}</span></div>`;
-      }
+      for (const st of Object.keys(byStatus)) html += `<div class="coverage-row"><span>${st.replace('_', ' ')}</span><span>${byStatus[st]}</span></div>`;
       html += `</div>`;
 
-      html += `<p class="md-typescale-body-small" style="color:var(--md-sys-color-on-surface-variant)">
+      html += `<p class="detail-summary-text" style="margin-left:0;">
         A pile of "no match" results usually means the reference database
         just doesn't cover that year/brand yet, not that the pipeline is
         broken - check the coverage above against what you're scanning.
@@ -1417,28 +1660,26 @@
     }
 
     testLiveSearchBtn.addEventListener('click', async () => {
-      statusDialogContent.innerHTML += `<p class="md-typescale-body-small">Running a real test search…</p>`;
+      statusSheetContent.innerHTML += `<p class="detail-summary-text" style="margin-left:0;">Running a real test search…</p>`;
       try {
         const resp = await fetch('/status/test_live_search');
         let result;
-        try {
-          result = await resp.json();
-        } catch {
+        try { result = await resp.json(); } catch {
           throw new Error(`Server sent back something unreadable (status ${resp.status}).`);
         }
-        if (!resp.ok) {
-          throw new Error(result.detail || `Server error (status ${resp.status}) - this route may not exist on the currently running app.py.`);
-        }
-        statusDialogContent.innerHTML += `<p class="md-typescale-body-small ${result.ok ? 'status-ok' : 'status-warn'}">
+        if (!resp.ok) throw new Error(result.detail || `Server error (status ${resp.status}) - this route may not exist on the currently running app.py.`);
+        statusSheetContent.innerHTML += `<p class="detail-summary-text ${result.ok ? 'status-ok' : 'status-warn'}" style="margin-left:0;">
           ${result.ok ? 'Live search working: ' : 'Live search failed: '}
           ${JSON.stringify(result.result || result.error)}
         </p>`;
       } catch (err) {
-        statusDialogContent.innerHTML += `<p class="status-warn">Test failed: ${err.message}</p>`;
+        statusSheetContent.innerHTML += `<p class="status-warn">Test failed: ${err.message}</p>`;
       }
     });
 
-    // ---- Export --------------------------------------------------------
+    // ================================================================
+    // Export
+    // ================================================================
     exportBtn.addEventListener('click', () => {
       const a = document.createElement('a');
       a.href = '/export';

@@ -40,7 +40,7 @@ DB_PATH = "inventory.db"
 PHOTO_DIR = Path("./photos")
 PHOTO_DIR.mkdir(exist_ok=True)
 
-app = FastAPI(title="Diecast Inventory")
+app = FastAPI(title="Diecast Tracker")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 app.mount("/static", StaticFiles(directory="static"), name="static")
 app.mount("/photos", StaticFiles(directory="photos"), name="photos")
@@ -229,7 +229,7 @@ async def scan_card(
             live_price.get("price_low_usd"), live_price.get("price_high_usd"),
             live_price.get("recommended_listing_price_usd"),
             live_price.get("summary"),
-            None if live_price.get("skipped") else "now",
+            None if live_price.get("skipped") else datetime.utcnow().isoformat(),
         ))
         conn.commit()
         new_id = cur.lastrowid
