@@ -547,6 +547,17 @@
     </div>
   </div>
 
+  <div class="sheet-scrim" id="photoActionsScrim"></div>
+  <div class="sheet" id="photoActionsSheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-headline">Photo options</div>
+    <div class="sheet-actions" style="flex-direction: column;">
+      <md-outlined-button id="photoActionReplace" style="width:100%;">Replace photo</md-outlined-button>
+      <md-outlined-button id="photoActionDelete" style="width:100%; --md-outlined-button-label-text-color: var(--md-sys-color-error); --md-outlined-button-outline-color: var(--md-sys-color-error);">Delete photo</md-outlined-button>
+      <md-text-button id="photoActionCancel" style="width:100%;">Cancel</md-text-button>
+    </div>
+  </div>
+
   <script type="module">
     // ================================================================
     // Element refs
@@ -1334,6 +1345,30 @@
       return `<div class="field-row"><span class="field-label">${label}</span><span class="field-value${mono ? ' mono' : ''}">${valueHtml}</span></div>`;
     }
 
+    // Long-press on an existing photo opens Replace/Delete; a short
+    // tap opens the lightbox instead. Distinguished the same way the list
+    // row's tap-vs-swipe is: a timer armed on pointerdown, cleared on any
+    // movement/release before it fires.
+    function attachPhotoInteractions(imgEl, slotName) {
+      let pressTimer = null;
+      let firedLongPress = false;
+      imgEl.addEventListener('pointerdown', () => {
+        firedLongPress = false;
+        pressTimer = setTimeout(() => {
+          firedLongPress = true;
+          openPhotoActionsSheet(slotName);
+        }, 500);
+      });
+      const cancelTimer = () => { if (pressTimer) { clearTimeout(pressTimer); pressTimer = null; } };
+      imgEl.addEventListener('pointerup', cancelTimer);
+      imgEl.addEventListener('pointercancel', cancelTimer);
+      imgEl.addEventListener('pointermove', cancelTimer);
+      imgEl.addEventListener('click', () => {
+        if (firedLongPress) { firedLongPress = false; return; }
+        openLightbox(imgEl.src);
+      });
+    }
+
     function buildDetailPhotos(item) {
       detailPhotos.innerHTML = '';
 
@@ -1343,7 +1378,7 @@
         const img = document.createElement('img');
         img.src = '/' + item.photo_path;
         img.alt = '';
-        img.addEventListener('click', () => openLightbox(img.src));
+        attachPhotoInteractions(img, 'main');
         mainSlot.appendChild(img);
       } else {
         mainSlot.classList.add('photo-slot-empty');
@@ -1359,22 +1394,66 @@
         const img = document.createElement('img');
         img.src = '/' + item.base_photo_path;
         img.alt = '';
-        img.addEventListener('click', () => openLightbox(img.src));
+        attachPhotoInteractions(img, 'secondary');
         secondSlot.appendChild(img);
       } else {
         secondSlot.classList.add('photo-slot-add');
         secondSlot.innerHTML = `<div class="photo-slot-add-icon"><md-icon>${ICON_ADD}</md-icon></div><span>Add an additional photo</span>`;
-        secondSlot.addEventListener('click', () => detailPhotoInput.click());
+        secondSlot.addEventListener('click', () => {
+          detailPhotoInput.dataset.slot = 'secondary';
+          detailPhotoInput.click();
+        });
       }
       detailPhotos.appendChild(secondSlot);
     }
 
+    // ---- Photo actions sheet (long-press) - Replace / Delete ----
+    const photoActionsScrim = document.getElementById('photoActionsScrim');
+    const photoActionsSheet = document.getElementById('photoActionsSheet');
+    let photoActionSlot = null;
+    function openPhotoActionsSheet(slotName) {
+      photoActionSlot = slotName;
+      openSheet(photoActionsSheet, photoActionsScrim);
+    }
+    document.getElementById('photoActionCancel').addEventListener('click', () => closeSheet(photoActionsSheet, photoActionsScrim));
+    photoActionsScrim.addEventListener('click', () => closeSheet(photoActionsSheet, photoActionsScrim));
+    document.getElementById('photoActionReplace').addEventListener('click', () => {
+      closeSheet(photoActionsSheet, photoActionsScrim);
+      detailPhotoInput.dataset.slot = photoActionSlot;
+      detailPhotoInput.click();
+    });
+    document.getElementById('photoActionDelete').addEventListener('click', () => {
+      closeSheet(photoActionsSheet, photoActionsScrim);
+      const slot = photoActionSlot;
+      openDeleteConfirm('Delete this photo?', () => deletePhoto(slot));
+    });
+
+    async function deletePhoto(slot) {
+      if (currentDetailId == null) return;
+      try {
+        const resp = await fetch(`/inventory/${currentDetailId}/photo?slot=${slot}`, { method: 'DELETE' });
+        let data;
+        try { data = await resp.json(); } catch {
+          throw new Error(`Server sent back something unreadable (status ${resp.status}).`);
+        }
+        if (!resp.ok) throw new Error(data.detail || `Server error (status ${resp.status})`);
+        const updated = fromDbRow(data);
+        const idx = allItems.findIndex(it => it.id === currentDetailId);
+        if (idx !== -1) allItems[idx] = updated;
+        buildDetailPhotos(updated);
+      } catch (err) {
+        showError(`Couldn't delete photo: ${err.message}`);
+      }
+    }
+
     detailPhotoInput.addEventListener('change', async (e) => {
       const file = e.target.files[0];
+      const slot = detailPhotoInput.dataset.slot || 'secondary';
       detailPhotoInput.value = '';
       if (!file || currentDetailId == null) return;
       const formData = new FormData();
       formData.append('photo', file);
+      formData.append('slot', slot);
       try {
         const resp = await fetch(`/inventory/${currentDetailId}/photo`, { method: 'POST', body: formData });
         let data;

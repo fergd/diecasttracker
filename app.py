@@ -452,20 +452,28 @@ def update_item(item_id: int, update: InventoryUpdate):
     return dict(row)
 
 
+_PHOTO_SLOT_COLUMNS = {"main": "photo_path", "secondary": "base_photo_path"}
+
+
 @app.post("/inventory/{item_id}/photo")
-async def add_secondary_photo(item_id: int, photo: UploadFile = File(...)):
-    """Attach (or replace) the secondary photo on an already-saved item - for
-    when the back-of-card/base shot wasn't taken during the original scan.
-    Doesn't re-run extraction/matching, just stores the file."""
+async def add_or_replace_photo(item_id: int, photo: UploadFile = File(...), slot: str = Form("secondary")):
+    """Attach or replace a photo (main or secondary) on an already-saved
+    item - for when the back-of-card/base shot wasn't taken during the
+    original scan, or an existing shot needs replacing. Doesn't re-run
+    extraction/matching, just stores the file."""
+    if slot not in _PHOTO_SLOT_COLUMNS:
+        raise HTTPException(status_code=400, detail="slot must be 'main' or 'secondary'")
+    column = _PHOTO_SLOT_COLUMNS[slot]
+
     conn = get_conn()
-    existing = conn.execute("SELECT base_photo_path FROM inventory WHERE id = ?", (item_id,)).fetchone()
+    existing = conn.execute(f"SELECT {column} FROM inventory WHERE id = ?", (item_id,)).fetchone()
     if existing is None:
         conn.close()
         raise HTTPException(status_code=404, detail=f"No inventory item with id {item_id}")
 
-    old_path = existing["base_photo_path"]
+    old_path = existing[column]
     saved_path = _save_upload(photo)
-    conn.execute("UPDATE inventory SET base_photo_path = ? WHERE id = ?", (saved_path, item_id))
+    conn.execute(f"UPDATE inventory SET {column} = ? WHERE id = ?", (saved_path, item_id))
     conn.commit()
     row = conn.execute("SELECT * FROM inventory WHERE id = ?", (item_id,)).fetchone()
     conn.close()
@@ -475,6 +483,35 @@ async def add_secondary_photo(item_id: int, photo: UploadFile = File(...)):
             Path(old_path).unlink(missing_ok=True)
         except OSError as e:
             logger.warning(f"Could not delete replaced photo file {old_path}: {e}")
+
+    return dict(row)
+
+
+@app.delete("/inventory/{item_id}/photo")
+def delete_photo(item_id: int, slot: str = "secondary"):
+    """Remove a single photo (main or secondary) from an item without
+    deleting the item itself."""
+    if slot not in _PHOTO_SLOT_COLUMNS:
+        raise HTTPException(status_code=400, detail="slot must be 'main' or 'secondary'")
+    column = _PHOTO_SLOT_COLUMNS[slot]
+
+    conn = get_conn()
+    existing = conn.execute(f"SELECT {column} FROM inventory WHERE id = ?", (item_id,)).fetchone()
+    if existing is None:
+        conn.close()
+        raise HTTPException(status_code=404, detail=f"No inventory item with id {item_id}")
+
+    old_path = existing[column]
+    conn.execute(f"UPDATE inventory SET {column} = NULL WHERE id = ?", (item_id,))
+    conn.commit()
+    row = conn.execute("SELECT * FROM inventory WHERE id = ?", (item_id,)).fetchone()
+    conn.close()
+
+    if old_path:
+        try:
+            Path(old_path).unlink(missing_ok=True)
+        except OSError as e:
+            logger.warning(f"Could not delete photo file {old_path}: {e}")
 
     return dict(row)
 
