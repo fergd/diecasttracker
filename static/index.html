@@ -1694,6 +1694,11 @@
       listView.style.display = 'block';
       detailView.style.display = 'none';
       setAppBarMode(selectMode ? 'select' : 'list', selectMode ? `${selectedIds.size} selected` : 'Zamak Ledger');
+      // Re-render from allItems every time - anything changed while in the
+      // detail view (a price recheck, a saved edit) only ever updated the
+      // in-memory allItems array, never the list's actual DOM, since
+      // nothing else was forcing a rebuild on the way back.
+      renderList();
     }
     function renderRoute() {
       const m = location.hash.match(/^#\/item\/(\d+)/);
