@@ -65,16 +65,25 @@
     display: flex;
     align-items: center;
     gap: 4px;
-    height: 64px;
+    min-height: 64px;
     margin: 0 -20px 8px;
-    padding: 0 4px;
+    padding: 6px 4px;
     background: var(--md-sys-color-surface);
   }
   .top-app-bar.contextual { background: var(--md-sys-color-surface-container); }
+  .top-app-bar-title-group {
+    flex: 1; display: flex; flex-direction: column; padding-left: 4px;
+    overflow: hidden;
+  }
   .top-app-bar-title {
-    flex: 1; margin: 0; padding-left: 4px;
+    margin: 0;
     overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
     font-family: var(--font-display); font-weight: 700; font-size: 20px;
+  }
+  .top-app-bar-subtitle {
+    font-family: var(--font-mono); font-size: 11.5px;
+    color: var(--md-sys-color-on-surface-variant);
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
   }
   .top-app-bar-actions { display: flex; align-items: center; flex: none; }
   #detailDeleteBtn, #bulkDeleteBtn { --md-icon-button-icon-color: var(--md-sys-color-error); }
@@ -356,7 +365,10 @@
     <md-icon-button id="backBtn" aria-label="Back" style="display:none">
       <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg></md-icon>
     </md-icon-button>
-    <h1 id="appBarTitle" class="top-app-bar-title">Zamak Ledger</h1>
+    <div class="top-app-bar-title-group">
+      <h1 id="appBarTitle" class="top-app-bar-title">Zamak Ledger</h1>
+      <div id="appBarSubtitle" class="top-app-bar-subtitle"></div>
+    </div>
 
     <div id="appBarActions" class="top-app-bar-actions">
       <md-icon-button id="selectModeBtn" aria-label="Select items">
@@ -612,6 +624,7 @@
     const topAppBar = document.getElementById('topAppBar');
     const backBtn = document.getElementById('backBtn');
     const appBarTitle = document.getElementById('appBarTitle');
+    const appBarSubtitle = document.getElementById('appBarSubtitle');
     const appBarActions = document.getElementById('appBarActions');
     const selectionActions = document.getElementById('selectionActions');
     const detailActions = document.getElementById('detailActions');
@@ -1290,6 +1303,7 @@
       results.innerHTML = '';
       const items = sortedItems();
       for (const item of items) results.appendChild(buildItemElement(item));
+      updateAppBarSummary(items);
 
       const filtersActive = !!(matchFilter || statusFilter);
       if (items.length === 0 && filtersActive) {
@@ -1394,6 +1408,30 @@
       detailActions.style.display = mode === 'detail' ? 'flex' : 'none';
       topAppBar.classList.toggle('contextual', mode === 'select');
       appBarTitle.textContent = title;
+      appBarSubtitle.style.display = mode === 'list' ? 'block' : 'none';
+    }
+
+    // Best price for a single unit - same priority chain as the list
+    // card's own price display (live recommended > live low > live high >
+    // static guide), so the toolbar total never implies more precision
+    // than what's actually shown per-item below it.
+    function estimatedUnitPrice(item) {
+      return item.live_recommended_price_usd ?? item.live_price_low_usd
+        ?? item.live_price_high_usd ?? item.guide_price_usd ?? null;
+    }
+
+    function updateAppBarSummary(items) {
+      let count = 0, total = 0, totalKnown = false;
+      for (const item of items) {
+        const qty = item.quantity || 1;
+        count += qty;
+        const unit = estimatedUnitPrice(item);
+        if (unit != null) { total += unit * qty; totalKnown = true; }
+      }
+      const carsText = `${count} car${count === 1 ? '' : 's'}`;
+      appBarSubtitle.textContent = totalKnown
+        ? `${carsText} · Est. ${money(total)}`
+        : carsText;
     }
 
     // ================================================================
