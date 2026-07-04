@@ -245,6 +245,11 @@
 
   .detail-section-header { display: flex; align-items: center; gap: 8px; margin: 0 0 10px; }
   .detail-section-header md-icon { width: 16px; height: 16px; color: var(--md-sys-color-primary); }
+  .detail-section-header .refresh-price-btn {
+    margin-left: auto;
+    --md-icon-button-icon-size: 18px;
+    --md-icon-button-icon-color: var(--md-sys-color-on-surface-variant);
+  }
   .detail-section-header h3 {
     font-family: var(--font-mono); text-transform: uppercase; letter-spacing: 0.08em;
     font-size: 11px; color: var(--md-sys-color-on-surface-variant); margin: 0;
@@ -469,6 +474,9 @@
     <div class="detail-section-header">
       <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M441-120v-86q-53-12-91.5-46T293-348l74-30q15 48 44.5 73t77.5 25q41 0 69.5-18.5T587-356q0-35-22-55.5T463-458q-86-27-118-64.5T313-614q0-65 42-101t86-41v-84h80v84q50 8 82.5 36.5T651-650l-74 32q-12-32-34-48t-60-16q-44 0-67 19.5T393-614q0 33 30 52t104 40q69 20 104.5 63.5T667-358q0 71-42 108t-104 46v84h-80Z"/></svg></md-icon>
       <h3>Pricing</h3>
+      <md-icon-button class="refresh-price-btn" id="refreshPriceBtn" aria-label="Recheck price">
+        <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-160q-134 0-227-93t-93-227q0-134 93-227t227-93q69 0 132 28.5T720-690v-110h80v280H520v-80h168q-32-56-87.5-88T480-720q-100 0-170 70t-70 170q0 100 70 170t170 70q77 0 139-44t87-116h84q-28 106-114 173t-196 67Z"/></svg></md-icon>
+      </md-icon-button>
     </div>
     <div class="detail-card" id="detPricingCard"></div>
 
@@ -633,6 +641,7 @@
     const detColor = document.getElementById('detColor');
     const detMatchCard = document.getElementById('detMatchCard');
     const detPricingCard = document.getElementById('detPricingCard');
+    const refreshPriceBtn = document.getElementById('refreshPriceBtn');
     const detStatusToggle = document.getElementById('detStatusToggle');
     const detQuantity = document.getElementById('detQuantity');
     const detCondition = document.getElementById('detCondition');
@@ -1733,6 +1742,31 @@
       if (currentDetailId == null) return;
       const item = allItems.find(it => it.id === currentDetailId);
       openDeleteConfirm(`Delete "${item ? (item.casting_name || 'this item') : 'this item'}"? This removes it and its photos permanently.`, () => deleteSingleItem(currentDetailId));
+    });
+
+    const ICON_REFRESH = refreshPriceBtn.innerHTML;
+    const ICON_REFRESH_SPINNER = '<md-circular-progress indeterminate style="--md-circular-progress-size:18px;"></md-circular-progress>';
+    refreshPriceBtn.addEventListener('click', async () => {
+      if (currentDetailId == null) return;
+      refreshPriceBtn.disabled = true;
+      refreshPriceBtn.innerHTML = ICON_REFRESH_SPINNER;
+      try {
+        const resp = await fetch(`/inventory/${currentDetailId}/refresh_price`, { method: 'POST' });
+        let data;
+        try { data = await resp.json(); } catch {
+          throw new Error(`Server sent back something unreadable (status ${resp.status}).`);
+        }
+        if (!resp.ok) throw new Error(data.detail || `Server error (status ${resp.status})`);
+        const updated = fromDbRow(data);
+        const idx = allItems.findIndex(it => it.id === currentDetailId);
+        if (idx !== -1) allItems[idx] = updated;
+        detPricingCard.innerHTML = buildPricingCard(updated);
+      } catch (err) {
+        showError(`Couldn't recheck price: ${err.message}`);
+      } finally {
+        refreshPriceBtn.disabled = false;
+        refreshPriceBtn.innerHTML = ICON_REFRESH;
+      }
     });
 
     loadHistory();

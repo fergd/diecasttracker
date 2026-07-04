@@ -452,6 +452,58 @@ def update_item(item_id: int, update: InventoryUpdate):
     return dict(row)
 
 
+@app.post("/inventory/{item_id}/refresh_price")
+def refresh_price(item_id: int):
+    """
+    Force a fresh eBay lookup for an already-saved item, bypassing the
+    30-day cache - for a deliberate user-triggered "recheck this price"
+    action, not something that happens automatically. Counts against
+    eBay's API quota same as any other live lookup, same reason the
+    normal /scan path never does this automatically either.
+    """
+    conn = get_conn()
+    row = conn.execute("SELECT * FROM inventory WHERE id = ?", (item_id,)).fetchone()
+    if row is None:
+        conn.close()
+        raise HTTPException(status_code=404, detail=f"No inventory item with id {item_id}")
+
+    casting_name = row["canonical_casting_name"] or row["extracted_casting_name"]
+    if not casting_name:
+        conn.close()
+        raise HTTPException(status_code=400, detail="No identified casting name to price-check.")
+
+    try:
+        live_price = get_live_price(
+            casting_name=casting_name,
+            series=row["canonical_series"] or row["extracted_series"],
+            year=row["canonical_year"] or row["extracted_year"],
+            packaging_type=row["packaging_type"],
+            brand=row["canonical_brand"] or row["extracted_brand"],
+            sku=row["extracted_sku"],
+            db_path=DB_PATH,
+            force_refresh=True,
+        )
+    except Exception as e:
+        conn.close()
+        raise HTTPException(status_code=502, detail=f"Live price refresh failed: {e}")
+
+    conn.execute("""
+        UPDATE inventory SET
+            live_price_low_usd = ?, live_price_high_usd = ?,
+            live_recommended_price_usd = ?, live_price_summary = ?,
+            live_price_fetched_at = ?
+        WHERE id = ?
+    """, (
+        live_price.get("price_low_usd"), live_price.get("price_high_usd"),
+        live_price.get("recommended_listing_price_usd"), live_price.get("summary"),
+        datetime.utcnow().isoformat(), item_id,
+    ))
+    conn.commit()
+    updated = conn.execute("SELECT * FROM inventory WHERE id = ?", (item_id,)).fetchone()
+    conn.close()
+    return dict(updated)
+
+
 _PHOTO_SLOT_COLUMNS = {"main": "photo_path", "secondary": "base_photo_path"}
 
 

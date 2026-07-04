@@ -191,12 +191,17 @@ def _fetch_cached(conn: sqlite3.Connection, casting_name: str, series: str | Non
 
 def get_live_price(casting_name: str, series: str | None, year: int | None,
                     packaging_type: str, brand: str | None = None, sku: str | None = None,
-                    db_path: str = "inventory.db") -> dict:
+                    db_path: str = "inventory.db", force_refresh: bool = False) -> dict:
     """
     brand/sku are search-quality inputs only, not part of the cache key -
     they're just extra context that helps eBay's search find the right
     listings for the same casting identity (casting_name/series/year/
     packaging_type already uniquely identifies it for caching purposes).
+
+    force_refresh=True skips the cache check entirely (still writes the
+    fresh result back into it afterward) - for an explicit user-triggered
+    "recheck price" action, not something to do automatically, since it
+    counts against eBay's API quota same as any other live lookup.
 
     Returns a dict with price_low_usd, price_high_usd,
     recommended_listing_price_usd, summary, cached (bool). Never raises - a
@@ -211,10 +216,11 @@ def get_live_price(casting_name: str, series: str | None, year: int | None,
     conn = sqlite3.connect(db_path)
     conn.executescript(open("schema.sql").read())
 
-    cached = _fetch_cached(conn, casting_name, series, year, packaging_type)
-    if cached:
-        conn.close()
-        return cached
+    if not force_refresh:
+        cached = _fetch_cached(conn, casting_name, series, year, packaging_type)
+        if cached:
+            conn.close()
+            return cached
 
     try:
         result = _search_live_price(casting_name, series, year, packaging_type, brand, sku)
