@@ -122,25 +122,57 @@
   .chip.active[data-status="listed"] { background: rgba(251,191,36,0.13); color: #FBBF24; border-color: #FBBF24; }
   .chip.active[data-status="sold"] { background: rgba(52,211,153,0.13); color: #34D399; border-color: #34D399; }
 
-  #basePrompt {
-    margin-bottom: 20px; padding: 14px 16px; border-radius: 12px;
-    background: var(--md-sys-color-surface-container);
-    border: 1px solid var(--md-sys-color-outline-variant);
-    color: var(--md-sys-color-on-surface-variant);
-    font-size: 13px;
+  /* ---- Full-screen in-app camera (live getUserMedia preview) ------------- */
+  .camera-view {
+    display: none; position: fixed; inset: 0; z-index: 70; background: #000;
   }
-  #baseBtn { display: none; width: 100%; margin-bottom: 8px; }
-  #baseBtn.show { display: inline-flex; }
-  #skipSecondBtn { display: none; width: 100%; margin-bottom: 24px; }
-  #skipSecondBtn.show { display: inline-flex; }
+  .camera-view.show { display: block; }
+  .camera-video {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; background: #000;
+  }
+  .camera-topbar {
+    position: absolute; top: 0; left: 0; right: 0; z-index: 2;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: max(16px, env(safe-area-inset-top)) 16px 28px;
+    background: linear-gradient(to bottom, rgba(0,0,0,0.6), transparent);
+  }
+  .camera-topbar-label {
+    font-family: var(--font-body); font-size: 17px; color: #fff;
+    position: absolute; left: 50%; transform: translateX(-50%);
+  }
+  .camera-icon-btn {
+    width: 40px; height: 40px; border-radius: 9999px; flex: none;
+    display: flex; align-items: center; justify-content: center;
+    background: rgba(0,0,0,0.4); color: #fff; border: none; cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .camera-icon-btn svg { width: 22px; height: 22px; }
+  .camera-icon-btn.active { background: var(--md-sys-color-primary); color: #000; }
+  .camera-skip-btn {
+    padding: 8px 20px; border-radius: 16px; border: none; cursor: pointer;
+    background: var(--navy-500, #3c5c82); color: #edeff1;
+    font-family: var(--font-body); font-size: 15px;
+  }
+  .camera-bottombar {
+    position: absolute; bottom: 0; left: 0; right: 0; z-index: 2;
+    display: flex; align-items: center; justify-content: center; gap: 56px;
+    padding: 24px 32px calc(env(safe-area-inset-bottom, 0px) + 28px);
+    background: linear-gradient(to top, rgba(0,0,0,0.65), transparent);
+  }
+  .camera-shutter-btn {
+    width: 72px; height: 72px; border-radius: 9999px; flex: none;
+    background: #fff; border: 4px solid rgba(255,255,255,0.35); cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+  }
+  .camera-shutter-btn:active { transform: scale(0.92); }
 
-  #scanningBanner {
-    display: none; align-items: center; gap: 12px;
-    padding: 12px 16px; margin-bottom: 10px; border-radius: 12px;
-    background: rgba(255,69,0,0.10); border: 1px solid rgba(255,69,0,0.25);
-    color: var(--md-sys-color-primary); font-size: 14px;
+  /* ---- Scanning sheet icon (pulses while a scan is in flight) ------------ */
+  .scanning-icon {
+    width: 40px; height: 40px; margin: 8px auto 12px; color: var(--md-sys-color-primary);
+    animation: scanning-pulse 1.4s ease-in-out infinite;
   }
-  #scanningBanner.show { display: flex; }
+  @keyframes scanning-pulse { 0%, 100% { opacity: 0.45; } 50% { opacity: 1; } }
 
   /* ---- Fixed FAB stack (bottom-right, stays aligned with the centered
      480px column even on wide viewports via the calc() trick below) ---- */
@@ -444,20 +476,6 @@
       </div>
     </div>
 
-    <p id="basePrompt" class="md-typescale-body-small" style="display:none;"></p>
-    <md-outlined-button id="baseBtn">
-      <md-icon slot="icon" id="baseBtnIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-143 0-253-90T88-400h82q28 106 114 173t196 67q86 0 160-42.5T756-320H640v-80h240v240h-80v-80q-57 76-141 118T480-80Zm0-280q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-560v-240h80v80q57-76 141-118t179-42q143 0 253 90t139 230h-82q-28-106-114-173t-196-67q-86 0-160 42.5T204-640h116v80H80Z"/></svg></md-icon>
-      <span id="baseBtnLabel">Add base/underside photo</span>
-    </md-outlined-button>
-    <input type="file" id="baseInput" accept="image/*" capture="environment" hidden>
-    <md-text-button id="skipSecondBtn">Scan without this photo</md-text-button>
-    <input type="file" id="cameraInput" accept="image/*" capture="environment" hidden>
-
-    <div id="scanningBanner">
-      <md-circular-progress indeterminate style="--md-circular-progress-size: 20px;"></md-circular-progress>
-      <span>Scanning car…</span>
-    </div>
-
     <div id="results"></div>
 
     <div id="emptyState">
@@ -545,6 +563,36 @@
     <md-fab id="scanFabBtn" variant="primary" label="Scan a car">
       <md-icon slot="icon" id="scanFabIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg></md-icon>
     </md-fab>
+  </div>
+
+  <!-- Full-screen in-app camera: live getUserMedia preview, sequential
+       front -> back capture (auto-advances the moment the front shot is
+       accepted, no interstitial "add a second photo?" prompt screen). -->
+  <div class="camera-view" id="cameraView">
+    <video class="camera-video" id="cameraVideo" autoplay playsinline muted></video>
+    <div class="camera-topbar">
+      <button class="camera-icon-btn" id="cameraCloseBtn" aria-label="Cancel">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <span class="camera-topbar-label" id="cameraStepLabel">Front</span>
+      <button class="camera-icon-btn" id="cameraSkipBtn" aria-label="Skip second photo" style="display:none; width:auto; border-radius:16px; padding:8px 20px; background:var(--navy-500,#3c5c82);">Skip</button>
+    </div>
+    <div class="camera-bottombar">
+      <button class="camera-icon-btn" id="cameraFlashBtn" aria-label="Toggle flash" style="display:none;">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5.22576 11.3294L12.224 2.34651C12.7713 1.64397 13.7972 2.08124 13.7972 3.01707V9.96994C13.7972 10.5305 14.1995 10.985 14.6958 10.985H18.0996C18.8729 10.985 19.2851 12.0149 18.7742 12.6706L11.776 21.6535C11.2287 22.356 10.2028 21.9188 10.2028 20.9829V14.0301C10.2028 13.4695 9.80048 13.015 9.3042 13.015H5.90035C5.12711 13.015 4.71494 11.9851 5.22576 11.3294Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="camera-shutter-btn" id="cameraShutterBtn" aria-label="Take photo"></button>
+      <button class="camera-icon-btn" id="cameraFlipBtn" aria-label="Flip camera">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M13 8.5H11C9.59987 8.5 8.8998 8.5 8.36502 8.77248C7.89462 9.01217 7.51217 9.39462 7.27248 9.86502C7 10.3998 7 11.0999 7 12.5C7 13.9001 7 14.6002 7.27248 15.135C7.51217 15.6054 7.89462 15.9878 8.36502 16.2275C8.8998 16.5 9.59987 16.5 11 16.5H13C14.4001 16.5 15.1002 16.5 15.635 16.2275C16.1054 15.9878 16.4878 15.6054 16.7275 15.135C17 14.6002 17 13.9001 17 12.5C17 11.0999 17 10.3998 16.7275 9.86502C16.4878 9.39462 16.1054 9.01217 15.635 8.77248C15.1002 8.5 14.4001 8.5 13 8.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 8.5L10.2236 8.05279C10.393 7.714 10.7393 7.5 11.118 7.5H12.882C13.2607 7.5 13.607 7.714 13.7764 8.05279L14 8.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12.2001 4L10.2001 2.20004C10.8463 2.06886 11.5151 2 12.2001 2C17.038 2 21.0735 5.43552 22 10M11.8 20L13.8 21.8C13.1538 21.9311 12.4849 22 11.8 22C6.96208 22 2.92657 18.5645 2.00003 14" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M12 12V12.5M13 12.5C13 13.0523 12.5523 13.5 12 13.5C11.4477 13.5 11 13.0523 11 12.5C11 11.9477 11.4477 11.5 12 11.5C12.5523 11.5 13 11.9477 13 12.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </div>
+
+  <div class="sheet-scrim" id="scanningScrim"></div>
+  <div class="sheet" id="scanningSheet" style="text-align:center;">
+    <div class="sheet-handle"></div>
+    <svg class="scanning-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.0042 2.5C17.9974 2.61348 19.2576 2.93381 20.1619 3.83811C21.0662 4.74243 21.3865 6.00268 21.5 7.99598M7.99582 2.5C6.00261 2.61348 4.74241 2.93381 3.83812 3.83811C2.9338 4.74243 2.61347 6.00268 2.5 7.99598M21.5 16.004C21.3865 17.9973 21.0662 19.2576 20.1619 20.1619C19.2576 21.0662 17.9973 21.3865 16.004 21.5M2.5 16.004C2.61347 17.9973 2.9338 19.2576 3.83812 20.1619C4.74244 21.0662 6.00268 21.3865 7.99597 21.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 12H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    <div style="font-family: var(--font-mono); letter-spacing: 0.08em; font-size: 14px;">SCANNING</div>
   </div>
 
   <div class="lightbox-scrim" id="lightboxScrim">
@@ -652,22 +700,25 @@
     const listView = document.getElementById('listView');
     const detailView = document.getElementById('detailView');
 
-    const cameraInput = document.getElementById('cameraInput');
-    const baseInput = document.getElementById('baseInput');
     const detailPhotoInput = document.getElementById('detailPhotoInput');
     const results = document.getElementById('results');
     const emptyState = document.getElementById('emptyState');
     const filteredEmptyState = document.getElementById('filteredEmptyState');
     const clearFiltersLink = document.getElementById('clearFiltersLink');
     const packagingTabs = document.getElementById('packagingTabs');
-    const basePrompt = document.getElementById('basePrompt');
-    const baseBtn = document.getElementById('baseBtn');
-    const baseBtnIcon = document.getElementById('baseBtnIcon');
-    const baseBtnLabel = document.getElementById('baseBtnLabel');
-    const skipSecondBtn = document.getElementById('skipSecondBtn');
-    const scanningBanner = document.getElementById('scanningBanner');
     const captureFab = document.getElementById('scanFabBtn');
     const scanFabIcon = document.getElementById('scanFabIcon');
+
+    const cameraView = document.getElementById('cameraView');
+    const cameraVideo = document.getElementById('cameraVideo');
+    const cameraStepLabel = document.getElementById('cameraStepLabel');
+    const cameraCloseBtn = document.getElementById('cameraCloseBtn');
+    const cameraSkipBtn = document.getElementById('cameraSkipBtn');
+    const cameraShutterBtn = document.getElementById('cameraShutterBtn');
+    const cameraFlashBtn = document.getElementById('cameraFlashBtn');
+    const cameraFlipBtn = document.getElementById('cameraFlipBtn');
+    const scanningScrim = document.getElementById('scanningScrim');
+    const scanningSheet = document.getElementById('scanningSheet');
 
     const statusBtn = document.getElementById('statusBtn');
     const exportBtn = document.getElementById('exportBtn');
@@ -698,8 +749,6 @@
     const lightboxScrim = document.getElementById('lightboxScrim');
     const lightboxImg = document.getElementById('lightboxImg');
 
-    const ICON_FLIP_CAMERA = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-80q-143 0-253-90T88-400h82q28 106 114 173t196 67q86 0 160-42.5T756-320H640v-80h240v240h-80v-80q-57 76-141 118T480-80Zm0-280q-50 0-85-35t-35-85q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35ZM80-560v-240h80v80q57-76 141-118t179-42q143 0 253 90t139 230h-82q-28-106-114-173t-196-67q-86 0-160 42.5T204-640h116v80H80Z"/></svg>';
-    const ICON_CHECK_CIRCLE = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m424-296 282-282-56-56-226 226-114-114-56 56 170 170Zm56 216q-83 0-156-31.5T197-197q-54-54-85.5-127T80-480q0-83 31.5-156T197-763q54-54 127-85.5T480-880q83 0 156 31.5T763-763q54 54 85.5 127T880-480q0 83-31.5 156T763-197q-54 54-127 85.5T480-80Zm0-80q134 0 227-93t93-227q0-134-93-227t-227-93q-134 0-227 93t-93 227q0 134 93 227t227 93Zm0-320Z"/></svg>';
     const ICON_CAR_PLACEHOLDER = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M240-200v40q0 17-11.5 28.5T200-120h-40q-17 0-28.5-11.5T120-160v-320l84-240q6-18 21.5-29t34.5-11h440q19 0 34.5 11t21.5 29l84 240v320q0 17-11.5 28.5T800-120h-40q-17 0-28.5-11.5T720-160v-40H240Zm-8-360h496l-42-120H274l-42 120Zm-32 80v200-200Zm100 160q25 0 42.5-17.5T360-380q0-25-17.5-42.5T300-440q-25 0-42.5 17.5T240-380q0 25 17.5 42.5T300-320Zm360 0q25 0 42.5-17.5T720-380q0-25-17.5-42.5T660-440q-25 0-42.5 17.5T600-380q0 25 17.5 42.5T660-320Zm-460 40h560v-200H200v200Z"/></svg>';
     const ICON_ADD = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M440-440H200v-80h240v-240h80v240h240v80H520v240h-80v-240Z"/></svg>';
 
@@ -772,87 +821,143 @@
     // The packaging tabs do double duty: they pick which packaging a new
     // scan is captured as, AND filter the list to that packaging type
     // (see sortedItems()) - one control, two purposes.
-    //
-    // The second-photo step means different things per packaging type: for
-    // loose cars it's the base/underside stamp; for carded cars it's the
-    // back of the card, which usually has the sku/Toy # code.
-    function resetBaseBtn() {
-      baseBtnIcon.innerHTML = ICON_FLIP_CAMERA;
-      if (packagingType === 'loose') {
-        basePrompt.textContent = 'Loose cars are identified from the base stamp (casting name + '
-          + 'year, stamped into the metal underside) — a lot more reliable than guessing from body '
-          + 'shape alone. Snap the front first, then the base.';
-        baseBtnLabel.textContent = 'Add base/underside photo';
-      } else {
-        basePrompt.textContent = 'The back of the card usually has the sku/Toy # code (e.g. '
-          + '"CFH06") printed near the barcode — capturing it lets matching use an exact code '
-          + 'lookup instead of guessing from the name alone.';
-        baseBtnLabel.textContent = 'Add back-of-card photo';
-      }
-    }
-    function updateSecondPhotoVisibility() {
-      const havePhoto = !!pendingMainPhoto;
-      // The explanatory prompt can show early for loose (informational -
-      // explains why a base photo matters before you've even taken the
-      // front one), but the BUTTON itself must never be interactive
-      // before the front photo exists: tapping it first used to silently
-      // no-op (submitScan() bails without pendingMainPhoto) while its own
-      // label had already optimistically flipped to "Photo attached -
-      // scanning...", which is exactly the "just spins, nothing happens"
-      // bug for loose scans - carded never hit this because its button
-      // was already gated on havePhoto.
-      basePrompt.style.display = (packagingType === 'loose' || havePhoto) ? 'block' : 'none';
-      baseBtn.classList.toggle('show', havePhoto);
-      skipSecondBtn.classList.toggle('show', havePhoto);
-    }
     function setPackaging(type) {
       packagingType = type;
       pendingMainPhoto = null;
       pendingBasePhoto = null;
-      resetBaseBtn();
-      updateSecondPhotoVisibility();
       renderList();
     }
     packagingTabs.addEventListener('change', (e) => {
       setPackaging(e.target.activeTabIndex === 1 ? 'loose' : 'carded');
     });
 
-    const ICON_CAMERA = scanFabIcon.innerHTML;
-    const ICON_FAB_SPINNER = '<md-circular-progress indeterminate style="--md-circular-progress-size:20px; --md-circular-progress-active-indicator-color:#fff;"></md-circular-progress>';
     function setScanning(scanning) {
       captureFab.disabled = scanning;
-      scanningBanner.classList.toggle('show', scanning);
-      scanFabIcon.innerHTML = scanning ? ICON_FAB_SPINNER : ICON_CAMERA;
+      if (scanning) openSheet(scanningSheet, scanningScrim);
+      else closeSheet(scanningSheet, scanningScrim);
     }
 
-    captureFab.addEventListener('click', () => cameraInput.click());
-    baseBtn.addEventListener('click', () => baseInput.click());
-    skipSecondBtn.addEventListener('click', () => submitScan());
+    // ---- In-app camera (live getUserMedia preview) ----
+    // Sequential front -> back capture: the moment the front shot is taken
+    // it auto-advances straight into the back/base camera view (no
+    // interstitial "add a second photo?" screen) - Skip is always
+    // available on that second step for when a second angle isn't useful.
+    let cameraStream = null;
+    let cameraFacingMode = 'environment';
+    let cameraStep = null;   // 'front' | 'back'
+    let torchOn = false;
 
-    cameraInput.addEventListener('change', async (e) => {
-      const file = e.target.files[0];
-      if (!file) return;
-      pendingMainPhoto = file;
-      updateSecondPhotoVisibility();
-      cameraInput.value = '';
-    });
-
-    baseInput.addEventListener('change', async (e) => {
-      const file = e.target.files[0];
-      baseInput.value = '';
-      if (!file) return;
-      if (!pendingMainPhoto) {
-        // Shouldn't be reachable now that the button is hidden until the
-        // front photo exists, but backstop it anyway rather than silently
-        // no-op with a label stuck on "scanning...".
-        showError('Take the front photo first, then add the base/underside photo.');
+    async function startCameraStream() {
+      const constraints = {
+        video: { facingMode: { ideal: cameraFacingMode }, width: { ideal: 1920 }, height: { ideal: 1080 } },
+        audio: false,
+      };
+      cameraStream = await navigator.mediaDevices.getUserMedia(constraints);
+      cameraVideo.srcObject = cameraStream;
+      torchOn = false;
+      const track = cameraStream.getVideoTracks()[0];
+      const caps = track && track.getCapabilities ? track.getCapabilities() : null;
+      cameraFlashBtn.style.display = (caps && caps.torch) ? 'flex' : 'none';
+      cameraFlashBtn.classList.remove('active');
+    }
+    function stopCameraStream() {
+      if (cameraStream) {
+        cameraStream.getTracks().forEach(t => t.stop());
+        cameraStream = null;
+      }
+      cameraVideo.srcObject = null;
+    }
+    async function openCamera(step) {
+      cameraStep = step;
+      cameraStepLabel.textContent = step === 'front' ? 'Front' : (packagingType === 'loose' ? 'Base' : 'Back');
+      cameraSkipBtn.style.display = step === 'back' ? 'inline-flex' : 'none';
+      cameraView.classList.add('show');
+      if (!window.isSecureContext) {
+        closeCameraForError();
+        showError('Camera capture needs a secure (HTTPS) connection - open this app through its tailnet HTTPS URL rather than a plain http:// address.');
         return;
       }
-      pendingBasePhoto = file;
-      baseBtnIcon.innerHTML = ICON_CHECK_CIRCLE;
-      baseBtnLabel.textContent = 'Photo attached — scanning…';
+      try {
+        await startCameraStream();
+      } catch (err) {
+        closeCameraForError();
+        const msg = err && err.name === 'NotAllowedError'
+          ? 'Camera permission was denied - enable camera access for this site in your browser settings and try again.'
+          : `Couldn't access the camera: ${err.message || err}`;
+        showError(msg);
+      }
+    }
+    function closeCameraForError() {
+      stopCameraStream();
+      cameraView.classList.remove('show');
+      cameraStep = null;
+    }
+    function captureFrame() {
+      return new Promise((resolve) => {
+        const canvas = document.createElement('canvas');
+        canvas.width = cameraVideo.videoWidth;
+        canvas.height = cameraVideo.videoHeight;
+        canvas.getContext('2d').drawImage(cameraVideo, 0, 0, canvas.width, canvas.height);
+        canvas.toBlob(resolve, 'image/jpeg', 0.92);
+      });
+    }
+
+    cameraCloseBtn.addEventListener('click', () => {
+      stopCameraStream();
+      cameraView.classList.remove('show');
+      cameraStep = null;
+      pendingMainPhoto = null;
+      pendingBasePhoto = null;
+    });
+
+    cameraShutterBtn.addEventListener('click', async () => {
+      const blob = await captureFrame();
+      if (!blob) return;
+      if (cameraStep === 'front') {
+        pendingMainPhoto = blob;
+        openCamera('back');
+      } else {
+        pendingBasePhoto = blob;
+        stopCameraStream();
+        cameraView.classList.remove('show');
+        cameraStep = null;
+        await submitScan();
+      }
+    });
+
+    cameraSkipBtn.addEventListener('click', async () => {
+      stopCameraStream();
+      cameraView.classList.remove('show');
+      cameraStep = null;
       await submitScan();
     });
+
+    cameraFlipBtn.addEventListener('click', async () => {
+      const previous = cameraFacingMode;
+      cameraFacingMode = previous === 'environment' ? 'user' : 'environment';
+      stopCameraStream();
+      try {
+        await startCameraStream();
+      } catch {
+        cameraFacingMode = previous;
+        try { await startCameraStream(); } catch { /* leave preview blank rather than erroring mid-flow */ }
+      }
+    });
+
+    cameraFlashBtn.addEventListener('click', async () => {
+      const track = cameraStream && cameraStream.getVideoTracks()[0];
+      if (!track) return;
+      const next = !torchOn;
+      try {
+        await track.applyConstraints({ advanced: [{ torch: next }] });
+        torchOn = next;
+        cameraFlashBtn.classList.toggle('active', torchOn);
+      } catch {
+        // Device reports torch support but the request failed - leave state unchanged.
+      }
+    });
+
+    captureFab.addEventListener('click', () => openCamera('front'));
 
     async function submitScan() {
       if (!pendingMainPhoto) return;
@@ -860,9 +965,9 @@
       setScanning(true);
 
       const formData = new FormData();
-      formData.append('photo', pendingMainPhoto);
+      formData.append('photo', pendingMainPhoto, 'front.jpg');
       formData.append('packaging_type', packagingType);
-      if (pendingBasePhoto) formData.append('base_photo', pendingBasePhoto);
+      if (pendingBasePhoto) formData.append('base_photo', pendingBasePhoto, 'back.jpg');
 
       let newItem = null, errMsg = null;
       try {
@@ -881,8 +986,6 @@
 
       pendingMainPhoto = null;
       pendingBasePhoto = null;
-      resetBaseBtn();
-      updateSecondPhotoVisibility();
 
       if (errMsg) {
         setScanning(false);
@@ -1930,8 +2033,6 @@
     });
 
     loadHistory();
-    resetBaseBtn();
-    updateSecondPhotoVisibility();
 
     // ================================================================
     // Diagnostics
