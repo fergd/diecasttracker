@@ -12,11 +12,12 @@ on `main` — no decision yet on whether to keep `main` around long-term or
 promote this branch over it)
 **Deployment host:** `backupbox` (Debian, personal home server), reachable
 only over Tailscale
-**Service:** `diecast-inventory.service` (systemd), port `8420` — name and
-working directory (`/home/christan/Projects/carded_inventory`) intentionally
-left as-is; renaming those means moving files and re-pointing an active unit
-for no functional gain, out of scope of the app-name rename
-**Working directory on host:** `/home/christan/Projects/carded_inventory`
+**Service:** `zamak-ledger.service` (systemd), port `8420` — renamed from
+`diecast-inventory.service` on 2026-07-04 (directory moved, venv rebuilt
+from scratch since venv scripts bake in absolute paths, old unit disabled
+and removed after the new one was confirmed working)
+**Working directory on host:** `/home/christan/Projects/zamak-ledger`
+(renamed from `/home/christan/Projects/carded_inventory`)
 
 ## What this is
 
@@ -252,14 +253,14 @@ git commit -m "..."
 git push
 
 # on backupbox (or via ssh christan@backupbox "...")
-cd ~/Projects/carded_inventory
+cd ~/Projects/zamak-ledger
 git pull
-sudo systemctl restart diecast-inventory   # only strictly needed for .py changes
+sudo systemctl restart zamak-ledger        # only strictly needed for .py changes
 curl -s http://localhost:8420/status       # confirm the new code is actually live
 ```
 
 Verify a restart actually landed by checking
-`systemctl show diecast-inventory -p ActiveEnterTimestamp` against the
+`systemctl show zamak-ledger -p ActiveEnterTimestamp` against the
 commit time — this session hit more than one case where a requested restart
 silently didn't happen and stale code kept running.
 
