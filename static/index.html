@@ -1762,9 +1762,14 @@
 
     function renderStatusHtml(s) {
       const keyOk = s.anthropic_api_key_configured;
+      const ebayOk = s.ebay_api_configured;
       let html = `<div class="status-section">
         <h3>Claude API key</h3>
         <div class="${keyOk ? 'status-ok' : 'status-warn'}">${keyOk ? 'Configured' : 'NOT configured - scans will fail'}</div>
+      </div>`;
+      html += `<div class="status-section">
+        <h3>eBay API</h3>
+        <div class="${ebayOk ? 'status-ok' : 'status-warn'}">${ebayOk ? 'Configured' : 'NOT configured - live pricing will fail (set EBAY_CLIENT_ID / EBAY_CLIENT_SECRET)'}</div>
       </div>`;
 
       html += `<div class="status-section"><h3>Reference database coverage</h3>`;

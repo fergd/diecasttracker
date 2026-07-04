@@ -2,84 +2,167 @@
 live_pricing.py
 
 Augments the static guide-book price (from South Texas Diecast, refreshed
-only when reference_import.py reruns) with a live web-search-backed price
-check, using Claude's server-side web_search tool.
+only when reference_import.py reruns) with a real eBay price check via
+eBay's own Browse API.
 
-COST CONTROL - this is the part that actually matters:
+WHY NOT CLAUDE'S web_search TOOL (what this used to do): confirmed by
+inspecting the raw API response directly - a web_search_tool_result block
+only ever contains `title`, `url`, `page_age`, and an opaque
+`encrypted_content` blob. There is no page-content/snippet field, so the
+model has no way to see a listing's actual price unless it happens to
+appear in the search-result title text. It would reliably find the exact
+right listing and still have to report "price not visible in search
+results" - not a bug, just a hard capability limit of that tool.
 
-  1. Cached by casting identity (name + series + year + packaging_type), NOT
-     by individual scan. Scanning five copies of the same casting triggers
-     ONE live search total, not five - see live_price_cache in schema.sql.
+WHY NOT SCRAPE EBAY DIRECTLY (the other alternative considered): confirmed
+eBay returns a 403 bot-detection error page for a plain HTTP fetch of an
+item page, from two different networks. Not something to build around -
+eBay does not want to be scraped and actively blocks it.
+
+So: eBay's own Browse API, with a registered developer application
+(developer.ebay.com -> My Account -> Application Keys -> Production
+keyset). Requires two environment variables:
+    EBAY_CLIENT_ID
+    EBAY_CLIENT_SECRET
+
+Only the Browse API is used (item_summary/search) - available to any
+registered developer, no special approval needed. This returns ACTIVE
+listing prices only, not sold/completed transaction history - that lives
+behind eBay's separate Marketplace Insights API, which requires an
+approved business-use application. "Recommended price" here is honestly
+an asking-price estimate, not a sold-comps estimate, and is labeled as
+such in the summary text - never claim otherwise.
+
+COST CONTROL - same principle as before, just a different meter:
+  1. Cached by casting identity (name + series + year + packaging_type),
+     NOT by individual scan - see live_price_cache in schema.sql.
   2. Cache entries are reused for CACHE_MAX_AGE_DAYS before a refresh is
-     even considered. Collectible prices don't move hour to hour; a
-     30-day-old price check is still meaningfully more current than a
-     guide book that gets updated far less often than that.
-  3. max_uses caps the number of searches Claude can run for a single
-     lookup (web search is billed per search, $10/1,000, on top of the
-     token cost of the search results themselves - see Anthropic's
-     pricing page). A capped, narrow query rarely needs more than 1-2
-     searches to answer "what does this sell for."
-  4. Only called for scans that already CONFIRMED or NEED_REVIEW against
-     the reference database (see app.py) - there's nothing meaningful to
-     price-check for a no_match item, so those never trigger a search.
-
-Net effect: cost scales with the number of DISTINCT castings you own, not
-the number of cars you scan or how many times you rescan the same one.
+     even considered.
+  3. The Browse API's free tier has a daily call quota (check your
+     developer.ebay.com dashboard for the current limit) - caching is what
+     keeps this well under it for a personal collection's scan volume.
 """
 
-import json
-import re
+import base64
+import os
 import sqlite3
+import time
 from datetime import datetime, timedelta
 
-import anthropic
+import requests
 
-MODEL = "claude-haiku-4-5-20251001"  # same cost-efficient choice as extraction
-MAX_SEARCHES_PER_LOOKUP = 3           # hard ceiling on web_search calls per lookup
 CACHE_MAX_AGE_DAYS = 30                # how long a cached live price stays valid
+_REQUEST_TIMEOUT = 15
 
-PRICE_LOOKUP_PROMPT = """Search eBay for what this specific diecast car actually \
-sells for:
+_TOKEN_URL = "https://api.ebay.com/identity/v1/oauth2/token"
+_SEARCH_URL = "https://api.ebay.com/buy/browse/v1/item_summary/search"
+_OAUTH_SCOPE = "https://api.ebay.com/oauth/api_scope"
 
-Brand: {brand}
-Casting: {casting_name}
-Series: {series}
-Year: {year}
-Packaging: {packaging_type} (carded/packaged vs. loose/unpackaged - price for THIS \
-packaging specifically; the two differ a lot for the same casting){sku_line}
+# Module-level token cache - a client-credentials token is valid for ~2
+# hours and there's no per-user state involved, so one process-wide token
+# reused across requests is correct, not a shortcut.
+_cached_token: str | None = None
+_cached_token_expiry: float = 0.0
 
-Try a search combining brand + casting name first (e.g. "Hot Wheels {casting_name}"). \
-If a sku/Toy # code is given above, also try including it directly - sellers very \
-commonly put the exact code in their listing title (e.g. "Hot Wheels Ford Fiesta \
-T9710"), which narrows results far better than the casting name alone and is worth a \
-dedicated search of its own, not just a fallback.
 
-Prioritize SOLD/completed listings over active asking prices - an asking price tells \
-you what a seller hopes for, a sold price tells you what a buyer actually paid. If you \
-can't find sold listings, DO NOT leave the price fields empty - fall back to the range/ \
-average of active asking listings instead, and say clearly in the summary that these \
-are asking prices, not confirmed sales (e.g. "No sold listings found; 3 active asking \
-prices average ~$9"). Only leave the price fields null if you found no relevant \
-listings of either kind. Ignore results for unrelated castings or the wrong packaging \
-type.
+def _get_ebay_token() -> str:
+    global _cached_token, _cached_token_expiry
+    if _cached_token and time.time() < _cached_token_expiry - 60:
+        return _cached_token
 
-Respond with ONLY a JSON object, no preamble, no markdown fences:
-{{
-  "price_low_usd": lowest reasonable price in USD you found for this exact casting +
-                     packaging (from sold listings if available, otherwise active
-                     asking listings), or null if nothing relevant turned up,
-  "price_high_usd": highest reasonable price in USD you found, or null,
-  "recommended_listing_price_usd": the single price point most likely to actually
-                     result in a sale within a reasonable time - not the ceiling, not
-                     the floor, but a realistic competitive listing price based on
-                     what similar items actually sold for, or on asking prices if
-                     that's all that's available. null if you couldn't find enough
-                     data to recommend one,
-  "summary": one brief sentence on what you found (e.g. "4 eBay sold listings from
-              the past month, $6-11, most clustered around $8"), or, if only asking
-              prices were available, one that says so (e.g. "No sold listings found;
-              based on 3 active asking prices, $7-11")
-}}"""
+    client_id = os.environ.get("EBAY_CLIENT_ID")
+    client_secret = os.environ.get("EBAY_CLIENT_SECRET")
+    if not client_id or not client_secret:
+        raise RuntimeError(
+            "EBAY_CLIENT_ID / EBAY_CLIENT_SECRET not configured - get a Production "
+            "keyset from developer.ebay.com and set both as environment variables."
+        )
+
+    auth = base64.b64encode(f"{client_id}:{client_secret}".encode()).decode()
+    resp = requests.post(
+        _TOKEN_URL,
+        headers={
+            "Authorization": f"Basic {auth}",
+            "Content-Type": "application/x-www-form-urlencoded",
+        },
+        data={"grant_type": "client_credentials", "scope": _OAUTH_SCOPE},
+        timeout=_REQUEST_TIMEOUT,
+    )
+    resp.raise_for_status()
+    data = resp.json()
+    _cached_token = data["access_token"]
+    _cached_token_expiry = time.time() + data.get("expires_in", 7200)
+    return _cached_token
+
+
+def _search_ebay(query: str, limit: int = 25) -> list[dict]:
+    token = _get_ebay_token()
+    resp = requests.get(
+        _SEARCH_URL,
+        headers={
+            "Authorization": f"Bearer {token}",
+            "X-EBAY-C-MARKETPLACE-ID": "EBAY_US",
+        },
+        params={"q": query, "limit": limit},
+        timeout=_REQUEST_TIMEOUT,
+    )
+    resp.raise_for_status()
+    return resp.json().get("itemSummaries", [])
+
+
+def _extract_prices(items: list[dict]) -> list[float]:
+    prices = []
+    for item in items:
+        price_info = item.get("price") or {}
+        if price_info.get("currency", "USD") != "USD":
+            continue
+        try:
+            prices.append(float(price_info["value"]))
+        except (KeyError, TypeError, ValueError):
+            continue
+    return prices
+
+
+def _search_live_price(casting_name: str, series: str | None, year: int | None,
+                        packaging_type: str, brand: str | None = None,
+                        sku: str | None = None) -> dict:
+    # sku is the strongest search term when we have it - sellers commonly
+    # put the exact Toy # in listing titles, same reasoning as the old
+    # Claude-search prompt.
+    query_parts = [brand, sku or casting_name]
+    query = " ".join(p for p in query_parts if p).strip()
+
+    items = _search_ebay(query)
+    prices = sorted(_extract_prices(items))
+
+    if not prices:
+        return {
+            "price_low_usd": None, "price_high_usd": None,
+            "recommended_listing_price_usd": None,
+            "summary": f"No active eBay listings found for '{query}'.",
+            "search_count": 0,
+            "cached": False,
+        }
+
+    low, high = prices[0], prices[-1]
+    recommended = prices[len(prices) // 2]  # median - less skewed by an outlier
+                                              # listing than a mean would be
+    n = len(prices)
+    return {
+        "price_low_usd": round(low, 2),
+        "price_high_usd": round(high, 2),
+        "recommended_listing_price_usd": round(recommended, 2),
+        "summary": (
+            f"{n} active eBay listing{'s' if n != 1 else ''} found, asking "
+            f"${low:.2f}-${high:.2f} (asking prices, not sold/completed data - "
+            f"eBay's sold-listings API requires separate business approval)."
+        ),
+        "search_count": n,  # repurposed from "how many searches" (the old
+                              # Claude-web_search cost meter) to "how many
+                              # listings this price is based on" - eBay's API
+                              # isn't metered per-search the same way
+        "cached": False,
+    }
 
 
 def _fetch_cached(conn: sqlite3.Connection, casting_name: str, series: str | None,
@@ -106,96 +189,12 @@ def _fetch_cached(conn: sqlite3.Connection, casting_name: str, series: str | Non
     }
 
 
-def _search_live_price(casting_name: str, series: str | None, year: int | None,
-                        packaging_type: str, brand: str | None = None,
-                        sku: str | None = None) -> dict:
-    client = anthropic.Anthropic()  # reads ANTHROPIC_API_KEY from env
-
-    sku_line = f"\nSku/Toy # code: {sku}" if sku else ""
-    prompt = PRICE_LOOKUP_PROMPT.format(
-        brand=brand or "unknown",
-        casting_name=casting_name,
-        series=series or "unknown",
-        year=year or "unknown",
-        packaging_type=packaging_type,
-        sku_line=sku_line,
-    )
-
-    try:
-        response = client.messages.create(
-            model=MODEL,
-            max_tokens=700,
-            messages=[{"role": "user", "content": prompt}],
-            tools=[{
-                "type": "web_search_20250305",
-                "name": "web_search",
-                "max_uses": MAX_SEARCHES_PER_LOOKUP,
-                "allowed_domains": ["ebay.com"],   # search eBay specifically, not
-                                                     # a generic web search - this is
-                                                     # what was actually asked for
-            }],
-        )
-    except anthropic.APIStatusError as e:
-        detail = e.message
-        try:
-            detail = e.body.get("error", {}).get("message", e.message)
-        except (AttributeError, TypeError):
-            pass
-        raise RuntimeError(f"Live price search failed ({e.status_code}): {detail}") from e
-
-    # How many searches did this actually use? Prefer the usage field if
-    # present, fall back to counting server_tool_use blocks.
-    search_count = 0
-    usage = getattr(response, "usage", None)
-    server_tool_use = getattr(usage, "server_tool_use", None) if usage else None
-    if server_tool_use is not None:
-        search_count = getattr(server_tool_use, "web_search_requests", 0) or 0
-    if not search_count:
-        search_count = sum(
-            1 for block in response.content
-            if getattr(block, "type", None) == "server_tool_use"
-            and getattr(block, "name", None) == "web_search"
-        )
-
-    # Pull the final text block - that's where the JSON answer should be.
-    # Despite being asked for ONLY JSON, Claude routinely wraps it in a
-    # ```json fence and/or prefixes it with a sentence of narration (e.g.
-    # "Based on my search results, ..."), especially after a multi-search
-    # tool-use turn - so a plain prefix-strip isn't reliable. Look for a
-    # fenced block first, then fall back to the outermost {...} span.
-    text_blocks = [b.text for b in response.content if getattr(b, "type", None) == "text"]
-    raw_text = (text_blocks[-1] if text_blocks else "").strip()
-
-    fence_match = re.search(r"```(?:json)?\s*(\{.*?\})\s*```", raw_text, re.DOTALL)
-    if fence_match:
-        json_text = fence_match.group(1)
-    else:
-        start, end = raw_text.find("{"), raw_text.rfind("}")
-        json_text = raw_text[start:end + 1] if start != -1 and end > start else raw_text
-
-    try:
-        parsed = json.loads(json_text)
-    except json.JSONDecodeError:
-        parsed = {"price_low_usd": None, "price_high_usd": None,
-                   "recommended_listing_price_usd": None,
-                   "summary": "Search completed but response wasn't parseable."}
-
-    return {
-        "price_low_usd": parsed.get("price_low_usd"),
-        "price_high_usd": parsed.get("price_high_usd"),
-        "recommended_listing_price_usd": parsed.get("recommended_listing_price_usd"),
-        "summary": parsed.get("summary"),
-        "search_count": search_count,
-        "cached": False,
-    }
-
-
 def get_live_price(casting_name: str, series: str | None, year: int | None,
                     packaging_type: str, brand: str | None = None, sku: str | None = None,
                     db_path: str = "inventory.db") -> dict:
     """
     brand/sku are search-quality inputs only, not part of the cache key -
-    they're just extra context that helps the web_search find the right
+    they're just extra context that helps eBay's search find the right
     listings for the same casting identity (casting_name/series/year/
     packaging_type already uniquely identifies it for caching purposes).
 

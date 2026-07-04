@@ -312,16 +312,15 @@ def status():
     single scan's result. This is the tool for answering "is the pipeline
     broken, or does the reference DB just not cover this casting/year yet."
 
-    Deliberately does NOT make a live web_search call by default - that
-    costs real money per the earlier pricing conversation. Set
-    ?test_live_search=true to actually spend one search verifying the
-    live-pricing connection end-to-end.
+    Deliberately does NOT make a live eBay API call by default - hit
+    /status/test_live_search to actually verify that connection end-to-end.
     """
     result: dict = {"checked_at": datetime.utcnow().isoformat() + "Z"}
 
-    # Anthropic API key presence (not validity - we don't spend money just
-    # to check this by default)
     result["anthropic_api_key_configured"] = bool(os.environ.get("ANTHROPIC_API_KEY"))
+    result["ebay_api_configured"] = bool(
+        os.environ.get("EBAY_CLIENT_ID") and os.environ.get("EBAY_CLIENT_SECRET")
+    )
 
     # Reference database coverage - the most common real explanation for a
     # pile of no_match results is "this year/brand was never imported,"
@@ -369,11 +368,10 @@ def status():
 @app.get("/status/test_live_search")
 def test_live_search():
     """
-    Actually spends one real web search to verify the live-pricing pipeline
-    end-to-end (Claude API reachable, web_search tool working, response
-    parses correctly) - separate from the free /status check above since
-    this one costs a small amount of real money. Call this deliberately,
-    not automatically.
+    Actually calls eBay's Browse API to verify the live-pricing pipeline
+    end-to-end (OAuth token fetch, search, response parsing) - separate
+    from the free /status check above since this counts against eBay's
+    API quota. Call this deliberately, not automatically.
     """
     try:
         result = get_live_price(

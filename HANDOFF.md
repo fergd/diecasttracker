@@ -39,12 +39,12 @@ Phone (Tailscale) -> browser -> backupbox:8420
                     +---------------+----------------+
                     |               |                |
             vision_extract.py  match.py        live_pricing.py
-            (Claude vision:    (exact SKU match  (Claude + web_search,
-             reads card/base   first, else fuzzy  eBay-constrained,
-             photos -> JSON)   name+series        cached by casting
-                                scoring against    identity, brand+sku
-                                reference_         included in the
-                                castings)          search query)
+            (Claude vision:    (exact SKU match  (eBay Browse API,
+             reads card/base   first, else fuzzy  OAuth client-
+             photos -> JSON)   name+series        credentials, cached
+                                scoring against    by casting identity)
+                                reference_
+                                castings)
                     |               |                |
                     +---------------+----------------+
                                     |
@@ -73,7 +73,7 @@ Phone (Tailscale) -> browser -> backupbox:8420
 | `schema.sql` | Canonical schema for `inventory`, `reference_castings`, `live_price_cache` |
 | `vision_extract.py` | Claude vision calls — separate prompts for carded vs. loose |
 | `match.py` | Exact-SKU match first, else per-candidate name+series scoring against `reference_castings` |
-| `live_pricing.py` | eBay-constrained live pricing via Claude's `web_search` tool, cached by casting identity |
+| `live_pricing.py` | Live eBay pricing via eBay's own Browse API (active listings only), cached by casting identity - requires `EBAY_CLIENT_ID`/`EBAY_CLIENT_SECRET` env vars |
 | `reference_import.py` | Hot Wheels importer — South Texas Diecast, 2013-2018 |
 | `reference_import_hallsguide.py` | Hot Wheels importer — Hallsguide, 2000-2026 (superseded in practice by the wiki importer below, but still valid) |
 | `reference_import_hotwheels_wiki.py` | Hot Wheels importer — Fandom wiki via MediaWiki API (bypasses Cloudflare), 2000-2026, includes photo refs |
@@ -189,12 +189,38 @@ built from pointer events / plain CSS):
    barcode"** — misleading on cards where it's elsewhere (confirmed: one
    card had it near the hang-tab notch, nowhere near the barcode), causing
    the sku to go unread entirely. Broadened the guidance.
+9. **`_sku_match`'s exact-equality check silently failed whenever
+   extraction merged the short code + dash-suffix into one string** (e.g.
+   "DHX47-D9B0F" instead of just "DHX47") — confirmed 3 of 7 real scans in
+   one session hit this, despite the extraction prompt asking for them to
+   be split into separate fields. Falls through to fuzzy name matching on
+   every miss, which can land on a wrong or even mislabeled reference row.
+   Now also tries the portion before the first dash.
+10. **Live pricing replaced entirely - Claude's `web_search` tool turned
+    out to be structurally incapable of this.** Confirmed by inspecting the
+    raw API response: a `web_search_tool_result` block only ever contains
+    `title`/`url`/`page_age`/an opaque `encrypted_content` blob - no page
+    content or price field exists to read, so the model could find the
+    exact right listing and still never know its price. Direct HTML
+    scraping of eBay listing pages was tried and rejected - confirmed 403
+    bot-detection block from two different networks, and deliberately
+    evading that wasn't something to build around. Replaced with eBay's
+    own Browse API (OAuth client-credentials, no scraping) - requires
+    `EBAY_CLIENT_ID`/`EBAY_CLIENT_SECRET` env vars from a Production
+    keyset at developer.ebay.com. Only returns active-listing prices, not
+    sold/completed data (that needs eBay's separately-gated Marketplace
+    Insights API) - summaries say so explicitly, never claim sold-comps
+    data that isn't there.
 
 ## Outstanding / next steps
 
-- [ ] **Verify the latest commit's fixes on-device** — restart was pending
-      as of this handoff (scroll/tap fix, loose-scan fix, matching fix,
-      duplicate detection all need real-device confirmation).
+- [ ] **eBay API credentials not yet set on backupbox** — `EBAY_CLIENT_ID`/
+      `EBAY_CLIENT_SECRET` need to be added to the systemd service
+      environment (same place `ANTHROPIC_API_KEY` lives) before live
+      pricing will work at all. Check `/status` for `ebay_api_configured`.
+- [ ] **Verify the latest commits' fixes on-device** — sku-suffix fix and
+      the eBay pricing switchover both need real confirmation once
+      credentials are in place.
 - [ ] No UI for `/inventory/needs_review` yet — API-only.
 - [ ] No auth — fine while Tailscale is the boundary.
 - [ ] Matchbox reference coverage still thinner than Hot Wheels (1,029 vs.
@@ -233,5 +259,7 @@ silently didn't happen and stale code kept running.
 ## Cost model (approximate)
 
 - Extraction (Haiku, per scan): ~$0.002-0.003
-- Live pricing (Haiku + web_search, per **distinct casting**, not per scan):
-  ~$0.02-0.04, $0 for repeat scans of an already-cached casting within 30 days
+- Live pricing (eBay Browse API, per **distinct casting**, not per scan): no
+  per-call dollar cost, counts against eBay's free-tier daily call quota
+  instead (check developer.ebay.com dashboard for the current limit) - $0/
+  no quota use for repeat scans of an already-cached casting within 30 days
