@@ -125,14 +125,19 @@ def _extract_prices(items: list[dict]) -> list[float]:
 
 def _search_live_price(casting_name: str, series: str | None, year: int | None,
                         packaging_type: str, brand: str | None = None,
-                        sku: str | None = None) -> dict:
+                        sku: str | None = None, treasure_hunt: str | None = None) -> dict:
     # Combine everything we know rather than picking just one term - sellers
     # often don't include the Toy # in their listing title at all, so a
     # sku-only query (the previous behavior whenever a sku was available)
     # silently missed real listings that only mention the casting name/year.
     # More keywords just means eBay's own relevance ranking has more to work
     # with, not a stricter match requirement.
-    query_parts = [brand, casting_name, str(year) if year else None, sku]
+    #
+    # Treasure Hunts sell for meaningfully more than the same casting's
+    # regular release - a query that doesn't say so would mix in ordinary
+    # asking prices for the wrong variant entirely, not just noisy data.
+    th_term = {"TH": "Treasure Hunt", "Super TH": "Super Treasure Hunt"}.get(treasure_hunt)
+    query_parts = [brand, casting_name, str(year) if year else None, sku, th_term]
     query = " ".join(p for p in query_parts if p).strip()
 
     items = _search_ebay(query)
@@ -194,12 +199,23 @@ def _fetch_cached(conn: sqlite3.Connection, casting_name: str, series: str | Non
 
 def get_live_price(casting_name: str, series: str | None, year: int | None,
                     packaging_type: str, brand: str | None = None, sku: str | None = None,
+                    treasure_hunt: str | None = None,
                     db_path: str = "inventory.db", force_refresh: bool = False) -> dict:
     """
     brand/sku are search-quality inputs only, not part of the cache key -
     they're just extra context that helps eBay's search find the right
     listings for the same casting identity (casting_name/series/year/
     packaging_type already uniquely identifies it for caching purposes).
+
+    treasure_hunt IS folded into the cache key (as a suffix on the cached
+    casting_name, e.g. "Toyota Supra [Super TH]") rather than left out like
+    brand/sku - a Treasure Hunt sells for meaningfully more than the same
+    casting's regular release, so without this a TH scan could reuse (or
+    overwrite) the regular release's cached price. live_price_cache already
+    has a UNIQUE INDEX on (casting_name, series_name, release_year,
+    packaging_type) deployed on real databases - adding a real column and
+    migrating that index safely wasn't worth the risk for what a string
+    suffix already solves cleanly.
 
     force_refresh=True skips the cache check entirely (still writes the
     fresh result back into it afterward) - for an explicit user-triggered
@@ -216,17 +232,19 @@ def get_live_price(casting_name: str, series: str | None, year: int | None,
                 "recommended_listing_price_usd": None,
                 "summary": None, "cached": False, "skipped": True}
 
+    cache_casting_name = f"{casting_name} [{treasure_hunt}]" if treasure_hunt else casting_name
+
     conn = sqlite3.connect(db_path)
     conn.executescript(open("schema.sql").read())
 
     if not force_refresh:
-        cached = _fetch_cached(conn, casting_name, series, year, packaging_type)
+        cached = _fetch_cached(conn, cache_casting_name, series, year, packaging_type)
         if cached:
             conn.close()
             return cached
 
     try:
-        result = _search_live_price(casting_name, series, year, packaging_type, brand, sku)
+        result = _search_live_price(casting_name, series, year, packaging_type, brand, sku, treasure_hunt)
     except Exception as e:
         conn.close()
         return {

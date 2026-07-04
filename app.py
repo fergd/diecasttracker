@@ -64,6 +64,7 @@ INVENTORY_COLUMNS = {
     "extracted_series": "TEXT",
     "extracted_year": "TEXT",
     "extracted_color": "TEXT",
+    "treasure_hunt": "TEXT",
     "extracted_raw_json": "TEXT",
     "match_reference_id": "INTEGER",
     "match_confidence": "REAL",
@@ -192,6 +193,7 @@ async def scan_card(
                 packaging_type=packaging_type,
                 brand=match_result.canonical_brand,
                 sku=match_result.canonical_sku,
+                treasure_hunt=extracted.get("treasure_hunt"),
                 db_path=DB_PATH,
             )
         except Exception as e:
@@ -210,19 +212,19 @@ async def scan_card(
                 photo_path, base_photo_path, packaging_type,
                 extracted_brand, car_make, extracted_casting_name,
                 extracted_collector_num, extracted_sku, extracted_series, extracted_year,
-                extracted_color, extracted_raw_json,
+                extracted_color, treasure_hunt, extracted_raw_json,
                 match_reference_id, match_confidence, match_status, match_notes,
                 canonical_brand, canonical_casting_name, canonical_series, canonical_year,
                 guide_price_usd,
                 live_price_low_usd, live_price_high_usd, live_recommended_price_usd,
                 live_price_summary, live_price_fetched_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             saved_path, base_saved_path, packaging_type,
             extracted.get("brand"), extracted.get("car_make"), extracted.get("casting_name"),
             extracted.get("collector_number"), extracted.get("sku"), extracted.get("series"),
             str(extracted.get("release_year") or extracted.get("copyright_year_on_base") or "") or None,
-            extracted.get("color"), json.dumps(extracted),
+            extracted.get("color"), extracted.get("treasure_hunt"), json.dumps(extracted),
             match_result.reference_id, match_result.confidence, match_result.status,
             match_result.notes, match_result.canonical_brand, match_result.canonical_casting_name,
             match_result.canonical_series, match_result.canonical_year,
@@ -415,6 +417,7 @@ class InventoryUpdate(BaseModel):
     extracted_collector_num: Optional[str] = None
     extracted_sku: Optional[str] = None
     extracted_color: Optional[str] = None
+    treasure_hunt: Optional[str] = None   # null / 'TH' / 'Super TH'
     match_status: Optional[str] = None
     condition: Optional[str] = None
     acquired_date: Optional[str] = None
@@ -480,6 +483,7 @@ def refresh_price(item_id: int):
             packaging_type=row["packaging_type"],
             brand=row["canonical_brand"] or row["extracted_brand"],
             sku=row["extracted_sku"],
+            treasure_hunt=row["treasure_hunt"],
             db_path=DB_PATH,
             force_refresh=True,
         )

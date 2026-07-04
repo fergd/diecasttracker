@@ -51,6 +51,11 @@ CREATE TABLE IF NOT EXISTS inventory (
     extracted_series        TEXT,
     extracted_year           TEXT,
     extracted_color          TEXT,
+    treasure_hunt             TEXT,       -- NULL / 'TH' / 'Super TH' - same convention as
+                                            -- reference_castings.is_treasure_hunt above.
+                                            -- Detected from the card's TH logo (not just
+                                            -- printed text) or, for Super TH, real rubber
+                                            -- tires + spectraflame paint - see vision_extract.py
     extracted_raw_json       TEXT,       -- full JSON blob, for debugging/reprocessing
 
     -- validation result

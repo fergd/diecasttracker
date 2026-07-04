@@ -53,8 +53,22 @@ fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
   "series": the named series/theme printed on the card (e.g. "HW Hot Trucks"),
   "release_year": the year if visible (from a "NEW FOR ____" flag or copyright date),
   "color": brief description of the car's visible color/deco,
-  "special_flags": array of any of: "Treasure Hunt", "Super Treasure Hunt", "New Casting",
-                    "Zamac", or store-exclusive labels, if visible,
+  "treasure_hunt": "TH" if this is a regular Treasure Hunt, "Super TH" if a Super
+                     Treasure Hunt, else null. Look for the actual Treasure Hunt LOGO
+                     (a small green flame/checkered-flag icon, sometimes with "TH"
+                     lettering) printed on the card - don't rely on the words
+                     "Treasure Hunt" being spelled out somewhere, some cards only
+                     show the logo. Super Treasure Hunts additionally almost always
+                     have real rubber tires (not hard plastic) and "Spectraflame"
+                     metallic/candy paint, visible even through the blister if the
+                     car itself is checked closely - if you see rubber tires AND
+                     spectraflame paint but aren't sure about the logo, it's more
+                     likely "Super TH" than plain "TH". If genuinely uncertain
+                     whether ANY Treasure Hunt marking is present, use null rather
+                     than guessing,
+  "special_flags": array of any of: "New Casting", "Zamac", or store-exclusive
+                    labels, if visible (Treasure Hunt status goes in the dedicated
+                    "treasure_hunt" field above, not here),
   "card_condition_notes": brief, cautious note on visible card condition (creases,
                            bubble integrity) - flag as "unable to assess" if unclear,
   "extraction_confidence": your own rough confidence 0.0-1.0 that the casting_name
@@ -98,6 +112,15 @@ the raw JSON object:
                               actual release year),
   "color": description of the car's color/deco/wheel type - wheel type (5-spoke,
             redline, real riders, etc) is often a useful identifying/dating clue,
+  "treasure_hunt": "TH" if this is a regular Treasure Hunt, "Super TH" if a Super
+                     Treasure Hunt, else null. No card to check a logo on for a
+                     loose car, so this comes from the base stamp text (if it
+                     mentions Treasure Hunt) or from the physical features Super
+                     Treasure Hunts almost always have: real rubber tires (not hard
+                     plastic) plus "Spectraflame" metallic/candy paint. If you see
+                     both of those together, it's likely "Super TH" even without
+                     stamp confirmation. If genuinely uncertain, use null rather
+                     than guessing,
   "identification_method": "base_stamp" if read from base text, "visual_only" if
                              no base photo/text was available,
   "extraction_confidence": your own rough confidence 0.0-1.0 - should be notably
@@ -176,6 +199,7 @@ def extract_card_details(image_path: str, packaging_type: str = "carded",
             "brand": None, "casting_name": None, "collector_number": None,
             "sku": None, "sku_full_code": None,
             "series": None, "release_year": None, "color": None,
+            "treasure_hunt": None,
             "special_flags": [], "card_condition_notes": None,
             "extraction_confidence": 0.0,
             "_parse_error": True, "_raw_response": raw_text,

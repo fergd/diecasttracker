@@ -208,6 +208,15 @@
   .tracking-pill.listed { background: rgba(251,191,36,0.13); color: #FBBF24; }
   .tracking-pill.sold { background: rgba(52,211,153,0.13); color: #34D399; }
 
+  .th-badge {
+    display: inline-flex; align-items: center; gap: 2px;
+    font-family: var(--font-mono); font-size: 10.5px; font-weight: 600;
+    padding: 2px 7px 2px 5px; border-radius: 9999px; white-space: nowrap;
+    background: rgba(251,191,36,0.16); color: #FBBF24; margin-left: 6px;
+  }
+  .th-badge.super-th { background: rgba(232,121,249,0.16); color: #E879F9; }
+  .th-badge svg { width: 11px; height: 11px; fill: currentColor; }
+
   #emptyState, #filteredEmptyState {
     text-align: center; padding: 56px 16px; color: var(--md-sys-color-on-surface-variant);
   }
@@ -296,6 +305,9 @@
   .status-toggle-btn.active[data-value="in_collection"] { background: rgba(96,165,250,0.13); color: #60A5FA; border-color: #60A5FA; }
   .status-toggle-btn.active[data-value="listed"] { background: rgba(251,191,36,0.13); color: #FBBF24; border-color: #FBBF24; }
   .status-toggle-btn.active[data-value="sold"] { background: rgba(52,211,153,0.13); color: #34D399; border-color: #34D399; }
+  .status-toggle-btn.active[data-value=""] { background: rgba(148,163,184,0.13); color: #94A3B8; border-color: #94A3B8; }
+  .status-toggle-btn.active[data-value="TH"] { background: rgba(251,191,36,0.13); color: #FBBF24; border-color: #FBBF24; }
+  .status-toggle-btn.active[data-value="Super TH"] { background: rgba(232,121,249,0.13); color: #E879F9; border-color: #E879F9; }
 
   /* ---- Lightbox ---------------------------------------------------------- */
   .lightbox-scrim {
@@ -463,6 +475,11 @@
       <div class="field-row"><span class="field-label">Collector #</span><div class="field-value-wrap"><md-filled-text-field class="row-input" data-mono="true" id="detCollectorNum"></md-filled-text-field></div></div>
       <div class="field-row"><span class="field-label">SKU / Toy #</span><div class="field-value-wrap"><md-filled-text-field class="row-input" data-mono="true" id="detSku"></md-filled-text-field></div></div>
       <div class="field-row"><span class="field-label">Color / deco</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detColor"></md-filled-text-field></div></div>
+      <div class="status-toggle" id="detThToggle">
+        <button type="button" class="status-toggle-btn" data-value="">Not a TH</button>
+        <button type="button" class="status-toggle-btn" data-value="TH">Treasure Hunt</button>
+        <button type="button" class="status-toggle-btn" data-value="Super TH">Super TH</button>
+      </div>
     </div>
 
     <div class="detail-section-header">
@@ -639,6 +656,7 @@
     const detCollectorNum = document.getElementById('detCollectorNum');
     const detSku = document.getElementById('detSku');
     const detColor = document.getElementById('detColor');
+    const detThToggle = document.getElementById('detThToggle');
     const detMatchCard = document.getElementById('detMatchCard');
     const detPricingCard = document.getElementById('detPricingCard');
     const refreshPriceBtn = document.getElementById('refreshPriceBtn');
@@ -983,6 +1001,7 @@
         collector_number: ex.collector_number || null,
         sku: ex.sku || null,
         color: ex.color || null,
+        treasure_hunt: ex.treasure_hunt || null,
         status: v.status,
         confidence: v.confidence,
         match_notes: v.notes,
@@ -1015,6 +1034,7 @@
         collector_number: row.extracted_collector_num || null,
         sku: row.extracted_sku || null,
         color: row.extracted_color || null,
+        treasure_hunt: row.treasure_hunt || null,
         status: row.match_status,
         confidence: row.match_confidence || 0,
         match_notes: row.match_notes,
@@ -1122,6 +1142,15 @@
       return { pct, cls, text: `${pct >= 0 ? '+' : ''}${Math.round(pct)}%` };
     }
 
+    const TH_FLAME_SVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M240-400q0 52 21 98.5t60 81.5q-1-5-1-9v-9q0-32 12-60t35-51l113-111 113 111q23 23 35 51t12 60v9q0 4-1 9 39-35 60-81.5t21-98.5q0-50-18.5-94.5T648-574q-20 13-42 19.5t-45 6.5q-62 0-107.5-41T401-690q-39 33-69 68.5t-50.5 72Q261-513 250.5-475T240-400Zm240 52-57 56q-11 11-17 25t-6 29q0 32 23.5 55t56.5 23q33 0 56.5-23t23.5-55q0-16-6-29.5T537-292l-57-56Zm0-492v132q0 34 23.5 57t57.5 23q18 0 33.5-7.5T622-658l18-22q74 42 117 117t43 163q0 134-93 227T480-80q-134 0-227-93t-93-227q0-129 86.5-245T480-840Z"/></svg>';
+    function buildThBadge(treasureHunt) {
+      const badge = document.createElement('span');
+      badge.className = `th-badge ${treasureHunt === 'Super TH' ? 'super-th' : ''}`;
+      badge.title = treasureHunt === 'Super TH' ? 'Super Treasure Hunt' : 'Treasure Hunt';
+      badge.innerHTML = `${TH_FLAME_SVG}${treasureHunt}`;
+      return badge;
+    }
+
     function buildItemElement(item) {
       const name = item.casting_name || 'Unrecognized item';
       const metaLine = [item.brand, item.car_make, item.year].filter(Boolean).join(' · ');
@@ -1147,6 +1176,9 @@
         qtyBadge.style.fontWeight = '500';
         qtyBadge.textContent = ` ×${item.quantity}`;
         nameEl.appendChild(qtyBadge);
+      }
+      if (item.treasure_hunt) {
+        nameEl.appendChild(buildThBadge(item.treasure_hunt));
       }
       main.appendChild(nameEl);
 
@@ -1630,6 +1662,16 @@
       });
     }
 
+    let detThValue = '';
+    detThToggle.querySelectorAll('.status-toggle-btn').forEach(btn => {
+      btn.addEventListener('click', () => { detThValue = btn.dataset.value; updateThToggle(); });
+    });
+    function updateThToggle() {
+      detThToggle.querySelectorAll('.status-toggle-btn').forEach(btn => {
+        btn.classList.toggle('active', btn.dataset.value === detThValue);
+      });
+    }
+
     function buildPricingCard(item) {
       const guide = item.guide_price_usd != null ? money(item.guide_price_usd) : '—';
       const rec = item.live_recommended_price_usd != null ? money(item.live_recommended_price_usd) : '—';
@@ -1661,6 +1703,8 @@
       detCollectorNum.value = item.collector_number || '';
       detSku.value = item.sku || '';
       detColor.value = item.color || '';
+      detThValue = item.treasure_hunt || '';
+      updateThToggle();
 
       detMatchCard.innerHTML =
         fieldRow('Status', `<span class="status-pill ${item.status}">${MATCH_LABELS[item.status] || 'Unknown'} ${(item.confidence * 100).toFixed(0)}%</span>`)
@@ -1718,6 +1762,7 @@
         extracted_collector_num: detCollectorNum.value || null,
         extracted_sku: detSku.value || null,
         extracted_color: detColor.value || null,
+        treasure_hunt: detThValue || null,
         status: detStatusValue || null,
         quantity: detQuantity.value ? parseInt(detQuantity.value, 10) : 1,
         condition: detCondition.value || null,
