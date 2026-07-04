@@ -268,7 +268,7 @@ def get_live_price(casting_name: str, series: str | None, year: int | None,
             summary = excluded.summary,
             search_count = excluded.search_count,
             fetched_at = CURRENT_TIMESTAMP
-    """, (casting_name, series, year, packaging_type,
+    """, (cache_casting_name, series, year, packaging_type,
           result["price_low_usd"], result["price_high_usd"],
           result["recommended_listing_price_usd"],
           result["summary"], result["search_count"]))
