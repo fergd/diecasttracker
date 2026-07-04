@@ -1,16 +1,21 @@
-# Diecast Tracker — Project Handoff
+# Zamak Ledger — Project Handoff
 
-**Point in time:** 2026-07-03, end of session. This supersedes any earlier
+**Point in time:** 2026-07-04, mid-session. This supersedes any earlier
 handoff doc (an older `HANDOFF.md` may exist in `~/Downloads` — that one is
 stale, from before this session's work).
 
-**Repo:** `git@github.com:fergd/diecasttracker.git`
+**Repo:** `git@github.com:fergd/zamak-ledger.git` (renamed from
+`fergd/diecasttracker` — GitHub auto-redirects the old URL, but update any
+saved remotes/bookmarks when convenient)
 **Branch:** `07-2026-app-rebuild` (full rebuild of an old Meteor app, preserved
 on `main` — no decision yet on whether to keep `main` around long-term or
 promote this branch over it)
 **Deployment host:** `backupbox` (Debian, personal home server), reachable
 only over Tailscale
-**Service:** `diecast-inventory.service` (systemd), port `8420`
+**Service:** `diecast-inventory.service` (systemd), port `8420` — name and
+working directory (`/home/christan/Projects/carded_inventory`) intentionally
+left as-is; renaming those means moving files and re-pointing an active unit
+for no functional gain, out of scope of the app-name rename
 **Working directory on host:** `/home/christan/Projects/carded_inventory`
 
 ## What this is
@@ -22,8 +27,10 @@ reference database, priced against both a static guide and live eBay data,
 and saved. Built to help decide what to sell and at what price. Functional
 and data-dense by design, not a consumer app.
 
-**App name is "Diecast Tracker"** (renamed mid-session from "Diecast
-Inventory" — check for stray old references if anything looks off).
+**App name is "Zamak Ledger"** (previously "Diecast Tracker", previously
+"Diecast Inventory" — check for stray old references if anything looks off).
+Named after zamak, the zinc alloy both Mattel and Matchbox have used for
+diecast castings since the 1960s.
 
 ## Architecture
 
@@ -128,7 +135,7 @@ how many physical copies of this exact casting+colorway+packaging).
 Went through several iterations based on a Figma Make design handoff with
 screenshots:
 1. Initial M3-purple redesign (filled cards, detail page, multi-select, sort)
-2. Full Figma Make dark theme reskin (Diecast Tracker colors: `#0B0B0F`
+2. Full Figma Make dark theme reskin (Zamak Ledger colors: `#0B0B0F`
    background, `#FF4500` primary red, Rajdhani/Inter/DM Mono fonts)
 3. Corrections after real-device testing caught real misses: FAB moved to a
    true fixed bottom-right position (was inline at top), list rows became

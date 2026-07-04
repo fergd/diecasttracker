@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Diecast Tracker</title>
+<title>Zamak Ledger</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@600;700&family=Inter:wght@400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -344,7 +344,7 @@
     <md-icon-button id="backBtn" aria-label="Back" style="display:none">
       <md-icon><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="m313-440 224 224-57 56-320-320 320-320 57 56-224 224h487v80H313Z"/></svg></md-icon>
     </md-icon-button>
-    <h1 id="appBarTitle" class="top-app-bar-title">Diecast Tracker</h1>
+    <h1 id="appBarTitle" class="top-app-bar-title">Zamak Ledger</h1>
 
     <div id="appBarActions" class="top-app-bar-actions">
       <md-icon-button id="selectModeBtn" aria-label="Select items">
@@ -1375,7 +1375,7 @@
     function exitSelectMode() {
       selectMode = false;
       selectedIds.clear();
-      setAppBarMode('list', 'Diecast Tracker');
+      setAppBarMode('list', 'Zamak Ledger');
       renderList();
     }
     selectModeBtn.addEventListener('click', () => {
@@ -1693,7 +1693,7 @@
       currentDetailId = null;
       listView.style.display = 'block';
       detailView.style.display = 'none';
-      setAppBarMode(selectMode ? 'select' : 'list', selectMode ? `${selectedIds.size} selected` : 'Diecast Tracker');
+      setAppBarMode(selectMode ? 'select' : 'list', selectMode ? `${selectedIds.size} selected` : 'Zamak Ledger');
     }
     function renderRoute() {
       const m = location.hash.match(/^#\/item\/(\d+)/);
