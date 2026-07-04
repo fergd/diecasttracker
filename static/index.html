@@ -479,7 +479,18 @@
       <h3>Identification</h3>
     </div>
     <div class="detail-card">
-      <div class="field-row"><span class="field-label">Brand</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detBrand"></md-filled-text-field></div></div>
+      <div class="field-row"><span class="field-label">Brand</span><div class="field-value-wrap"><md-filled-select class="row-input" id="detBrand">
+        <md-select-option value=""><div slot="headline">—</div></md-select-option>
+        <md-select-option value="Hot Wheels"><div slot="headline">Hot Wheels</div></md-select-option>
+        <md-select-option value="Matchbox"><div slot="headline">Matchbox</div></md-select-option>
+        <md-select-option value="Tomica"><div slot="headline">Tomica</div></md-select-option>
+        <md-select-option value="Majorette"><div slot="headline">Majorette</div></md-select-option>
+        <md-select-option value="Greenlight"><div slot="headline">Greenlight</div></md-select-option>
+        <md-select-option value="Johnny Lightning"><div slot="headline">Johnny Lightning</div></md-select-option>
+        <md-select-option value="M2 Machines"><div slot="headline">M2 Machines</div></md-select-option>
+        <md-select-option value="Maisto"><div slot="headline">Maisto</div></md-select-option>
+        <md-select-option value="Other"><div slot="headline">Other</div></md-select-option>
+      </md-filled-select></div></div>
       <div class="field-row"><span class="field-label">Car make</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detCarMake"></md-filled-text-field></div></div>
       <div class="field-row"><span class="field-label">Casting name</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detCastingName"></md-filled-text-field></div></div>
       <div class="field-row"><span class="field-label">Series / theme</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detSeries"></md-filled-text-field></div></div>
@@ -891,16 +902,32 @@
     // check even on a sku match - a carded and loose copy of the same sku
     // are still meaningfully different physical items worth tracking
     // separately (different condition, different value).
+    //
+    // Everything is compared case/whitespace-insensitively, and year is
+    // compared as a string - these fields mix canonical (clean) and raw OCR
+    // (messy, inconsistently cased/typed) values depending on match status,
+    // so a strict === comparison let identical physical cars slip through
+    // as "different" and get added as duplicates instead of incrementing.
+    function normStr(s) {
+      return (s === null || s === undefined || s === '') ? null : String(s).trim().toLowerCase();
+    }
+    function normSku(s) {
+      return (s === null || s === undefined || s === '') ? null : String(s).trim().toUpperCase();
+    }
     function findDuplicate(newItem) {
       if (!newItem.casting_name) return null;
       const samePkg = (it) => (it.packaging_type || 'carded') === (newItem.packaging_type || 'carded');
+      const newSku = normSku(newItem.sku);
+      const newYear = newItem.year != null && newItem.year !== '' ? String(newItem.year) : null;
       return allItems.find(it => {
         if (it.id === newItem.id || !samePkg(it)) return false;
-        if (newItem.sku && it.sku) return newItem.sku === it.sku;
-        return (it.casting_name || null) === newItem.casting_name
-          && (it.series || null) === (newItem.series || null)
-          && (it.year || null) === (newItem.year || null)
-          && (it.brand || null) === (newItem.brand || null);
+        const itSku = normSku(it.sku);
+        if (newSku && itSku) return newSku === itSku;
+        const itYear = it.year != null && it.year !== '' ? String(it.year) : null;
+        return normStr(it.casting_name) === normStr(newItem.casting_name)
+          && normStr(it.series) === normStr(newItem.series)
+          && itYear === newYear
+          && normStr(it.brand) === normStr(newItem.brand);
       }) || null;
     }
 
@@ -1016,7 +1043,7 @@
         series: v.canonical_series || ex.series || null,
         year: v.canonical_year || ex.release_year || null,
         collector_number: ex.collector_number || null,
-        sku: ex.sku || null,
+        sku: v.canonical_sku || ex.sku || null,
         color: ex.color || null,
         treasure_hunt: ex.treasure_hunt || null,
         status: v.status,
@@ -1049,7 +1076,7 @@
         series: row.canonical_series || row.extracted_series || null,
         year: row.canonical_year || row.extracted_year || null,
         collector_number: row.extracted_collector_num || null,
-        sku: row.extracted_sku || null,
+        sku: row.canonical_sku || row.extracted_sku || null,
         color: row.extracted_color || null,
         treasure_hunt: row.treasure_hunt || null,
         status: row.match_status,
@@ -1734,10 +1761,27 @@
       return html;
     }
 
+    // Brand may be something outside our fixed dropdown list (an OCR typo,
+    // or a real brand we haven't added an option for) - inject it as a
+    // temporary extra option so opening/saving the detail page never
+    // silently discards it.
+    let detBrandExtraOption = null;
+    function setDetBrandValue(brand) {
+      if (detBrandExtraOption) { detBrandExtraOption.remove(); detBrandExtraOption = null; }
+      if (brand && !Array.from(detBrand.options).some(o => o.value === brand)) {
+        const opt = document.createElement('md-select-option');
+        opt.value = brand;
+        opt.innerHTML = `<div slot="headline">${brand}</div>`;
+        detBrand.appendChild(opt);
+        detBrandExtraOption = opt;
+      }
+      detBrand.value = brand || '';
+    }
+
     function buildDetailView(item) {
       buildDetailPhotos(item);
 
-      detBrand.value = item.brand || '';
+      setDetBrandValue(item.brand || '');
       detCarMake.value = item.car_make || '';
       detCastingName.value = item.casting_name || '';
       detSeries.value = item.series || '';

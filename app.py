@@ -71,6 +71,7 @@ INVENTORY_COLUMNS = {
     "match_status": "TEXT",
     "match_notes": "TEXT",
     "canonical_brand": "TEXT",
+    "canonical_sku": "TEXT",
     "canonical_casting_name": "TEXT",
     "canonical_series": "TEXT",
     "canonical_year": "INTEGER",
@@ -214,11 +215,11 @@ async def scan_card(
                 extracted_collector_num, extracted_sku, extracted_series, extracted_year,
                 extracted_color, treasure_hunt, extracted_raw_json,
                 match_reference_id, match_confidence, match_status, match_notes,
-                canonical_brand, canonical_casting_name, canonical_series, canonical_year,
+                canonical_brand, canonical_sku, canonical_casting_name, canonical_series, canonical_year,
                 guide_price_usd,
                 live_price_low_usd, live_price_high_usd, live_recommended_price_usd,
                 live_price_summary, live_price_fetched_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             saved_path, base_saved_path, packaging_type,
             extracted.get("brand"), extracted.get("car_make"), extracted.get("casting_name"),
@@ -226,7 +227,8 @@ async def scan_card(
             str(extracted.get("release_year") or extracted.get("copyright_year_on_base") or "") or None,
             extracted.get("color"), extracted.get("treasure_hunt"), json.dumps(extracted),
             match_result.reference_id, match_result.confidence, match_result.status,
-            match_result.notes, match_result.canonical_brand, match_result.canonical_casting_name,
+            match_result.notes, match_result.canonical_brand, match_result.canonical_sku,
+            match_result.canonical_casting_name,
             match_result.canonical_series, match_result.canonical_year,
             match_result.suggested_price_usd,
             live_price.get("price_low_usd"), live_price.get("price_high_usd"),
@@ -251,6 +253,7 @@ async def scan_card(
             "status": match_result.status,
             "confidence": match_result.confidence,
             "canonical_brand": match_result.canonical_brand,
+            "canonical_sku": match_result.canonical_sku,
             "canonical_casting_name": match_result.canonical_casting_name,
             "canonical_series": match_result.canonical_series,
             "canonical_year": match_result.canonical_year,

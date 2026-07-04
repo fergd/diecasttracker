@@ -67,6 +67,11 @@ CREATE TABLE IF NOT EXISTS inventory (
     -- canonical fields, filled in once matched (copied from reference, not the raw extraction)
     canonical_brand         TEXT,    -- from the matched reference row - more authoritative than
                                         -- extracted_brand, which is just the model's read/guess
+    canonical_sku            TEXT,    -- from the matched reference row - much more consistent
+                                        -- than extracted_sku (raw OCR), which can vary between
+                                        -- rescans of the same physical card; used for duplicate
+                                        -- detection so a rescan bumps quantity instead of adding
+                                        -- a second row
     canonical_casting_name TEXT,
     canonical_series        TEXT,
     canonical_year           INTEGER,
