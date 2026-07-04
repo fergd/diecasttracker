@@ -126,10 +126,13 @@ def _extract_prices(items: list[dict]) -> list[float]:
 def _search_live_price(casting_name: str, series: str | None, year: int | None,
                         packaging_type: str, brand: str | None = None,
                         sku: str | None = None) -> dict:
-    # sku is the strongest search term when we have it - sellers commonly
-    # put the exact Toy # in listing titles, same reasoning as the old
-    # Claude-search prompt.
-    query_parts = [brand, sku or casting_name]
+    # Combine everything we know rather than picking just one term - sellers
+    # often don't include the Toy # in their listing title at all, so a
+    # sku-only query (the previous behavior whenever a sku was available)
+    # silently missed real listings that only mention the casting name/year.
+    # More keywords just means eBay's own relevance ranking has more to work
+    # with, not a stricter match requirement.
+    query_parts = [brand, casting_name, str(year) if year else None, sku]
     query = " ".join(p for p in query_parts if p).strip()
 
     items = _search_ebay(query)
