@@ -1,8 +1,8 @@
 # Zamak Ledger — Project Handoff
 
-**Point in time:** 2026-07-04, mid-session. This supersedes any earlier
-handoff doc (an older `HANDOFF.md` may exist in `~/Downloads` — that one is
-stale, from before this session's work).
+**Point in time:** 2026-07-04, later in the same session as the rename to
+Zamak Ledger. This supersedes any earlier handoff doc (an older `HANDOFF.md`
+may exist in `~/Downloads` — that one is stale, from before this work).
 
 **Repo:** `git@github.com:fergd/zamak-ledger.git` (renamed from
 `fergd/diecasttracker` — GitHub auto-redirects the old URL, but update any
@@ -87,13 +87,15 @@ Phone (Tailscale) -> browser -> backupbox:8420
 | `reference_import_hotwheels_wiki.py` | Hot Wheels importer — Fandom wiki via MediaWiki API (bypasses Cloudflare), 2000-2026, includes photo refs |
 | `reference_import_matchbox.py` | Matchbox importer — NCHWA.com, Regular Wheels (1953-1969) + SuperFast (1969-1982) |
 | `reference_import_realpriceguides.py` | Matchbox importer — realpriceguides.com, fills 1980s-90s gap NCHWA doesn't cover |
-| `static/index.html` | Full frontend — capture flow, list, detail page, multi-select, sort, filters, sheets |
+| `reference_import_hallsguide_matchbox.py` | Matchbox importer — Hall's Guide, 2009-2012 + 2016-2023 (fills the *modern* gap the two importers above don't touch at all — see bug #11 below) |
+| `static/index.html` | Full frontend — capture flow, list, detail page, multi-select, sort, filters, sheets, toolbar summary |
 | `requirements.txt` | Python deps |
 | `HANDOFF.md` | This file |
 
-Current local `reference.db`: 10,170 Hot Wheels rows + 1,029 Matchbox rows.
-Both `photo_path` and `base_photo_path` on inventory rows point into
-`./photos/`, served at `/photos/<filename>`.
+Current backupbox `reference.db` (authoritative — check live, this number
+moves): 13,475 Hot Wheels rows + 2,157 Matchbox rows. Both `photo_path` and
+`base_photo_path` on inventory rows point into `./photos/`, served at
+`/photos/<filename>`.
 
 ## API surface (`app.py`)
 
@@ -103,12 +105,14 @@ Both `photo_path` and `base_photo_path` on inventory rows point into
 | GET | `/inventory` | List all items |
 | GET | `/inventory/needs_review` | Items flagged for manual check (API-only, no dedicated UI) |
 | POST | `/inventory/{id}/confirm` | Manual override: force-confirm a needs_review/no_match item |
-| PUT | `/inventory/{id}` | Edit any tracked field (brand, casting name, sku, status, quantity, prices, etc.) |
+| PUT | `/inventory/{id}` | Edit any tracked field (brand, casting name, sku, status, quantity, treasure_hunt, prices, etc.) |
 | POST | `/inventory/{id}/photo` | Attach/replace a photo (`slot=main` or `slot=secondary` form field, defaults to secondary) |
 | DELETE | `/inventory/{id}/photo` | Clear a single photo (`?slot=main\|secondary`) without deleting the item |
+| POST | `/inventory/{id}/refresh_price` | Force a fresh eBay lookup for an already-saved item, bypassing the 30-day cache — user-triggered "recheck price" button on the detail page |
+| POST | `/inventory/{id}/rematch` | Re-run `validate_extraction()` from the item's already-stored `extracted_*` fields (no new photo) — for no_match items stuck only because reference data has since improved. Detail-page button next to Match. **Not yet restarted into production as of this writing — check `/openapi.json` before assuming it's live** |
 | DELETE | `/inventory/{id}` | Remove item + its photo files |
-| GET | `/status` | Diagnostics: reference DB coverage, cache stats, API key check, inventory summary |
-| GET | `/status/test_live_search` | Spends one real search to verify live-pricing end-to-end |
+| GET | `/status` | Diagnostics: reference DB coverage, cache stats, `anthropic_api_key_configured`, `ebay_api_configured`, inventory summary |
+| GET | `/status/test_live_search` | Calls eBay's Browse API for real to verify the live-pricing pipeline end-to-end (counts against eBay's quota, not free) |
 | GET | `/export` | Full JSON backup of inventory |
 
 ## Data model (`inventory` table, key fields)
@@ -117,7 +121,13 @@ Identification: `photo_path`, `base_photo_path`, `packaging_type`
 (carded/loose), `extracted_brand`, `car_make` (real-world manufacturer, e.g.
 "Chevrolet" — distinct from brand), `extracted_casting_name`,
 `extracted_collector_num`, `extracted_sku`, `extracted_series`,
-`extracted_year`, `extracted_color`.
+`extracted_year`, `extracted_color`, `treasure_hunt` (NULL / `'TH'` /
+`'Super TH'` — same convention as `reference_castings.is_treasure_hunt`,
+which exists but has never actually been populated by any importer).
+Extraction looks for the actual TH logo, not just the printed words "Treasure
+Hunt" (some cards only show the logo), plus the physical tells for Super TH
+specifically (real rubber tires + Spectraflame paint) when there's no card
+to read at all.
 
 Match result: `match_reference_id`, `match_confidence`, `match_status`
 (confirmed/needs_review/no_match), `match_notes`, `canonical_brand`,
@@ -150,6 +160,14 @@ screenshots:
 5. Added: swipe left on a list row → delete confirm; swipe right → cycles
    collection status; long-press on a detail-page photo → replace/delete;
    lightbox with pinch-zoom on detail photos; duplicate detection (see below)
+6. Added: Treasure Hunt flame badge on list cards (amber for TH, pink for
+   Super TH) and an editable 3-way toggle in the detail page's
+   Identification section; a "recheck price" and a "recheck match" icon
+   button in the Pricing/Match section headers respectively; a car count +
+   estimated total value subtitle in the top toolbar (list mode only,
+   reflects whatever's currently filtered, not a fixed grand total — sums
+   `quantity`, uses the same per-item price priority as the list card, skips
+   items with no price data at all rather than treating unknown as $0)
 
 **Known hand-rolled pieces** (none of these exist in `@material/web`, all
 built from pointer events / plain CSS):
@@ -218,22 +236,62 @@ built from pointer events / plain CSS):
     keyset at developer.ebay.com. Only returns active-listing prices, not
     sold/completed data (that needs eBay's separately-gated Marketplace
     Insights API) - summaries say so explicitly, never claim sold-comps
-    data that isn't there.
+    data that isn't there. **Confirmed working end-to-end** with real
+    OAuth tokens and real listing prices after credentials were set.
+11. **eBay search query dropped casting name/year whenever a sku was
+    available** - `[brand, sku or casting_name]` picked ONE term instead of
+    combining them, backwards since sellers frequently don't include the
+    Toy # in listing titles at all. Now combines brand + casting name +
+    year + sku (+ "Treasure Hunt"/"Super Treasure Hunt" when applicable)
+    into one query - more keywords for eBay's own relevance ranking, not a
+    stricter match requirement.
+12. **`showList()` never called `renderList()`** - it only toggled view
+    visibility, so returning from the detail view after a price recheck or
+    a saved edit left the list's actual DOM untouched even though `allItems`
+    in memory was correctly updated. The list only refreshed by accident,
+    whenever something else happened to trigger a re-render (sort, filter).
+13. **Treasure Hunt price caching collided with the regular release's cache
+    entry.** `get_live_price` computed a TH-suffixed cache key for the
+    `_fetch_cached` read but the `INSERT...ON CONFLICT` write afterward
+    still bound the plain casting name - so a Super TH lookup silently
+    overwrote the regular release's cached price (caught by testing
+    directly against the deployed DB: a $7 recommended price got replaced
+    by $42). Fixed to use the suffixed key for both read and write.
+14. **Matchbox items never matched anything modern - a real data gap, not
+    a matching or vision bug.** Confirmed extraction correctly identifies
+    `brand: "Matchbox"` every time; the reference DB's only Matchbox
+    coverage was vintage (1953-1998), zero rows for anything 2000+. Fixed
+    via `reference_import_hallsguide_matchbox.py` (see file inventory) -
+    covers 2009-2012 and 2016-2023 (2013-2015 confirmed absent from the
+    source entirely, 2018 deliberately excluded - see the importer's own
+    docstring for why). Existing no_match items with correct extraction
+    data just need `POST /inventory/{id}/rematch` once this is deployed,
+    not a fresh scan.
 
 ## Outstanding / next steps
 
-- [ ] **eBay API credentials not yet set on backupbox** — `EBAY_CLIENT_ID`/
-      `EBAY_CLIENT_SECRET` need to be added to the systemd service
-      environment (same place `ANTHROPIC_API_KEY` lives) before live
-      pricing will work at all. Check `/status` for `ebay_api_configured`.
-- [ ] **Verify the latest commits' fixes on-device** — sku-suffix fix and
-      the eBay pricing switchover both need real confirmation once
-      credentials are in place.
+- [ ] **`/inventory/{id}/rematch` not deployed yet as of this writing** —
+      confirmed via `/openapi.json` that the running service predates this
+      commit. Restart (`sudo systemctl restart zamak-ledger`), then use it
+      to fix the Matchbox items that were already saved as `no_match`
+      before the modern-Matchbox importer existed (their extraction data
+      is already correct - they just need re-matching, not a re-scan).
+- [ ] **6 inventory items currently sitting at `no_match`** (checked
+      directly on backupbox) - some are the pre-importer Matchbox items
+      above, at least one (a 2014 casting) has no reference coverage from
+      *any* source yet (Hall's Guide's Matchbox section has nothing for
+      2013-2015 - confirmed absent, not just unimported). The rest weren't
+      individually triaged this session - worth a pass once rematch is live.
+- [ ] eBay API credentials are set and confirmed working (`ebay_api_configured:
+      true`, verified against real listings) - nothing pending here anymore.
 - [ ] No UI for `/inventory/needs_review` yet — API-only.
 - [ ] No auth — fine while Tailscale is the boundary.
-- [ ] Matchbox reference coverage still thinner than Hot Wheels (1,029 vs.
-      10,170 rows) — no sku data for Matchbox at all yet, so Matchbox items
-      always go through fuzzy name matching, never exact-sku.
+- [ ] Matchbox reference coverage improved a lot (2,157 rows, up from 1,029)
+      but is still gappier than Hot Wheels: no sku data at all (so always
+      fuzzy name matching, never exact-sku), no data for 2013-2015 or 2018,
+      and several imported years are checklist-only with no guide price
+      (2016-2017, 2019-2021) - live eBay pricing still works independently
+      for those, only the static guide price is absent.
 - [ ] "Add to total" duplicate merge has no undo — bumping quantity and
       deleting the duplicate scan is immediate and final.
 - [ ] Open question, unresolved: keep `main` (old Meteor app) as permanent
