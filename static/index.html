@@ -561,7 +561,7 @@
 
   <div class="fab-stack">
     <md-fab id="scanFabBtn" variant="primary" label="Scan a car">
-      <md-icon slot="icon" id="scanFabIcon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M480-260q75 0 127.5-52.5T660-440q0-75-52.5-127.5T480-620q-75 0-127.5 52.5T300-440q0 75 52.5 127.5T480-260Zm0-80q-42 0-71-29t-29-71q0-42 29-71t71-29q42 0 71 29t29 71q0 42-29 71t-71 29ZM160-120q-33 0-56.5-23.5T80-200v-480q0-33 23.5-56.5T160-760h126l74-80h240l74 80h126q33 0 56.5 23.5T880-680v480q0 33-23.5 56.5T800-120H160Zm0-80h640v-480H638l-73-80H395l-73 80H160v480Zm320-240Z"/></svg></md-icon>
+      <md-icon slot="icon" id="scanFabIcon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.0002 8.99998V15C22.0002 17.8284 22.0002 19.2426 21.1215 20.1213C20.2428 21 18.8286 21 16.0002 21H8.00018C5.17176 21 3.75754 21 2.87886 20.1213C2.00018 19.2426 2.00018 17.8284 2.00018 15V11.0537C2.00018 10.0736 2.00018 9.58356 2.1136 9.18288C2.39734 8.18054 3.18074 7.39714 4.18307 7.11341C4.58376 6.99998 5.07379 6.99998 6.05387 6.99998C6.41985 6.99998 6.60284 6.99998 6.77329 6.97027C7.19563 6.89665 7.58313 6.68926 7.87867 6.37869C7.99794 6.25335 8.29718 5.8045 8.50018 5.49998C8.89656 4.90543 9.09474 4.60815 9.36568 4.40365C9.53113 4.27877 9.71499 4.18038 9.91067 4.11198C10.2311 3.99998 10.5884 3.99998 11.303 3.99998H13.0002" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.0002 13.5C16.0002 15.7091 14.2093 17.5 12.0002 17.5C9.79104 17.5 8.00018 15.7091 8.00018 13.5C8.00018 11.2908 9.79104 9.49998 12.0002 9.49998C14.2093 9.49998 16.0002 11.2908 16.0002 13.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.0002 5.49998H21.0002M18.5002 7.99998V2.99998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></md-icon>
     </md-fab>
   </div>
 
@@ -593,6 +593,26 @@
     <div class="sheet-handle"></div>
     <svg class="scanning-icon" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.0042 2.5C17.9974 2.61348 19.2576 2.93381 20.1619 3.83811C21.0662 4.74243 21.3865 6.00268 21.5 7.99598M7.99582 2.5C6.00261 2.61348 4.74241 2.93381 3.83812 3.83811C2.9338 4.74243 2.61347 6.00268 2.5 7.99598M21.5 16.004C21.3865 17.9973 21.0662 19.2576 20.1619 20.1619C19.2576 21.0662 17.9973 21.3865 16.004 21.5M2.5 16.004C2.61347 17.9973 2.9338 19.2576 3.83812 20.1619C4.74244 21.0662 6.00268 21.3865 7.99597 21.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M5 12H19" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
     <div style="font-family: var(--font-mono); letter-spacing: 0.08em; font-size: 14px;">SCANNING</div>
+  </div>
+
+  <!-- Fallback capture path: the live in-app camera above needs a secure
+       (HTTPS) context, which getUserMedia is unavailable without. When
+       that's not the case (e.g. plain http://backupbox:8420 over
+       Tailscale, no `tailscale serve` in front of it), fall back to the
+       native camera app via a plain file input instead of showing a dead
+       end - same front/back sequence, just handed off to the OS camera
+       twice instead of a live preview. -->
+  <input type="file" id="fallbackCameraInput" accept="image/*" capture="environment" hidden>
+  <input type="file" id="fallbackBaseInput" accept="image/*" capture="environment" hidden>
+  <div class="sheet-scrim" id="fallbackScrim"></div>
+  <div class="sheet" id="fallbackSheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-headline">Add a second photo?</div>
+    <div class="sheet-content" id="fallbackSheetContent"></div>
+    <div class="sheet-actions">
+      <md-text-button id="fallbackSkipBtn">Skip</md-text-button>
+      <md-filled-button id="fallbackAddPhotoBtn">Add photo</md-filled-button>
+    </div>
   </div>
 
   <div class="lightbox-scrim" id="lightboxScrim">
@@ -719,6 +739,8 @@
     const cameraFlipBtn = document.getElementById('cameraFlipBtn');
     const scanningScrim = document.getElementById('scanningScrim');
     const scanningSheet = document.getElementById('scanningSheet');
+    const fallbackCameraInput = document.getElementById('fallbackCameraInput');
+    const fallbackBaseInput = document.getElementById('fallbackBaseInput');
 
     const statusBtn = document.getElementById('statusBtn');
     const exportBtn = document.getElementById('exportBtn');
@@ -867,16 +889,17 @@
       }
       cameraVideo.srcObject = null;
     }
+    // getUserMedia is unavailable in an insecure context (plain http://,
+    // not localhost) - most browsers don't even expose navigator.mediaDevices
+    // there, so check for both rather than letting getUserMedia() throw.
+    function cameraSupported() {
+      return !!(window.isSecureContext && navigator.mediaDevices && navigator.mediaDevices.getUserMedia);
+    }
     async function openCamera(step) {
       cameraStep = step;
       cameraStepLabel.textContent = step === 'front' ? 'Front' : (packagingType === 'loose' ? 'Base' : 'Back');
       cameraSkipBtn.style.display = step === 'back' ? 'inline-flex' : 'none';
       cameraView.classList.add('show');
-      if (!window.isSecureContext) {
-        closeCameraForError();
-        showError('Camera capture needs a secure (HTTPS) connection - open this app through its tailnet HTTPS URL rather than a plain http:// address.');
-        return;
-      }
       try {
         await startCameraStream();
       } catch (err) {
@@ -957,7 +980,43 @@
       }
     });
 
-    captureFab.addEventListener('click', () => openCamera('front'));
+    captureFab.addEventListener('click', () => {
+      if (cameraSupported()) openCamera('front');
+      else fallbackCameraInput.click();
+    });
+
+    // ---- Fallback: native camera app via <input capture>, for insecure
+    // contexts where getUserMedia isn't available at all (see
+    // cameraSupported() above). Same front -> back sequence and Skip
+    // option as the in-app camera, just without a live preview - the OS
+    // camera app opens twice instead.
+    const fallbackScrim = document.getElementById('fallbackScrim');
+    const fallbackSheet = document.getElementById('fallbackSheet');
+    const fallbackSheetContent = document.getElementById('fallbackSheetContent');
+    fallbackCameraInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      fallbackCameraInput.value = '';
+      if (!file) return;
+      pendingMainPhoto = file;
+      fallbackSheetContent.textContent = packagingType === 'loose'
+        ? 'Loose cars are identified from the base stamp (casting name + year, stamped into the metal underside) - a lot more reliable than guessing from body shape alone.'
+        : 'The back of the card usually has the sku/Toy # code printed near the barcode - capturing it lets matching use an exact code lookup instead of guessing from the name alone.';
+      openSheet(fallbackSheet, fallbackScrim);
+    });
+    document.getElementById('fallbackAddPhotoBtn').addEventListener('click', () => {
+      closeSheet(fallbackSheet, fallbackScrim);
+      fallbackBaseInput.click();
+    });
+    document.getElementById('fallbackSkipBtn').addEventListener('click', () => {
+      closeSheet(fallbackSheet, fallbackScrim);
+      submitScan();
+    });
+    fallbackBaseInput.addEventListener('change', (e) => {
+      const file = e.target.files[0];
+      fallbackBaseInput.value = '';
+      if (file) pendingBasePhoto = file;
+      submitScan();
+    });
 
     async function submitScan() {
       if (!pendingMainPhoto) return;
