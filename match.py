@@ -154,15 +154,36 @@ def _sku_match(conn: sqlite3.Connection, sku: str, brand: str | None) -> sqlite3
     matching and can collide across reissues. Trust an exact hit over any
     fuzzy name score. Matchbox reference rows currently have no sku data
     (see reference_import_*.py), so this only ever fires for Hot Wheels.
+
+    Despite vision_extract.py's prompt asking for the short code and suffix
+    to be split into separate fields (sku vs sku_full_code), extraction
+    quite often merges them into one string anyway (confirmed: 3 of 7 real
+    scans in one session had a value like "DHX47-D9B0F" in the sku field).
+    An exact match against the full suffixed string then always misses -
+    the reference DB only ever stores the short code - and silently falls
+    through to fuzzy name matching, which can land on a wrong or even
+    mislabeled row when multiple reissues share a name (confirmed case:
+    fell through to a south-texas-diecast row with a mislabeled series for
+    the same casting, purely because the extracted series text happened to
+    match that source's wrong label). Try the short prefix before giving up.
     """
     conn.row_factory = sqlite3.Row
     cur = conn.cursor()
-    cur.execute("""
-        SELECT * FROM reference_castings
-        WHERE sku = ? AND (brand = ? OR ? IS NULL)
-        LIMIT 1
-    """, (sku.strip(), brand, brand))
-    return cur.fetchone()
+    candidates = [sku.strip()]
+    if "-" in sku:
+        candidates.append(sku.split("-", 1)[0].strip())
+    for candidate in candidates:
+        if not candidate:
+            continue
+        cur.execute("""
+            SELECT * FROM reference_castings
+            WHERE sku = ? AND (brand = ? OR ? IS NULL)
+            LIMIT 1
+        """, (candidate, brand, brand))
+        row = cur.fetchone()
+        if row is not None:
+            return row
+    return None
 
 
 def validate_extraction(extracted: dict, packaging_type: str = "carded") -> MatchResult:
