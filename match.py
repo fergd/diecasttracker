@@ -22,7 +22,7 @@ Scoring approach:
 import sqlite3
 from dataclasses import dataclass
 
-from rapidfuzz import fuzz, process
+from rapidfuzz import fuzz
 
 DB_PATH = "reference.db"
 
@@ -109,6 +109,44 @@ def _candidate_rows(conn: sqlite3.Connection, brand: str | None, year: str | Non
     return cur.fetchall()
 
 
+def _best_candidate(candidates: list[sqlite3.Row], casting_name: str, extracted_series: str | None):
+    """
+    Score every candidate row individually and pick the best one - name
+    similarity is the primary signal, but series similarity breaks ties
+    (rounded to whole percentage points, so near-ties from OCR noise still
+    let series decide) rather than being applied as a post-hoc penalty
+    after some other row was already arbitrarily selected.
+
+    A casting gets reissued across years/series under the exact same name
+    (e.g. "Porsche 934 Turbo RSR" appears 8 times across 2014-2018 in
+    different series) - name-only scoring can't tell those apart at all,
+    and series is the strongest signal available for which specific
+    release this is. Must score every row directly rather than building a
+    casting_name -> row dict first: that collapses same-named rows down
+    to whichever one the SQL query happened to return last, silently
+    discarding the rest before scoring ever runs.
+
+    Returns (best_row, name_score, series_score) or (None, 0.0, 0.0) if
+    candidates is empty.
+    """
+    best_row = None
+    best_name_score = 0.0
+    best_series_score = 0.0
+    best_key = None
+    for row in candidates:
+        name_score = fuzz.token_sort_ratio(casting_name, row["casting_name"]) / 100.0
+        series_score = 0.0
+        if extracted_series and row["series_name"]:
+            series_score = fuzz.token_sort_ratio(extracted_series, row["series_name"]) / 100.0
+        key = (round(name_score, 2), series_score)
+        if best_key is None or key > best_key:
+            best_key = key
+            best_row = row
+            best_name_score = name_score
+            best_series_score = series_score
+    return best_row, best_name_score, best_series_score
+
+
 def _sku_match(conn: sqlite3.Connection, sku: str, brand: str | None) -> sqlite3.Row | None:
     """
     Exact SKU/Toy# lookup - a real Mattel item code (e.g. "CFH06") uniquely
@@ -177,15 +215,10 @@ def validate_extraction(extracted: dict, packaging_type: str = "carded") -> Matc
             notes="Extraction returned no casting name to match against."
         )
 
-    # Build a lookup of casting_name -> row for rapidfuzz
-    name_to_row = {row["casting_name"]: row for row in candidates}
-    best = process.extractOne(
-        casting_name,
-        list(name_to_row.keys()),
-        scorer=fuzz.token_sort_ratio,
-    )
+    extracted_series = (extracted.get("series") or "").strip()
+    row, name_score, series_score = _best_candidate(candidates, casting_name, extracted_series)
 
-    if best is None:
+    if row is None:
         return MatchResult(
             status="no_match", confidence=0.0, reference_id=None,
             canonical_brand=None, canonical_casting_name=None, canonical_series=None, canonical_year=None,
@@ -194,21 +227,18 @@ def validate_extraction(extracted: dict, packaging_type: str = "carded") -> Matc
             notes="Fuzzy match produced no candidates."
         )
 
-    matched_name, score, _ = best
-    row = name_to_row[matched_name]
-    confidence = score / 100.0
+    confidence = name_score
 
-    # Corroborating signal: does the extracted series roughly agree?
+    # Corroborating signal: does the extracted series roughly agree? Series
+    # already influenced WHICH row won above (real disambiguation, not just
+    # a penalty) - this is just the confidence/notes reflection of that.
     notes = []
-    extracted_series = (extracted.get("series") or "").strip()
-    if extracted_series and row["series_name"]:
-        series_score = fuzz.token_sort_ratio(extracted_series, row["series_name"]) / 100.0
-        if series_score < 0.5:
-            confidence -= 0.05  # small penalty, not disqualifying
-            notes.append(
-                f"Series mismatch: extracted '{extracted_series}' vs "
-                f"reference '{row['series_name']}' (soft signal only)."
-            )
+    if extracted_series and row["series_name"] and series_score < 0.5:
+        confidence -= 0.05  # small penalty, not disqualifying
+        notes.append(
+            f"Series mismatch: extracted '{extracted_series}' vs "
+            f"reference '{row['series_name']}' (soft signal only)."
+        )
 
     # Safeguard for loose cars identified by appearance alone (no base stamp
     # read): flagged further below, after status is computed, so it downgrades

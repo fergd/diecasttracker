@@ -36,8 +36,12 @@ fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
                        for a series position, or a standalone number like "148" for
                        a year collector number - transcribe exactly as printed),
   "sku": the manufacturer's item/Toy # code - a short alphanumeric code (e.g. "CFH06",
-         "N9637", "DVK33") usually printed on the BACK of the card near the barcode,
-         sometimes also on the front. This is a much more reliable identifier than the
+         "N9637", "DVK33", often followed by a dash and a longer suffix like "-D9B0A").
+         Almost always on the BACK of the card, but its position varies a lot by card
+         design - check the whole back carefully, not just near the barcode: it's
+         commonly printed vertically or in small print near a die-cut hang-tab/notch
+         at the top or side of the card, not only next to the barcode. Sometimes also
+         appears on the front. This is a much more reliable identifier than the
          casting name (exact, not fuzzy) - read it carefully if a back-of-card photo
          was provided. null if not visible in any provided photo,
   "sku_full_code": occasionally a longer code appears alongside the short one, with a

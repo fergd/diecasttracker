@@ -482,6 +482,7 @@
         <button type="button" class="status-toggle-btn" data-value="listed">Listed</button>
         <button type="button" class="status-toggle-btn" data-value="sold">Sold</button>
       </div>
+      <div class="field-row"><span class="field-label">Quantity</span><div class="field-value-wrap"><md-filled-text-field class="row-input" data-mono="true" type="number" id="detQuantity"></md-filled-text-field></div></div>
       <div class="field-row"><span class="field-label">Condition notes</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detCondition"></md-filled-text-field></div></div>
       <div class="field-row"><span class="field-label">Cost basis (USD)</span><div class="field-value-wrap"><md-filled-text-field class="row-input" data-mono="true" type="number" id="detCostBasis"></md-filled-text-field></div></div>
       <div class="field-row"><span class="field-label">Listing price (USD)</span><div class="field-value-wrap"><md-filled-text-field class="row-input" data-mono="true" type="number" id="detListingPrice"></md-filled-text-field></div></div>
@@ -544,6 +545,24 @@
     <div class="sheet-actions">
       <md-text-button id="scanConfirmReject">Reject</md-text-button>
       <md-filled-button id="scanConfirmAdd">Add to collection</md-filled-button>
+    </div>
+  </div>
+
+  <div class="sheet-scrim" id="duplicateScrim"></div>
+  <div class="sheet" id="duplicateSheet">
+    <div class="sheet-handle"></div>
+    <div class="sheet-headline">Looks like a duplicate</div>
+    <div class="scan-confirm-row">
+      <img class="scan-confirm-thumb" id="duplicateThumb" alt="">
+      <div>
+        <div class="scan-confirm-name" id="duplicateName"></div>
+        <div class="scan-confirm-meta" id="duplicateMeta"></div>
+      </div>
+    </div>
+    <p class="detail-summary-text" id="duplicateExplain" style="margin-left:0;"></p>
+    <div class="sheet-actions">
+      <md-text-button id="duplicateSkip">Skip</md-text-button>
+      <md-filled-button id="duplicateAddTotal">Add to total</md-filled-button>
     </div>
   </div>
 
@@ -615,6 +634,7 @@
     const detMatchCard = document.getElementById('detMatchCard');
     const detPricingCard = document.getElementById('detPricingCard');
     const detStatusToggle = document.getElementById('detStatusToggle');
+    const detQuantity = document.getElementById('detQuantity');
     const detCondition = document.getElementById('detCondition');
     const detCostBasis = document.getElementById('detCostBasis');
     const detListingPrice = document.getElementById('detListingPrice');
@@ -716,10 +736,19 @@
       }
     }
     function updateSecondPhotoVisibility() {
-      const active = packagingType === 'loose' || !!pendingMainPhoto;
-      basePrompt.style.display = active ? 'block' : 'none';
-      baseBtn.classList.toggle('show', active);
-      skipSecondBtn.classList.toggle('show', active && !!pendingMainPhoto);
+      const havePhoto = !!pendingMainPhoto;
+      // The explanatory prompt can show early for loose (informational -
+      // explains why a base photo matters before you've even taken the
+      // front one), but the BUTTON itself must never be interactive
+      // before the front photo exists: tapping it first used to silently
+      // no-op (submitScan() bails without pendingMainPhoto) while its own
+      // label had already optimistically flipped to "Photo attached -
+      // scanning...", which is exactly the "just spins, nothing happens"
+      // bug for loose scans - carded never hit this because its button
+      // was already gated on havePhoto.
+      basePrompt.style.display = (packagingType === 'loose' || havePhoto) ? 'block' : 'none';
+      baseBtn.classList.toggle('show', havePhoto);
+      skipSecondBtn.classList.toggle('show', havePhoto);
     }
     function setPackaging(type) {
       packagingType = type;
@@ -755,11 +784,18 @@
 
     baseInput.addEventListener('change', async (e) => {
       const file = e.target.files[0];
+      baseInput.value = '';
       if (!file) return;
+      if (!pendingMainPhoto) {
+        // Shouldn't be reachable now that the button is hidden until the
+        // front photo exists, but backstop it anyway rather than silently
+        // no-op with a label stuck on "scanning...".
+        showError('Take the front photo first, then add the base/underside photo.');
+        return;
+      }
       pendingBasePhoto = file;
       baseBtnIcon.innerHTML = ICON_CHECK_CIRCLE;
       baseBtnLabel.textContent = 'Photo attached — scanning…';
-      baseInput.value = '';
       await submitScan();
     });
 
@@ -801,8 +837,83 @@
       }
 
       setScanning(false);
-      openScanConfirmSheet(newItem);
+      const dupe = findDuplicate(newItem);
+      if (dupe) openDuplicateSheet(newItem, dupe);
+      else openScanConfirmSheet(newItem);
     }
+
+    // Duplicate = same sku (when both have one), else same casting name +
+    // series + year + packaging + brand. Packaging is always part of the
+    // check even on a sku match - a carded and loose copy of the same sku
+    // are still meaningfully different physical items worth tracking
+    // separately (different condition, different value).
+    function findDuplicate(newItem) {
+      if (!newItem.casting_name) return null;
+      const samePkg = (it) => (it.packaging_type || 'carded') === (newItem.packaging_type || 'carded');
+      return allItems.find(it => {
+        if (it.id === newItem.id || !samePkg(it)) return false;
+        if (newItem.sku && it.sku) return newItem.sku === it.sku;
+        return (it.casting_name || null) === newItem.casting_name
+          && (it.series || null) === (newItem.series || null)
+          && (it.year || null) === (newItem.year || null)
+          && (it.brand || null) === (newItem.brand || null);
+      }) || null;
+    }
+
+    // ---- Duplicate sheet - Skip / Add to total ----
+    const duplicateScrim = document.getElementById('duplicateScrim');
+    const duplicateSheet = document.getElementById('duplicateSheet');
+    const duplicateThumb = document.getElementById('duplicateThumb');
+    const duplicateName = document.getElementById('duplicateName');
+    const duplicateMeta = document.getElementById('duplicateMeta');
+    const duplicateExplain = document.getElementById('duplicateExplain');
+    let duplicateNewItem = null;
+    let duplicateExistingItem = null;
+
+    function openDuplicateSheet(newItem, existingItem) {
+      duplicateNewItem = newItem;
+      duplicateExistingItem = existingItem;
+      duplicateThumb.src = existingItem.photo_path ? '/' + existingItem.photo_path : '';
+      duplicateThumb.style.visibility = existingItem.photo_path ? 'visible' : 'hidden';
+      duplicateName.textContent = existingItem.casting_name || 'Unrecognized item';
+      duplicateMeta.textContent = [existingItem.brand, existingItem.car_make, existingItem.year].filter(Boolean).join(' · ') || '—';
+      const currentQty = existingItem.quantity || 1;
+      duplicateExplain.textContent = `You already have ${currentQty} of these. Add this scan to the total, or skip it?`;
+      openSheet(duplicateSheet, duplicateScrim);
+    }
+    document.getElementById('duplicateSkip').addEventListener('click', async () => {
+      closeSheet(duplicateSheet, duplicateScrim);
+      const item = duplicateNewItem;
+      duplicateNewItem = null;
+      duplicateExistingItem = null;
+      if (!item) return;
+      try { await fetch(`/inventory/${item.id}`, { method: 'DELETE' }); } catch { /* best effort */ }
+    });
+    document.getElementById('duplicateAddTotal').addEventListener('click', async () => {
+      closeSheet(duplicateSheet, duplicateScrim);
+      const newItem = duplicateNewItem, existing = duplicateExistingItem;
+      duplicateNewItem = null;
+      duplicateExistingItem = null;
+      if (!newItem || !existing) return;
+      try {
+        const resp = await fetch(`/inventory/${existing.id}`, {
+          method: 'PUT', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ quantity: (existing.quantity || 1) + 1 }),
+        });
+        const data = await resp.json();
+        if (resp.ok) {
+          const updated = fromDbRow(data);
+          const idx = allItems.findIndex(it => it.id === existing.id);
+          if (idx !== -1) allItems[idx] = updated;
+        } else {
+          showError(data.detail || `Couldn't update quantity (status ${resp.status})`);
+        }
+      } catch (err) {
+        showError(`Couldn't update quantity: ${err.message}`);
+      }
+      try { await fetch(`/inventory/${newItem.id}`, { method: 'DELETE' }); } catch { /* best effort */ }
+      renderList();
+    });
 
     // ---- Scan confirmation sheet - never auto-add to the list ----
     const scanConfirmScrim = document.getElementById('scanConfirmScrim');
@@ -877,6 +988,7 @@
         cost_basis_usd: null,
         listing_price_usd: null,
         sold_price_usd: null,
+        quantity: 1,
       };
     }
 
@@ -908,6 +1020,7 @@
         cost_basis_usd: row.cost_basis_usd,
         listing_price_usd: row.listing_price_usd,
         sold_price_usd: row.sold_price_usd,
+        quantity: row.quantity || 1,
       };
     }
 
@@ -1019,6 +1132,13 @@
       const nameEl = document.createElement('div');
       nameEl.className = 'item-row-name';
       nameEl.textContent = name;
+      if ((item.quantity || 1) > 1) {
+        const qtyBadge = document.createElement('span');
+        qtyBadge.style.color = 'var(--md-sys-color-on-surface-variant)';
+        qtyBadge.style.fontWeight = '500';
+        qtyBadge.textContent = ` ×${item.quantity}`;
+        nameEl.appendChild(qtyBadge);
+      }
       main.appendChild(nameEl);
 
       const subEl = document.createElement('div');
@@ -1061,28 +1181,49 @@
 
       el.appendChild(end);
 
-      // ---- Tap vs. swipe: swipe left = delete, swipe right = cycle
-      // tracking status, small movement = tap-to-open (or toggle-select).
+      // ---- Tap vs. swipe vs. scroll -----------------------------------
+      // Direction-locked: a gesture isn't classified as horizontal swipe
+      // OR vertical scroll until movement in one axis clearly dominates
+      // the other past a small threshold. Until then nothing happens (no
+      // pointer capture, no transform), so native vertical scrolling is
+      // never intercepted - the previous version only checked horizontal
+      // distance to decide "was this a tap," so a vertical scroll (near-
+      // zero horizontal movement) always misread as a tap and opened the
+      // detail page instead of scrolling.
       let drag = null;
       el.addEventListener('pointerdown', (e) => {
         if (selectMode) return;
-        drag = { startX: e.clientX, dx: 0, pointerId: e.pointerId };
-        el.setPointerCapture(e.pointerId);
+        drag = { startX: e.clientX, startY: e.clientY, dx: 0, dy: 0, pointerId: e.pointerId, locked: null };
       });
       el.addEventListener('pointermove', (e) => {
         if (!drag || drag.pointerId !== e.pointerId) return;
         drag.dx = e.clientX - drag.startX;
-        const clamped = Math.max(-120, Math.min(120, drag.dx));
-        el.style.transform = `translateX(${clamped}px)`;
-        el.style.background = clamped < -24 ? 'rgba(239,68,68,0.10)' : clamped > 24 ? 'rgba(96,165,250,0.10)' : '';
+        drag.dy = e.clientY - drag.startY;
+
+        if (drag.locked === null) {
+          const adx = Math.abs(drag.dx), ady = Math.abs(drag.dy);
+          if (Math.max(adx, ady) < 8) return; // too small to tell yet
+          drag.locked = adx > ady ? 'horizontal' : 'vertical';
+          if (drag.locked === 'horizontal') el.setPointerCapture(e.pointerId);
+          // 'vertical' - leave pointer uncaptured so the browser's native
+          // scroll (touch-action: pan-y) keeps handling it untouched.
+        }
+
+        if (drag.locked === 'horizontal') {
+          const clamped = Math.max(-120, Math.min(120, drag.dx));
+          el.style.transform = `translateX(${clamped}px)`;
+          el.style.background = clamped < -24 ? 'rgba(239,68,68,0.10)' : clamped > 24 ? 'rgba(96,165,250,0.10)' : '';
+        }
       });
       function endDrag(e) {
         if (!drag || drag.pointerId !== e.pointerId) return;
-        const dx = drag.dx;
+        const { dx, locked } = drag;
         el.style.transform = '';
         el.style.background = '';
         drag = null;
-        if (Math.abs(dx) < 10) {
+        if (locked === 'vertical') return; // was a scroll - no tap/swipe action
+        if (locked === null) {
+          // Never moved past the direction-lock threshold in either axis.
           if (selectMode) toggleSelected(item.id);
           else location.hash = '#/item/' + item.id;
         } else if (dx < -80) {
@@ -1521,6 +1662,7 @@
 
       detStatusValue = item.tracking_status || 'in_collection';
       updateStatusToggle();
+      detQuantity.value = item.quantity || 1;
       detCondition.value = item.condition || '';
       detCostBasis.value = item.cost_basis_usd ?? '';
       detListingPrice.value = item.listing_price_usd ?? '';
@@ -1563,6 +1705,7 @@
         extracted_sku: detSku.value || null,
         extracted_color: detColor.value || null,
         status: detStatusValue || null,
+        quantity: detQuantity.value ? parseInt(detQuantity.value, 10) : 1,
         condition: detCondition.value || null,
         cost_basis_usd: detCostBasis.value ? parseFloat(detCostBasis.value) : null,
         listing_price_usd: detListingPrice.value ? parseFloat(detListingPrice.value) : null,

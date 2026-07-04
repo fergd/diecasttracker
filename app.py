@@ -85,6 +85,7 @@ INVENTORY_COLUMNS = {
     "status": "TEXT DEFAULT 'in_collection'",
     "listing_price_usd": "REAL",
     "sold_price_usd": "REAL",
+    "quantity": "INTEGER DEFAULT 1",
 }
 
 
@@ -423,6 +424,7 @@ class InventoryUpdate(BaseModel):
     status: Optional[str] = None          # in_collection / listed / sold
     listing_price_usd: Optional[float] = None
     sold_price_usd: Optional[float] = None
+    quantity: Optional[int] = None
 
 
 @app.put("/inventory/{item_id}")

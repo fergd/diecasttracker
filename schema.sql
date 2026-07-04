@@ -86,6 +86,10 @@ CREATE TABLE IF NOT EXISTS inventory (
     status               TEXT DEFAULT 'in_collection',  -- in_collection / listed / sold
     listing_price_usd     REAL,
     sold_price_usd         REAL,
+    quantity              INTEGER DEFAULT 1,  -- how many physical copies of this exact
+                                                 -- casting+colorway+packaging you own -
+                                                 -- duplicate scans offer to bump this
+                                                 -- instead of creating a second row
     created_at            TEXT DEFAULT CURRENT_TIMESTAMP,
 
     FOREIGN KEY (match_reference_id) REFERENCES reference_castings(id)
