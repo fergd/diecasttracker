@@ -508,6 +508,50 @@ def refresh_price(item_id: int):
     return dict(updated)
 
 
+@app.post("/inventory/{item_id}/rematch")
+def rematch(item_id: int):
+    """
+    Re-run validate_extraction() against an already-saved item's original
+    extracted_* fields, using whatever's in reference_castings NOW - for
+    when a no_match item turns out to just be a reference-DB coverage gap
+    that's since been filled in (e.g. a new importer added modern Matchbox
+    data), not something requiring a fresh photo. Never re-extracts from a
+    photo - only re-checks identity against the reference DB.
+    """
+    conn = get_conn()
+    row = conn.execute("SELECT * FROM inventory WHERE id = ?", (item_id,)).fetchone()
+    if row is None:
+        conn.close()
+        raise HTTPException(status_code=404, detail=f"No inventory item with id {item_id}")
+
+    extracted = {
+        "brand": row["extracted_brand"],
+        "car_make": row["car_make"],
+        "casting_name": row["extracted_casting_name"],
+        "series": row["extracted_series"],
+        "release_year": row["extracted_year"],
+        "sku": row["extracted_sku"],
+    }
+    match_result = validate_extraction(extracted, packaging_type=row["packaging_type"])
+
+    conn.execute("""
+        UPDATE inventory SET
+            match_reference_id = ?, match_confidence = ?, match_status = ?, match_notes = ?,
+            canonical_brand = ?, canonical_casting_name = ?, canonical_series = ?, canonical_year = ?,
+            guide_price_usd = ?
+        WHERE id = ?
+    """, (
+        match_result.reference_id, match_result.confidence, match_result.status, match_result.notes,
+        match_result.canonical_brand, match_result.canonical_casting_name,
+        match_result.canonical_series, match_result.canonical_year,
+        match_result.suggested_price_usd, item_id,
+    ))
+    conn.commit()
+    updated = conn.execute("SELECT * FROM inventory WHERE id = ?", (item_id,)).fetchone()
+    conn.close()
+    return dict(updated)
+
+
 _PHOTO_SLOT_COLUMNS = {"main": "photo_path", "secondary": "base_photo_path"}
 
 
