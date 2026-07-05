@@ -540,12 +540,12 @@ def rematch(item_id: int):
     conn.execute("""
         UPDATE inventory SET
             match_reference_id = ?, match_confidence = ?, match_status = ?, match_notes = ?,
-            canonical_brand = ?, canonical_casting_name = ?, canonical_series = ?, canonical_year = ?,
+            canonical_brand = ?, canonical_sku = ?, canonical_casting_name = ?, canonical_series = ?, canonical_year = ?,
             guide_price_usd = ?
         WHERE id = ?
     """, (
         match_result.reference_id, match_result.confidence, match_result.status, match_result.notes,
-        match_result.canonical_brand, match_result.canonical_casting_name,
+        match_result.canonical_brand, match_result.canonical_sku, match_result.canonical_casting_name,
         match_result.canonical_series, match_result.canonical_year,
         match_result.suggested_price_usd, item_id,
     ))

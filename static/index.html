@@ -187,11 +187,13 @@
     gap: 10px;
   }
   #scanFabBtn {
-    --md-fab-container-color: var(--md-sys-color-primary);
+    --md-fab-container-color: #2c4666;
     --md-fab-icon-color: #FFFFFF;
-    --md-fab-label-text-color: #FFFFFF;
     --md-fab-container-shape: 9999px;
-    box-shadow: 0 4px 20px rgba(255,69,0,0.4);
+    --md-fab-container-width: 48px;
+    --md-fab-container-height: 48px;
+    --md-fab-icon-size: 24px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.35);
   }
   #scanFabBtn:active { transform: scale(0.95); }
 
@@ -560,7 +562,7 @@
   </div>
 
   <div class="fab-stack">
-    <md-fab id="scanFabBtn" variant="primary" label="Scan a car">
+    <md-fab id="scanFabBtn" aria-label="Scan a car">
       <md-icon slot="icon" id="scanFabIcon"><svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.0002 8.99998V15C22.0002 17.8284 22.0002 19.2426 21.1215 20.1213C20.2428 21 18.8286 21 16.0002 21H8.00018C5.17176 21 3.75754 21 2.87886 20.1213C2.00018 19.2426 2.00018 17.8284 2.00018 15V11.0537C2.00018 10.0736 2.00018 9.58356 2.1136 9.18288C2.39734 8.18054 3.18074 7.39714 4.18307 7.11341C4.58376 6.99998 5.07379 6.99998 6.05387 6.99998C6.41985 6.99998 6.60284 6.99998 6.77329 6.97027C7.19563 6.89665 7.58313 6.68926 7.87867 6.37869C7.99794 6.25335 8.29718 5.8045 8.50018 5.49998C8.89656 4.90543 9.09474 4.60815 9.36568 4.40365C9.53113 4.27877 9.71499 4.18038 9.91067 4.11198C10.2311 3.99998 10.5884 3.99998 11.303 3.99998H13.0002" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.0002 13.5C16.0002 15.7091 14.2093 17.5 12.0002 17.5C9.79104 17.5 8.00018 15.7091 8.00018 13.5C8.00018 11.2908 9.79104 9.49998 12.0002 9.49998C14.2093 9.49998 16.0002 11.2908 16.0002 13.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/><path d="M16.0002 5.49998H21.0002M18.5002 7.99998V2.99998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></md-icon>
     </md-fab>
   </div>
@@ -600,20 +602,11 @@
        that's not the case (e.g. plain http://backupbox:8420 over
        Tailscale, no `tailscale serve` in front of it), fall back to the
        native camera app via a plain file input instead of showing a dead
-       end - same front/back sequence, just handed off to the OS camera
-       twice instead of a live preview. -->
+       end. Front photo auto-advances straight into the back/base camera -
+       no confirmation prompt in between; canceling that second native
+       camera dialog is treated as "skip" and submits with just the front. -->
   <input type="file" id="fallbackCameraInput" accept="image/*" capture="environment" hidden>
   <input type="file" id="fallbackBaseInput" accept="image/*" capture="environment" hidden>
-  <div class="sheet-scrim" id="fallbackScrim"></div>
-  <div class="sheet" id="fallbackSheet">
-    <div class="sheet-handle"></div>
-    <div class="sheet-headline">Add a second photo?</div>
-    <div class="sheet-content" id="fallbackSheetContent"></div>
-    <div class="sheet-actions">
-      <md-text-button id="fallbackSkipBtn">Skip</md-text-button>
-      <md-filled-button id="fallbackAddPhotoBtn">Add photo</md-filled-button>
-    </div>
-  </div>
 
   <div class="lightbox-scrim" id="lightboxScrim">
     <img id="lightboxImg" alt="">
@@ -987,29 +980,18 @@
 
     // ---- Fallback: native camera app via <input capture>, for insecure
     // contexts where getUserMedia isn't available at all (see
-    // cameraSupported() above). Same front -> back sequence and Skip
-    // option as the in-app camera, just without a live preview - the OS
-    // camera app opens twice instead.
-    const fallbackScrim = document.getElementById('fallbackScrim');
-    const fallbackSheet = document.getElementById('fallbackSheet');
-    const fallbackSheetContent = document.getElementById('fallbackSheetContent');
+    // cameraSupported() above). Mirrors the in-app camera's UX: front shot
+    // auto-advances straight into the back/base camera, no confirmation
+    // prompt in between. There's no way to put a custom "Skip" control
+    // inside the OS camera app itself, so its own cancel/back gesture
+    // doubles as skip - the 'cancel' event (fired when the picker is
+    // dismissed without a photo) submits with just the front shot.
     fallbackCameraInput.addEventListener('change', (e) => {
       const file = e.target.files[0];
       fallbackCameraInput.value = '';
       if (!file) return;
       pendingMainPhoto = file;
-      fallbackSheetContent.textContent = packagingType === 'loose'
-        ? 'Loose cars are identified from the base stamp (casting name + year, stamped into the metal underside) - a lot more reliable than guessing from body shape alone.'
-        : 'The back of the card usually has the sku/Toy # code printed near the barcode - capturing it lets matching use an exact code lookup instead of guessing from the name alone.';
-      openSheet(fallbackSheet, fallbackScrim);
-    });
-    document.getElementById('fallbackAddPhotoBtn').addEventListener('click', () => {
-      closeSheet(fallbackSheet, fallbackScrim);
       fallbackBaseInput.click();
-    });
-    document.getElementById('fallbackSkipBtn').addEventListener('click', () => {
-      closeSheet(fallbackSheet, fallbackScrim);
-      submitScan();
     });
     fallbackBaseInput.addEventListener('change', (e) => {
       const file = e.target.files[0];
@@ -1017,6 +999,7 @@
       if (file) pendingBasePhoto = file;
       submitScan();
     });
+    fallbackBaseInput.addEventListener('cancel', () => submitScan());
 
     async function submitScan() {
       if (!pendingMainPhoto) return;
@@ -2068,6 +2051,7 @@
     });
 
     const ICON_REMATCH = rematchBtn.innerHTML;
+    const ICON_REMATCH_DONE = '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>';
     rematchBtn.addEventListener('click', async () => {
       if (currentDetailId == null) return;
       rematchBtn.disabled = true;
@@ -2083,11 +2067,17 @@
         const idx = allItems.findIndex(it => it.id === currentDetailId);
         if (idx !== -1) allItems[idx] = updated;
         buildDetailView(updated);
+        // A rematch that legitimately finds nothing new (reference DB still
+        // doesn't cover this casting) leaves the detail view looking
+        // identical to before the click - without this, that's
+        // indistinguishable from the button being broken.
+        rematchBtn.innerHTML = ICON_REMATCH_DONE;
+        setTimeout(() => { rematchBtn.innerHTML = ICON_REMATCH; }, 1200);
       } catch (err) {
         showError(`Couldn't recheck match: ${err.message}`);
+        rematchBtn.innerHTML = ICON_REMATCH;
       } finally {
         rematchBtn.disabled = false;
-        rematchBtn.innerHTML = ICON_REMATCH;
       }
     });
 
