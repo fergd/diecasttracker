@@ -55,6 +55,12 @@
     color: var(--md-sys-color-on-surface);
     font-family: var(--font-body);
     min-height: 100vh;
+    /* Safety net: any element that overflows horizontally (e.g. an
+       unconstrained icon inside a text field) expands the effective
+       layout viewport on some mobile browsers, which throws off every
+       vw-based fixed position on the page (the FAB's included) - clip
+       here so a single overflowing element can never do that again. */
+    overflow-x: hidden;
   }
 
   /* ---- Top app bar ----------------------------------------------------- */
@@ -97,13 +103,21 @@
     --md-primary-tab-active-icon-color: var(--md-sys-color-primary);
     --md-primary-tab-container-color: var(--md-sys-color-surface);
   }
-  .search-bar { margin-bottom: 12px; }
+  .search-bar { margin-bottom: 12px; overflow: hidden; }
   .search-input {
+    display: block;
     width: 100%;
+    max-width: 100%;
     --md-outlined-text-field-container-shape: 9999px;
     --md-outlined-text-field-top-space: 10px;
     --md-outlined-text-field-bottom-space: 10px;
   }
+  /* This is the only text field in the app with a leading icon - the
+     generic `md-icon svg { width: 1em; ... }` rule elsewhere should cover
+     it, but pin it explicitly (higher specificity) since an unconstrained
+     inline SVG defaulting to its own intrinsic size is the most likely
+     reason this field was rendering far wider than its container. */
+  #searchInput svg { width: 24px; height: 24px; }
   .filter-bar { overflow-x: auto; margin: 0 -20px 16px; padding: 0 20px; scrollbar-width: none; }
   .filter-bar::-webkit-scrollbar { display: none; }
   .filter-scroll { display: flex; gap: 8px; align-items: center; width: max-content; }
