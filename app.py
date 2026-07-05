@@ -66,6 +66,7 @@ INVENTORY_COLUMNS = {
     "extracted_year": "TEXT",
     "extracted_color": "TEXT",
     "treasure_hunt": "TEXT",
+    "base_country": "TEXT",
     "extracted_raw_json": "TEXT",
     "match_reference_id": "INTEGER",
     "match_confidence": "REAL",
@@ -83,6 +84,8 @@ INVENTORY_COLUMNS = {
     "live_price_summary": "TEXT",
     "live_price_fetched_at": "TEXT",
     "condition": "TEXT",
+    "condition_car_grade": "TEXT",
+    "condition_card_grade": "TEXT",
     "acquired_date": "TEXT",
     "cost_basis_usd": "REAL",
     "status": "TEXT DEFAULT 'in_collection'",
@@ -214,19 +217,20 @@ async def scan_card(
                 photo_path, base_photo_path, packaging_type,
                 extracted_brand, car_make, extracted_casting_name,
                 extracted_collector_num, extracted_sku, extracted_series, extracted_year,
-                extracted_color, treasure_hunt, extracted_raw_json,
+                extracted_color, treasure_hunt, base_country, extracted_raw_json,
                 match_reference_id, match_confidence, match_status, match_notes,
                 canonical_brand, canonical_sku, canonical_casting_name, canonical_series, canonical_year,
                 guide_price_usd,
                 live_price_low_usd, live_price_high_usd, live_recommended_price_usd,
                 live_price_summary, live_price_fetched_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             saved_path, base_saved_path, packaging_type,
             extracted.get("brand"), extracted.get("car_make"), extracted.get("casting_name"),
             extracted.get("collector_number"), extracted.get("sku"), extracted.get("series"),
             str(extracted.get("release_year") or extracted.get("copyright_year_on_base") or "") or None,
-            extracted.get("color"), extracted.get("treasure_hunt"), json.dumps(extracted),
+            extracted.get("color"), extracted.get("treasure_hunt"), extracted.get("base_country"),
+            json.dumps(extracted),
             match_result.reference_id, match_result.confidence, match_result.status,
             match_result.notes, match_result.canonical_brand, match_result.canonical_sku,
             match_result.canonical_casting_name,
@@ -423,8 +427,11 @@ class InventoryUpdate(BaseModel):
     extracted_sku: Optional[str] = None
     extracted_color: Optional[str] = None
     treasure_hunt: Optional[str] = None   # null / 'TH' / 'Super TH'
+    base_country: Optional[str] = None    # casting/base-stamp country, e.g. 'Malaysia'
     match_status: Optional[str] = None
     condition: Optional[str] = None
+    condition_car_grade: Optional[str] = None   # C6-C10
+    condition_card_grade: Optional[str] = None  # C6-C10, carded only
     acquired_date: Optional[str] = None
     cost_basis_usd: Optional[float] = None
     status: Optional[str] = None          # in_collection / listed / sold

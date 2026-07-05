@@ -62,6 +62,12 @@ CREATE TABLE IF NOT EXISTS inventory (
                                             -- Detected from the card's TH logo (not just
                                             -- printed text) or, for Super TH, real rubber
                                             -- tires + spectraflame paint - see vision_extract.py
+    base_country              TEXT,       -- casting/base-stamp country of manufacture, e.g.
+                                            -- 'Malaysia' / 'Thailand' / 'China' / 'Indonesia' -
+                                            -- a real collector value driver, usually only legible
+                                            -- on loose cars (base stamp visible); manual-entry
+                                            -- fallback like car_make since carded photos rarely
+                                            -- show the base
     extracted_raw_json       TEXT,       -- full JSON blob, for debugging/reprocessing
 
     -- validation result
@@ -95,8 +101,12 @@ CREATE TABLE IF NOT EXISTS inventory (
     live_price_fetched_at    TEXT,
 
     -- your own tracking fields
-    condition           TEXT,            -- carded: card/bubble condition e.g. 'Mint card, no crease'
-                                            -- loose: paint/wear condition e.g. 'Near mint, light wheel wear'
+    condition           TEXT,            -- free-text notes, e.g. 'small crease bottom-left corner' -
+                                            -- supplements the structured grades below, doesn't replace them
+    condition_car_grade  TEXT,            -- collector C-scale (C6-C10) for the car's own paint/finish -
+                                            -- C10 Mint, C9 Near Mint, C8 Excellent, C7 Very Good, C6 Good
+    condition_card_grade TEXT,            -- same C6-C10 scale, for card/bubble packaging condition -
+                                            -- carded items only, graded separately from the car itself
     acquired_date        TEXT,
     cost_basis_usd        REAL,
     status               TEXT DEFAULT 'in_collection',  -- in_collection / listed / sold

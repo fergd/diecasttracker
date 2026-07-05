@@ -1,0 +1,122 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  z-index: 200;
+}
+
+.topBar,
+.bottomBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing-lg) var(--spacing-xl);
+  flex: none;
+}
+
+.stepLabel {
+  font-family: var(--font-body);
+  font-size: var(--font-size-headline);
+  font-weight: var(--font-weight-semibold);
+  color: #fff;
+}
+
+.spacer {
+  width: 36px;
+}
+
+.iconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-full);
+  border: none;
+  background: rgba(255, 255, 255, 0.12);
+  color: #fff;
+  cursor: pointer;
+}
+
+.textButton {
+  border: none;
+  background: transparent;
+  color: #fff;
+  font-family: var(--font-body);
+  font-size: var(--font-size-callout);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  padding: var(--spacing-xs) var(--spacing-sm);
+}
+
+.viewport {
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+  background: #000;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.freezeFrame {
+  position: absolute;
+  inset: 0;
+}
+
+.freezeFrame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.checkmark {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.errorBanner {
+  position: absolute;
+  top: var(--spacing-lg);
+  left: var(--spacing-lg);
+  right: var(--spacing-lg);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-sm);
+  background: rgba(var(--color-semantic-error-rgb), 0.9);
+  color: #fff;
+  text-align: center;
+  font-family: var(--font-body);
+  font-size: var(--font-size-footnote);
+}
+
+.bottomBar {
+  padding-bottom: var(--spacing-2xl);
+}
+
+.shutter {
+  width: 72px;
+  height: 72px;
+  border-radius: var(--radius-full);
+  border: 4px solid #fff;
+  background: transparent;
+  cursor: pointer;
+  position: relative;
+}
+
+.shutter::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: var(--radius-full);
+  background: #fff;
+}

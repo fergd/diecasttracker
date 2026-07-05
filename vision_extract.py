@@ -110,6 +110,12 @@ the raw JSON object:
   "copyright_year_on_base": the year stamped on the base, if visible (note in
                               extraction_confidence notes that this may differ from
                               actual release year),
+  "base_country": the country of manufacture stamped on the base (e.g. "Malaysia",
+                    "Thailand", "China", "Indonesia", "Vietnam") - a real collector
+                    value driver since casting/base variants differ in scarcity by
+                    country. Extract just the country name cleanly (not the full
+                    stamp text). null if no base photo was given or the country
+                    isn't legible - do not guess,
   "color": description of the car's color/deco/wheel type - wheel type (5-spoke,
             redline, real riders, etc) is often a useful identifying/dating clue,
   "treasure_hunt": "TH" if this is a regular Treasure Hunt, "Super TH" if a Super

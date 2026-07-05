@@ -1,0 +1,38 @@
+.tag {
+  display: inline-flex;
+  flex: none;
+  align-items: center;
+  gap: var(--spacing-xs);
+  padding: var(--spacing-xs) var(--spacing-md);
+  border-radius: var(--radius-full);
+  border: 1px solid transparent;
+  font-family: var(--font-body);
+  font-size: var(--font-size-footnote);
+  font-weight: var(--font-weight-medium);
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease;
+}
+
+.tag:disabled {
+  opacity: 0.38;
+  cursor: not-allowed;
+}
+
+.default {
+  background: transparent;
+  border-color: var(--color-zinc-600);
+  color: var(--color-text-secondary-dark);
+}
+
+.selected {
+  background: rgba(var(--color-navy-500-rgb), 0.16);
+  border-color: var(--color-navy-500);
+  color: var(--color-navy-500);
+}
+
+.removeIcon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}

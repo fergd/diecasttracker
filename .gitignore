@@ -5,3 +5,4 @@ __pycache__/
 photos/
 html_cache/
 .env
+.claude/settings.local.json

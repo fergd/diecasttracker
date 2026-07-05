@@ -1,0 +1,89 @@
+.fab {
+  position: fixed;
+  bottom: var(--spacing-2xl);
+  right: var(--spacing-xl);
+  width: var(--sizing-control-lg);
+  height: var(--sizing-control-lg);
+  border-radius: var(--radius-full);
+  border: none;
+  background: var(--color-navy-500);
+  color: var(--color-zinc-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: var(--shadow-lg);
+  z-index: 50;
+}
+
+.fab:hover {
+  background: var(--color-navy-600);
+}
+
+.fallbackBar {
+  position: fixed;
+  bottom: calc(var(--spacing-2xl) + var(--sizing-control-lg) + var(--spacing-md));
+  right: var(--spacing-xl);
+  display: flex;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-sm);
+  border-radius: var(--radius-full);
+  background: var(--color-surface-card-dark);
+  box-shadow: var(--shadow-lg);
+  z-index: 51;
+}
+
+.scanningBody {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-2xl) 0;
+}
+
+.scanningIcon {
+  color: var(--color-navy-400);
+  animation: pulse 1.4s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 0.4; }
+  50% { opacity: 1; }
+}
+
+.scanningLabel {
+  font-family: var(--font-body);
+  font-size: var(--font-size-footnote);
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: var(--letter-spacing-wide);
+  color: var(--color-text-secondary-dark);
+}
+
+.sheetTitle {
+  font-family: var(--font-body);
+  font-size: var(--font-size-title3);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+}
+
+.sheetText {
+  font-family: var(--font-body);
+  font-size: var(--font-size-callout);
+  color: var(--color-text-secondary-dark);
+  margin: 0;
+}
+
+.matchRow {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.sheetActions {
+  display: flex;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-sm);
+}
+
+.sheetActions > * {
+  flex: 1;
+}

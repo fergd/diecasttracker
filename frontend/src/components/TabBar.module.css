@@ -1,0 +1,15 @@
+.tabBar {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-md);
+  padding: var(--spacing-xs);
+  border-radius: var(--radius-md);
+  background: var(--color-surface-card-dark);
+  width: 100%;
+}
+
+/* Each Tab evenly fills the available width - 2 tabs = 50/50, 3 = 33/33/33, etc. */
+.tabBar > button {
+  flex: 1 1 0;
+  min-width: 0;
+}
