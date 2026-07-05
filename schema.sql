@@ -44,6 +44,12 @@ CREATE TABLE IF NOT EXISTS inventory (
                                           -- distinct from extracted_brand (Hot Wheels/Matchbox, the
                                           -- collectible line) - no reference-DB verification for this
                                           -- one, so it's directly user-editable too, like condition
+    special_series            TEXT,      -- franchise/personality tie-in sub-line, e.g. "Back to the
+                                          -- Future", "James Bond 007: The Spy Who Loved Me", "Fast &
+                                          -- Furious", "Block" (Ken Block) - distinct from series (e.g.
+                                          -- "HW Screen Time", "2011 New Models"). Manual-entry only,
+                                          -- like car_make: not vision-extracted, no reference-DB
+                                          -- verification.
     extracted_casting_name  TEXT,
     extracted_collector_num TEXT,
     extracted_sku            TEXT,      -- manufacturer item/Toy # code, e.g. "CFH06" - exact identifier,

@@ -97,6 +97,13 @@
     --md-primary-tab-active-icon-color: var(--md-sys-color-primary);
     --md-primary-tab-container-color: var(--md-sys-color-surface);
   }
+  .search-bar { margin-bottom: 12px; }
+  .search-input {
+    width: 100%;
+    --md-outlined-text-field-container-shape: 9999px;
+    --md-outlined-text-field-top-space: 10px;
+    --md-outlined-text-field-bottom-space: 10px;
+  }
   .filter-bar { overflow-x: auto; margin: 0 -20px 16px; padding: 0 20px; scrollbar-width: none; }
   .filter-bar::-webkit-scrollbar { display: none; }
   .filter-scroll { display: flex; gap: 8px; align-items: center; width: max-content; }
@@ -131,6 +138,23 @@
     position: absolute; inset: 0; width: 100%; height: 100%;
     object-fit: cover; background: #000;
   }
+  .camera-freeze-frame {
+    position: absolute; inset: 0; width: 100%; height: 100%;
+    object-fit: cover; background: #000; z-index: 1;
+    display: none;
+  }
+  .camera-freeze-frame.show { display: block; }
+  .camera-capture-check {
+    position: absolute; top: 50%; left: 50%; z-index: 3;
+    width: 72px; height: 72px; border-radius: 9999px;
+    background: var(--md-sys-color-primary); color: #fff;
+    display: flex; align-items: center; justify-content: center;
+    opacity: 0; transform: translate(-50%, -50%) scale(0.5);
+    transition: opacity 0.18s ease-out, transform 0.18s ease-out;
+    pointer-events: none;
+  }
+  .camera-capture-check svg { width: 36px; height: 36px; }
+  .camera-capture-check.show { opacity: 1; transform: translate(-50%, -50%) scale(1); }
   .camera-topbar {
     position: absolute; top: 0; left: 0; right: 0; z-index: 2;
     display: flex; align-items: center; justify-content: space-between;
@@ -187,14 +211,22 @@
     gap: 10px;
   }
   #scanFabBtn {
+    /* Standard (medium) FAB per Material Design 3: 56dp container, 24dp icon -
+       https://m3.material.io/components/floating-action-button */
     --md-fab-container-color: #2c4666;
     --md-fab-icon-color: #FFFFFF;
     --md-fab-container-shape: 9999px;
-    --md-fab-container-width: 48px;
-    --md-fab-container-height: 48px;
+    --md-fab-container-width: 56px;
+    --md-fab-container-height: 56px;
     --md-fab-icon-size: 24px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.35);
   }
+  /* Outline icon rendered filled/solid rather than a thin stroke line -
+     the paths have no fill of their own, so this inherits down and fills
+     the enclosed regions (aperture, lens) while each path's own stroke
+     still defines the open contours - a bolder mark at FAB size without
+     switching to a separately-drawn "solid" icon asset. */
+  #scanFabIcon svg { fill: currentColor; }
   #scanFabBtn:active { transform: scale(0.95); }
 
   .fallback-bar {
@@ -477,6 +509,12 @@
       </md-primary-tab>
     </md-tabs>
 
+    <div class="search-bar">
+      <md-outlined-text-field id="searchInput" class="search-input" placeholder="Search your collection">
+        <md-icon slot="leading-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960"><path d="M784-120 532-372q-30 24-69 38t-83 14q-109 0-184.5-75.5T120-580q0-109 75.5-184.5T380-840q109 0 184.5 75.5T640-580q0 44-14 83t-38 69l252 252-56 56ZM380-400q75 0 127.5-52.5T560-580q0-75-52.5-127.5T380-760q-75 0-127.5 52.5T200-580q0 75 52.5 127.5T380-400Z"/></svg></md-icon>
+      </md-outlined-text-field>
+    </div>
+
     <div class="filter-bar">
       <div class="filter-scroll">
         <button class="chip match-chip active" data-match="">All</button>
@@ -526,6 +564,7 @@
       <div class="field-row"><span class="field-label">Car make</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detCarMake"></md-filled-text-field></div></div>
       <div class="field-row"><span class="field-label">Casting name</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detCastingName"></md-filled-text-field></div></div>
       <div class="field-row"><span class="field-label">Series / theme</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detSeries"></md-filled-text-field></div></div>
+      <div class="field-row"><span class="field-label">Special series</span><div class="field-value-wrap"><md-filled-text-field class="row-input" id="detSpecialSeries" placeholder="e.g. Back to the Future"></md-filled-text-field></div></div>
       <div class="field-row"><span class="field-label">Year</span><div class="field-value-wrap"><md-filled-text-field class="row-input" data-mono="true" type="number" id="detYear"></md-filled-text-field></div></div>
       <div class="field-row"><span class="field-label">Collector #</span><div class="field-value-wrap"><md-filled-text-field class="row-input" data-mono="true" id="detCollectorNum"></md-filled-text-field></div></div>
       <div class="field-row"><span class="field-label">SKU / Toy #</span><div class="field-value-wrap"><md-filled-text-field class="row-input" data-mono="true" id="detSku"></md-filled-text-field></div></div>
@@ -584,6 +623,10 @@
        accepted, no interstitial "add a second photo?" prompt screen). -->
   <div class="camera-view" id="cameraView">
     <video class="camera-video" id="cameraVideo" autoplay playsinline muted></video>
+    <img class="camera-freeze-frame" id="cameraFreezeFrame" alt="">
+    <div class="camera-capture-check" id="cameraCaptureCheck">
+      <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 14L8.5 17.5L19 6.5" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </div>
     <div class="camera-topbar">
       <button class="camera-icon-btn" id="cameraCloseBtn" aria-label="Cancel">
         <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18 6L6.00081 17.9992M17.9992 18L6 6.00085" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
@@ -675,6 +718,7 @@
     <div id="scanConfirmMatch"></div>
     <div class="sheet-actions">
       <md-text-button id="scanConfirmReject">Reject</md-text-button>
+      <md-text-button id="scanConfirmEdit">Edit</md-text-button>
       <md-filled-button id="scanConfirmAdd">Add to collection</md-filled-button>
     </div>
   </div>
@@ -743,6 +787,8 @@
 
     const cameraView = document.getElementById('cameraView');
     const cameraVideo = document.getElementById('cameraVideo');
+    const cameraFreezeFrame = document.getElementById('cameraFreezeFrame');
+    const cameraCaptureCheck = document.getElementById('cameraCaptureCheck');
     const cameraStepLabel = document.getElementById('cameraStepLabel');
     const cameraCloseBtn = document.getElementById('cameraCloseBtn');
     const cameraSkipBtn = document.getElementById('cameraSkipBtn');
@@ -765,6 +811,7 @@
     const detCarMake = document.getElementById('detCarMake');
     const detCastingName = document.getElementById('detCastingName');
     const detSeries = document.getElementById('detSeries');
+    const detSpecialSeries = document.getElementById('detSpecialSeries');
     const detYear = document.getElementById('detYear');
     const detCollectorNum = document.getElementById('detCollectorNum');
     const detSku = document.getElementById('detSku');
@@ -801,6 +848,7 @@
     let sortDir = 'desc';
     let matchFilter = null;   // null | 'confirmed' | 'needs_review' | 'no_match'
     let statusFilter = null;  // null | 'in_collection' | 'listed' | 'sold'
+    let searchQuery = '';
 
     // ================================================================
     // Bottom sheet helper (generic - @material/web has no sheet
@@ -939,6 +987,25 @@
       });
     }
 
+    // Freezes the shot just taken behind a checkmark for a beat before
+    // advancing - the front->back transition happens fast enough that
+    // without this it reads as a failure ("did that even take?") rather
+    // than a successful capture.
+    function flashCaptureSuccess(blob) {
+      return new Promise((resolve) => {
+        const url = URL.createObjectURL(blob);
+        cameraFreezeFrame.src = url;
+        cameraFreezeFrame.classList.add('show');
+        cameraCaptureCheck.classList.add('show');
+        setTimeout(() => {
+          cameraCaptureCheck.classList.remove('show');
+          cameraFreezeFrame.classList.remove('show');
+          URL.revokeObjectURL(url);
+          resolve();
+        }, 350);
+      });
+    }
+
     cameraCloseBtn.addEventListener('click', () => {
       stopCameraStream();
       cameraView.classList.remove('show');
@@ -950,8 +1017,10 @@
     cameraShutterBtn.addEventListener('click', async () => {
       const blob = await captureFrame();
       if (!blob) return;
+      cameraShutterBtn.disabled = true;
       if (cameraStep === 'front') {
         pendingMainPhoto = blob;
+        await flashCaptureSuccess(blob);
         openCamera('back');
       } else {
         pendingBasePhoto = blob;
@@ -960,6 +1029,7 @@
         cameraStep = null;
         await submitScan();
       }
+      cameraShutterBtn.disabled = false;
     });
 
     cameraSkipBtn.addEventListener('click', async () => {
@@ -1191,6 +1261,16 @@
       // than adding a second "dry run" code path to the backend.
       try { await fetch(`/inventory/${item.id}`, { method: 'DELETE' }); } catch { /* best effort */ }
     });
+    document.getElementById('scanConfirmEdit').addEventListener('click', () => {
+      closeSheet(scanConfirmSheet, scanConfirmScrim);
+      const item = scanConfirmPendingItem;
+      scanConfirmPendingItem = null;
+      if (!item) return;
+      // Already persisted via /scan, same as Add to collection - Edit just
+      // also jumps straight into its detail/edit view instead of the list.
+      allItems.unshift(item);
+      location.hash = `#/item/${item.id}`;
+    });
     document.getElementById('scanConfirmAdd').addEventListener('click', () => {
       closeSheet(scanConfirmSheet, scanConfirmScrim);
       const item = scanConfirmPendingItem;
@@ -1214,6 +1294,7 @@
         car_make: ex.car_make || null,
         casting_name: v.canonical_casting_name || ex.casting_name || null,
         series: v.canonical_series || ex.series || null,
+        special_series: null,
         year: v.canonical_year || ex.release_year || null,
         collector_number: ex.collector_number || null,
         sku: v.canonical_sku || ex.sku || null,
@@ -1247,6 +1328,7 @@
         car_make: row.car_make || null,
         casting_name: row.canonical_casting_name || row.extracted_casting_name || null,
         series: row.canonical_series || row.extracted_series || null,
+        special_series: row.special_series || null,
         year: row.canonical_year || row.extracted_year || null,
         collector_number: row.extracted_collector_num || null,
         sku: row.canonical_sku || row.extracted_sku || null,
@@ -1286,6 +1368,11 @@
       let filtered = allItems.filter(it => (it.packaging_type || 'carded') === packagingType);
       if (matchFilter) filtered = filtered.filter(it => it.status === matchFilter);
       if (statusFilter) filtered = filtered.filter(it => (it.tracking_status || 'in_collection') === statusFilter);
+      if (searchQuery) {
+        filtered = filtered.filter(it => [
+          it.casting_name, it.brand, it.series, it.special_series, it.sku, it.car_make,
+        ].some(field => field && field.toLowerCase().includes(searchQuery)));
+      }
 
       if (sortKey === 'created_at') {
         return sortDir === 'desc' ? filtered : filtered.slice().reverse();
@@ -1370,7 +1457,7 @@
 
     function buildItemElement(item) {
       const name = item.casting_name || 'Unrecognized item';
-      const metaLine = [item.brand, item.car_make, item.year].filter(Boolean).join(' · ');
+      const metaLine = [item.brand, item.car_make, item.year, item.special_series].filter(Boolean).join(' · ');
       const price = item.live_recommended_price_usd || item.live_price_low_usd || item.live_price_high_usd || item.guide_price_usd;
       const profit = profitInfo(item);
 
@@ -1505,7 +1592,7 @@
       for (const item of items) results.appendChild(buildItemElement(item));
       updateAppBarSummary(items);
 
-      const filtersActive = !!(matchFilter || statusFilter);
+      const filtersActive = !!(matchFilter || statusFilter || searchQuery);
       if (items.length === 0 && filtersActive) {
         emptyState.style.display = 'none';
         filteredEmptyState.style.display = 'block';
@@ -1577,7 +1664,15 @@
     clearFiltersLink.addEventListener('click', () => {
       matchFilter = null;
       statusFilter = null;
+      searchQuery = '';
+      searchInput.value = '';
       updateFilterChips();
+      renderList();
+    });
+
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', () => {
+      searchQuery = searchInput.value.trim().toLowerCase();
       renderList();
     });
 
@@ -1958,6 +2053,7 @@
       detCarMake.value = item.car_make || '';
       detCastingName.value = item.casting_name || '';
       detSeries.value = item.series || '';
+      detSpecialSeries.value = item.special_series || '';
       detYear.value = item.year || '';
       detCollectorNum.value = item.collector_number || '';
       detSku.value = item.sku || '';
@@ -2017,6 +2113,7 @@
         car_make: detCarMake.value || null,
         canonical_casting_name: detCastingName.value || null,
         canonical_series: detSeries.value || null,
+        special_series: detSpecialSeries.value || null,
         canonical_year: detYear.value ? parseInt(detYear.value, 10) : null,
         extracted_collector_num: detCollectorNum.value || null,
         extracted_sku: detSku.value || null,

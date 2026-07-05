@@ -58,6 +58,7 @@ INVENTORY_COLUMNS = {
     "packaging_type": "TEXT DEFAULT 'carded'",
     "extracted_brand": "TEXT",
     "car_make": "TEXT",
+    "special_series": "TEXT",
     "extracted_casting_name": "TEXT",
     "extracted_collector_num": "TEXT",
     "extracted_sku": "TEXT",
@@ -414,6 +415,7 @@ class InventoryUpdate(BaseModel):
     semantics on a PUT route, which is fine for a single-user personal tool)."""
     canonical_brand: Optional[str] = None
     car_make: Optional[str] = None
+    special_series: Optional[str] = None
     canonical_casting_name: Optional[str] = None
     canonical_series: Optional[str] = None
     canonical_year: Optional[int] = None
@@ -514,12 +516,21 @@ def refresh_price(item_id: int):
 @app.post("/inventory/{item_id}/rematch")
 def rematch(item_id: int):
     """
-    Re-run validate_extraction() against an already-saved item's original
-    extracted_* fields, using whatever's in reference_castings NOW - for
-    when a no_match item turns out to just be a reference-DB coverage gap
-    that's since been filled in (e.g. a new importer added modern Matchbox
-    data), not something requiring a fresh photo. Never re-extracts from a
-    photo - only re-checks identity against the reference DB.
+    Re-run validate_extraction() against an already-saved item's identity
+    fields, using whatever's in reference_castings NOW - for when a
+    no_match item turns out to just be a reference-DB coverage gap that's
+    since been filled in (e.g. a new importer added modern Matchbox data),
+    not something requiring a fresh photo. Never re-extracts from a photo -
+    only re-checks identity against the reference DB.
+
+    User edits are the source of truth: the lookup itself prefers
+    canonical_* (whatever the user last saved on the detail page) over the
+    raw extracted_* OCR text, and the UPDATE preserves each existing
+    canonical_* value whenever the fresh match_result doesn't supply a
+    replacement (e.g. a no_match result has every canonical_* field as
+    None) - previously this unconditionally overwrote them, silently
+    wiping out a manual correction the moment rematch failed to find
+    anything.
     """
     conn = get_conn()
     row = conn.execute("SELECT * FROM inventory WHERE id = ?", (item_id,)).fetchone()
@@ -527,21 +538,37 @@ def rematch(item_id: int):
         conn.close()
         raise HTTPException(status_code=404, detail=f"No inventory item with id {item_id}")
 
+    # A manual /confirm is a stronger, deliberate override than anything an
+    # automated rematch could produce - if the reference DB happens to have
+    # no row for the user's corrected identity, a rematch would otherwise
+    # downgrade match_status right back to no_match and silently revert the
+    # correction. Manually confirmed items are a no-op here.
+    if row["match_notes"] == "Manually confirmed by user":
+        conn.close()
+        return dict(row)
+
     extracted = {
-        "brand": row["extracted_brand"],
+        "brand": row["canonical_brand"] or row["extracted_brand"],
         "car_make": row["car_make"],
-        "casting_name": row["extracted_casting_name"],
-        "series": row["extracted_series"],
-        "release_year": row["extracted_year"],
-        "sku": row["extracted_sku"],
+        "casting_name": row["canonical_casting_name"] or row["extracted_casting_name"],
+        "series": row["canonical_series"] or row["extracted_series"],
+        "release_year": row["canonical_year"] or row["extracted_year"],
+        "sku": row["canonical_sku"] or row["extracted_sku"],
     }
     match_result = validate_extraction(extracted, packaging_type=row["packaging_type"])
 
     conn.execute("""
         UPDATE inventory SET
-            match_reference_id = ?, match_confidence = ?, match_status = ?, match_notes = ?,
-            canonical_brand = ?, canonical_sku = ?, canonical_casting_name = ?, canonical_series = ?, canonical_year = ?,
-            guide_price_usd = ?
+            match_reference_id = COALESCE(?, match_reference_id),
+            match_confidence = COALESCE(?, match_confidence),
+            match_status = ?,
+            match_notes = ?,
+            canonical_brand = COALESCE(?, canonical_brand),
+            canonical_sku = COALESCE(?, canonical_sku),
+            canonical_casting_name = COALESCE(?, canonical_casting_name),
+            canonical_series = COALESCE(?, canonical_series),
+            canonical_year = COALESCE(?, canonical_year),
+            guide_price_usd = COALESCE(?, guide_price_usd)
         WHERE id = ?
     """, (
         match_result.reference_id, match_result.confidence, match_result.status, match_result.notes,
