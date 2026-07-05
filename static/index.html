@@ -197,6 +197,18 @@
   }
   #scanFabBtn:active { transform: scale(0.95); }
 
+  .fallback-bar {
+    display: none; position: fixed; z-index: 31;
+    right: max(20px, calc(50vw - 240px + 20px));
+    bottom: 84px;
+    gap: 8px; align-items: center;
+    background: var(--md-sys-color-surface-container);
+    border: 1px solid var(--md-sys-color-outline-variant);
+    border-radius: 9999px; padding: 6px 6px 6px 16px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.35);
+  }
+  .fallback-bar.show { display: flex; }
+
   /* ---- List rows - a plain divided list, NOT individual cards --------- */
   #results { margin: 0; }
   .item-row {
@@ -602,11 +614,18 @@
        that's not the case (e.g. plain http://backupbox:8420 over
        Tailscale, no `tailscale serve` in front of it), fall back to the
        native camera app via a plain file input instead of showing a dead
-       end. Front photo auto-advances straight into the back/base camera -
-       no confirmation prompt in between; canceling that second native
-       camera dialog is treated as "skip" and submits with just the front. -->
+       end. Mobile browsers won't let a second native-camera dialog be
+       auto-opened from within the first one's change handler (blocked
+       silently, no error) - confirmed this the hard way. One tap is
+       unavoidable here; this bar is the minimal version of it (no modal,
+       no scrim, just two inline buttons), same pattern this app already
+       used successfully before this session's camera work. -->
   <input type="file" id="fallbackCameraInput" accept="image/*" capture="environment" hidden>
   <input type="file" id="fallbackBaseInput" accept="image/*" capture="environment" hidden>
+  <div class="fallback-bar" id="fallbackBar">
+    <md-text-button id="fallbackSkipBtn">Skip</md-text-button>
+    <md-filled-tonal-button id="fallbackAddPhotoBtn">+ Back photo</md-filled-tonal-button>
+  </div>
 
   <div class="lightbox-scrim" id="lightboxScrim">
     <img id="lightboxImg" alt="">
@@ -734,6 +753,7 @@
     const scanningSheet = document.getElementById('scanningSheet');
     const fallbackCameraInput = document.getElementById('fallbackCameraInput');
     const fallbackBaseInput = document.getElementById('fallbackBaseInput');
+    const fallbackBar = document.getElementById('fallbackBar');
 
     const statusBtn = document.getElementById('statusBtn');
     const exportBtn = document.getElementById('exportBtn');
@@ -840,6 +860,7 @@
       packagingType = type;
       pendingMainPhoto = null;
       pendingBasePhoto = null;
+      fallbackBar.classList.remove('show');
       renderList();
     }
     packagingTabs.addEventListener('change', (e) => {
@@ -980,18 +1001,26 @@
 
     // ---- Fallback: native camera app via <input capture>, for insecure
     // contexts where getUserMedia isn't available at all (see
-    // cameraSupported() above). Mirrors the in-app camera's UX: front shot
-    // auto-advances straight into the back/base camera, no confirmation
-    // prompt in between. There's no way to put a custom "Skip" control
-    // inside the OS camera app itself, so its own cancel/back gesture
-    // doubles as skip - the 'cancel' event (fired when the picker is
-    // dismissed without a photo) submits with just the front shot.
+    // cameraSupported() above). Mobile browsers block auto-opening a
+    // second native-camera dialog from within the first one's change
+    // handler (silently ignored, no error, no way around it) - so unlike
+    // the in-app camera, this can't auto-advance. One tap is required
+    // between shots; fallbackBar is the minimal version of that (no
+    // modal/scrim, just two inline buttons).
     fallbackCameraInput.addEventListener('change', (e) => {
       const file = e.target.files[0];
       fallbackCameraInput.value = '';
       if (!file) return;
       pendingMainPhoto = file;
+      fallbackBar.classList.add('show');
+    });
+    document.getElementById('fallbackAddPhotoBtn').addEventListener('click', () => {
+      fallbackBar.classList.remove('show');
       fallbackBaseInput.click();
+    });
+    document.getElementById('fallbackSkipBtn').addEventListener('click', () => {
+      fallbackBar.classList.remove('show');
+      submitScan();
     });
     fallbackBaseInput.addEventListener('change', (e) => {
       const file = e.target.files[0];
@@ -999,7 +1028,6 @@
       if (file) pendingBasePhoto = file;
       submitScan();
     });
-    fallbackBaseInput.addEventListener('cancel', () => submitScan());
 
     async function submitScan() {
       if (!pendingMainPhoto) return;
