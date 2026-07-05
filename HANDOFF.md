@@ -1,8 +1,10 @@
 # Zamak Ledger — Project Handoff
 
-**Point in time:** 2026-07-04, later in the same session as the rename to
-Zamak Ledger. This supersedes any earlier handoff doc (an older `HANDOFF.md`
-may exist in `~/Downloads` — that one is stale, from before this work).
+**Point in time:** 2026-07-05, after a session covering the duplicate-scan
+fix, brand dropdown, full in-app camera rebuild, and enabling HTTPS via
+`tailscale serve`. This supersedes any earlier handoff doc (an older
+`HANDOFF.md` may exist in `~/Downloads` — that one is stale, from before this
+work).
 
 **Repo:** `git@github.com:fergd/zamak-ledger.git` (renamed from
 `fergd/diecasttracker` — GitHub auto-redirects the old URL, but update any
@@ -11,7 +13,12 @@ saved remotes/bookmarks when convenient)
 on `main` — no decision yet on whether to keep `main` around long-term or
 promote this branch over it)
 **Deployment host:** `backupbox` (Debian, personal home server), reachable
-only over Tailscale
+only over Tailscale. As of 2026-07-05, served over HTTPS via
+`tailscale serve --bg 8420` at `https://backupbox.tailfb9f14.ts.net/` —
+**use this URL, not `http://backupbox:8420`**. The in-app camera (getUserMedia)
+requires a secure context and silently falls back to a clunkier native-camera
+flow over plain HTTP (see "In-app camera" below). `tailscale serve status`
+on backupbox confirms the current proxy config.
 **Service:** `zamak-ledger.service` (systemd), port `8420` — renamed from
 `diecast-inventory.service` on 2026-07-04 (directory moved, venv rebuilt
 from scratch since venv scripts bake in absolute paths, old unit disabled
@@ -36,7 +43,8 @@ diecast castings since the 1960s.
 ## Architecture
 
 ```
-Phone (Tailscale) -> browser -> backupbox:8420
+Phone (Tailscale) -> https://backupbox.tailfb9f14.ts.net/ (tailscale serve)
+                                    -> proxies to -> localhost:8420
                                     |
                               static/index.html   (buildless, Material Web
                                                      via CDN import map,
@@ -58,6 +66,27 @@ Phone (Tailscale) -> browser -> backupbox:8420
                                     |
                         inventory.db / reference.db  (SQLite)
 ```
+
+## Storage locations (everything lives on backupbox, nothing in git)
+
+- **`inventory.db`** — your collection: one row per scanned item, all the
+  `extracted_*`/`canonical_*`/pricing/tracking fields. At
+  `~/Projects/zamak-ledger/inventory.db` on backupbox.
+- **`reference.db`** — ground-truth casting data (`reference_castings`,
+  `live_price_cache`), rebuilt from the `reference_import_*.py` scripts, not
+  your personal data. Same directory.
+- **`photos/`** — every photo ever taken through the app, saved as a plain
+  file named `<random-uuid>.<ext>` (no subfolders, no per-item structure).
+  `inventory.db` rows just store the relative path string
+  (`photo_path`/`base_photo_path`) and the app serves them back at
+  `/photos/<filename>`. As of 2026-07-05: 143 files, ~246MB. **No backup
+  beyond whatever backupbox itself has** — single point of failure, worth
+  addressing if this collection data matters long-term.
+- **`.env`** — `ANTHROPIC_API_KEY`, `EBAY_CLIENT_ID`, `EBAY_CLIENT_SECRET`.
+  Same directory, gitignored.
+- All four of the above are excluded from git (`.gitignore`: `*.db`,
+  `photos/`, `.env`) and confirmed never committed in this repo's history on
+  any branch, even though the repo itself is **public** on GitHub.
 
 ## Tech stack
 
@@ -109,7 +138,7 @@ moves): 13,475 Hot Wheels rows + 2,157 Matchbox rows. Both `photo_path` and
 | POST | `/inventory/{id}/photo` | Attach/replace a photo (`slot=main` or `slot=secondary` form field, defaults to secondary) |
 | DELETE | `/inventory/{id}/photo` | Clear a single photo (`?slot=main\|secondary`) without deleting the item |
 | POST | `/inventory/{id}/refresh_price` | Force a fresh eBay lookup for an already-saved item, bypassing the 30-day cache — user-triggered "recheck price" button on the detail page |
-| POST | `/inventory/{id}/rematch` | Re-run `validate_extraction()` from the item's already-stored `extracted_*` fields (no new photo) — for no_match items stuck only because reference data has since improved. Detail-page button next to Match. **Not yet restarted into production as of this writing — check `/openapi.json` before assuming it's live** |
+| POST | `/inventory/{id}/rematch` | Re-run `validate_extraction()` from the item's already-stored `extracted_*` fields (no new photo) — for no_match items stuck only because reference data has since improved. Detail-page button next to Match. Deployed and confirmed working 2026-07-05, including a `canonical_sku` refresh fix. |
 | DELETE | `/inventory/{id}` | Remove item + its photo files |
 | GET | `/status` | Diagnostics: reference DB coverage, cache stats, `anthropic_api_key_configured`, `ebay_api_configured`, inventory summary |
 | GET | `/status/test_live_search` | Calls eBay's Browse API for real to verify the live-pricing pipeline end-to-end (counts against eBay's quota, not free) |
@@ -131,7 +160,11 @@ to read at all.
 
 Match result: `match_reference_id`, `match_confidence`, `match_status`
 (confirmed/needs_review/no_match), `match_notes`, `canonical_brand`,
-`canonical_casting_name`, `canonical_series`, `canonical_year`.
+`canonical_sku` (added 2026-07-05 — the resolved sku from the matched
+reference row, used for duplicate-scan detection instead of the raw OCR'd
+`extracted_sku`, which varies enough between rescans of the same physical
+card to miss real duplicates), `canonical_casting_name`, `canonical_series`,
+`canonical_year`.
 
 Pricing: `guide_price_usd` (static), `live_price_low_usd`,
 `live_price_high_usd`, `live_recommended_price_usd`, `live_price_summary`,
@@ -268,24 +301,83 @@ built from pointer events / plain CSS):
     data just need `POST /inventory/{id}/rematch` once this is deployed,
     not a fresh scan.
 
+## Session: 2026-07-05 — dedup fix, brand dropdown, camera rebuild, HTTPS
+
+1. **Duplicate-scan detection was silently broken** - `findDuplicate()`
+   (static/index.html) compared raw OCR'd fields with strict `===`, and
+   never used `canonical_sku` (computed by `match.py` but never persisted or
+   returned by `/scan`). Two scans of the identical physical card could OCR
+   with different casing/whitespace and fail to match, adding a duplicate
+   row instead of prompting to bump quantity. Fixed: added `canonical_sku`
+   column (see Data model above), wired it through `/scan`'s response and
+   the `/inventory/{id}/rematch` update, and normalized the dedup comparison
+   (case/whitespace-insensitive, year cast to string).
+2. **Brand field on the detail page is now a dropdown** (Hot Wheels,
+   Matchbox, Tomica, Majorette, Greenlight, Johnny Lightning, M2 Machines,
+   Maisto, Other) instead of free text. An existing out-of-list value gets
+   injected as a temporary extra option rather than silently dropped.
+3. **In-app camera capture, replacing the old native-camera handoff.**
+   Full-screen `getUserMedia` live preview: FAB opens straight into it,
+   front shot auto-advances directly into the back/base shot (no
+   interstitial "add a second photo?" screen), Skip button lives inside the
+   camera view itself. Controls (close, flash, flip camera) use inline
+   Hugeicons SVGs pulled from `@hugeicons/core-free-icons` (MIT-licensed,
+   matches the icon set the Figma layers were already named after - e.g.
+   `car-05-stroke-rounded`). Scanning state is now a bottom sheet (matches
+   existing sheet/scrim pattern) instead of a banner.
+   - **This requires a secure context.** Confirmed the hard way: backupbox
+     was plain HTTP (`tailscale serve status` -> "No serve config"), which
+     silently disables `getUserMedia` on mobile browsers - the FAB looked
+     unchanged and scanning just dead-ended with no way to proceed.
+     `cameraSupported()` now gates on `window.isSecureContext` +
+     `navigator.mediaDevices` and falls back to the native-camera flow
+     (below) when unmet, rather than showing a dead-end error.
+   - **HTTPS enabled 2026-07-05** via `tailscale serve --bg 8420` (see
+     Deployment host note above) - the in-app camera is now live for real,
+     not just as a fallback-gated code path.
+4. **Native-camera fallback** (active whenever accessed without HTTPS): a
+   real platform constraint, not a bug to code around - mobile browsers
+   silently block auto-opening a second native-camera dialog from within
+   the first one's `change` handler (confirmed via device testing: front
+   photo captured, second dialog never opened, scan never submitted, no
+   error). One tap between shots is unavoidable here. Landed on the
+   lightest version of that: a small pill-shaped bar (`Skip` / `+ Back
+   photo`), not a modal sheet.
+5. **FAB was still Material's *extended* FAB** (`label="Scan a car"` forces
+   a pill shape with visible text) even after the icon changed - fixed to a
+   plain 48px icon-only circle, `#2c4666` per the Figma spec
+   (node-id=10-199, icon annotated there as `CameraAdd01Icon`).
+6. **Rematch button appeared to do nothing** - two real issues: (a) it
+   never refreshed `canonical_sku` (missed when that column was added this
+   session - confirmed via a direct endpoint test showing `match_status`
+   correctly flipping `no_match` -> `confirmed` while `canonical_sku` stayed
+   null), now fixed; (b) a rematch that legitimately finds no better match
+   (the reference DB just doesn't cover that casting yet - common and not a
+   bug) left the UI looking identical to before the click, indistinguishable
+   from broken. Added a brief checkmark confirmation so the button always
+   gives feedback that it ran.
+7. **Repo is public on GitHub** (`fergd/zamak-ledger`) - confirmed via
+   `gh repo view` and a full history scan (`git log --all --diff-filter=A`)
+   that no `.env`, `.db`, or `photos/` file has ever been committed on any
+   branch, and no hardcoded secrets exist in tracked source. Safe as-is;
+   worth re-checking this if the deploy/db-copy workflow ever changes.
+
 ## Outstanding / next steps
 
-- [ ] **`/inventory/{id}/rematch` not deployed yet as of this writing** —
-      confirmed via `/openapi.json` that the running service predates this
-      commit. Restart (`sudo systemctl restart zamak-ledger`), then use it
-      to fix the Matchbox items that were already saved as `no_match`
-      before the modern-Matchbox importer existed (their extraction data
-      is already correct - they just need re-matching, not a re-scan).
-- [ ] **6 inventory items currently sitting at `no_match`** (checked
-      directly on backupbox) - some are the pre-importer Matchbox items
-      above, at least one (a 2014 casting) has no reference coverage from
-      *any* source yet (Hall's Guide's Matchbox section has nothing for
-      2013-2015 - confirmed absent, not just unimported). The rest weren't
-      individually triaged this session - worth a pass once rematch is live.
-- [ ] eBay API credentials are set and confirmed working (`ebay_api_configured:
-      true`, verified against real listings) - nothing pending here anymore.
+- [x] ~~`/inventory/{id}/rematch` not deployed~~ — deployed and confirmed
+      working 2026-07-05 (verified `no_match` -> `confirmed` end-to-end,
+      including the `canonical_sku` refresh fix).
+- [x] ~~Not served over HTTPS~~ — `tailscale serve` enabled 2026-07-05.
+- [ ] **6 inventory items were sitting at `no_match`** as of the previous
+      session (checked directly on backupbox) - worth a rematch pass now
+      that both the importer coverage and the rematch endpoint are live; at
+      least one (a 2014 Matchbox casting) has no reference coverage from
+      *any* source yet and will stay `no_match` regardless.
 - [ ] No UI for `/inventory/needs_review` yet — API-only.
 - [ ] No auth — fine while Tailscale is the boundary.
+- [ ] Photos have no backup beyond backupbox itself (see Storage locations
+      above) — single point of failure if the collection data matters
+      long-term.
 - [ ] Matchbox reference coverage improved a lot (2,157 rows, up from 1,029)
       but is still gappier than Hot Wheels: no sku data at all (so always
       fuzzy name matching, never exact-sku), no data for 2013-2015 or 2018,
@@ -316,6 +408,12 @@ git pull
 sudo systemctl restart zamak-ledger        # only strictly needed for .py changes
 curl -s http://localhost:8420/status       # confirm the new code is actually live
 ```
+
+The `curl` above hits `localhost` directly, bypassing `tailscale serve` — fine
+for confirming the process itself restarted, but always do a final check from
+the phone against `https://backupbox.tailfb9f14.ts.net/`, since that's the
+actual path real usage takes (and the only one where the in-app camera works
+at all).
 
 Verify a restart actually landed by checking
 `systemctl show zamak-ledger -p ActiveEnterTimestamp` against the
