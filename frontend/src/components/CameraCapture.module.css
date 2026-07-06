@@ -16,6 +16,10 @@
   flex: none;
 }
 
+.topBar {
+  padding-top: max(var(--spacing-lg), env(safe-area-inset-top));
+}
+
 .stepLabel {
   font-family: var(--font-body);
   font-size: var(--font-size-headline);
@@ -100,7 +104,7 @@
 }
 
 .bottomBar {
-  padding-bottom: var(--spacing-2xl);
+  padding-bottom: calc(env(safe-area-inset-bottom, 0px) + var(--spacing-2xl));
 }
 
 .shutter {

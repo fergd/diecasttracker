@@ -53,17 +53,34 @@
 }
 
 .photoSlot {
+  position: relative;
   aspect-ratio: 1;
   border-radius: var(--radius-md);
   overflow: hidden;
   background: var(--color-zinc-800);
-  cursor: pointer;
 }
 
 .photoSlot img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  cursor: pointer;
+}
+
+.photoMenuButton {
+  position: absolute;
+  top: var(--spacing-xs);
+  right: var(--spacing-xs);
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-full);
+  border: none;
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
 }
 
 .photoPlaceholder {
@@ -74,6 +91,7 @@
   justify-content: center;
   background: var(--color-navy-500);
   color: var(--color-zinc-50);
+  cursor: pointer;
 }
 
 .addPhoto {

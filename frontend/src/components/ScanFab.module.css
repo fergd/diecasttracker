@@ -1,7 +1,7 @@
 .fab {
   position: fixed;
-  bottom: var(--spacing-2xl);
-  right: var(--spacing-xl);
+  bottom: calc(env(safe-area-inset-bottom, 0px) + var(--spacing-2xl));
+  right: calc(env(safe-area-inset-right, 0px) + var(--spacing-xl));
   width: var(--sizing-control-lg);
   height: var(--sizing-control-lg);
   border-radius: var(--radius-full);
@@ -22,8 +22,8 @@
 
 .fallbackBar {
   position: fixed;
-  bottom: calc(var(--spacing-2xl) + var(--sizing-control-lg) + var(--spacing-md));
-  right: var(--spacing-xl);
+  bottom: calc(env(safe-area-inset-bottom, 0px) + var(--spacing-2xl) + var(--sizing-control-lg) + var(--spacing-md));
+  right: calc(env(safe-area-inset-right, 0px) + var(--spacing-xl));
   display: flex;
   gap: var(--spacing-sm);
   padding: var(--spacing-sm);

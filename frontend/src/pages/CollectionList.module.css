@@ -70,9 +70,42 @@
   color: var(--color-semantic-error);
 }
 
+.clearFiltersLink {
+  display: block;
+  margin: var(--spacing-sm) auto 0;
+  border: none;
+  background: transparent;
+  color: var(--color-navy-400);
+  font-family: var(--font-body);
+  font-size: var(--font-size-callout);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+}
+
+.firstRunEmpty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-5xl) 0;
+  color: var(--color-text-secondary-dark);
+  text-align: center;
+}
+
+.firstRunEmpty p {
+  font-family: var(--font-body);
+  font-size: var(--font-size-callout);
+  margin: 0;
+}
+
+.firstRunEmpty p.firstRunHint {
+  font-size: var(--font-size-footnote);
+  color: var(--color-zinc-500);
+}
+
 .selectionBar {
   position: fixed;
-  bottom: var(--spacing-xl);
+  bottom: calc(env(safe-area-inset-bottom, 0px) + var(--spacing-xl));
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -91,4 +124,78 @@
   font-weight: var(--font-weight-medium);
   color: var(--color-text-primary-dark);
   white-space: nowrap;
+}
+
+.selectionIconButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  border: none;
+  background: var(--color-zinc-800);
+  color: var(--color-text-primary-dark);
+  cursor: pointer;
+}
+
+.selectionIconButton:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.bulkDeleteActions {
+  display: flex;
+  gap: var(--spacing-md);
+}
+
+.bulkDeleteActions > * {
+  flex: 1;
+}
+
+.headerActions {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-xs);
+  flex: none;
+}
+
+.sortButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: var(--radius-full);
+  border: none;
+  background: var(--color-zinc-800);
+  color: var(--color-text-primary-dark);
+  cursor: pointer;
+}
+
+.sheetTitle {
+  font-family: var(--font-body);
+  font-size: var(--font-size-title3);
+  font-weight: var(--font-weight-bold);
+  margin: 0;
+}
+
+.sortOption {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: var(--spacing-md) 0;
+  border: none;
+  border-bottom: 1px solid var(--color-zinc-800);
+  background: transparent;
+  color: var(--color-text-primary-dark);
+  font-family: var(--font-body);
+  font-size: var(--font-size-callout);
+  cursor: pointer;
+}
+
+.sortDirLabel {
+  color: var(--color-navy-400);
+  font-weight: var(--font-weight-bold);
 }

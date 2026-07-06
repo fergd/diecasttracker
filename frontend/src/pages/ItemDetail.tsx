@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Icon } from '../components/Icon';
 import { Button } from '../components/Button';
@@ -17,6 +17,7 @@ import {
   refreshPrice,
   deleteItem,
   attachPhoto,
+  deletePhoto,
   matchLabel,
   matchBadgeVariant,
   CONDITION_GRADE_LABELS,
@@ -98,6 +99,9 @@ export function ItemDetail() {
   const [copied, setCopied] = useState<'title' | 'description' | null>(null);
   const [savedFlash, setSavedFlash] = useState(false);
   const [confirmingMatch, setConfirmingMatch] = useState(false);
+  const [photoActionsSlot, setPhotoActionsSlot] = useState<'main' | 'secondary' | null>(null);
+  const mainFileInput = useRef<HTMLInputElement>(null);
+  const secondaryFileInput = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     if (item) setForm(item);
@@ -224,14 +228,29 @@ export function ItemDetail() {
     }
   }
 
-  async function handleAddSecondaryPhoto(file: File) {
+  async function handleAttachPhoto(slot: 'main' | 'secondary', file: File) {
     if (!form) return;
     try {
-      const updated = await attachPhoto(form.id, file, 'secondary');
+      const updated = await attachPhoto(form.id, file, slot);
       updateItemLocal(updated);
       setForm(updated);
     } catch (err) {
       setError(err instanceof Error ? err.message : String(err));
+    } finally {
+      setPhotoActionsSlot(null);
+    }
+  }
+
+  async function handleDeletePhotoSlot(slot: 'main' | 'secondary') {
+    if (!form) return;
+    try {
+      const updated = await deletePhoto(form.id, slot);
+      updateItemLocal(updated);
+      setForm(updated);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : String(err));
+    } finally {
+      setPhotoActionsSlot(null);
     }
   }
 
@@ -257,32 +276,59 @@ export function ItemDetail() {
       {error && <div className={styles.errorBanner}>{error}</div>}
 
       <section className={styles.photos}>
-        <div className={styles.photoSlot} onClick={() => form.photoUrl && setLightbox(form.photoUrl)}>
+        <div className={styles.photoSlot}>
           {form.photoUrl ? (
-            <img src={form.photoUrl} alt="" />
+            <>
+              <img src={form.photoUrl} alt="" onClick={() => setLightbox(form.photoUrl)} />
+              <button
+                className={styles.photoMenuButton}
+                onClick={() => setPhotoActionsSlot('main')}
+                aria-label="Photo options"
+              >
+                <Icon name="cameraAdd01" size={16} />
+              </button>
+            </>
           ) : (
-            <div className={styles.photoPlaceholder}>
+            <div className={styles.photoPlaceholder} onClick={() => mainFileInput.current?.click()}>
               <Icon name="car05" size={28} />
             </div>
           )}
+          <input
+            ref={mainFileInput}
+            type="file"
+            accept="image/*"
+            capture="environment"
+            hidden
+            onChange={(e) => e.target.files?.[0] && handleAttachPhoto('main', e.target.files[0])}
+          />
         </div>
-        <label className={styles.photoSlot}>
+        <div className={styles.photoSlot}>
           {form.basePhotoUrl ? (
-            <img src={form.basePhotoUrl} alt="" onClick={() => setLightbox(form.basePhotoUrl)} />
+            <>
+              <img src={form.basePhotoUrl} alt="" onClick={() => setLightbox(form.basePhotoUrl)} />
+              <button
+                className={styles.photoMenuButton}
+                onClick={() => setPhotoActionsSlot('secondary')}
+                aria-label="Photo options"
+              >
+                <Icon name="cameraAdd01" size={16} />
+              </button>
+            </>
           ) : (
-            <div className={styles.addPhoto}>
+            <div className={styles.addPhoto} onClick={() => secondaryFileInput.current?.click()}>
               <Icon name="cameraAdd01" size={24} />
               <span>Add photo</span>
             </div>
           )}
           <input
+            ref={secondaryFileInput}
             type="file"
             accept="image/*"
             capture="environment"
             hidden
-            onChange={(e) => e.target.files?.[0] && handleAddSecondaryPhoto(e.target.files[0])}
+            onChange={(e) => e.target.files?.[0] && handleAttachPhoto('secondary', e.target.files[0])}
           />
-        </label>
+        </div>
       </section>
 
       <section className={styles.card}>
@@ -533,6 +579,26 @@ export function ItemDetail() {
             Cancel
           </Button>
           <Button variant="destructive" onClick={handleDelete}>
+            Delete
+          </Button>
+        </div>
+      </Sheet>
+
+      <Sheet open={!!photoActionsSlot} onClose={() => setPhotoActionsSlot(null)}>
+        <h2 className={styles.cardTitle}>Photo options</h2>
+        <div className={styles.actions}>
+          <Button
+            variant="outlined"
+            onClick={() =>
+              photoActionsSlot === 'main' ? mainFileInput.current?.click() : secondaryFileInput.current?.click()
+            }
+          >
+            Replace
+          </Button>
+          <Button
+            variant="destructive"
+            onClick={() => photoActionsSlot && handleDeletePhotoSlot(photoActionsSlot)}
+          >
             Delete
           </Button>
         </div>
