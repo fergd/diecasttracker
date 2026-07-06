@@ -37,6 +37,9 @@ export interface InventoryRow {
   extracted_color: string | null;
   treasure_hunt: TreasureHunt;
   base_country: string | null;
+  wheel_type: string | null;
+  body_base_construction: string | null;
+  special_flags: string | null;
   special_series: string | null;
   match_status: MatchStatus;
   match_confidence: number | null;
@@ -82,6 +85,9 @@ export interface InventoryItem {
   color: string | null;
   treasureHunt: TreasureHunt;
   baseCountry: string | null;
+  wheelType: string | null;
+  bodyBaseConstruction: string | null;
+  specialFlags: string[];
   matchStatus: MatchStatus;
   matchConfidence: number;
   matchNotes: string | null;
@@ -151,6 +157,9 @@ export function fromRow(row: InventoryRow): InventoryItem {
     color: row.extracted_color,
     treasureHunt: row.treasure_hunt,
     baseCountry: row.base_country,
+    wheelType: row.wheel_type,
+    bodyBaseConstruction: row.body_base_construction,
+    specialFlags: row.special_flags ? JSON.parse(row.special_flags) : [],
     matchStatus: row.match_status,
     matchConfidence: row.match_confidence ?? 0,
     matchNotes: row.match_notes,
@@ -192,6 +201,9 @@ export interface ScanResponse {
     color: string | null;
     treasure_hunt: TreasureHunt;
     base_country: string | null;
+    wheel_type: string | null;
+    body_base_construction?: string | null;
+    special_flags?: string[];
     [key: string]: unknown;
   };
   validation: {
@@ -235,6 +247,9 @@ export function fromScanResponse(data: ScanResponse): InventoryItem {
     color: e.color,
     treasureHunt: e.treasure_hunt,
     baseCountry: e.base_country ?? null,
+    wheelType: e.wheel_type ?? null,
+    bodyBaseConstruction: e.body_base_construction ?? null,
+    specialFlags: e.special_flags ?? [],
     matchStatus: v.status,
     matchConfidence: v.confidence ?? 0,
     matchNotes: v.notes,
@@ -271,6 +286,9 @@ export interface InventoryUpdate {
   extracted_color?: string | null;
   treasure_hunt?: TreasureHunt;
   base_country?: string | null;
+  wheel_type?: string | null;
+  body_base_construction?: string | null;
+  special_flags?: string[];
   match_status?: MatchStatus;
   condition?: string | null;
   condition_car_grade?: ConditionGrade;

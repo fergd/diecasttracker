@@ -79,6 +79,23 @@ CREATE TABLE IF NOT EXISTS inventory (
                                             -- on loose cars (base stamp visible); manual-entry
                                             -- fallback like car_make since carded photos rarely
                                             -- show the base
+    wheel_type                TEXT,       -- 'Redline' / 'Real Riders' / 'Basic Wheels' / 'Chrome' /
+                                            -- 'Other' - a major collector value driver, second only
+                                            -- to Treasure Hunt status. Redline = 1968-77 red-striped
+                                            -- tires (vintage). Real Riders = rubber treaded tires,
+                                            -- used on Premium lines and Super TH. Basic Wheels =
+                                            -- standard hard plastic, most mainline releases. Chrome =
+                                            -- shiny chrome-look wheels (Ultra Hots line etc).
+    body_base_construction     TEXT,       -- 'Metal/Metal' / 'Metal/Plastic' / 'All-Plastic' - whether
+                                            -- the body AND base/chassis are metal, just the body, or
+                                            -- neither. Metal/Metal is rare on modern mainline (most
+                                            -- have shifted to Metal/Plastic) and standard on Premium/
+                                            -- Car Culture lines - meaningfully affects value.
+    special_flags              TEXT,       -- JSON array of strings, any of: 'New Casting', 'Zamac'
+                                            -- (unpainted bare-metal finish), 'Chase' (Premium-line
+                                            -- Super-TH-equivalent, numbered like '0/5'), 'Store
+                                            -- Exclusive'. Stored as JSON since SQLite has no array
+                                            -- type; parse/serialize at the app layer.
     extracted_raw_json       TEXT,       -- full JSON blob, for debugging/reprocessing
 
     -- validation result

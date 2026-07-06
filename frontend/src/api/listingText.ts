@@ -55,6 +55,9 @@ export function generateListingDescription(item: InventoryItem): string {
   if (item.color) details.push(item.color);
   if (item.treasureHunt) details.push(item.treasureHunt);
   if (item.baseCountry) details.push(`${item.baseCountry} base`);
+  if (item.wheelType) details.push(`${item.wheelType} wheels`);
+  if (item.bodyBaseConstruction) details.push(item.bodyBaseConstruction);
+  if (item.specialFlags.length) details.push(...item.specialFlags);
   if (details.length) lines.push(details.join(' · '));
 
   const conditionLines: string[] = [];

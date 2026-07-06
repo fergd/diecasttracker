@@ -52,6 +52,18 @@ const BASE_COUNTRY_OPTIONS = [
   'Other',
 ].map((c) => ({ value: c, label: c || 'Unknown' }));
 
+const WHEEL_TYPE_OPTIONS = ['', 'Redline', 'Real Riders', 'Basic Wheels', 'Chrome', 'Other'].map((w) => ({
+  value: w,
+  label: w || 'Unknown',
+}));
+
+const CONSTRUCTION_OPTIONS = ['', 'Metal/Metal', 'Metal/Plastic', 'All-Plastic'].map((c) => ({
+  value: c,
+  label: c || 'Unknown',
+}));
+
+const SPECIAL_FLAG_OPTIONS = ['New Casting', 'Zamac', 'Chase', 'Store Exclusive'];
+
 const CONDITION_GRADES: Exclude<ConditionGrade, null>[] = ['C10', 'C9', 'C8', 'C7', 'C6'];
 
 function GradePicker({
@@ -138,6 +150,9 @@ export function ItemDetail() {
         extracted_color: form.color,
         treasure_hunt: form.treasureHunt,
         base_country: form.baseCountry,
+        wheel_type: form.wheelType,
+        body_base_construction: form.bodyBaseConstruction,
+        special_flags: form.specialFlags,
         status: form.trackingStatus,
         quantity: form.quantity,
         condition: form.condition,
@@ -377,12 +392,47 @@ export function ItemDetail() {
           <Input label="SKU / Toy #" value={form.sku ?? ''} onChange={(e) => set('sku', e.target.value)} />
           <Input label="Color / deco" value={form.color ?? ''} onChange={(e) => set('color', e.target.value)} />
         </div>
+        <div className={styles.row2}>
+          <Select
+            label="Base country"
+            options={BASE_COUNTRY_OPTIONS}
+            value={form.baseCountry ?? ''}
+            onChange={(e) => set('baseCountry', e.target.value || null)}
+          />
+          <Select
+            label="Wheel type"
+            options={WHEEL_TYPE_OPTIONS}
+            value={form.wheelType ?? ''}
+            onChange={(e) => set('wheelType', e.target.value || null)}
+          />
+        </div>
         <Select
-          label="Base country"
-          options={BASE_COUNTRY_OPTIONS}
-          value={form.baseCountry ?? ''}
-          onChange={(e) => set('baseCountry', e.target.value || null)}
+          label="Body/base construction"
+          options={CONSTRUCTION_OPTIONS}
+          value={form.bodyBaseConstruction ?? ''}
+          onChange={(e) => set('bodyBaseConstruction', e.target.value || null)}
         />
+        <div className={styles.field}>
+          <label className={styles.fieldLabel}>Special flags</label>
+          <div className={styles.gradeRow}>
+            {SPECIAL_FLAG_OPTIONS.map((flag) => (
+              <Tag
+                key={flag}
+                selected={form.specialFlags.includes(flag)}
+                onClick={() =>
+                  set(
+                    'specialFlags',
+                    form.specialFlags.includes(flag)
+                      ? form.specialFlags.filter((f) => f !== flag)
+                      : [...form.specialFlags, flag],
+                  )
+                }
+              >
+                {flag}
+              </Tag>
+            ))}
+          </div>
+        </div>
         <div className={styles.field}>
           <label className={styles.fieldLabel}>Treasure hunt</label>
           <TabBar>

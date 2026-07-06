@@ -21,7 +21,7 @@ import sqlite3
 import uuid
 from datetime import datetime
 from pathlib import Path
-from typing import Optional
+from typing import Optional, List
 
 from fastapi import FastAPI, File, Form, HTTPException, UploadFile
 from fastapi.middleware.cors import CORSMiddleware
@@ -72,6 +72,9 @@ INVENTORY_COLUMNS = {
     "extracted_color": "TEXT",
     "treasure_hunt": "TEXT",
     "base_country": "TEXT",
+    "wheel_type": "TEXT",
+    "body_base_construction": "TEXT",
+    "special_flags": "TEXT",
     "extracted_raw_json": "TEXT",
     "match_reference_id": "INTEGER",
     "match_confidence": "REAL",
@@ -227,13 +230,14 @@ async def scan_card(
                 photo_path, base_photo_path, packaging_type,
                 extracted_brand, car_make, extracted_casting_name,
                 extracted_collector_num, extracted_series_number, extracted_sku, extracted_series, extracted_year,
-                extracted_color, treasure_hunt, base_country, extracted_raw_json,
+                extracted_color, treasure_hunt, base_country, wheel_type, body_base_construction,
+                special_flags, extracted_raw_json,
                 match_reference_id, match_confidence, match_status, match_notes,
                 canonical_brand, canonical_sku, canonical_casting_name, canonical_series, canonical_year,
                 guide_price_usd,
                 live_price_low_usd, live_price_high_usd, live_recommended_price_usd,
                 live_price_summary, live_price_fetched_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             saved_path, base_saved_path, packaging_type,
             extracted.get("brand"), extracted.get("car_make"), extracted.get("casting_name"),
@@ -241,6 +245,8 @@ async def scan_card(
             extracted.get("sku"), extracted.get("series"),
             str(extracted.get("release_year") or extracted.get("copyright_year_on_base") or "") or None,
             extracted.get("color"), extracted.get("treasure_hunt"), extracted.get("base_country"),
+            extracted.get("wheel_type"), extracted.get("body_base_construction"),
+            json.dumps(extracted.get("special_flags") or []),
             json.dumps(extracted),
             match_result.reference_id, match_result.confidence, match_result.status,
             match_result.notes, match_result.canonical_brand, match_result.canonical_sku,
@@ -443,6 +449,9 @@ class InventoryUpdate(BaseModel):
     extracted_color: Optional[str] = None
     treasure_hunt: Optional[str] = None   # null / 'TH' / 'Super TH'
     base_country: Optional[str] = None    # casting/base-stamp country, e.g. 'Malaysia'
+    wheel_type: Optional[str] = None       # Redline / Real Riders / Basic Wheels / Chrome / Other
+    body_base_construction: Optional[str] = None  # Metal/Metal / Metal/Plastic / All-Plastic
+    special_flags: Optional[List[str]] = None     # New Casting / Zamac / Chase / Store Exclusive
     match_status: Optional[str] = None
     condition: Optional[str] = None
     condition_car_grade: Optional[str] = None   # C6-C10
@@ -462,6 +471,8 @@ def update_item(item_id: int, update: InventoryUpdate):
     fields = {k: v for k, v in update.model_dump().items() if v is not None}
     if not fields:
         raise HTTPException(status_code=400, detail="No fields provided to update.")
+    if "special_flags" in fields:
+        fields["special_flags"] = json.dumps(fields["special_flags"])
 
     conn = get_conn()
     existing = conn.execute("SELECT id FROM inventory WHERE id = ?", (item_id,)).fetchone()

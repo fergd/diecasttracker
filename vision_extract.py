@@ -86,9 +86,20 @@ fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
                      likely "Super TH" than plain "TH". If genuinely uncertain
                      whether ANY Treasure Hunt marking is present, use null rather
                      than guessing,
-  "special_flags": array of any of: "New Casting", "Zamac", or store-exclusive
-                    labels, if visible (Treasure Hunt status goes in the dedicated
-                    "treasure_hunt" field above, not here),
+  "wheel_type": "Redline" (red-striped tires, only on 1968-77 vintage cars),
+                 "Real Riders" (rubber tires with visible tread detail, used on
+                 Premium lines and Super Treasure Hunts), "Basic Wheels" (standard
+                 hard plastic, the vast majority of mainline releases), "Chrome"
+                 (shiny chrome-look wheels, e.g. Ultra Hots line), or "Other" if
+                 visible but doesn't fit those categories. A major collector value
+                 driver, second only to Treasure Hunt status - look closely at the
+                 wheel material/finish even through the blister. null if the wheels
+                 aren't clearly visible in any provided photo,
+  "special_flags": array of any of: "New Casting", "Zamac" (unpainted bare-metal
+                    finish), "Chase" (Premium-line Super-TH-equivalent, often
+                    numbered like "0/5"), "Store Exclusive", if visible (Treasure
+                    Hunt status goes in the dedicated "treasure_hunt" field above,
+                    not here),
   "card_condition_notes": brief, cautious note on visible card condition (creases,
                            bubble integrity) - flag as "unable to assess" if unclear,
   "extraction_confidence": your own rough confidence 0.0-1.0 that the casting_name,
@@ -137,8 +148,24 @@ the raw JSON object:
                     country. Extract just the country name cleanly (not the full
                     stamp text). null if no base photo was given or the country
                     isn't legible - do not guess,
-  "color": description of the car's color/deco/wheel type - wheel type (5-spoke,
-            redline, real riders, etc) is often a useful identifying/dating clue,
+  "color": description of the car's color/deco,
+  "wheel_type": "Redline" (red-striped tires, only on 1968-77 vintage cars),
+                 "Real Riders" (rubber tires with visible tread detail, used on
+                 Premium lines and Super Treasure Hunts), "Basic Wheels" (standard
+                 hard plastic, the vast majority of mainline releases), "Chrome"
+                 (shiny chrome-look wheels), or "Other" if visible but doesn't fit
+                 those categories. A major collector value driver and also a useful
+                 dating clue. null if not clearly visible,
+  "body_base_construction": "Metal/Metal" if BOTH the body and the base/chassis
+                              underneath are metal, "Metal/Plastic" if the body is
+                              metal but the base is plastic (the most common modern
+                              configuration), "All-Plastic" if neither is metal.
+                              Assess from the base photo if provided - tap/visual
+                              cues: metal bases are typically a distinct silver/gray
+                              cast-metal color and rigid, plastic bases usually show
+                              injection-molding seams and a duller, warmer-toned
+                              plastic. null if no base photo was given or genuinely
+                              unclear,
   "treasure_hunt": "TH" if this is a regular Treasure Hunt, "Super TH" if a Super
                      Treasure Hunt, else null. No card to check a logo on for a
                      loose car, so this comes from the base stamp text (if it
@@ -150,6 +177,11 @@ the raw JSON object:
                      than guessing,
   "identification_method": "base_stamp" if read from base text, "visual_only" if
                              no base photo/text was available,
+  "special_flags": array of any of: "New Casting", "Zamac" (unpainted bare-metal
+                    finish), "Chase" (Premium-line Super-TH-equivalent), "Store
+                    Exclusive", if determinable from the base stamp text or visible
+                    finish (Treasure Hunt status goes in the dedicated
+                    "treasure_hunt" field above, not here),
   "extraction_confidence": your own rough confidence 0.0-1.0 - should be notably
                             LOWER for visual_only identification than for a clearly
                             legible base stamp, since casting names can't reliably
@@ -227,7 +259,7 @@ def extract_card_details(image_path: str, packaging_type: str = "carded",
             "series_number": None,
             "sku": None, "sku_full_code": None,
             "series": None, "release_year": None, "color": None,
-            "treasure_hunt": None,
+            "treasure_hunt": None, "wheel_type": None,
             "special_flags": [], "card_condition_notes": None,
             "extraction_confidence": 0.0,
             "_parse_error": True, "_raw_response": raw_text,
