@@ -44,6 +44,10 @@ app = FastAPI(title="Zamak Ledger")
 app.add_middleware(CORSMiddleware, allow_origins=["*"], allow_methods=["*"], allow_headers=["*"])
 app.mount("/static", StaticFiles(directory="static"), name="static")
 app.mount("/photos", StaticFiles(directory="photos"), name="photos")
+# React frontend build (frontend/dist) - cut over from static/index.html on
+# 2026-07-06. Mounted at /assets (not /static) because that's the root-
+# relative path Vite's build emits in index.html's <script>/<link> tags.
+app.mount("/assets", StaticFiles(directory="frontend/dist/assets"), name="react-assets")
 
 # Canonical column set for the inventory table, kept in sync with schema.sql.
 # CREATE TABLE IF NOT EXISTS (in schema.sql) is a no-op on a table that
@@ -138,7 +142,12 @@ def _save_upload(upload: UploadFile) -> str:
 
 @app.get("/")
 def index():
-    return FileResponse("static/index.html")
+    return FileResponse("frontend/dist/index.html")
+
+
+@app.get("/favicon.svg")
+def favicon():
+    return FileResponse("frontend/dist/favicon.svg")
 
 
 @app.post("/scan")
