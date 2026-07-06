@@ -31,10 +31,28 @@ fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
               (e.g. "Custom '72 Chevy Luv" -> "Chevrolet"), or from any licensed-
               manufacturer text/logo on the card. null if the casting is a fully
               custom/fictional Hot Wheels design with no real-world make,
-  "casting_name": the car's model/casting name as printed on the card,
-  "collector_number": the number printed on the card (may be a fraction like "8/10"
-                       for a series position, or a standalone number like "148" for
-                       a year collector number - transcribe exactly as printed),
+  "casting_name": the car's model/casting name as printed on the card, usually in a
+                   stylized logo/wordmark box on the card FRONT (e.g. "LIMOZEEN",
+                   "PORSCHE CARRERA"),
+  "collector_number": the STANDALONE yearly mainline number, e.g. "542" or "967" -
+                       this is the car's overall position out of that year's full
+                       lineup (roughly 250 cars/year), NOT a fraction. Usually
+                       printed on the card BACK, often near the barcode/proof-of-
+                       purchase area, labeled "COLLECTOR #" or just shown as a bare
+                       number in a box. Hot Wheels dropped this numbering in the
+                       2000s, so it's frequently absent on newer cards - use null
+                       rather than confusing it with series_number below, which
+                       looks similar but counts something completely different.
+  "series_number": the position WITHIN the named series/segment given in "series"
+                    below, e.g. "2/4" or "2 OF 4" - printed on the card FRONT,
+                    directly below or beside the series name banner (e.g. "BIFF!
+                    BAM! BOOM! SERIES" with "#2 OF 4 CARS" right next to it). This
+                    is a completely different number from collector_number above:
+                    a card can show BOTH simultaneously (a 3-digit yearly number on
+                    the back AND a small "X of Y" fraction on the front) since one
+                    counts the year's full lineup and the other counts only this
+                    specific themed sub-series. Transcribe exactly as printed
+                    (e.g. "2/4", "2 OF 4"). null if no series position is shown,
   "sku": the manufacturer's item/Toy # code - a short alphanumeric code (e.g. "CFH06",
          "N9637", "DVK33", often followed by a dash and a longer suffix like "-D9B0A").
          Almost always on the BACK of the card, but its position varies a lot by card
@@ -50,7 +68,9 @@ fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
                     of the casting's identity. Transcribe the FULL string here if a
                     suffixed code is visible, else null. (The "sku" field above should
                     still just be the short primary code, e.g. "T9710" from that example.)
-  "series": the named series/theme printed on the card (e.g. "HW Hot Trucks"),
+  "series": the named series/theme printed on the card (e.g. "HW Hot Trucks", "Biff!
+             Bam! Boom! Series") - series_number above is this car's position within
+             whatever series name you put here,
   "release_year": the year if visible (from a "NEW FOR ____" flag or copyright date),
   "color": brief description of the car's visible color/deco,
   "treasure_hunt": "TH" if this is a regular Treasure Hunt, "Super TH" if a Super
@@ -71,8 +91,9 @@ fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
                     "treasure_hunt" field above, not here),
   "card_condition_notes": brief, cautious note on visible card condition (creases,
                            bubble integrity) - flag as "unable to assess" if unclear,
-  "extraction_confidence": your own rough confidence 0.0-1.0 that the casting_name
-                            and collector_number were read correctly (not guessed)
+  "extraction_confidence": your own rough confidence 0.0-1.0 that the casting_name,
+                            collector_number, and series_number were read correctly
+                            (not guessed)
 }
 
 If a field isn't visible or legible, use null rather than guessing. Do not invent
@@ -203,6 +224,7 @@ def extract_card_details(image_path: str, packaging_type: str = "carded",
         return {
             "packaging_type": packaging_type,
             "brand": None, "casting_name": None, "collector_number": None,
+            "series_number": None,
             "sku": None, "sku_full_code": None,
             "series": None, "release_year": None, "color": None,
             "treasure_hunt": None,

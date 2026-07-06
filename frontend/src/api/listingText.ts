@@ -12,7 +12,7 @@ export function generateListingTitle(item: InventoryItem): string {
   const casting = item.castingName ?? 'Diecast Car';
   const thSuffix = item.treasureHunt ?? '';
   const collectorTag = item.collectorNumber ? `#${item.collectorNumber}` : '';
-  const series = item.series ?? '';
+  const series = [item.series, item.seriesNumber].filter(Boolean).join(' ');
   const carMake = item.carMake && !casting.includes(item.carMake) ? item.carMake : '';
   const color = item.color ?? '';
 
@@ -46,7 +46,7 @@ export function generateListingTitle(item: InventoryItem): string {
 export function generateListingDescription(item: InventoryItem): string {
   const lines: string[] = [];
 
-  const identityHeader = [item.year, item.brand, item.series].filter(Boolean).join(' ');
+  const identityHeader = [item.year, item.brand, item.series, item.seriesNumber].filter(Boolean).join(' ');
   lines.push(`${identityHeader ? identityHeader + ' — ' : ''}${item.castingName ?? 'Unidentified casting'}`.trim());
 
   const details: string[] = [];

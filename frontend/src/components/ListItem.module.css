@@ -8,6 +8,23 @@
   border-radius: var(--radius-md);
 }
 
+.checkbox {
+  flex: none;
+  width: 22px;
+  height: 22px;
+  border-radius: var(--radius-full);
+  border: 2px solid var(--color-zinc-600);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-zinc-50);
+}
+
+.checkboxChecked {
+  background: var(--color-navy-500);
+  border-color: var(--color-navy-500);
+}
+
 .thumbnail {
   flex: none;
   width: var(--sizing-thumbnail-sm);

@@ -14,6 +14,10 @@ export interface ListItemProps {
   showTreasureHunt?: boolean;
   onClick?: () => void;
   trailing?: ReactNode;
+  /** Batch-selection mode (e.g. bulk rematch) - shows a checkbox instead of
+   * navigating on tap. `onClick` still fires and should toggle selection. */
+  selectable?: boolean;
+  selected?: boolean;
 }
 
 /** Row in the collection list: thumbnail (photo or colored placeholder),
@@ -30,9 +34,16 @@ export function ListItem({
   showTreasureHunt = false,
   onClick,
   trailing,
+  selectable = false,
+  selected = false,
 }: ListItemProps) {
   return (
     <div className={styles.listItem} onClick={onClick} role={onClick ? 'button' : undefined}>
+      {selectable && (
+        <div className={[styles.checkbox, selected ? styles.checkboxChecked : ''].filter(Boolean).join(' ')}>
+          {selected && <Icon name="tick02" size={14} />}
+        </div>
+      )}
       <div className={styles.thumbnail}>
         {photoUrl ? (
           <img src={photoUrl} alt="" className={styles.photo} />

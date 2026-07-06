@@ -4,10 +4,11 @@ import { TabBar } from '../components/TabBar';
 import { Tab } from '../components/Tab';
 import { Input } from '../components/Input';
 import { Tag } from '../components/Tag';
+import { Button } from '../components/Button';
 import { ListItem } from '../components/ListItem';
 import { ScanFab } from '../components/ScanFab';
 import { useInventory } from '../api/InventoryContext';
-import { matchLabel, matchBadgeVariant, trackingLabel } from '../api/inventory';
+import { matchLabel, matchBadgeVariant, trackingLabel, rematchItem } from '../api/inventory';
 import styles from './CollectionList.module.css';
 
 const MATCH_FILTERS = [
@@ -28,12 +29,43 @@ function money(n: number): string {
 }
 
 export function CollectionList() {
-  const { items, error } = useInventory();
+  const { items, error, updateItemLocal } = useInventory();
   const navigate = useNavigate();
   const [packagingType, setPackagingType] = useState<'carded' | 'loose'>('carded');
   const [searchQuery, setSearchQuery] = useState('');
   const [matchFilter, setMatchFilter] = useState<string | null>(null);
   const [statusFilter, setStatusFilter] = useState<string | null>(null);
+  const [selectionMode, setSelectionMode] = useState(false);
+  const [selectedIds, setSelectedIds] = useState<Set<number>>(new Set());
+  const [batchRematching, setBatchRematching] = useState(false);
+
+  function toggleSelectionMode() {
+    setSelectionMode((m) => !m);
+    setSelectedIds(new Set());
+  }
+
+  function toggleSelected(id: number) {
+    setSelectedIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  }
+
+  async function handleBatchRematch() {
+    setBatchRematching(true);
+    try {
+      const results = await Promise.allSettled([...selectedIds].map((id) => rematchItem(id)));
+      results.forEach((r) => {
+        if (r.status === 'fulfilled') updateItemLocal(r.value);
+      });
+    } finally {
+      setBatchRematching(false);
+      setSelectionMode(false);
+      setSelectedIds(new Set());
+    }
+  }
 
   const filtered = useMemo(() => {
     if (!items) return [];
@@ -43,7 +75,15 @@ export function CollectionList() {
       if (matchFilter && item.matchStatus !== matchFilter) return false;
       if (statusFilter && item.trackingStatus !== statusFilter) return false;
       if (query) {
-        const haystack = [item.castingName, item.brand, item.series, item.specialSeries, item.sku, item.carMake]
+        const haystack = [
+          item.castingName,
+          item.brand,
+          item.series,
+          item.seriesNumber,
+          item.specialSeries,
+          item.sku,
+          item.carMake,
+        ]
           .filter(Boolean)
           .join(' ')
           .toLowerCase();
@@ -65,10 +105,15 @@ export function CollectionList() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>
-        <h1 className={styles.title}>Zamak Ledger</h1>
-        <div className={styles.subtitle}>
-          {summary.count} cars · Est. {money(summary.value)}
+        <div>
+          <h1 className={styles.title}>Zamak Ledger</h1>
+          <div className={styles.subtitle}>
+            {summary.count} cars · Est. {money(summary.value)}
+          </div>
         </div>
+        <Button variant="text" onClick={toggleSelectionMode}>
+          {selectionMode ? 'Cancel' : 'Select'}
+        </Button>
       </header>
 
       <TabBar>
@@ -114,7 +159,9 @@ export function CollectionList() {
         {filtered.map((item) => (
           <ListItem
             key={item.id}
-            onClick={() => navigate(`/item/${item.id}`)}
+            onClick={() => (selectionMode ? toggleSelected(item.id) : navigate(`/item/${item.id}`))}
+            selectable={selectionMode}
+            selected={selectedIds.has(item.id)}
             photoUrl={item.photoUrl ?? undefined}
             title={item.castingName || 'Unrecognized item'}
             meta={[item.brand, item.carMake, item.year].filter(Boolean).join(' · ') || '—'}
@@ -131,7 +178,20 @@ export function CollectionList() {
         <div className={styles.empty}>No cars match the current filters.</div>
       )}
 
-      <ScanFab packagingType={packagingType} />
+      {selectionMode ? (
+        <div className={styles.selectionBar}>
+          <span className={styles.selectionCount}>{selectedIds.size} selected</span>
+          <Button
+            variant="filled"
+            disabled={selectedIds.size === 0 || batchRematching}
+            onClick={handleBatchRematch}
+          >
+            {batchRematching ? 'Rematching…' : 'Rematch'}
+          </Button>
+        </div>
+      ) : (
+        <ScanFab packagingType={packagingType} />
+      )}
     </div>
   );
 }

@@ -61,6 +61,7 @@ INVENTORY_COLUMNS = {
     "special_series": "TEXT",
     "extracted_casting_name": "TEXT",
     "extracted_collector_num": "TEXT",
+    "extracted_series_number": "TEXT",
     "extracted_sku": "TEXT",
     "extracted_series": "TEXT",
     "extracted_year": "TEXT",
@@ -216,18 +217,19 @@ async def scan_card(
             INSERT INTO inventory (
                 photo_path, base_photo_path, packaging_type,
                 extracted_brand, car_make, extracted_casting_name,
-                extracted_collector_num, extracted_sku, extracted_series, extracted_year,
+                extracted_collector_num, extracted_series_number, extracted_sku, extracted_series, extracted_year,
                 extracted_color, treasure_hunt, base_country, extracted_raw_json,
                 match_reference_id, match_confidence, match_status, match_notes,
                 canonical_brand, canonical_sku, canonical_casting_name, canonical_series, canonical_year,
                 guide_price_usd,
                 live_price_low_usd, live_price_high_usd, live_recommended_price_usd,
                 live_price_summary, live_price_fetched_at
-            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+            ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
         """, (
             saved_path, base_saved_path, packaging_type,
             extracted.get("brand"), extracted.get("car_make"), extracted.get("casting_name"),
-            extracted.get("collector_number"), extracted.get("sku"), extracted.get("series"),
+            extracted.get("collector_number"), extracted.get("series_number"),
+            extracted.get("sku"), extracted.get("series"),
             str(extracted.get("release_year") or extracted.get("copyright_year_on_base") or "") or None,
             extracted.get("color"), extracted.get("treasure_hunt"), extracted.get("base_country"),
             json.dumps(extracted),
@@ -423,7 +425,11 @@ class InventoryUpdate(BaseModel):
     canonical_casting_name: Optional[str] = None
     canonical_series: Optional[str] = None
     canonical_year: Optional[int] = None
-    extracted_collector_num: Optional[str] = None
+    canonical_sku: Optional[str] = None    # was missing entirely - editing SKU had no way to
+                                             # actually persist, since reads prefer canonical_sku
+                                             # over extracted_sku but only extracted_sku was editable
+    extracted_collector_num: Optional[str] = None  # yearly mainline #, e.g. '542' - standalone number
+    extracted_series_number: Optional[str] = None  # position within canonical_series, e.g. '2/4'
     extracted_sku: Optional[str] = None
     extracted_color: Optional[str] = None
     treasure_hunt: Optional[str] = None   # null / 'TH' / 'Super TH'

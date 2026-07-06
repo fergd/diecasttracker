@@ -51,7 +51,18 @@ CREATE TABLE IF NOT EXISTS inventory (
                                           -- like car_make: not vision-extracted, no reference-DB
                                           -- verification.
     extracted_casting_name  TEXT,
-    extracted_collector_num TEXT,
+    extracted_collector_num TEXT,       -- the yearly MAINLINE number, e.g. "542" out of that year's
+                                          -- ~250-ish full lineup - a standalone number, NOT a fraction.
+                                          -- Printed cards dropped this in the 2000s, so it's often
+                                          -- absent on newer stock. Distinct from series_number below -
+                                          -- see that column's comment for how these two differ.
+    extracted_series_number  TEXT,       -- position within the NAMED series/segment given by
+                                          -- extracted_series/canonical_series, e.g. "2/4" within
+                                          -- "Biff! Bam! Boom! Series" - printed as "#X OF Y" or
+                                          -- "X OF Y" near the series banner, distinct from the
+                                          -- standalone yearly collector number above. A car can have
+                                          -- both simultaneously (they're on different parts of the
+                                          -- card and count completely different things).
     extracted_sku            TEXT,      -- manufacturer item/Toy # code, e.g. "CFH06" - exact identifier,
                                           -- much more reliable than fuzzy-matching the casting name
     extracted_series        TEXT,

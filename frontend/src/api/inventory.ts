@@ -30,6 +30,7 @@ export interface InventoryRow {
   car_make: string | null;
   extracted_casting_name: string | null;
   extracted_collector_num: string | null;
+  extracted_series_number: string | null;
   extracted_sku: string | null;
   extracted_series: string | null;
   extracted_year: string | null;
@@ -76,6 +77,7 @@ export interface InventoryItem {
   specialSeries: string | null;
   year: string | null;
   collectorNumber: string | null;
+  seriesNumber: string | null;
   sku: string | null;
   color: string | null;
   treasureHunt: TreasureHunt;
@@ -144,6 +146,7 @@ export function fromRow(row: InventoryRow): InventoryItem {
     specialSeries: row.special_series,
     year: row.canonical_year != null ? String(row.canonical_year) : row.extracted_year,
     collectorNumber: row.extracted_collector_num,
+    seriesNumber: row.extracted_series_number,
     sku: row.canonical_sku || row.extracted_sku,
     color: row.extracted_color,
     treasureHunt: row.treasure_hunt,
@@ -181,6 +184,7 @@ export interface ScanResponse {
     car_make: string | null;
     casting_name: string | null;
     collector_number: string | null;
+    series_number: string | null;
     sku: string | null;
     sku_full_code: string | null;
     series: string | null;
@@ -226,6 +230,7 @@ export function fromScanResponse(data: ScanResponse): InventoryItem {
     specialSeries: null,
     year: v.canonical_year != null ? String(v.canonical_year) : e.release_year != null ? String(e.release_year) : null,
     collectorNumber: e.collector_number,
+    seriesNumber: e.series_number,
     sku: v.canonical_sku || e.sku,
     color: e.color,
     treasureHunt: e.treasure_hunt,
@@ -259,7 +264,9 @@ export interface InventoryUpdate {
   canonical_casting_name?: string | null;
   canonical_series?: string | null;
   canonical_year?: number | null;
+  canonical_sku?: string | null;
   extracted_collector_num?: string | null;
+  extracted_series_number?: string | null;
   extracted_sku?: string | null;
   extracted_color?: string | null;
   treasure_hunt?: TreasureHunt;
@@ -321,6 +328,30 @@ export async function updateItem(id: number, patch: InventoryUpdate): Promise<In
 export async function rematchItem(id: number): Promise<InventoryItem> {
   const row = await unwrap<InventoryRow>(await fetch(`${API_BASE}/inventory/${id}/rematch`, { method: 'POST' }));
   return fromRow(row);
+}
+
+/** Manual override for when you know the true identity but matching still
+ * can't find it (or found the wrong thing) - locks in the given identity as
+ * confirmed. Backend only returns {ok:true}, not the row, so the updated
+ * item is reconstructed client-side from the known-current item + params. */
+export async function confirmMatch(
+  id: number,
+  params: { castingName: string; series: string | null; year: number | null },
+  current: InventoryItem,
+): Promise<InventoryItem> {
+  const qs = new URLSearchParams();
+  qs.set('canonical_casting_name', params.castingName);
+  if (params.series) qs.set('canonical_series', params.series);
+  if (params.year != null) qs.set('canonical_year', String(params.year));
+  await unwrap<{ ok: boolean }>(await fetch(`${API_BASE}/inventory/${id}/confirm?${qs}`, { method: 'POST' }));
+  return {
+    ...current,
+    castingName: params.castingName,
+    series: params.series,
+    year: params.year != null ? String(params.year) : current.year,
+    matchStatus: 'confirmed',
+    matchNotes: 'Manually confirmed by user',
+  };
 }
 
 export async function refreshPrice(id: number): Promise<InventoryItem> {

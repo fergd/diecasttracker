@@ -13,6 +13,7 @@ import { useInventory } from '../api/InventoryContext';
 import {
   updateItem,
   rematchItem,
+  confirmMatch,
   refreshPrice,
   deleteItem,
   attachPhoto,
@@ -95,6 +96,8 @@ export function ItemDetail() {
   const [lightbox, setLightbox] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
   const [copied, setCopied] = useState<'title' | 'description' | null>(null);
+  const [savedFlash, setSavedFlash] = useState(false);
+  const [confirmingMatch, setConfirmingMatch] = useState(false);
 
   useEffect(() => {
     if (item) setForm(item);
@@ -118,7 +121,7 @@ export function ItemDetail() {
     setSaving(true);
     setError(null);
     try {
-      const updated = await updateItem(form.id, {
+      await updateItem(form.id, {
         canonical_brand: form.brand,
         car_make: form.carMake,
         canonical_casting_name: form.castingName,
@@ -126,7 +129,8 @@ export function ItemDetail() {
         special_series: form.specialSeries,
         canonical_year: form.year ? parseInt(form.year, 10) : null,
         extracted_collector_num: form.collectorNumber,
-        extracted_sku: form.sku,
+        extracted_series_number: form.seriesNumber,
+        canonical_sku: form.sku,
         extracted_color: form.color,
         treasure_hunt: form.treasureHunt,
         base_country: form.baseCountry,
@@ -139,8 +143,15 @@ export function ItemDetail() {
         listing_price_usd: form.listingPrice,
         sold_price_usd: form.soldPrice,
       });
-      updateItemLocal(updated);
-      navigate('/');
+      // Editing identity fields (casting name, series, year, etc) can make
+      // the previously-computed match status/notes stale - re-run matching
+      // against the corrected data. No-ops server-side if already manually
+      // confirmed, so this is always safe to call.
+      const rematched = await rematchItem(form.id);
+      updateItemLocal(rematched);
+      setForm(rematched);
+      setSavedFlash(true);
+      setTimeout(() => setSavedFlash(false), 1500);
     } catch (err) {
       setError(err instanceof Error ? err.message : String(err));
     } finally {
@@ -159,6 +170,32 @@ export function ItemDetail() {
       setError(err instanceof Error ? err.message : String(err));
     } finally {
       setRematching(false);
+    }
+  }
+
+  async function handleConfirmMatch() {
+    if (!form) return;
+    if (!form.castingName) {
+      setError('Casting name is required to confirm a match.');
+      return;
+    }
+    setConfirmingMatch(true);
+    try {
+      const updated = await confirmMatch(
+        form.id,
+        {
+          castingName: form.castingName,
+          series: form.series,
+          year: form.year ? parseInt(form.year, 10) : null,
+        },
+        form,
+      );
+      updateItemLocal(updated);
+      setForm(updated);
+    } catch (err) {
+      setError(err instanceof Error ? err.message : String(err));
+    } finally {
+      setConfirmingMatch(false);
     }
   }
 
@@ -262,7 +299,15 @@ export function ItemDetail() {
           value={form.castingName ?? ''}
           onChange={(e) => set('castingName', e.target.value)}
         />
-        <Input label="Series / theme" value={form.series ?? ''} onChange={(e) => set('series', e.target.value)} />
+        <div className={styles.row2}>
+          <Input label="Series / theme" value={form.series ?? ''} onChange={(e) => set('series', e.target.value)} />
+          <Input
+            label="Series #"
+            placeholder="e.g. 2/4"
+            value={form.seriesNumber ?? ''}
+            onChange={(e) => set('seriesNumber', e.target.value)}
+          />
+        </div>
         <Input
           label="Special series"
           value={form.specialSeries ?? ''}
@@ -276,7 +321,8 @@ export function ItemDetail() {
             onChange={(e) => set('year', e.target.value)}
           />
           <Input
-            label="Collector #"
+            label="Collector # (yearly)"
+            placeholder="e.g. 542"
             value={form.collectorNumber ?? ''}
             onChange={(e) => set('collectorNumber', e.target.value)}
           />
@@ -322,6 +368,11 @@ export function ItemDetail() {
           <Badge variant="neutral">{form.packagingType === 'carded' ? 'Carded' : 'Loose'}</Badge>
         </div>
         {form.matchNotes && <p className={styles.notes}>{form.matchNotes}</p>}
+        {form.matchStatus !== 'confirmed' && (
+          <Button variant="outlined" onClick={handleConfirmMatch} disabled={confirmingMatch}>
+            {confirmingMatch ? 'Confirming…' : 'Confirm this is correct'}
+          </Button>
+        )}
       </section>
 
       <section className={styles.card}>
@@ -339,7 +390,9 @@ export function ItemDetail() {
         <div className={styles.priceGrid}>
           <div>
             <div className={styles.priceLabel}>Guide price</div>
-            <div className={styles.priceValue}>{money(form.guidePrice)}</div>
+            <div className={styles.priceValue}>
+              {form.guidePrice != null ? money(form.guidePrice) : 'Not in guide'}
+            </div>
           </div>
           <div>
             <div className={styles.priceLabel}>Recommended</div>
@@ -354,6 +407,11 @@ export function ItemDetail() {
             </div>
           </div>
         </div>
+        <p className={styles.freshness}>
+          Guide price is a static reference-book value for this exact casting/year/packaging - only
+          available when matched to a seeded reference row. Recommended + eBay range come from live
+          listings instead.
+        </p>
         {form.livePriceFetchedAt && (
           <p className={[styles.freshness, stale ? styles.stale : ''].filter(Boolean).join(' ')}>
             Updated {daysAgo(form.livePriceFetchedAt)} days ago
@@ -456,7 +514,7 @@ export function ItemDetail() {
 
       <div className={styles.actions}>
         <Button variant="filled" onClick={handleSave} disabled={saving}>
-          {saving ? 'Saving…' : 'Save'}
+          {saving ? 'Saving…' : savedFlash ? 'Saved' : 'Save'}
         </Button>
         <Button variant="destructive" onClick={() => setConfirmDelete(true)}>
           Delete
