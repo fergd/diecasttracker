@@ -267,7 +267,10 @@ def extract_card_details(image_path: str, packaging_type: str = "carded",
     try:
         response = client.messages.create(
             model=MODEL,
-            max_tokens=500,
+            max_tokens=2000,  # bumped from 500 - the extraction schema has grown
+                               # (wheel_type, body_base_construction, special_flags,
+                               # series_number, etc) and Sonnet can emit a thinking
+                               # block that eats into the same budget as the JSON
             messages=[{"role": "user", "content": content}],
         )
     except anthropic.APIStatusError as e:
@@ -281,7 +284,10 @@ def extract_card_details(image_path: str, packaging_type: str = "carded",
     except anthropic.APIConnectionError as e:
         raise RuntimeError("Couldn't reach the Claude API - check backupbox's internet connection.") from e
 
-    raw_text = response.content[0].text.strip()
+    # Don't assume content[0] is the text block - Sonnet can emit a thinking
+    # block first (which has no .text attribute), so find the actual text
+    # block(s) explicitly instead of indexing blindly.
+    raw_text = "".join(block.text for block in response.content if block.type == "text").strip()
     # Defensive cleanup in case the model wraps the JSON in fences despite instructions
     raw_text = raw_text.removeprefix("```json").removeprefix("```").removesuffix("```").strip()
 
