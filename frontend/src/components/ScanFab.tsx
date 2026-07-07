@@ -208,11 +208,15 @@ export function ScanFab({ packagingType }: ScanFabProps) {
             <h2 className={styles.sheetTitle}>Already in your collection</h2>
             <p className={styles.sheetText}>
               You already have {duplicateMatch.quantity} of{' '}
-              <strong>{duplicateMatch.castingName}</strong>. Add this scan to the total, or skip it?
+              <strong>{duplicateMatch.castingName}</strong> with the same SKU. Add this scan to the
+              total, skip it, or keep it as its own separate entry?
             </p>
             <div className={styles.sheetActions}>
               <Button variant="text" onClick={handleDuplicateSkip}>
                 Skip
+              </Button>
+              <Button variant="outlined" onClick={handleAdd}>
+                New entry
               </Button>
               <Button variant="filled" onClick={handleDuplicateAdd}>
                 Add to total

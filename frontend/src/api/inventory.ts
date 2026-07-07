@@ -402,25 +402,14 @@ export async function deletePhoto(id: number, slot: 'main' | 'secondary'): Promi
   return fromRow(row);
 }
 
-/** Same-packaging duplicate detection - prefers an exact SKU match, else
- * falls back to casting name + series + year + brand, all normalized. */
+/** Same-packaging duplicate detection - exact SKU match ONLY. Casting name/
+ * series/year/brand alone are NOT enough: the same casting legitimately
+ * reappears across different years and series with a different SKU each
+ * time, so matching on those would flag genuinely distinct releases as
+ * duplicates. No SKU on either side means no match - never guess. */
 export function findDuplicate(candidate: InventoryItem, existing: InventoryItem[]): InventoryItem | null {
   const norm = (s: string | null | undefined) => (s ?? '').trim().toLowerCase();
+  if (!norm(candidate.sku)) return null;
   const pool = existing.filter((i) => i.packagingType === candidate.packagingType && i.id !== candidate.id);
-
-  if (norm(candidate.sku)) {
-    const bySku = pool.find((i) => norm(i.sku) === norm(candidate.sku));
-    if (bySku) return bySku;
-  }
-
-  if (!norm(candidate.castingName)) return null;
-  return (
-    pool.find(
-      (i) =>
-        norm(i.castingName) === norm(candidate.castingName) &&
-        norm(i.series) === norm(candidate.series) &&
-        norm(i.year) === norm(candidate.year) &&
-        norm(i.brand) === norm(candidate.brand),
-    ) ?? null
-  );
+  return pool.find((i) => norm(i.sku) === norm(candidate.sku)) ?? null;
 }
