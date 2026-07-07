@@ -136,8 +136,9 @@ export function ItemDetail() {
     if (!form) return;
     setSaving(true);
     setError(null);
+    let saved;
     try {
-      await updateItem(form.id, {
+      saved = await updateItem(form.id, {
         canonical_brand: form.brand,
         car_make: form.carMake,
         canonical_casting_name: form.castingName,
@@ -162,19 +163,32 @@ export function ItemDetail() {
         listing_price_usd: form.listingPrice,
         sold_price_usd: form.soldPrice,
       });
-      // Editing identity fields (casting name, series, year, etc) can make
-      // the previously-computed match status/notes stale - re-run matching
-      // against the corrected data. No-ops server-side if already manually
-      // confirmed, so this is always safe to call.
+    } catch (err) {
+      setError(err instanceof Error ? err.message : String(err));
+      setSaving(false);
+      return;
+    }
+
+    // The save itself succeeded - reflect that immediately, regardless of
+    // what happens next. A rematch failure below must never make a
+    // successful save look like it failed.
+    updateItemLocal(saved);
+    setForm(saved);
+    setSaving(false);
+    setSavedFlash(true);
+    setTimeout(() => setSavedFlash(false), 1500);
+
+    // Best-effort follow-up: editing identity fields (casting name, series,
+    // year, etc) can make the previously-computed match status/notes stale -
+    // re-run matching against the corrected data. No-ops server-side if
+    // already manually confirmed. Silently skipped on failure (network blip,
+    // etc) since the save above already succeeded and is already reflected.
+    try {
       const rematched = await rematchItem(form.id);
       updateItemLocal(rematched);
       setForm(rematched);
-      setSavedFlash(true);
-      setTimeout(() => setSavedFlash(false), 1500);
-    } catch (err) {
-      setError(err instanceof Error ? err.message : String(err));
-    } finally {
-      setSaving(false);
+    } catch {
+      /* non-fatal - save already succeeded */
     }
   }
 

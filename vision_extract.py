@@ -54,19 +54,27 @@ fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
                     specific themed sub-series. Transcribe exactly as printed
                     (e.g. "2/4", "2 OF 4"). null if no series position is shown,
   "sku": the manufacturer's item/Toy # code - a short alphanumeric code (e.g. "CFH06",
-         "N9637", "DVK33", often followed by a dash and a longer suffix like "-D9B0A").
-         Almost always on the BACK of the card, but its position varies a lot by card
-         design - check the whole back carefully, not just near the barcode: it's
-         commonly printed vertically or in small print near a die-cut hang-tab/notch
-         at the top or side of the card, not only next to the barcode. Sometimes also
-         appears on the front. This is a much more reliable identifier than the
-         casting name (exact, not fuzzy) - read it carefully if a back-of-card photo
-         was provided. null if not visible in any provided photo,
-  "sku_full_code": occasionally a longer code appears alongside the short one, with a
-                    dash suffix (e.g. "T9710-09AOQ") - that suffix is usually a
-                    batch/assortment code specific to that individual case, not part
-                    of the casting's identity. Transcribe the FULL string here if a
-                    suffixed code is visible, else null. (The "sku" field above should
+         "N9637", "DVK33", "X1786", often followed by a dash and a longer suffix like
+         "-D9B0A" or "-09A0C"). Almost always on the BACK of the card. CRITICAL location
+         on most modern (roughly 2010s-present) cards: printed on the small die-cut
+         HANG-TAB itself, at the very TOP of the card, above the main hang-hole -
+         usually right next to a tiny "Pp" plastics-recycling code and near the brand
+         logo corner. This tab is easy to crop out of a back-of-card photo if the photo
+         doesn't include the very top edge - if the code isn't found elsewhere, check
+         this tab specifically before giving up. Other cards instead put it vertically
+         or in small print near a different die-cut notch on the side, or occasionally
+         on the front. Sometimes also appears on the back as a shorter reference (e.g.
+         a "Text X1786 to ____" promotional line) - that shorter form is the same short
+         code, use it to confirm but prefer the FULL suffixed version from the hang-tab
+         if both are visible. This is a much more reliable identifier than the casting
+         name (exact, not fuzzy) - read it carefully if a back-of-card photo was
+         provided. null if not visible in any provided photo,
+  "sku_full_code": the longer code alongside the short one, with a dash suffix (e.g.
+                    "T9710-09AOQ", "X1786-09A0C") - usually on the same hang-tab as
+                    "sku" above. That suffix is usually a batch/assortment code
+                    specific to that individual case, not part of the casting's
+                    identity. Transcribe the FULL string here if a suffixed code is
+                    visible, else null. (The "sku" field above should
                     still just be the short primary code, e.g. "T9710" from that example.)
   "series": the named series/theme printed on the card (e.g. "HW Hot Trucks", "Biff!
              Bam! Boom! Series") - series_number above is this car's position within

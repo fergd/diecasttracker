@@ -468,10 +468,16 @@ class InventoryUpdate(BaseModel):
 def update_item(item_id: int, update: InventoryUpdate):
     """Edit any of your own tracking fields, or correct a canonical field by
     hand (e.g. fixing a brand/casting name the pipeline got wrong)."""
-    fields = {k: v for k, v in update.model_dump().items() if v is not None}
+    # exclude_unset (not "if v is not None") is deliberate: it applies any
+    # field actually present in the request body, including an explicit null
+    # meant to CLEAR that field - e.g. clearing a Select back to blank sends
+    # `{"base_country": null}`, which must actually null out the column, not
+    # be silently dropped. Only a field genuinely absent from the request
+    # (e.g. a partial bulk-status-only update) is left untouched.
+    fields = update.model_dump(exclude_unset=True)
     if not fields:
         raise HTTPException(status_code=400, detail="No fields provided to update.")
-    if "special_flags" in fields:
+    if "special_flags" in fields and fields["special_flags"] is not None:
         fields["special_flags"] = json.dumps(fields["special_flags"])
 
     conn = get_conn()
