@@ -15,7 +15,8 @@ import os
 
 import anthropic
 
-MODEL = "claude-haiku-4-5-20251001"  # cheap, fast, well-suited to extraction
+MODEL = "claude-sonnet-5"  # bumped up from Haiku 4.5 for extraction accuracy - still
+                            # a fraction of a cent per scan, negligible for personal use
 
 CARDED_PROMPT = """You are looking at photo(s) of a carded (packaged) Hot Wheels or \
 Matchbox diecast car. Read the text printed on the card and extract the following \
@@ -29,8 +30,13 @@ fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
               above, which is the collectible line (Hot Wheels/Matchbox), not the
               car itself. Read this from the casting name if it names a real make
               (e.g. "Custom '72 Chevy Luv" -> "Chevrolet"), or from any licensed-
-              manufacturer text/logo on the card. null if the casting is a fully
-              custom/fictional Hot Wheels design with no real-world make,
+              manufacturer text/logo on the card. Some cards (e.g. "HW Showroom")
+              have a car-history trivia blurb with a "Designer:" line - useful to
+              confirm car_make, but map it to the actual marque, not a parent
+              conglomerate (e.g. "Designer: General Motors" on a Chevy Nova card
+              still means car_make "Chevrolet", not "General Motors"). null if the
+              casting is a fully custom/fictional Hot Wheels design with no real-
+              world make,
   "casting_name": the car's model/casting name as printed on the card, usually in a
                    stylized logo/wordmark box on the card FRONT (e.g. "LIMOZEEN",
                    "PORSCHE CARRERA"),
@@ -90,11 +96,18 @@ fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
                     identity. Transcribe the FULL string here if a suffixed code is
                     visible, else null. (The "sku" field above should
                     still just be the short primary code, e.g. "T9710" from that example.)
-  "series": the named series/theme printed on the card (e.g. "HW Hot Trucks", "Biff!
-             Bam! Boom! Series", "HW Showroom") - series_number above is this car's
-             position within whatever series name you put here. On modern cards this
-             is often printed as large vertical text in a colored stripe along one
-             side of the card FRONT, not just a horizontal banner,
+  "series": the SPECIFIC named series/theme this casting belongs to (e.g. "HW Hot
+             Trucks", "Biff! Bam! Boom! Series", "Asphalt Assault", "HW Garage", "HW
+             All Stars") - series_number above is this car's position within whatever
+             series name you put here. On modern cards this is often printed as large
+             vertical text in a colored stripe along one side of the card FRONT, not
+             just a horizontal banner. IMPORTANT: don't confuse this with a broader
+             promotional WAVE/collection banner that's shared across many different
+             specific series in the same release (e.g. "HW Showroom - 2013" appears
+             identically on cards whose actual series are "Asphalt Assault", "HW Hot
+             Trucks", "HW Garage", and "HW All Stars" - each a different specific
+             series within that same wave). Always prefer the more specific series
+             name over a shared yearly/wave banner if both are present,
   "release_year": the year if visible (from a "NEW FOR ____" flag or copyright date),
   "color": brief description of the car's visible color/deco,
   "treasure_hunt": "TH" if this is a regular Treasure Hunt, "Super TH" if a Super
