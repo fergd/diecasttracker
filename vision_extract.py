@@ -34,25 +34,39 @@ fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
   "casting_name": the car's model/casting name as printed on the card, usually in a
                    stylized logo/wordmark box on the card FRONT (e.g. "LIMOZEEN",
                    "PORSCHE CARRERA"),
-  "collector_number": the STANDALONE yearly mainline number, e.g. "542" or "967" -
-                       this is the car's overall position out of that year's full
-                       lineup (roughly 250 cars/year), NOT a fraction. Usually
-                       printed on the card BACK, often near the barcode/proof-of-
-                       purchase area, labeled "COLLECTOR #" or just shown as a bare
-                       number in a box. Hot Wheels dropped this numbering in the
-                       2000s, so it's frequently absent on newer cards - use null
-                       rather than confusing it with series_number below, which
-                       looks similar but counts something completely different.
-  "series_number": the position WITHIN the named series/segment given in "series"
-                    below, e.g. "2/4" or "2 OF 4" - printed on the card FRONT,
-                    directly below or beside the series name banner (e.g. "BIFF!
-                    BAM! BOOM! SERIES" with "#2 OF 4 CARS" right next to it). This
-                    is a completely different number from collector_number above:
-                    a card can show BOTH simultaneously (a 3-digit yearly number on
-                    the back AND a small "X of Y" fraction on the front) since one
-                    counts the year's full lineup and the other counts only this
-                    specific themed sub-series. Transcribe exactly as printed
-                    (e.g. "2/4", "2 OF 4"). null if no series position is shown,
+  "collector_number": the car's position out of that YEAR'S FULL mainline lineup
+                       (roughly 150-350 cars/year, depending on the year). Printed in
+                       one of two formats depending on card era:
+                       - Older cards (roughly 1990s-2000s): a STANDALONE number, e.g.
+                         "542" or "967", usually on the card BACK near the barcode/
+                         proof-of-purchase area, labeled "COLLECTOR #" or just a bare
+                         number in a box.
+                       - Modern cards (roughly 2010s-present): often a FRACTION, e.g.
+                         "158/250", commonly on the card FRONT near/within the series-
+                         name area (e.g. printed at the bottom of a vertical colored
+                         stripe that also carries the series name, like "HW SHOWROOM").
+                       The reliable way to tell a collector_number fraction apart from
+                       a series_number fraction (below) is the DENOMINATOR: collector_
+                       number's denominator is LARGE (roughly 150-350, matching a full
+                       year's mainline count) - e.g. "158/250". Don't assume a fraction
+                       near the series name must be series_number just because of its
+                       position; check the denominator size first. Hot Wheels dropped
+                       standalone collector numbering in the 2000s and the fraction
+                       format isn't on every card either, so use null often rather than
+                       guessing.
+  "series_number": the position WITHIN the specific named series/segment given in
+                    "series" below - e.g. "2/4" or "2 OF 4" for a small themed sub-
+                    line like "Biff! Bam! Boom! Series". Printed on the card FRONT,
+                    typically near the series name banner/stripe. The reliable way to
+                    tell this apart from collector_number above is the DENOMINATOR:
+                    series_number's denominator is SMALL (roughly 3-12, matching a
+                    themed sub-line's total car count), never in the hundreds. A card
+                    can show BOTH a collector_number fraction (large denominator) AND
+                    a series_number fraction (small denominator) simultaneously, since
+                    one counts the year's full lineup and the other counts only this
+                    specific themed sub-series - don't assume only one fraction can be
+                    present. Transcribe exactly as printed (e.g. "2/4", "2 OF 4").
+                    null if no series position is shown,
   "sku": the manufacturer's item/Toy # code - a short alphanumeric code (e.g. "CFH06",
          "N9637", "DVK33", "X1786", often followed by a dash and a longer suffix like
          "-D9B0A" or "-09A0C"). Almost always on the BACK of the card. CRITICAL location
@@ -77,8 +91,10 @@ fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
                     visible, else null. (The "sku" field above should
                     still just be the short primary code, e.g. "T9710" from that example.)
   "series": the named series/theme printed on the card (e.g. "HW Hot Trucks", "Biff!
-             Bam! Boom! Series") - series_number above is this car's position within
-             whatever series name you put here,
+             Bam! Boom! Series", "HW Showroom") - series_number above is this car's
+             position within whatever series name you put here. On modern cards this
+             is often printed as large vertical text in a colored stripe along one
+             side of the card FRONT, not just a horizontal banner,
   "release_year": the year if visible (from a "NEW FOR ____" flag or copyright date),
   "color": brief description of the car's visible color/deco,
   "treasure_hunt": "TH" if this is a regular Treasure Hunt, "Super TH" if a Super
