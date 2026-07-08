@@ -121,9 +121,17 @@ export function ItemDetail() {
   const [photoActionsSlot, setPhotoActionsSlot] = useState<'main' | 'secondary' | null>(null);
   const mainFileInput = useRef<HTMLInputElement>(null);
   const secondaryFileInput = useRef<HTMLInputElement>(null);
+  // Quantity needs its own free-typing text buffer, separate from
+  // form.quantity (a real number) - a controlled input tied directly to a
+  // "coerce empty back to 1" onChange snaps back to "1" the instant you
+  // delete the digit, before you can type a replacement.
+  const [quantityText, setQuantityText] = useState(String(item?.quantity ?? 1));
 
   useEffect(() => {
-    if (item) setForm(item);
+    if (item) {
+      setForm(item);
+      setQuantityText(String(item.quantity));
+    }
   }, [item]);
 
   useEffect(() => {
@@ -150,6 +158,12 @@ export function ItemDetail() {
   async function handleSave() {
     if (!form) return;
     setSaving(true);
+    // Defensive fallback in case onBlur hasn't fired yet (e.g. Save tapped
+    // in a way that doesn't trigger a blur first) - parse whatever's
+    // currently in the quantity text buffer rather than trusting form.quantity
+    // might be stale.
+    const parsedQuantity = parseInt(quantityText, 10);
+    const quantity = Number.isFinite(parsedQuantity) && parsedQuantity > 0 ? parsedQuantity : form.quantity;
     let saved;
     try {
       // Minimum 1.3s so the spinner is actually visible and the save reads
@@ -173,7 +187,7 @@ export function ItemDetail() {
           special_flags: form.specialFlags,
           comments: form.comments,
           status: form.trackingStatus,
-          quantity: form.quantity,
+          quantity,
           condition: form.condition,
           condition_car_grade: form.conditionCarGrade,
           condition_card_grade: form.conditionCardGrade,
@@ -194,6 +208,7 @@ export function ItemDetail() {
     // successful save look like it failed.
     updateItemLocal(saved);
     setForm(saved);
+    setQuantityText(String(saved.quantity));
     setSaving(false);
     showToast('Saved', 'success');
 
@@ -614,8 +629,14 @@ export function ItemDetail() {
           <Input
             label="Quantity"
             inputMode="numeric"
-            value={String(form.quantity)}
-            onChange={(e) => set('quantity', parseInt(e.target.value, 10) || 1)}
+            value={quantityText}
+            onChange={(e) => setQuantityText(e.target.value)}
+            onBlur={() => {
+              const parsed = parseInt(quantityText, 10);
+              const valid = Number.isFinite(parsed) && parsed > 0 ? parsed : form.quantity;
+              set('quantity', valid);
+              setQuantityText(String(valid));
+            }}
           />
           <Input
             label="Condition notes"
