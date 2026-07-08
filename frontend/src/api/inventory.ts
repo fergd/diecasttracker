@@ -40,6 +40,7 @@ export interface InventoryRow {
   wheel_type: string | null;
   body_base_construction: string | null;
   special_flags: string | null;
+  comments: string | null;
   special_series: string | null;
   match_status: MatchStatus;
   match_confidence: number | null;
@@ -88,6 +89,7 @@ export interface InventoryItem {
   wheelType: string | null;
   bodyBaseConstruction: string | null;
   specialFlags: string[];
+  comments: string | null;
   matchStatus: MatchStatus;
   matchConfidence: number;
   matchNotes: string | null;
@@ -160,6 +162,7 @@ export function fromRow(row: InventoryRow): InventoryItem {
     wheelType: row.wheel_type,
     bodyBaseConstruction: row.body_base_construction,
     specialFlags: row.special_flags ? JSON.parse(row.special_flags) : [],
+    comments: row.comments,
     matchStatus: row.match_status,
     matchConfidence: row.match_confidence ?? 0,
     matchNotes: row.match_notes,
@@ -250,6 +253,7 @@ export function fromScanResponse(data: ScanResponse): InventoryItem {
     wheelType: e.wheel_type ?? null,
     bodyBaseConstruction: e.body_base_construction ?? null,
     specialFlags: e.special_flags ?? [],
+    comments: null,
     matchStatus: v.status,
     matchConfidence: v.confidence ?? 0,
     matchNotes: v.notes,
@@ -289,6 +293,7 @@ export interface InventoryUpdate {
   wheel_type?: string | null;
   body_base_construction?: string | null;
   special_flags?: string[];
+  comments?: string | null;
   match_status?: MatchStatus;
   condition?: string | null;
   condition_car_grade?: ConditionGrade;

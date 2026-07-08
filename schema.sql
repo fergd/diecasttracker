@@ -96,6 +96,10 @@ CREATE TABLE IF NOT EXISTS inventory (
                                             -- Super-TH-equivalent, numbered like '0/5'), 'Store
                                             -- Exclusive'. Stored as JSON since SQLite has no array
                                             -- type; parse/serialize at the app layer.
+    comments                  TEXT,       -- general free-text notes on identification (provenance,
+                                            -- variant details, anything that doesn't fit a structured
+                                            -- field) - distinct from `condition` below, which is
+                                            -- specifically about physical wear/condition
     extracted_raw_json       TEXT,       -- full JSON blob, for debugging/reprocessing
 
     -- validation result

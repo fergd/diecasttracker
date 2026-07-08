@@ -75,6 +75,7 @@ INVENTORY_COLUMNS = {
     "wheel_type": "TEXT",
     "body_base_construction": "TEXT",
     "special_flags": "TEXT",
+    "comments": "TEXT",
     "extracted_raw_json": "TEXT",
     "match_reference_id": "INTEGER",
     "match_confidence": "REAL",
@@ -452,6 +453,7 @@ class InventoryUpdate(BaseModel):
     wheel_type: Optional[str] = None       # Redline / Real Riders / Basic Wheels / Chrome / Other
     body_base_construction: Optional[str] = None  # Metal/Metal / Metal/Plastic / All-Plastic
     special_flags: Optional[List[str]] = None     # New Casting / Zamac / Chase / Store Exclusive
+    comments: Optional[str] = None
     match_status: Optional[str] = None
     condition: Optional[str] = None
     condition_car_grade: Optional[str] = None   # C6-C10

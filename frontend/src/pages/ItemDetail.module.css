@@ -37,14 +37,6 @@
   white-space: nowrap;
 }
 
-.errorBanner {
-  padding: var(--spacing-md);
-  border-radius: var(--radius-sm);
-  background: rgba(var(--color-semantic-error-rgb), 0.13);
-  color: var(--color-semantic-error);
-  font-family: var(--font-body);
-  font-size: var(--font-size-footnote);
-}
 
 .photos {
   display: grid;

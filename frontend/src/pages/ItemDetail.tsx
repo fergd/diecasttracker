@@ -9,6 +9,7 @@ import { Tab } from '../components/Tab';
 import { Badge } from '../components/Badge';
 import { Sheet } from '../components/Sheet';
 import { Tag } from '../components/Tag';
+import { Toast } from '../components/Toast';
 import { useInventory } from '../api/InventoryContext';
 import {
   updateItem,
@@ -94,6 +95,13 @@ function money(n: number | null): string {
   return n != null ? `$${n.toFixed(2)}` : '—';
 }
 
+/** Ensures a promise takes at least `ms` to resolve - makes a fast save feel
+ * deliberate/trustworthy instead of suspiciously instant, without ever
+ * making a genuinely slow request wait even longer. */
+function withMinDelay<T>(promise: Promise<T>, ms: number): Promise<T> {
+  return Promise.all([promise, new Promise((resolve) => setTimeout(resolve, ms))]).then(([result]) => result);
+}
+
 export function ItemDetail() {
   const { id } = useParams();
   const itemId = Number(id);
@@ -107,9 +115,8 @@ export function ItemDetail() {
   const [refreshingPrice, setRefreshingPrice] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [lightbox, setLightbox] = useState<string | null>(null);
-  const [error, setError] = useState<string | null>(null);
+  const [toast, setToast] = useState<{ message: string; variant: 'success' | 'error' } | null>(null);
   const [copied, setCopied] = useState<'title' | 'description' | null>(null);
-  const [savedFlash, setSavedFlash] = useState(false);
   const [confirmingMatch, setConfirmingMatch] = useState(false);
   const [photoActionsSlot, setPhotoActionsSlot] = useState<'main' | 'secondary' | null>(null);
   const mainFileInput = useRef<HTMLInputElement>(null);
@@ -132,40 +139,53 @@ export function ItemDetail() {
     setForm((f) => (f ? { ...f, [key]: value } : f));
   }
 
+  function showToast(message: string, variant: 'success' | 'error') {
+    setToast({ message, variant });
+  }
+
+  function showError(err: unknown) {
+    showToast(err instanceof Error ? err.message : String(err), 'error');
+  }
+
   async function handleSave() {
     if (!form) return;
     setSaving(true);
-    setError(null);
     let saved;
     try {
-      saved = await updateItem(form.id, {
-        canonical_brand: form.brand,
-        car_make: form.carMake,
-        canonical_casting_name: form.castingName,
-        canonical_series: form.series,
-        special_series: form.specialSeries,
-        canonical_year: form.year ? parseInt(form.year, 10) : null,
-        extracted_collector_num: form.collectorNumber,
-        extracted_series_number: form.seriesNumber,
-        canonical_sku: form.sku,
-        extracted_color: form.color,
-        treasure_hunt: form.treasureHunt,
-        base_country: form.baseCountry,
-        wheel_type: form.wheelType,
-        body_base_construction: form.bodyBaseConstruction,
-        special_flags: form.specialFlags,
-        status: form.trackingStatus,
-        quantity: form.quantity,
-        condition: form.condition,
-        condition_car_grade: form.conditionCarGrade,
-        condition_card_grade: form.conditionCardGrade,
-        cost_basis_usd: form.costBasis,
-        listing_price_usd: form.listingPrice,
-        sold_price_usd: form.soldPrice,
-      });
+      // Minimum 1.3s so the spinner is actually visible and the save reads
+      // as deliberate, even when the request itself is much faster than that.
+      saved = await withMinDelay(
+        updateItem(form.id, {
+          canonical_brand: form.brand,
+          car_make: form.carMake,
+          canonical_casting_name: form.castingName,
+          canonical_series: form.series,
+          special_series: form.specialSeries,
+          canonical_year: form.year ? parseInt(form.year, 10) : null,
+          extracted_collector_num: form.collectorNumber,
+          extracted_series_number: form.seriesNumber,
+          canonical_sku: form.sku,
+          extracted_color: form.color,
+          treasure_hunt: form.treasureHunt,
+          base_country: form.baseCountry,
+          wheel_type: form.wheelType,
+          body_base_construction: form.bodyBaseConstruction,
+          special_flags: form.specialFlags,
+          comments: form.comments,
+          status: form.trackingStatus,
+          quantity: form.quantity,
+          condition: form.condition,
+          condition_car_grade: form.conditionCarGrade,
+          condition_card_grade: form.conditionCardGrade,
+          cost_basis_usd: form.costBasis,
+          listing_price_usd: form.listingPrice,
+          sold_price_usd: form.soldPrice,
+        }),
+        1300,
+      );
     } catch (err) {
-      setError(err instanceof Error ? err.message : String(err));
       setSaving(false);
+      showError(err);
       return;
     }
 
@@ -175,8 +195,7 @@ export function ItemDetail() {
     updateItemLocal(saved);
     setForm(saved);
     setSaving(false);
-    setSavedFlash(true);
-    setTimeout(() => setSavedFlash(false), 1500);
+    showToast('Saved', 'success');
 
     // Best-effort follow-up: editing identity fields (casting name, series,
     // year, etc) can make the previously-computed match status/notes stale -
@@ -200,7 +219,7 @@ export function ItemDetail() {
       updateItemLocal(updated);
       setForm(updated);
     } catch (err) {
-      setError(err instanceof Error ? err.message : String(err));
+      showError(err);
     } finally {
       setRematching(false);
     }
@@ -209,7 +228,7 @@ export function ItemDetail() {
   async function handleConfirmMatch() {
     if (!form) return;
     if (!form.castingName) {
-      setError('Casting name is required to confirm a match.');
+      showToast('Casting name is required to confirm a match.', 'error');
       return;
     }
     setConfirmingMatch(true);
@@ -226,7 +245,7 @@ export function ItemDetail() {
       updateItemLocal(updated);
       setForm(updated);
     } catch (err) {
-      setError(err instanceof Error ? err.message : String(err));
+      showError(err);
     } finally {
       setConfirmingMatch(false);
     }
@@ -240,7 +259,7 @@ export function ItemDetail() {
       updateItemLocal(updated);
       setForm(updated);
     } catch (err) {
-      setError(err instanceof Error ? err.message : String(err));
+      showError(err);
     } finally {
       setRefreshingPrice(false);
     }
@@ -253,7 +272,7 @@ export function ItemDetail() {
       removeItemLocal(form.id);
       navigate('/');
     } catch (err) {
-      setError(err instanceof Error ? err.message : String(err));
+      showError(err);
     }
   }
 
@@ -264,7 +283,7 @@ export function ItemDetail() {
       updateItemLocal(updated);
       setForm(updated);
     } catch (err) {
-      setError(err instanceof Error ? err.message : String(err));
+      showError(err);
     } finally {
       setPhotoActionsSlot(null);
     }
@@ -277,7 +296,7 @@ export function ItemDetail() {
       updateItemLocal(updated);
       setForm(updated);
     } catch (err) {
-      setError(err instanceof Error ? err.message : String(err));
+      showError(err);
     } finally {
       setPhotoActionsSlot(null);
     }
@@ -301,8 +320,6 @@ export function ItemDetail() {
         </button>
         <h1 className={styles.title}>{form.castingName || 'Unrecognized item'}</h1>
       </header>
-
-      {error && <div className={styles.errorBanner}>{error}</div>}
 
       <section className={styles.photos}>
         <div className={styles.photoSlot}>
@@ -464,6 +481,12 @@ export function ItemDetail() {
             </Tab>
           </TabBar>
         </div>
+        <Input
+          label="Comments"
+          placeholder="Any other notes about this specific item"
+          value={form.comments ?? ''}
+          onChange={(e) => set('comments', e.target.value || null)}
+        />
       </section>
 
       <section className={styles.card}>
@@ -623,8 +646,14 @@ export function ItemDetail() {
       </section>
 
       <div className={styles.actions}>
-        <Button variant="filled" onClick={handleSave} disabled={saving}>
-          {saving ? 'Saving…' : savedFlash ? 'Saved' : 'Save'}
+        <Button
+          variant="filled"
+          onClick={handleSave}
+          disabled={saving}
+          icon={saving ? 'refresh01' : undefined}
+          iconSpin={saving}
+        >
+          {saving ? 'Saving…' : 'Save'}
         </Button>
         <Button variant="destructive" onClick={() => setConfirmDelete(true)}>
           Delete
@@ -667,6 +696,10 @@ export function ItemDetail() {
           </Button>
         </div>
       </Sheet>
+
+      {toast && (
+        <Toast message={toast.message} variant={toast.variant} onDismiss={() => setToast(null)} />
+      )}
     </div>
   );
 }

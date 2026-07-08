@@ -1,0 +1,39 @@
+.toast {
+  position: fixed;
+  top: calc(env(safe-area-inset-top, 0px) + var(--spacing-xl));
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  padding: var(--spacing-md) var(--spacing-lg);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-lg);
+  font-family: var(--font-body);
+  font-size: var(--font-size-callout);
+  font-weight: var(--font-weight-medium);
+  z-index: 200;
+  max-width: calc(100vw - var(--spacing-xl) * 2);
+  animation: toast-in 0.2s ease-out;
+}
+
+@keyframes toast-in {
+  from {
+    opacity: 0;
+    transform: translateX(-50%) translateY(-8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(-50%) translateY(0);
+  }
+}
+
+.success {
+  background: var(--color-semantic-success);
+  color: var(--color-zinc-50);
+}
+
+.error {
+  background: var(--color-semantic-error);
+  color: var(--color-zinc-50);
+}
