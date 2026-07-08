@@ -187,6 +187,7 @@ export function ItemDetail() {
           special_flags: form.specialFlags,
           comments: form.comments,
           status: form.trackingStatus,
+          staged_for_listing: form.stagedForListing,
           quantity,
           condition: form.condition,
           condition_car_grade: form.conditionCarGrade,
@@ -614,6 +615,11 @@ export function ItemDetail() {
               Sold
             </Tab>
           </TabBar>
+        </div>
+        <div className={styles.field}>
+          <Tag selected={form.stagedForListing} onClick={() => set('stagedForListing', !form.stagedForListing)}>
+            {form.stagedForListing ? 'Staged for eBay listing' : 'Mark for eBay listing'}
+          </Tag>
         </div>
         {form.packagingType === 'carded' && (
           <div className={styles.field}>

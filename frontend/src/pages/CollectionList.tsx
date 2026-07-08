@@ -9,7 +9,9 @@ import { Icon } from '../components/Icon';
 import { Sheet } from '../components/Sheet';
 import { ListItem } from '../components/ListItem';
 import { ScanFab } from '../components/ScanFab';
+import { Toast } from '../components/Toast';
 import { useInventory } from '../api/InventoryContext';
+import { downloadEbayCsv } from '../api/ebayExport';
 import {
   matchLabel,
   matchBadgeVariant,
@@ -65,6 +67,39 @@ export function CollectionList() {
   const [sortField, setSortField] = useState<SortField | null>(null);
   const [sortDir, setSortDir] = useState<'asc' | 'desc'>('asc');
   const [sortMenuOpen, setSortMenuOpen] = useState(false);
+  const [exporting, setExporting] = useState(false);
+  const [toast, setToast] = useState<{ message: string; variant: 'success' | 'error' } | null>(null);
+
+  const stagedItems = useMemo(() => (items ?? []).filter((i) => i.stagedForListing), [items]);
+
+  async function handleExportCsv() {
+    setExporting(true);
+    try {
+      downloadEbayCsv(stagedItems);
+      const results = await Promise.allSettled(
+        stagedItems.map((i) =>
+          updateItem(i.id, { status: 'listed' as TrackingStatus, staged_for_listing: false }),
+        ),
+      );
+      let failures = 0;
+      results.forEach((r) => {
+        if (r.status === 'fulfilled') updateItemLocal(r.value);
+        else failures += 1;
+      });
+      if (failures > 0) {
+        setToast({
+          message: `CSV downloaded, but ${failures} item${failures === 1 ? '' : 's'} failed to move to Listed`,
+          variant: 'error',
+        });
+      } else {
+        setToast({ message: `Exported ${stagedItems.length} car${stagedItems.length === 1 ? '' : 's'} to CSV`, variant: 'success' });
+      }
+    } catch (err) {
+      setToast({ message: err instanceof Error ? err.message : String(err), variant: 'error' });
+    } finally {
+      setExporting(false);
+    }
+  }
 
   function chooseSort(field: SortField) {
     if (sortField === field) {
@@ -116,6 +151,22 @@ export function CollectionList() {
     try {
       const results = await Promise.allSettled(
         [...selectedIds].map((id) => updateItem(id, { status })),
+      );
+      results.forEach((r) => {
+        if (r.status === 'fulfilled') updateItemLocal(r.value);
+      });
+    } finally {
+      setBulkActionBusy(false);
+      setSelectionMode(false);
+      setSelectedIds(new Set());
+    }
+  }
+
+  async function handleBulkStageForListing() {
+    setBulkActionBusy(true);
+    try {
+      const results = await Promise.allSettled(
+        [...selectedIds].map((id) => updateItem(id, { staged_for_listing: true })),
       );
       results.forEach((r) => {
         if (r.status === 'fulfilled') updateItemLocal(r.value);
@@ -211,6 +262,23 @@ export function CollectionList() {
           </Button>
         </div>
       </header>
+
+      {stagedItems.length > 0 && (
+        <div className={styles.stagedBanner}>
+          <span>
+            {stagedItems.length} car{stagedItems.length === 1 ? '' : 's'} staged for eBay listing
+          </span>
+          <Button
+            variant="tonal"
+            icon={exporting ? 'refresh01' : 'bookmark01'}
+            iconSpin={exporting}
+            disabled={exporting}
+            onClick={handleExportCsv}
+          >
+            {exporting ? 'Exporting…' : 'Export CSV'}
+          </Button>
+        </div>
+      )}
 
       <TabBar>
         <Tab selected={packagingType === 'carded'} onClick={() => setPackagingType('carded')}>
@@ -309,6 +377,14 @@ export function CollectionList() {
           <button
             className={styles.selectionIconButton}
             disabled={selectedIds.size === 0 || bulkActionBusy}
+            onClick={handleBulkStageForListing}
+            aria-label="Stage selected for eBay listing"
+          >
+            <Icon name="bookmark01" size={18} />
+          </button>
+          <button
+            className={styles.selectionIconButton}
+            disabled={selectedIds.size === 0 || bulkActionBusy}
             onClick={() => setConfirmBulkDelete(true)}
             aria-label="Delete selected"
           >
@@ -359,6 +435,10 @@ export function CollectionList() {
           </Button>
         </div>
       </Sheet>
+
+      {toast && (
+        <Toast message={toast.message} variant={toast.variant} onDismiss={() => setToast(null)} />
+      )}
     </div>
   );
 }

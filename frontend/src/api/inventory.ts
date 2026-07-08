@@ -60,6 +60,7 @@ export interface InventoryRow {
   condition_car_grade: ConditionGrade;
   condition_card_grade: ConditionGrade;
   status: TrackingStatus;
+  staged_for_listing: number;
   acquired_date: string | null;
   cost_basis_usd: number | null;
   listing_price_usd: number | null;
@@ -103,6 +104,7 @@ export interface InventoryItem {
   conditionCarGrade: ConditionGrade;
   conditionCardGrade: ConditionGrade;
   trackingStatus: TrackingStatus;
+  stagedForListing: boolean;
   quantity: number;
   price: number | null;
   costBasis: number | null;
@@ -176,6 +178,7 @@ export function fromRow(row: InventoryRow): InventoryItem {
     conditionCarGrade: row.condition_car_grade,
     conditionCardGrade: row.condition_card_grade,
     trackingStatus: row.status,
+    stagedForListing: !!row.staged_for_listing,
     quantity: row.quantity || 1,
     price: row.live_recommended_price_usd ?? row.live_price_low_usd ?? row.guide_price_usd,
     costBasis: row.cost_basis_usd,
@@ -267,6 +270,7 @@ export function fromScanResponse(data: ScanResponse): InventoryItem {
     conditionCarGrade: null,
     conditionCardGrade: null,
     trackingStatus: 'in_collection',
+    stagedForListing: false,
     quantity: 1,
     price: lp.recommended_listing_price_usd ?? lp.price_low_usd ?? v.guide_price_usd,
     costBasis: null,
@@ -301,6 +305,7 @@ export interface InventoryUpdate {
   acquired_date?: string | null;
   cost_basis_usd?: number | null;
   status?: TrackingStatus;
+  staged_for_listing?: boolean;
   listing_price_usd?: number | null;
   sold_price_usd?: number | null;
   quantity?: number;

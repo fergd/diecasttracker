@@ -142,6 +142,10 @@ CREATE TABLE IF NOT EXISTS inventory (
     acquired_date        TEXT,
     cost_basis_usd        REAL,
     status               TEXT DEFAULT 'in_collection',  -- in_collection / listed / sold
+    staged_for_listing    INTEGER DEFAULT 0,  -- 0/1 - marked to go out in the next eBay CSV
+                                                 -- export, independent of status (an item stays
+                                                 -- in_collection while staged; the export flips
+                                                 -- it to status='listed' and clears this flag)
     listing_price_usd     REAL,
     sold_price_usd         REAL,
     quantity              INTEGER DEFAULT 1,  -- how many physical copies of this exact
