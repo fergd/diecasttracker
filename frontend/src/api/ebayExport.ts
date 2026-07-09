@@ -1,5 +1,20 @@
-import { generateListingTitle, generateListingDescription } from './listingText';
+import { generateListingDescription } from './listingText';
 import type { InventoryItem } from './inventory';
+
+const EBAY_TITLE_MAX = 80;
+
+/** Title for the eBay CSV specifically - simpler than the in-app "Listing
+ * Text" card's title (which adds series/collector-number/color for a human
+ * reviewing it before copying elsewhere): "{year} {brand} {casting name}
+ * {SKU}", collector number omitted, per eBay's own template conventions. */
+function ebayListingTitle(item: InventoryItem): string {
+  const title = [item.year, item.brand ?? 'Hot Wheels', item.castingName ?? 'Diecast Car', item.sku]
+    .filter(Boolean)
+    .join(' ')
+    .replace(/\s+/g, ' ')
+    .trim();
+  return title.length > EBAY_TITLE_MAX ? title.slice(0, EBAY_TITLE_MAX).trim() : title;
+}
 
 // Column structure and info-header rows copied verbatim from a real eBay
 // "draft listing" template (Seller Hub Reports tab -> Upload -> Download
@@ -67,7 +82,7 @@ export function generateEbayCsv(items: InventoryItem[]): string {
       'Draft',
       item.sku ?? '',
       categoryFor(item),
-      generateListingTitle(item),
+      ebayListingTitle(item),
       '', // UPC - diecast collectibles don't have one
       item.price != null ? item.price.toFixed(2) : '',
       String(item.quantity),
