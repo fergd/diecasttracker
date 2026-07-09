@@ -106,7 +106,7 @@ export function ItemDetail() {
   const { id } = useParams();
   const itemId = Number(id);
   const navigate = useNavigate();
-  const { getItem, updateItemLocal, removeItemLocal } = useInventory();
+  const { items, getItem, updateItemLocal, removeItemLocal } = useInventory();
   const item = getItem(itemId);
 
   const [form, setForm] = useState<InventoryItem | null>(item ?? null);
@@ -136,11 +136,15 @@ export function ItemDetail() {
   }, [item]);
 
   useEffect(() => {
-    if (!item && itemId) {
+    // items is null only until the initial fetch resolves - on a hard
+    // reload/direct link, don't bounce to the list just because the fetch
+    // hasn't come back yet. Only redirect once we've actually loaded data
+    // and the id genuinely isn't in it.
+    if (items && !item && itemId) {
       const t = setTimeout(() => navigate('/', { replace: true }), 0);
       return () => clearTimeout(t);
     }
-  }, [item, itemId, navigate]);
+  }, [items, item, itemId, navigate]);
 
   if (!form) return null;
 
