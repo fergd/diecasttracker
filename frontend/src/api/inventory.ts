@@ -382,6 +382,24 @@ export async function confirmMatch(
   };
 }
 
+/** Splits `quantity` units off into a new row (staged for eBay listing),
+ * reducing the original's quantity by the same amount - for staging only
+ * some of a multi-quantity item while the rest stays in the collection.
+ * Returns both the shrunk original and the newly-created staged item. */
+export async function splitItem(
+  id: number,
+  quantity: number,
+): Promise<{ original: InventoryItem; split: InventoryItem }> {
+  const result = await unwrap<{ original: InventoryRow; split: InventoryRow }>(
+    await fetch(`${API_BASE}/inventory/${id}/split`, {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ quantity }),
+    }),
+  );
+  return { original: fromRow(result.original), split: fromRow(result.split) };
+}
+
 export async function refreshPrice(id: number): Promise<InventoryItem> {
   const row = await unwrap<InventoryRow>(
     await fetch(`${API_BASE}/inventory/${id}/refresh_price`, { method: 'POST' }),

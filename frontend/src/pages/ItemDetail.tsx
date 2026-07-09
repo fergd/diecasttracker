@@ -16,6 +16,7 @@ import {
   rematchItem,
   confirmMatch,
   refreshPrice,
+  splitItem,
   deleteItem,
   attachPhoto,
   deletePhoto,
@@ -106,7 +107,7 @@ export function ItemDetail() {
   const { id } = useParams();
   const itemId = Number(id);
   const navigate = useNavigate();
-  const { items, getItem, updateItemLocal, removeItemLocal } = useInventory();
+  const { items, getItem, addItem, updateItemLocal, removeItemLocal } = useInventory();
   const item = getItem(itemId);
 
   const [form, setForm] = useState<InventoryItem | null>(item ?? null);
@@ -114,6 +115,7 @@ export function ItemDetail() {
   const [rematching, setRematching] = useState(false);
   const [refreshingPrice, setRefreshingPrice] = useState(false);
   const [togglingStaged, setTogglingStaged] = useState(false);
+  const [stageQtyPromptOpen, setStageQtyPromptOpen] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [lightbox, setLightbox] = useState<string | null>(null);
   const [toast, setToast] = useState<{ message: string; variant: 'success' | 'error' } | null>(null);
@@ -285,6 +287,19 @@ export function ItemDetail() {
     }
   }
 
+  /** Tapping the tag: turning off, or staging a single-quantity item, applies
+   * immediately. Turning on an item you own multiple of asks how many of the
+   * total are actually being listed first - selling 1 of 3 shouldn't stage
+   * (and later export) all 3. */
+  function handleStagedTagClick() {
+    if (!form) return;
+    if (!form.stagedForListing && form.quantity > 1) {
+      setStageQtyPromptOpen(true);
+      return;
+    }
+    handleToggleStaged();
+  }
+
   async function handleToggleStaged() {
     if (!form) return;
     const next = !form.stagedForListing;
@@ -294,6 +309,31 @@ export function ItemDetail() {
       updateItemLocal(updated);
       setForm(updated);
       showToast(next ? 'Marked for eBay listing' : 'Removed from eBay listing', 'success');
+    } catch (err) {
+      showError(err);
+    } finally {
+      setTogglingStaged(false);
+    }
+  }
+
+  /** Staging fewer than the full quantity splits the item: the original row
+   * shrinks and stays in the collection, a new row (staged) carries the
+   * listed portion - status/staged_for_listing are per-row, so this is the
+   * only way to represent "some in collection, some going up for sale". */
+  async function handleStageQuantity(n: number) {
+    if (!form) return;
+    setStageQtyPromptOpen(false);
+    if (n >= form.quantity) {
+      await handleToggleStaged();
+      return;
+    }
+    setTogglingStaged(true);
+    try {
+      const { original, split } = await splitItem(form.id, n);
+      updateItemLocal(original);
+      addItem(split);
+      showToast(`Staged ${n} for eBay listing - ${original.quantity} left in your collection`, 'success');
+      navigate(`/item/${split.id}`);
     } catch (err) {
       showError(err);
     } finally {
@@ -637,7 +677,7 @@ export function ItemDetail() {
           </TabBar>
         </div>
         <div className={styles.field}>
-          <Tag selected={form.stagedForListing} onClick={handleToggleStaged} disabled={togglingStaged}>
+          <Tag selected={form.stagedForListing} onClick={handleStagedTagClick} disabled={togglingStaged}>
             {togglingStaged
               ? 'Updating…'
               : form.stagedForListing
@@ -710,6 +750,17 @@ export function ItemDetail() {
           Delete
         </Button>
       </div>
+
+      <Sheet open={stageQtyPromptOpen} onClose={() => setStageQtyPromptOpen(false)}>
+        <h2 className={styles.cardTitle}>How many of your {form.quantity} are you listing?</h2>
+        <div className={styles.gradeRow}>
+          {Array.from({ length: form.quantity }, (_, i) => i + 1).map((n) => (
+            <Tag key={n} onClick={() => handleStageQuantity(n)}>
+              {n === form.quantity ? `All ${n}` : n}
+            </Tag>
+          ))}
+        </div>
+      </Sheet>
 
       <Sheet open={!!lightbox} onClose={() => setLightbox(null)}>
         {lightbox && <img src={lightbox} alt="" className={styles.lightboxImg} />}

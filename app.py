@@ -503,6 +503,53 @@ def update_item(item_id: int, update: InventoryUpdate):
     return dict(row)
 
 
+class SplitRequest(BaseModel):
+    quantity: int  # how many units to split off into a new row
+
+
+@app.post("/inventory/{item_id}/split")
+def split_item(item_id: int, body: SplitRequest):
+    """
+    Splits `quantity` units off an item into a brand-new row (identical
+    fields, staged_for_listing=1), and reduces the original row's quantity
+    by the same amount. status/staged_for_listing are per-row - "stage 1 of
+    my 3 for eBay, keep the other 2 in my collection" can't be represented
+    on a single row, so this is how partial-quantity staging actually works.
+    """
+    if body.quantity < 1:
+        raise HTTPException(status_code=400, detail="quantity must be at least 1")
+
+    conn = get_conn()
+    row = conn.execute("SELECT * FROM inventory WHERE id = ?", (item_id,)).fetchone()
+    if row is None:
+        conn.close()
+        raise HTTPException(status_code=404, detail=f"No inventory item with id {item_id}")
+    if body.quantity >= row["quantity"]:
+        conn.close()
+        raise HTTPException(
+            status_code=400,
+            detail=f"quantity ({body.quantity}) must be less than the item's current quantity ({row['quantity']}) to split - stage the whole item instead if you're listing all of it.",
+        )
+
+    remaining = row["quantity"] - body.quantity
+    conn.execute("UPDATE inventory SET quantity = ? WHERE id = ?", (remaining, item_id))
+
+    cols = list(INVENTORY_COLUMNS.keys())
+    values = [row[c] for c in cols]
+    values[cols.index("quantity")] = body.quantity
+    values[cols.index("staged_for_listing")] = 1
+    values[cols.index("status")] = "in_collection"  # not listed until the CSV is actually exported
+    placeholders = ", ".join("?" for _ in cols)
+    cur = conn.execute(f"INSERT INTO inventory ({', '.join(cols)}) VALUES ({placeholders})", values)
+    new_id = cur.lastrowid
+    conn.commit()
+
+    original = conn.execute("SELECT * FROM inventory WHERE id = ?", (item_id,)).fetchone()
+    split = conn.execute("SELECT * FROM inventory WHERE id = ?", (new_id,)).fetchone()
+    conn.close()
+    return {"original": dict(original), "split": dict(split)}
+
+
 @app.post("/inventory/{item_id}/refresh_price")
 def refresh_price(item_id: int):
     """
