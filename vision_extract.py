@@ -15,8 +15,13 @@ import os
 
 import anthropic
 
-MODEL = "claude-sonnet-5"  # bumped up from Haiku 4.5 for extraction accuracy - still
-                            # a fraction of a cent per scan, negligible for personal use
+MODEL = "claude-haiku-4-5-20251001"  # Sonnet 5 costs several times more per scan than
+                            # this - ~2x the per-token price, ~30% more tokens for the
+                            # same content (newer tokenizer), plus it spends extra output
+                            # tokens on unrequested reasoning. The accuracy problems that
+                            # motivated the Sonnet bump were mostly fixed by the prompt
+                            # rewrites below (denominator-size heuristic, hang-tab SKU
+                            # location, wave-vs-series disambiguation), which apply here too.
 
 CARDED_PROMPT = """You are looking at photo(s) of a carded (packaged) Hot Wheels or \
 Matchbox diecast car. Read the text printed on the card and extract the following \
@@ -267,10 +272,11 @@ def extract_card_details(image_path: str, packaging_type: str = "carded",
     try:
         response = client.messages.create(
             model=MODEL,
-            max_tokens=2000,  # bumped from 500 - the extraction schema has grown
-                               # (wheel_type, body_base_construction, special_flags,
-                               # series_number, etc) and Sonnet can emit a thinking
-                               # block that eats into the same budget as the JSON
+            max_tokens=700,  # comfortable headroom for the current extraction schema's
+                               # JSON output (wheel_type, body_base_construction,
+                               # special_flags, series_number, etc all added since the
+                               # original 500) without leaving room for the runaway
+                               # thinking-token waste Sonnet was prone to
             messages=[{"role": "user", "content": content}],
         )
     except anthropic.APIStatusError as e:
