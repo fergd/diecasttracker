@@ -113,6 +113,7 @@ export function ItemDetail() {
   const [saving, setSaving] = useState(false);
   const [rematching, setRematching] = useState(false);
   const [refreshingPrice, setRefreshingPrice] = useState(false);
+  const [togglingStaged, setTogglingStaged] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [lightbox, setLightbox] = useState<string | null>(null);
   const [toast, setToast] = useState<{ message: string; variant: 'success' | 'error' } | null>(null);
@@ -187,7 +188,6 @@ export function ItemDetail() {
           special_flags: form.specialFlags,
           comments: form.comments,
           status: form.trackingStatus,
-          staged_for_listing: form.stagedForListing,
           quantity,
           condition: form.condition,
           condition_car_grade: form.conditionCarGrade,
@@ -278,6 +278,22 @@ export function ItemDetail() {
       showError(err);
     } finally {
       setRefreshingPrice(false);
+    }
+  }
+
+  async function handleToggleStaged() {
+    if (!form) return;
+    const next = !form.stagedForListing;
+    setTogglingStaged(true);
+    try {
+      const updated = await updateItem(form.id, { staged_for_listing: next });
+      updateItemLocal(updated);
+      setForm(updated);
+      showToast(next ? 'Marked for eBay listing' : 'Removed from eBay listing', 'success');
+    } catch (err) {
+      showError(err);
+    } finally {
+      setTogglingStaged(false);
     }
   }
 
@@ -617,8 +633,12 @@ export function ItemDetail() {
           </TabBar>
         </div>
         <div className={styles.field}>
-          <Tag selected={form.stagedForListing} onClick={() => set('stagedForListing', !form.stagedForListing)}>
-            {form.stagedForListing ? 'Staged for eBay listing' : 'Mark for eBay listing'}
+          <Tag selected={form.stagedForListing} onClick={handleToggleStaged} disabled={togglingStaged}>
+            {togglingStaged
+              ? 'Updating…'
+              : form.stagedForListing
+                ? 'Staged for eBay listing'
+                : 'Mark for eBay listing'}
           </Tag>
         </div>
         {form.packagingType === 'carded' && (
