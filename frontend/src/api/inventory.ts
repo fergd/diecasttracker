@@ -126,7 +126,8 @@ const TRACKING_LABELS: Record<TrackingStatus, string> = {
 };
 
 export function matchLabel(item: Pick<InventoryItem, 'matchStatus' | 'matchConfidence'>): string {
-  return `${MATCH_LABELS[item.matchStatus]} ${Math.round(item.matchConfidence * 100)}%`;
+  const label = MATCH_LABELS[item.matchStatus] ?? MATCH_LABELS.no_match;
+  return `${label} ${Math.round((item.matchConfidence ?? 0) * 100)}%`;
 }
 
 export function matchBadgeVariant(status: MatchStatus): 'success' | 'warning' | 'error' {
@@ -165,7 +166,7 @@ export function fromRow(row: InventoryRow): InventoryItem {
     bodyBaseConstruction: row.body_base_construction,
     specialFlags: row.special_flags ? JSON.parse(row.special_flags) : [],
     comments: row.comments,
-    matchStatus: row.match_status,
+    matchStatus: row.match_status ?? 'no_match',
     matchConfidence: row.match_confidence ?? 0,
     matchNotes: row.match_notes,
     guidePrice: row.guide_price_usd,
@@ -257,7 +258,7 @@ export function fromScanResponse(data: ScanResponse): InventoryItem {
     bodyBaseConstruction: e.body_base_construction ?? null,
     specialFlags: e.special_flags ?? [],
     comments: null,
-    matchStatus: v.status,
+    matchStatus: v.status ?? 'no_match',
     matchConfidence: v.confidence ?? 0,
     matchNotes: v.notes,
     guidePrice: v.guide_price_usd,

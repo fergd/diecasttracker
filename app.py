@@ -145,6 +145,17 @@ def _save_upload(upload: UploadFile) -> str:
     return str(saved_path)
 
 
+def _duplicate_photo(path: str | None) -> str | None:
+    """Physical copy, not a shared reference - photo delete/replace unlink
+    the file on disk, so two rows pointing at the same path would silently
+    break each other's photo the moment either one touches it."""
+    if not path or not Path(path).exists():
+        return path
+    new_path = PHOTO_DIR / f"{uuid.uuid4().hex}{Path(path).suffix}"
+    shutil.copyfile(path, new_path)
+    return str(new_path)
+
+
 @app.get("/")
 def index():
     return FileResponse("frontend/dist/index.html")
@@ -539,6 +550,11 @@ def split_item(item_id: int, body: SplitRequest):
     values[cols.index("quantity")] = body.quantity
     values[cols.index("staged_for_listing")] = 1
     values[cols.index("status")] = "in_collection"  # not listed until the CSV is actually exported
+    # Physical copies, not shared references - otherwise deleting or
+    # replacing a photo on either row would unlink the file the other row
+    # still points to.
+    values[cols.index("photo_path")] = _duplicate_photo(row["photo_path"])
+    values[cols.index("base_photo_path")] = _duplicate_photo(row["base_photo_path"])
     placeholders = ", ".join("?" for _ in cols)
     cur = conn.execute(f"INSERT INTO inventory ({', '.join(cols)}) VALUES ({placeholders})", values)
     new_id = cur.lastrowid

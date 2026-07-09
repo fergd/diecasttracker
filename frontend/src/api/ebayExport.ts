@@ -49,12 +49,19 @@ function conditionFor(item: InventoryItem): string {
   return item.packagingType === 'carded' ? 'NEW' : 'USED';
 }
 
+function escapeHtml(text: string): string {
+  return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
 /** Turns our plain-text description (blank-line-separated paragraphs) into
- * simple HTML, matching the formatting eBay's own listing descriptions use. */
+ * simple HTML, matching the formatting eBay's own listing descriptions use.
+ * Escapes first, then inserts <br> tags - comments and condition notes are
+ * free text a user could type anything into, and a stray "<" or "&" would
+ * otherwise corrupt the surrounding HTML structure. */
 function descriptionHtml(item: InventoryItem): string {
   const paragraphs = generateListingDescription(item)
     .split('\n\n')
-    .map((p) => p.replace(/\n/g, '<br>'))
+    .map((p) => escapeHtml(p).replace(/\n/g, '<br>'))
     .filter(Boolean);
   return paragraphs.map((p) => `<p>${p}</p>`).join('');
 }
