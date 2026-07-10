@@ -18,6 +18,7 @@ needed.
 """
 
 import io
+import uuid
 
 import cloudinary
 import cloudinary.uploader
@@ -51,9 +52,15 @@ def resize_for_upload(raw_bytes: bytes) -> bytes:
 def upload_photo(raw_bytes: bytes) -> str:
     """Resizes then uploads to Cloudinary, returns the public_id (what gets
     stored in the DB - not the full URL, so the delivery URL's transformation
-    params can change later without touching stored data)."""
+    params can change later without touching stored data). public_id is
+    generated explicitly rather than left to Cloudinary's default - raw byte
+    uploads carry no real filename, and Cloudinary was falling back to the
+    literal name "file" for all of them, so every upload silently overwrote
+    the last one at the same public_id."""
     resized = resize_for_upload(raw_bytes)
-    result = cloudinary.uploader.upload(resized, folder=FOLDER, resource_type="image")
+    result = cloudinary.uploader.upload(
+        resized, folder=FOLDER, resource_type="image", public_id=uuid.uuid4().hex
+    )
     return result["public_id"]
 
 
@@ -62,7 +69,9 @@ def duplicate_photo(public_id: str) -> str:
     for split, where the new row needs its own independent asset so deleting
     or replacing a photo on either row doesn't destroy the other's."""
     source_url = cloudinary.CloudinaryImage(public_id).build_url()
-    result = cloudinary.uploader.upload(source_url, folder=FOLDER, resource_type="image")
+    result = cloudinary.uploader.upload(
+        source_url, folder=FOLDER, resource_type="image", public_id=uuid.uuid4().hex
+    )
     return result["public_id"]
 
 
