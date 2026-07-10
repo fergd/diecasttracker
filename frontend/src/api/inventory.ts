@@ -8,8 +8,7 @@ export const API_BASE = 'https://backupbox.tailfb9f14.ts.net';
 // Not secret - the cloud name is a public account identifier baked into
 // every Cloudinary delivery URL, safe to ship in client code (only the API
 // key/secret, which never leave the backend, are sensitive).
-// TODO(fergus): fill in your actual Cloudinary cloud name.
-const CLOUDINARY_CLOUD_NAME = 'YOUR_CLOUD_NAME';
+const CLOUDINARY_CLOUD_NAME = 'fergd';
 
 export type MatchStatus = 'confirmed' | 'needs_review' | 'no_match';
 export type TrackingStatus = 'in_collection' | 'listed' | 'sold';
