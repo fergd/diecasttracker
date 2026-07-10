@@ -1,6 +1,7 @@
 import type { ReactNode } from 'react';
 import { Icon } from './Icon';
 import { Badge } from './Badge';
+import { useLongPress } from '../hooks/useLongPress';
 import styles from './ListItem.module.css';
 
 export interface ListItemProps {
@@ -13,6 +14,9 @@ export interface ListItemProps {
   matchVariant?: 'success' | 'warning' | 'error';
   showTreasureHunt?: boolean;
   onClick?: () => void;
+  /** Holding the row (touch or mouse) opens a quick-actions menu instead of
+   * navigating - suppresses the click that would otherwise follow. */
+  onLongPress?: () => void;
   trailing?: ReactNode;
   /** Batch-selection mode (e.g. bulk rematch) - shows a checkbox instead of
    * navigating on tap. `onClick` still fires and should toggle selection. */
@@ -33,12 +37,14 @@ export function ListItem({
   matchVariant = 'success',
   showTreasureHunt = false,
   onClick,
+  onLongPress,
   trailing,
   selectable = false,
   selected = false,
 }: ListItemProps) {
+  const pressHandlers = useLongPress(onLongPress, onClick);
   return (
-    <div className={styles.listItem} onClick={onClick} role={onClick ? 'button' : undefined}>
+    <div className={styles.listItem} {...pressHandlers} role={onClick ? 'button' : undefined}>
       {selectable && (
         <div className={[styles.checkbox, selected ? styles.checkboxChecked : ''].filter(Boolean).join(' ')}>
           {selected && <Icon name="tick02" size={14} />}

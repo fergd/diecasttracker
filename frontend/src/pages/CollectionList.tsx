@@ -69,6 +69,9 @@ export function CollectionList() {
   const [sortMenuOpen, setSortMenuOpen] = useState(false);
   const [exporting, setExporting] = useState(false);
   const [toast, setToast] = useState<{ message: string; variant: 'success' | 'error' } | null>(null);
+  const [actionItem, setActionItem] = useState<InventoryItem | null>(null);
+  const [actionStage, setActionStage] = useState<'menu' | 'status' | 'delete'>('menu');
+  const [itemActionBusy, setItemActionBusy] = useState(false);
 
   const stagedItems = useMemo(() => (items ?? []).filter((i) => i.stagedForListing), [items]);
 
@@ -190,6 +193,67 @@ export function CollectionList() {
       setBulkActionBusy(false);
       setSelectionMode(false);
       setSelectedIds(new Set());
+    }
+  }
+
+  function closeItemActions() {
+    setActionItem(null);
+    setActionStage('menu');
+  }
+
+  async function handleItemRematch() {
+    if (!actionItem) return;
+    setItemActionBusy(true);
+    try {
+      const updated = await rematchItem(actionItem.id);
+      updateItemLocal(updated);
+      closeItemActions();
+    } catch (err) {
+      setToast({ message: err instanceof Error ? err.message : String(err), variant: 'error' });
+    } finally {
+      setItemActionBusy(false);
+    }
+  }
+
+  async function handleItemSetStatus(status: TrackingStatus) {
+    if (!actionItem) return;
+    setItemActionBusy(true);
+    try {
+      const updated = await updateItem(actionItem.id, { status });
+      updateItemLocal(updated);
+      closeItemActions();
+    } catch (err) {
+      setToast({ message: err instanceof Error ? err.message : String(err), variant: 'error' });
+    } finally {
+      setItemActionBusy(false);
+    }
+  }
+
+  async function handleItemToggleStaged() {
+    if (!actionItem) return;
+    setItemActionBusy(true);
+    try {
+      const updated = await updateItem(actionItem.id, { staged_for_listing: !actionItem.stagedForListing });
+      updateItemLocal(updated);
+      closeItemActions();
+    } catch (err) {
+      setToast({ message: err instanceof Error ? err.message : String(err), variant: 'error' });
+    } finally {
+      setItemActionBusy(false);
+    }
+  }
+
+  async function handleItemDelete() {
+    if (!actionItem) return;
+    setItemActionBusy(true);
+    try {
+      await deleteItem(actionItem.id);
+      removeItemLocal(actionItem.id);
+      closeItemActions();
+    } catch (err) {
+      setToast({ message: err instanceof Error ? err.message : String(err), variant: 'error' });
+    } finally {
+      setItemActionBusy(false);
     }
   }
 
@@ -324,6 +388,7 @@ export function CollectionList() {
           <ListItem
             key={item.id}
             onClick={() => (selectionMode ? toggleSelected(item.id) : navigate(`/item/${item.id}`))}
+            onLongPress={selectionMode ? undefined : () => setActionItem(item)}
             selectable={selectionMode}
             selected={selectedIds.has(item.id)}
             photoUrl={item.photoUrl ?? undefined}
@@ -431,6 +496,52 @@ export function CollectionList() {
             Cancel
           </Button>
           <Button variant="destructive" onClick={handleBulkDelete}>
+            Delete
+          </Button>
+        </div>
+      </Sheet>
+
+      <Sheet open={!!actionItem && actionStage === 'menu'} onClose={closeItemActions}>
+        {actionItem && (
+          <>
+            <h2 className={styles.sheetTitle}>{actionItem.castingName || 'Unrecognized item'}</h2>
+            <button className={styles.sortOption} disabled={itemActionBusy} onClick={handleItemRematch}>
+              <span>Rematch</span>
+            </button>
+            <button className={styles.sortOption} disabled={itemActionBusy} onClick={() => setActionStage('status')}>
+              <span>Set status</span>
+            </button>
+            <button className={styles.sortOption} disabled={itemActionBusy} onClick={handleItemToggleStaged}>
+              <span>{actionItem.stagedForListing ? 'Remove from eBay listing' : 'Stage for eBay listing'}</span>
+            </button>
+            <button className={styles.sortOption} disabled={itemActionBusy} onClick={() => setActionStage('delete')}>
+              <span>Delete</span>
+            </button>
+          </>
+        )}
+      </Sheet>
+
+      <Sheet open={!!actionItem && actionStage === 'status'} onClose={closeItemActions}>
+        <h2 className={styles.sheetTitle}>Set status</h2>
+        <button className={styles.sortOption} onClick={() => handleItemSetStatus('in_collection')}>
+          <span>In collection</span>
+        </button>
+        <button className={styles.sortOption} onClick={() => handleItemSetStatus('listed')}>
+          <span>Listed</span>
+        </button>
+        <button className={styles.sortOption} onClick={() => handleItemSetStatus('sold')}>
+          <span>Sold</span>
+        </button>
+      </Sheet>
+
+      <Sheet open={!!actionItem && actionStage === 'delete'} onClose={closeItemActions}>
+        <h2 className={styles.sheetTitle}>Delete {actionItem?.castingName || 'this car'}?</h2>
+        <p className={styles.empty}>This can't be undone.</p>
+        <div className={styles.bulkDeleteActions}>
+          <Button variant="text" onClick={closeItemActions}>
+            Cancel
+          </Button>
+          <Button variant="destructive" onClick={handleItemDelete}>
             Delete
           </Button>
         </div>
