@@ -5,3 +5,5 @@ anthropic>=0.34
 rapidfuzz>=3.9
 beautifulsoup4>=4.12
 requests>=2.31
+Pillow>=10.3
+cloudinary>=1.40

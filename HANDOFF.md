@@ -82,8 +82,19 @@ Phone (Tailscale) -> https://backupbox.tailfb9f14.ts.net/ (tailscale serve)
   `/photos/<filename>`. As of 2026-07-05: 143 files, ~246MB. **No backup
   beyond whatever backupbox itself has** — single point of failure, worth
   addressing if this collection data matters long-term.
-- **`.env`** — `ANTHROPIC_API_KEY`, `EBAY_CLIENT_ID`, `EBAY_CLIENT_SECRET`.
-  Same directory, gitignored.
+- **`.env`** — `ANTHROPIC_API_KEY`, `EBAY_CLIENT_ID`, `EBAY_CLIENT_SECRET`,
+  `CLOUDINARY_URL`. Same directory, gitignored.
+- **Photo storage is migrating to Cloudinary** (as of 2026-07-10) - every
+  upload since is resized/recompressed locally (Pillow, ~1600px longest
+  edge) then pushed to Cloudinary instead of backupbox's local disk, mainly
+  to get publicly-reachable URLs (the eBay CSV export's photo column needs
+  this - backupbox is Tailscale-only) and to stop growing an unbacked-up
+  local directory. The 143 photos already on local disk as of 2026-07-05
+  were **not** migrated - they keep being served locally
+  (`photos/<uuid>.<ext>` paths still work via the `/photos` static mount);
+  only new uploads go to Cloudinary (`zamak_ledger/<id>` paths, no
+  extension). `frontend/src/api/inventory.ts`'s `photoUrl()` dispatches on
+  the path shape to build the right URL either way.
 - All four of the above are excluded from git (`.gitignore`: `*.db`,
   `photos/`, `.env`) and confirmed never committed in this repo's history on
   any branch, even though the repo itself is **public** on GitHub.

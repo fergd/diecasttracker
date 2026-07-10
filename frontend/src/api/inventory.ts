@@ -5,6 +5,12 @@
 
 export const API_BASE = 'https://backupbox.tailfb9f14.ts.net';
 
+// Not secret - the cloud name is a public account identifier baked into
+// every Cloudinary delivery URL, safe to ship in client code (only the API
+// key/secret, which never leave the backend, are sensitive).
+// TODO(fergus): fill in your actual Cloudinary cloud name.
+const CLOUDINARY_CLOUD_NAME = 'YOUR_CLOUD_NAME';
+
 export type MatchStatus = 'confirmed' | 'needs_review' | 'no_match';
 export type TrackingStatus = 'in_collection' | 'listed' | 'sold';
 export type PackagingType = 'carded' | 'loose';
@@ -140,8 +146,15 @@ export function trackingLabel(status: TrackingStatus): string {
   return TRACKING_LABELS[status];
 }
 
+// Legacy uploads live on backupbox's local disk as 'photos/<uuid>.<ext>' and
+// are still served that way (never migrated). Everything uploaded since the
+// Cloudinary switch is a public_id instead (folder-prefixed, no extension) -
+// build a delivery URL with on-the-fly optimization (auto format/quality,
+// capped width) rather than serving the stored original at full size.
 function photoUrl(path: string | null): string | null {
-  return path ? `${API_BASE}/${path}` : null;
+  if (!path) return null;
+  if (path.startsWith('photos/')) return `${API_BASE}/${path}`;
+  return `https://res.cloudinary.com/${CLOUDINARY_CLOUD_NAME}/image/upload/f_auto,q_auto,c_limit,w_1200/${path}`;
 }
 
 export function fromRow(row: InventoryRow): InventoryItem {

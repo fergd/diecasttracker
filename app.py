@@ -32,6 +32,7 @@ from pydantic import BaseModel
 from match import validate_extraction, reference_coverage
 from vision_extract import extract_card_details
 from live_pricing import get_live_price
+from cloudinary_upload import upload_photo, duplicate_photo, delete_photo_asset
 
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("diecast-inventory")
@@ -137,23 +138,33 @@ def get_conn():
     return conn
 
 
+def _is_legacy_local_path(path: str | None) -> bool:
+    """Old uploads live on local disk as 'photos/<uuid>.<ext>' and are still
+    served that way (StaticFiles mount below) - never migrated automatically.
+    Anything else is a Cloudinary public_id (folder-prefixed, no extension)."""
+    return bool(path) and path.startswith("photos/")
+
+
 def _save_upload(upload: UploadFile) -> str:
-    ext = Path(upload.filename).suffix or ".jpg"
-    saved_path = PHOTO_DIR / f"{uuid.uuid4().hex}{ext}"
-    with saved_path.open("wb") as f:
-        shutil.copyfileobj(upload.file, f)
-    return str(saved_path)
+    """All new uploads go to Cloudinary (resized/recompressed first - see
+    cloudinary_upload.py for why). Returns the public_id, not a local path."""
+    return upload_photo(upload.file.read())
 
 
 def _duplicate_photo(path: str | None) -> str | None:
-    """Physical copy, not a shared reference - photo delete/replace unlink
-    the file on disk, so two rows pointing at the same path would silently
-    break each other's photo the moment either one touches it."""
-    if not path or not Path(path).exists():
+    """Independent copy, not a shared reference - photo delete/replace
+    destroy the underlying asset (Cloudinary) or unlink the file (legacy
+    local), so two rows pointing at the same one would silently break each
+    other's photo the moment either gets touched."""
+    if not path:
         return path
-    new_path = PHOTO_DIR / f"{uuid.uuid4().hex}{Path(path).suffix}"
-    shutil.copyfile(path, new_path)
-    return str(new_path)
+    if _is_legacy_local_path(path):
+        if not Path(path).exists():
+            return path
+        new_path = PHOTO_DIR / f"{uuid.uuid4().hex}{Path(path).suffix}"
+        shutil.copyfile(path, new_path)
+        return str(new_path)
+    return duplicate_photo(path)
 
 
 @app.get("/")
@@ -691,6 +702,20 @@ def rematch(item_id: int):
 _PHOTO_SLOT_COLUMNS = {"main": "photo_path", "secondary": "base_photo_path"}
 
 
+def _delete_photo_path(path: str | None) -> None:
+    """Best-effort cleanup of whatever a photo column pointed to - a local
+    file for legacy rows, a Cloudinary asset for everything uploaded since."""
+    if not path:
+        return
+    try:
+        if _is_legacy_local_path(path):
+            Path(path).unlink(missing_ok=True)
+        else:
+            delete_photo_asset(path)
+    except Exception as e:
+        logger.warning(f"Could not delete photo {path}: {e}")
+
+
 @app.post("/inventory/{item_id}/photo")
 async def add_or_replace_photo(item_id: int, photo: UploadFile = File(...), slot: str = Form("secondary")):
     """Attach or replace a photo (main or secondary) on an already-saved
@@ -715,10 +740,7 @@ async def add_or_replace_photo(item_id: int, photo: UploadFile = File(...), slot
     conn.close()
 
     if old_path and old_path != saved_path:
-        try:
-            Path(old_path).unlink(missing_ok=True)
-        except OSError as e:
-            logger.warning(f"Could not delete replaced photo file {old_path}: {e}")
+        _delete_photo_path(old_path)
 
     return dict(row)
 
@@ -743,11 +765,7 @@ def delete_photo(item_id: int, slot: str = "secondary"):
     row = conn.execute("SELECT * FROM inventory WHERE id = ?", (item_id,)).fetchone()
     conn.close()
 
-    if old_path:
-        try:
-            Path(old_path).unlink(missing_ok=True)
-        except OSError as e:
-            logger.warning(f"Could not delete photo file {old_path}: {e}")
+    _delete_photo_path(old_path)
 
     return dict(row)
 
@@ -765,13 +783,9 @@ def delete_item(item_id: int):
     conn.commit()
     conn.close()
 
-    # Best-effort cleanup of the associated photo files - not fatal if this
-    # fails (e.g. already gone), the DB row is what actually matters.
-    for path in (row["photo_path"], row["base_photo_path"]):
-        if path:
-            try:
-                Path(path).unlink(missing_ok=True)
-            except OSError as e:
-                logger.warning(f"Could not delete photo file {path}: {e}")
+    # Best-effort cleanup of the associated photos - not fatal if this fails
+    # (e.g. already gone), the DB row is what actually matters.
+    _delete_photo_path(row["photo_path"])
+    _delete_photo_path(row["base_photo_path"])
 
     return {"ok": True, "deleted_id": item_id}
