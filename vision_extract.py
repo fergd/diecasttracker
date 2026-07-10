@@ -234,21 +234,21 @@ If a field isn't visible or legible, use null rather than guessing. Do not inven
 information you can't actually see."""
 
 
-def _load_image_block(image_path: str) -> dict:
-    with open(image_path, "rb") as f:
-        image_data = base64.standard_b64encode(f.read()).decode("utf-8")
-    media_type = "image/png" if image_path.lower().endswith(".png") else "image/jpeg"
+def _image_block(image_bytes: bytes, media_type: str = "image/jpeg") -> dict:
+    image_data = base64.standard_b64encode(image_bytes).decode("utf-8")
     return {
         "type": "image",
         "source": {"type": "base64", "media_type": media_type, "data": image_data},
     }
 
 
-def extract_card_details(image_path: str, packaging_type: str = "carded",
-                          base_image_path: str | None = None) -> dict:
+def extract_card_details(image_bytes: bytes, packaging_type: str = "carded",
+                          base_image_bytes: bytes | None = None,
+                          media_type: str = "image/jpeg",
+                          base_media_type: str = "image/jpeg") -> dict:
     """
     packaging_type: 'carded' or 'loose'. Determines which prompt/schema is used.
-    base_image_path: an optional second photo. For loose cars, the underside/base,
+    base_image_bytes: an optional second photo. For loose cars, the underside/base,
                       where casting name + copyright year are usually stamped -
                       strongly recommended; identification without it falls back to
                       visual-only guessing (see prompt). For carded cars, the BACK of
@@ -262,9 +262,9 @@ def extract_card_details(image_path: str, packaging_type: str = "carded",
     """
     client = anthropic.Anthropic(api_key=os.environ["ANTHROPIC_API_KEY"])
 
-    content = [_load_image_block(image_path)]
-    if base_image_path:
-        content.append(_load_image_block(base_image_path))
+    content = [_image_block(image_bytes, media_type)]
+    if base_image_bytes:
+        content.append(_image_block(base_image_bytes, base_media_type))
 
     prompt = LOOSE_PROMPT if packaging_type == "loose" else CARDED_PROMPT
     content.append({"type": "text", "text": prompt})

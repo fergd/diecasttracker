@@ -195,12 +195,19 @@ async def scan_card(
     if packaging_type not in ("carded", "loose"):
         packaging_type = "carded"
 
-    saved_path = _save_upload(photo)
-    base_saved_path = _save_upload(base_photo) if base_photo else None
+    photo_bytes = photo.file.read()
+    base_photo_bytes = base_photo.file.read() if base_photo else None
+
+    saved_path = upload_photo(photo_bytes)
+    base_saved_path = upload_photo(base_photo_bytes) if base_photo_bytes else None
 
     try:
-        extracted = extract_card_details(saved_path, packaging_type=packaging_type,
-                                          base_image_path=base_saved_path)
+        extracted = extract_card_details(
+            photo_bytes, packaging_type=packaging_type,
+            base_image_bytes=base_photo_bytes,
+            media_type=photo.content_type or "image/jpeg",
+            base_media_type=(base_photo.content_type if base_photo else None) or "image/jpeg",
+        )
     except RuntimeError as e:
         # Clean, expected failure (bad API key, no credits, connection issue) -
         # vision_extract.py already turned this into a readable message.
