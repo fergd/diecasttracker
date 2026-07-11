@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { Icon } from './Icon';
 import { Button } from './Button';
 import { Badge } from './Badge';
+import { Tag } from './Tag';
 import { Sheet } from './Sheet';
 import { CameraCapture, type CameraStep } from './CameraCapture';
 import { useInventory } from '../api/InventoryContext';
@@ -36,6 +37,7 @@ export function ScanFab({ packagingType }: ScanFabProps) {
   const [errorMsg, setErrorMsg] = useState('');
   const [scanResult, setScanResult] = useState<InventoryItem | null>(null);
   const [duplicateMatch, setDuplicateMatch] = useState<InventoryItem | null>(null);
+  const [stageForListing, setStageForListing] = useState(false);
 
   const pendingMainRef = useRef<Blob | File | null>(null);
   const fallbackFrontInput = useRef<HTMLInputElement>(null);
@@ -104,6 +106,7 @@ export function ScanFab({ packagingType }: ScanFabProps) {
     setView('idle');
     setScanResult(null);
     setDuplicateMatch(null);
+    setStageForListing(false);
     setErrorMsg('');
     if (fallbackFrontInput.current) fallbackFrontInput.current.value = '';
     if (fallbackBackInput.current) fallbackBackInput.current.value = '';
@@ -127,8 +130,19 @@ export function ScanFab({ packagingType }: ScanFabProps) {
     resetToIdle();
   }
 
-  function handleAdd() {
-    if (scanResult) addItem(scanResult);
+  async function handleAdd() {
+    if (scanResult) {
+      if (stageForListing) {
+        try {
+          const updated = await updateItem(scanResult.id, { staged_for_listing: true });
+          addItem(updated);
+        } catch {
+          addItem(scanResult);
+        }
+      } else {
+        addItem(scanResult);
+      }
+    }
     resetToIdle();
   }
 
@@ -240,6 +254,11 @@ export function ScanFab({ packagingType }: ScanFabProps) {
             {scanResult.price != null && (
               <p className={styles.sheetText}>Recommended: ${scanResult.price.toFixed(2)}</p>
             )}
+            <div className={styles.matchRow}>
+              <Tag selected={stageForListing} onClick={() => setStageForListing((v) => !v)}>
+                Stage for eBay listing
+              </Tag>
+            </div>
             <div className={styles.sheetActions}>
               <Button variant="text" onClick={handleReject}>
                 Reject
