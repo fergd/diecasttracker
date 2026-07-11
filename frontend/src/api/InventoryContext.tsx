@@ -9,6 +9,8 @@ interface InventoryContextValue {
   updateItemLocal: (item: InventoryItem) => void;
   removeItemLocal: (id: number) => void;
   getItem: (id: number) => InventoryItem | undefined;
+  searchQuery: string;
+  setSearchQuery: (query: string) => void;
 }
 
 const InventoryContext = createContext<InventoryContextValue | null>(null);
@@ -19,6 +21,10 @@ const InventoryContext = createContext<InventoryContextValue | null>(null);
 export function InventoryProvider({ children }: { children: ReactNode }) {
   const [items, setItems] = useState<InventoryItem[] | null>(null);
   const [error, setError] = useState<string | null>(null);
+  // Lives here rather than as local state in CollectionList so it survives
+  // navigating into an item and back - the list page unmounts on that
+  // transition, which would otherwise reset a plain useState to ''.
+  const [searchQuery, setSearchQuery] = useState('');
 
   const refresh = useCallback(async () => {
     try {
@@ -50,7 +56,17 @@ export function InventoryProvider({ children }: { children: ReactNode }) {
 
   return (
     <InventoryContext.Provider
-      value={{ items, error, refresh, addItem, updateItemLocal, removeItemLocal, getItem }}
+      value={{
+        items,
+        error,
+        refresh,
+        addItem,
+        updateItemLocal,
+        removeItemLocal,
+        getItem,
+        searchQuery,
+        setSearchQuery,
+      }}
     >
       {children}
     </InventoryContext.Provider>

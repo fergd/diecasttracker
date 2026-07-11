@@ -52,10 +52,9 @@ function money(n: number): string {
 }
 
 export function CollectionList() {
-  const { items, error, updateItemLocal, removeItemLocal } = useInventory();
+  const { items, error, updateItemLocal, removeItemLocal, searchQuery, setSearchQuery } = useInventory();
   const navigate = useNavigate();
   const [packagingType, setPackagingType] = useState<'carded' | 'loose'>('carded');
-  const [searchQuery, setSearchQuery] = useState('');
   const [matchFilter, setMatchFilter] = useState<string | null>(null);
   const [statusFilter, setStatusFilter] = useState<string | null>(null);
   const [selectionMode, setSelectionMode] = useState(false);
