@@ -210,27 +210,11 @@ export function ItemDetail() {
       return;
     }
 
-    // The save itself succeeded - reflect that immediately, regardless of
-    // what happens next. A rematch failure below must never make a
-    // successful save look like it failed.
     updateItemLocal(saved);
     setForm(saved);
     setQuantityText(String(saved.quantity));
     setSaving(false);
     showToast('Saved', 'success');
-
-    // Best-effort follow-up: editing identity fields (casting name, series,
-    // year, etc) can make the previously-computed match status/notes stale -
-    // re-run matching against the corrected data. No-ops server-side if
-    // already manually confirmed. Silently skipped on failure (network blip,
-    // etc) since the save above already succeeded and is already reflected.
-    try {
-      const rematched = await rematchItem(form.id);
-      updateItemLocal(rematched);
-      setForm(rematched);
-    } catch {
-      /* non-fatal - save already succeeded */
-    }
   }
 
   async function handleRematch() {
