@@ -41,38 +41,83 @@ export function generateListingTitle(item: InventoryItem): string {
   return title;
 }
 
-/** Full listing description: identity, variation details, and condition in
- * collector C-scale terms - signals hobby knowledge, builds buyer trust. */
-export function generateListingDescription(item: InventoryItem): string {
-  const lines: string[] = [];
+/** Possessive form of a brand name for the intro sentence, e.g. "Hot Wheels'"
+ * (already ends in s, so no extra "s") vs "Matchbox's". */
+function possessive(brand: string): string {
+  return /s$/i.test(brand) ? `${brand}'` : `${brand}'s`;
+}
 
-  const identityHeader = [item.year, item.brand, item.series, item.seriesNumber].filter(Boolean).join(' ');
-  lines.push(`${identityHeader ? identityHeader + ' — ' : ''}${item.castingName ?? 'Unidentified casting'}`.trim());
+/** Strips a trailing parenthetical code (e.g. "10-spoke (10SP)" -> "10-spoke")
+ * for use in prose - the Details list below shows the fuller raw value. */
+function wheelPhrase(wheelType: string): string {
+  const stripped = wheelType.replace(/\s*\([^)]*\)\s*$/, '').trim();
+  return /wheels?$/i.test(stripped) ? stripped : `${stripped} wheels`;
+}
 
-  const details: string[] = [];
-  if (item.collectorNumber) details.push(`Collector #${item.collectorNumber}`);
-  if (item.carMake) details.push(item.carMake);
-  if (item.color) details.push(item.color);
-  if (item.treasureHunt) details.push(item.treasureHunt);
-  if (item.baseCountry) details.push(`${item.baseCountry} base`);
-  if (item.wheelType) details.push(`${item.wheelType} wheels`);
-  if (item.bodyBaseConstruction) details.push(item.bodyBaseConstruction);
-  if (item.specialFlags.length) details.push(...item.specialFlags);
-  if (details.length) lines.push(details.join(' · '));
+/** "The {casting} from {brand}' {year} {series} series, {specialSeries}
+ * sub-series, Collector #{n}. {color} body, {wheels} wheels." - degrades
+ * gracefully by dropping whichever pieces are missing. */
+function introSentence(item: InventoryItem): string {
+  const casting = item.castingName ?? 'This diecast';
+  const brand = item.brand ? ` from ${possessive(item.brand)}` : '';
+  const seriesBits = [item.year, item.series ? `${item.series} series` : ''].filter(Boolean).join(' ');
+  const subSeries = item.specialSeries ? `, ${item.specialSeries} sub-series` : '';
+  const collector = item.collectorNumber ? `, Collector #${item.collectorNumber}` : '';
+  const sentence1 = `The ${casting}${brand}${seriesBits ? ' ' + seriesBits : ''}${subSeries}${collector}.`.replace(
+    /\s+/g,
+    ' ',
+  );
 
-  const conditionLines: string[] = [];
+  const bodyBits = [item.color ? `${item.color} body` : '', item.wheelType ? wheelPhrase(item.wheelType) : '']
+    .filter(Boolean)
+    .join(', ');
+  const sentence2 = bodyBits ? `${bodyBits}.` : '';
+
+  return [sentence1, sentence2].filter(Boolean).join(' ');
+}
+
+function conditionParagraph(item: InventoryItem): string {
+  const grades: string[] = [];
   if (item.packagingType === 'carded') {
     if (item.conditionCardGrade) {
-      conditionLines.push(`Card/bubble condition: ${item.conditionCardGrade} (${CONDITION_GRADE_LABELS[item.conditionCardGrade]})`);
+      grades.push(`Card/bubble: ${item.conditionCardGrade} (${CONDITION_GRADE_LABELS[item.conditionCardGrade]})`);
     }
     if (item.conditionCarGrade) {
-      conditionLines.push(`Car condition: ${item.conditionCarGrade} (${CONDITION_GRADE_LABELS[item.conditionCarGrade]})`);
+      grades.push(`Car: ${item.conditionCarGrade} (${CONDITION_GRADE_LABELS[item.conditionCarGrade]})`);
     }
   } else if (item.conditionCarGrade) {
-    conditionLines.push(`Condition: ${item.conditionCarGrade} (${CONDITION_GRADE_LABELS[item.conditionCarGrade]})`);
+    grades.push(`${item.conditionCarGrade} (${CONDITION_GRADE_LABELS[item.conditionCarGrade]})`);
   }
-  if (item.condition) conditionLines.push(item.condition);
-  if (conditionLines.length) lines.push(conditionLines.join('\n'));
+  const base = item.packagingType === 'carded' ? 'New, unopened box/blister' : 'Used';
+  const gradeText = grades.length ? `, ${grades.join(', ')}` : '';
+  const photoNote = item.packagingType === 'carded' ? 'See photos for exact card condition.' : 'See photos for exact condition.';
+  const note = item.condition ? ` ${item.condition}` : '';
+  return `Condition: ${base}${gradeText}. ${photoNote}${note}`;
+}
 
-  return lines.join('\n\n');
+/** Full listing description: an intro sentence, a bulleted Details list,
+ * condition (C-scale grade appended when graded), and a fixed shipping/
+ * sign-off blurb. */
+export function generateListingDescription(item: InventoryItem): string {
+  const details: string[] = [`Vehicle: ${item.castingName ?? 'Unidentified casting'}`];
+  const series = [item.series, item.specialSeries].filter(Boolean).join(', ');
+  if (series) details.push(`Series: ${series}`);
+  if (item.collectorNumber) details.push(`Collector #: ${item.collectorNumber}`);
+  if (item.year) details.push(`Year: ${item.year}`);
+  details.push('Scale: 1:64');
+  if (item.color) details.push(`Color: ${item.color}`);
+  if (item.wheelType) details.push(`Wheels: ${item.wheelType}`);
+  if (item.sku) details.push(`Toy # ${item.sku}`);
+  if (item.treasureHunt) details.push(item.treasureHunt);
+  if (item.baseCountry) details.push(`Base: ${item.baseCountry}`);
+  if (item.bodyBaseConstruction) details.push(item.bodyBaseConstruction);
+  if (item.specialFlags.length) details.push(...item.specialFlags);
+
+  return [
+    introSentence(item),
+    ['Details:', '', ...details.map((d) => `• ${d}`)].join('\n'),
+    conditionParagraph(item),
+    'Shipping: Ships fast in a protective box with tracking.',
+    'From a smoke-free, pet-free home. Thanks for looking!',
+  ].join('\n\n');
 }
