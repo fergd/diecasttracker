@@ -181,6 +181,31 @@ export function CollectionList() {
     }
   }
 
+  async function handleBulkCombineIntoLot() {
+    const lotId = `lot-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`;
+    const count = selectedIds.size;
+    setBulkActionBusy(true);
+    try {
+      const results = await Promise.allSettled(
+        [...selectedIds].map((id) => updateItem(id, { lot_id: lotId, staged_for_listing: true })),
+      );
+      let failures = 0;
+      results.forEach((r) => {
+        if (r.status === 'fulfilled') updateItemLocal(r.value);
+        else failures += 1;
+      });
+      setToast(
+        failures > 0
+          ? { message: `Combined, but ${failures} car${failures === 1 ? '' : 's'} failed`, variant: 'error' }
+          : { message: `Combined ${count} cars into one eBay listing`, variant: 'success' },
+      );
+    } finally {
+      setBulkActionBusy(false);
+      setSelectionMode(false);
+      setSelectedIds(new Set());
+    }
+  }
+
   async function handleBulkDelete() {
     setConfirmBulkDelete(false);
     setBulkActionBusy(true);
@@ -234,6 +259,20 @@ export function CollectionList() {
     setItemActionBusy(true);
     try {
       const updated = await updateItem(actionItem.id, { staged_for_listing: !actionItem.stagedForListing });
+      updateItemLocal(updated);
+      closeItemActions();
+    } catch (err) {
+      setToast({ message: err instanceof Error ? err.message : String(err), variant: 'error' });
+    } finally {
+      setItemActionBusy(false);
+    }
+  }
+
+  async function handleItemRemoveFromLot() {
+    if (!actionItem) return;
+    setItemActionBusy(true);
+    try {
+      const updated = await updateItem(actionItem.id, { lot_id: null });
       updateItemLocal(updated);
       closeItemActions();
     } catch (err) {
@@ -397,6 +436,7 @@ export function CollectionList() {
             matchLabel={matchLabel(item)}
             matchVariant={matchBadgeVariant(item.matchStatus)}
             showTreasureHunt={!!item.treasureHunt}
+            showLot={!!item.lotId}
             price={item.price != null ? money(item.price) : undefined}
             statusLabel={trackingLabel(item.trackingStatus)}
           />
@@ -438,6 +478,14 @@ export function CollectionList() {
             aria-label="Listing options for selected"
           >
             <Icon name="bookmark01" size={18} />
+          </button>
+          <button
+            className={styles.selectionIconButton}
+            disabled={selectedIds.size < 2 || bulkActionBusy}
+            onClick={handleBulkCombineIntoLot}
+            aria-label="Combine selected into one eBay listing"
+          >
+            <Icon name="package01" size={18} />
           </button>
           <button
             className={styles.selectionIconButton}
@@ -506,6 +554,11 @@ export function CollectionList() {
             <button className={styles.sortOption} disabled={itemActionBusy} onClick={handleItemToggleStaged}>
               <span>{actionItem.stagedForListing ? 'Remove from eBay listing' : 'Stage for eBay listing'}</span>
             </button>
+            {actionItem.lotId && (
+              <button className={styles.sortOption} disabled={itemActionBusy} onClick={handleItemRemoveFromLot}>
+                <span>Remove from lot</span>
+              </button>
+            )}
             <button className={styles.sortOption} disabled={itemActionBusy} onClick={() => setActionStage('delete')}>
               <span>Delete</span>
             </button>

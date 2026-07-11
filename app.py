@@ -103,6 +103,7 @@ INVENTORY_COLUMNS = {
     "listing_price_usd": "REAL",
     "sold_price_usd": "REAL",
     "quantity": "INTEGER DEFAULT 1",
+    "lot_id": "TEXT",
 }
 
 
@@ -495,6 +496,7 @@ class InventoryUpdate(BaseModel):
     listing_price_usd: Optional[float] = None
     sold_price_usd: Optional[float] = None
     quantity: Optional[int] = None
+    lot_id: Optional[str] = None   # groups rows into one combined eBay listing; null = sells alone
 
 
 @app.put("/inventory/{item_id}")

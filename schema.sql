@@ -152,6 +152,11 @@ CREATE TABLE IF NOT EXISTS inventory (
                                                  -- casting+colorway+packaging you own -
                                                  -- duplicate scans offer to bump this
                                                  -- instead of creating a second row
+    lot_id                TEXT,               -- shared, app-generated ID linking rows that
+                                                 -- should sell together as ONE eBay listing
+                                                 -- (a "lot of 5 cars" draft), instead of each
+                                                 -- getting its own listing - NULL means "sells
+                                                 -- on its own", same as always
     created_at            TEXT DEFAULT CURRENT_TIMESTAMP,
 
     FOREIGN KEY (match_reference_id) REFERENCES reference_castings(id)

@@ -13,6 +13,8 @@ export interface ListItemProps {
   matchLabel?: string;
   matchVariant?: 'success' | 'warning' | 'error';
   showTreasureHunt?: boolean;
+  /** Part of a combined eBay lot listing (shares a lot_id with other rows). */
+  showLot?: boolean;
   onClick?: () => void;
   /** Holding the row (touch or mouse) opens a quick-actions menu instead of
    * navigating - suppresses the click that would otherwise follow. */
@@ -36,6 +38,7 @@ export function ListItem({
   matchLabel,
   matchVariant = 'success',
   showTreasureHunt = false,
+  showLot = false,
   onClick,
   onLongPress,
   trailing,
@@ -63,10 +66,11 @@ export function ListItem({
       <div className={styles.content}>
         <div className={styles.title}>{title}</div>
         <div className={styles.meta}>{meta}</div>
-        {(matchLabel || showTreasureHunt) && (
+        {(matchLabel || showTreasureHunt || showLot) && (
           <div className={styles.badges}>
             {matchLabel && <Badge variant={matchVariant}>{matchLabel}</Badge>}
             {showTreasureHunt && <Badge variant="warning">TH</Badge>}
+            {showLot && <Badge variant="info">Lot</Badge>}
           </div>
         )}
       </div>

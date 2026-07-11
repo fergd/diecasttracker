@@ -41,6 +41,56 @@ export function generateListingTitle(item: InventoryItem): string {
   return title;
 }
 
+/** Title for a combined lot listing, e.g. "Lot of 5 Hot Wheels Cars — McLaren
+ * P1, Mazda RX-7, ...". Falls back to a plain scale/count title when the
+ * casting names alone would blow the 80-char limit. */
+export function generateLotTitle(items: InventoryItem[]): string {
+  const brand = items[0]?.brand ?? 'Hot Wheels';
+  const sameBrand = items.every((i) => (i.brand ?? 'Hot Wheels') === brand);
+  const brandPart = sameBrand ? brand : 'Diecast';
+  const castings = items.map((i) => i.castingName).filter((c): c is string => !!c);
+
+  let title = `Lot of ${items.length} ${brandPart} Cars — ${castings.join(', ')}`.replace(/\s+/g, ' ').trim();
+  if (title.length > EBAY_TITLE_MAX) title = `Lot of ${items.length} ${brandPart} Diecast Cars, 1:64 Scale`;
+  if (title.length > EBAY_TITLE_MAX) title = title.slice(0, EBAY_TITLE_MAX).trim();
+  return title;
+}
+
+/** One line per car for a lot description - the full per-item description
+ * (intro sentence + Details list + condition) is too much repeated per car
+ * across a whole lot, so this condenses each down to its key identifiers. */
+function lotConditionSummary(items: InventoryItem[]): string {
+  const allCarded = items.every((i) => i.packagingType === 'carded');
+  const allLoose = items.every((i) => i.packagingType === 'loose');
+  if (allCarded) return 'Condition: All new, unopened box/blister. See photos for exact condition of each car.';
+  if (allLoose) return 'Condition: All loose. See photos for exact condition of each car.';
+  return 'Condition: Mixed - some new/carded, some loose. See photos for exact condition of each car.';
+}
+
+/** Combined description for a lot listing: one line per car, then a shared
+ * condition/shipping/sign-off block matching the single-item format. */
+export function generateLotDescription(items: InventoryItem[]): string {
+  const lines = items.map((item) => {
+    const bits = [
+      item.year,
+      item.brand,
+      item.castingName ?? 'Unidentified casting',
+      item.series,
+      item.color,
+      item.sku ? `SKU ${item.sku}` : '',
+    ].filter(Boolean);
+    return `• ${bits.join(' · ')}`;
+  });
+
+  return [
+    `Lot of ${items.length} diecast cars (1:64 scale). This lot includes:`,
+    lines.join('\n'),
+    lotConditionSummary(items),
+    'Shipping: Ships fast in a protective box with tracking.',
+    'From a smoke-free, pet-free home. Thanks for looking!',
+  ].join('\n\n');
+}
+
 /** Possessive form of a brand name for the intro sentence, e.g. "Hot Wheels'"
  * (already ends in s, so no extra "s") vs "Matchbox's". */
 function possessive(brand: string): string {

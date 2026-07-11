@@ -1,6 +1,9 @@
-import { generateListingDescription } from './listingText';
+import { generateListingDescription, generateLotTitle, generateLotDescription } from './listingText';
 import { API_BASE } from './inventory';
 import type { InventoryItem } from './inventory';
+
+// eBay's own cap on pipe-separated photo URLs in one row.
+const MAX_PHOTOS = 24;
 
 const EBAY_TITLE_MAX = 80;
 
@@ -73,11 +76,24 @@ function seriesFor(item: InventoryItem): string {
  * (public CDN) qualify - the legacy `${API_BASE}/photos/...` paths from
  * before the Cloudinary migration are Tailscale-only and unreachable from
  * outside our network, so those are skipped rather than sent as a dead link.
- * Multiple URLs are pipe-separated per eBay's own multi-photo convention. */
-function photoUrlsFor(item: InventoryItem): string {
-  return [item.photoUrl, item.basePhotoUrl]
+ * Multiple URLs are pipe-separated per eBay's own multi-photo convention,
+ * capped at eBay's own MAX_PHOTOS limit (relevant for lots: several cars'
+ * worth of photos combined into one row can easily exceed it). */
+function photoUrlsFor(items: InventoryItem[]): string {
+  return items
+    .flatMap((item) => [item.photoUrl, item.basePhotoUrl])
     .filter((url): url is string => !!url && !url.startsWith(API_BASE))
+    .slice(0, MAX_PHOTOS)
     .join('|');
+}
+
+/** If every item shares the same value for `select`, returns it - otherwise
+ * null. Used to decide whether a lot-level field (brand, year, country...)
+ * can still be filled in, or has to stay blank because the lot is mixed. */
+function sameForAll<T>(items: InventoryItem[], select: (item: InventoryItem) => T | null): T | null {
+  const first = select(items[0]);
+  if (first == null) return null;
+  return items.every((item) => select(item) === first) ? first : null;
 }
 
 function escapeHtml(text: string): string {
@@ -89,8 +105,8 @@ function escapeHtml(text: string): string {
  * Escapes first, then inserts <br> tags - comments and condition notes are
  * free text a user could type anything into, and a stray "<" or "&" would
  * otherwise corrupt the surrounding HTML structure. */
-function descriptionHtml(item: InventoryItem): string {
-  const paragraphs = generateListingDescription(item)
+function descriptionHtml(text: string): string {
+  const paragraphs = text
     .split('\n\n')
     .map((p) => escapeHtml(p).replace(/\n/g, '<br>'))
     .filter(Boolean);
@@ -108,42 +124,107 @@ function csvRow(fields: string[]): string {
   return fields.map(csvField).join(',');
 }
 
-/** One row per staged item: the real template's 11 fixed columns (Action,
- * Custom label (SKU), Category ID, Title, UPC, Price, Quantity, Item photo
- * URL, Condition ID, Description, Format), followed by the C:<name> item
- * specifics from HEADER_ROW. Item photo URL is populated for Cloudinary-
- * hosted photos (public); pre-migration local photos are still Tailscale-
- * only and get added manually during the draft-review step instead. */
+/** Row for one item selling on its own - the real template's 11 fixed
+ * columns (Action, Custom label (SKU), Category ID, Title, UPC, Price,
+ * Quantity, Item photo URL, Condition ID, Description, Format), followed by
+ * the C:<name> item specifics from HEADER_ROW. Item photo URL is populated
+ * for Cloudinary-hosted photos (public); pre-migration local photos are
+ * still Tailscale-only and get added manually during the draft-review step
+ * instead. */
+function singleItemRow(item: InventoryItem): string[] {
+  return [
+    'Draft',
+    item.sku ?? '',
+    categoryFor(item),
+    ebayListingTitle(item),
+    'Does Not Apply', // UPC - diecast collectibles don't have one
+    item.price != null ? item.price.toFixed(2) : '',
+    String(item.quantity),
+    photoUrlsFor([item]),
+    conditionFor(item),
+    descriptionHtml(generateListingDescription(item)),
+    'FixedPrice',
+    item.brand ?? 'Hot Wheels',
+    item.carMake ?? '',
+    '1:64',
+    seriesFor(item),
+    item.year ?? '',
+    'Car',
+    'Diecast',
+    item.color ?? '',
+    item.castingName ?? '',
+    featuresFor(item),
+    vintageFor(item),
+    item.sku ?? '',
+    item.baseCountry ?? '',
+    '3+',
+  ];
+}
+
+/** Row for several items combined into one lot listing (same lot_id). Same
+ * column shape as a single item, but every field that would vary car-to-car
+ * (Vehicle Make, Series, Year, Color, Model, MPN, Country of Origin) is left
+ * blank rather than guessed from just one of the cars in the lot - only
+ * fields that genuinely apply to the whole lot (Scale, Material, Vehicle
+ * Type, Age Range) stay filled. Price is deliberately left blank: a lot's
+ * asking price isn't the sum of individual guide prices, so that's set by
+ * hand in the draft. Quantity is always 1 - it's one listing. */
+function lotRow(lotId: string, items: InventoryItem[]): string[] {
+  const brand = sameForAll(items, (i) => i.brand ?? 'Hot Wheels') ?? '';
+  const allCarded = items.every((i) => i.packagingType === 'carded');
+  const category = sameForAll(items, categoryFor) ?? CATEGORY_CONTEMPORARY;
+
+  return [
+    'Draft',
+    lotId,
+    category,
+    generateLotTitle(items),
+    'Does Not Apply',
+    '', // Price - see note above, set by hand
+    '1',
+    photoUrlsFor(items),
+    allCarded ? 'NEW' : 'USED',
+    descriptionHtml(generateLotDescription(items)),
+    'FixedPrice',
+    brand,
+    '',
+    '1:64',
+    '',
+    sameForAll(items, (i) => i.year) ?? '',
+    'Car',
+    'Diecast',
+    '',
+    '',
+    '',
+    items.some((i) => i.wheelType === 'Redline') ? 'Yes' : 'No',
+    '',
+    sameForAll(items, (i) => i.baseCountry) ?? '',
+    '3+',
+  ];
+}
+
+/** One row per staged item, except items sharing a lot_id (combined into one
+ * listing via "Combine into eBay listing") collapse into a single lotRow. */
 export function generateEbayCsv(items: InventoryItem[]): string {
-  const rows = items.map((item) =>
-    csvRow([
-      'Draft',
-      item.sku ?? '',
-      categoryFor(item),
-      ebayListingTitle(item),
-      'Does Not Apply', // UPC - diecast collectibles don't have one
-      item.price != null ? item.price.toFixed(2) : '',
-      String(item.quantity),
-      photoUrlsFor(item),
-      conditionFor(item),
-      descriptionHtml(item),
-      'FixedPrice',
-      item.brand ?? 'Hot Wheels',
-      item.carMake ?? '',
-      '1:64',
-      seriesFor(item),
-      item.year ?? '',
-      'Car',
-      'Diecast',
-      item.color ?? '',
-      item.castingName ?? '',
-      featuresFor(item),
-      vintageFor(item),
-      item.sku ?? '',
-      item.baseCountry ?? '',
-      '3+',
-    ]),
-  );
+  const lots = new Map<string, InventoryItem[]>();
+  const singles: InventoryItem[] = [];
+  for (const item of items) {
+    if (item.lotId) {
+      const group = lots.get(item.lotId) ?? [];
+      group.push(item);
+      lots.set(item.lotId, group);
+    } else {
+      singles.push(item);
+    }
+  }
+
+  const rows = [
+    ...singles.map(singleItemRow),
+    ...[...lots.entries()].map(([lotId, lotItems]) =>
+      lotItems.length > 1 ? lotRow(lotId, lotItems) : singleItemRow(lotItems[0]),
+    ),
+  ].map(csvRow);
+
   return [...INFO_ROWS, HEADER_ROW, ...rows].join('\r\n');
 }
 
