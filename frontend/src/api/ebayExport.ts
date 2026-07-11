@@ -1,4 +1,5 @@
 import { generateListingDescription } from './listingText';
+import { API_BASE } from './inventory';
 import type { InventoryItem } from './inventory';
 
 const EBAY_TITLE_MAX = 80;
@@ -68,6 +69,17 @@ function seriesFor(item: InventoryItem): string {
   return [item.series, item.specialSeries].filter(Boolean).join(': ');
 }
 
+/** eBay's servers fetch this URL directly, so only Cloudinary-hosted photos
+ * (public CDN) qualify - the legacy `${API_BASE}/photos/...` paths from
+ * before the Cloudinary migration are Tailscale-only and unreachable from
+ * outside our network, so those are skipped rather than sent as a dead link.
+ * Multiple URLs are pipe-separated per eBay's own multi-photo convention. */
+function photoUrlsFor(item: InventoryItem): string {
+  return [item.photoUrl, item.basePhotoUrl]
+    .filter((url): url is string => !!url && !url.startsWith(API_BASE))
+    .join('|');
+}
+
 function escapeHtml(text: string): string {
   return text.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 }
@@ -99,10 +111,9 @@ function csvRow(fields: string[]): string {
 /** One row per staged item: the real template's 11 fixed columns (Action,
  * Custom label (SKU), Category ID, Title, UPC, Price, Quantity, Item photo
  * URL, Condition ID, Description, Format), followed by the C:<name> item
- * specifics from HEADER_ROW. Photo URL is deliberately left blank - our
- * photos are only reachable over Tailscale, not the public internet eBay's
- * servers need, so photos get added manually during the draft-review step
- * instead. */
+ * specifics from HEADER_ROW. Item photo URL is populated for Cloudinary-
+ * hosted photos (public); pre-migration local photos are still Tailscale-
+ * only and get added manually during the draft-review step instead. */
 export function generateEbayCsv(items: InventoryItem[]): string {
   const rows = items.map((item) =>
     csvRow([
@@ -113,7 +124,7 @@ export function generateEbayCsv(items: InventoryItem[]): string {
       'Does Not Apply', // UPC - diecast collectibles don't have one
       item.price != null ? item.price.toFixed(2) : '',
       String(item.quantity),
-      '', // Item photo URL - see note above
+      photoUrlsFor(item),
       conditionFor(item),
       descriptionHtml(item),
       'FixedPrice',
