@@ -496,7 +496,11 @@ export function ItemDetail() {
           />
         </div>
         <div className={styles.row2}>
-          <Input label="SKU / Toy #" value={form.sku ?? ''} onChange={(e) => set('sku', e.target.value)} />
+          <Input
+            label="SKU / Toy #"
+            value={form.sku ?? ''}
+            onChange={(e) => set('sku', e.target.value.toUpperCase())}
+          />
           <Input label="Color / deco" value={form.color ?? ''} onChange={(e) => set('color', e.target.value)} />
         </div>
         <div className={styles.row2}>
