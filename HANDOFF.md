@@ -402,10 +402,14 @@ built from pointer events / plain CSS):
 
 ## Deploying a change (the loop that works)
 
-**No hot-reload** — `static/index.html` is served fresh from disk on every
-request (so pure frontend edits are live immediately after `git pull`, no
-restart needed), but any `app.py`/`.py` change requires a restart or the old
-code keeps running silently.
+**Frontend is now a build, not a static file.** As of the 2026-07-06 cutover
+to React, `app.py` serves `frontend/dist` (Vite build output), not the old
+buildless `static/index.html` — a `git pull` alone no longer puts frontend
+edits live, since `frontend/dist` is a build artifact and isn't committed.
+Any change under `frontend/src/` needs `npm run build` on backupbox after the
+pull. `app.py`/`.py` changes still need a service restart or the old code
+keeps running silently; pure frontend changes don't need a restart, just a
+rebuild.
 
 ```bash
 # local machine
@@ -416,8 +420,9 @@ git push
 # on backupbox (or via ssh christan@backupbox "...")
 cd ~/Projects/zamak-ledger
 git pull
-sudo systemctl restart zamak-ledger        # only strictly needed for .py changes
-curl -s http://localhost:8420/status       # confirm the new code is actually live
+cd frontend && npm run build && cd ..        # only strictly needed for frontend/src changes
+sudo systemctl restart zamak-ledger          # only strictly needed for .py changes
+curl -s http://localhost:8420/status         # confirm the new code is actually live
 ```
 
 The `curl` above hits `localhost` directly, bypassing `tailscale serve` — fine

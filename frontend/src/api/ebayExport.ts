@@ -30,8 +30,15 @@ const INFO_ROWS = [
   '#INFO,,,,,,,,,,',
 ];
 
+// Trailing C:<name> columns are eBay's "item specifics" convention for bulk
+// upload templates - anything not covered by the fixed columns above. Fields
+// we don't actually track (Vehicle Year of the real-world car, Theme,
+// Character Family, Prop 65, etc.) are deliberately omitted rather than
+// guessed; eBay's own draft-completion UI still lets you fill those in by
+// hand per listing.
 const HEADER_ROW =
-  'Action(SiteID=US|Country=US|Currency=USD|Version=1193|CC=UTF-8),Custom label (SKU),Category ID,Title,UPC,Price,Quantity,Item photo URL,Condition ID,Description,Format';
+  'Action(SiteID=US|Country=US|Currency=USD|Version=1193|CC=UTF-8),Custom label (SKU),Category ID,Title,UPC,Price,Quantity,Item photo URL,Condition ID,Description,Format,' +
+  'C:Brand,C:Vehicle Make,C:Scale,C:Series,C:Year of Manufacture,C:Vehicle Type,C:Material,C:Color,C:Model,C:Features,C:Vintage,C:MPN,C:Country of Origin,C:Recommended Age Range';
 
 // Toys & Hobbies > Diecast & Toy Vehicles > Cars, Trucks & Vans, split by
 // manufacture era - eBay treats these as genuinely different leaf categories,
@@ -47,6 +54,18 @@ function categoryFor(item: InventoryItem): string {
 
 function conditionFor(item: InventoryItem): string {
   return item.packagingType === 'carded' ? 'NEW' : 'USED';
+}
+
+function featuresFor(item: InventoryItem): string {
+  return item.packagingType === 'carded' ? 'Unopened Box' : '';
+}
+
+function vintageFor(item: InventoryItem): string {
+  return item.wheelType === 'Redline' ? 'Yes' : 'No';
+}
+
+function seriesFor(item: InventoryItem): string {
+  return [item.series, item.specialSeries].filter(Boolean).join(': ');
 }
 
 function escapeHtml(text: string): string {
@@ -77,12 +96,13 @@ function csvRow(fields: string[]): string {
   return fields.map(csvField).join(',');
 }
 
-/** One row per staged item, matching the real template's 11 columns exactly:
- * Action, Custom label (SKU), Category ID, Title, UPC, Price, Quantity,
- * Item photo URL, Condition ID, Description, Format. Photo URL is
- * deliberately left blank - our photos are only reachable over Tailscale,
- * not the public internet eBay's servers need, so photos get added manually
- * during the draft-review step instead. */
+/** One row per staged item: the real template's 11 fixed columns (Action,
+ * Custom label (SKU), Category ID, Title, UPC, Price, Quantity, Item photo
+ * URL, Condition ID, Description, Format), followed by the C:<name> item
+ * specifics from HEADER_ROW. Photo URL is deliberately left blank - our
+ * photos are only reachable over Tailscale, not the public internet eBay's
+ * servers need, so photos get added manually during the draft-review step
+ * instead. */
 export function generateEbayCsv(items: InventoryItem[]): string {
   const rows = items.map((item) =>
     csvRow([
@@ -90,13 +110,27 @@ export function generateEbayCsv(items: InventoryItem[]): string {
       item.sku ?? '',
       categoryFor(item),
       ebayListingTitle(item),
-      '', // UPC - diecast collectibles don't have one
+      'Does Not Apply', // UPC - diecast collectibles don't have one
       item.price != null ? item.price.toFixed(2) : '',
       String(item.quantity),
       '', // Item photo URL - see note above
       conditionFor(item),
       descriptionHtml(item),
       'FixedPrice',
+      item.brand ?? 'Hot Wheels',
+      item.carMake ?? '',
+      '1:64',
+      seriesFor(item),
+      item.year ?? '',
+      'Car',
+      'Diecast',
+      item.color ?? '',
+      item.castingName ?? '',
+      featuresFor(item),
+      vintageFor(item),
+      item.sku ?? '',
+      item.baseCountry ?? '',
+      '3+',
     ]),
   );
   return [...INFO_ROWS, HEADER_ROW, ...rows].join('\r\n');
