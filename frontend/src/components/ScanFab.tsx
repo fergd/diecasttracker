@@ -231,7 +231,7 @@ export function ScanFab({ packagingType }: ScanFabProps) {
           <>
             <h2 className={styles.sheetTitle}>{scanResult.castingName || 'Unrecognized item'}</h2>
             <p className={styles.sheetText}>
-              {[scanResult.brand, scanResult.carMake, scanResult.year].filter(Boolean).join(' · ')}
+              {[scanResult.brand, scanResult.carMake, scanResult.year, scanResult.sku].filter(Boolean).join(' · ')}
             </p>
             <div className={styles.matchRow}>
               <Badge variant={matchBadgeVariant(scanResult.matchStatus)}>{matchLabel(scanResult)}</Badge>

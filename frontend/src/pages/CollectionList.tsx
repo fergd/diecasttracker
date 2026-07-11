@@ -61,7 +61,7 @@ export function CollectionList() {
   const [selectionMode, setSelectionMode] = useState(false);
   const [selectedIds, setSelectedIds] = useState<Set<number>>(new Set());
   const [batchRematching, setBatchRematching] = useState(false);
-  const [bulkStatusMenuOpen, setBulkStatusMenuOpen] = useState(false);
+  const [bulkListingMenuOpen, setBulkListingMenuOpen] = useState(false);
   const [confirmBulkDelete, setConfirmBulkDelete] = useState(false);
   const [bulkActionBusy, setBulkActionBusy] = useState(false);
   const [sortField, setSortField] = useState<SortField | null>(null);
@@ -149,7 +149,7 @@ export function CollectionList() {
   }
 
   async function handleBulkSetStatus(status: TrackingStatus) {
-    setBulkStatusMenuOpen(false);
+    setBulkListingMenuOpen(false);
     setBulkActionBusy(true);
     try {
       const results = await Promise.allSettled(
@@ -166,6 +166,7 @@ export function CollectionList() {
   }
 
   async function handleBulkStageForListing() {
+    setBulkListingMenuOpen(false);
     setBulkActionBusy(true);
     try {
       const results = await Promise.allSettled(
@@ -434,16 +435,8 @@ export function CollectionList() {
           <button
             className={styles.selectionIconButton}
             disabled={selectedIds.size === 0 || bulkActionBusy}
-            onClick={() => setBulkStatusMenuOpen(true)}
-            aria-label="Set status for selected"
-          >
-            <Icon name="tick02" size={18} />
-          </button>
-          <button
-            className={styles.selectionIconButton}
-            disabled={selectedIds.size === 0 || bulkActionBusy}
-            onClick={handleBulkStageForListing}
-            aria-label="Stage selected for eBay listing"
+            onClick={() => setBulkListingMenuOpen(true)}
+            aria-label="Listing options for selected"
           >
             <Icon name="bookmark01" size={18} />
           </button>
@@ -475,10 +468,10 @@ export function CollectionList() {
         )}
       </Sheet>
 
-      <Sheet open={bulkStatusMenuOpen} onClose={() => setBulkStatusMenuOpen(false)}>
-        <h2 className={styles.sheetTitle}>Set status for {selectedIds.size} cars</h2>
-        <button className={styles.sortOption} onClick={() => handleBulkSetStatus('in_collection')}>
-          <span>In collection</span>
+      <Sheet open={bulkListingMenuOpen} onClose={() => setBulkListingMenuOpen(false)}>
+        <h2 className={styles.sheetTitle}>Listing options for {selectedIds.size} cars</h2>
+        <button className={styles.sortOption} onClick={handleBulkStageForListing}>
+          <span>Stage for listing</span>
         </button>
         <button className={styles.sortOption} onClick={() => handleBulkSetStatus('listed')}>
           <span>Listed</span>
