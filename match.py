@@ -7,16 +7,25 @@ reference_castings (ground truth scraped from South Texas Diecast).
 This is the layer that turns "plausible text" into "confirmed or flagged."
 
 Scoring approach:
-  - Fuzzy-match casting_name against all reference rows for the extracted
-    brand/year (narrows the search space before scoring, so we're not
-    fuzzy-matching against all 28,000 rows every time).
-  - Cross-check collector_number and series as corroborating signal, not
-    hard requirements (a misread year shouldn't block an otherwise-strong
-    casting_name match).
-  - Combine into a single confidence score and a status:
-        >= 0.90  -> confirmed        (safe to auto-accept)
-        0.75-0.90 -> needs_review    (flagged, but a likely candidate shown)
-        < 0.75    -> no_match        (flagged, no confident candidate)
+  - An exact SKU/Toy# hit against reference_castings is the ONLY thing that
+    auto-confirms a match and fills in canonical_series/canonical_sku/
+    canonical_year - it's a real Mattel item code, not a guess.
+  - Without that, casting_name is fuzzy-matched against candidate rows
+    (narrowed by brand/year) purely to surface a *possible* candidate for a
+    human to check - never to auto-populate canonical_* fields. A casting
+    gets reissued across years/series under the exact same name (e.g.
+    "Porsche 934 Turbo RSR" 8 times across 2014-2018 in different series),
+    so name similarity alone says nothing about which specific release this
+    is - confidently attaching a candidate row's series/SKU/year to the
+    item would silently be "just because the name matches," which is
+    exactly the wrong-data problem this function exists to avoid.
+  - Status:
+        SKU exact match      -> confirmed    (canonical_* filled from the row)
+        fuzzy name >= 0.75    -> needs_review (candidate named in notes only,
+                                                canonical_* left null so the
+                                                UI shows the model's actual
+                                                extracted_* reading instead)
+        fuzzy name < 0.75     -> no_match     (nothing worth suggesting)
 """
 
 import sqlite3
@@ -26,7 +35,6 @@ from rapidfuzz import fuzz
 
 DB_PATH = "reference.db"
 
-CONFIRM_THRESHOLD = 0.90
 REVIEW_THRESHOLD = 0.75
 
 
@@ -250,59 +258,47 @@ def validate_extraction(extracted: dict, packaging_type: str = "carded") -> Matc
 
     confidence = name_score
 
-    # Corroborating signal: does the extracted series roughly agree? Series
-    # already influenced WHICH row won above (real disambiguation, not just
-    # a penalty) - this is just the confidence/notes reflection of that.
+    # Corroborating signal only, same as before - series didn't determine
+    # candidate selection here in isolation (it already fed into which row
+    # _best_candidate picked), this just reflects a mismatch in the notes.
     notes = []
     if extracted_series and row["series_name"] and series_score < 0.5:
-        confidence -= 0.05  # small penalty, not disqualifying
+        confidence -= 0.05
         notes.append(
             f"Series mismatch: extracted '{extracted_series}' vs "
             f"reference '{row['series_name']}' (soft signal only)."
         )
 
-    # Safeguard for loose cars identified by appearance alone (no base stamp
-    # read): flagged further below, after status is computed, so it downgrades
-    # the bucket rather than distorting the confidence score itself.
-
     confidence = max(0.0, min(1.0, confidence))
 
-    if confidence >= CONFIRM_THRESHOLD:
-        status = "confirmed"
-    elif confidence >= REVIEW_THRESHOLD:
-        status = "needs_review"
-        notes.append(f"Best candidate: '{row['casting_name']}' ({row['release_year']}, {row['series_name']}).")
-    else:
-        status = "no_match"
-        notes.append(f"Closest candidate was only {confidence:.0%} confident - treat as unmatched.")
-
-    # Safeguard for loose cars identified by appearance alone (no base stamp
-    # read): a fuzzy-matching casting_name here just means the model's guess
-    # happens to be a real casting name somewhere in the DB - that's much
-    # weaker evidence than OCR'd text off a card or base, since it's a guess
-    # among 28,000+ possibilities rather than a transcription. Downgrade the
-    # STATUS (not the confidence score, which stays honest) so these never
-    # auto-confirm, but a real candidate still surfaces for a human to check
-    # rather than being discarded as no_match.
-    if packaging_type == "loose" and extracted.get("identification_method") == "visual_only" \
-            and status == "confirmed":
+    # No exact SKU hit means no real ID - a name-similarity score, however
+    # high, is never strong enough evidence to assert a specific reference
+    # row's series/SKU/year as this item's canonical identity (see the
+    # module docstring). The best a fuzzy match can do is name a *possible*
+    # candidate for a human to check in notes - canonical_* stays null so
+    # the UI falls back to displaying what was actually extracted off the
+    # card, not a guess dressed up as a verified match.
+    if confidence >= REVIEW_THRESHOLD:
         status = "needs_review"
         notes.append(
-            "Visual-only identification (no base photo/stamp read) - fuzzy "
-            "match alone isn't strong enough evidence to auto-confirm a loose "
-            "car, even at high similarity. Re-scan with a base/underside photo "
-            "for a reliable ID."
+            f"No exact SKU match. Possible candidate: '{row['casting_name']}' "
+            f"({row['release_year']}, {row['series_name']}) - {confidence:.0%} name "
+            f"similarity. Confirm manually if this is it, or correct the fields "
+            f"below with what's actually on the card."
         )
+    else:
+        status = "no_match"
+        notes.append(f"No exact SKU match and no confident casting-name candidate ({confidence:.0%}).")
 
     return MatchResult(
         status=status,
         confidence=round(confidence, 3),
-        reference_id=row["id"] if status != "no_match" else None,
-        canonical_brand=row["brand"] if status != "no_match" else None,
-        canonical_casting_name=row["casting_name"] if status != "no_match" else None,
-        canonical_series=row["series_name"] if status != "no_match" else None,
-        canonical_year=row["release_year"] if status != "no_match" else None,
-        canonical_sku=row["sku"] if status != "no_match" else None,
-        suggested_price_usd=suggested_price(row, packaging_type) if status != "no_match" else None,
-        notes="; ".join(notes) if notes else "Strong match.",
+        reference_id=None,
+        canonical_brand=None,
+        canonical_casting_name=None,
+        canonical_series=None,
+        canonical_year=None,
+        canonical_sku=None,
+        suggested_price_usd=None,
+        notes="; ".join(notes),
     )
