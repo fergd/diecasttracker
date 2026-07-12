@@ -162,6 +162,37 @@ export function ItemDetail() {
     showToast(err instanceof Error ? err.message : String(err), 'error');
   }
 
+  function buildUpdatePayload(current: InventoryItem, quantity: number) {
+    return {
+      canonical_brand: current.brand,
+      car_make: current.carMake,
+      canonical_casting_name: current.castingName,
+      canonical_series: current.series,
+      special_series: current.specialSeries,
+      canonical_year: current.year ? parseInt(current.year, 10) : null,
+      extracted_collector_num: current.collectorNumber,
+      extracted_series_number: current.seriesNumber,
+      canonical_sku: current.sku,
+      extracted_color: current.color,
+      treasure_hunt: current.treasureHunt,
+      base_country: current.baseCountry,
+      wheel_type: current.wheelType,
+      body_base_construction: current.bodyBaseConstruction,
+      special_flags: current.specialFlags,
+      comments: current.comments,
+      status: current.trackingStatus,
+      quantity,
+      condition: current.condition,
+      condition_car_grade: current.conditionCarGrade,
+      condition_card_grade: current.conditionCardGrade,
+      cost_basis_usd: current.costBasis,
+      listing_price_usd: current.listingPrice,
+      sold_price_usd: current.soldPrice,
+      custom_listing_title: current.customListingTitle,
+      custom_listing_description: current.customListingDescription,
+    };
+  }
+
   async function handleSave() {
     if (!form) return;
     setSaving(true);
@@ -175,37 +206,7 @@ export function ItemDetail() {
     try {
       // Minimum 1.3s so the spinner is actually visible and the save reads
       // as deliberate, even when the request itself is much faster than that.
-      saved = await withMinDelay(
-        updateItem(form.id, {
-          canonical_brand: form.brand,
-          car_make: form.carMake,
-          canonical_casting_name: form.castingName,
-          canonical_series: form.series,
-          special_series: form.specialSeries,
-          canonical_year: form.year ? parseInt(form.year, 10) : null,
-          extracted_collector_num: form.collectorNumber,
-          extracted_series_number: form.seriesNumber,
-          canonical_sku: form.sku,
-          extracted_color: form.color,
-          treasure_hunt: form.treasureHunt,
-          base_country: form.baseCountry,
-          wheel_type: form.wheelType,
-          body_base_construction: form.bodyBaseConstruction,
-          special_flags: form.specialFlags,
-          comments: form.comments,
-          status: form.trackingStatus,
-          quantity,
-          condition: form.condition,
-          condition_car_grade: form.conditionCarGrade,
-          condition_card_grade: form.conditionCardGrade,
-          cost_basis_usd: form.costBasis,
-          listing_price_usd: form.listingPrice,
-          sold_price_usd: form.soldPrice,
-          custom_listing_title: form.customListingTitle,
-          custom_listing_description: form.customListingDescription,
-        }),
-        1300,
-      );
+      saved = await withMinDelay(updateItem(form.id, buildUpdatePayload(form, quantity)), 1300);
     } catch (err) {
       setSaving(false);
       showError(err);
@@ -223,9 +224,17 @@ export function ItemDetail() {
     if (!form) return;
     setRematching(true);
     try {
+      // Rematch reads whatever's already saved in the database - it has no
+      // idea about in-progress edits sitting in this form. Save first, or a
+      // just-corrected casting name/SKU is invisible to it and it just
+      // re-confirms the same stale match.
+      const parsedQuantity = parseInt(quantityText, 10);
+      const quantity = Number.isFinite(parsedQuantity) && parsedQuantity > 0 ? parsedQuantity : form.quantity;
+      await updateItem(form.id, buildUpdatePayload(form, quantity));
       const updated = await rematchItem(form.id);
       updateItemLocal(updated);
       setForm(updated);
+      setQuantityText(String(updated.quantity));
     } catch (err) {
       showError(err);
     } finally {
