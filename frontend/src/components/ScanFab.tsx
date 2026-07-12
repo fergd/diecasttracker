@@ -125,6 +125,16 @@ export function ScanFab({ packagingType }: ScanFabProps) {
     resetToIdle();
   }
 
+  /** Not adding this scan at all - the existing car (not the fresh scan) is
+   * what the user wants to fix up, e.g. the SKU or casting name on file is
+   * wrong and that's *why* it didn't look like a clean duplicate. */
+  async function handleDuplicateEdit() {
+    if (scanResult) await deleteItem(scanResult.id).catch(() => {});
+    const existingId = duplicateMatch?.id;
+    resetToIdle();
+    if (existingId != null) navigate(`/item/${existingId}`);
+  }
+
   async function handleReject() {
     if (scanResult) await deleteItem(scanResult.id).catch(() => {});
     resetToIdle();
@@ -223,9 +233,9 @@ export function ScanFab({ packagingType }: ScanFabProps) {
             <p className={styles.sheetText}>
               You already have {duplicateMatch.quantity} of{' '}
               <strong>{duplicateMatch.castingName}</strong> with the same SKU. Add this scan to the
-              total, skip it, or keep it as its own separate entry?
+              total, skip it, keep it as its own separate entry, or edit the existing one?
             </p>
-            <div className={styles.sheetActions}>
+            <div className={styles.sheetActionsStacked}>
               <Button variant="text" onClick={handleDuplicateSkip}>
                 Skip
               </Button>
@@ -234,6 +244,9 @@ export function ScanFab({ packagingType }: ScanFabProps) {
               </Button>
               <Button variant="filled" onClick={handleDuplicateAdd}>
                 Add to total
+              </Button>
+              <Button variant="outlined" onClick={handleDuplicateEdit}>
+                Edit existing car
               </Button>
             </div>
           </>

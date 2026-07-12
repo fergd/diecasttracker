@@ -87,3 +87,12 @@
 .sheetActions > * {
   flex: 1;
 }
+
+/* Four options don't fit comfortably in one row on a phone-width sheet -
+ * stacked full-width buttons instead of a cramped 4-up row. */
+.sheetActionsStacked {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-sm);
+  margin-top: var(--spacing-sm);
+}
