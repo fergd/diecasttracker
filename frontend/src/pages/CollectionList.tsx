@@ -316,7 +316,11 @@ export function CollectionList() {
           .filter(Boolean)
           .join(' ')
           .toLowerCase();
-        if (!haystack.includes(query)) return false;
+        // Each word in the query must appear somewhere in the haystack, in any
+        // order - "camaro custom" and "custom camaro" both match "Custom '11
+        // Camaro", not just the exact phrase typed.
+        const terms = query.split(/\s+/).filter(Boolean);
+        if (!terms.every((term) => haystack.includes(term))) return false;
       }
       return true;
     });
