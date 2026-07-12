@@ -1,4 +1,10 @@
-import { generateLotTitle, generateLotDescription, resolveListingDescription, resolveOverride } from './listingText';
+import {
+  generateLotTitle,
+  generateLotDescription,
+  resolveListingDescription,
+  resolveOverride,
+  COMBINE_LISTING_LINE,
+} from './listingText';
 import { API_BASE } from './inventory';
 import type { InventoryItem } from './inventory';
 
@@ -120,11 +126,18 @@ function escapeHtml(text: string): string {
  * simple HTML, matching the formatting eBay's own listing descriptions use.
  * Escapes first, then inserts <br> tags - comments and condition notes are
  * free text a user could type anything into, and a stray "<" or "&" would
- * otherwise corrupt the surrounding HTML structure. */
+ * otherwise corrupt the surrounding HTML structure. The combine-listings
+ * line is bolded - it's a fixed constant (never user-typed), so matching it
+ * verbatim before escaping is safe. Plain-text views (the in-app Listing
+ * Text card, the CSV's own C:Description-less columns) show it as regular
+ * text same as everywhere else - bold only renders in this HTML output. */
 function descriptionHtml(text: string): string {
   const paragraphs = text
     .split('\n\n')
-    .map((p) => escapeHtml(p).replace(/\n/g, '<br>'))
+    .map((p) => {
+      const escaped = escapeHtml(p).replace(/\n/g, '<br>');
+      return p === COMBINE_LISTING_LINE ? `<strong>${escaped}</strong>` : escaped;
+    })
     .filter(Boolean);
   return paragraphs.map((p) => `<p>${p}</p>`).join('');
 }

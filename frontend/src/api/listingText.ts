@@ -2,6 +2,15 @@ import { CONDITION_GRADE_LABELS, type InventoryItem } from './inventory';
 
 const EBAY_TITLE_MAX = 80;
 
+// Fixed boilerplate shared by both the single-item and lot descriptions -
+// one copy each, rather than duplicated string literals that could drift.
+const SHIPPING_LINE = 'Shipping: Ships fast in a protective box with tracking.';
+// Bolded in the actual eBay HTML output specifically - see descriptionHtml
+// in ebayExport.ts, which checks paragraphs against this exact string.
+export const COMBINE_LISTING_LINE =
+  'I have many cars for sale and am happy to combine. Just message me directly.';
+const SIGN_OFF_LINE = 'From a smoke-free, pet-free home. Thanks for looking!';
+
 /** Collector-precise eBay title, e.g. "1998 Hot Wheels First Editions #17
  * Pontiac Rageous Blue TH" - generic titles get buried, exact terms get found.
  * Progressively drops the lowest-priority optional segments (series, then
@@ -86,8 +95,9 @@ export function generateLotDescription(items: InventoryItem[]): string {
     `Lot of ${items.length} diecast cars (1:64 scale). This lot includes:`,
     lines.join('\n'),
     lotConditionSummary(items),
-    'Shipping: Ships fast in a protective box with tracking.',
-    'From a smoke-free, pet-free home. Thanks for looking!',
+    SHIPPING_LINE,
+    COMBINE_LISTING_LINE,
+    SIGN_OFF_LINE,
   ].join('\n\n');
 }
 
@@ -167,8 +177,9 @@ export function generateListingDescription(item: InventoryItem): string {
     introSentence(item),
     ['Details:', '', ...details.map((d) => `• ${d}`)].join('\n'),
     conditionParagraph(item),
-    'Shipping: Ships fast in a protective box with tracking.',
-    'From a smoke-free, pet-free home. Thanks for looking!',
+    SHIPPING_LINE,
+    COMBINE_LISTING_LINE,
+    SIGN_OFF_LINE,
   ].join('\n\n');
 }
 
