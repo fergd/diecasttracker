@@ -112,6 +112,15 @@ export function ItemDetail() {
 
   const [form, setForm] = useState<InventoryItem | null>(item ?? null);
   const [saving, setSaving] = useState(false);
+  const [autosaveStatus, setAutosaveStatus] = useState<'idle' | 'saving' | 'saved'>('idle');
+  // What's actually persisted right now, as a comparable JSON snapshot - lets
+  // the autosave effect below tell "form changed because of a real edit"
+  // apart from "form changed because something else (load, a save, a
+  // rematch) just wrote this exact data," without the fragility of a
+  // one-shot "skip the next effect run" flag (which breaks the moment two
+  // state updates land in the same tick, e.g. a save's setForm plus the
+  // items-context sync effect both firing off one save).
+  const lastPersistedRef = useRef<string>('');
   const [rematching, setRematching] = useState(false);
   const [refreshingPrice, setRefreshingPrice] = useState(false);
   const [togglingStaged, setTogglingStaged] = useState(false);
@@ -134,6 +143,11 @@ export function ItemDetail() {
     if (item) {
       setForm(item);
       setQuantityText(String(item.quantity));
+      // This item is, by definition, exactly what's on the server right now
+      // (it's the value that just came from context) - resync the "last
+      // known persisted" snapshot so the autosave effect below doesn't
+      // mistake this load/external update for an edit to save.
+      lastPersistedRef.current = JSON.stringify(buildUpdatePayload(item, item.quantity));
     }
   }, [item]);
 
@@ -147,6 +161,41 @@ export function ItemDetail() {
       return () => clearTimeout(t);
     }
   }, [items, item, itemId, navigate]);
+
+  // Autosave: any edit that actually differs from what's persisted gets
+  // written back automatically after a short pause in typing, independent of
+  // the explicit Save button. Guarded against firing while a manual Save or
+  // Rematch is already in flight to avoid two concurrent writes racing.
+  useEffect(() => {
+    if (!form || saving || rematching) return;
+    const parsedQuantity = parseInt(quantityText, 10);
+    const quantity = Number.isFinite(parsedQuantity) && parsedQuantity > 0 ? parsedQuantity : form.quantity;
+    const payload = buildUpdatePayload(form, quantity);
+    const payloadJson = JSON.stringify(payload);
+    if (payloadJson === lastPersistedRef.current) return;
+
+    const handle = setTimeout(async () => {
+      setAutosaveStatus('saving');
+      try {
+        const saved = await updateItem(form.id, payload);
+        lastPersistedRef.current = JSON.stringify(buildUpdatePayload(saved, saved.quantity));
+        updateItemLocal(saved);
+        setForm(saved);
+        setQuantityText(String(saved.quantity));
+        setAutosaveStatus('saved');
+      } catch (err) {
+        setAutosaveStatus('idle');
+        showError(err);
+      }
+    }, 1200);
+    return () => clearTimeout(handle);
+  }, [form, quantityText, saving, rematching, updateItemLocal]);
+
+  useEffect(() => {
+    if (autosaveStatus !== 'saved') return;
+    const t = setTimeout(() => setAutosaveStatus('idle'), 2000);
+    return () => clearTimeout(t);
+  }, [autosaveStatus]);
 
   if (!form) return null;
 
@@ -222,6 +271,7 @@ export function ItemDetail() {
       return;
     }
 
+    lastPersistedRef.current = JSON.stringify(buildUpdatePayload(saved, saved.quantity));
     updateItemLocal(saved);
     setForm(saved);
     setQuantityText(String(saved.quantity));
@@ -244,10 +294,12 @@ export function ItemDetail() {
       // persisted and shown, not just persisted-but-invisible behind an
       // error toast.
       const saved = await updateItem(form.id, buildUpdatePayload(form, quantity));
+      lastPersistedRef.current = JSON.stringify(buildUpdatePayload(saved, saved.quantity));
       updateItemLocal(saved);
       setForm(saved);
       setQuantityText(String(saved.quantity));
       const updated = await rematchItem(form.id);
+      lastPersistedRef.current = JSON.stringify(buildUpdatePayload(updated, updated.quantity));
       updateItemLocal(updated);
       setForm(updated);
     } catch (err) {
@@ -405,6 +457,9 @@ export function ItemDetail() {
           <Icon name="cancel01" size={20} />
         </button>
         <h1 className={styles.title}>{form.castingName || 'Unrecognized item'}</h1>
+        {autosaveStatus !== 'idle' && (
+          <span className={styles.autosaveStatus}>{autosaveStatus === 'saving' ? 'Saving…' : 'Saved'}</span>
+        )}
       </header>
 
       <section className={styles.photos}>

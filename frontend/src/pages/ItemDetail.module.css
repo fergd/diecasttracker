@@ -35,6 +35,16 @@
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
+  flex: 1;
+  min-width: 0;
+}
+
+.autosaveStatus {
+  flex-shrink: 0;
+  font-family: var(--font-body);
+  font-size: var(--font-size-caption1);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-secondary-dark);
 }
 
 
