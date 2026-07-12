@@ -577,61 +577,66 @@ export function ItemDetail() {
             {rematching ? 'Rematching…' : 'Rematch'}
           </Button>
         </div>
-        <div className={styles.matchRow}>
-          <Badge variant={matchBadgeVariant(form.matchStatus)}>{matchLabel(form)}</Badge>
-          <Badge variant="neutral">{form.packagingType === 'carded' ? 'Carded' : 'Loose'}</Badge>
+        <div className={rematching ? styles.refreshing : undefined}>
+          <div className={styles.matchRow}>
+            <Badge variant={matchBadgeVariant(form.matchStatus)}>{matchLabel(form)}</Badge>
+            <Badge variant="neutral">{form.packagingType === 'carded' ? 'Carded' : 'Loose'}</Badge>
+          </div>
+          {form.matchNotes && <p className={styles.notes}>{form.matchNotes}</p>}
+          {form.matchStatus !== 'confirmed' && (
+            <Button variant="outlined" onClick={handleConfirmMatch} disabled={confirmingMatch}>
+              {confirmingMatch ? 'Confirming…' : 'Confirm this is correct'}
+            </Button>
+          )}
         </div>
-        {form.matchNotes && <p className={styles.notes}>{form.matchNotes}</p>}
-        {form.matchStatus !== 'confirmed' && (
-          <Button variant="outlined" onClick={handleConfirmMatch} disabled={confirmingMatch}>
-            {confirmingMatch ? 'Confirming…' : 'Confirm this is correct'}
-          </Button>
-        )}
       </section>
 
       <section className={styles.card}>
         <div className={styles.cardHeader}>
           <h2 className={styles.cardTitle}>Pricing</h2>
-          <button
-            className={styles.iconButton}
+          <Button
+            variant="text"
+            icon="refresh01"
+            iconSpin={refreshingPrice}
             onClick={handleRefreshPrice}
             disabled={refreshingPrice}
-            aria-label="Refresh price"
           >
-            <Icon name="refresh01" size={18} />
-          </button>
+            {refreshingPrice ? 'Refreshing…' : 'Refresh'}
+          </Button>
         </div>
-        <div className={styles.priceGrid}>
-          <div>
-            <div className={styles.priceLabel}>Guide price</div>
-            <div className={styles.priceValue}>
-              {form.guidePrice != null ? money(form.guidePrice) : 'Not in guide'}
+        <div className={refreshingPrice ? styles.refreshing : undefined}>
+          <div className={styles.priceGrid}>
+            <div>
+              <div className={styles.priceLabel}>Guide price</div>
+              <div className={styles.priceValue}>
+                {form.guidePrice != null ? money(form.guidePrice) : 'Not in guide'}
+              </div>
+            </div>
+            <div>
+              <div className={styles.priceLabel}>Recommended</div>
+              <div className={styles.priceValue}>{money(form.liveRecommended)}</div>
+            </div>
+            <div>
+              <div className={styles.priceLabel}>eBay range</div>
+              <div className={styles.priceValue}>
+                {form.liveLow != null && form.liveHigh != null
+                  ? `${money(form.liveLow)} – ${money(form.liveHigh)}`
+                  : '—'}
+              </div>
             </div>
           </div>
-          <div>
-            <div className={styles.priceLabel}>Recommended</div>
-            <div className={styles.priceValue}>{money(form.liveRecommended)}</div>
-          </div>
-          <div>
-            <div className={styles.priceLabel}>eBay range</div>
-            <div className={styles.priceValue}>
-              {form.liveLow != null && form.liveHigh != null
-                ? `${money(form.liveLow)} – ${money(form.liveHigh)}`
-                : '—'}
-            </div>
-          </div>
-        </div>
-        <p className={styles.freshness}>
-          Guide price is a static reference-book value for this exact casting/year/packaging - only
-          available when matched to a seeded reference row. Recommended + eBay range come from live
-          listings instead.
-        </p>
-        {form.livePriceFetchedAt && (
-          <p className={[styles.freshness, stale ? styles.stale : ''].filter(Boolean).join(' ')}>
-            Updated {daysAgo(form.livePriceFetchedAt)} days ago
+          <p className={styles.freshness}>
+            Guide price is a static reference-book value for this exact casting/year/packaging - only
+            available when matched to a seeded reference row. Recommended + eBay range come from live
+            listings instead.
           </p>
-        )}
-        {form.liveSummary && <p className={styles.notes}>{form.liveSummary}</p>}
+          {form.livePriceFetchedAt && (
+            <p className={[styles.freshness, stale ? styles.stale : ''].filter(Boolean).join(' ')}>
+              Updated {daysAgo(form.livePriceFetchedAt)} days ago
+            </p>
+          )}
+          {form.liveSummary && <p className={styles.notes}>{form.liveSummary}</p>}
+        </div>
       </section>
 
       <section className={styles.card}>

@@ -145,6 +145,16 @@
   cursor: not-allowed;
 }
 
+/* Applied to a card's content (not its header/button) while a refresh
+ * request - rematch, price refresh - is in flight, so it's visually obvious
+ * the numbers/badges on screen are stale and an update is actually happening,
+ * not just that a button somewhere got clicked. */
+.refreshing {
+  opacity: 0.45;
+  pointer-events: none;
+  transition: opacity 0.15s ease;
+}
+
 .row2 {
   display: grid;
   grid-template-columns: 1fr 1fr;
