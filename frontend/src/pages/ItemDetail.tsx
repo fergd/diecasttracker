@@ -162,6 +162,15 @@ export function ItemDetail() {
     showToast(err instanceof Error ? err.message : String(err), 'error');
   }
 
+  // A live-edited override can sit at '' while the field is mid-clear (see
+  // resolveOverride's `??`), but persisting a genuinely blank override would
+  // get stuck there forever - '' ?? generated still reads as "set" on the
+  // next load. Blank/whitespace-only means "back to auto-generated," so
+  // normalize it to null before it ever reaches the database.
+  function normalizeOverride(value: string | null): string | null {
+    return value && value.trim() ? value : null;
+  }
+
   function buildUpdatePayload(current: InventoryItem, quantity: number) {
     return {
       canonical_brand: current.brand,
@@ -188,8 +197,8 @@ export function ItemDetail() {
       cost_basis_usd: current.costBasis,
       listing_price_usd: current.listingPrice,
       sold_price_usd: current.soldPrice,
-      custom_listing_title: current.customListingTitle,
-      custom_listing_description: current.customListingDescription,
+      custom_listing_title: normalizeOverride(current.customListingTitle),
+      custom_listing_description: normalizeOverride(current.customListingDescription),
     };
   }
 
@@ -230,11 +239,17 @@ export function ItemDetail() {
       // re-confirms the same stale match.
       const parsedQuantity = parseInt(quantityText, 10);
       const quantity = Number.isFinite(parsedQuantity) && parsedQuantity > 0 ? parsedQuantity : form.quantity;
-      await updateItem(form.id, buildUpdatePayload(form, quantity));
+      // Reflect the save immediately, before attempting the rematch call -
+      // if rematch then fails (network drop, etc), the edit is already
+      // persisted and shown, not just persisted-but-invisible behind an
+      // error toast.
+      const saved = await updateItem(form.id, buildUpdatePayload(form, quantity));
+      updateItemLocal(saved);
+      setForm(saved);
+      setQuantityText(String(saved.quantity));
       const updated = await rematchItem(form.id);
       updateItemLocal(updated);
       setForm(updated);
-      setQuantityText(String(updated.quantity));
     } catch (err) {
       showError(err);
     } finally {
@@ -645,7 +660,7 @@ export function ItemDetail() {
           <div className={styles.listingHeader}>
             <label className={styles.fieldLabel}>Title ({listingTitle.length}/80)</label>
             <div className={styles.listingHeaderActions}>
-              {form.customListingTitle && (
+              {form.customListingTitle != null && (
                 <button className={styles.copyButton} onClick={() => set('customListingTitle', null)}>
                   Reset
                 </button>
@@ -665,7 +680,7 @@ export function ItemDetail() {
           <div className={styles.listingHeader}>
             <label className={styles.fieldLabel}>Description</label>
             <div className={styles.listingHeaderActions}>
-              {form.customListingDescription && (
+              {form.customListingDescription != null && (
                 <button className={styles.copyButton} onClick={() => set('customListingDescription', null)}>
                   Reset
                 </button>

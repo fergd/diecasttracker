@@ -579,6 +579,11 @@ def split_item(item_id: int, body: SplitRequest):
     # still points to.
     values[cols.index("photo_path")] = _duplicate_photo(row["photo_path"])
     values[cols.index("base_photo_path")] = _duplicate_photo(row["base_photo_path"])
+    # A split-off unit is leaving the original row's eBay lot (if any), not
+    # joining it - without this it'd silently inherit lot_id and the next
+    # CSV export would group it into a combined listing it was never meant
+    # to be part of.
+    values[cols.index("lot_id")] = None
     placeholders = ", ".join("?" for _ in cols)
     cur = conn.execute(f"INSERT INTO inventory ({', '.join(cols)}) VALUES ({placeholders})", values)
     new_id = cur.lastrowid

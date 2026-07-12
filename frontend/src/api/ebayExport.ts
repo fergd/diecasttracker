@@ -1,4 +1,4 @@
-import { generateLotTitle, generateLotDescription, resolveListingDescription } from './listingText';
+import { generateLotTitle, generateLotDescription, resolveListingDescription, resolveOverride } from './listingText';
 import { API_BASE } from './inventory';
 import type { InventoryItem } from './inventory';
 
@@ -14,12 +14,12 @@ const EBAY_TITLE_MAX = 80;
  * copying elsewhere): "{year} {brand} {casting name} {SKU}", collector
  * number omitted, per eBay's own template conventions. */
 function ebayListingTitle(item: InventoryItem): string {
-  if (item.customListingTitle) return item.customListingTitle.slice(0, EBAY_TITLE_MAX).trim();
-  const title = [item.year, item.brand ?? 'Hot Wheels', item.castingName ?? 'Diecast Car', item.sku]
+  const generated = [item.year, item.brand ?? 'Hot Wheels', item.castingName ?? 'Diecast Car', item.sku]
     .filter(Boolean)
     .join(' ')
     .replace(/\s+/g, ' ')
     .trim();
+  const title = resolveOverride(item.customListingTitle, generated);
   return title.length > EBAY_TITLE_MAX ? title.slice(0, EBAY_TITLE_MAX).trim() : title;
 }
 
@@ -81,13 +81,26 @@ function seriesFor(item: InventoryItem): string {
  * outside our network, so those are skipped rather than sent as a dead link.
  * Multiple URLs are pipe-separated per eBay's own multi-photo convention,
  * capped at eBay's own MAX_PHOTOS limit (relevant for lots: several cars'
- * worth of photos combined into one row can easily exceed it). */
+ * worth of photos combined into one row can easily exceed it).
+ *
+ * Takes photos round-robin (each item's first photo, then each item's
+ * second, ...) rather than flattening item-by-item - a lot large enough to
+ * hit the cap would otherwise let the first few cars claim every slot and
+ * leave later cars with zero photos in the listing. */
 function photoUrlsFor(items: InventoryItem[]): string {
-  return items
-    .flatMap((item) => [item.photoUrl, item.basePhotoUrl])
-    .filter((url): url is string => !!url && !url.startsWith(API_BASE))
-    .slice(0, MAX_PHOTOS)
-    .join('|');
+  const perItem = items.map((item) =>
+    [item.photoUrl, item.basePhotoUrl].filter((url): url is string => !!url && !url.startsWith(API_BASE)),
+  );
+  const urls: string[] = [];
+  for (let round = 0; urls.length < MAX_PHOTOS; round++) {
+    const before = urls.length;
+    for (const itemUrls of perItem) {
+      if (round < itemUrls.length) urls.push(itemUrls[round]);
+      if (urls.length >= MAX_PHOTOS) break;
+    }
+    if (urls.length === before) break; // every item exhausted
+  }
+  return urls.join('|');
 }
 
 /** If every item shares the same value for `select`, returns it - otherwise

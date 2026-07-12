@@ -62,6 +62,7 @@ export function CollectionList() {
   const [batchRematching, setBatchRematching] = useState(false);
   const [bulkListingMenuOpen, setBulkListingMenuOpen] = useState(false);
   const [confirmBulkDelete, setConfirmBulkDelete] = useState(false);
+  const [relotWarningCount, setRelotWarningCount] = useState<number | null>(null);
   const [bulkActionBusy, setBulkActionBusy] = useState(false);
   const [sortField, setSortField] = useState<SortField | null>(null);
   const [sortDir, setSortDir] = useState<'asc' | 'desc'>('asc');
@@ -181,7 +182,21 @@ export function CollectionList() {
     }
   }
 
+  /** Combining always overwrites lot_id, which would otherwise silently
+   * shrink or disband any lot a selected item already belongs to. Block on
+   * that and let the user explicitly choose to proceed rather than losing
+   * a previous grouping without warning. */
+  function handleCombineIntoLotClick() {
+    const alreadyLotted = [...selectedIds].filter((id) => items?.find((i) => i.id === id)?.lotId).length;
+    if (alreadyLotted > 0) {
+      setRelotWarningCount(alreadyLotted);
+      return;
+    }
+    void handleBulkCombineIntoLot();
+  }
+
   async function handleBulkCombineIntoLot() {
+    setRelotWarningCount(null);
     const lotId = `lot-${Date.now().toString(36)}-${Math.random().toString(36).slice(2, 7)}`;
     const count = selectedIds.size;
     setBulkActionBusy(true);
@@ -486,7 +501,7 @@ export function CollectionList() {
           <button
             className={styles.selectionIconButton}
             disabled={selectedIds.size < 2 || bulkActionBusy}
-            onClick={handleBulkCombineIntoLot}
+            onClick={handleCombineIntoLotClick}
             aria-label="Combine selected into one eBay listing"
           >
             <Icon name="package01" size={18} />
@@ -530,6 +545,22 @@ export function CollectionList() {
         <button className={styles.sortOption} onClick={() => handleBulkSetStatus('sold')}>
           <span>Sold</span>
         </button>
+      </Sheet>
+
+      <Sheet open={relotWarningCount !== null} onClose={() => setRelotWarningCount(null)}>
+        <h2 className={styles.sheetTitle}>Combine into a new lot?</h2>
+        <p className={styles.empty}>
+          {relotWarningCount} of the selected cars {relotWarningCount === 1 ? 'is' : 'are'} already part of
+          another lot. Combining will remove {relotWarningCount === 1 ? 'it' : 'them'} from that lot.
+        </p>
+        <div className={styles.bulkDeleteActions}>
+          <Button variant="text" onClick={() => setRelotWarningCount(null)}>
+            Cancel
+          </Button>
+          <Button variant="filled" onClick={handleBulkCombineIntoLot}>
+            Combine anyway
+          </Button>
+        </div>
       </Sheet>
 
       <Sheet open={confirmBulkDelete} onClose={() => setConfirmBulkDelete(false)}>

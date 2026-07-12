@@ -172,13 +172,25 @@ export function generateListingDescription(item: InventoryItem): string {
   ].join('\n\n');
 }
 
+/** Custom override text if set, else the given auto-generated fallback -
+ * `??` (not `||`) so a live-edited empty string displays as empty instead of
+ * snapping back to the fallback while the field is mid-clear. By the time an
+ * override is actually saved it's normalized to null-or-non-empty (see
+ * ItemDetail.tsx's buildUpdatePayload), so a persisted item never carries a
+ * stuck-blank override. Parameterized over the fallback so callers that want
+ * a different auto-generated shape (e.g. the eBay CSV's simpler title) than
+ * generateListingTitle/generateListingDescription can still share this. */
+export function resolveOverride(custom: string | null, generated: string): string {
+  return custom ?? generated;
+}
+
 /** Title actually shown/copied/exported for this item - a hand-edited
  * customListingTitle wins over the auto-generated one. */
 export function resolveListingTitle(item: InventoryItem): string {
-  return item.customListingTitle || generateListingTitle(item);
+  return resolveOverride(item.customListingTitle, generateListingTitle(item));
 }
 
 /** Same override concept as resolveListingTitle, for the description. */
 export function resolveListingDescription(item: InventoryItem): string {
-  return item.customListingDescription || generateListingDescription(item);
+  return resolveOverride(item.customListingDescription, generateListingDescription(item));
 }
