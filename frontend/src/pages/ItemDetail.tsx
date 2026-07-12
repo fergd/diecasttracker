@@ -567,9 +567,15 @@ export function ItemDetail() {
       <section className={styles.card}>
         <div className={styles.cardHeader}>
           <h2 className={styles.cardTitle}>Match</h2>
-          <button className={styles.iconButton} onClick={handleRematch} disabled={rematching} aria-label="Rematch">
-            <Icon name="scan" size={18} />
-          </button>
+          <Button
+            variant="text"
+            icon="scan"
+            iconSpin={rematching}
+            onClick={handleRematch}
+            disabled={rematching}
+          >
+            {rematching ? 'Rematching…' : 'Rematch'}
+          </Button>
         </div>
         <div className={styles.matchRow}>
           <Badge variant={matchBadgeVariant(form.matchStatus)}>{matchLabel(form)}</Badge>
