@@ -28,7 +28,7 @@ import {
   type TrackingStatus,
   type ConditionGrade,
 } from '../api/inventory';
-import { generateListingTitle, generateListingDescription } from '../api/listingText';
+import { resolveListingTitle, resolveListingDescription } from '../api/listingText';
 import styles from './ItemDetail.module.css';
 
 const BRAND_OPTIONS = [
@@ -201,6 +201,8 @@ export function ItemDetail() {
           cost_basis_usd: form.costBasis,
           listing_price_usd: form.listingPrice,
           sold_price_usd: form.soldPrice,
+          custom_listing_title: form.customListingTitle,
+          custom_listing_description: form.customListingDescription,
         }),
         1300,
       );
@@ -363,8 +365,8 @@ export function ItemDetail() {
   }
 
   const stale = (daysAgo(form.livePriceFetchedAt) ?? 0) > 7;
-  const listingTitle = generateListingTitle(form);
-  const listingDescription = generateListingDescription(form);
+  const listingTitle = resolveListingTitle(form);
+  const listingDescription = resolveListingDescription(form);
 
   async function copy(text: string, which: 'title' | 'description') {
     await navigator.clipboard.writeText(text);
@@ -622,20 +624,42 @@ export function ItemDetail() {
         <div className={styles.field}>
           <div className={styles.listingHeader}>
             <label className={styles.fieldLabel}>Title ({listingTitle.length}/80)</label>
-            <button className={styles.copyButton} onClick={() => copy(listingTitle, 'title')}>
-              {copied === 'title' ? 'Copied' : 'Copy'}
-            </button>
+            <div className={styles.listingHeaderActions}>
+              {form.customListingTitle && (
+                <button className={styles.copyButton} onClick={() => set('customListingTitle', null)}>
+                  Reset
+                </button>
+              )}
+              <button className={styles.copyButton} onClick={() => copy(listingTitle, 'title')}>
+                {copied === 'title' ? 'Copied' : 'Copy'}
+              </button>
+            </div>
           </div>
-          <p className={styles.listingText}>{listingTitle}</p>
+          <input
+            className={styles.listingText}
+            value={listingTitle}
+            onChange={(e) => set('customListingTitle', e.target.value)}
+          />
         </div>
         <div className={styles.field}>
           <div className={styles.listingHeader}>
             <label className={styles.fieldLabel}>Description</label>
-            <button className={styles.copyButton} onClick={() => copy(listingDescription, 'description')}>
-              {copied === 'description' ? 'Copied' : 'Copy'}
-            </button>
+            <div className={styles.listingHeaderActions}>
+              {form.customListingDescription && (
+                <button className={styles.copyButton} onClick={() => set('customListingDescription', null)}>
+                  Reset
+                </button>
+              )}
+              <button className={styles.copyButton} onClick={() => copy(listingDescription, 'description')}>
+                {copied === 'description' ? 'Copied' : 'Copy'}
+              </button>
+            </div>
           </div>
-          <p className={styles.listingTextBlock}>{listingDescription}</p>
+          <textarea
+            className={styles.listingTextBlock}
+            value={listingDescription}
+            onChange={(e) => set('customListingDescription', e.target.value)}
+          />
         </div>
       </section>
 

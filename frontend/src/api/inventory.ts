@@ -72,6 +72,8 @@ export interface InventoryRow {
   sold_price_usd: number | null;
   quantity: number;
   lot_id: string | null;
+  custom_listing_title: string | null;
+  custom_listing_description: string | null;
   created_at: string;
 }
 
@@ -117,6 +119,8 @@ export interface InventoryItem {
   listingPrice: number | null;
   soldPrice: number | null;
   lotId: string | null;
+  customListingTitle: string | null;
+  customListingDescription: string | null;
   createdAt: string;
 }
 
@@ -200,6 +204,8 @@ export function fromRow(row: InventoryRow): InventoryItem {
     listingPrice: row.listing_price_usd,
     soldPrice: row.sold_price_usd,
     lotId: row.lot_id,
+    customListingTitle: row.custom_listing_title,
+    customListingDescription: row.custom_listing_description,
     createdAt: row.created_at,
   };
 }
@@ -293,6 +299,8 @@ export function fromScanResponse(data: ScanResponse): InventoryItem {
     listingPrice: null,
     soldPrice: null,
     lotId: null,
+    customListingTitle: null,
+    customListingDescription: null,
     createdAt: new Date().toISOString(),
   };
 }
@@ -327,6 +335,8 @@ export interface InventoryUpdate {
   sold_price_usd?: number | null;
   quantity?: number;
   lot_id?: string | null;
+  custom_listing_title?: string | null;
+  custom_listing_description?: string | null;
 }
 
 async function unwrap<T>(resp: Response): Promise<T> {

@@ -256,6 +256,15 @@
   border-radius: var(--radius-sm);
   padding: var(--spacing-sm) var(--spacing-md);
   margin: 0;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.listingText:focus {
+  outline: 2px solid var(--color-navy-400);
+  outline-offset: -1px;
 }
 
 .listingTextBlock {
@@ -267,4 +276,20 @@
   padding: var(--spacing-md);
   margin: 0;
   white-space: pre-wrap;
+  border: none;
+  width: 100%;
+  box-sizing: border-box;
+  outline: none;
+  resize: vertical;
+  min-height: 220px;
+}
+
+.listingTextBlock:focus {
+  outline: 2px solid var(--color-navy-400);
+  outline-offset: -1px;
+}
+
+.listingHeaderActions {
+  display: flex;
+  gap: var(--spacing-md);
 }

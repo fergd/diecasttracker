@@ -171,3 +171,14 @@ export function generateListingDescription(item: InventoryItem): string {
     'From a smoke-free, pet-free home. Thanks for looking!',
   ].join('\n\n');
 }
+
+/** Title actually shown/copied/exported for this item - a hand-edited
+ * customListingTitle wins over the auto-generated one. */
+export function resolveListingTitle(item: InventoryItem): string {
+  return item.customListingTitle || generateListingTitle(item);
+}
+
+/** Same override concept as resolveListingTitle, for the description. */
+export function resolveListingDescription(item: InventoryItem): string {
+  return item.customListingDescription || generateListingDescription(item);
+}

@@ -1,4 +1,4 @@
-import { generateListingDescription, generateLotTitle, generateLotDescription } from './listingText';
+import { generateLotTitle, generateLotDescription, resolveListingDescription } from './listingText';
 import { API_BASE } from './inventory';
 import type { InventoryItem } from './inventory';
 
@@ -7,11 +7,14 @@ const MAX_PHOTOS = 24;
 
 const EBAY_TITLE_MAX = 80;
 
-/** Title for the eBay CSV specifically - simpler than the in-app "Listing
- * Text" card's title (which adds series/collector-number/color for a human
- * reviewing it before copying elsewhere): "{year} {brand} {casting name}
- * {SKU}", collector number omitted, per eBay's own template conventions. */
+/** Title for the eBay CSV specifically - a hand-edited customListingTitle
+ * wins (the user typed exactly what they want used), otherwise falls back
+ * to a simpler auto-generated title than the in-app "Listing Text" card's
+ * (which adds series/collector-number/color for a human reviewing it before
+ * copying elsewhere): "{year} {brand} {casting name} {SKU}", collector
+ * number omitted, per eBay's own template conventions. */
 function ebayListingTitle(item: InventoryItem): string {
+  if (item.customListingTitle) return item.customListingTitle.slice(0, EBAY_TITLE_MAX).trim();
   const title = [item.year, item.brand ?? 'Hot Wheels', item.castingName ?? 'Diecast Car', item.sku]
     .filter(Boolean)
     .join(' ')
@@ -142,7 +145,7 @@ function singleItemRow(item: InventoryItem): string[] {
     String(item.quantity),
     photoUrlsFor([item]),
     conditionFor(item),
-    descriptionHtml(generateListingDescription(item)),
+    descriptionHtml(resolveListingDescription(item)),
     'FixedPrice',
     item.brand ?? 'Hot Wheels',
     item.carMake ?? '',

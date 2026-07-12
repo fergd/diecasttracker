@@ -157,6 +157,12 @@ CREATE TABLE IF NOT EXISTS inventory (
                                                  -- (a "lot of 5 cars" draft), instead of each
                                                  -- getting its own listing - NULL means "sells
                                                  -- on its own", same as always
+    custom_listing_title       TEXT,          -- hand-edited override for the Listing Text
+                                                 -- card's Title - NULL means "keep auto-
+                                                 -- generating from the structured fields".
+                                                 -- Also used as the eBay CSV export's title
+                                                 -- for this item when set.
+    custom_listing_description TEXT,          -- same override concept, for Description
     created_at            TEXT DEFAULT CURRENT_TIMESTAMP,
 
     FOREIGN KEY (match_reference_id) REFERENCES reference_castings(id)
