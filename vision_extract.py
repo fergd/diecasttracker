@@ -15,13 +15,16 @@ import os
 
 import anthropic
 
-MODEL = "claude-haiku-4-5-20251001"  # Sonnet 5 costs several times more per scan than
-                            # this - ~2x the per-token price, ~30% more tokens for the
-                            # same content (newer tokenizer), plus it spends extra output
-                            # tokens on unrequested reasoning. The accuracy problems that
-                            # motivated the Sonnet bump were mostly fixed by the prompt
-                            # rewrites below (denominator-size heuristic, hang-tab SKU
-                            # location, wave-vs-series disambiguation), which apply here too.
+MODEL = "claude-sonnet-5"  # Stepped up from Haiku 4.5 ($1/$5 per MTok) for materially
+                            # better OCR/vision quality - Sonnet 5 is at intro pricing
+                            # ($2/$10 per MTok through 2026-08-31, ~2x Haiku's cost) rather
+                            # than its standard $3/$15, and is still far cheaper than Opus
+                            # ($5/$25). Thinking is explicitly disabled below: Sonnet 5 runs
+                            # adaptive thinking by default, which is exactly the "extra
+                            # output tokens on unrequested reasoning" cost blowup that sank
+                            # the previous Sonnet attempt - this is a fixed-schema JSON
+                            # extraction task with no need for extended reasoning, so turning
+                            # it off keeps cost close to the ~2x input-price difference alone.
 
 CARDED_PROMPT = """You are looking at photo(s) of a carded (packaged) Hot Wheels or \
 Matchbox diecast car. Read the text printed on the card and extract the following \
@@ -114,7 +117,11 @@ fields as JSON only - no preamble, no markdown fences, just the raw JSON object:
              series within that same wave). Always prefer the more specific series
              name over a shared yearly/wave banner if both are present,
   "release_year": the year if visible (from a "NEW FOR ____" flag or copyright date),
-  "color": brief description of the car's visible color/deco,
+  "color": the car body's single PRIMARY color only, as one plain color word (e.g.
+            "Red", "Yellow", "Green", "Black", "White", "Blue", "Silver", "Gray",
+            "Orange", "Purple", "Pink", "Brown", "Gold", "Chrome"). Pick the dominant
+            base color of the body - do NOT describe deco, stripes, graphics, secondary
+            accent colors, or finish details (e.g. "spectraflame", "metallic") here,
   "treasure_hunt": "TH" if this is a regular Treasure Hunt, "Super TH" if a Super
                      Treasure Hunt, else null. Look for the actual Treasure Hunt LOGO
                      (a small green flame/checkered-flag icon, sometimes with "TH"
@@ -190,7 +197,11 @@ the raw JSON object:
                     country. Extract just the country name cleanly (not the full
                     stamp text). null if no base photo was given or the country
                     isn't legible - do not guess,
-  "color": description of the car's color/deco,
+  "color": the car body's single PRIMARY color only, as one plain color word (e.g.
+            "Red", "Yellow", "Green", "Black", "White", "Blue", "Silver", "Gray",
+            "Orange", "Purple", "Pink", "Brown", "Gold", "Chrome"). Pick the dominant
+            base color of the body - do NOT describe deco, stripes, graphics, secondary
+            accent colors, or finish details (e.g. "spectraflame", "metallic") here,
   "wheel_type": "Redline" (red-striped tires, only on 1968-77 vintage cars),
                  "Real Riders" (rubber tires with visible tread detail, used on
                  Premium lines and Super Treasure Hunts), "Basic Wheels" (standard
@@ -272,11 +283,12 @@ def extract_card_details(image_bytes: bytes, packaging_type: str = "carded",
     try:
         response = client.messages.create(
             model=MODEL,
-            max_tokens=700,  # comfortable headroom for the current extraction schema's
-                               # JSON output (wheel_type, body_base_construction,
-                               # special_flags, series_number, etc all added since the
-                               # original 500) without leaving room for the runaway
-                               # thinking-token waste Sonnet was prone to
+            max_tokens=900,  # headroom for the current extraction schema's JSON output
+                               # (wheel_type, body_base_construction, special_flags,
+                               # series_number, etc), plus ~30% more tokens for the same
+                               # content under Sonnet 5's newer tokenizer vs Haiku's
+            thinking={"type": "disabled"},  # structured extraction doesn't need reasoning -
+                                              # see MODEL comment above on why this matters for cost
             messages=[{"role": "user", "content": content}],
         )
     except anthropic.APIStatusError as e:
