@@ -31,7 +31,13 @@ export function CameraCapture({ step, packagingType, onCapture, onSkip, onClose 
     async function start() {
       try {
         const stream = await navigator.mediaDevices.getUserMedia({
-          video: { facingMode: { ideal: facingMode }, width: { ideal: 1920 }, height: { ideal: 1080 } },
+          // `ideal`, not `exact`/`min` - devices that can't do 4K just give
+          // their next-best resolution, no fallback logic needed. The old
+          // 1920x1080 cap left very little actual pixel detail for a small
+          // hang-tab SKU code, which is often a tiny corner of the whole
+          // card in frame - no model or prompt tuning can read detail that
+          // was never captured in the first place.
+          video: { facingMode: { ideal: facingMode }, width: { ideal: 3840 }, height: { ideal: 2160 } },
           audio: false,
         });
         if (cancelled) {
