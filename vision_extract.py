@@ -19,12 +19,7 @@ MODEL = "claude-sonnet-5"  # Stepped up from Haiku 4.5 ($1/$5 per MTok) for mate
                             # better OCR/vision quality - Sonnet 5 is at intro pricing
                             # ($2/$10 per MTok through 2026-08-31, ~2x Haiku's cost) rather
                             # than its standard $3/$15, and is still far cheaper than Opus
-                            # ($5/$25). Thinking is explicitly disabled below: Sonnet 5 runs
-                            # adaptive thinking by default, which is exactly the "extra
-                            # output tokens on unrequested reasoning" cost blowup that sank
-                            # the previous Sonnet attempt - this is a fixed-schema JSON
-                            # extraction task with no need for extended reasoning, so turning
-                            # it off keeps cost close to the ~2x input-price difference alone.
+                            # ($5/$25).
 
 CARDED_PROMPT = """You are looking at photo(s) of a carded (packaged) Hot Wheels or \
 Matchbox diecast car. Read the text printed on the card and extract the following \
@@ -283,12 +278,20 @@ def extract_card_details(image_bytes: bytes, packaging_type: str = "carded",
     try:
         response = client.messages.create(
             model=MODEL,
-            max_tokens=900,  # headroom for the current extraction schema's JSON output
-                               # (wheel_type, body_base_construction, special_flags,
-                               # series_number, etc), plus ~30% more tokens for the same
-                               # content under Sonnet 5's newer tokenizer vs Haiku's
-            thinking={"type": "disabled"},  # structured extraction doesn't need reasoning -
-                                              # see MODEL comment above on why this matters for cost
+            max_tokens=2000,  # headroom for the extraction schema's JSON output (wheel_type,
+                                # body_base_construction, special_flags, series_number, etc)
+                                # plus adaptive-thinking tokens below - thinking counts against
+                                # this same budget, so 900 (sized for JSON alone) risked
+                                # truncating the response before the JSON was even reached
+            thinking={"type": "adaptive"},  # re-enabled: disabling this measurably hurt SKU
+                                              # extraction specifically - finding the Toy # code
+                                              # is a real visual-search task (hang-tab, then a
+                                              # side notch, then a promo text line, in the order
+                                              # the prompt describes), and a no-thinking pass was
+                                              # giving up and returning null more often than it
+                                              # should. effort=low below caps how much reasoning
+                                              # this spends rather than leaving it fully open-ended.
+            output_config={"effort": "low"},
             messages=[{"role": "user", "content": content}],
         )
     except anthropic.APIStatusError as e:
