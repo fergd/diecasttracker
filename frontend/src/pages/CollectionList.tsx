@@ -1,7 +1,6 @@
 import { useMemo, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { TabBar } from '../components/TabBar';
-import { Tab } from '../components/Tab';
+import { Segment } from '../components/Segment';
 import { Input } from '../components/Input';
 import { Tag } from '../components/Tag';
 import { Button } from '../components/Button';
@@ -401,14 +400,14 @@ export function CollectionList() {
         </div>
       )}
 
-      <TabBar>
-        <Tab selected={packagingType === 'carded'} onClick={() => setPackagingType('carded')}>
-          Carded
-        </Tab>
-        <Tab selected={packagingType === 'loose'} onClick={() => setPackagingType('loose')}>
-          Loose
-        </Tab>
-      </TabBar>
+      <Segment
+        value={packagingType}
+        onChange={setPackagingType}
+        options={[
+          { value: 'carded', label: 'Carded' },
+          { value: 'loose', label: 'Loose' },
+        ]}
+      />
 
       <Input
         variant="outlined"

@@ -5,8 +5,7 @@ import { Button } from '../components/Button';
 import { IconButtonIonic } from '../components/IconButtonIonic';
 import { Input } from '../components/Input';
 import { Select } from '../components/Select';
-import { TabBar } from '../components/TabBar';
-import { Tab } from '../components/Tab';
+import { Segment } from '../components/Segment';
 import { Badge } from '../components/Badge';
 import { Sheet } from '../components/Sheet';
 import { Tag } from '../components/Tag';
@@ -612,20 +611,15 @@ export function ItemDetail() {
         </div>
         <div className={styles.field}>
           <label className={styles.fieldLabel}>Treasure hunt</label>
-          <TabBar>
-            <Tab selected={form.treasureHunt === null} onClick={() => set('treasureHunt', null as TreasureHunt)}>
-              Not a TH
-            </Tab>
-            <Tab selected={form.treasureHunt === 'TH'} onClick={() => set('treasureHunt', 'TH' as TreasureHunt)}>
-              TH
-            </Tab>
-            <Tab
-              selected={form.treasureHunt === 'Super TH'}
-              onClick={() => set('treasureHunt', 'Super TH' as TreasureHunt)}
-            >
-              Super TH
-            </Tab>
-          </TabBar>
+          <Segment
+            value={form.treasureHunt ?? 'none'}
+            onChange={(v) => set('treasureHunt', (v === 'none' ? null : v) as TreasureHunt)}
+            options={[
+              { value: 'none', label: 'Not a TH' },
+              { value: 'TH', label: 'TH' },
+              { value: 'Super TH', label: 'Super TH' },
+            ]}
+          />
         </div>
         <Input
           label="Comments"
@@ -758,26 +752,15 @@ export function ItemDetail() {
         <h2 className={styles.cardTitle}>Your tracking</h2>
         <div className={styles.field}>
           <label className={styles.fieldLabel}>Status</label>
-          <TabBar>
-            <Tab
-              selected={form.trackingStatus === 'in_collection'}
-              onClick={() => set('trackingStatus', 'in_collection' as TrackingStatus)}
-            >
-              In collection
-            </Tab>
-            <Tab
-              selected={form.trackingStatus === 'listed'}
-              onClick={() => set('trackingStatus', 'listed' as TrackingStatus)}
-            >
-              Listed
-            </Tab>
-            <Tab
-              selected={form.trackingStatus === 'sold'}
-              onClick={() => set('trackingStatus', 'sold' as TrackingStatus)}
-            >
-              Sold
-            </Tab>
-          </TabBar>
+          <Segment
+            value={form.trackingStatus}
+            onChange={(v) => set('trackingStatus', v as TrackingStatus)}
+            options={[
+              { value: 'in_collection', label: 'In collection' },
+              { value: 'listed', label: 'Listed' },
+              { value: 'sold', label: 'Sold' },
+            ]}
+          />
         </div>
         <div className={styles.field}>
           <Tag selected={form.stagedForListing} onClick={handleStagedTagClick} disabled={togglingStaged}>

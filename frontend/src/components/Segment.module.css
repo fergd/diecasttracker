@@ -1,0 +1,19 @@
+.segment {
+  --background: var(--color-surface-card-dark);
+  border-radius: var(--radius-md);
+  padding: var(--spacing-2xs);
+}
+
+.button {
+  --color: var(--color-navy-400);
+  --color-checked: var(--color-gold-100);
+  --indicator-color: var(--color-navy-500);
+  --border-radius: var(--radius-sm);
+  min-height: 44px;
+  margin: 0;
+  font-family: var(--font-body);
+  font-size: var(--font-size-callout);
+  font-weight: var(--font-weight-medium);
+  text-transform: none;
+  letter-spacing: normal;
+}
