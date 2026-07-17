@@ -7,7 +7,8 @@ import { Tag } from '../components/Tag';
 import { Button } from '../components/Button';
 import { Icon } from '../components/Icon';
 import { Sheet } from '../components/Sheet';
-import { ListItem } from '../components/ListItem';
+import { ListItemIonic as ListItem } from '../components/ListItemIonic';
+import { IconButtonIonic } from '../components/IconButtonIonic';
 import { ScanFab } from '../components/ScanFab';
 import { Toast } from '../components/Toast';
 import { useInventory } from '../api/InventoryContext';
@@ -376,9 +377,7 @@ export function CollectionList() {
           </div>
         </div>
         <div className={styles.headerActions}>
-          <button className={styles.sortButton} onClick={() => setSortMenuOpen(true)} aria-label="Sort">
-            <Icon name="sorting01" size={20} />
-          </button>
+          <IconButtonIonic icon="sorting01" label="Sort" onClick={() => setSortMenuOpen(true)} />
           <Button variant="text" onClick={toggleSelectionMode}>
             {selectionMode ? 'Cancel' : 'Select'}
           </Button>
@@ -482,38 +481,30 @@ export function CollectionList() {
       {selectionMode ? (
         <div className={styles.selectionBar}>
           <span className={styles.selectionCount}>{selectedIds.size} selected</span>
-          <button
-            className={styles.selectionIconButton}
+          <IconButtonIonic
+            icon="scan"
+            label="Rematch selected"
             disabled={selectedIds.size === 0 || batchRematching || bulkActionBusy}
             onClick={handleBatchRematch}
-            aria-label="Rematch selected"
-          >
-            <Icon name="scan" size={18} />
-          </button>
-          <button
-            className={styles.selectionIconButton}
+          />
+          <IconButtonIonic
+            icon="bookmark01"
+            label="Listing options for selected"
             disabled={selectedIds.size === 0 || bulkActionBusy}
             onClick={() => setBulkListingMenuOpen(true)}
-            aria-label="Listing options for selected"
-          >
-            <Icon name="bookmark01" size={18} />
-          </button>
-          <button
-            className={styles.selectionIconButton}
+          />
+          <IconButtonIonic
+            icon="package01"
+            label="Combine selected into one eBay listing"
             disabled={selectedIds.size < 2 || bulkActionBusy}
             onClick={handleCombineIntoLotClick}
-            aria-label="Combine selected into one eBay listing"
-          >
-            <Icon name="package01" size={18} />
-          </button>
-          <button
-            className={styles.selectionIconButton}
+          />
+          <IconButtonIonic
+            icon="delete02"
+            label="Delete selected"
             disabled={selectedIds.size === 0 || bulkActionBusy}
             onClick={() => setConfirmBulkDelete(true)}
-            aria-label="Delete selected"
-          >
-            <Icon name="delete02" size={18} />
-          </button>
+          />
         </div>
       ) : (
         <ScanFab packagingType={packagingType} />

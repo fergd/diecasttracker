@@ -1,0 +1,11 @@
+/* Bridges Ionic's CSS variables onto the Zamak Ledger token set, so trial
+   components (see ListItemIonic) sit on the existing dark palette instead
+   of Ionic's default blue. Only touches variables, not element styles. */
+:root {
+  --ion-background-color: var(--color-surface-bg-dark);
+  --ion-text-color: var(--color-text-primary-dark);
+  --ion-color-primary: var(--color-navy-500);
+  --ion-color-primary-contrast: var(--color-zinc-50);
+  --ion-item-background: var(--color-surface-card-dark);
+  --ion-border-color: transparent;
+}

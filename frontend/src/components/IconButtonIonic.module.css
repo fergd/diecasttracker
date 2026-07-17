@@ -1,0 +1,26 @@
+.button {
+  --padding-start: 0;
+  --padding-end: 0;
+  --padding-top: 0;
+  --padding-bottom: 0;
+  --border-radius: 50%;
+  --background: var(--color-zinc-800);
+  --background-activated: var(--color-zinc-600);
+  --background-activated-opacity: 1;
+  --color: var(--color-text-primary-dark);
+  --box-shadow: none;
+  width: 44px;
+  height: 44px;
+  margin: 0;
+}
+
+/* --border-radius and the padding vars above style ion-button's shadow
+ * content, but the actual <button> element inside doesn't inherit a fixed
+ * width/height from the host - without this it sizes to content and
+ * "shape=round" renders a pill, not a circle. */
+.button::part(native) {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  padding: 0;
+}
