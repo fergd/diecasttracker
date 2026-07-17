@@ -25,6 +25,8 @@ export interface ListItemProps {
    * navigating on tap. `onClick` still fires and should toggle selection. */
   selectable?: boolean;
   selected?: boolean;
+  favorite?: boolean;
+  onToggleFavorite?: () => void;
 }
 
 /** Row in the collection list: thumbnail (photo or colored placeholder),
@@ -47,6 +49,8 @@ export function ListItem({
   trailing,
   selectable = false,
   selected = false,
+  favorite = false,
+  onToggleFavorite,
 }: ListItemProps) {
   const pressHandlers = useLongPress(onLongPress, onClick);
   return (
@@ -78,8 +82,21 @@ export function ListItem({
         )}
       </IonLabel>
 
-      {(price || statusLabel || trailing) && (
+      {(price || statusLabel || trailing || onToggleFavorite) && (
         <div slot="end" className={styles.trailing}>
+          {onToggleFavorite && (
+            <button
+              type="button"
+              className={[styles.favoriteButton, favorite ? styles.favoriteActive : ''].filter(Boolean).join(' ')}
+              aria-label={favorite ? 'Remove from favorites' : 'Add to favorites'}
+              onClick={(e) => {
+                e.stopPropagation();
+                onToggleFavorite();
+              }}
+            >
+              <Icon name="heart" size={18} filled={favorite} />
+            </button>
+          )}
           {price && <div className={styles.price}>{price}</div>}
           {statusLabel && <Badge variant="info">{statusLabel}</Badge>}
           {trailing}

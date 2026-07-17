@@ -297,6 +297,15 @@ export function CollectionList() {
     }
   }
 
+  async function handleToggleFavorite(item: InventoryItem) {
+    try {
+      const updated = await updateItem(item.id, { favorite: !item.favorite });
+      updateItemLocal(updated);
+    } catch (err) {
+      setToast({ message: err instanceof Error ? err.message : String(err), variant: 'error' });
+    }
+  }
+
   async function handleItemDelete() {
     if (!actionItem) return;
     setItemActionBusy(true);
@@ -456,6 +465,8 @@ export function CollectionList() {
             showLot={!!item.lotId}
             price={item.price != null ? money(item.price) : undefined}
             statusLabel={trackingLabel(item.trackingStatus)}
+            favorite={item.favorite}
+            onToggleFavorite={selectionMode ? undefined : () => handleToggleFavorite(item)}
           />
         ))}
       </div>

@@ -146,6 +146,9 @@ CREATE TABLE IF NOT EXISTS inventory (
                                                  -- export, independent of status (an item stays
                                                  -- in_collection while staged; the export flips
                                                  -- it to status='listed' and clears this flag)
+    favorite              INTEGER DEFAULT 0,  -- 0/1 - just a personal "heart this one" flag,
+                                                 -- no scale/rating, independent of every other
+                                                 -- tracking field above
     listing_price_usd     REAL,
     sold_price_usd         REAL,
     quantity              INTEGER DEFAULT 1,  -- how many physical copies of this exact

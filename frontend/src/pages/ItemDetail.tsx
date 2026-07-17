@@ -125,6 +125,7 @@ export function ItemDetail() {
   const [rematching, setRematching] = useState(false);
   const [refreshingPrice, setRefreshingPrice] = useState(false);
   const [togglingStaged, setTogglingStaged] = useState(false);
+  const [togglingFavorite, setTogglingFavorite] = useState(false);
   const [stageQtyPromptOpen, setStageQtyPromptOpen] = useState(false);
   const [confirmDelete, setConfirmDelete] = useState(false);
   const [lightbox, setLightbox] = useState<string | null>(null);
@@ -363,6 +364,21 @@ export function ItemDetail() {
     handleToggleStaged();
   }
 
+  async function handleToggleFavorite() {
+    if (!form) return;
+    const next = !form.favorite;
+    setTogglingFavorite(true);
+    try {
+      const updated = await updateItem(form.id, { favorite: next });
+      updateItemLocal(updated);
+      setForm(updated);
+    } catch (err) {
+      showError(err);
+    } finally {
+      setTogglingFavorite(false);
+    }
+  }
+
   async function handleToggleStaged() {
     if (!form) return;
     const next = !form.stagedForListing;
@@ -465,6 +481,15 @@ export function ItemDetail() {
         {autosaveStatus !== 'idle' && (
           <span className={styles.autosaveStatus}>{autosaveStatus === 'saving' ? 'Saving…' : 'Saved'}</span>
         )}
+        <IconButtonIonic
+          icon="heart"
+          iconSize={20}
+          iconFilled={form.favorite}
+          label={form.favorite ? 'Remove from favorites' : 'Add to favorites'}
+          onClick={handleToggleFavorite}
+          disabled={togglingFavorite}
+          className={form.favorite ? styles.favoriteActive : undefined}
+        />
       </header>
 
       <section className={styles.photos}>

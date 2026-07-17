@@ -6,6 +6,9 @@ export interface IconButtonIonicProps {
   icon: IconName;
   label: string;
   iconSize?: number;
+  /** Passed through to Icon's `filled` prop - for icons with an on/off state
+   * (e.g. a favorited heart). */
+  iconFilled?: boolean;
   /** 'default' is a real 44px tap target. 'sm' (36px) is only for spots too
    * tight for that - e.g. an overlay on a small photo thumbnail - and is
    * still bigger than the 28-36px bare-<button> versions it replaces. */
@@ -22,6 +25,7 @@ export function IconButtonIonic({
   icon,
   label,
   iconSize = 18,
+  iconFilled = false,
   size = 'default',
   onClick,
   disabled,
@@ -35,7 +39,7 @@ export function IconButtonIonic({
       disabled={disabled}
       aria-label={label}
     >
-      <Icon name={icon} size={iconSize} />
+      <Icon name={icon} size={iconSize} filled={iconFilled} />
     </IonButton>
   );
 }

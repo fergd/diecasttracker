@@ -91,3 +91,17 @@
   font-weight: var(--font-weight-medium);
   color: var(--color-text-primary-dark);
 }
+
+.favoriteButton {
+  border: none;
+  background: transparent;
+  padding: var(--spacing-2xs);
+  margin: calc(var(--spacing-2xs) * -1);
+  display: flex;
+  color: var(--color-text-secondary-dark);
+  cursor: pointer;
+}
+
+.favoriteActive {
+  color: var(--color-semantic-error);
+}

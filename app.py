@@ -100,6 +100,7 @@ INVENTORY_COLUMNS = {
     "cost_basis_usd": "REAL",
     "status": "TEXT DEFAULT 'in_collection'",
     "staged_for_listing": "INTEGER DEFAULT 0",
+    "favorite": "INTEGER DEFAULT 0",
     "listing_price_usd": "REAL",
     "sold_price_usd": "REAL",
     "quantity": "INTEGER DEFAULT 1",
@@ -495,6 +496,7 @@ class InventoryUpdate(BaseModel):
     cost_basis_usd: Optional[float] = None
     status: Optional[str] = None          # in_collection / listed / sold
     staged_for_listing: Optional[bool] = None
+    favorite: Optional[bool] = None
     listing_price_usd: Optional[float] = None
     sold_price_usd: Optional[float] = None
     quantity: Optional[int] = None

@@ -25,6 +25,10 @@
   min-width: 0;
 }
 
+.favoriteActive {
+  --color: var(--color-semantic-error);
+}
+
 .autosaveStatus {
   flex-shrink: 0;
   font-family: var(--font-body);

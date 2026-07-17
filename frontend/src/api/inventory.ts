@@ -66,6 +66,7 @@ export interface InventoryRow {
   condition_card_grade: ConditionGrade;
   status: TrackingStatus;
   staged_for_listing: number;
+  favorite: number;
   acquired_date: string | null;
   cost_basis_usd: number | null;
   listing_price_usd: number | null;
@@ -113,6 +114,7 @@ export interface InventoryItem {
   conditionCardGrade: ConditionGrade;
   trackingStatus: TrackingStatus;
   stagedForListing: boolean;
+  favorite: boolean;
   quantity: number;
   price: number | null;
   costBasis: number | null;
@@ -198,6 +200,7 @@ export function fromRow(row: InventoryRow): InventoryItem {
     conditionCardGrade: row.condition_card_grade,
     trackingStatus: row.status,
     stagedForListing: !!row.staged_for_listing,
+    favorite: !!row.favorite,
     quantity: row.quantity || 1,
     price: row.live_recommended_price_usd ?? row.live_price_low_usd ?? row.guide_price_usd,
     costBasis: row.cost_basis_usd,
@@ -293,6 +296,7 @@ export function fromScanResponse(data: ScanResponse): InventoryItem {
     conditionCardGrade: null,
     trackingStatus: 'in_collection',
     stagedForListing: false,
+    favorite: false,
     quantity: 1,
     price: lp.recommended_listing_price_usd ?? lp.price_low_usd ?? v.guide_price_usd,
     costBasis: null,
@@ -331,6 +335,7 @@ export interface InventoryUpdate {
   cost_basis_usd?: number | null;
   status?: TrackingStatus;
   staged_for_listing?: boolean;
+  favorite?: boolean;
   listing_price_usd?: number | null;
   sold_price_usd?: number | null;
   quantity?: number;
