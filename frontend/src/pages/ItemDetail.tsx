@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
+import { flushSync } from 'react-dom';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Icon } from '../components/Icon';
 import { Button } from '../components/Button';
@@ -408,6 +409,12 @@ export function ItemDetail() {
     try {
       await deleteItem(form.id);
       removeItemLocal(form.id);
+      // Close the confirm sheet (an IonModal) and force it to commit before
+      // navigating away - otherwise the route change unmounts it while
+      // still open, its body-level scroll lock never gets released, and
+      // the list page we land on is frozen. See ScanFab's handleDuplicateEdit
+      // for the same issue.
+      flushSync(() => setConfirmDelete(false));
       navigate('/');
     } catch (err) {
       showError(err);

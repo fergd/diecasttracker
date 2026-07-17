@@ -1,4 +1,5 @@
 import { useRef, useState } from 'react';
+import { flushSync } from 'react-dom';
 import { useNavigate } from 'react-router-dom';
 import { Icon } from './Icon';
 import { Button } from './Button';
@@ -131,7 +132,14 @@ export function ScanFab({ packagingType }: ScanFabProps) {
   async function handleDuplicateEdit() {
     if (scanResult) await deleteItem(scanResult.id).catch(() => {});
     const existingId = duplicateMatch?.id;
-    resetToIdle();
+    // Closing the sheet (an IonModal) is what releases the body-level
+    // scroll lock it applies while open - but that only happens once React
+    // actually commits isOpen=false to the still-mounted modal. Navigating
+    // in the same tick lets the route change unmount this whole tree first,
+    // so the modal never gets to dismiss and the lock is stuck forever on
+    // whatever page we land on. flushSync forces the close to commit before
+    // the navigate below can tear the tree down.
+    flushSync(() => resetToIdle());
     if (existingId != null) navigate(`/item/${existingId}`);
   }
 
@@ -157,14 +165,17 @@ export function ScanFab({ packagingType }: ScanFabProps) {
   }
 
   function handleEdit() {
-    if (scanResult) {
-      addItem(scanResult);
-      navigate(`/item/${scanResult.id}`);
-    }
-    setView('idle');
-    setScanResult(null);
-    setDuplicateMatch(null);
-    setErrorMsg('');
+    if (scanResult) addItem(scanResult);
+    const targetId = scanResult?.id;
+    // See handleDuplicateEdit above - same reasoning for forcing this
+    // close to commit before navigating away.
+    flushSync(() => {
+      setView('idle');
+      setScanResult(null);
+      setDuplicateMatch(null);
+      setErrorMsg('');
+    });
+    if (targetId != null) navigate(`/item/${targetId}`);
   }
 
   return (
