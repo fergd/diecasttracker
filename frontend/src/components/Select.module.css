@@ -13,19 +13,16 @@
 }
 
 .select {
+  --background: var(--color-zinc-800);
+  --color: var(--color-text-primary-dark);
+  --padding-start: var(--spacing-md);
+  --padding-end: var(--spacing-md);
+  --padding-top: var(--spacing-sm);
+  --padding-bottom: var(--spacing-sm);
+  --border-radius: var(--radius-sm);
   width: 100%;
-  padding: var(--spacing-sm) var(--spacing-md);
+  min-height: 44px;
   border-radius: var(--radius-sm);
-  border: 1px solid transparent;
-  background: var(--color-zinc-800);
-  color: var(--color-text-primary-dark);
   font-family: var(--font-body);
   font-size: var(--font-size-callout);
-  outline: none;
-}
-
-.select:focus {
-  border-color: var(--color-navy-500);
-  border-width: 2px;
-  padding: calc(var(--spacing-sm) - 1px) calc(var(--spacing-md) - 1px);
 }
