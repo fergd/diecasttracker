@@ -1,35 +1,41 @@
 .badge {
+  --padding-start: var(--spacing-sm);
+  --padding-end: var(--spacing-sm);
+  --padding-top: var(--spacing-2xs);
+  --padding-bottom: var(--spacing-2xs);
+  --border-radius: var(--radius-full);
   display: inline-flex;
   align-items: center;
-  padding: var(--spacing-2xs) var(--spacing-sm);
-  border-radius: var(--radius-full);
+  margin: 0;
   font-family: var(--font-body);
   font-size: var(--font-size-caption1);
   font-weight: var(--font-weight-medium);
   white-space: nowrap;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
 .success {
-  background: rgba(var(--color-semantic-success-rgb), 0.13);
-  color: var(--color-semantic-success);
+  --background: rgba(var(--color-semantic-success-rgb), 0.13);
+  --color: var(--color-semantic-success);
 }
 .warning {
-  background: rgba(var(--color-semantic-warning-rgb), 0.13);
-  color: var(--color-semantic-warning);
+  --background: rgba(var(--color-semantic-warning-rgb), 0.13);
+  --color: var(--color-semantic-warning);
 }
 .error {
-  background: rgba(var(--color-semantic-error-rgb), 0.13);
-  color: var(--color-semantic-error);
+  --background: rgba(var(--color-semantic-error-rgb), 0.13);
+  --color: var(--color-semantic-error);
 }
 .info {
-  background: rgba(var(--color-semantic-info-rgb), 0.13);
-  color: var(--color-semantic-info);
+  --background: rgba(var(--color-semantic-info-rgb), 0.13);
+  --color: var(--color-semantic-info);
 }
 .ai {
-  background: rgba(var(--color-semantic-ai-rgb), 0.13);
-  color: var(--color-semantic-ai);
+  --background: rgba(var(--color-semantic-ai-rgb), 0.13);
+  --color: var(--color-semantic-ai);
 }
 .neutral {
-  background: rgba(var(--color-zinc-400-rgb), 0.13);
-  color: var(--color-zinc-400);
+  --background: rgba(var(--color-zinc-400-rgb), 0.13);
+  --color: var(--color-zinc-400);
 }

@@ -1,9 +1,10 @@
 import type { HTMLAttributes } from 'react';
+import { IonBadge } from '@ionic/react';
 import styles from './Badge.module.css';
 
 export type BadgeStyle = 'success' | 'warning' | 'error' | 'info' | 'ai' | 'neutral';
 
-export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
+export interface BadgeProps extends HTMLAttributes<HTMLElement> {
   variant?: BadgeStyle;
 }
 
@@ -11,8 +12,8 @@ export interface BadgeProps extends HTMLAttributes<HTMLSpanElement> {
  * tracking status). Tinted background at 13% opacity of the semantic color. */
 export function Badge({ variant = 'neutral', className, children, ...rest }: BadgeProps) {
   return (
-    <span className={[styles.badge, styles[variant], className].filter(Boolean).join(' ')} {...rest}>
+    <IonBadge className={[styles.badge, styles[variant], className].filter(Boolean).join(' ')} {...rest}>
       {children}
-    </span>
+    </IonBadge>
   );
 }
