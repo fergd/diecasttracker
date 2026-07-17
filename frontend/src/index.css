@@ -17,6 +17,14 @@ body {
   color-scheme: dark;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* @ionic/react's base stylesheet pins body as a fixed, non-scrolling
+     frame on the assumption every page scrolls via IonContent's own
+     internal viewport - this app doesn't use IonContent, so undo that
+     and let the document scroll normally. */
+  position: static;
+  height: auto;
+  max-height: none;
+  overflow-y: auto;
 }
 
 #root {
