@@ -1,21 +1,27 @@
 .button {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: var(--spacing-sm);
-  padding: var(--spacing-sm) var(--spacing-lg);
-  border-radius: var(--radius-md);
-  border: none;
+  --border-radius: var(--radius-md);
+  --box-shadow: none;
+  --padding-start: var(--spacing-lg);
+  --padding-end: var(--spacing-lg);
+  min-height: 44px;
+  margin: 0;
   font-family: var(--font-body);
   font-size: var(--font-size-callout);
   font-weight: var(--font-weight-medium);
-  cursor: pointer;
-  transition: background-color 0.15s ease, border-color 0.15s ease, opacity 0.15s ease;
+  text-transform: none;
+  letter-spacing: normal;
 }
 
-.button:disabled {
-  opacity: 0.38;
-  cursor: not-allowed;
+/* --padding-* above styles ion-button's shadow content, but the actual
+ * <button> inside doesn't pick up a fixed min-height from the host - see
+ * the same issue/fix in IconButtonIonic.module.css. */
+.button::part(native) {
+  min-height: 44px;
+}
+
+.icon {
+  display: inline-flex;
+  margin-inline-end: var(--spacing-sm);
 }
 
 .spin {
@@ -29,53 +35,42 @@
 
 /* Filled - primary action */
 .filled {
-  background: var(--color-navy-500);
-  color: var(--color-zinc-50);
-}
-.filled:not(:disabled):hover {
-  background: var(--color-navy-600);
-}
-.filled:not(:disabled):active {
-  background: var(--color-navy-600);
+  --background: var(--color-navy-500);
+  --background-hover: var(--color-navy-600);
+  --background-activated: var(--color-navy-600);
+  --color: var(--color-zinc-50);
 }
 
-/* Tonal - secondary emphasis */
+/* Tonal - secondary emphasis (no native Ionic fill matches this, so it
+ * rides on fill="solid" with its own background/color override) */
 .tonal {
-  background: var(--color-navy-100);
-  color: var(--color-navy-700);
-}
-.tonal:not(:disabled):hover,
-.tonal:not(:disabled):active {
-  background: var(--color-navy-200);
+  --background: var(--color-navy-100);
+  --background-hover: var(--color-navy-200);
+  --background-activated: var(--color-navy-200);
+  --color: var(--color-navy-700);
 }
 
 /* Outlined - lower emphasis */
 .outlined {
-  background: transparent;
-  border: 1px solid var(--color-navy-400);
-  color: var(--color-navy-400);
-}
-.outlined:not(:disabled):hover {
-  background: rgba(var(--color-navy-500-rgb), 0.08);
-}
-.outlined:not(:disabled):active {
-  background: rgba(var(--color-navy-500-rgb), 0.12);
+  --border-color: var(--color-navy-400);
+  --border-width: 1px;
+  --border-style: solid;
+  --color: var(--color-navy-400);
+  --background-hover: rgba(var(--color-navy-500-rgb), 0.08);
+  --background-activated: rgba(var(--color-navy-500-rgb), 0.12);
 }
 
 /* Text - lowest emphasis */
 .text {
-  background: transparent;
-  color: var(--color-navy-400);
-}
-.text:not(:disabled):hover {
-  background: rgba(var(--color-navy-500-rgb), 0.08);
-}
-.text:not(:disabled):active {
-  background: rgba(var(--color-navy-500-rgb), 0.12);
+  --color: var(--color-navy-400);
+  --background-hover: rgba(var(--color-navy-500-rgb), 0.08);
+  --background-activated: rgba(var(--color-navy-500-rgb), 0.12);
 }
 
 /* Destructive - irreversible/data-loss actions */
 .destructive {
-  background: var(--color-semantic-error);
-  color: var(--color-zinc-50);
+  --background: var(--color-semantic-error);
+  --background-hover: var(--color-semantic-error);
+  --background-activated: var(--color-semantic-error);
+  --color: var(--color-zinc-50);
 }
