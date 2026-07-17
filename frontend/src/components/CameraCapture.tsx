@@ -1,5 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { Icon } from './Icon';
+import { IconButtonIonic } from './IconButtonIonic';
+import { Button } from './Button';
 import styles from './CameraCapture.module.css';
 
 export type CameraStep = 'front' | 'back';
@@ -111,14 +113,12 @@ export function CameraCapture({ step, packagingType, onCapture, onSkip, onClose 
   return (
     <div className={styles.overlay}>
       <div className={styles.topBar}>
-        <button className={styles.iconButton} onClick={onClose} aria-label="Close">
-          <Icon name="cancel01" size={20} />
-        </button>
+        <IconButtonIonic icon="cancel01" iconSize={20} label="Close" className={styles.iconButton} onClick={onClose} />
         <span className={styles.stepLabel}>{stepLabel}</span>
         {step === 'back' ? (
-          <button className={styles.textButton} onClick={onSkip}>
+          <Button variant="text" className={styles.textButton} onClick={onSkip}>
             Skip
-          </button>
+          </Button>
         ) : (
           <span className={styles.spacer} />
         )}
@@ -139,16 +139,24 @@ export function CameraCapture({ step, packagingType, onCapture, onSkip, onClose 
 
       <div className={styles.bottomBar}>
         {torchSupported ? (
-          <button className={styles.iconButton} onClick={handleTorch} aria-label="Toggle flash">
-            <Icon name={torchOn ? 'flashOff' : 'flash'} size={22} />
-          </button>
+          <IconButtonIonic
+            icon={torchOn ? 'flashOff' : 'flash'}
+            iconSize={22}
+            label="Toggle flash"
+            className={styles.iconButton}
+            onClick={handleTorch}
+          />
         ) : (
           <span className={styles.spacer} />
         )}
         <button className={styles.shutter} onClick={handleShutter} aria-label="Capture" />
-        <button className={styles.iconButton} onClick={handleFlip} aria-label="Flip camera">
-          <Icon name="switchCamera" size={22} />
-        </button>
+        <IconButtonIonic
+          icon="switchCamera"
+          iconSize={22}
+          label="Flip camera"
+          className={styles.iconButton}
+          onClick={handleFlip}
+        />
       </div>
     </div>
   );

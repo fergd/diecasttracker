@@ -13,20 +13,6 @@
   gap: var(--spacing-md);
 }
 
-.backButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: var(--radius-full);
-  border: none;
-  background: var(--color-zinc-800);
-  color: var(--color-text-primary-dark);
-  cursor: pointer;
-  flex: none;
-}
-
 .title {
   font-family: var(--font-body);
   font-size: var(--font-size-title3);
@@ -73,16 +59,9 @@
   position: absolute;
   top: var(--spacing-xs);
   right: var(--spacing-xs);
-  width: 28px;
-  height: 28px;
-  border-radius: var(--radius-full);
-  border: none;
-  background: rgba(0, 0, 0, 0.55);
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
+  --background: rgba(0, 0, 0, 0.55);
+  --background-activated: rgba(0, 0, 0, 0.75);
+  --color: #fff;
 }
 
 .photoPlaceholder {
@@ -135,24 +114,6 @@
   text-transform: uppercase;
   letter-spacing: var(--letter-spacing-wide);
   margin: 0;
-}
-
-.iconButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 32px;
-  height: 32px;
-  border-radius: var(--radius-full);
-  border: none;
-  background: var(--color-zinc-800);
-  color: var(--color-navy-400);
-  cursor: pointer;
-}
-
-.iconButton:disabled {
-  opacity: 0.5;
-  cursor: not-allowed;
 }
 
 /* Applied to a card's content (not its header/button) while a refresh

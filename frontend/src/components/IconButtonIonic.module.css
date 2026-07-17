@@ -24,3 +24,13 @@
   border-radius: 50%;
   padding: 0;
 }
+
+.sm {
+  width: 36px;
+  height: 36px;
+}
+
+.sm::part(native) {
+  width: 36px;
+  height: 36px;
+}

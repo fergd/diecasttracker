@@ -5,24 +5,37 @@ import styles from './IconButtonIonic.module.css';
 export interface IconButtonIonicProps {
   icon: IconName;
   label: string;
+  iconSize?: number;
+  /** 'default' is a real 44px tap target. 'sm' (36px) is only for spots too
+   * tight for that - e.g. an overlay on a small photo thumbnail - and is
+   * still bigger than the 28-36px bare-<button> versions it replaces. */
+  size?: 'default' | 'sm';
   onClick?: () => void;
   disabled?: boolean;
+  className?: string;
 }
 
-/** Trial: round icon-only button built on ion-button instead of a bare
- * <button>, sized to a real 44px tap target (the bare-<button> versions in
- * this app render at 28-36px - see CollectionList's old .sortButton /
- * .selectionIconButton). Compare press feedback against those directly. */
-export function IconButtonIonic({ icon, label, onClick, disabled }: IconButtonIonicProps) {
+/** Round icon-only button built on ion-button, replacing this app's bare
+ * <button className="...IconButton"> pattern (which rendered at 28-40px,
+ * under the 44pt/48dp touch-target minimum). */
+export function IconButtonIonic({
+  icon,
+  label,
+  iconSize = 18,
+  size = 'default',
+  onClick,
+  disabled,
+  className,
+}: IconButtonIonicProps) {
   return (
     <IonButton
       fill="clear"
-      className={styles.button}
+      className={[styles.button, size === 'sm' ? styles.sm : '', className].filter(Boolean).join(' ')}
       onClick={onClick}
       disabled={disabled}
       aria-label={label}
     >
-      <Icon name={icon} size={18} />
+      <Icon name={icon} size={iconSize} />
     </IonButton>
   );
 }

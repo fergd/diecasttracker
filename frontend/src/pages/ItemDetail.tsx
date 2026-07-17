@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import { useNavigate, useParams } from 'react-router-dom';
 import { Icon } from '../components/Icon';
 import { Button } from '../components/Button';
+import { IconButtonIonic } from '../components/IconButtonIonic';
 import { Input } from '../components/Input';
 import { Select } from '../components/Select';
 import { TabBar } from '../components/TabBar';
@@ -453,9 +454,7 @@ export function ItemDetail() {
   return (
     <div className={styles.page}>
       <header className={styles.header}>
-        <button className={styles.backButton} onClick={() => navigate('/')} aria-label="Back">
-          <Icon name="cancel01" size={20} />
-        </button>
+        <IconButtonIonic icon="cancel01" iconSize={20} label="Back" onClick={() => navigate('/')} />
         <h1 className={styles.title}>{form.castingName || 'Unrecognized item'}</h1>
         {autosaveStatus !== 'idle' && (
           <span className={styles.autosaveStatus}>{autosaveStatus === 'saving' ? 'Saving…' : 'Saved'}</span>
@@ -467,13 +466,14 @@ export function ItemDetail() {
           {form.photoUrl ? (
             <>
               <img src={form.photoUrl} alt="" onClick={() => setLightbox(form.photoUrl)} />
-              <button
+              <IconButtonIonic
+                icon="cameraAdd01"
+                iconSize={16}
+                size="sm"
+                label="Photo options"
                 className={styles.photoMenuButton}
                 onClick={() => setPhotoActionsSlot('main')}
-                aria-label="Photo options"
-              >
-                <Icon name="cameraAdd01" size={16} />
-              </button>
+              />
             </>
           ) : (
             <div className={styles.photoPlaceholder} onClick={() => mainFileInput.current?.click()}>
@@ -493,13 +493,14 @@ export function ItemDetail() {
           {form.basePhotoUrl ? (
             <>
               <img src={form.basePhotoUrl} alt="" onClick={() => setLightbox(form.basePhotoUrl)} />
-              <button
+              <IconButtonIonic
+                icon="cameraAdd01"
+                iconSize={16}
+                size="sm"
+                label="Photo options"
                 className={styles.photoMenuButton}
                 onClick={() => setPhotoActionsSlot('secondary')}
-                aria-label="Photo options"
-              >
-                <Icon name="cameraAdd01" size={16} />
-              </button>
+              />
             </>
           ) : (
             <div className={styles.addPhoto} onClick={() => secondaryFileInput.current?.click()}>
