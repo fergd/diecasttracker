@@ -6,7 +6,7 @@ import { Tag } from '../components/Tag';
 import { Button } from '../components/Button';
 import { Icon } from '../components/Icon';
 import { Sheet } from '../components/Sheet';
-import { ListItemIonic as ListItem } from '../components/ListItemIonic';
+import { ListItem } from '../components/ListItem';
 import { IconButtonIonic } from '../components/IconButtonIonic';
 import { ScanFab } from '../components/ScanFab';
 import { Toast } from '../components/Toast';

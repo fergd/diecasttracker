@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { IonItem, IonThumbnail, IonLabel } from '@ionic/react';
 import { Icon } from './Icon';
 import { Badge } from './Badge';
 import { useLongPress } from '../hooks/useLongPress';
@@ -28,7 +29,9 @@ export interface ListItemProps {
 
 /** Row in the collection list: thumbnail (photo or colored placeholder),
  * title + metadata + status badges, trailing price + tracking status.
- * Plain divided row (bottom hairline), not an individually-bordered card. */
+ * Built on ion-item/ion-thumbnail/ion-label rather than hand-rolled divs -
+ * the 56px thumbnail already forced a tall-enough row, but ion-item adds
+ * real press feedback (the old plain <div> had none). */
 export function ListItem({
   photoUrl,
   title,
@@ -47,13 +50,13 @@ export function ListItem({
 }: ListItemProps) {
   const pressHandlers = useLongPress(onLongPress, onClick);
   return (
-    <div className={styles.listItem} {...pressHandlers} role={onClick ? 'button' : undefined}>
+    <IonItem button={!!onClick} detail={false} lines="none" className={styles.item} {...pressHandlers}>
       {selectable && (
-        <div className={[styles.checkbox, selected ? styles.checkboxChecked : ''].filter(Boolean).join(' ')}>
+        <div className={[styles.checkbox, selected ? styles.checkboxChecked : ''].filter(Boolean).join(' ')} slot="start">
           {selected && <Icon name="tick02" size={14} />}
         </div>
       )}
-      <div className={styles.thumbnail}>
+      <IonThumbnail slot="start" className={styles.thumbnail}>
         {photoUrl ? (
           <img src={photoUrl} alt="" className={styles.photo} />
         ) : (
@@ -61,11 +64,11 @@ export function ListItem({
             <Icon name="car05" size={24} />
           </div>
         )}
-      </div>
+      </IonThumbnail>
 
-      <div className={styles.content}>
-        <div className={styles.title}>{title}</div>
-        <div className={styles.meta}>{meta}</div>
+      <IonLabel className={styles.label}>
+        <h3 className={styles.title}>{title}</h3>
+        <p className={styles.meta}>{meta}</p>
         {(matchLabel || showTreasureHunt || showLot) && (
           <div className={styles.badges}>
             {matchLabel && <Badge variant={matchVariant}>{matchLabel}</Badge>}
@@ -73,15 +76,15 @@ export function ListItem({
             {showLot && <Badge variant="info">Lot</Badge>}
           </div>
         )}
-      </div>
+      </IonLabel>
 
       {(price || statusLabel || trailing) && (
-        <div className={styles.trailing}>
+        <div slot="end" className={styles.trailing}>
           {price && <div className={styles.price}>{price}</div>}
           {statusLabel && <Badge variant="info">{statusLabel}</Badge>}
           {trailing}
         </div>
       )}
-    </div>
+    </IonItem>
   );
 }

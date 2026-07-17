@@ -1,15 +1,13 @@
-.listItem {
-  display: flex;
-  align-items: center;
-  gap: var(--spacing-md);
-  padding: var(--spacing-sm) var(--spacing-md);
-  width: 100%;
-  background: var(--color-surface-card-dark);
+.item {
+  --background: var(--color-surface-card-dark);
+  --padding-start: var(--spacing-md);
+  --inner-padding-end: var(--spacing-md);
+  --min-height: 64px;
   border-radius: var(--radius-md);
+  overflow: hidden;
 }
 
 .checkbox {
-  flex: none;
   width: 22px;
   height: 22px;
   border-radius: var(--radius-full);
@@ -18,6 +16,7 @@
   align-items: center;
   justify-content: center;
   color: var(--color-zinc-50);
+  margin-inline-end: var(--spacing-md);
 }
 
 .checkboxChecked {
@@ -26,23 +25,14 @@
 }
 
 .thumbnail {
-  flex: none;
-  width: var(--sizing-thumbnail-sm);
-  height: var(--sizing-thumbnail-sm);
-  border-radius: var(--radius-sm);
-  overflow: hidden;
-  position: relative;
+  --size: 56px;
+  --border-radius: var(--radius-sm);
 }
 
 .photo,
 .placeholder {
-  position: absolute;
-  inset: 0;
   width: 100%;
   height: 100%;
-}
-
-.photo {
   object-fit: cover;
 }
 
@@ -54,12 +44,11 @@
   color: var(--color-zinc-50);
 }
 
-.content {
-  flex: 1;
-  min-width: 0;
-  display: flex;
+.label {
+  display: flex !important;
   flex-direction: column;
   gap: var(--spacing-2xs);
+  margin: 0 !important;
 }
 
 .title {
@@ -70,6 +59,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0;
 }
 
 .meta {
@@ -79,6 +69,7 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  margin: 0;
 }
 
 .badges {
@@ -88,7 +79,6 @@
 }
 
 .trailing {
-  flex: none;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
