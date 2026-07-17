@@ -20,7 +20,18 @@ export interface SheetProps {
  * disappearing instantly, closing it usually clears the very state
  * (actionItem, lightbox, scanResult, etc.) its own children read to render
  * - without the snapshot below, the sheet would render blank while it
- * slides/fades away instead of showing its last content mid-exit. */
+ * slides/fades away instead of showing its last content mid-exit.
+ *
+ * canDismiss is a function, not just `dismissible`, on purpose: IonModal's
+ * dismiss() checks it for EVERY dismissal, including our own `isOpen={false}`
+ * (role is undefined there) - a literal `false` blocks that too, not just
+ * user-initiated swipe/backdrop attempts (role 'gesture'/'backdrop'). When
+ * it blocks, IonModal aborts before the step that clears the body-level
+ * scroll lock it applies while open, and that overlay is stuck reporting
+ * itself as still "presented" for the rest of the page's life - poisoning
+ * every OTHER sheet's dismiss check afterward too, since Ionic only releases
+ * the lock once zero overlays claim to be presented. Gate only the
+ * user-initiated roles on `dismissible`; always allow our own. */
 export function Sheet({ open, onClose, dismissible = true, children }: SheetProps) {
   const lastContent = useRef<ReactNode>(children);
   if (open) lastContent.current = children;
@@ -30,7 +41,7 @@ export function Sheet({ open, onClose, dismissible = true, children }: SheetProp
       isOpen={open}
       onDidDismiss={onClose}
       backdropDismiss={dismissible}
-      canDismiss={dismissible}
+      canDismiss={async (_data, role) => dismissible || role === undefined}
       breakpoints={[0, 1]}
       initialBreakpoint={1}
       handle={dismissible}
