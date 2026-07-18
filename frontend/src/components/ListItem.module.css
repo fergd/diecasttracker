@@ -2,6 +2,8 @@
   --background: var(--color-surface-card-dark);
   --padding-start: var(--spacing-md);
   --inner-padding-end: var(--spacing-md);
+  --padding-top: var(--spacing-md);
+  --padding-bottom: var(--spacing-md);
   --min-height: 64px;
   border-radius: var(--radius-md);
   overflow: hidden;
