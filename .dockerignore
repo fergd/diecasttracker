@@ -1,0 +1,12 @@
+venv/
+__pycache__/
+*.pyc
+*.db
+photos/
+.env
+.git/
+.claude/
+HANDOFF.md
+
+frontend/node_modules/
+frontend/dist/

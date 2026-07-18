@@ -1,0 +1,14 @@
+services:
+  zamak-ledger:
+    build: .
+    ports:
+      - "8420:8420"
+    env_file:
+      - .env
+    environment:
+      INVENTORY_DB_PATH: /data/inventory.db
+      REFERENCE_DB_PATH: /data/reference.db
+      PHOTO_DIR: /data/photos
+    volumes:
+      - ./data:/data
+    restart: unless-stopped

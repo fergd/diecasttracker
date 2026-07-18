@@ -45,6 +45,7 @@ Usage:
 
 import argparse
 import json
+import os
 import re
 import sqlite3
 import time
@@ -53,7 +54,7 @@ from pathlib import Path
 import requests
 
 CACHE_DIR = Path("./html_cache_hotwheels_wiki")
-DB_PATH = "reference.db"
+DB_PATH = os.environ.get("REFERENCE_DB_PATH", "reference.db")
 REQUEST_DELAY_SECONDS = 1.5
 USER_AGENT = "Mozilla/5.0 (personal hobby inventory tool; contact: your-email@example.com)"
 

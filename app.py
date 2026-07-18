@@ -37,8 +37,8 @@ from cloudinary_upload import upload_photo, duplicate_photo, delete_photo_asset
 logging.basicConfig(level=logging.INFO)
 logger = logging.getLogger("diecast-inventory")
 
-DB_PATH = "inventory.db"
-PHOTO_DIR = Path("./photos")
+DB_PATH = os.environ.get("INVENTORY_DB_PATH", "inventory.db")
+PHOTO_DIR = Path(os.environ.get("PHOTO_DIR", "./photos"))
 PHOTO_DIR.mkdir(exist_ok=True)
 
 app = FastAPI(title="Zamak Ledger")

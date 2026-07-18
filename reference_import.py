@@ -24,6 +24,7 @@ Usage:
 """
 
 import argparse
+import os
 import re
 import sqlite3
 import time
@@ -34,7 +35,7 @@ from bs4 import BeautifulSoup
 
 BASE_URL = "https://southtexasdiecast.com/hwguide/{year}.html"
 CACHE_DIR = Path("./html_cache")
-DB_PATH = "reference.db"
+DB_PATH = os.environ.get("REFERENCE_DB_PATH", "reference.db")
 REQUEST_DELAY_SECONDS = 2.0  # be polite - this is a small volunteer-run site
 USER_AGENT = "Mozilla/5.0 (personal hobby inventory tool; contact: your-email@example.com)"
 

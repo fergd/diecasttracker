@@ -40,6 +40,7 @@ Usage:
 """
 
 import argparse
+import os
 import re
 import sqlite3
 import time
@@ -49,7 +50,7 @@ import requests
 from bs4 import BeautifulSoup
 
 CACHE_DIR = Path("./html_cache_matchbox")
-DB_PATH = "reference.db"
+DB_PATH = os.environ.get("REFERENCE_DB_PATH", "reference.db")
 REQUEST_DELAY_SECONDS = 2.0
 USER_AGENT = "Mozilla/5.0 (personal hobby inventory tool; contact: your-email@example.com)"
 

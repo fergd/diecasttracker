@@ -28,12 +28,14 @@ Scoring approach:
         fuzzy name < 0.75     -> no_match     (nothing worth suggesting)
 """
 
+import os
 import sqlite3
 from dataclasses import dataclass
+from pathlib import Path
 
 from rapidfuzz import fuzz
 
-DB_PATH = "reference.db"
+DB_PATH = os.environ.get("REFERENCE_DB_PATH", "reference.db")
 
 REVIEW_THRESHOLD = 0.75
 
@@ -63,6 +65,7 @@ def reference_coverage(db_path: str = DB_PATH) -> dict:
     """
     conn = sqlite3.connect(db_path)
     conn.row_factory = sqlite3.Row
+    conn.executescript(Path("schema.sql").read_text())
     try:
         total = conn.execute("SELECT COUNT(*) AS n FROM reference_castings").fetchone()["n"]
         by_brand_year = conn.execute("""
@@ -203,6 +206,11 @@ def validate_extraction(extracted: dict, packaging_type: str = "carded") -> Matc
     (unreliable - see the downgrade rule below).
     """
     conn = sqlite3.connect(DB_PATH)
+    # A brand-new reference.db (fresh self-hosted install, before any
+    # reference_import_*.py script has run) has no tables at all yet - fall
+    # through to a real "no reference data" no_match below instead of a bare
+    # sqlite3.OperationalError on the SELECT further down.
+    conn.executescript(Path("schema.sql").read_text())
 
     sku = (extracted.get("sku") or "").strip()
     if sku:
