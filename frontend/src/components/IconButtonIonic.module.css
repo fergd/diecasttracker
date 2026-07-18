@@ -11,6 +11,11 @@
   --box-shadow: none;
   width: 44px;
   height: 44px;
+  /* Ionic's default host rule sets min-height: 3.1em (~50px) with no
+   * matching min-width, which wins over the height above and stretches
+   * this into an oval instead of a circle - zero it out here. */
+  min-height: 0;
+  min-width: 0;
   margin: 0;
 }
 
@@ -21,6 +26,8 @@
 .button::part(native) {
   width: 44px;
   height: 44px;
+  min-height: 0;
+  min-width: 0;
   border-radius: 50%;
   padding: 0;
 }
@@ -28,9 +35,13 @@
 .sm {
   width: 36px;
   height: 36px;
+  min-height: 0;
+  min-width: 0;
 }
 
 .sm::part(native) {
   width: 36px;
   height: 36px;
+  min-height: 0;
+  min-width: 0;
 }

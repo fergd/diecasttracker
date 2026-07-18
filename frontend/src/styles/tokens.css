@@ -1,83 +1,88 @@
 /* Design tokens - mirrors the "Zamak Ledger Design System" Figma file exactly.
    Every value here corresponds 1:1 to a Figma variable; if a value changes in
-   Figma, update it here too rather than letting them drift apart. */
+   Figma, update it here too rather than letting them drift apart.
+
+   Palette is built on the "Gotham" terminal color scheme
+   (https://terminalcolors.com/themes/gotham/default/) - each scale below
+   keeps the original design system's lightness/saturation steps but is
+   re-hued to Gotham's blue-black/teal/amber/red family. */
 
 :root {
   /* ---- Color scales ---- */
-  --color-navy-100: #dce3ec;
-  --color-navy-200: #b9c7da;
-  --color-navy-300: #8fa3c0;
-  --color-navy-400: #5f7ca0;
-  --color-navy-500: #3c5c82;
-  --color-navy-600: #2c4666;
-  --color-navy-700: #1f3350;
-  --color-navy-800: #16253c;
-  --color-navy-900: #0e1826;
+  --color-navy-100: #dce8ec;
+  --color-navy-200: #b9d2da;
+  --color-navy-300: #8fb5c0;
+  --color-navy-400: #5f91a0;
+  --color-navy-500: #3c7282;
+  --color-navy-600: #2c5866;
+  --color-navy-700: #1f4550;
+  --color-navy-800: #16333c;
+  --color-navy-900: #0e2026;
 
   --color-zinc-50: #f7f8f9;
-  --color-zinc-100: #edeff1;
-  --color-zinc-200: #dadde1;
-  --color-zinc-300: #bcc1c7;
-  --color-zinc-400: #9aa0a8;
-  --color-zinc-500: #767d86;
-  --color-zinc-600: #565c64;
-  --color-zinc-700: #3d4249;
-  --color-zinc-800: #2a2e33;
-  --color-zinc-900: #1d2024;
-  --color-zinc-950: #14161a;
+  --color-zinc-100: #edf0f1;
+  --color-zinc-200: #dadfe1;
+  --color-zinc-300: #bcc3c7;
+  --color-zinc-400: #9aa3a8;
+  --color-zinc-500: #768186;
+  --color-zinc-600: #565f64;
+  --color-zinc-700: #3d4549;
+  --color-zinc-800: #2a3033;
+  --color-zinc-900: #1d2224;
+  --color-zinc-950: #0c1014;
 
-  --color-gold-100: #f3ead6;
-  --color-gold-200: #e5d3ac;
-  --color-gold-300: #d3b87f;
-  --color-gold-400: #be9c5c;
-  --color-gold-500: #a9813f;
-  --color-gold-600: #8b6830;
-  --color-gold-700: #6e5127;
-  --color-gold-800: #4f3a1d;
-  --color-gold-900: #322512;
+  --color-gold-100: #f4ead5;
+  --color-gold-200: #e8d3a9;
+  --color-gold-300: #d7b87b;
+  --color-gold-400: #c49f56;
+  --color-gold-500: #af8839;
+  --color-gold-600: #906e2b;
+  --color-gold-700: #725823;
+  --color-gold-800: #523f1a;
+  --color-gold-900: #342810;
 
-  --color-violet-100: #eae6f5;
-  --color-violet-200: #cfc5e8;
-  --color-violet-300: #afa0d6;
-  --color-violet-400: #8b7bc0;
-  --color-violet-500: #6b5ca5;
-  --color-violet-600: #55478a;
-  --color-violet-700: #423670;
-  --color-violet-800: #2e2650;
-  --color-violet-900: #1d1935;
+  --color-violet-100: #e6e6f5;
+  --color-violet-200: #c5c5e8;
+  --color-violet-300: #a0a0d6;
+  --color-violet-400: #7b7bc0;
+  --color-violet-500: #5c5ca5;
+  --color-violet-600: #47478a;
+  --color-violet-700: #363670;
+  --color-violet-800: #262650;
+  --color-violet-900: #191935;
 
   /* ---- Semantic ---- */
-  --color-semantic-success: #4c8b6a;
-  --color-semantic-success-rgb: 76, 139, 106;
-  --color-semantic-success-bg: #e4eee8;
-  --color-semantic-warning: #b8863a;
-  --color-semantic-warning-rgb: 184, 134, 58;
-  --color-semantic-warning-bg: #f3e9d6;
-  --color-semantic-error: #b24a3f;
-  --color-semantic-error-rgb: 178, 74, 63;
-  --color-semantic-error-bg: #f5e1de;
-  --color-semantic-info: #3c5c82;
-  --color-semantic-info-rgb: 60, 92, 130;
-  --color-semantic-info-bg: #dce3ec;
-  --color-semantic-ai: #6b5ca5;
-  --color-semantic-ai-rgb: 107, 92, 165;
-  --color-semantic-ai-bg: #eae6f5;
+  --color-semantic-success: #2aa889;
+  --color-semantic-success-rgb: 42, 168, 137;
+  --color-semantic-success-bg: #deede9;
+  --color-semantic-warning: #edb443;
+  --color-semantic-warning-rgb: 237, 180, 67;
+  --color-semantic-warning-bg: #ede8de;
+  --color-semantic-error: #c23127;
+  --color-semantic-error-rgb: 194, 49, 39;
+  --color-semantic-error-bg: #eddfde;
+  --color-semantic-info: #3c7282;
+  --color-semantic-info-rgb: 60, 114, 130;
+  --color-semantic-info-bg: #e1e8ea;
+  --color-semantic-ai: #5c5ca5;
+  --color-semantic-ai-rgb: 92, 92, 165;
+  --color-semantic-ai-bg: #e2e2e9;
 
   /* ---- Surface ---- */
-  --color-surface-bg-dark: #14161a;
+  --color-surface-bg-dark: #0c1014;
   --color-surface-bg-light: #f7f8f9;
-  --color-surface-card-dark: #1d2024;
+  --color-surface-card-dark: #1d2224;
   --color-surface-card-light: #ffffff;
 
   /* ---- Text ---- */
   --color-text-primary-dark: #f7f8f9;
-  --color-text-primary-light: #1d2024;
-  --color-text-secondary-dark: #bcc1c7;
-  --color-text-secondary-light: #565c64;
+  --color-text-primary-light: #1d2224;
+  --color-text-secondary-dark: #bcc3c7;
+  --color-text-secondary-light: #565f64;
 
   /* Convenience RGB triplets for rgba() tinting (badges, state layers) */
-  --color-navy-500-rgb: 60, 92, 130;
-  --color-zinc-400-rgb: 154, 160, 168;
+  --color-navy-500-rgb: 60, 114, 130;
+  --color-zinc-400-rgb: 154, 163, 168;
 
   /* ---- Spacing ---- */
   --spacing-2xs: 2px;
