@@ -11,41 +11,27 @@ export const COMBINE_LISTING_LINE =
   'I have many cars for sale and am happy to combine. Just message me directly.';
 const SIGN_OFF_LINE = 'From a smoke-free, pet-free home. Thanks for looking!';
 
-/** Collector-precise eBay title, e.g. "1998 Hot Wheels First Editions #17
- * Pontiac Rageous Blue TH" - generic titles get buried, exact terms get found.
- * Progressively drops the lowest-priority optional segments (series, then
- * car make, then color) to stay under eBay's 80-char title limit. */
+/** Collector-precise eBay title, e.g. "1998 Hot Wheels First Editions Pontiac
+ * Rageous FGY52" - generic titles get buried, exact terms get found. Always:
+ * year, brand, series (if available), casting name, toy number/SKU. Drops
+ * series first if that would exceed eBay's 80-char title limit. */
 export function generateListingTitle(item: InventoryItem): string {
   const year = item.year ?? '';
   const brand = item.brand ?? '';
   const casting = item.castingName ?? 'Diecast Car';
-  const thSuffix = item.treasureHunt ?? '';
-  const collectorTag = item.collectorNumber ? `#${item.collectorNumber}` : '';
   const series = [item.series, item.seriesNumber].filter(Boolean).join(' ');
-  const carMake = item.carMake && !casting.includes(item.carMake) ? item.carMake : '';
-  const color = item.color ?? '';
+  const sku = item.sku ?? '';
 
-  function build(includeSeries: boolean, includeCarMake: boolean, includeColor: boolean): string {
-    return [
-      year,
-      brand,
-      includeSeries ? series : '',
-      collectorTag,
-      includeCarMake ? carMake : '',
-      casting,
-      includeColor ? color : '',
-      thSuffix,
-    ]
+  function build(includeSeries: boolean): string {
+    return [year, brand, includeSeries ? series : '', casting, sku]
       .filter(Boolean)
       .join(' ')
       .replace(/\s+/g, ' ')
       .trim();
   }
 
-  let title = build(true, true, true);
-  if (title.length > EBAY_TITLE_MAX) title = build(false, true, true);
-  if (title.length > EBAY_TITLE_MAX) title = build(false, false, true);
-  if (title.length > EBAY_TITLE_MAX) title = build(false, false, false);
+  let title = build(true);
+  if (title.length > EBAY_TITLE_MAX) title = build(false);
   if (title.length > EBAY_TITLE_MAX) title = title.slice(0, EBAY_TITLE_MAX).trim();
   return title;
 }
