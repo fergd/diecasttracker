@@ -27,9 +27,9 @@ diecast castings since the 1960s — the one material both brands share.
 - **Storage:** SQLite (one database for your collection, a separate one for
   a ground-truth reference catalog); photos stored as plain files on disk
 - **Deployment:** self-hosted — see "Running your own instance" below. (The
-  original reference deployment, backupbox, sits behind Tailscale and is
-  served over HTTPS via `tailscale serve`, since in-browser camera access
-  requires HTTPS.)
+  original reference deployment sits behind Tailscale and is served over
+  HTTPS via `tailscale serve`, since in-browser camera access requires
+  HTTPS.)
 
 Nothing here is committed to git — no photos, no databases, no `.env`. See
 `HANDOFF.md` for full architecture, data model, API surface, storage
